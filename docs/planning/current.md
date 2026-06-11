@@ -14,6 +14,8 @@ RadishX 当前处于官网项目初始化前的规划与基础治理阶段。
 - 明确官网气质：创意品牌 / 游戏感 / 视觉冲击，参考 Apple 官网的节奏。
 - 整理虚拟形象和社交媒体素材。
 - 建立基础文档、协作文件和仓库通用配置。
+- 初始化 Git 仓库并推送到 `laugh0608/RadishX`。
+- 生成儿童形态安全设定图候选 `assets/avatars/child/radish-child-safe-design-sheet-v1.png`。
 
 ## 产品边界
 
@@ -52,8 +54,8 @@ RadishX 当前处于官网项目初始化前的规划与基础治理阶段。
 
 ## 下一步建议
 
-1. 从现有虚拟形象素材中确认首页和 Mascot 页首批候选图。
+1. 审核首页和 Mascot 页首批候选图。
 2. 初始化 Vite + React + TypeScript 项目。
 3. 实现静态多页面官网骨架。
 4. 完成 PC 和移动端响应式首轮验证。
-5. 初始化 Git，并在 GitHub 创建公开仓库 `laugh0608/RadishX`。
+5. 配置 Vercel 项目并绑定 `radishx.com`。

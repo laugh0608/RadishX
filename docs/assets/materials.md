@@ -28,6 +28,18 @@
 - 任何对外发布或可下载的图片。
 - 对原图进行裁切、压缩、抠图、重采样或格式转换。
 
+## 儿童形态安全口径
+
+儿童形态素材必须完整外装、非性感化、无内衣展示、无身体拆解、无泳装或睡衣语义。
+
+当前儿童形态官网优先候选：
+
+- `assets/avatars/child/radish-child-safe-design-sheet-v1.png`
+
+不再推荐用于官网公开页面：
+
+- `assets/avatars/child/radish-child-design-sheet.png`
+
 ## 使用建议
 
 - 长期主视觉优先使用 `child/` 和 `mature/` 中的设定图或站姿图。

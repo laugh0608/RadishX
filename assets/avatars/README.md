@@ -19,7 +19,8 @@
 
 ### Child
 
-- `child/radish-child-design-sheet.png`：儿童形态设定图。
+- `child/radish-child-safe-design-sheet-v1.png`：儿童形态安全设定图，完整外装版本，优先作为官网候选。
+- `child/radish-child-design-sheet.png`：儿童形态旧设定图，不再推荐用于官网公开页面。
 - `child/radish-child-standing-white-dress.png`：儿童形态白裙站姿。
 - `child/radish-child-standing-white-dress-tall.png`：儿童形态白裙站姿高分辨率版本。
 - `child/radish-child-outfit-variants.png`：儿童形态服装变体。
@@ -48,6 +49,6 @@
 ## 使用建议
 
 - 首页长期主视觉：优先从 `child/` 或 `mature/` 的设定图和站姿图中选择。
-- 虚拟形象页：使用 `origin/`、`child/`、`mature/` 三组素材展示形态演进。
+- 虚拟形象页：使用 `origin/`、`child/`、`mature/` 三组素材展示形态演进；儿童形态优先使用 `radish-child-safe-design-sheet-v1.png`。
 - 活动 Banner：使用 `seasonal/`，不要作为官网长期默认视觉。
 - 表情包展示：可以在虚拟形象页作为可选 Gallery 展示，后续再决定是否拆分单张贴纸。
