@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+
+# Vite / frontend build outputs
+dist/
+build/
+.vite/
+.vite-inspect/
+
+# Test and coverage outputs
+coverage/
+playwright-report/
+test-results/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment and local secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Vercel local state
+.vercel/
+
+# Local editor and OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+.vs/
+.fleet/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# AI assistant local state
+.codex/
+.codex
+.claude/
+.claude
+
+# Temporary / merge leftovers
+*.tmp
+*.temp
+*.orig
+*.rej

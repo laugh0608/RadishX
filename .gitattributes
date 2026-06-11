@@ -1,0 +1,36 @@
+## Line endings normalization
+* text=auto eol=lf
+
+# Windows-specific scripts should keep CRLF.
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+*.ps1   text eol=crlf
+*.psm1  text eol=crlf
+*.psd1  text eol=crlf
+
+# Shell scripts should keep LF.
+*.sh    text eol=lf
+
+# Common binaries.
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.bmp   binary
+*.ico   binary
+*.webp  binary
+*.avif  binary
+*.pdf   binary
+*.zip   binary
+*.7z    binary
+*.gz    binary
+*.tar   binary
+*.tgz   binary
+*.ttf   binary
+*.otf   binary
+*.woff  binary
+*.woff2 binary
+*.eot   binary
+
+# Keep SVG text-normalized so diffs remain readable.
+*.svg   text eol=lf
