@@ -2,7 +2,7 @@
 
 RadishX 是 Radish 系列项目的官网与统一入口。这个仓库计划作为 `radishx.com` 的根站点，通过 GitHub 托管代码，并使用 Vercel 的免费额度进行部署。
 
-当前仓库状态：规划中。先完成官网定位、页面内容与域名结构讨论，再开始初始化项目、编写代码和配置部署。
+当前仓库状态：基础仓库和远程仓库已创建，官网定位、页面内容、域名结构和素材归档已完成首轮规划；前端项目尚未初始化。
 
 ## 已确认方向
 
@@ -24,7 +24,7 @@ RadishX 是 Radish 系列项目的官网与统一入口。这个仓库计划作�
 
 ## GitHub 仓库
 
-- `RadishX`：<https://github.com/laugh0608/RadishX>，当前官网仓库，待创建。
+- `RadishX`：<https://github.com/laugh0608/RadishX>
 - `Radish`：<https://github.com/laugh0608/Radish>
 - `RadishCatalyst`：<https://github.com/laugh0608/RadishCatalyst>
 - `RadishFlow`：<https://github.com/laugh0608/RadishFlow>
@@ -52,12 +52,6 @@ RadishX 是 Radish 系列项目的官网与统一入口。这个仓库计划作�
 - `forge.radishx.com`：RadishCatalyst
 - `flow.radishx.com`：RadishFlow
 - `mind.radishx.com`：RadishMind
-
-备选域名：
-
-- `app.radishx.com` 或 `community.radishx.com`：Radish
-- `game.radishx.com` 或 `catalyst.radishx.com`：RadishCatalyst
-- `x.radishx.com`：建议保留给 RadishX Labs、实验入口、短链或统一跳转页，不建议直接作为 Radish 本体入口
 
 这些子域名不是当前官网 Vercel 项目的路由，也不需要在 Vercel 中为本官网做重写。它们是未来四个项目各自开发完毕、单独部署后的独立访问域名。
 
