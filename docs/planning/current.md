@@ -17,6 +17,8 @@ RadishX 当前处于官网项目初始化前的规划与基础治理阶段。
 - 初始化 Git 仓库并推送到 `laugh0608/RadishX`。
 - 生成儿童形态安全设定图候选 `assets/avatars/child/radish-child-safe-design-sheet-v1.png`。
 - 添加 RadishX source-available 许可证 `LICENSE`。
+- 创建 RadishX Pencil 设计源文件 `docs/design/sources/radishx-site-v0.pen`。
+- 形成 RadishX 视觉与前端规范、开发规范，明确先设计后实现的流程。
 
 ## 产品边界
 
@@ -54,8 +56,8 @@ RadishX 当前处于官网项目初始化前的规划与基础治理阶段。
 
 ## 下一步建议
 
-1. 审核首页和 Mascot 页首批候选图。
-2. 初始化 Vite + React + TypeScript 项目。
-3. 实现静态多页面官网骨架。
-4. 完成 PC 和移动端响应式首轮验证。
-5. 配置 Vercel 项目并绑定 `radishx.com`。
+1. 在 `docs/design/sources/radishx-site-v0.pen` 中完成首页桌面版和移动版设计。
+2. 继续补项目详情模板、Mascot 页和 About 页设计。
+3. 审核首页、项目页和 Mascot 页首批候选图。
+4. 初始化 Vite + React + TypeScript 项目。
+5. 实现静态多页面官网骨架并完成 PC / 移动端响应式首轮验证。

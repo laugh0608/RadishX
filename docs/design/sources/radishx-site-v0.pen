@@ -1,0 +1,1274 @@
+{
+  "version": "2.13",
+  "children": [
+    {
+      "type": "frame",
+      "id": "RNRDP",
+      "x": 0,
+      "y": 0,
+      "name": "Home Desktop v0",
+      "clip": true,
+      "width": 1440,
+      "height": 2280,
+      "fill": "$rx-bg-app",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Fbgoc",
+          "name": "Top Navigation",
+          "width": "fill_container",
+          "height": 88,
+          "fill": "#fbf7f0ee",
+          "stroke": "$rx-border-soft",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "padding": [
+            0,
+            72
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "T3YBlR",
+              "name": "Brand Lockup",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "P2wCq7",
+                  "name": "Brand Mark",
+                  "fill": "$rx-brand-primary",
+                  "width": 28,
+                  "height": 28
+                },
+                {
+                  "type": "text",
+                  "id": "hlB7I",
+                  "name": "Brand Text",
+                  "fill": "$rx-text-primary",
+                  "content": "RadishX",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "i8VEAo",
+              "name": "Navigation Links",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qgQc5",
+                  "name": "Nav Link Projects",
+                  "fill": "$rx-text-secondary",
+                  "content": "Projects",
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "xVLsa",
+                  "name": "Nav Link Mascot",
+                  "fill": "$rx-text-secondary",
+                  "content": "Mascot",
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "r8JKnm",
+                  "name": "Nav Link About",
+                  "fill": "$rx-text-secondary",
+                  "content": "About",
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "MYkBJ",
+                  "name": "GitHub Button",
+                  "fill": "#ffffff66",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    10,
+                    18
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "f3BFi",
+                      "name": "GitHub Button Label",
+                      "fill": "$rx-text-primary",
+                      "content": "GitHub",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "K4qnru",
+          "name": "Hero",
+          "width": "fill_container",
+          "height": 650,
+          "fill": "$rx-bg-app",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            86,
+            72,
+            64,
+            72
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Bf6Af",
+              "name": "Hero Eyebrow",
+              "fill": "$rx-brand-primary",
+              "content": "RADISH PROJECT MATRIX",
+              "fontFamily": "$rx-font-mono",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "b8Q6P",
+              "name": "Hero Title",
+              "fill": "$rx-text-primary",
+              "content": "RadishX",
+              "fontFamily": "$rx-font-heading",
+              "fontSize": 86,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "Srzgu",
+              "name": "Hero Subtitle",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": 760,
+              "content": "萝卜宇宙的统一入口：社区、游戏、流程模拟与智能层，在同一个品牌坐标里生长。",
+              "lineHeight": 1.55,
+              "textAlign": "center",
+              "fontFamily": "$rx-font-serif",
+              "fontSize": 23,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "F2KsI",
+              "name": "Domain Command Strip",
+              "fill": "#fbf7f0dd",
+              "cornerRadius": 8,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "gap": 14,
+              "padding": [
+                14,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "S2nxJ",
+                  "name": "Command Prompt",
+                  "fill": "$rx-text-muted",
+                  "content": ">_",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Dredu",
+                  "name": "Command Text",
+                  "fill": "$rx-text-secondary",
+                  "content": "radishx.com  /  github.com/laugh0608/RadishX",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Oofdk",
+              "name": "Hero CTAs",
+              "gap": 18,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QjC6p",
+                  "name": "CTA Explore Projects",
+                  "fill": "#11100f",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "#11100f",
+                  "strokeWidth": 1,
+                  "padding": [
+                    14,
+                    30
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zfzF3",
+                      "name": "CTA Label Explore Projects",
+                      "fill": "#ffffff",
+                      "content": "Explore Projects",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sf0xq",
+                  "name": "CTA Mascot",
+                  "fill": "#ffffff00",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    14,
+                    30
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "v9nVa",
+                      "name": "CTA Label Mascot",
+                      "fill": "#2f2a25",
+                      "content": "Mascot",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KDjV9",
+                  "name": "CTA GitHub",
+                  "fill": "#ffffff00",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    14,
+                    30
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kJLj8",
+                      "name": "CTA Label GitHub",
+                      "fill": "#2f2a25",
+                      "content": "GitHub",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ucKu0",
+              "name": "Hero Visual Placeholder",
+              "width": 880,
+              "height": 120,
+              "fill": "#efe7db88",
+              "cornerRadius": 8,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "WYVZS",
+                  "name": "Hero Visual Note",
+                  "fill": "$rx-text-muted",
+                  "content": "首页主视觉候选区：项目矩阵合成图 / 虚拟形象 / 已审核截图",
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "PemOO",
+          "name": "Projects Section",
+          "width": "fill_container",
+          "height": 1260,
+          "fill": "$rx-bg-surface",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            68,
+            126
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "Xzcl2",
+              "name": "Projects Title",
+              "fill": "$rx-text-primary",
+              "content": "四个项目，一棵萝卜生态",
+              "fontFamily": "$rx-font-serif",
+              "fontSize": 42,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "t5tXOp",
+              "name": "Projects Intro",
+              "fill": "$rx-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 720,
+              "content": "每个项目都有独立方向，也共享 RadishX 的品牌、入口和长期视觉秩序。",
+              "lineHeight": 1.55,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 17,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "RJ0Yy",
+              "name": "Project Band Radish",
+              "width": "fill_container",
+              "height": 230,
+              "fill": "#f6f1e8",
+              "cornerRadius": 8,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "gap": 34,
+              "padding": 28,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "s3MDv8",
+                  "name": "Radish Media",
+                  "width": 500,
+                  "height": 170,
+                  "fill": "#b2405718",
+                  "cornerRadius": 8,
+                  "stroke": "#b24057",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "BN41b",
+                      "name": "Radish Media Note",
+                      "fill": "$rx-text-secondary",
+                      "content": "真实截图 / Logo 候选",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nNKVQ",
+                  "name": "Radish Copy",
+                  "width": 560,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PDCZp",
+                      "name": "Radish Eyebrow",
+                      "fill": "#b24057",
+                      "content": "hub.radishx.com",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "LofN8",
+                      "name": "Radish Title",
+                      "fill": "$rx-text-primary",
+                      "content": "Radish",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 34,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "SxoW2",
+                      "name": "Radish Description",
+                      "fill": "$rx-text-secondary",
+                      "content": "社区与 WebOS 工作台",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vJzIc",
+                      "name": "Radish Chips",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "gmomC",
+                          "name": "Radish Chip GitHub",
+                          "fill": "#ffffff80",
+                          "cornerRadius": "$rx-radius-control",
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            7,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Plc40",
+                              "name": "Radish Chip Label GitHub",
+                              "fill": "$rx-text-secondary",
+                              "content": "GitHub",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "BESB4",
+                          "name": "Radish Chip Coming Soon",
+                          "fill": "#ffffff80",
+                          "cornerRadius": "$rx-radius-control",
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            7,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Ve54j",
+                              "name": "Radish Chip Label Coming Soon",
+                              "fill": "$rx-text-secondary",
+                              "content": "Coming Soon",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "x5PBo",
+                          "name": "Radish Chip Source Available",
+                          "fill": "#ffffff80",
+                          "cornerRadius": "$rx-radius-control",
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            7,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "hEkJp",
+                              "name": "Radish Chip Label Source Available",
+                              "fill": "$rx-text-secondary",
+                              "content": "Source Available",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "I4DdTG",
+              "name": "Project Band RadishCatalyst",
+              "width": "fill_container",
+              "height": 230,
+              "fill": "#efe7db",
+              "cornerRadius": 8,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "gap": 34,
+              "padding": 28,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "id1D5",
+                  "name": "RadishCatalyst Copy",
+                  "width": 560,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "m9TPyH",
+                      "name": "RadishCatalyst Eyebrow",
+                      "fill": "#886349",
+                      "content": "forge.radishx.com",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "kmURQ",
+                      "name": "RadishCatalyst Title",
+                      "fill": "$rx-text-primary",
+                      "content": "RadishCatalyst",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 34,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gAE2T",
+                      "name": "RadishCatalyst Description",
+                      "fill": "$rx-text-secondary",
+                      "content": "异星工业科幻 ARPG",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Tt3xC",
+                      "name": "RadishCatalyst Chips",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Sx1Bt",
+                          "name": "RadishCatalyst Chip GitHub",
+                          "fill": "#ffffff80",
+                          "cornerRadius": "$rx-radius-control",
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            7,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "XKgpD",
+                              "name": "RadishCatalyst Chip Label GitHub",
+                              "fill": "$rx-text-secondary",
+                              "content": "GitHub",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "lSGFK",
+                          "name": "RadishCatalyst Chip Coming Soon",
+                          "fill": "#ffffff80",
+                          "cornerRadius": "$rx-radius-control",
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            7,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "NgqfY",
+                              "name": "RadishCatalyst Chip Label Coming Soon",
+                              "fill": "$rx-text-secondary",
+                              "content": "Coming Soon",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "NBO5m",
+                          "name": "RadishCatalyst Chip Source Available",
+                          "fill": "#ffffff80",
+                          "cornerRadius": "$rx-radius-control",
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            7,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "BkLR2",
+                              "name": "RadishCatalyst Chip Label Source Available",
+                              "fill": "$rx-text-secondary",
+                              "content": "Source Available",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "CcOkc",
+                  "name": "RadishCatalyst Media",
+                  "width": 500,
+                  "height": 170,
+                  "fill": "#88634918",
+                  "cornerRadius": 8,
+                  "stroke": "#886349",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fQU3y",
+                      "name": "RadishCatalyst Media Note",
+                      "fill": "$rx-text-secondary",
+                      "content": "游戏视觉 / 角色候选",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BMhSf",
+              "name": "Project Band RadishFlow",
+              "width": "fill_container",
+              "height": 230,
+              "fill": "#f6f1e8",
+              "cornerRadius": 8,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "gap": 34,
+              "padding": 28,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "I9HMX4",
+                  "name": "RadishFlow Media",
+                  "width": 500,
+                  "height": 170,
+                  "fill": "#435c7418",
+                  "cornerRadius": 8,
+                  "stroke": "#435c74",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "k3pgFY",
+                      "name": "RadishFlow Media Note",
+                      "fill": "$rx-text-secondary",
+                      "content": "工作台截图候选",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "HrafZ",
+                  "name": "RadishFlow Copy",
+                  "width": 560,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gSSqg",
+                      "name": "RadishFlow Eyebrow",
+                      "fill": "#435c74",
+                      "content": "flow.radishx.com",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "O4lrys",
+                      "name": "RadishFlow Title",
+                      "fill": "$rx-text-primary",
+                      "content": "RadishFlow",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 34,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "T6WE5",
+                      "name": "RadishFlow Description",
+                      "fill": "$rx-text-secondary",
+                      "content": "稳态流程模拟软件",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zfzKH",
+                      "name": "RadishFlow Chips",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "ocWkO",
+                          "name": "RadishFlow Chip GitHub",
+                          "fill": "#ffffff80",
+                          "cornerRadius": "$rx-radius-control",
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            7,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "baIc5",
+                              "name": "RadishFlow Chip Label GitHub",
+                              "fill": "$rx-text-secondary",
+                              "content": "GitHub",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "nNzXy",
+                          "name": "RadishFlow Chip Coming Soon",
+                          "fill": "#ffffff80",
+                          "cornerRadius": "$rx-radius-control",
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            7,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "f2JqlV",
+                              "name": "RadishFlow Chip Label Coming Soon",
+                              "fill": "$rx-text-secondary",
+                              "content": "Coming Soon",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Va3jK",
+                          "name": "RadishFlow Chip Source Available",
+                          "fill": "#ffffff80",
+                          "cornerRadius": "$rx-radius-control",
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            7,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "J6nZE",
+                              "name": "RadishFlow Chip Label Source Available",
+                              "fill": "$rx-text-secondary",
+                              "content": "Source Available",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jEC9K",
+              "name": "Project Band RadishMind",
+              "width": "fill_container",
+              "height": 230,
+              "fill": "#efe7db",
+              "cornerRadius": 8,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "gap": 34,
+              "padding": 28,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gnwwu",
+                  "name": "RadishMind Copy",
+                  "width": 560,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "U2mGmS",
+                      "name": "RadishMind Eyebrow",
+                      "fill": "#846992",
+                      "content": "mind.radishx.com",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "l0CHb7",
+                      "name": "RadishMind Title",
+                      "fill": "$rx-text-primary",
+                      "content": "RadishMind",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 34,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "eZDIL",
+                      "name": "RadishMind Description",
+                      "fill": "$rx-text-secondary",
+                      "content": "外部智能层与工具编排",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TNsFk",
+                      "name": "RadishMind Chips",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "EYLHx",
+                          "name": "RadishMind Chip GitHub",
+                          "fill": "#ffffff80",
+                          "cornerRadius": "$rx-radius-control",
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            7,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "MCG4s",
+                              "name": "RadishMind Chip Label GitHub",
+                              "fill": "$rx-text-secondary",
+                              "content": "GitHub",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "weP1K",
+                          "name": "RadishMind Chip Coming Soon",
+                          "fill": "#ffffff80",
+                          "cornerRadius": "$rx-radius-control",
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            7,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "z0xrur",
+                              "name": "RadishMind Chip Label Coming Soon",
+                              "fill": "$rx-text-secondary",
+                              "content": "Coming Soon",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "UUfiq",
+                          "name": "RadishMind Chip Source Available",
+                          "fill": "#ffffff80",
+                          "cornerRadius": "$rx-radius-control",
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            7,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Q6D5K",
+                              "name": "RadishMind Chip Label Source Available",
+                              "fill": "$rx-text-secondary",
+                              "content": "Source Available",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "IrkAi",
+                  "name": "RadishMind Media",
+                  "width": 500,
+                  "height": 170,
+                  "fill": "#84699218",
+                  "cornerRadius": 8,
+                  "stroke": "#846992",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UuGkq",
+                      "name": "RadishMind Media Note",
+                      "fill": "$rx-text-secondary",
+                      "content": "控制台 / 协议视觉候选",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "x3vYa",
+          "name": "Mascot Teaser",
+          "width": "fill_container",
+          "height": 262,
+          "fill": "$rx-bg-app",
+          "gap": 36,
+          "padding": [
+            42,
+            126
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "L7kWN",
+              "name": "Mascot Copy",
+              "width": 620,
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "hkr0u",
+                  "name": "Mascot Eyebrow",
+                  "fill": "$rx-brand-primary",
+                  "content": "MASCOT",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "I4Oxx",
+                  "name": "Mascot Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "萝卜有三种形态，也有很多故事。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-serif",
+                  "fontSize": 34,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "ZSEe5",
+                  "name": "Mascot Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "原始萝卜、儿童萝卜、成熟少女萝卜会作为 RadishX 的长期品牌记忆点。",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nUKpG",
+              "name": "Mascot Media Review Strip",
+              "width": 540,
+              "height": 160,
+              "fill": "$rx-bg-surface",
+              "cornerRadius": 8,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "gap": 14,
+              "padding": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "M1bfK",
+                  "name": "Mascot Slot Origin",
+                  "width": "fill_container",
+                  "height": 128,
+                  "fill": "$rx-brand-soft",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "WK85O",
+                      "name": "Mascot Slot Label Origin",
+                      "fill": "$rx-text-secondary",
+                      "content": "Origin",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "fKnMm",
+                  "name": "Mascot Slot Child Safe",
+                  "width": "fill_container",
+                  "height": 128,
+                  "fill": "$rx-brand-soft",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "nxxdD",
+                      "name": "Mascot Slot Label Child Safe",
+                      "fill": "$rx-text-secondary",
+                      "content": "Child Safe",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "teGYl",
+                  "name": "Mascot Slot Mature",
+                  "width": "fill_container",
+                  "height": 128,
+                  "fill": "$rx-brand-soft",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xbCjI",
+                      "name": "Mascot Slot Label Mature",
+                      "fill": "$rx-text-secondary",
+                      "content": "Mature",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "rx-accent-earth": {
+      "type": "color",
+      "value": "#886349"
+    },
+    "rx-accent-ink": {
+      "type": "color",
+      "value": "#435c74"
+    },
+    "rx-accent-jade": {
+      "type": "color",
+      "value": "#4f9c83"
+    },
+    "rx-accent-purple": {
+      "type": "color",
+      "value": "#846992"
+    },
+    "rx-bg-app": {
+      "type": "color",
+      "value": "#f4efe6"
+    },
+    "rx-bg-ink": {
+      "type": "color",
+      "value": "#11100f"
+    },
+    "rx-bg-muted": {
+      "type": "color",
+      "value": "#efe7db"
+    },
+    "rx-bg-surface": {
+      "type": "color",
+      "value": "#fbf7f0"
+    },
+    "rx-border-soft": {
+      "type": "color",
+      "value": "#d9cbb9"
+    },
+    "rx-brand-primary": {
+      "type": "color",
+      "value": "#b24057"
+    },
+    "rx-brand-soft": {
+      "type": "color",
+      "value": "#ecd3db"
+    },
+    "rx-font-body": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "rx-font-heading": {
+      "type": "string",
+      "value": "Geist"
+    },
+    "rx-font-mono": {
+      "type": "string",
+      "value": "Geist Mono"
+    },
+    "rx-font-serif": {
+      "type": "string",
+      "value": "Noto Serif SC"
+    },
+    "rx-pattern-line": {
+      "type": "color",
+      "value": "#7a5c4024"
+    },
+    "rx-radius-card": {
+      "type": "number",
+      "value": 8
+    },
+    "rx-radius-control": {
+      "type": "number",
+      "value": 999
+    },
+    "rx-text-muted": {
+      "type": "color",
+      "value": "#8d7b6c"
+    },
+    "rx-text-primary": {
+      "type": "color",
+      "value": "#2f2a25"
+    },
+    "rx-text-secondary": {
+      "type": "color",
+      "value": "#6a5c4f"
+    }
+  }
+}
