@@ -1183,6 +1183,1244 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "bm1zZ",
+      "x": 1560,
+      "y": 0,
+      "name": "Home Desktop v1 - Radish Orbit",
+      "clip": true,
+      "width": 1440,
+      "height": 1980,
+      "fill": "$rx-bg-app",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "owuMz",
+          "name": "Orbit Nav",
+          "width": "fill_container",
+          "height": 92,
+          "fill": "#f4efe6",
+          "padding": [
+            0,
+            72
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Gf6Bh",
+              "name": "RadishX Seal Brand",
+              "gap": 14,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "oQkjS",
+                  "name": "Seal Mark",
+                  "width": 34,
+                  "height": 34,
+                  "fill": "$rx-brand-primary",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "m1eyB",
+                      "name": "Seal Glyph",
+                      "fill": "#ffffff",
+                      "content": "X",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "iQNoO",
+                  "name": "RadishX Brand Word",
+                  "fill": "$rx-text-primary",
+                  "content": "RadishX",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 23,
+                  "fontWeight": "650"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zmLxY",
+              "name": "Orbit Nav Links",
+              "gap": 26,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "T7Zam",
+                  "name": "Orbit Nav Project Orbit",
+                  "fill": "$rx-text-secondary",
+                  "content": "Project Orbit",
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "NjGNw",
+                  "name": "Orbit Nav Mascot",
+                  "fill": "$rx-text-secondary",
+                  "content": "Mascot",
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "V8aixW",
+                  "name": "Orbit Nav About",
+                  "fill": "$rx-text-secondary",
+                  "content": "About",
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "mSyOY",
+                  "name": "Orbit Nav GitHub",
+                  "fill": "$rx-brand-primary",
+                  "content": "GitHub",
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Hzr4T",
+          "name": "Orbit Hero",
+          "width": "fill_container",
+          "height": 760,
+          "fill": "$rx-bg-app",
+          "gap": 42,
+          "padding": [
+            48,
+            72,
+            72,
+            72
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "r69GB",
+              "name": "Hero Story Column",
+              "width": 510,
+              "layout": "vertical",
+              "gap": 22,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "TzORq",
+                  "name": "Hero Badge",
+                  "fill": "$rx-brand-primary",
+                  "content": "RADISH ORBIT  /  PROJECT MATRIX",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "l6wFh",
+                  "name": "Hero Main Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "把四个项目，种成一个宇宙。",
+                  "lineHeight": 1.08,
+                  "fontFamily": "$rx-font-serif",
+                  "fontSize": 64,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "Ww3A1",
+                  "name": "Hero Story",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "RadishX 不是普通官网，而是 Radish 系列的品牌星图：社区、游戏、工程模拟和智能层从同一个萝卜 IP 出发，各自生长。",
+                  "lineHeight": 1.65,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "VTahF",
+                  "name": "Hero Action Rail",
+                  "gap": 14,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "XvQEq",
+                      "name": "Primary Action Projects",
+                      "fill": "$rx-bg-ink",
+                      "cornerRadius": "$rx-radius-control",
+                      "padding": [
+                        14,
+                        24
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xV0qX",
+                          "name": "Primary Action Label",
+                          "fill": "#ffffff",
+                          "content": "查看项目星图",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vtslY",
+                      "name": "Secondary Action Mascot",
+                      "fill": "$rx-brand-soft",
+                      "cornerRadius": "$rx-radius-control",
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "padding": [
+                        14,
+                        20
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ATErd",
+                          "name": "Secondary Action Label",
+                          "fill": "$rx-text-primary",
+                          "content": "虚拟形象",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NOzlj",
+                  "name": "Domain Ledger",
+                  "fill": "#fbf7f0cc",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    18,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "YdHvm",
+                      "name": "Ledger Row root",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "OM9M6",
+                          "name": "Ledger Key root",
+                          "fill": "$rx-text-muted",
+                          "content": "root",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "h8xrOV",
+                          "name": "Ledger Value root",
+                          "fill": "$rx-text-secondary",
+                          "content": "radishx.com",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TYdMv",
+                      "name": "Ledger Row labs",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jEsWF",
+                          "name": "Ledger Key labs",
+                          "fill": "$rx-text-muted",
+                          "content": "labs",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JwUdZ",
+                          "name": "Ledger Value labs",
+                          "fill": "$rx-text-secondary",
+                          "content": "x.radishx.com",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "g5KCx",
+                      "name": "Ledger Row repo",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jsa6d",
+                          "name": "Ledger Key repo",
+                          "fill": "$rx-text-muted",
+                          "content": "repo",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JOB3Z",
+                          "name": "Ledger Value repo",
+                          "fill": "$rx-text-secondary",
+                          "content": "github.com/laugh0608/RadishX",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "JeEkB",
+              "name": "Project Orbit Map",
+              "width": 744,
+              "height": 590,
+              "fill": "#fbf7f099",
+              "cornerRadius": 8,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "m2FM0",
+                  "x": 82,
+                  "y": 52,
+                  "name": "Outer Ink Ring",
+                  "fill": "#ffffff00",
+                  "width": 500,
+                  "height": 500,
+                  "stroke": "$rx-pattern-line",
+                  "strokeWidth": 2
+                },
+                {
+                  "type": "ellipse",
+                  "id": "A4ZuFI",
+                  "x": 154,
+                  "y": 124,
+                  "name": "Inner Ink Ring",
+                  "fill": "#ffffff00",
+                  "width": 356,
+                  "height": 356,
+                  "stroke": "#b2405733",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "X2Hn38",
+                  "x": 274,
+                  "y": 224,
+                  "name": "Center Radish Seed",
+                  "width": 150,
+                  "height": 150,
+                  "fill": "$rx-bg-app",
+                  "cornerRadius": 75,
+                  "stroke": "$rx-brand-primary",
+                  "strokeWidth": 2,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hdKJO",
+                      "name": "Center Seed X",
+                      "fill": "$rx-text-primary",
+                      "content": "RadishX",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 22,
+                      "fontWeight": "650"
+                    },
+                    {
+                      "type": "text",
+                      "id": "RMNeK",
+                      "name": "Center Seed Note",
+                      "fill": "$rx-text-muted",
+                      "content": "brand root",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "p5Zos",
+                  "x": 104,
+                  "y": 96,
+                  "name": "Orbit Node Radish",
+                  "width": 170,
+                  "height": 92,
+                  "fill": "#fbf7f0",
+                  "cornerRadius": 8,
+                  "stroke": "#b24057",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    16,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "YXGgC",
+                      "name": "Radish Node Title",
+                      "fill": "$rx-text-primary",
+                      "content": "Radish",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 20,
+                      "fontWeight": "650"
+                    },
+                    {
+                      "type": "text",
+                      "id": "M6L7dO",
+                      "name": "Radish Node Domain",
+                      "fill": "#b24057",
+                      "content": "hub.radishx.com",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NhSYi",
+                  "x": 438,
+                  "y": 92,
+                  "name": "Orbit Node Catalyst",
+                  "width": 170,
+                  "height": 92,
+                  "fill": "#fbf7f0",
+                  "cornerRadius": 8,
+                  "stroke": "#886349",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    16,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "J1inv",
+                      "name": "Catalyst Node Title",
+                      "fill": "$rx-text-primary",
+                      "content": "Catalyst",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 20,
+                      "fontWeight": "650"
+                    },
+                    {
+                      "type": "text",
+                      "id": "qRS78",
+                      "name": "Catalyst Node Domain",
+                      "fill": "#886349",
+                      "content": "forge.radishx.com",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xev0I",
+                  "x": 456,
+                  "y": 398,
+                  "name": "Orbit Node Flow",
+                  "width": 170,
+                  "height": 92,
+                  "fill": "#fbf7f0",
+                  "cornerRadius": 8,
+                  "stroke": "#435c74",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    16,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TRGzz",
+                      "name": "Flow Node Title",
+                      "fill": "$rx-text-primary",
+                      "content": "Flow",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 20,
+                      "fontWeight": "650"
+                    },
+                    {
+                      "type": "text",
+                      "id": "QBgdZ",
+                      "name": "Flow Node Domain",
+                      "fill": "#435c74",
+                      "content": "flow.radishx.com",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "REOdh",
+                  "x": 92,
+                  "y": 394,
+                  "name": "Orbit Node Mind",
+                  "width": 170,
+                  "height": 92,
+                  "fill": "#fbf7f0",
+                  "cornerRadius": 8,
+                  "stroke": "#846992",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    16,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "B7Vslg",
+                      "name": "Mind Node Title",
+                      "fill": "$rx-text-primary",
+                      "content": "Mind",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 20,
+                      "fontWeight": "650"
+                    },
+                    {
+                      "type": "text",
+                      "id": "djDFC",
+                      "name": "Mind Node Domain",
+                      "fill": "#846992",
+                      "content": "mind.radishx.com",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "path",
+                  "id": "L5F1a",
+                  "x": 252,
+                  "y": 168,
+                  "name": "Orbit Path Radish",
+                  "geometry": "M0 80c28-60 62-80 110-62",
+                  "viewBox": [
+                    0,
+                    0,
+                    110,
+                    80
+                  ],
+                  "fill": "#ffffff00",
+                  "width": 110,
+                  "height": 80,
+                  "stroke": "#b2405744",
+                  "strokeWidth": 2
+                },
+                {
+                  "type": "path",
+                  "id": "fKTGT",
+                  "x": 412,
+                  "y": 168,
+                  "name": "Orbit Path Catalyst",
+                  "geometry": "M0 0c40 18 76 48 92 94",
+                  "viewBox": [
+                    0,
+                    0,
+                    92,
+                    94
+                  ],
+                  "fill": "#ffffff00",
+                  "width": 92,
+                  "height": 94,
+                  "stroke": "#88634944",
+                  "strokeWidth": 2
+                },
+                {
+                  "type": "path",
+                  "id": "J7aDg0",
+                  "x": 406,
+                  "y": 344,
+                  "name": "Orbit Path Flow",
+                  "geometry": "M92 0c-22 52-54 82-92 98",
+                  "viewBox": [
+                    0,
+                    0,
+                    92,
+                    98
+                  ],
+                  "fill": "#ffffff00",
+                  "width": 92,
+                  "height": 98,
+                  "stroke": "#435c7444",
+                  "strokeWidth": 2
+                },
+                {
+                  "type": "path",
+                  "id": "ZZjpJ",
+                  "x": 226,
+                  "y": 350,
+                  "name": "Orbit Path Mind",
+                  "geometry": "M112 0c-42 22-84 52-112 92",
+                  "viewBox": [
+                    0,
+                    0,
+                    112,
+                    92
+                  ],
+                  "fill": "#ffffff00",
+                  "width": 112,
+                  "height": 92,
+                  "stroke": "#84699244",
+                  "strokeWidth": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "M2SVxW",
+                  "x": 572,
+                  "y": 304,
+                  "name": "Mascot Silhouette Placeholder",
+                  "width": 118,
+                  "height": 190,
+                  "fill": "$rx-brand-soft",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "K2qsS",
+                      "name": "Mascot Ghost Label",
+                      "fill": "$rx-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 86,
+                      "content": "Mascot\n候选",
+                      "lineHeight": 1.4,
+                      "textAlign": "center",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "mHu53",
+          "name": "Project Gates",
+          "width": "fill_container",
+          "height": 760,
+          "fill": "$rx-bg-surface",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            64,
+            72
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "utMZJ",
+              "name": "Project Gates Title",
+              "fill": "$rx-text-primary",
+              "content": "项目不是卡片，是四道入口。",
+              "fontFamily": "$rx-font-serif",
+              "fontSize": 42,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "ueg5n",
+              "name": "Project Gate Row 1",
+              "width": "fill_container",
+              "height": 260,
+              "gap": 28,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "eNKx5",
+                  "name": "Gate Radish",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#f6f1e8",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "gap": 20,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "GM8Rz",
+                      "name": "Radish Gate Copy",
+                      "width": 330,
+                      "layout": "vertical",
+                      "gap": 11,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "O9Oi1X",
+                          "name": "Radish Gate Domain",
+                          "fill": "#b24057",
+                          "content": "hub.radishx.com",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "noC2m",
+                          "name": "Radish Gate Title",
+                          "fill": "$rx-text-primary",
+                          "content": "Radish",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 30,
+                          "fontWeight": "650"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dsybs",
+                          "name": "Radish Gate Text",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "社区 / 工作台 / 内容生态",
+                          "lineHeight": 1.45,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "fqPtg",
+                      "name": "Radish Gate Media",
+                      "width": 180,
+                      "height": 180,
+                      "fill": "#b2405718",
+                      "cornerRadius": 8,
+                      "stroke": "#b24057",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NJ8Q0",
+                          "name": "Radish Gate Media Note",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": 120,
+                          "content": "待审核\n素材",
+                          "lineHeight": 1.35,
+                          "textAlign": "center",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "iyKcP",
+                  "name": "Gate RadishCatalyst",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#efe7db",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "gap": 20,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "G2Wu4S",
+                      "name": "RadishCatalyst Gate Copy",
+                      "width": 330,
+                      "layout": "vertical",
+                      "gap": 11,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "fwtV3",
+                          "name": "RadishCatalyst Gate Domain",
+                          "fill": "#886349",
+                          "content": "forge.radishx.com",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "UZc4I",
+                          "name": "RadishCatalyst Gate Title",
+                          "fill": "$rx-text-primary",
+                          "content": "RadishCatalyst",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 30,
+                          "fontWeight": "650"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kVEev",
+                          "name": "RadishCatalyst Gate Text",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "异星基地 / 角色 / 工业科幻",
+                          "lineHeight": 1.45,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Om7Jk",
+                      "name": "RadishCatalyst Gate Media",
+                      "width": 180,
+                      "height": 180,
+                      "fill": "#88634918",
+                      "cornerRadius": 8,
+                      "stroke": "#886349",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "RBBpv",
+                          "name": "RadishCatalyst Gate Media Note",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": 120,
+                          "content": "待审核\n素材",
+                          "lineHeight": 1.35,
+                          "textAlign": "center",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hImHc",
+              "name": "Project Gate Row 2",
+              "width": "fill_container",
+              "height": 260,
+              "gap": 28,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dvyfY",
+                  "name": "Gate RadishFlow",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#efe7db",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "gap": 20,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "RkoS7",
+                      "name": "RadishFlow Gate Copy",
+                      "width": 330,
+                      "layout": "vertical",
+                      "gap": 11,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CNLnc",
+                          "name": "RadishFlow Gate Domain",
+                          "fill": "#435c74",
+                          "content": "flow.radishx.com",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "k838m",
+                          "name": "RadishFlow Gate Title",
+                          "fill": "$rx-text-primary",
+                          "content": "RadishFlow",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 30,
+                          "fontWeight": "650"
+                        },
+                        {
+                          "type": "text",
+                          "id": "IAk7H",
+                          "name": "RadishFlow Gate Text",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "流程图 / 物性 / 求解结果",
+                          "lineHeight": 1.45,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ngmmk",
+                      "name": "RadishFlow Gate Media",
+                      "width": 180,
+                      "height": 180,
+                      "fill": "#435c7418",
+                      "cornerRadius": 8,
+                      "stroke": "#435c74",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "O5ptN",
+                          "name": "RadishFlow Gate Media Note",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": 120,
+                          "content": "待审核\n素材",
+                          "lineHeight": 1.35,
+                          "textAlign": "center",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "aZU3R",
+                  "name": "Gate RadishMind",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#f6f1e8",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "gap": 20,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "lgbC6",
+                      "name": "RadishMind Gate Copy",
+                      "width": 330,
+                      "layout": "vertical",
+                      "gap": 11,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "J8quAa",
+                          "name": "RadishMind Gate Domain",
+                          "fill": "#846992",
+                          "content": "mind.radishx.com",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "adVpv",
+                          "name": "RadishMind Gate Title",
+                          "fill": "$rx-text-primary",
+                          "content": "RadishMind",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 30,
+                          "fontWeight": "650"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TDEry",
+                          "name": "RadishMind Gate Text",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "协议 / 评测 / 工具编排",
+                          "lineHeight": 1.45,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "I4R6n",
+                      "name": "RadishMind Gate Media",
+                      "width": 180,
+                      "height": 180,
+                      "fill": "#84699218",
+                      "cornerRadius": 8,
+                      "stroke": "#846992",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CWIDs",
+                          "name": "RadishMind Gate Media Note",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": 120,
+                          "content": "待审核\n素材",
+                          "lineHeight": 1.35,
+                          "textAlign": "center",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "yHUwA",
+          "name": "Mascot Story Dock",
+          "width": "fill_container",
+          "height": 368,
+          "fill": "$rx-bg-app",
+          "gap": 36,
+          "padding": [
+            52,
+            72
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "kxtcm",
+              "name": "Mascot Origin Token",
+              "width": 230,
+              "height": 230,
+              "fill": "#fbf7f0",
+              "cornerRadius": 8,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "zAaxk",
+                  "name": "Mascot Origin Text",
+                  "fill": "$rx-text-secondary",
+                  "content": "原始萝卜",
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "M9aPsr",
+              "name": "Mascot Child Token",
+              "width": 230,
+              "height": 230,
+              "fill": "$rx-brand-soft",
+              "cornerRadius": 8,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JZFLz",
+                  "name": "Mascot Child Text",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 150,
+                  "content": "儿童形态\n安全候选",
+                  "lineHeight": 1.35,
+                  "textAlign": "center",
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "b3EwP",
+              "name": "Mascot Mature Token",
+              "width": 230,
+              "height": 230,
+              "fill": "#efe7db",
+              "cornerRadius": 8,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "WDQlf",
+                  "name": "Mascot Mature Text",
+                  "fill": "$rx-text-secondary",
+                  "content": "成熟形态",
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jVvuA",
+              "name": "Mascot Dock Copy",
+              "width": 470,
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rdSkd",
+                  "name": "Mascot Dock Eyebrow",
+                  "fill": "$rx-brand-primary",
+                  "content": "BRAND CHARACTER",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "T4YS4H",
+                  "name": "Mascot Dock Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "让官网先记住萝卜，再介绍项目。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-serif",
+                  "fontSize": 34,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "QaezT",
+                  "name": "Mascot Dock Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "虚拟形象不是装饰贴纸，而是 RadishX 的品牌锚点。页面设计中角色图会服务叙事和入口，而不是覆盖内容。",
+                  "lineHeight": 1.55,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "variables": {
