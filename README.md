@@ -1,13 +1,13 @@
 # RadishX
 
-RadishX 是 Radish 系列项目的官网与统一入口。这个仓库计划作为 `radishx.com` 的根站点，通过 GitHub 托管代码，并使用 Vercel 的免费额度进行部署。
+RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 RadishX 官网根站点，通过 GitHub 托管代码，并使用 Vercel 免费额度部署；当前已验证 <https://www.radishx.com/> 可访问，`radishx.com` 与 `www.radishx.com` 的规范化关系待确认。
 
-当前仓库状态：基础仓库和远程仓库已创建，官网定位、页面内容、域名结构和素材归档已完成首轮规划；Vite + React + TypeScript 官网骨架已初始化，并接入路由、数据层、favicon 和 `--rx-*` 样式 token。
+当前仓库状态：基础仓库和远程仓库已创建，官网定位、页面内容、域名结构和素材归档已完成首轮规划；Vite + React + TypeScript 官网骨架已初始化，并接入路由、数据层、favicon、metadata 和 `--rx-*` 样式 token；已完成首次线上访问和站内路由 fallback 检查。
 
 ## 已确认方向
 
 - 技术栈：`Vite + React + TypeScript`
-- 部署目标：GitHub 仓库 + Vercel 免费部署
+- 部署目标：GitHub 仓库 + Vercel 免费部署，当前已验证 `https://www.radishx.com/`
 - 页面结构：首页 + 四个项目详情页 + About 页面 + 虚拟形象页面
 - 官网气质：偏创意品牌、游戏感和视觉冲击，参考 Apple 官网的克制文案、大幅视觉、清晰节奏和强产品呈现，同时继承 Radish 的淡雅新中式、纸感、印色感和低饱和轻纹样
 - 设计流程：先在 `docs/design/sources/radishx-site-v0.pen` 完成页面设计稿，审核后再进入 React 实现
@@ -60,6 +60,7 @@ npm run build
 根域名：
 
 - `radishx.com`：RadishX 官网首页，展示整个 Radish 项目矩阵。
+- `www.radishx.com`：当前已验证可访问入口；后续需确认与根域名的 canonical / redirect 策略。
 
 建议的四个项目子域名：
 
@@ -84,7 +85,8 @@ npm run build
 
 当前部署边界：
 
-- 只有 `radishx.com` 这个官网项目部署在 Vercel。
+- 当前官网 Vercel 项目承载 RadishX 官网，`https://www.radishx.com/` 已通过首次线上 smoke。
+- `radishx.com` 与 `www.radishx.com` 的规范化关系仍需在 Vercel / DNS 配置中确认。
 - 首页、四个项目介绍页、虚拟形象页和 About 页面都属于本官网项目。
 - `hub.radishx.com`、`forge.radishx.com`、`flow.radishx.com`、`mind.radishx.com` 是未来四个项目各自上线后的独立域名。
 - 官网中的项目详情页可以展示这些域名作为“访问项目”按钮；对应项目还没上线前，可以先禁用按钮或标注 Coming Soon。
