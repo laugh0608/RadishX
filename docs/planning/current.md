@@ -4,7 +4,7 @@
 
 ## 当前阶段
 
-RadishX 当前处于官网项目初始化前的 Pencil 设计稿阶段。
+RadishX 当前处于官网项目初始化后的 React 实现阶段。
 
 已完成：
 
@@ -25,6 +25,12 @@ RadishX 当前处于官网项目初始化前的 Pencil 设计稿阶段。
 - 完成 `Mascot Page v1` 与 `About Page v1` 桌面版设计稿。
 - 确认第一版项目详情页暂不放真实截图和视频素材，使用图形化候选媒体框和项目状态信息承载视觉区域。
 - 确认萝小白原始形象可作为站点图标和第一版临时 Logo，并生成 `public/favicon.ico`。
+- 初始化 Vite + React + TypeScript 官网骨架。
+- 建立 `src/` 推荐目录结构，接入轻量路由、项目数据层、联系方式数据层和 Mascot 数据层。
+- 接入 `public/favicon.ico` 作为站点图标、导航图标和第一版临时 Logo。
+- 建立 `src/styles/tokens.css`、`global.css` 和 `utilities.css`，落地 `--rx-*` 语义 token。
+- 实现首页、四个项目详情页、Mascot 页、About 页和 404 页面首版响应式骨架。
+- 添加 `vercel.json`，为官网站内 History API 路由提供 `index.html` fallback。
 
 ## 产品边界
 
@@ -67,5 +73,6 @@ RadishX 当前处于官网项目初始化前的 Pencil 设计稿阶段。
 1. 审核 `Home Mobile v1 - Radish Orbit`、项目详情模板、Mascot 页和 About 页设计稿。
 2. 审核首页和 Mascot 页首批候选图，确认哪些素材可进入正式实现。
 3. 视审核结果补项目详情模板、Mascot 页和 About 页移动版设计稿，或在实现阶段按桌面稿拆响应式布局。
-4. 初始化 Vite + React + TypeScript 项目，接入 `public/favicon.ico`、路由、数据层和样式 token。
-5. 实现静态多页面官网骨架并完成 PC / 移动端响应式首轮验证。
+4. 继续细化 React 页面视觉，优先根据 Pencil v1 调整首页项目星图、项目详情页模板、Mascot 页和 About 页。
+5. 审核首页和 Mascot 页首批候选图，确认可进入 `public/images/` 的正式页面素材。
+6. 补充或确认项目详情模板、Mascot 页和 About 页移动端设计口径，并继续做 PC / 移动端响应式验证。

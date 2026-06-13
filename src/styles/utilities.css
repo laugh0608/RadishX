@@ -1,0 +1,60 @@
+.orbit-visual__project--radish,
+.related-project--radish {
+  border-color: rgba(79, 156, 131, 0.28);
+}
+
+.orbit-visual__project--catalyst,
+.related-project--catalyst {
+  border-color: rgba(136, 99, 73, 0.3);
+}
+
+.orbit-visual__project--flow,
+.related-project--flow {
+  border-color: rgba(67, 92, 116, 0.3);
+}
+
+.orbit-visual__project--mind,
+.related-project--mind {
+  border-color: rgba(132, 105, 146, 0.3);
+}
+
+.project-hero--radish {
+  background: linear-gradient(160deg, rgba(79, 156, 131, 0.13), transparent 52%);
+}
+
+.project-hero--catalyst {
+  background: linear-gradient(160deg, rgba(136, 99, 73, 0.13), transparent 52%);
+}
+
+.project-hero--flow {
+  background: linear-gradient(160deg, rgba(67, 92, 116, 0.13), transparent 52%);
+}
+
+.project-hero--mind {
+  background: linear-gradient(160deg, rgba(132, 105, 146, 0.13), transparent 52%);
+}
+
+.project-band--radish {
+  background: linear-gradient(105deg, rgba(79, 156, 131, 0.1), rgba(251, 247, 240, 0.92));
+}
+
+.project-band--catalyst {
+  background: linear-gradient(105deg, rgba(136, 99, 73, 0.1), rgba(251, 247, 240, 0.92));
+}
+
+.project-band--flow {
+  background: linear-gradient(105deg, rgba(67, 92, 116, 0.1), rgba(251, 247, 240, 0.92));
+}
+
+.project-band--mind {
+  background: linear-gradient(105deg, rgba(132, 105, 146, 0.1), rgba(251, 247, 240, 0.92));
+}
+
+@media (max-width: 640px) {
+  .project-band--radish,
+  .project-band--catalyst,
+  .project-band--flow,
+  .project-band--mind {
+    background: var(--rx-bg-surface);
+  }
+}

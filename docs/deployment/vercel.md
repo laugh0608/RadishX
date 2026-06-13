@@ -37,6 +37,21 @@
 - Build command：`npm run build`
 - Output directory：`dist`
 
+当前 React 官网使用浏览器 History API 做站内路由，因此需要将站内路径回退到 `index.html`。仓库根目录已添加 `vercel.json`：
+
+```json
+{
+  "rewrites": [
+    {
+      "source": "/((?!favicon.ico|assets/.*|images/.*).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+```
+
+该配置只处理官网自身的静态页面路径，不包含四个未来项目域名。
+
 ## 不在当前阶段做
 
 - 不为四个未来项目域名配置 Vercel 重写。

@@ -1,0 +1,30 @@
+:root {
+  --rx-bg-app: #f4efe6;
+  --rx-bg-surface: #fbf7f0;
+  --rx-bg-muted: #efe7db;
+  --rx-bg-ink: #11100f;
+  --rx-text-primary: #2f2a25;
+  --rx-text-secondary: #6a5c4f;
+  --rx-text-muted: #8d7b6c;
+  --rx-border-soft: rgba(136, 99, 73, 0.18);
+  --rx-border-strong: rgba(136, 99, 73, 0.32);
+  --rx-brand-primary: #b24057;
+  --rx-brand-soft: rgba(178, 64, 87, 0.14);
+  --rx-accent-jade: #4f9c83;
+  --rx-accent-ink: #435c74;
+  --rx-accent-earth: #886349;
+  --rx-accent-purple: #846992;
+  --rx-state-success: #4f9c83;
+  --rx-state-warning: #b5826d;
+  --rx-state-danger: #c3564d;
+  --rx-pattern-line: rgba(122, 92, 64, 0.14);
+  --rx-shadow-soft: 0 16px 40px rgba(91, 66, 44, 0.12);
+  --rx-radius-card: 8px;
+  --rx-radius-control: 999px;
+  --rx-font-body: Inter, "PingFang SC", "Microsoft YaHei UI", "Noto Sans SC", system-ui, sans-serif;
+  --rx-font-heading: Geist, Inter, "PingFang SC", "Microsoft YaHei UI", system-ui, sans-serif;
+  --rx-font-serif: "Noto Serif SC", "Songti SC", STSong, serif;
+  --rx-font-mono: "Geist Mono", "SFMono-Regular", Consolas, monospace;
+  --rx-space-page-x: clamp(20px, 5vw, 72px);
+  --rx-content-max: 1180px;
+}

@@ -1,0 +1,48 @@
+import { projects } from "../../data/projects";
+import { RouteLink } from "../ui/RouteLink";
+import { StatusChip } from "../ui/StatusChip";
+
+export function HeroOrbit() {
+  return (
+    <section className="hero-section">
+      <div className="hero-section__content">
+        <div className="hero-section__copy">
+          <p className="eyebrow">radishx.com</p>
+          <h1>Radish 系列项目矩阵</h1>
+          <p>
+            一个温润、克制、带一点游戏感的统一入口，连接内容社区、异星工业游戏、流程模拟软件与智能工具实验。
+          </p>
+          <div className="hero-section__actions">
+            <RouteLink className="button button--primary" to="/#projects">
+              查看项目
+            </RouteLink>
+            <RouteLink className="button button--secondary" to="/mascot">
+              认识萝小白
+            </RouteLink>
+          </div>
+          <div className="hero-section__chips" aria-label="站点状态">
+            <StatusChip tone="brand">Source Available</StatusChip>
+            <StatusChip tone="ink">Vite + React + TypeScript</StatusChip>
+            <StatusChip tone="warning">Vercel Ready</StatusChip>
+          </div>
+        </div>
+        <div className="orbit-visual" aria-label="RadishX 项目星图">
+          <div className="orbit-visual__center">
+            <img src="/favicon.ico" width="72" height="72" alt="RadishX 临时 Logo" />
+            <span>RadishX</span>
+          </div>
+          {projects.map((project, index) => (
+            <RouteLink
+              key={project.id}
+              className={`orbit-visual__project orbit-visual__project--${project.tone} orbit-visual__project--${index}`}
+              to={project.path}
+            >
+              <strong>{project.name}</strong>
+              <span>{project.orbitLabel}</span>
+            </RouteLink>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
