@@ -30,6 +30,10 @@ export function MediaFrame({ project, compact = false }: MediaFrameProps) {
         </div>
         <span>{project.orbitLabel}</span>
       </div>
+      <div className="media-frame__note">
+        <span>Visual placeholder</span>
+        <strong>第一版暂不展示真实截图或视频</strong>
+      </div>
     </div>
   );
 }

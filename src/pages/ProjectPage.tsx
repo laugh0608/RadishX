@@ -13,6 +13,20 @@ type ProjectPageProps = {
 export function ProjectPage({ projectId }: ProjectPageProps) {
   const project = projectById[projectId];
   const siblings = projects.filter((item) => item.id !== projectId);
+  const heroFacts = [
+    {
+      label: "Route",
+      value: project.path,
+    },
+    {
+      label: "Future Domain",
+      value: project.futureDomain,
+    },
+    {
+      label: "Repository",
+      value: project.githubUrl.replace("https://github.com/", ""),
+    },
+  ];
   const projectInfo = [
     {
       label: "Route",
@@ -30,6 +44,11 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
       href: project.githubUrl,
       note: project.status,
     },
+    {
+      label: "Visual",
+      value: "图形化候选媒体框",
+      note: "No screenshots",
+    },
   ];
 
   return (
@@ -46,6 +65,14 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
                 <StatusChip key={chip}>{chip}</StatusChip>
               ))}
             </div>
+            <dl className="project-hero__facts" aria-label={`${project.name} 公开信息摘要`}>
+              {heroFacts.map((fact) => (
+                <div key={fact.label}>
+                  <dt>{fact.label}</dt>
+                  <dd>{fact.value}</dd>
+                </div>
+              ))}
+            </dl>
             <div className="project-hero__actions">
               {project.links.map((link) =>
                 link.isDisabled ? (
@@ -126,6 +153,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
           <div className="related-projects">
             {siblings.map((sibling) => (
               <RouteLink key={sibling.id} className={`related-project related-project--${sibling.tone}`} to={sibling.path}>
+                <span className="related-project__meta">{sibling.futureDomain}</span>
                 <strong>{sibling.name}</strong>
                 <span>{sibling.tagline}</span>
               </RouteLink>
