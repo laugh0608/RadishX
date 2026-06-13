@@ -67,15 +67,15 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(42px, 8vw, 84px);
+  font-size: 80px;
 }
 
 h2 {
-  font-size: clamp(30px, 5vw, 48px);
+  font-size: 46px;
 }
 
 h3 {
-  font-size: clamp(22px, 4vw, 30px);
+  font-size: 30px;
 }
 
 p {
@@ -528,6 +528,52 @@ p {
   max-width: 620px;
 }
 
+.project-band__domain {
+  display: grid;
+  gap: 6px;
+  padding: 14px 0;
+  border-top: 1px solid var(--rx-border-soft);
+  border-bottom: 1px solid var(--rx-border-soft);
+}
+
+.project-band__domain span {
+  color: var(--rx-text-muted);
+  font-family: var(--rx-font-mono);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.project-band__domain strong {
+  color: var(--rx-text-primary);
+  font-size: 15px;
+}
+
+.project-band__signals {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  color: var(--rx-text-secondary);
+  font-size: 14px;
+  list-style: none;
+}
+
+.project-band__signals li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.project-band__signals li::before {
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--rx-brand-primary);
+  content: "";
+}
+
 .media-frame {
   position: relative;
   display: grid;
@@ -641,9 +687,20 @@ p {
   padding-top: 260px;
 }
 
+.media-frame__body > div {
+  display: grid;
+  gap: 6px;
+}
+
 .media-frame__body strong {
   color: var(--rx-text-primary);
   font-size: 14px;
+}
+
+.media-frame__body > span {
+  color: var(--rx-text-muted);
+  font-family: var(--rx-font-mono);
+  font-size: 12px;
   text-align: right;
 }
 
@@ -1013,6 +1070,18 @@ p {
     overflow-x: auto;
   }
 
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
   .hero-section {
     min-height: 0;
     padding-top: 48px;
@@ -1071,6 +1140,10 @@ p {
 
   h2 {
     font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
   }
 
   p {
@@ -1170,6 +1243,10 @@ p {
     align-items: flex-start;
     flex-direction: column;
     padding-top: 210px;
+  }
+
+  .media-frame__body > span {
+    text-align: left;
   }
 
   .ecosystem-grid,

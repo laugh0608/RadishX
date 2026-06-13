@@ -46,16 +46,32 @@
   background: linear-gradient(105deg, rgba(79, 156, 131, 0.1), rgba(251, 247, 240, 0.92));
 }
 
+.project-band--radish .project-band__signals li::before {
+  background: var(--rx-accent-jade);
+}
+
 .project-band--catalyst {
   background: linear-gradient(105deg, rgba(136, 99, 73, 0.1), rgba(251, 247, 240, 0.92));
+}
+
+.project-band--catalyst .project-band__signals li::before {
+  background: var(--rx-accent-earth);
 }
 
 .project-band--flow {
   background: linear-gradient(105deg, rgba(67, 92, 116, 0.1), rgba(251, 247, 240, 0.92));
 }
 
+.project-band--flow .project-band__signals li::before {
+  background: var(--rx-accent-ink);
+}
+
 .project-band--mind {
   background: linear-gradient(105deg, rgba(132, 105, 146, 0.1), rgba(251, 247, 240, 0.92));
+}
+
+.project-band--mind .project-band__signals li::before {
+  background: var(--rx-accent-purple);
 }
 
 @media (max-width: 640px) {

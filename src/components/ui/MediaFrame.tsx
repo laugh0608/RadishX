@@ -24,8 +24,11 @@ export function MediaFrame({ project, compact = false }: MediaFrameProps) {
         </span>
       </div>
       <div className="media-frame__body">
-        <p>{project.shortName}</p>
-        <strong>{project.stage}</strong>
+        <div>
+          <p>{project.shortName}</p>
+          <strong>{project.stage}</strong>
+        </div>
+        <span>{project.orbitLabel}</span>
       </div>
     </div>
   );

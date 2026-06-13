@@ -22,6 +22,15 @@ export function ProjectBand({ project, index }: ProjectBandProps) {
         </div>
         <h3>{project.name}</h3>
         <p>{project.summary}</p>
+        <div className="project-band__domain" aria-label={`${project.name} 公开入口`}>
+          <span>{project.futureDomain}</span>
+          <strong>{project.role}</strong>
+        </div>
+        <ul className="project-band__signals">
+          {project.signals.map((signal) => (
+            <li key={signal}>{signal}</li>
+          ))}
+        </ul>
         <div className="project-band__actions">
           <RouteLink className="button button--primary" to={project.path}>
             查看详情

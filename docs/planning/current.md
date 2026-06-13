@@ -31,6 +31,8 @@ RadishX 当前处于官网项目初始化后的 React 实现阶段。
 - 建立 `src/styles/tokens.css`、`global.css` 和 `utilities.css`，落地 `--rx-*` 语义 token。
 - 实现首页、四个项目详情页、Mascot 页、About 页和 404 页面首版响应式骨架。
 - 添加 `vercel.json`，为官网站内 History API 路由提供 `index.html` fallback。
+- 细化首页项目 band 的信息层级，补充未来域名、项目角色和公开信号。
+- 细化图形化候选媒体框，补充项目短名、阶段和项目轨道标签。
 
 ## 产品边界
 
