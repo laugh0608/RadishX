@@ -93,6 +93,25 @@ p {
   overflow: hidden;
 }
 
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: var(--rx-space-page-x);
+  z-index: 100;
+  padding: 10px 14px;
+  border: 1px solid var(--rx-border-strong);
+  border-radius: var(--rx-radius-control);
+  background: var(--rx-bg-ink);
+  color: var(--rx-bg-surface);
+  font-size: 14px;
+  font-weight: 760;
+  transform: translateY(-160%);
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
 .site-header {
   position: sticky;
   top: 0;

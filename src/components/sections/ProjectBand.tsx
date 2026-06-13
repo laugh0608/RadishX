@@ -35,7 +35,7 @@ export function ProjectBand({ project, index }: ProjectBandProps) {
           <RouteLink className="button button--primary" to={project.path}>
             查看详情
           </RouteLink>
-          <a className="button button--secondary" href={project.githubUrl} target="_blank" rel="noreferrer">
+          <a className="button button--secondary" href={project.githubUrl} target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
         </div>

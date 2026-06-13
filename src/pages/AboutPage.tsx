@@ -25,7 +25,7 @@ export function AboutPage() {
                   className="contact-list__item"
                   href={contact.href}
                   target={contact.href.startsWith("http") ? "_blank" : undefined}
-                  rel="noreferrer"
+                  rel={contact.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 >
                   <span>{contact.label}</span>
                   <strong>{contact.value}</strong>
@@ -59,7 +59,7 @@ export function AboutPage() {
           />
           <div className="repo-grid">
             {repositories.map((repo) => (
-              <a key={repo.name} className="repo-card" href={repo.href} target="_blank" rel="noreferrer">
+              <a key={repo.name} className="repo-card" href={repo.href} target="_blank" rel="noopener noreferrer">
                 <span className="repo-card__meta">GitHub Repository</span>
                 <strong>{repo.name}</strong>
                 <span>{repo.description}</span>

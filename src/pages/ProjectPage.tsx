@@ -85,7 +85,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
                     className="button button--primary"
                     href={link.href}
                     target={link.isExternal ? "_blank" : undefined}
-                    rel={link.isExternal ? "noreferrer" : undefined}
+                    rel={link.isExternal ? "noopener noreferrer" : undefined}
                   >
                     {link.label}
                   </a>

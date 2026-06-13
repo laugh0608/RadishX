@@ -26,7 +26,7 @@ export function SiteHeader({ currentPath }: SiteHeaderProps) {
       <nav className="site-header__nav" aria-label="主导航">
         {mainNavigation.map((item) =>
           item.isExternal ? (
-            <a key={item.label} href={item.href} target="_blank" rel="noreferrer">
+            <a key={item.label} href={item.href} target="_blank" rel="noopener noreferrer">
               {item.label}
             </a>
           ) : (

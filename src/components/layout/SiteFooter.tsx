@@ -19,7 +19,7 @@ export function SiteFooter() {
         ))}
         <RouteLink to="/mascot">萝小白</RouteLink>
         <RouteLink to="/about">About</RouteLink>
-        <a href={radishXRepositoryUrl} target="_blank" rel="noreferrer">
+        <a href={radishXRepositoryUrl} target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
       </div>

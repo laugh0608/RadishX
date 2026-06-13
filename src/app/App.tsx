@@ -7,6 +7,7 @@ import { HomePage } from "../pages/HomePage";
 import { MascotPage } from "../pages/MascotPage";
 import { NotFoundPage } from "../pages/NotFoundPage";
 import { ProjectPage } from "../pages/ProjectPage";
+import { applyRouteMetadata } from "./metadata";
 import { resolveRoute } from "./routes";
 
 function getLocationSnapshot() {
@@ -14,13 +15,6 @@ function getLocationSnapshot() {
     hash: window.location.hash,
     pathname: window.location.pathname,
   };
-}
-
-function updateMetaDescription(description: string) {
-  const meta = document.querySelector<HTMLMetaElement>('meta[name="description"]');
-  if (meta) {
-    meta.content = description;
-  }
 }
 
 export function App() {
@@ -40,8 +34,7 @@ export function App() {
   }, []);
 
   useEffect(() => {
-    document.title = route.title;
-    updateMetaDescription(route.description);
+    applyRouteMetadata(route);
 
     if (location.hash) {
       const target = document.querySelector(location.hash);
@@ -70,8 +63,13 @@ export function App() {
 
   return (
     <div className="app-shell">
+      <a className="skip-link" href="#main-content">
+        跳到正文
+      </a>
       <SiteHeader currentPath={route.path} />
-      <main>{page}</main>
+      <main id="main-content" tabIndex={-1}>
+        {page}
+      </main>
       <SiteFooter />
     </div>
   );

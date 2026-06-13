@@ -31,56 +31,56 @@ export const appRoutes: AppRoute[] = [
   {
     kind: "home",
     path: "/",
-    title: "RadishX",
-    description: "Radish 系列项目矩阵官网与统一入口。",
+    title: "RadishX - Radish 系列项目矩阵",
+    description: "RadishX 是 Radish 系列项目的官网与统一入口，展示内容社区、游戏、流程模拟、智能工具和虚拟形象萝小白。",
   },
   {
     kind: "project",
     path: "/radish",
     projectId: "radish",
     title: "Radish - RadishX",
-    description: "现代化内容社区与 WebOS 风格工作台。",
+    description: "Radish 是 RadishX 的内容社区与 WebOS 风格工作台，承载公开内容、项目入口和长期社区方向。",
   },
   {
     kind: "project",
     path: "/catalyst",
     projectId: "catalyst",
     title: "RadishCatalyst - RadishX",
-    description: "异星工业科幻 ARPG 与角色探索项目。",
+    description: "RadishCatalyst 是 RadishX 的异星工业科幻 ARPG 方向，聚焦角色探索、基地叙事和游戏化表达。",
   },
   {
     kind: "project",
     path: "/flow",
     projectId: "flow",
     title: "RadishFlow - RadishX",
-    description: "以 Rust 为核心的稳态流程模拟软件。",
+    description: "RadishFlow 是 RadishX 的稳态流程模拟软件方向，强调 Rust UI、工程可信感和流程画布。",
   },
   {
     kind: "project",
     path: "/mind",
     projectId: "mind",
     title: "RadishMind - RadishX",
-    description: "Radish 体系下的外部智能层与模型实验入口。",
+    description: "RadishMind 是 RadishX 的外部智能层与模型实验入口，聚焦协议、评测、工具编排和可审计能力。",
   },
   {
     kind: "mascot",
     path: "/mascot",
     title: "萝小白 - RadishX",
-    description: "RadishX 虚拟形象萝小白的三种形态与素材方向。",
+    description: "萝小白是 RadishX 的虚拟形象，当前页面展示原始形象、可爱Q版和虚拟形象完全体三种形态与素材口径。",
   },
   {
     kind: "about",
     path: "/about",
     title: "About - RadishX",
-    description: "RadishX 组织说明、联系方式和 GitHub 仓库入口。",
+    description: "了解 RadishX 的组织说明、联系方式、GitHub 仓库入口、微信公众号占位和 radishx.com 部署边界。",
   },
 ];
 
 export const notFoundRoute = (path: string): AppRoute => ({
   kind: "not-found",
   path,
-  title: "Not Found - RadishX",
-  description: "页面不存在。",
+  title: "页面不存在 - RadishX",
+  description: "该页面不存在。RadishX 当前开放首页、四个项目介绍页、Mascot 和 About。",
 });
 
 export function resolveRoute(pathname: string): AppRoute {
