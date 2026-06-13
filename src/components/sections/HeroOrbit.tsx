@@ -1,3 +1,4 @@
+import { homeVisualAssetSlots } from "../../data/homeVisuals";
 import { projects } from "../../data/projects";
 import { RouteLink } from "../ui/RouteLink";
 import { StatusChip } from "../ui/StatusChip";
@@ -27,20 +28,34 @@ export function HeroOrbit() {
           </div>
         </div>
         <div className="orbit-visual" aria-label="RadishX 项目星图">
-          <div className="orbit-visual__center">
-            <img src="/favicon.ico" width="72" height="72" alt="RadishX 临时 Logo" />
-            <span>RadishX</span>
+          <div className="orbit-visual__map">
+            <div className="orbit-visual__center">
+              <img src="/favicon.ico" width="72" height="72" alt="RadishX 临时 Logo" />
+              <span>RadishX</span>
+            </div>
+            {projects.map((project, index) => (
+              <RouteLink
+                key={project.id}
+                className={`orbit-visual__project orbit-visual__project--${project.tone} orbit-visual__project--${index}`}
+                to={project.path}
+              >
+                <strong>{project.name}</strong>
+                <span>{project.orbitLabel}</span>
+              </RouteLink>
+            ))}
           </div>
-          {projects.map((project, index) => (
-            <RouteLink
-              key={project.id}
-              className={`orbit-visual__project orbit-visual__project--${project.tone} orbit-visual__project--${index}`}
-              to={project.path}
-            >
-              <strong>{project.name}</strong>
-              <span>{project.orbitLabel}</span>
-            </RouteLink>
-          ))}
+          <div className="orbit-visual__asset-rail" aria-label="首页素材接入状态">
+            {homeVisualAssetSlots.map((slot) => (
+              <article key={slot.label} className="orbit-visual__asset-slot">
+                <div>
+                  <span>{slot.label}</span>
+                  <strong>{slot.title}</strong>
+                </div>
+                <mark>{slot.status}</mark>
+                <p>{slot.note}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </section>

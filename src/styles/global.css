@@ -252,7 +252,9 @@ p {
 
 .orbit-visual {
   position: relative;
-  min-height: 600px;
+  display: grid;
+  grid-template-rows: minmax(420px, 1fr) auto;
+  min-height: 620px;
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
   background:
@@ -263,8 +265,14 @@ p {
   overflow: hidden;
 }
 
-.orbit-visual::before,
-.orbit-visual::after {
+.orbit-visual__map {
+  position: relative;
+  z-index: 1;
+  min-height: 440px;
+}
+
+.orbit-visual__map::before,
+.orbit-visual__map::after {
   position: absolute;
   inset: 12%;
   content: "";
@@ -272,7 +280,7 @@ p {
   border-radius: 50%;
 }
 
-.orbit-visual::after {
+.orbit-visual__map::after {
   inset: 25%;
   transform: rotate(-12deg);
 }
@@ -339,6 +347,67 @@ p {
 .orbit-visual__project--3 {
   bottom: 66px;
   left: 38px;
+}
+
+.orbit-visual__asset-rail {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  padding: 0 18px 18px;
+}
+
+.orbit-visual__asset-slot {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  min-height: 126px;
+  padding: 14px;
+  border: 1px solid var(--rx-border-soft);
+  border-radius: 8px;
+  background: rgba(251, 247, 240, 0.9);
+  box-shadow: 0 10px 24px rgba(91, 66, 44, 0.08);
+}
+
+.orbit-visual__asset-slot > div {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.orbit-visual__asset-slot span,
+.orbit-visual__asset-slot mark {
+  font-family: var(--rx-font-mono);
+  font-size: 11px;
+  font-weight: 760;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.orbit-visual__asset-slot span {
+  color: var(--rx-text-muted);
+}
+
+.orbit-visual__asset-slot strong {
+  color: var(--rx-text-primary);
+  font-family: var(--rx-font-heading);
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.orbit-visual__asset-slot mark {
+  justify-self: start;
+  padding: 4px 8px;
+  border-radius: var(--rx-radius-control);
+  background: var(--rx-brand-soft);
+  color: var(--rx-brand-primary);
+}
+
+.orbit-visual__asset-slot p {
+  color: var(--rx-text-secondary);
+  font-size: 13px;
+  line-height: 1.55;
 }
 
 .section {
@@ -1341,7 +1410,16 @@ p {
   }
 
   .orbit-visual {
-    min-height: 540px;
+    grid-template-rows: minmax(430px, auto) auto;
+    min-height: 0;
+  }
+
+  .orbit-visual__map {
+    min-height: 430px;
+  }
+
+  .orbit-visual__asset-rail {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .project-band,
@@ -1443,36 +1521,67 @@ p {
   }
 
   .orbit-visual {
-    min-height: 600px;
+    grid-template-rows: auto auto;
+    min-height: 0;
+  }
+
+  .orbit-visual__map {
+    min-height: 520px;
   }
 
   .orbit-visual__center {
-    width: 140px;
-    height: 140px;
+    width: 132px;
+    height: 132px;
   }
 
   .orbit-visual__project {
-    width: min(236px, calc(100% - 36px));
+    width: min(218px, calc(100% - 28px));
+    padding: 14px;
   }
 
   .orbit-visual__project--0 {
-    top: 28px;
-    left: 18px;
+    top: 24px;
+    left: 14px;
   }
 
   .orbit-visual__project--1 {
-    top: 164px;
-    right: 18px;
+    top: 140px;
+    right: 14px;
   }
 
   .orbit-visual__project--2 {
-    right: 18px;
-    bottom: 144px;
+    right: 14px;
+    bottom: 116px;
   }
 
   .orbit-visual__project--3 {
-    bottom: 28px;
-    left: 18px;
+    bottom: 24px;
+    left: 14px;
+  }
+
+  .orbit-visual__asset-rail {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    padding: 0 12px 12px;
+  }
+
+  .orbit-visual__asset-slot {
+    gap: 6px;
+    min-height: 0;
+    padding: 10px;
+  }
+
+  .orbit-visual__asset-slot:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .orbit-visual__asset-slot strong {
+    font-size: 14px;
+  }
+
+  .orbit-visual__asset-slot p {
+    font-size: 12px;
+    line-height: 1.45;
   }
 
   .project-band,
