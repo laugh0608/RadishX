@@ -143,8 +143,8 @@ PC 和移动端都是一等目标。
 - 未审核图片可以出现在 Pencil 设计稿中，但必须标注候选状态。
 - 不覆盖原始素材。
 - 不批量裁切、压缩、重采样或转换格式，除非用户确认。
-- 儿童形态公开页面优先使用 `assets/avatars/child/radish-child-safe-design-sheet-v1.png`。
-- 不再推荐的儿童形态旧图不得进入公开页面设计稿或实现。
+- 可爱Q版公开页面优先使用 `assets/avatars/child/radish-child-safe-design-sheet-v1.png`。
+- 不再推荐的可爱Q版旧图不得进入公开页面设计稿或实现。
 - 微信公众号二维码只放 About 或联系区域，不放首页首屏。
 
 ## 可访问性和基础质量
