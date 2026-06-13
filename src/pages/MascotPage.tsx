@@ -1,6 +1,12 @@
 import { SectionHeader } from "../components/ui/SectionHeader";
 import { mascotForms, mascotGalleryNotes, mascotName } from "../data/mascot";
 
+const mascotRules = [
+  "可爱Q版公开素材必须完整外装、非性感化、无内衣展示、无身体拆解。",
+  "正式主图和 Gallery 素材进入 public/images 前需要确认具体选图。",
+  "不提供素材下载入口，不声明素材可自由复用。",
+];
+
 export function MascotPage() {
   return (
     <>
@@ -57,6 +63,20 @@ export function MascotPage() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+      <section className="section section--muted" id="usage">
+        <div className="section__inner mascot-policy">
+          <SectionHeader
+            eyebrow="Usage"
+            title="公开展示先守住素材口径"
+            description="萝小白是长期品牌资产，第一版页面优先把边界说清楚，后续再逐步接入审核后的主图、表情和节日素材。"
+          />
+          <ul className="check-list">
+            {mascotRules.map((rule) => (
+              <li key={rule}>{rule}</li>
+            ))}
+          </ul>
         </div>
       </section>
     </>

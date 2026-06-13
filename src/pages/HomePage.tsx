@@ -1,7 +1,10 @@
 import { HeroOrbit } from "../components/sections/HeroOrbit";
 import { ProjectMatrix } from "../components/sections/ProjectMatrix";
+import { InfoRail } from "../components/ui/InfoRail";
 import { RouteLink } from "../components/ui/RouteLink";
 import { SectionHeader } from "../components/ui/SectionHeader";
+import { radishXRepositoryUrl } from "../data/navigation";
+import { projects } from "../data/projects";
 
 const ecosystemItems = [
   {
@@ -19,6 +22,25 @@ const ecosystemItems = [
   {
     title: "智能外接",
     body: "RadishMind 负责协议、评测、工具编排和模型实验，强调可审计和可复用。",
+  },
+];
+
+const homeSignals = [
+  {
+    label: "Site",
+    value: "radishx.com",
+    note: "Vercel 静态官网",
+  },
+  {
+    label: "Repository",
+    value: "laugh0608/RadishX",
+    href: radishXRepositoryUrl,
+    note: "Source Available",
+  },
+  {
+    label: "Matrix",
+    value: projects.map((project) => project.futureDomain).join(" / "),
+    note: "未来独立项目域名，不作为官网 rewrite",
   },
 ];
 
@@ -44,7 +66,21 @@ export function HomePage() {
           </div>
         </div>
       </section>
-      <section className="section section--mascot">
+      <section className="section section--surface" id="signals">
+        <div className="section__inner">
+          <div className="signal-band">
+            <div>
+              <p className="eyebrow">Open Signals</p>
+              <h2>公开入口保持清楚，未来项目边界保持独立</h2>
+              <p>
+                官网负责说明项目矩阵和稳定链接；四个项目的真实业务、下载页、演示站和独立部署在各自成熟后再开放。
+              </p>
+            </div>
+            <InfoRail items={homeSignals} />
+          </div>
+        </div>
+      </section>
+      <section className="section section--mascot" id="mascot-entry">
         <div className="section__inner mascot-teaser">
           <div>
             <p className="eyebrow">Mascot</p>

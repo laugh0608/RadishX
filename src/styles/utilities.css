@@ -1,21 +1,29 @@
 .orbit-visual__project--radish,
-.related-project--radish {
+.related-project--radish,
+.domain-card--radish {
   border-color: rgba(79, 156, 131, 0.28);
 }
 
 .orbit-visual__project--catalyst,
-.related-project--catalyst {
+.related-project--catalyst,
+.domain-card--catalyst {
   border-color: rgba(136, 99, 73, 0.3);
 }
 
 .orbit-visual__project--flow,
-.related-project--flow {
+.related-project--flow,
+.domain-card--flow {
   border-color: rgba(67, 92, 116, 0.3);
 }
 
 .orbit-visual__project--mind,
-.related-project--mind {
+.related-project--mind,
+.domain-card--mind {
   border-color: rgba(132, 105, 146, 0.3);
+}
+
+.domain-card--root {
+  border-color: rgba(178, 64, 87, 0.28);
 }
 
 .project-hero--radish {

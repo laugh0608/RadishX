@@ -1,5 +1,6 @@
 import { SectionHeader } from "../components/ui/SectionHeader";
 import { contacts, officialAccount, repositories } from "../data/contacts";
+import { projects } from "../data/projects";
 
 export function AboutPage() {
   return (
@@ -49,6 +50,29 @@ export function AboutPage() {
                 <strong>{repo.name}</strong>
                 <span>{repo.description}</span>
               </a>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="section section--muted" id="deployment">
+        <div className="section__inner">
+          <SectionHeader
+            eyebrow="Deployment"
+            title="域名和部署边界"
+            description="当前只有 radishx.com 是本官网项目；四个项目域名是未来独立部署后的访问入口。"
+          />
+          <div className="domain-grid">
+            <article className="domain-card domain-card--root">
+              <span>Current Site</span>
+              <strong>radishx.com</strong>
+              <p>RadishX 官网首页、项目介绍页、Mascot 和 About。</p>
+            </article>
+            {projects.map((project) => (
+              <article key={project.id} className={`domain-card domain-card--${project.tone}`}>
+                <span>{project.name}</span>
+                <strong>{project.futureDomain}</strong>
+                <p>未来独立访问域名，当前不配置为本官网 Vercel rewrite。</p>
+              </article>
             ))}
           </div>
         </div>

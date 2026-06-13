@@ -1,4 +1,5 @@
 import { MediaFrame } from "../components/ui/MediaFrame";
+import { InfoRail } from "../components/ui/InfoRail";
 import { RouteLink } from "../components/ui/RouteLink";
 import { SectionHeader } from "../components/ui/SectionHeader";
 import { StatusChip } from "../components/ui/StatusChip";
@@ -12,6 +13,24 @@ type ProjectPageProps = {
 export function ProjectPage({ projectId }: ProjectPageProps) {
   const project = projectById[projectId];
   const siblings = projects.filter((item) => item.id !== projectId);
+  const projectInfo = [
+    {
+      label: "Route",
+      value: project.path,
+      note: "RadishX 官网站内介绍页",
+    },
+    {
+      label: "Future Domain",
+      value: project.futureDomain,
+      note: "Coming Soon",
+    },
+    {
+      label: "GitHub",
+      value: project.githubUrl.replace("https://github.com/", ""),
+      href: project.githubUrl,
+      note: project.status,
+    },
+  ];
 
   return (
     <>
@@ -28,12 +47,23 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
               ))}
             </div>
             <div className="project-hero__actions">
-              <a className="button button--primary" href={project.githubUrl} target="_blank" rel="noreferrer">
-                GitHub
-              </a>
-              <span className="button button--disabled" aria-disabled="true">
-                访问项目 · Coming Soon
-              </span>
+              {project.links.map((link) =>
+                link.isDisabled ? (
+                  <span key={link.label} className="button button--disabled" aria-disabled="true">
+                    {link.label} · {link.note}
+                  </span>
+                ) : (
+                  <a
+                    key={link.label}
+                    className="button button--primary"
+                    href={link.href}
+                    target={link.isExternal ? "_blank" : undefined}
+                    rel={link.isExternal ? "noreferrer" : undefined}
+                  >
+                    {link.label}
+                  </a>
+                ),
+              )}
             </div>
           </div>
           <MediaFrame project={project} />
@@ -51,6 +81,16 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
             <h2>{project.stage}</h2>
             <p>第一版官网先展示稳定公开信息，不暴露尚未上线的访问入口。</p>
           </article>
+        </div>
+      </section>
+      <section className="section section--ink" id="status">
+        <div className="section__inner project-status-band">
+          <SectionHeader
+            eyebrow="Public Surface"
+            title="当前只开放稳定信息"
+            description="项目页展示站内路径、GitHub 仓库、未来独立域名和上线状态；未稳定的演示站或下载页不会伪装成可访问入口。"
+          />
+          <InfoRail items={projectInfo} tone="dark" />
         </div>
       </section>
       <section className="section">
