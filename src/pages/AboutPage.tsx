@@ -20,7 +20,13 @@ export function AboutPage() {
             <SectionHeader eyebrow="Contact" title="联系方式" />
             <div className="contact-list">
               {contacts.map((contact) => (
-                <a key={contact.label} href={contact.href} target={contact.href.startsWith("http") ? "_blank" : undefined} rel="noreferrer">
+                <a
+                  key={contact.label}
+                  className="contact-list__item"
+                  href={contact.href}
+                  target={contact.href.startsWith("http") ? "_blank" : undefined}
+                  rel="noreferrer"
+                >
                   <span>{contact.label}</span>
                   <strong>{contact.value}</strong>
                 </a>
@@ -29,11 +35,18 @@ export function AboutPage() {
           </article>
           <article className="qr-panel">
             <p className="eyebrow">WeChat</p>
-            <h2>{officialAccount.name}</h2>
-            <div className="qr-placeholder" aria-label="微信公众号二维码素材待确认">
-              <span>QR</span>
+            <h2>微信公众号</h2>
+            <div className="qr-panel__body">
+              <div className="qr-placeholder" aria-label="微信公众号二维码素材待确认">
+                <span>QR</span>
+                <small>待确认</small>
+              </div>
+              <div className="qr-panel__copy">
+                <strong>{officialAccount.name}</strong>
+                <p>{officialAccount.status}</p>
+                <code>{officialAccount.asset}</code>
+              </div>
             </div>
-            <p>{officialAccount.status}</p>
           </article>
         </div>
       </section>
@@ -47,6 +60,7 @@ export function AboutPage() {
           <div className="repo-grid">
             {repositories.map((repo) => (
               <a key={repo.name} className="repo-card" href={repo.href} target="_blank" rel="noreferrer">
+                <span className="repo-card__meta">GitHub Repository</span>
                 <strong>{repo.name}</strong>
                 <span>{repo.description}</span>
               </a>
@@ -65,12 +79,14 @@ export function AboutPage() {
             <article className="domain-card domain-card--root">
               <span>Current Site</span>
               <strong>radishx.com</strong>
+              <small>当前 Vercel 官网项目</small>
               <p>RadishX 官网首页、项目介绍页、Mascot 和 About。</p>
             </article>
             {projects.map((project) => (
               <article key={project.id} className={`domain-card domain-card--${project.tone}`}>
                 <span>{project.name}</span>
                 <strong>{project.futureDomain}</strong>
+                <small>未来独立访问域名</small>
                 <p>未来独立访问域名，当前不配置为本官网 Vercel rewrite。</p>
               </article>
             ))}

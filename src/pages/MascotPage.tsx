@@ -18,10 +18,18 @@ export function MascotPage() {
             <p>
               RadishX 的虚拟形象，第一版保留原始形象、可爱Q版和虚拟形象完全体三种形态，并把素材审核状态清楚展示。
             </p>
+            <div className="mascot-hero__badges" aria-label="萝小白三种形态">
+              {mascotForms.map((form) => (
+                <span key={form.name}>{form.name}</span>
+              ))}
+            </div>
           </div>
           <div className="mascot-hero__mark" aria-label="萝小白临时图标">
             <img src="/favicon.ico" width="92" height="92" alt="萝小白原始形象临时图标" />
-            <span>萝小白</span>
+            <div>
+              <strong>萝小白</strong>
+              <span>第一版临时 Logo / favicon 已确认</span>
+            </div>
           </div>
         </div>
       </section>
@@ -36,13 +44,22 @@ export function MascotPage() {
             {mascotForms.map((form, index) => (
               <article key={form.name} className="mascot-form">
                 <div className="mascot-form__media" aria-hidden="true">
-                  <span>{index + 1}</span>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <small>{form.mediaLabel}</small>
                 </div>
-                <div>
+                <div className="mascot-form__content">
                   <p className="eyebrow">{form.role}</p>
                   <h3>{form.name}</h3>
                   <p>{form.description}</p>
-                  <strong>{form.assetStatus}</strong>
+                  <div className="mascot-form__status">
+                    <span>{form.assetCue}</span>
+                    <strong>{form.assetStatus}</strong>
+                  </div>
+                  <ul className="mascot-form__notes">
+                    {form.notes.map((note) => (
+                      <li key={note}>{note}</li>
+                    ))}
+                  </ul>
                 </div>
               </article>
             ))}
@@ -57,8 +74,9 @@ export function MascotPage() {
             description="候选素材仍留在 assets/avatars 中，第一版公开页面不提供素材下载入口。"
           />
           <div className="gallery-notes">
-            {mascotGalleryNotes.map((note) => (
+            {mascotGalleryNotes.map((note, index) => (
               <article key={note} className="info-tile">
+                <span className="info-tile__index">{String(index + 1).padStart(2, "0")}</span>
                 <p>{note}</p>
               </article>
             ))}
