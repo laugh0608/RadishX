@@ -1,6 +1,6 @@
 # 当前规划
 
-最后更新：2026-06-13
+最后更新：2026-06-14
 
 ## 当前阶段
 
@@ -39,6 +39,8 @@ RadishX 当前处于官网项目初始化后的 React 实现阶段。
 - 细化首页主视觉的素材接入口径，在 Radish Orbit 星图下补充 Hero 主视觉、萝小白三形态和项目媒体三类素材状态槽，继续避免未审核图片进入正式页面。
 - 补齐官网第一版基础 metadata、canonical、Open Graph、Twitter Card、404 noindex、skip link 和外链安全口径，为 Vercel 首次部署检查做准备。
 - 完成 Vercel 首次线上 smoke：`https://www.radishx.com/` 可访问，站内路径和未知路径均返回 `index.html` fallback；完整视觉 smoke 需要在 Chrome 会话稳定后复查。
+- 完成 2026-06-14 本地桌面与 390px 移动端全路由响应式 smoke，覆盖首页、四个项目详情页、Mascot、About 和 404 测试路径；修正导航 / 信息栏小链接触控目标和 About 二维码占位文本溢出。
+- 复查 `https://www.radishx.com/` 线上 HTTP 状态，首页、站内路径和未知路径均返回 `200`；线上浏览器截图采集仍受当前 Browser / Playwright 会话稳定性限制。
 
 ## 产品边界
 
@@ -81,8 +83,7 @@ RadishX 当前处于官网项目初始化后的 React 实现阶段。
 ## 下一步建议
 
 1. 先确认 `radishx.com` 与 `www.radishx.com` 的 canonical / redirect 策略，并同步 Vercel / DNS 记录。
-2. 在 Chrome 会话稳定后复跑线上视觉 smoke，覆盖桌面和 390px 移动视口下的首页、四个项目详情页、Mascot、About 和 404 测试路径。
-3. 对照 smoke 结果修正文案换行、长链接、联系方式、二维码占位、仓库入口和域名边界的线上可读性问题。
-4. 开始审核首页与 Mascot 首批候选素材，确认哪些图片可以进入公开页面；通过审核后再生成 Web 优化版本并放入 `public/images/`。
-5. 继续让 React 实现贴近 Pencil v1，优先补首页主视觉状态槽、项目详情状态区、Mascot 三形态和 About 联系区的精细节奏。
-6. 分享预览图片、站点地图和更多 SEO 辅助文件放在素材与域名策略确认后推进。
+2. 在 Browser / Chrome 会话稳定后补一次线上桌面与 390px 移动端截图级视觉 smoke，确认生产站点视觉与本地验证一致。
+3. 开始审核首页与 Mascot 首批候选素材，确认哪些图片可以进入公开页面；通过审核后再生成 Web 优化版本并放入 `public/images/`。
+4. 继续让 React 实现贴近 Pencil v1，优先补首页主视觉状态槽、项目详情状态区、Mascot 三形态和 About 联系区的精细节奏。
+5. 分享预览图片、站点地图和更多 SEO 辅助文件放在素材与域名策略确认后推进。

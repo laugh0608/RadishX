@@ -63,6 +63,13 @@
 - 未知路径 `/abc-test` 返回 `HTTP/2 200` 并落到 `index.html`，确认当前 Vercel fallback 可覆盖 History API 路由。
 - 本机 shell 环境存在失效的 `127.0.0.1:10808` 代理配置；后续直接 HTTP 检查需要先确认代理状态，或在命令中显式清理代理变量。
 
+## 2026-06-14 线上 smoke 记录
+
+- 直接 HTTP 复查确认 `https://www.radishx.com/` 返回 `HTTP/2 200`，响应来自 Vercel / Cloudflare，`x-vercel-cache: HIT`。
+- HTTP 检查确认 `/`、`/radish`、`/catalyst`、`/flow`、`/mind`、`/mascot`、`/about` 和 `/abc-test` 均返回 `200`。
+- 本地同版本已完成 `1440x900` 与 `390x844` 全路由响应式 smoke，未发现横向溢出、文本溢出、小点击目标或页面 error console。
+- 当前 Browser webview 与 Playwright CLI 截图链路仍不稳定，线上截图级视觉 smoke 后续需要在浏览器会话稳定后补跑。
+
 ## 不在当前阶段做
 
 - 不为四个未来项目域名配置 Vercel 重写。
