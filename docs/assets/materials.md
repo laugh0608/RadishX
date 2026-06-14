@@ -17,6 +17,7 @@
 社交媒体素材：
 
 - `assets/social/wechat-official-account-qr.png`：微信公众号“大白萝卜的坑”二维码。
+- `public/images/social/radishx-og-image.png`：RadishX 官网 1200x630 分享预览图，基于已确认完全体设定图和官网视觉 token 生成。
 
 ## 使用审核
 
@@ -67,6 +68,7 @@
 | 活动 / 彩蛋 | `assets/avatars/seasonal/*` | 暂不进入第一版长期页面 | 只建议用于节日活动 Banner、彩蛋或运营内容。 |
 | 站点图标 / Logo | `assets/avatars/origin/radish-origin-icon.jpg` | 已确认 | 已转换为 `public/favicon.ico`，第一版可作为站点图标和项目详情页临时 Logo。 |
 | About 二维码 | `assets/social/wechat-official-account-qr.png` | 已确认 | 适合 About 页联系方式区域，不放首页首屏。Web 版本：`public/images/social/wechat-official-account-qr-web.png`。 |
+| 社交分享图 | `public/images/social/radishx-og-image.png` | 已确认 | 1200x630 PNG，用于 Open Graph 与 Twitter `summary_large_image`。 |
 
 当前缺口：
 
@@ -74,6 +76,7 @@
 - 四个项目详情页第一版暂不放真实截图和视频素材，主视觉区域使用设计稿中的候选媒体框、图形化占位和项目状态信息。
 - 四个项目详情页第一版暂用萝小白原始形象作为临时 Logo；后续如果项目有独立 Logo，再按项目替换。
 - Mascot 页首批主图、Gallery 图片和微信公众号二维码已生成 Web 版本并进入 `public/images/`；后续新增素材仍需继续审核，且不要覆盖原始素材。
+- 分享预览图已使用完全体设定图生成第一版，后续如果首页首屏主视觉确认，可再替换为更贴近首屏的版本。
 
 ## 文件命名
 

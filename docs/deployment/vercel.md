@@ -59,6 +59,7 @@
 
 - `public/robots.txt`：允许抓取当前官网，并声明 `https://radishx.com/sitemap.xml`。
 - `public/sitemap.xml`：只列出当前官网站内页面：`/`、四个项目介绍页、`/mascot` 和 `/about`。
+- `public/images/social/radishx-og-image.png`：1200x630 Open Graph / Twitter 分享预览图，metadata 中使用 `https://radishx.com/images/social/radishx-og-image.png`。
 
 四个未来项目子域名不写入当前官网 sitemap，等对应项目独立部署后由各自站点维护。
 

@@ -44,6 +44,7 @@ RadishX 当前处于官网项目初始化后的 React 实现阶段。
 - 确认 `radishx.com` 为官网 canonical 主域，`www.radishx.com` 作为兼容入口跳转到根域，并验证根路径与 `/about` 跳转保留路径。
 - 添加 `public/sitemap.xml` 和 `public/robots.txt`，并调整 `vercel.json` rewrite 排除规则，确保 SEO 辅助文件不被 History API fallback 覆盖。
 - 完成首批 Mascot / About 素材审核，生成 `public/images/mascot/` 与 `public/images/social/` Web 版本，并接入首页 Mascot 辅助视觉、Mascot 页主视觉 / 三形态 / Gallery、About 微信公众号二维码。
+- 生成 1200x630 Open Graph 分享预览图 `public/images/social/radishx-og-image.png`，并接入 `og:image`、`twitter:image` 和 `summary_large_image`。
 
 ## 产品边界
 
@@ -86,5 +87,5 @@ RadishX 当前处于官网项目初始化后的 React 实现阶段。
 
 1. 在 Browser / Chrome 会话稳定后补一次线上桌面与 390px 移动端截图级视觉 smoke，确认生产站点视觉与本地验证一致。
 2. 继续让 React 实现贴近 Pencil v1，优先补首页主视觉状态槽、项目详情状态区、Mascot 三形态和 About 联系区的精细节奏。
-3. 推进分享预览图片策略，优先基于已确认素材生成 Open Graph 候选图。
-4. 继续做页面可访问性检查，并逐步补充四个项目详情页的独立 Logo、截图或视频素材审核。
+3. 继续做页面可访问性检查，并逐步补充四个项目详情页的独立 Logo、截图或视频素材审核。
+4. 后续首页首屏主视觉确认后，再评估是否替换当前 Open Graph 分享预览图。

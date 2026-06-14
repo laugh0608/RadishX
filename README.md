@@ -2,7 +2,7 @@
 
 RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 RadishX 官网根站点，通过 GitHub 托管代码，并使用 Vercel 免费额度部署；当前主域为 <https://radishx.com/>，`www.radishx.com` 作为兼容入口跳转到根域。
 
-当前仓库状态：基础仓库和远程仓库已创建，官网定位、页面内容、域名结构和素材归档已完成首轮规划；Vite + React + TypeScript 官网骨架已初始化，并接入路由、数据层、favicon、metadata、`sitemap.xml`、`robots.txt`、首批 Mascot / About 公开图片和 `--rx-*` 样式 token；已完成首次线上访问和站内路由 fallback 检查。
+当前仓库状态：基础仓库和远程仓库已创建，官网定位、页面内容、域名结构和素材归档已完成首轮规划；Vite + React + TypeScript 官网骨架已初始化，并接入路由、数据层、favicon、metadata、Open Graph 分享预览图、`sitemap.xml`、`robots.txt`、首批 Mascot / About 公开图片和 `--rx-*` 样式 token；已完成首次线上访问和站内路由 fallback 检查。
 
 ## 已确认方向
 
@@ -145,6 +145,7 @@ npm run build
 - `public/images/mascot/radish-child-outfit-variants-web.jpg`
 - `public/images/mascot/radish-mature-sticker-sheet-wide-web.jpg`
 - `public/images/social/wechat-official-account-qr-web.png`
+- `public/images/social/radishx-og-image.png`：1200x630 Open Graph / Twitter 分享预览图。
 
 节日素材不建议作为官网长期主视觉，更适合作为活动 Banner 或节日彩蛋。官网长期主视觉更适合从可爱Q版和虚拟形象完全体的设定图、站姿图中挑选。
 
