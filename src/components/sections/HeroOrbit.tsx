@@ -29,10 +29,20 @@ export function HeroOrbit() {
         </div>
         <div className="orbit-visual" aria-label="RadishX 项目星图">
           <div className="orbit-visual__map">
-            <div className="orbit-visual__center">
-              <img src="/favicon.ico" width="72" height="72" alt="RadishX 临时 Logo" />
-              <span>RadishX</span>
-            </div>
+            <figure className="orbit-visual__mascot-anchor">
+              <img
+                src="/images/mascot/radish-child-safe-design-sheet-v1-web.jpg"
+                width="1400"
+                height="933"
+                alt="萝小白可爱Q版安全设定图"
+                loading="eager"
+                decoding="async"
+              />
+              <figcaption>
+                <span>RadishX Visual Anchor</span>
+                <strong>萝小白 · 可爱Q版安全设定</strong>
+              </figcaption>
+            </figure>
             {projects.map((project, index) => (
               <RouteLink
                 key={project.id}

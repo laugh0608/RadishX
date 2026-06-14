@@ -14,7 +14,7 @@
 
 | 文档 | 目标 | 状态 |
 | --- | --- | --- |
-| [home-hero-visual.md](home-hero-visual.md) | 首页首屏、Radish Orbit 和主视觉替换 | 维护中 |
+| [home-hero-visual.md](home-hero-visual.md) | 首页首屏、Radish Orbit 和主视觉替换 | 首屏 v1 视觉锚点已接入，长期主视觉待确认 |
 | [project-detail-pages.md](project-detail-pages.md) | 四个项目详情页内容、视觉、公开文档入口和公开素材边界 | 首版已实现，已补文档入口 |
 | [mascot-page.md](mascot-page.md) | Mascot 虚拟形象页、三形态和 Gallery | 首版已实现 |
 | [about-contact-surface.md](about-contact-surface.md) | About 联系区、仓库入口和域名边界 | 首轮精细化已完成 |

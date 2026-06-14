@@ -9,7 +9,7 @@
 
 ## 背景
 
-RadishX 已接入首批 Mascot / About 图片和三个项目详情页 Web 图。后续仍需要处理首页主视觉、项目 Logo、真实截图、视频、Mascot 站姿图、表情拆分和活动图。
+RadishX 已接入首批 Mascot / About 图片和三个项目详情页 Web 图。首页首屏 v1 已使用已审核可爱Q版安全设定图作为 Radish Orbit 中心视觉锚点。后续仍需要处理长期首页主视觉、项目 Logo、真实截图、视频、Mascot 站姿图、表情拆分和活动图。
 
 ## 范围
 
@@ -39,7 +39,7 @@ RadishX 已接入首批 Mascot / About 图片和三个项目详情页 Web 图。
 - 后续新增素材时先更新审核清单，再生成 Web 版本。
 - 为项目 Logo、截图和视频分别记录来源、用途、风险和接入结论。
 - Mascot 新图进入页面前同步更新 Mascot 目标文档。
-- 首页主视觉确定后，记录是否影响 Open Graph 图。
+- 首页长期主视觉确定后，记录是否影响 Open Graph 图。
 
 ## 验证
 

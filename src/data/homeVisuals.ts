@@ -13,18 +13,18 @@ export type HomeVisualAssetSlot = {
 export const homeVisualAssetSlots: HomeVisualAssetSlot[] = [
   {
     label: "Hero Visual",
-    title: "Radish Orbit v1",
-    status: "主结构已定",
+    title: "Radish Orbit + Mascot Anchor",
+    status: "v1 已强化",
     statusTone: "brand",
-    note: "首屏继续使用项目星图承载 RadishX 矩阵，不把未确认站姿图或项目图拉进首屏大图。",
+    note: "首屏继续用项目星图承载 RadishX 矩阵，并接入已审核可爱Q版安全设定图作为中心视觉锚点。",
     checkpoints: [
       {
         label: "Primary",
         value: "项目星图",
       },
       {
-        label: "Logo",
-        value: "favicon 临时 Logo",
+        label: "Mascot",
+        value: "已审核设定图",
       },
       {
         label: "Next",
@@ -37,7 +37,7 @@ export const homeVisualAssetSlots: HomeVisualAssetSlot[] = [
     title: "萝小白三形态",
     status: "素材已审核",
     statusTone: "success",
-    note: "原始形象、可爱Q版安全设定图和完全体设定图已进入公开资源目录，首页只作为辅助线索使用。",
+    note: "原始形象、可爱Q版安全设定图和完全体设定图已进入公开资源目录；首页 v1 只使用已确认安全设定图。",
     checkpoints: [
       {
         label: "Origin",

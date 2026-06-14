@@ -285,8 +285,8 @@ p {
 .orbit-visual {
   position: relative;
   display: grid;
-  grid-template-rows: minmax(420px, 1fr) auto;
-  min-height: 620px;
+  grid-template-rows: minmax(480px, 1fr) auto;
+  min-height: 660px;
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
   background:
@@ -300,7 +300,7 @@ p {
 .orbit-visual__map {
   position: relative;
   z-index: 1;
-  min-height: 440px;
+  min-height: 480px;
 }
 
 .orbit-visual__map::before,
@@ -317,35 +317,66 @@ p {
   transform: rotate(-12deg);
 }
 
-.orbit-visual__center {
+.orbit-visual__map::before,
+.orbit-visual__map::after {
+  z-index: 0;
+  pointer-events: none;
+}
+
+.orbit-visual__mascot-anchor {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 2;
   display: grid;
-  place-items: center;
   gap: 10px;
-  width: 174px;
-  height: 174px;
-  padding: 24px;
+  width: min(286px, 48%);
+  min-width: 0;
+  margin: 0;
+  padding: 12px;
   border: 1px solid var(--rx-border-strong);
-  border-radius: 50%;
-  background: var(--rx-bg-surface);
+  border-radius: 8px;
+  background: rgba(251, 247, 240, 0.92);
   box-shadow: var(--rx-shadow-soft);
   transform: translate(-50%, -50%);
 }
 
-.orbit-visual__center img {
-  border-radius: 50%;
+.orbit-visual__mascot-anchor img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rx-border-soft);
+  border-radius: 6px;
+  background: var(--rx-bg-app);
 }
 
-.orbit-visual__center span,
+.orbit-visual__mascot-anchor figcaption {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.orbit-visual__mascot-anchor figcaption span {
+  color: var(--rx-text-muted);
+  font-family: var(--rx-font-mono);
+  font-size: 11px;
+  font-weight: 760;
+  line-height: 1.35;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.orbit-visual__mascot-anchor strong,
 .orbit-visual__project strong {
   font-family: var(--rx-font-heading);
   font-weight: 760;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
 }
 
 .orbit-visual__project {
   position: absolute;
+  z-index: 3;
   display: grid;
   gap: 4px;
   width: 220px;
@@ -362,23 +393,23 @@ p {
 }
 
 .orbit-visual__project--0 {
-  top: 74px;
-  left: 72px;
+  top: 24px;
+  left: 42px;
 }
 
 .orbit-visual__project--1 {
-  top: 94px;
-  right: 62px;
+  top: 28px;
+  right: 42px;
 }
 
 .orbit-visual__project--2 {
-  right: 82px;
-  bottom: 86px;
+  right: 56px;
+  bottom: 22px;
 }
 
 .orbit-visual__project--3 {
-  bottom: 66px;
-  left: 38px;
+  bottom: 22px;
+  left: 42px;
 }
 
 .orbit-visual__asset-rail {
@@ -2029,12 +2060,12 @@ p {
   }
 
   .orbit-visual {
-    grid-template-rows: minmax(430px, auto) auto;
+    grid-template-rows: minmax(500px, auto) auto;
     min-height: 0;
   }
 
   .orbit-visual__map {
-    min-height: 430px;
+    min-height: 500px;
   }
 
   .orbit-visual__asset-rail {
@@ -2159,12 +2190,21 @@ p {
   }
 
   .orbit-visual__map {
-    min-height: 520px;
+    min-height: 640px;
   }
 
-  .orbit-visual__center {
-    width: 132px;
-    height: 132px;
+  .orbit-visual__mascot-anchor {
+    width: min(238px, calc(100% - 34px));
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .orbit-visual__mascot-anchor figcaption span {
+    font-size: 10px;
+  }
+
+  .orbit-visual__mascot-anchor strong {
+    font-size: 14px;
   }
 
   .orbit-visual__project {
@@ -2173,22 +2213,22 @@ p {
   }
 
   .orbit-visual__project--0 {
-    top: 24px;
+    top: 20px;
     left: 14px;
   }
 
   .orbit-visual__project--1 {
-    top: 140px;
+    top: 126px;
     right: 14px;
   }
 
   .orbit-visual__project--2 {
     right: 14px;
-    bottom: 116px;
+    bottom: 126px;
   }
 
   .orbit-visual__project--3 {
-    bottom: 24px;
+    bottom: 20px;
     left: 14px;
   }
 

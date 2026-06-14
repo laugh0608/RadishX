@@ -61,7 +61,7 @@
 
 | 用途 | 候选素材 | 建议状态 | 说明 |
 | --- | --- | --- | --- |
-| 首页 / Mascot 主视觉 | `assets/avatars/child/radish-child-safe-design-sheet-v1.png` | 已确认 | 可爱Q版安全设定图，适合用于 Mascot 页设定展示和首页辅助视觉。Web 版本：`public/images/mascot/radish-child-safe-design-sheet-v1-web.jpg`。 |
+| 首页 / Mascot 主视觉 | `assets/avatars/child/radish-child-safe-design-sheet-v1.png` | 已确认 | 可爱Q版安全设定图，适合用于 Mascot 页设定展示、首页首屏 v1 中心视觉锚点和首页辅助视觉。Web 版本：`public/images/mascot/radish-child-safe-design-sheet-v1-web.jpg`。 |
 | 首页 / Mascot 主视觉 | `assets/avatars/child/radish-child-standing-white-dress.png` | 待确认 | 可爱Q版站姿，适合轻量主视觉或形态卡片。 |
 | 首页 / Mascot 主视觉 | `assets/avatars/child/radish-child-standing-white-dress-tall.png` | 待确认 | 可爱Q版站姿高分辨率版本，适合需要更完整裁切的区域。 |
 | 首页 / Mascot 主视觉 | `assets/avatars/mature/radish-mature-design-sheet.png` | 已确认 | 虚拟形象完全体设定图，适合 Mascot 页主视觉。Web 版本：`public/images/mascot/radish-mature-design-sheet-web.jpg`。 |
@@ -92,7 +92,7 @@
 
 当前缺口：
 
-- 首页首屏继续以 Radish Orbit 项目星图为主，已确认可爱Q版安全设定图作为首页 Mascot 辅助视觉。
+- 首页首屏继续以 Radish Orbit 项目星图为主，已确认可爱Q版安全设定图作为首页首屏 v1 中心视觉锚点和 Mascot 辅助视觉；长期最终主视觉仍待确认。
 - Radish、RadishCatalyst、RadishFlow 详情页已接入审核后的代表性图片；这些图片不提供下载入口，也不声明可自由复用。
 - RadishMind 详情页已使用代码内 `Protocol map` 替代通用占位；仍等待项目自有 Logo、截图或代表性图片素材。
 - 四个项目都未发现可直接公开的视频素材；后续如需接入视频，必须单独审核来源、字幕/水印、压缩方案和移动端加载策略。
