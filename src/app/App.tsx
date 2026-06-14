@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 import { SiteFooter } from "../components/layout/SiteFooter";
 import { SiteHeader } from "../components/layout/SiteHeader";
@@ -17,8 +17,22 @@ function getLocationSnapshot() {
   };
 }
 
+function prefersReducedMotion() {
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
+
+function getHashTarget(hash: string) {
+  try {
+    return document.getElementById(decodeURIComponent(hash.slice(1)));
+  } catch {
+    return null;
+  }
+}
+
 export function App() {
   const [location, setLocation] = useState(getLocationSnapshot);
+  const mainRef = useRef<HTMLElement>(null);
+  const previousPathRef = useRef(location.pathname);
   const route = useMemo(() => resolveRoute(location.pathname), [location.pathname]);
 
   useEffect(() => {
@@ -35,17 +49,23 @@ export function App() {
 
   useEffect(() => {
     applyRouteMetadata(route);
+    const pathChanged = previousPathRef.current !== location.pathname;
+    previousPathRef.current = location.pathname;
+    const behavior = prefersReducedMotion() ? "auto" : "smooth";
 
     if (location.hash) {
-      const target = document.querySelector(location.hash);
+      const target = getHashTarget(location.hash);
       if (target) {
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        target.scrollIntoView({ behavior, block: "start" });
         return;
       }
     }
 
     window.scrollTo({ top: 0, behavior: "auto" });
-  }, [location.hash, route]);
+    if (pathChanged) {
+      mainRef.current?.focus({ preventScroll: true });
+    }
+  }, [location.hash, location.pathname, route]);
 
   let page;
 
@@ -67,7 +87,7 @@ export function App() {
         跳到正文
       </a>
       <SiteHeader currentPath={route.path} />
-      <main id="main-content" tabIndex={-1}>
+      <main id="main-content" ref={mainRef} tabIndex={-1}>
         {page}
       </main>
       <SiteFooter />

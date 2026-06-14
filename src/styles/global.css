@@ -1592,7 +1592,7 @@ p {
   }
 
   .site-header__nav a {
-    min-height: 38px;
+    min-height: 44px;
     padding: 7px 10px;
     font-size: 13px;
   }

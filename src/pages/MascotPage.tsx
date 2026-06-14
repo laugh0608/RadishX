@@ -105,7 +105,7 @@ export function MascotPage() {
           <SectionHeader
             eyebrow="Usage"
             title="公开展示先守住素材口径"
-            description="萝小白是长期品牌资产，第一版页面优先把边界说清楚，后续再逐步接入审核后的主图、表情和节日素材。"
+            description="萝小白是长期品牌资产，第一版页面已接入首批确认图片，后续继续审核站姿、表情拆分和节日素材。"
           />
           <ul className="check-list">
             {mascotRules.map((rule) => (

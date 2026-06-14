@@ -86,7 +86,7 @@ export function HomePage() {
             <p className="eyebrow">Mascot</p>
             <h2>萝小白是 RadishX 的长期品牌记忆点</h2>
             <p>
-              第一版保留原始形象、可爱Q版和虚拟形象完全体三条线索。正式主图和 Gallery 素材会在审核后进入公开资源目录。
+              第一版保留原始形象、可爱Q版和虚拟形象完全体三条线索，首批主图和 Gallery 素材已进入公开资源目录。
             </p>
             <RouteLink className="button button--primary" to="/mascot">
               查看萝小白
