@@ -1,6 +1,5 @@
 import { SectionHeader } from "../components/ui/SectionHeader";
-import { contacts, officialAccount, repositories } from "../data/contacts";
-import { projects } from "../data/projects";
+import { contacts, domainSurfaces, officialAccount, repositories } from "../data/contacts";
 
 export function AboutPage() {
   return (
@@ -12,12 +11,21 @@ export function AboutPage() {
           <p>
             当前官网只负责展示项目矩阵、公开链接、虚拟形象和联系方式，不承载登录、后台、数据库或服务端 API。
           </p>
+          <div className="about-hero__signals" aria-label="About 页面公开信息摘要">
+            <span>radishx.com</span>
+            <span>5 GitHub repositories</span>
+            <span>WeChat QR reviewed</span>
+          </div>
         </div>
       </section>
       <section className="section section--surface">
         <div className="section__inner about-grid">
           <article className="contact-panel">
-            <SectionHeader eyebrow="Contact" title="联系方式" />
+            <SectionHeader
+              eyebrow="Contact"
+              title="联系方式"
+              description="保留稳定入口，优先让访问者判断该用哪一种方式联系或追踪项目。"
+            />
             <div className="contact-list">
               {contacts.map((contact) => (
                 <a
@@ -26,9 +34,14 @@ export function AboutPage() {
                   href={contact.href}
                   target={contact.href.startsWith("http") ? "_blank" : undefined}
                   rel={contact.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  aria-label={`${contact.action}：${contact.value}`}
                 >
-                  <span>{contact.label}</span>
-                  <strong>{contact.value}</strong>
+                  <span className="contact-list__label">{contact.label}</span>
+                  <span className="contact-list__content">
+                    <strong>{contact.value}</strong>
+                    <span>{contact.note}</span>
+                  </span>
+                  <span className="contact-list__action">{contact.action}</span>
                 </a>
               ))}
             </div>
@@ -36,21 +49,36 @@ export function AboutPage() {
           <article className="qr-panel">
             <p className="eyebrow">WeChat</p>
             <h2>微信公众号</h2>
-            <div className="qr-panel__body">
-              <img
-                className="qr-image"
-                src={officialAccount.asset}
-                width="512"
-                height="509"
-                alt={`${officialAccount.name}微信公众号二维码`}
-                loading="lazy"
-              />
-              <div className="qr-panel__copy">
-                <strong>{officialAccount.name}</strong>
-                <p>{officialAccount.status}</p>
-                <code>{officialAccount.asset}</code>
+            <figure className="qr-panel__body">
+              <div className="qr-panel__frame">
+                <img
+                  className="qr-image"
+                  src={officialAccount.asset}
+                  width="512"
+                  height="509"
+                  alt={`${officialAccount.name}微信公众号二维码`}
+                  loading="lazy"
+                />
               </div>
-            </div>
+              <figcaption className="qr-panel__copy">
+                <strong>{officialAccount.name}</strong>
+                <p>{officialAccount.summary}</p>
+                <dl className="qr-panel__facts">
+                  <div>
+                    <dt>Asset</dt>
+                    <dd>{officialAccount.assetLabel}</dd>
+                  </div>
+                  <div>
+                    <dt>Status</dt>
+                    <dd>{officialAccount.status}</dd>
+                  </div>
+                  <div>
+                    <dt>Boundary</dt>
+                    <dd>{officialAccount.boundary}</dd>
+                  </div>
+                </dl>
+              </figcaption>
+            </figure>
           </article>
         </div>
       </section>
@@ -64,9 +92,23 @@ export function AboutPage() {
           <div className="repo-grid">
             {repositories.map((repo) => (
               <a key={repo.name} className="repo-card" href={repo.href} target="_blank" rel="noopener noreferrer">
-                <span className="repo-card__meta">GitHub Repository</span>
+                <span className="repo-card__head">
+                  <span className="repo-card__meta">{repo.ownerRepo}</span>
+                  <span className="repo-card__status">{repo.status}</span>
+                </span>
                 <strong>{repo.name}</strong>
-                <span>{repo.description}</span>
+                <p>{repo.description}</p>
+                <dl className="repo-card__facts">
+                  <div>
+                    <dt>Role</dt>
+                    <dd>{repo.role}</dd>
+                  </div>
+                  <div>
+                    <dt>Surface</dt>
+                    <dd>{repo.surface}</dd>
+                  </div>
+                </dl>
+                <span className="repo-card__action">Open GitHub</span>
               </a>
             ))}
           </div>
@@ -80,18 +122,12 @@ export function AboutPage() {
             description="当前只有 radishx.com 是本官网项目；四个项目域名是未来独立部署后的访问入口。"
           />
           <div className="domain-grid">
-            <article className="domain-card domain-card--root">
-              <span>Current Site</span>
-              <strong>radishx.com</strong>
-              <small>当前 Vercel 官网项目</small>
-              <p>RadishX 官网首页、项目介绍页、Mascot 和 About。</p>
-            </article>
-            {projects.map((project) => (
-              <article key={project.id} className={`domain-card domain-card--${project.tone}`}>
-                <span>{project.name}</span>
-                <strong>{project.futureDomain}</strong>
-                <small>未来独立访问域名</small>
-                <p>未来独立访问域名，当前不配置为本官网 Vercel rewrite。</p>
+            {domainSurfaces.map((surface) => (
+              <article key={surface.domain} className="domain-card">
+                <span>{surface.label}</span>
+                <strong>{surface.domain}</strong>
+                <small>{surface.status}</small>
+                <p>{surface.description}</p>
               </article>
             ))}
           </div>

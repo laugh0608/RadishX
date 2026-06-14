@@ -32,23 +32,23 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 | 首页首屏与主视觉 | [home-hero-visual.md](../features/home-hero-visual.md) | 维护中，等待最终主视觉选图 |
 | 四个项目详情页 | [project-detail-pages.md](../features/project-detail-pages.md) | 首版已实现，后续补 Logo / 截图 / 视频 |
 | Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | 首版已实现，后续补站姿、表情拆分和下载口径 |
-| About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 下一开发目标 |
+| About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 首轮精细化已完成 |
 | 素材治理 | [asset-governance.md](../features/asset-governance.md) | 持续执行 |
 | 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 持续执行，线上截图级 smoke 待补 |
 
 ## 当前活跃目标
 
-当前建议推进：
+当前已完成：
 
-1. 按 [About 联系区设计与开发文档](../features/about-contact-surface.md) 细化 `/about` 页面联系方式、微信公众号二维码、仓库入口和域名边界的视觉节奏。
-2. 保持 PC 与 390px 移动端可用，优先避免长邮箱、链接、二维码说明和按钮挤压。
-3. 完成后更新目标文档状态、本文件和本周开发日志。
+1. `/about` 页面联系方式、微信公众号二维码、GitHub 仓库入口和域名边界已完成首轮精细化。
+2. PC 与 390px 移动端已检查，长邮箱、链接、二维码说明、按钮、仓库卡片和域名卡片未发现横向溢出。
+3. 目标文档、本文件和本周开发日志已同步记录。
 
-选择该目标的原因：
+下一步建议推进：
 
-- 不依赖新的外部素材或线上截图链路。
-- 能提升官网从“展示项目矩阵”到“可联系、可追踪、可进入仓库”的完成度。
-- 风险集中在页面层级和响应式排版，适合在现有 React / CSS 结构中继续推进。
+1. 在 Browser / Chrome 会话稳定后补跑线上截图级视觉 smoke。
+2. 根据素材治理文档继续评估独立 Logo、真实截图和公开视频素材。
+3. 首页首屏最终主视觉确认后，再评估是否替换当前 Open Graph 分享预览图。
 
 ## 产品边界
 
@@ -90,7 +90,6 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 
 ## 后续顺序
 
-1. 推进 `/about` 联系区精细化，完成对应桌面和 390px 移动端验证。
+1. Browser / Chrome 会话稳定后，补跑线上截图级视觉 smoke。
 2. 根据素材治理文档继续评估独立 Logo、真实截图和公开视频素材。
 3. 首页首屏最终主视觉确认后，再评估是否替换当前 Open Graph 分享预览图。
-4. Browser / Chrome 会话稳定后，补跑线上截图级视觉 smoke。

@@ -72,7 +72,7 @@ export const appRoutes: AppRoute[] = [
     kind: "about",
     path: "/about",
     title: "About - RadishX",
-    description: "了解 RadishX 的组织说明、联系方式、GitHub 仓库入口、微信公众号占位和 radishx.com 部署边界。",
+    description: "了解 RadishX 的组织说明、联系方式、GitHub 仓库入口、微信公众号二维码和 radishx.com 部署边界。",
   },
 ];
 
