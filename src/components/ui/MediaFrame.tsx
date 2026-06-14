@@ -67,6 +67,22 @@ export function MediaFrame({ project, compact = false, showVisual = false }: Med
         <span>{visual ? "Reviewed asset" : diagram ? "Code-native visual" : "Visual placeholder"}</span>
         <strong>{visual ? visual.note : diagram ? diagram.note : "第一版暂不展示真实截图或视频"}</strong>
       </div>
+      {showVisual ? (
+        <dl className="media-frame__review" aria-label={`${project.name} 素材审核说明`}>
+          <div>
+            <dt>Asset source</dt>
+            <dd>{project.assetReview.source}</dd>
+          </div>
+          <div>
+            <dt>Usage boundary</dt>
+            <dd>{project.assetReview.boundary}</dd>
+          </div>
+          <div>
+            <dt>Next material need</dt>
+            <dd>{project.assetReview.nextNeed}</dd>
+          </div>
+        </dl>
+      ) : null}
     </div>
   );
 }

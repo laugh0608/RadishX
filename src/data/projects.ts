@@ -35,6 +35,12 @@ export type ProjectDiagram = {
   nodes: ProjectDiagramNode[];
 };
 
+export type ProjectAssetReview = {
+  source: string;
+  boundary: string;
+  nextNeed: string;
+};
+
 export type Project = {
   id: ProjectRouteId;
   tone: ProjectTone;
@@ -55,6 +61,7 @@ export type Project = {
   links: ProjectLink[];
   visual?: ProjectVisual;
   diagram?: ProjectDiagram;
+  assetReview: ProjectAssetReview;
 };
 
 export const projects: Project[] = [
@@ -85,6 +92,11 @@ export const projects: Project[] = [
       width: 1024,
       height: 1024,
       ratio: "square",
+    },
+    assetReview: {
+      source: "Radish README 角色视觉",
+      boundary: "代表项目气质，不是当前产品 UI 截图。",
+      nextNeed: "后续补独立 Logo、稳定产品截图或公开视频素材。",
     },
     links: [
       {
@@ -129,6 +141,11 @@ export const projects: Project[] = [
       height: 900,
       ratio: "wide",
     },
+    assetReview: {
+      source: "RadishCatalyst 源资产概念图",
+      boundary: "只按概念视觉展示，不是 gameplay、实机截图或上线承诺。",
+      nextNeed: "后续补真实 gameplay、trailer、独立 Logo 或正式 key visual。",
+    },
     links: [
       {
         label: "GitHub",
@@ -171,6 +188,11 @@ export const projects: Project[] = [
       width: 1600,
       height: 900,
       ratio: "wide",
+    },
+    assetReview: {
+      source: "RadishFlow Studio UI baseline",
+      boundary: "只展示历史 UI 方向；项目公开维护已暂停，不表达下载、演示或继续交付。",
+      nextNeed: "如未来恢复公开维护，再重新审核当前截图、版本状态和发布口径。",
     },
     links: [
       {
@@ -229,6 +251,11 @@ export const projects: Project[] = [
           value: "证据链与可复用记录",
         },
       ],
+    },
+    assetReview: {
+      source: "RadishX 代码内协议图",
+      boundary: "表达公开定位，不是 RadishMind Console 或正式产品 UI 截图。",
+      nextNeed: "后续补项目自有 Logo、Console 截图或真实协议 / 评测可视化图。",
     },
     links: [
       {

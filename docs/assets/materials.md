@@ -81,6 +81,8 @@
 
 审核日期：2026-06-14。审核范围只读检查四个兄弟项目仓库中的 Logo、截图、视频和代表性视觉素材，不读取或修改 `.pen` 文件，不迁入兄弟项目代码。
 
+项目详情页当前已在主媒体区展示 `Asset source`、`Usage boundary` 和 `Next material need` 三项说明，用于区分代表图、概念视觉、历史 UI baseline 和代码内协议图的公开边界。
+
 | 项目 | 候选素材 | 推荐用途 | 风险与限制 | 结论 |
 | --- | --- | --- | --- | --- |
 | Radish | `/Users/luobo/Code/Radish/Docs/images/RadishAcg-1024.png` | 详情页主媒体区项目代表图。 | README 已使用该图作为“萝卜娘”视觉，适合代表 Radish 气质；未发现可直接公开的当前产品截图或视频。`DataBases/TestOutput`、测试上传文件、第三方 UI 参考图和默认商品图不进入官网。 | 已生成 `public/images/projects/radish/radish-acg-web.jpg` 并接入 `/radish`。 |

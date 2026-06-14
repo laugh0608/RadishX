@@ -46,8 +46,8 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
     },
     {
       label: "Visual",
-      value: "图形化候选媒体框",
-      note: "No screenshots",
+      value: project.visual?.label ?? project.diagram?.label ?? "图形化候选媒体框",
+      note: project.visual ? "Reviewed asset" : project.diagram ? "Code-native visual" : "No screenshots",
     },
   ];
 

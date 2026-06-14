@@ -775,7 +775,7 @@ p {
 }
 
 .media-frame--visual {
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
   gap: 14px;
   min-height: 0;
 }
@@ -1078,6 +1078,45 @@ p {
 
 .media-frame--visual .media-frame__note {
   margin-top: 0;
+}
+
+.media-frame__review {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 12px;
+  border: 1px solid rgba(136, 99, 73, 0.16);
+  border-radius: 8px;
+  background: rgba(251, 247, 240, 0.64);
+}
+
+.media-frame__review div {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.38fr) minmax(0, 1fr);
+  align-items: baseline;
+  gap: 10px;
+  min-width: 0;
+}
+
+.media-frame__review dt {
+  color: var(--rx-text-muted);
+  font-family: var(--rx-font-mono);
+  font-size: 11px;
+  font-weight: 760;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.media-frame__review dd {
+  min-width: 0;
+  margin: 0;
+  color: var(--rx-text-primary);
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .ecosystem-grid,
@@ -2051,6 +2090,20 @@ p {
   .media-frame__visual figcaption {
     font-size: 11px;
     text-align: left;
+  }
+
+  .media-frame__review {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .media-frame__review div {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  .media-frame__review dt {
+    font-size: 10px;
   }
 
   .media-frame__diagram-figure {
