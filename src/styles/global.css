@@ -866,6 +866,122 @@ p {
   text-align: center;
 }
 
+.media-frame__diagram-figure {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 10px;
+  margin: 12px 0 0;
+}
+
+.mind-diagram {
+  position: relative;
+  display: grid;
+  min-height: 300px;
+  place-items: center;
+  padding: 28px;
+  border: 1px solid rgba(132, 105, 146, 0.2);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(132, 105, 146, 0.12) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(79, 156, 131, 0.1) 1px, transparent 1px),
+    radial-gradient(circle at 50% 50%, rgba(132, 105, 146, 0.18), transparent 44%),
+    rgba(251, 247, 240, 0.76);
+  background-size: 42px 42px, 42px 42px, auto, auto;
+  box-shadow: var(--rx-shadow-soft);
+  overflow: hidden;
+}
+
+.mind-diagram::before,
+.mind-diagram::after {
+  position: absolute;
+  inset: 24px;
+  border: 1px solid rgba(67, 92, 116, 0.16);
+  border-radius: 50%;
+  content: "";
+}
+
+.mind-diagram::after {
+  inset: 78px;
+  border-color: rgba(132, 105, 146, 0.22);
+}
+
+.mind-diagram__core {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  gap: 8px;
+  width: 172px;
+  min-height: 112px;
+  padding: 22px;
+  border: 1px solid rgba(132, 105, 146, 0.28);
+  border-radius: 8px;
+  background: rgba(251, 247, 240, 0.92);
+  text-align: center;
+}
+
+.mind-diagram__core span,
+.mind-diagram__node span {
+  color: var(--rx-text-muted);
+  font-family: var(--rx-font-mono);
+  font-size: 11px;
+  font-weight: 760;
+  text-transform: uppercase;
+}
+
+.mind-diagram__core strong,
+.mind-diagram__node strong {
+  color: var(--rx-text-primary);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.mind-diagram__nodes {
+  position: absolute;
+  inset: 20px;
+}
+
+.mind-diagram__node {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  gap: 4px;
+  width: min(164px, 38%);
+  padding: 12px;
+  border: 1px solid rgba(136, 99, 73, 0.16);
+  border-radius: 8px;
+  background: rgba(251, 247, 240, 0.86);
+}
+
+.mind-diagram__node:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.mind-diagram__node:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+
+.mind-diagram__node:nth-child(3) {
+  right: 0;
+  bottom: 0;
+}
+
+.mind-diagram__node:nth-child(4) {
+  bottom: 0;
+  left: 0;
+}
+
+.media-frame__diagram-figure figcaption {
+  color: var(--rx-text-muted);
+  font-family: var(--rx-font-mono);
+  font-size: 12px;
+  line-height: 1.35;
+  text-align: center;
+}
+
 .media-frame__body {
   align-self: end;
   padding-top: 260px;
@@ -1866,6 +1982,44 @@ p {
   }
 
   .media-frame__visual figcaption {
+    font-size: 11px;
+    text-align: left;
+  }
+
+  .media-frame__diagram-figure {
+    margin-top: 4px;
+  }
+
+  .mind-diagram {
+    min-height: 0;
+    padding: 16px;
+    place-items: stretch;
+  }
+
+  .mind-diagram::before,
+  .mind-diagram::after {
+    display: none;
+  }
+
+  .mind-diagram__core {
+    width: 100%;
+    min-height: 0;
+    padding: 16px;
+  }
+
+  .mind-diagram__nodes {
+    position: static;
+    display: grid;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .mind-diagram__node {
+    position: static;
+    width: 100%;
+  }
+
+  .media-frame__diagram-figure figcaption {
     font-size: 11px;
     text-align: left;
   }

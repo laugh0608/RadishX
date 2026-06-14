@@ -21,6 +21,20 @@ export type ProjectVisual = {
   ratio: "square" | "wide";
 };
 
+export type ProjectDiagramNode = {
+  label: string;
+  value: string;
+};
+
+export type ProjectDiagram = {
+  label: string;
+  title: string;
+  note: string;
+  coreLabel: string;
+  coreTitle: string;
+  nodes: ProjectDiagramNode[];
+};
+
 export type Project = {
   id: ProjectRouteId;
   tone: ProjectTone;
@@ -40,6 +54,7 @@ export type Project = {
   signals: string[];
   links: ProjectLink[];
   visual?: ProjectVisual;
+  diagram?: ProjectDiagram;
 };
 
 export const projects: Project[] = [
@@ -190,6 +205,31 @@ export const projects: Project[] = [
     chips: ["AI Protocol", "Evaluation", "Tooling"],
     capabilities: ["模型实验记录", "工具编排", "审计与评测口径"],
     signals: ["强调可审计与可复用", "未来独立域名为 mind.radishx.com", "首版官网只展示稳定公开信息"],
+    diagram: {
+      label: "Protocol map",
+      title: "协议与评测视觉",
+      note: "基于当前公开定位生成的代码内视觉，不引入外部产品参考截图，也不声明已有正式产品 UI。",
+      coreLabel: "RadishMind",
+      coreTitle: "External Intelligence Layer",
+      nodes: [
+        {
+          label: "Protocol",
+          value: "上下文与工具契约",
+        },
+        {
+          label: "Evaluation",
+          value: "样本、基线与失败分类",
+        },
+        {
+          label: "Tooling",
+          value: "工具编排与运行边界",
+        },
+        {
+          label: "Audit",
+          value: "证据链与可复用记录",
+        },
+      ],
+    },
     links: [
       {
         label: "GitHub",
