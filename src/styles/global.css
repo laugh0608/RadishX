@@ -1365,6 +1365,44 @@ p {
   font-size: 14px;
 }
 
+.mascot-hero__review {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+}
+
+.mascot-hero__review div {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--rx-border-soft);
+}
+
+.mascot-hero__review dt,
+.mascot-form__review dt {
+  color: var(--rx-text-muted);
+  font-family: var(--rx-font-mono);
+  font-size: 11px;
+  font-weight: 760;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.mascot-hero__review dd,
+.mascot-form__review dd {
+  min-width: 0;
+  margin: 0;
+  color: var(--rx-text-primary);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
 .mascot-hero__badges {
   display: flex;
   flex-wrap: wrap;
@@ -1400,7 +1438,7 @@ p {
   display: grid;
   place-items: center;
   gap: 6px;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1;
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
   background: rgba(239, 231, 219, 0.74);
@@ -1408,6 +1446,7 @@ p {
 }
 
 .mascot-form__media img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -1433,6 +1472,22 @@ p {
   gap: 12px;
 }
 
+.mascot-form__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: 0;
+}
+
+.mascot-form__heading h3 {
+  min-width: 0;
+}
+
+.mascot-form__heading .status-chip {
+  flex: 0 0 auto;
+}
+
 .mascot-form__status {
   display: grid;
   gap: 4px;
@@ -1453,6 +1508,21 @@ p {
   color: var(--rx-text-primary);
   font-size: 14px;
   line-height: 1.45;
+}
+
+.mascot-form__review {
+  display: grid;
+  gap: 9px;
+  margin: 0;
+  padding-top: 2px;
+}
+
+.mascot-form__review div {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+  padding-top: 8px;
+  border-top: 1px solid rgba(136, 99, 73, 0.14);
 }
 
 .mascot-form__notes {
@@ -2001,6 +2071,11 @@ p {
     font-size: 24px;
   }
 
+  .mascot-hero__review {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
   .mascot-hero__badges span {
     justify-content: center;
     flex: 1 1 104px;
@@ -2014,12 +2089,12 @@ p {
 
   .mascot-form__media {
     width: 76px;
+    height: 76px;
     min-height: 76px;
-    aspect-ratio: auto;
   }
 
   .mascot-form__media img {
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .mascot-form__media span {
@@ -2032,6 +2107,20 @@ p {
 
   .mascot-form__status {
     padding: 10px;
+  }
+
+  .mascot-form__heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .mascot-form__review {
+    gap: 8px;
+  }
+
+  .mascot-form__review dd {
+    font-size: 12px;
   }
 
   .info-tile,
@@ -2217,5 +2306,6 @@ p {
 
   .mascot-form__media {
     width: 100%;
+    height: 180px;
   }
 }

@@ -1,5 +1,6 @@
 import { SectionHeader } from "../components/ui/SectionHeader";
-import { mascotForms, mascotGalleryItems, mascotGalleryNotes, mascotHeroImage, mascotName } from "../data/mascot";
+import { StatusChip } from "../components/ui/StatusChip";
+import { mascotForms, mascotGalleryItems, mascotGalleryNotes, mascotHeroImage, mascotHeroReview, mascotName } from "../data/mascot";
 
 const mascotRules = [
   "可爱Q版公开素材必须完整外装、非性感化、无内衣展示、无身体拆解。",
@@ -36,6 +37,14 @@ export function MascotPage() {
               <strong>萝小白</strong>
               <span>虚拟形象完全体设定图已确认</span>
             </div>
+            <dl className="mascot-hero__review" aria-label="萝小白主视觉审核摘要">
+              {mascotHeroReview.map((item) => (
+                <div key={item.label}>
+                  <dt>{item.label}</dt>
+                  <dd>{item.value}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </div>
       </section>
@@ -54,12 +63,33 @@ export function MascotPage() {
                 </div>
                 <div className="mascot-form__content">
                   <p className="eyebrow">{form.role}</p>
-                  <h3>{form.name}</h3>
+                  <div className="mascot-form__heading">
+                    <h3>{form.name}</h3>
+                    <StatusChip tone="success">{form.assetCue}</StatusChip>
+                  </div>
                   <p>{form.description}</p>
                   <div className="mascot-form__status">
-                    <span>{form.assetCue}</span>
+                    <span>Asset status</span>
                     <strong>{form.assetStatus}</strong>
                   </div>
+                  <dl className="mascot-form__review" aria-label={`${form.name} 素材审核说明`}>
+                    <div>
+                      <dt>Current use</dt>
+                      <dd>{form.review.currentUse}</dd>
+                    </div>
+                    <div>
+                      <dt>Audit status</dt>
+                      <dd>{form.review.auditStatus}</dd>
+                    </div>
+                    <div>
+                      <dt>Usage boundary</dt>
+                      <dd>{form.review.usageBoundary}</dd>
+                    </div>
+                    <div>
+                      <dt>Next material need</dt>
+                      <dd>{form.review.nextNeed}</dd>
+                    </div>
+                  </dl>
                   <ul className="mascot-form__notes">
                     {form.notes.map((note) => (
                       <li key={note}>{note}</li>
