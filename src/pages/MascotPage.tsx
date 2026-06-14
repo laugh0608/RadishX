@@ -1,9 +1,9 @@
 import { SectionHeader } from "../components/ui/SectionHeader";
-import { mascotForms, mascotGalleryNotes, mascotName } from "../data/mascot";
+import { mascotForms, mascotGalleryItems, mascotGalleryNotes, mascotHeroImage, mascotName } from "../data/mascot";
 
 const mascotRules = [
   "可爱Q版公开素材必须完整外装、非性感化、无内衣展示、无身体拆解。",
-  "正式主图和 Gallery 素材进入 public/images 前需要确认具体选图。",
+  "已确认素材使用 public/images 下的 Web 版本，原图保留在 assets 中。",
   "不提供素材下载入口，不声明素材可自由复用。",
 ];
 
@@ -24,11 +24,17 @@ export function MascotPage() {
               ))}
             </div>
           </div>
-          <div className="mascot-hero__mark" aria-label="萝小白临时图标">
-            <img src="/favicon.ico" width="92" height="92" alt="萝小白原始形象临时图标" />
+          <div className="mascot-hero__mark" aria-label="萝小白主视觉">
+            <img
+              className="mascot-hero__image"
+              src={mascotHeroImage.src}
+              width={mascotHeroImage.width}
+              height={mascotHeroImage.height}
+              alt={mascotHeroImage.alt}
+            />
             <div>
               <strong>萝小白</strong>
-              <span>第一版临时 Logo / favicon 已确认</span>
+              <span>虚拟形象完全体设定图已确认</span>
             </div>
           </div>
         </div>
@@ -38,14 +44,13 @@ export function MascotPage() {
           <SectionHeader
             eyebrow="Forms"
             title="三种形态"
-            description="正式主图尚未全部确认，因此首版实现只使用已确认 favicon 和图形化展示，不提前公开候选大图。"
+            description="原始形象、可爱Q版安全设定图和虚拟形象完全体设定图已确认接入公开页面。"
           />
           <div className="mascot-form-grid">
-            {mascotForms.map((form, index) => (
+            {mascotForms.map((form) => (
               <article key={form.name} className="mascot-form">
-                <div className="mascot-form__media" aria-hidden="true">
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  <small>{form.mediaLabel}</small>
+                <div className="mascot-form__media">
+                  <img src={form.image.src} width={form.image.width} height={form.image.height} alt={form.image.alt} loading="lazy" />
                 </div>
                 <div className="mascot-form__content">
                   <p className="eyebrow">{form.role}</p>
@@ -70,9 +75,21 @@ export function MascotPage() {
         <div className="section__inner">
           <SectionHeader
             eyebrow="Gallery"
-            title="素材 Gallery 会在审核后扩展"
-            description="候选素材仍留在 assets/avatars 中，第一版公开页面不提供素材下载入口。"
+            title="首批 Gallery 素材已确认"
+            description="服装变体和表情包素材先作为公开预览接入；第一版不提供素材下载入口。"
           />
+          <div className="mascot-gallery-grid">
+            {mascotGalleryItems.map((item) => (
+              <article key={item.title} className="gallery-card">
+                <img src={item.image.src} width={item.image.width} height={item.image.height} alt={item.image.alt} loading="lazy" />
+                <div>
+                  <span>{item.category}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
+              </article>
+            ))}
+          </div>
           <div className="gallery-notes">
             {mascotGalleryNotes.map((note, index) => (
               <article key={note} className="info-tile">

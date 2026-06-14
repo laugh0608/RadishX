@@ -2,7 +2,7 @@
 
 RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 RadishX 官网根站点，通过 GitHub 托管代码，并使用 Vercel 免费额度部署；当前主域为 <https://radishx.com/>，`www.radishx.com` 作为兼容入口跳转到根域。
 
-当前仓库状态：基础仓库和远程仓库已创建，官网定位、页面内容、域名结构和素材归档已完成首轮规划；Vite + React + TypeScript 官网骨架已初始化，并接入路由、数据层、favicon、metadata、`sitemap.xml`、`robots.txt` 和 `--rx-*` 样式 token；已完成首次线上访问和站内路由 fallback 检查。
+当前仓库状态：基础仓库和远程仓库已创建，官网定位、页面内容、域名结构和素材归档已完成首轮规划；Vite + React + TypeScript 官网骨架已初始化，并接入路由、数据层、favicon、metadata、`sitemap.xml`、`robots.txt`、首批 Mascot / About 公开图片和 `--rx-*` 样式 token；已完成首次线上访问和站内路由 fallback 检查。
 
 ## 已确认方向
 
@@ -12,7 +12,7 @@ RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 Rad
 - 官网气质：偏创意品牌、游戏感和视觉冲击，参考 Apple 官网的克制文案、大幅视觉、清晰节奏和强产品呈现，同时继承 Radish 的淡雅新中式、纸感、印色感和低饱和轻纹样
 - 设计流程：先在 `docs/design/sources/radishx-site-v0.pen` 完成页面设计稿，审核后再进入 React 实现
 - 前端实现：已建立 `src/` 推荐目录结构，使用轻量路由表实现 `/`、四个项目页、`/mascot` 和 `/about`
-- 素材使用：可以复用现有截图、Logo 和虚拟形象图片，但正式用于页面前需要先审核具体选图
+- 素材使用：首批 Mascot / About 图片已审核并生成 Web 版本；后续截图、Logo、角色图或活动图正式用于页面前仍需先审核具体选图
 - GitHub 仓库：公开仓库
 - 许可证：source-available，详见 [LICENSE](LICENSE)
 
@@ -137,11 +137,20 @@ npm run build
 
 - `wechat-official-account-qr.png`：微信公众号“大白萝卜的坑”二维码。
 
+当前已确认并接入首批公开 Web 素材：
+
+- `public/images/mascot/radish-child-safe-design-sheet-v1-web.jpg`
+- `public/images/mascot/radish-mature-design-sheet-web.jpg`
+- `public/images/mascot/radish-origin-icon-web.jpg`
+- `public/images/mascot/radish-child-outfit-variants-web.jpg`
+- `public/images/mascot/radish-mature-sticker-sheet-wide-web.jpg`
+- `public/images/social/wechat-official-account-qr-web.png`
+
 节日素材不建议作为官网长期主视觉，更适合作为活动 Banner 或节日彩蛋。官网长期主视觉更适合从可爱Q版和虚拟形象完全体的设定图、站姿图中挑选。
 
 ## 待讨论方案
 
-正式实现前需要确认以下内容：
+后续需要继续确认以下内容：
 
 - 首页主视觉选图：需要从现有素材或后续新图中审核确认。
 
@@ -156,4 +165,4 @@ npm run build
 5. 虚拟形象页：以角色设定页方式展示三种形态，后续可扩展为素材库或下载页。
 6. About 页：联系方式、社交媒体、组织说明、项目仓库入口。
 
-当前阶段已进入 React 实现，第一版页面先使用图形化候选媒体框、项目状态信息和萝小白原始形象 favicon 作为临时 Logo；未确认的大图素材暂不进入公开页面实现。
+当前阶段已进入 React 实现，第一版页面先使用图形化候选媒体框、项目状态信息和萝小白原始形象 favicon 作为临时 Logo；首批确认图片已进入 Mascot、About 和首页 Mascot 辅助视觉，未确认的大图素材仍不进入公开页面实现。

@@ -25,8 +25,8 @@ export const contacts = [
 
 export const officialAccount = {
   name: "大白萝卜的坑",
-  asset: "assets/social/wechat-official-account-qr.png",
-  status: "二维码素材待确认后再进入 public/images；当前公开页只保留占位和名称。",
+  asset: "/images/social/wechat-official-account-qr-web.png",
+  status: "二维码已确认并接入 About 页；不放在首页首屏。",
 };
 
 export const repositories = [

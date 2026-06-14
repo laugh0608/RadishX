@@ -92,9 +92,14 @@ export function HomePage() {
               查看萝小白
             </RouteLink>
           </div>
-          <div className="mascot-sigil" aria-hidden="true">
-            <span>萝</span>
-            <img src="/favicon.ico" width="80" height="80" alt="" />
+          <div className="mascot-sigil">
+            <img
+              src="/images/mascot/radish-child-safe-design-sheet-v1-web.jpg"
+              width="1400"
+              height="933"
+              alt="萝小白可爱Q版安全设定图"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>

@@ -49,31 +49,31 @@
 
 ## 首批素材审核清单
 
-当前审核目标是确认哪些素材可以进入官网第一版实现。状态为“待确认”的条目需要人工确认后才能进入 `public/images/` 或正式页面实现。
+当前审核目标是确认哪些素材可以进入官网第一版实现。状态为“已确认”的条目可以生成 Web 版本进入 `public/images/` 并用于正式页面实现。
 
 | 用途 | 候选素材 | 建议状态 | 说明 |
 | --- | --- | --- | --- |
-| 首页 / Mascot 主视觉 | `assets/avatars/child/radish-child-safe-design-sheet-v1.png` | 待确认 | 可爱Q版安全设定图，适合用于 Mascot 页主视觉或首页辅助视觉。 |
+| 首页 / Mascot 主视觉 | `assets/avatars/child/radish-child-safe-design-sheet-v1.png` | 已确认 | 可爱Q版安全设定图，适合用于 Mascot 页设定展示和首页辅助视觉。Web 版本：`public/images/mascot/radish-child-safe-design-sheet-v1-web.jpg`。 |
 | 首页 / Mascot 主视觉 | `assets/avatars/child/radish-child-standing-white-dress.png` | 待确认 | 可爱Q版站姿，适合轻量主视觉或形态卡片。 |
 | 首页 / Mascot 主视觉 | `assets/avatars/child/radish-child-standing-white-dress-tall.png` | 待确认 | 可爱Q版站姿高分辨率版本，适合需要更完整裁切的区域。 |
-| 首页 / Mascot 主视觉 | `assets/avatars/mature/radish-mature-design-sheet.png` | 待确认 | 虚拟形象完全体设定图，适合品牌主视觉或 Mascot 页首屏。 |
+| 首页 / Mascot 主视觉 | `assets/avatars/mature/radish-mature-design-sheet.png` | 已确认 | 虚拟形象完全体设定图，适合 Mascot 页主视觉。Web 版本：`public/images/mascot/radish-mature-design-sheet-web.jpg`。 |
 | 首页 / Mascot 主视觉 | `assets/avatars/mature/radish-mature-standing-white-dress.png` | 待确认 | 虚拟形象完全体站姿，适合首页视觉区域或形态卡片。 |
-| Mascot 原始形象 | `assets/avatars/origin/radish-origin-icon.jpg` | 待确认 | 适合用作原始形象图标、小印章或形态起点。 |
-| Mascot Gallery | `assets/avatars/child/radish-child-outfit-variants.png` | 待确认 | 适合服装变体展示，不建议做首页首屏。 |
+| Mascot 原始形象 | `assets/avatars/origin/radish-origin-icon.jpg` | 已确认 | 适合用作原始形象图标、小印章或形态起点。Web 版本：`public/images/mascot/radish-origin-icon-web.jpg`。 |
+| Mascot Gallery | `assets/avatars/child/radish-child-outfit-variants.png` | 已确认 | 适合服装变体展示，不建议做首页首屏。Web 版本：`public/images/mascot/radish-child-outfit-variants-web.jpg`。 |
 | Mascot Gallery | `assets/avatars/child/radish-child-expression-sheet-grid.png` | 待确认 | 适合表情 Gallery，后续如需精细展示可再拆分单张。 |
 | Mascot Gallery | `assets/avatars/child/radish-child-sticker-sheet-wide-01.png` 至 `04.png` | 待确认 | 适合表情包横图 Gallery，不建议做长期主视觉。 |
-| Mascot Gallery | `assets/avatars/mature/radish-mature-sticker-sheet-wide.png` | 待确认 | 适合虚拟形象完全体表情 Gallery。 |
+| Mascot Gallery | `assets/avatars/mature/radish-mature-sticker-sheet-wide.png` | 已确认 | 适合虚拟形象完全体表情 Gallery。Web 版本：`public/images/mascot/radish-mature-sticker-sheet-wide-web.jpg`。 |
 | 参考素材 | `assets/avatars/mature/radish-mature-cosplay-board.png` | 暂不建议正式使用 | 三次元风格参考图，和当前官网长期视觉口径不完全一致。 |
 | 活动 / 彩蛋 | `assets/avatars/seasonal/*` | 暂不进入第一版长期页面 | 只建议用于节日活动 Banner、彩蛋或运营内容。 |
 | 站点图标 / Logo | `assets/avatars/origin/radish-origin-icon.jpg` | 已确认 | 已转换为 `public/favicon.ico`，第一版可作为站点图标和项目详情页临时 Logo。 |
-| About 二维码 | `assets/social/wechat-official-account-qr.png` | 待确认 | 适合 About 页联系方式区域，不放首页首屏。 |
+| About 二维码 | `assets/social/wechat-official-account-qr.png` | 已确认 | 适合 About 页联系方式区域，不放首页首屏。Web 版本：`public/images/social/wechat-official-account-qr-web.png`。 |
 
 当前缺口：
 
-- 首页首屏最终主视觉仍需从可爱Q版、虚拟形象完全体或项目矩阵合成视觉中确认。
+- 首页首屏继续以 Radish Orbit 项目星图为主，已确认可爱Q版安全设定图作为首页 Mascot 辅助视觉。
 - 四个项目详情页第一版暂不放真实截图和视频素材，主视觉区域使用设计稿中的候选媒体框、图形化占位和项目状态信息。
 - 四个项目详情页第一版暂用萝小白原始形象作为临时 Logo；后续如果项目有独立 Logo，再按项目替换。
-- 若确认具体选图，后续实现阶段再生成 Web 优化版本；不要覆盖原始素材。
+- Mascot 页首批主图、Gallery 图片和微信公众号二维码已生成 Web 版本并进入 `public/images/`；后续新增素材仍需继续审核，且不要覆盖原始素材。
 
 ## 文件命名
 

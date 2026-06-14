@@ -15,8 +15,8 @@ export const homeVisualAssetSlots: HomeVisualAssetSlot[] = [
   {
     label: "Mascot Forms",
     title: "萝小白三形态",
-    status: "待确认",
-    note: "原始形象、可爱Q版、完全体素材审核后再进入公开资源目录。",
+    status: "已接入",
+    note: "原始形象、可爱Q版安全设定图和完全体设定图已进入公开资源目录。",
   },
   {
     label: "Project Media",

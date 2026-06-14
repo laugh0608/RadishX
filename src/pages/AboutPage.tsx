@@ -37,10 +37,14 @@ export function AboutPage() {
             <p className="eyebrow">WeChat</p>
             <h2>微信公众号</h2>
             <div className="qr-panel__body">
-              <div className="qr-placeholder" aria-label="微信公众号二维码素材待确认">
-                <span>QR</span>
-                <small>待确认</small>
-              </div>
+              <img
+                className="qr-image"
+                src={officialAccount.asset}
+                width="512"
+                height="509"
+                alt={`${officialAccount.name}微信公众号二维码`}
+                loading="lazy"
+              />
               <div className="qr-panel__copy">
                 <strong>{officialAccount.name}</strong>
                 <p>{officialAccount.status}</p>
