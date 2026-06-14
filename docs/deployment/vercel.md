@@ -44,14 +44,23 @@
 {
   "rewrites": [
     {
-      "source": "/((?!favicon.ico|assets/.*|images/.*).*)",
+      "source": "/((?!favicon.ico|robots.txt|sitemap.xml|assets/.*|images/.*).*)",
       "destination": "/index.html"
     }
   ]
 }
 ```
 
-该配置只处理官网自身的静态页面路径，不包含四个未来项目域名。
+该配置只处理官网自身的静态页面路径，不包含四个未来项目域名。`favicon.ico`、`robots.txt`、`sitemap.xml`、`assets/` 和 `images/` 明确排除在 History API fallback 之外。
+
+## SEO 辅助文件
+
+当前公开静态文件：
+
+- `public/robots.txt`：允许抓取当前官网，并声明 `https://radishx.com/sitemap.xml`。
+- `public/sitemap.xml`：只列出当前官网站内页面：`/`、四个项目介绍页、`/mascot` 和 `/about`。
+
+四个未来项目子域名不写入当前官网 sitemap，等对应项目独立部署后由各自站点维护。
 
 ## 2026-06-13 线上 smoke 记录
 

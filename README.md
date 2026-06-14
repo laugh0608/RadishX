@@ -2,7 +2,7 @@
 
 RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 RadishX 官网根站点，通过 GitHub 托管代码，并使用 Vercel 免费额度部署；当前主域为 <https://radishx.com/>，`www.radishx.com` 作为兼容入口跳转到根域。
 
-当前仓库状态：基础仓库和远程仓库已创建，官网定位、页面内容、域名结构和素材归档已完成首轮规划；Vite + React + TypeScript 官网骨架已初始化，并接入路由、数据层、favicon、metadata 和 `--rx-*` 样式 token；已完成首次线上访问和站内路由 fallback 检查。
+当前仓库状态：基础仓库和远程仓库已创建，官网定位、页面内容、域名结构和素材归档已完成首轮规划；Vite + React + TypeScript 官网骨架已初始化，并接入路由、数据层、favicon、metadata、`sitemap.xml`、`robots.txt` 和 `--rx-*` 样式 token；已完成首次线上访问和站内路由 fallback 检查。
 
 ## 已确认方向
 
@@ -90,6 +90,7 @@ npm run build
 - 首页、四个项目介绍页、虚拟形象页和 About 页面都属于本官网项目。
 - `hub.radishx.com`、`forge.radishx.com`、`flow.radishx.com`、`mind.radishx.com` 是未来四个项目各自上线后的独立域名。
 - 官网中的项目详情页可以展示这些域名作为“访问项目”按钮；对应项目还没上线前，可以先禁用按钮或标注 Coming Soon。
+- `sitemap.xml` 和 `robots.txt` 只覆盖当前官网站内页面，不包含四个未来项目子域。
 
 第一版官网内的项目介绍页不依赖这些域名是否已上线。它们只是官网向外跳转的目标，不承担本官网页面路由。
 

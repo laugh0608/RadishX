@@ -42,6 +42,7 @@ RadishX 当前处于官网项目初始化后的 React 实现阶段。
 - 完成 2026-06-14 本地桌面与 390px 移动端全路由响应式 smoke，覆盖首页、四个项目详情页、Mascot、About 和 404 测试路径；修正导航 / 信息栏小链接触控目标和 About 二维码占位文本溢出。
 - 复查 `https://www.radishx.com/` 线上 HTTP 状态，首页、站内路径和未知路径均返回 `200`；线上浏览器截图采集仍受当前 Browser / Playwright 会话稳定性限制。
 - 确认 `radishx.com` 为官网 canonical 主域，`www.radishx.com` 作为兼容入口跳转到根域，并验证根路径与 `/about` 跳转保留路径。
+- 添加 `public/sitemap.xml` 和 `public/robots.txt`，并调整 `vercel.json` rewrite 排除规则，确保 SEO 辅助文件不被 History API fallback 覆盖。
 
 ## 产品边界
 
@@ -85,4 +86,4 @@ RadishX 当前处于官网项目初始化后的 React 实现阶段。
 1. 在 Browser / Chrome 会话稳定后补一次线上桌面与 390px 移动端截图级视觉 smoke，确认生产站点视觉与本地验证一致。
 2. 开始审核首页与 Mascot 首批候选素材，确认哪些图片可以进入公开页面；通过审核后再生成 Web 优化版本并放入 `public/images/`。
 3. 继续让 React 实现贴近 Pencil v1，优先补首页主视觉状态槽、项目详情状态区、Mascot 三形态和 About 联系区的精细节奏。
-4. 推进 `sitemap.xml`、`robots.txt` 和分享预览图片等 SEO 辅助文件。
+4. 在素材策略确认后推进分享预览图片，并继续做页面可访问性检查。
