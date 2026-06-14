@@ -93,7 +93,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
               )}
             </div>
           </div>
-          <MediaFrame project={project} />
+          <MediaFrame project={project} showVisual />
         </div>
       </section>
       <section className="section section--surface">

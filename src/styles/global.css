@@ -733,6 +733,12 @@ p {
   min-height: 330px;
 }
 
+.media-frame--visual {
+  grid-template-rows: auto auto auto auto;
+  gap: 14px;
+  min-height: 0;
+}
+
 .media-frame--radish {
   --rx-media-accent: var(--rx-accent-jade);
 }
@@ -824,9 +830,49 @@ p {
   border-radius: 50%;
 }
 
+.media-frame__visual {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+}
+
+.media-frame__visual--square {
+  width: min(100%, 330px);
+  justify-self: center;
+}
+
+.media-frame__visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rx-border-soft);
+  border-radius: 8px;
+  background: var(--rx-bg-surface);
+  box-shadow: var(--rx-shadow-soft);
+}
+
+.media-frame__visual--wide img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.media-frame__visual figcaption {
+  color: var(--rx-text-muted);
+  font-family: var(--rx-font-mono);
+  font-size: 12px;
+  line-height: 1.35;
+  text-align: center;
+}
+
 .media-frame__body {
   align-self: end;
   padding-top: 260px;
+}
+
+.media-frame--visual .media-frame__body {
+  padding-top: 0;
 }
 
 .media-frame__body > div {
@@ -871,6 +917,10 @@ p {
   color: var(--rx-text-primary);
   font-size: 13px;
   line-height: 1.45;
+}
+
+.media-frame--visual .media-frame__note {
+  margin-top: 0;
 }
 
 .ecosystem-grid,
@@ -1610,6 +1660,18 @@ p {
     gap: 34px;
   }
 
+  .hero-section__chips,
+  .project-band__chips,
+  .project-hero__chips {
+    max-width: 100%;
+  }
+
+  .project-band__chips .status-chip,
+  .project-hero__chips .status-chip {
+    max-width: 100%;
+    white-space: normal;
+  }
+
   .hero-section__copy p:not(.eyebrow),
   .project-hero__copy > p:not(.eyebrow),
   .mascot-hero__copy > p:not(.eyebrow),
@@ -1768,6 +1830,10 @@ p {
     padding: 18px;
   }
 
+  .media-frame--visual {
+    min-height: 0;
+  }
+
   .media-frame__topline {
     align-items: flex-start;
     flex-direction: column;
@@ -1791,10 +1857,27 @@ p {
     height: 40px;
   }
 
+  .media-frame__visual {
+    margin-top: 4px;
+  }
+
+  .media-frame__visual--square {
+    width: min(100%, 260px);
+  }
+
+  .media-frame__visual figcaption {
+    font-size: 11px;
+    text-align: left;
+  }
+
   .media-frame__body {
     align-items: flex-start;
     flex-direction: column;
     padding-top: 190px;
+  }
+
+  .media-frame--visual .media-frame__body {
+    padding-top: 0;
   }
 
   .media-frame__body > span {

@@ -46,6 +46,8 @@ RadishX 当前处于官网项目初始化后的 React 实现阶段。
 - 完成首批 Mascot / About 素材审核，生成 `public/images/mascot/` 与 `public/images/social/` Web 版本，并接入首页 Mascot 辅助视觉、Mascot 页主视觉 / 三形态 / Gallery、About 微信公众号二维码。
 - 生成 1200x630 Open Graph 分享预览图 `public/images/social/radishx-og-image.png`，并接入 `og:image`、`twitter:image` 和 `summary_large_image`。
 - 完成一轮页面可访问性与生产质量检查，覆盖桌面和 390px 移动端的标题层级、交互命名、外链安全、触控目标、正文焦点、横向溢出、metadata 和图片资源可访问性。
+- 完成四个项目详情页独立素材审核：Radish、RadishCatalyst、RadishFlow 已生成 `public/images/projects/` Web 图片并接入对应详情页；RadishMind 只发现外部参考截图，继续保留图形化候选媒体框。
+- 将 RadishFlow 详情页公开状态收敛为 `Archived`，对应兄弟仓库 2026-06-12 起停止公开维护的边界，避免 UI baseline 被解读为继续公开迭代或产品化承诺。
 
 ## 产品边界
 
@@ -79,7 +81,8 @@ RadishX 当前处于官网项目初始化后的 React 实现阶段。
 ## 待确认
 
 - 首页主视觉最终选图。
-- 四个项目详情页后续是否需要独立 Logo、真实截图或视频素材。
+- 四个项目详情页后续是否需要独立稳定 Logo、真实截图或视频素材。
+- RadishMind 是否补项目自有 Logo、Console 截图或协议 / 评测可视化图，用于替换当前图形化媒体框。
 - “萝小白”后续站姿、表情拆分、活动图和下载口径。
 - 是否需要为项目文档入口暴露仓库内 docs 链接。
 - 项目详情模板、Mascot 页和 About 页是否在 React 实现前补独立移动版设计稿。
@@ -87,6 +90,6 @@ RadishX 当前处于官网项目初始化后的 React 实现阶段。
 ## 下一步建议
 
 1. 在 Browser / Chrome 会话稳定后补一次线上桌面与 390px 移动端截图级视觉 smoke，确认生产站点视觉与本地验证一致。
-2. 继续让 React 实现贴近 Pencil v1，优先补首页主视觉状态槽、项目详情状态区、Mascot 三形态和 About 联系区的精细节奏。
-3. 逐步补充四个项目详情页的独立 Logo、截图或视频素材审核。
+2. 继续让 React 实现贴近 Pencil v1，优先补首页主视觉状态槽、项目详情审核图说明、Mascot 三形态和 About 联系区的精细节奏。
+3. 补 RadishMind 自有视觉素材，并评估四个项目是否需要独立 Logo、视频或更稳定的截图策略。
 4. 后续首页首屏主视觉确认后，再评估是否替换当前 Open Graph 分享预览图。

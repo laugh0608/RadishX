@@ -10,6 +10,17 @@ export type ProjectLink = {
   note?: string;
 };
 
+export type ProjectVisual = {
+  src: string;
+  alt: string;
+  label: string;
+  title: string;
+  note: string;
+  width: number;
+  height: number;
+  ratio: "square" | "wide";
+};
+
 export type Project = {
   id: ProjectRouteId;
   tone: ProjectTone;
@@ -28,6 +39,7 @@ export type Project = {
   capabilities: string[];
   signals: string[];
   links: ProjectLink[];
+  visual?: ProjectVisual;
 };
 
 export const projects: Project[] = [
@@ -49,6 +61,16 @@ export const projects: Project[] = [
     chips: ["Community", "WebOS", "Content Hub"],
     capabilities: ["现代化内容社区", "WebOS 风格工作台", "用户与项目聚合入口"],
     signals: ["面向公开内容与社区运营", "未来独立域名为 hub.radishx.com", "首版官网展示 GitHub 入口"],
+    visual: {
+      src: "/images/projects/radish/radish-acg-web.jpg",
+      alt: "Radish README 中使用的萝卜娘角色视觉",
+      label: "Reviewed visual",
+      title: "Radish 角色视觉",
+      note: "来自 Radish README，适合第一版详情页作为项目代表图；不作为可下载素材开放。",
+      width: 1024,
+      height: 1024,
+      ratio: "square",
+    },
     links: [
       {
         label: "GitHub",
@@ -82,6 +104,16 @@ export const projects: Project[] = [
     chips: ["ARPG", "Industrial Sci-fi", "Worldbuilding"],
     capabilities: ["异星基地探索", "人物成长与战斗", "后续协作联机方向"],
     signals: ["第一版官网展示项目定位", "未来独立域名为 forge.radishx.com", "真实游戏画面后续替换"],
+    visual: {
+      src: "/images/projects/catalyst/radishcatalyst-rpg-exploration-concept-web.jpg",
+      alt: "RadishCatalyst 异星化工基地探索概念图",
+      label: "Concept visual",
+      title: "异星基地概念视觉",
+      note: "来自 RadishCatalyst 源资产目录，按概念图使用，不作为实机画面或上线状态承诺。",
+      width: 1600,
+      height: 900,
+      ratio: "wide",
+    },
     links: [
       {
         label: "GitHub",
@@ -110,11 +142,21 @@ export const projects: Project[] = [
       "RadishFlow 以 Rust 为核心，Rust UI 作为主界面，并通过 .NET 适配 CAPE-OPEN / COM。",
     orbitLabel: "工程与流程画布",
     role: "RadishX 中最强调工程可信感的桌面工具",
-    stage: "核心架构推进中",
-    status: "Preview",
+    stage: "公开维护已暂停",
+    status: "Archived",
     chips: ["Rust", "Process Simulation", "CAPE-OPEN"],
     capabilities: ["稳态流程模拟", "Rust UI 主界面", ".NET / COM 适配边界"],
-    signals: ["首版不展示真实截图", "未来独立域名为 flow.radishx.com", "官网详情页先保留状态和技术边界"],
+    signals: ["展示历史 UI 视觉基线", "未来独立域名为 flow.radishx.com", "官网详情页保留合规和维护边界"],
+    visual: {
+      src: "/images/projects/flow/radishflow-workbench-concept-web.jpg",
+      alt: "RadishFlow Studio 工作台视觉基线图",
+      label: "UI baseline",
+      title: "Studio 工作台视觉基线",
+      note: "来自 RadishFlow 自身 baseline 目录，仅作为历史 UI 方向展示，不代表继续公开维护或产品化承诺。",
+      width: 1600,
+      height: 900,
+      ratio: "wide",
+    },
     links: [
       {
         label: "GitHub",
@@ -126,7 +168,7 @@ export const projects: Project[] = [
         href: "https://flow.radishx.com",
         isExternal: true,
         isDisabled: true,
-        note: "Coming Soon",
+        note: "Paused",
       },
     ],
   },

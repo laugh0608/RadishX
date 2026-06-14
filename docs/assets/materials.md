@@ -19,6 +19,13 @@
 - `assets/social/wechat-official-account-qr.png`：微信公众号“大白萝卜的坑”二维码。
 - `public/images/social/radishx-og-image.png`：RadishX 官网 1200x630 分享预览图，基于已确认完全体设定图和官网视觉 token 生成。
 
+项目详情页素材：
+
+- `public/images/projects/radish/`：Radish 详情页已审核 Web 图。
+- `public/images/projects/catalyst/`：RadishCatalyst 详情页已审核 Web 图。
+- `public/images/projects/flow/`：RadishFlow 详情页已审核 Web 图。
+- RadishMind 当前没有可进入 `public/images/projects/` 的项目自有公开视觉素材。
+
 ## 使用审核
 
 以下情况必须先确认具体素材：
@@ -70,11 +77,24 @@
 | About 二维码 | `assets/social/wechat-official-account-qr.png` | 已确认 | 适合 About 页联系方式区域，不放首页首屏。Web 版本：`public/images/social/wechat-official-account-qr-web.png`。 |
 | 社交分享图 | `public/images/social/radishx-og-image.png` | 已确认 | 1200x630 PNG，用于 Open Graph 与 Twitter `summary_large_image`。 |
 
+## 项目详情页素材审核
+
+审核日期：2026-06-14。审核范围只读检查四个兄弟项目仓库中的 Logo、截图、视频和代表性视觉素材，不读取或修改 `.pen` 文件，不迁入兄弟项目代码。
+
+| 项目 | 候选素材 | 推荐用途 | 风险与限制 | 结论 |
+| --- | --- | --- | --- | --- |
+| Radish | `/Users/luobo/Code/Radish/Docs/images/RadishAcg-1024.png` | 详情页主媒体区项目代表图。 | README 已使用该图作为“萝卜娘”视觉，适合代表 Radish 气质；未发现可直接公开的当前产品截图或视频。`DataBases/TestOutput`、测试上传文件、第三方 UI 参考图和默认商品图不进入官网。 | 已生成 `public/images/projects/radish/radish-acg-web.jpg` 并接入 `/radish`。 |
+| RadishCatalyst | `/Users/luobo/Code/RadishCatalyst/assets/concept-art/2026-04-25-visual-direction-rpg-exploration.png` | 详情页主媒体区概念视觉。 | 属于项目源资产目录的概念图，只能标注为 `Concept visual`；不作为实机截图、试玩状态或上线承诺。`client/icon.svg` 是 Godot 默认图标，不作为项目 Logo。 | 已生成 `public/images/projects/catalyst/radishcatalyst-rpg-exploration-concept-web.jpg` 并接入 `/catalyst`。 |
+| RadishFlow | `/Users/luobo/Code/RadishFlow/docs/architecture/assets/studio-ui/baseline/radishflow-workbench-concept.png` | 详情页主媒体区 UI baseline。 | 兄弟仓库 README 已声明 2026-06-12 起停止公开维护，因此只能作为历史 UI 方向展示，不代表继续公开迭代、产品化、下载或交付承诺。`adapters/reference/`、Aspen/HYSYS/DWSIM/COFE 等参考截图均不进入官网。 | 已生成 `public/images/projects/flow/radishflow-workbench-concept-web.jpg`，接入 `/flow`，并将页面状态收敛为 `Archived`。 |
+| RadishMind | 无项目自有 Logo、截图、视频或代表性公开视觉。 | 暂不接入正式图。 | 当前发现的 `docs/assets/ui-design-reference/` 均为 AFFINE、CodexApp、1Panel、GitHub、Cloudflare、Discourse 等外部产品参考截图，只能用于内部灵感，不可作为官网项目图。 | 保留图形化候选媒体框；后续需要补 RadishMind 自有 Logo、Console 截图或协议/评测可视化图。 |
+
 当前缺口：
 
 - 首页首屏继续以 Radish Orbit 项目星图为主，已确认可爱Q版安全设定图作为首页 Mascot 辅助视觉。
-- 四个项目详情页第一版暂不放真实截图和视频素材，主视觉区域使用设计稿中的候选媒体框、图形化占位和项目状态信息。
-- 四个项目详情页第一版暂用萝小白原始形象作为临时 Logo；后续如果项目有独立 Logo，再按项目替换。
+- Radish、RadishCatalyst、RadishFlow 详情页已接入审核后的代表性图片；这些图片不提供下载入口，也不声明可自由复用。
+- RadishMind 详情页仍使用图形化候选媒体框，等待项目自有 Logo、截图或代表性可视化素材。
+- 四个项目都未发现可直接公开的视频素材；后续如需接入视频，必须单独审核来源、字幕/水印、压缩方案和移动端加载策略。
+- 四个项目仍缺独立稳定 Logo；后续如果项目有独立 Logo，再按项目替换当前 favicon / 视觉图口径。
 - Mascot 页首批主图、Gallery 图片和微信公众号二维码已生成 Web 版本并进入 `public/images/`；后续新增素材仍需继续审核，且不要覆盖原始素材。
 - 分享预览图已使用完全体设定图生成第一版，后续如果首页首屏主视觉确认，可再替换为更贴近首屏的版本。
 
