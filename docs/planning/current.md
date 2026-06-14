@@ -41,6 +41,7 @@ RadishX 当前处于官网项目初始化后的 React 实现阶段。
 - 完成 Vercel 首次线上 smoke：`https://www.radishx.com/` 可访问，站内路径和未知路径均返回 `index.html` fallback；完整视觉 smoke 需要在 Chrome 会话稳定后复查。
 - 完成 2026-06-14 本地桌面与 390px 移动端全路由响应式 smoke，覆盖首页、四个项目详情页、Mascot、About 和 404 测试路径；修正导航 / 信息栏小链接触控目标和 About 二维码占位文本溢出。
 - 复查 `https://www.radishx.com/` 线上 HTTP 状态，首页、站内路径和未知路径均返回 `200`；线上浏览器截图采集仍受当前 Browser / Playwright 会话稳定性限制。
+- 确认 `radishx.com` 为官网 canonical 主域，`www.radishx.com` 作为兼容入口跳转到根域，并验证根路径与 `/about` 跳转保留路径。
 
 ## 产品边界
 
@@ -48,7 +49,7 @@ RadishX 当前处于官网项目初始化后的 React 实现阶段。
 
 本官网包含：
 
-- `radishx.com` 官网首页；当前已验证 `www.radishx.com` 可访问，根域与 `www` 的规范化策略待确认。
+- `radishx.com` 官网首页；`www.radishx.com` 作为兼容入口跳转到根域。
 - Radish、RadishCatalyst、RadishFlow、RadishMind 的站内介绍页。
 - Mascot 虚拟形象页。
 - About 联系方式和社交媒体页面。
@@ -61,8 +62,8 @@ RadishX 当前处于官网项目初始化后的 React 实现阶段。
 
 ## 域名决策
 
-- `radishx.com`：当前官网主域名目标，部署在 Vercel。
-- `www.radishx.com`：当前已验证可访问入口；后续需确认与根域的 canonical / redirect 策略。
+- `radishx.com`：当前官网 canonical 主域名，部署在 Vercel。
+- `www.radishx.com`：兼容访问入口，跳转到 `radishx.com` 并保留路径。
 - `hub.radishx.com`：Radish 未来独立访问域名。
 - `forge.radishx.com`：RadishCatalyst 未来独立访问域名。
 - `flow.radishx.com`：RadishFlow 未来独立访问域名。
@@ -78,12 +79,10 @@ RadishX 当前处于官网项目初始化后的 React 实现阶段。
 - “萝小白”三种形态的正式主图和 Gallery 素材。
 - 是否需要为项目文档入口暴露仓库内 docs 链接。
 - 项目详情模板、Mascot 页和 About 页是否在 React 实现前补独立移动版设计稿。
-- `radishx.com` 与 `www.radishx.com` 的规范化跳转策略。
 
 ## 下一步建议
 
-1. 先确认 `radishx.com` 与 `www.radishx.com` 的 canonical / redirect 策略，并同步 Vercel / DNS 记录。
-2. 在 Browser / Chrome 会话稳定后补一次线上桌面与 390px 移动端截图级视觉 smoke，确认生产站点视觉与本地验证一致。
-3. 开始审核首页与 Mascot 首批候选素材，确认哪些图片可以进入公开页面；通过审核后再生成 Web 优化版本并放入 `public/images/`。
-4. 继续让 React 实现贴近 Pencil v1，优先补首页主视觉状态槽、项目详情状态区、Mascot 三形态和 About 联系区的精细节奏。
-5. 分享预览图片、站点地图和更多 SEO 辅助文件放在素材与域名策略确认后推进。
+1. 在 Browser / Chrome 会话稳定后补一次线上桌面与 390px 移动端截图级视觉 smoke，确认生产站点视觉与本地验证一致。
+2. 开始审核首页与 Mascot 首批候选素材，确认哪些图片可以进入公开页面；通过审核后再生成 Web 优化版本并放入 `public/images/`。
+3. 继续让 React 实现贴近 Pencil v1，优先补首页主视觉状态槽、项目详情状态区、Mascot 三形态和 About 联系区的精细节奏。
+4. 推进 `sitemap.xml`、`robots.txt` 和分享预览图片等 SEO 辅助文件。

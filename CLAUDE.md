@@ -14,7 +14,7 @@
 
 ## 项目定位
 
-RadishX 是 Radish 系列项目的官网与统一入口，通过 GitHub 托管代码，并使用 Vercel 免费额度部署官网；当前已验证 `www.radishx.com` 可访问，`radishx.com` 与 `www.radishx.com` 的规范化关系待确认。
+RadishX 是 Radish 系列项目的官网与统一入口，通过 GitHub 托管代码，并使用 Vercel 免费额度部署官网；当前主域为 `radishx.com`，`www.radishx.com` 作为兼容入口跳转到根域。
 
 当前技术栈方向：
 

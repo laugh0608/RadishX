@@ -8,9 +8,8 @@
 
 - GitHub 仓库：`https://github.com/laugh0608/RadishX`
 - Vercel 项目：已创建，项目名以 Vercel 控制台为准
-- 主域名目标：`radishx.com`
-- 已验证访问入口：`https://www.radishx.com/`
-- 待确认：`radishx.com` 与 `www.radishx.com` 的 canonical / redirect 策略
+- Canonical 主域名：`radishx.com`
+- 兼容访问入口：`https://www.radishx.com/`，跳转到 `https://radishx.com/`
 - 站点内容：首页、四个项目介绍页、Mascot、About
 
 ## 未来项目域名
@@ -30,8 +29,8 @@
 
 1. 公开 GitHub 仓库使用 `laugh0608/RadishX`。
 2. Vercel 只构建和部署本官网静态站点。
-3. `radishx.com` 是官网主域名目标，`www.radishx.com` 当前已验证可访问。
-4. 根域与 `www` 的规范化跳转策略需要在 Vercel / DNS 配置中确认。
+3. `radishx.com` 是官网 canonical 主域。
+4. `www.radishx.com` 作为兼容访问入口跳转到根域，并保留路径。
 5. 四个未来项目域名不配置成本官网 rewrite。
 
 预期 Vite 配置：
@@ -69,6 +68,12 @@
 - HTTP 检查确认 `/`、`/radish`、`/catalyst`、`/flow`、`/mind`、`/mascot`、`/about` 和 `/abc-test` 均返回 `200`。
 - 本地同版本已完成 `1440x900` 与 `390x844` 全路由响应式 smoke，未发现横向溢出、文本溢出、小点击目标或页面 error console。
 - 当前 Browser webview 与 Playwright CLI 截图链路仍不稳定，线上截图级视觉 smoke 后续需要在浏览器会话稳定后补跑。
+
+## 2026-06-14 域名规范化记录
+
+- 已确认 `https://radishx.com/` 为官网 canonical 主域，返回 `HTTP/2 200`。
+- 已确认 `https://www.radishx.com/` 返回 `HTTP/2 307` 并跳转到 `https://radishx.com/`。
+- 已确认 `https://www.radishx.com/about` 返回 `HTTP/2 307` 并跳转到 `https://radishx.com/about`，路径可保留。
 
 ## 不在当前阶段做
 
