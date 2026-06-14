@@ -49,6 +49,7 @@ RadishX 当前处于官网项目初始化后的 React 实现阶段。
 - 完成四个项目详情页独立素材审核：Radish、RadishCatalyst、RadishFlow 已生成 `public/images/projects/` Web 图片并接入对应详情页；RadishMind 只发现外部参考截图，未接入图片素材。
 - 将 RadishFlow 详情页公开状态收敛为 `Archived`，对应兄弟仓库 2026-06-12 起停止公开维护的边界，避免 UI baseline 被解读为继续公开迭代或产品化承诺。
 - 为 RadishMind 详情页补代码内 `Protocol map` 视觉，用协议、评测、工具编排和审计四个公开信号替换通用占位，不引入外部参考截图或未审核图片。
+- 细化首页 Hero Orbit 素材状态槽，将首屏主视觉、Mascot 三形态和项目媒体状态整理为可扫读检查项，明确 Radish Orbit 仍是 v1 主结构，未确认站姿图和项目图不进入首屏大图。
 
 ## 产品边界
 
@@ -91,6 +92,6 @@ RadishX 当前处于官网项目初始化后的 React 实现阶段。
 ## 下一步建议
 
 1. 在 Browser / Chrome 会话稳定后补一次线上桌面与 390px 移动端截图级视觉 smoke，确认生产站点视觉与本地验证一致。
-2. 继续让 React 实现贴近 Pencil v1，优先补首页主视觉状态槽、项目详情审核图说明、Mascot 三形态和 About 联系区的精细节奏。
+2. 继续让 React 实现贴近 Pencil v1，优先补项目详情审核图说明、Mascot 三形态和 About 联系区的精细节奏。
 3. 评估四个项目是否需要独立 Logo、视频或更稳定的截图策略；RadishMind 后续重点转为自有 Logo / Console 截图素材审核。
 4. 后续首页首屏主视觉确认后，再评估是否替换当前 Open Graph 分享预览图。

@@ -47,12 +47,22 @@ export function HeroOrbit() {
           <div className="orbit-visual__asset-rail" aria-label="首页素材接入状态">
             {homeVisualAssetSlots.map((slot) => (
               <article key={slot.label} className="orbit-visual__asset-slot">
-                <div>
+                <div className="orbit-visual__asset-head">
                   <span>{slot.label}</span>
-                  <strong>{slot.title}</strong>
+                  <StatusChip tone={slot.statusTone}>{slot.status}</StatusChip>
                 </div>
-                <mark>{slot.status}</mark>
-                <p>{slot.note}</p>
+                <div className="orbit-visual__asset-copy">
+                  <strong>{slot.title}</strong>
+                  <p>{slot.note}</p>
+                </div>
+                <dl className="orbit-visual__asset-checks" aria-label={`${slot.title} 状态检查项`}>
+                  {slot.checkpoints.map((checkpoint) => (
+                    <div key={checkpoint.label}>
+                      <dt>{checkpoint.label}</dt>
+                      <dd>{checkpoint.value}</dd>
+                    </div>
+                  ))}
+                </dl>
               </article>
             ))}
           </div>
