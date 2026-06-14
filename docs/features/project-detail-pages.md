@@ -1,6 +1,6 @@
 # 四个项目详情页
 
-状态：首版已实现，后续进入素材替换与内容维护  
+状态：首版已实现，已补公开文档入口
 最后更新：2026-06-14
 
 ## 目标
@@ -35,6 +35,7 @@
 - RadishFlow：已接入历史 UI baseline `radishflow-workbench-concept-web.jpg`，页面状态为 `Archived`。
 - RadishMind：未接入图片，使用代码内 `Protocol map` 表达协议、评测、工具编排和审计。
 - 每页主媒体区展示 `Asset source`、`Usage boundary` 和 `Next material need`。
+- 每页已补公开文档入口，只链接对应 GitHub 仓库 `dev` 分支中的 README / docs / wiki / status / contracts 等稳定入口，不复制文档正文。
 
 ## 设计要求
 
@@ -48,7 +49,7 @@
 - 后续项目拥有稳定 Logo、真实截图或视频时，按项目单独审核并更新本文件。
 - 如果接入视频，先确认来源、压缩策略、字幕 / 水印、移动端加载和降级图。
 - RadishMind 后续优先补自有 Logo、Console 截图或真实可视化图。
-- 如需要展示公开文档入口，先确认对应仓库文档适合公开访问。
+- 已确认并接入公开文档入口：Radish 链接 `Docs/` 与快速开始，RadishCatalyst 链接 `docs/` 与 `wiki/`，RadishFlow 链接 `docs/` 与当前状态且保留 archived 口径，RadishMind 链接 `docs/` 与跨项目集成契约。
 
 ## 验证
 
@@ -56,12 +57,14 @@
 - 桌面视口检查 `/radish`、`/catalyst`、`/flow`、`/mind`。
 - 390px 移动端检查四个项目页。
 - 检查图片实际加载、`alt` 合理、主媒体说明完整。
-- 检查 GitHub 链接、未来域名状态、禁用访问入口和矩阵回流入口。
+- 检查 GitHub 链接、公开文档入口、未来域名状态、禁用访问入口和矩阵回流入口。
+- 本轮 Browser 检查 `/radish`、`/catalyst`、`/flow`、`/mind` 在 `1440x900` 与 `390x844` 下的 Documentation 卡片，确认每页 2 个文档入口、Public Surface 中 Docs 行、外链 `rel`、触控目标和横向溢出均符合预期。
 
 ## 完成标准
 
 - 四个项目页在桌面和移动端无横向溢出。
 - 每个项目的素材来源、使用边界和下一步需求清楚。
+- 每个项目的公开文档入口与项目维护状态边界清楚。
 - 新接入素材已记录到 `docs/assets/materials.md`，并生成 Web 优化版本。
 - 没有未经审核图片进入正式页面。
 

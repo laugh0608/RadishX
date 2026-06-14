@@ -1120,6 +1120,7 @@ p {
 }
 
 .ecosystem-grid,
+.document-grid,
 .gallery-notes,
 .repo-grid,
 .related-projects {
@@ -1129,6 +1130,7 @@ p {
 }
 
 .info-tile,
+.document-card,
 .repo-card,
 .related-project,
 .detail-panel,
@@ -1156,6 +1158,42 @@ p {
   font-family: var(--rx-font-mono);
   font-size: 12px;
   font-weight: 760;
+}
+
+.document-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.document-card {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-width: 0;
+  min-height: 168px;
+  padding: 24px;
+}
+
+.document-card__meta {
+  color: var(--rx-brand-primary);
+  font-family: var(--rx-font-mono);
+  font-size: 12px;
+  font-weight: 760;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.document-card strong {
+  color: var(--rx-text-primary);
+  font-size: 20px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.document-card > span:last-child {
+  color: var(--rx-text-secondary);
+  font-size: 14px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
 }
 
 .signal-band {
@@ -2014,6 +2052,7 @@ p {
   }
 
   .ecosystem-grid,
+  .document-grid,
   .gallery-notes,
   .repo-grid,
   .related-projects,
@@ -2206,6 +2245,7 @@ p {
 
   .project-band,
   .detail-panel,
+  .document-card,
   .contact-panel,
   .qr-panel,
   .domain-card,
@@ -2280,6 +2320,7 @@ p {
   }
 
   .info-tile,
+  .document-card,
   .repo-card,
   .related-project,
   .domain-card {
@@ -2408,6 +2449,7 @@ p {
   }
 
   .ecosystem-grid,
+  .document-grid,
   .gallery-notes,
   .repo-grid,
   .related-projects,

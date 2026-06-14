@@ -30,7 +30,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 | 目标 | 文档 | 当前状态 |
 | --- | --- | --- |
 | 首页首屏与主视觉 | [home-hero-visual.md](../features/home-hero-visual.md) | 维护中，等待最终主视觉选图 |
-| 四个项目详情页 | [project-detail-pages.md](../features/project-detail-pages.md) | 首版已实现，后续补 Logo / 截图 / 视频 |
+| 四个项目详情页 | [project-detail-pages.md](../features/project-detail-pages.md) | 首版已实现，已补公开文档入口，后续补 Logo / 截图 / 视频 |
 | Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | 首版已实现，后续补站姿、表情拆分和下载口径 |
 | About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 首轮精细化已完成 |
 | 素材治理 | [asset-governance.md](../features/asset-governance.md) | 持续执行 |
@@ -42,13 +42,14 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 
 1. `/about` 页面联系方式、微信公众号二维码、GitHub 仓库入口和域名边界已完成首轮精细化。
 2. PC 与 390px 移动端已检查，长邮箱、链接、二维码说明、按钮、仓库卡片和域名卡片未发现横向溢出。
-3. 目标文档、本文件和本周开发日志已同步记录。
+3. 四个项目详情页已补公开文档入口，链接对应仓库 `dev` 分支中的 README / docs / wiki / status / contracts 等稳定入口，并保留 RadishFlow archived 口径。
+4. 目标文档、本文件和本周开发日志已同步记录。
 
 下一步建议推进：
 
-1. 在 Browser / Chrome 会话稳定后补跑线上截图级视觉 smoke。
-2. 根据素材治理文档继续评估独立 Logo、真实截图和公开视频素材。
-3. 首页首屏最终主视觉确认后，再评估是否替换当前 Open Graph 分享预览图。
+1. 根据素材治理文档继续评估独立 Logo、真实截图和公开视频素材；没有确认素材前不接入正式页面。
+2. 首页首屏最终主视觉确认后，再评估是否替换当前 Open Graph 分享预览图。
+3. 推送并部署后，再补跑线上截图级视觉 smoke。
 
 ## 产品边界
 
@@ -85,11 +86,10 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 - 四个项目详情页后续是否需要独立稳定 Logo、真实截图或视频素材。
 - RadishMind 是否补项目自有 Logo、Console 截图或真实图片素材，用于替换当前代码内协议图。
 - “萝小白”后续站姿、表情拆分、活动图和下载口径。
-- 是否需要为项目文档入口暴露仓库内 docs 链接。
 - 项目详情模板、Mascot 页和 About 页是否在 React 实现前补独立移动版设计稿。
 
 ## 后续顺序
 
-1. Browser / Chrome 会话稳定后，补跑线上截图级视觉 smoke。
-2. 根据素材治理文档继续评估独立 Logo、真实截图和公开视频素材。
-3. 首页首屏最终主视觉确认后，再评估是否替换当前 Open Graph 分享预览图。
+1. 根据素材治理文档继续评估独立 Logo、真实截图和公开视频素材。
+2. 首页首屏最终主视觉确认后，再评估是否替换当前 Open Graph 分享预览图。
+3. 推送并部署后，补跑线上截图级视觉 smoke。

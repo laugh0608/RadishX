@@ -45,6 +45,11 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
       note: project.status,
     },
     {
+      label: "Docs",
+      value: `${project.documentation.length} public entries`,
+      note: "Repository docs",
+    },
+    {
       label: "Visual",
       value: project.visual?.label ?? project.diagram?.label ?? "图形化候选媒体框",
       note: project.visual ? "Reviewed asset" : project.diagram ? "Code-native visual" : "No screenshots",
@@ -118,6 +123,24 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
             description="项目页展示站内路径、GitHub 仓库、未来独立域名和上线状态；未稳定的演示站或下载页不会伪装成可访问入口。"
           />
           <InfoRail items={projectInfo} tone="dark" />
+        </div>
+      </section>
+      <section className="section section--surface">
+        <div className="section__inner">
+          <SectionHeader
+            eyebrow="Documentation"
+            title="公开文档入口"
+            description="官网只链接各项目仓库中的稳定文档入口，不复制文档正文，也不把文档入口包装成已上线产品。"
+          />
+          <div className="document-grid">
+            {project.documentation.map((document) => (
+              <a key={document.href} className="document-card" href={document.href} target="_blank" rel="noopener noreferrer">
+                <span className="document-card__meta">{document.label}</span>
+                <strong>{document.description}</strong>
+                <span>{document.boundary}</span>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
       <section className="section">

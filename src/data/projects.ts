@@ -41,6 +41,13 @@ export type ProjectAssetReview = {
   nextNeed: string;
 };
 
+export type ProjectDocumentation = {
+  label: string;
+  href: string;
+  description: string;
+  boundary: string;
+};
+
 export type Project = {
   id: ProjectRouteId;
   tone: ProjectTone;
@@ -62,6 +69,7 @@ export type Project = {
   visual?: ProjectVisual;
   diagram?: ProjectDiagram;
   assetReview: ProjectAssetReview;
+  documentation: ProjectDocumentation[];
 };
 
 export const projects: Project[] = [
@@ -98,6 +106,20 @@ export const projects: Project[] = [
       boundary: "代表项目气质，不是当前产品 UI 截图。",
       nextNeed: "后续补独立 Logo、稳定产品截图或公开视频素材。",
     },
+    documentation: [
+      {
+        label: "Docs index",
+        href: "https://github.com/laugh0608/Radish/tree/dev/Docs",
+        description: "固定项目文档入口，覆盖架构、指南、规划、记录和开发日志。",
+        boundary: "链接到仓库文档源，不复制文档内容，也不替代 Radish 应用内文档系统。",
+      },
+      {
+        label: "Getting started",
+        href: "https://github.com/laugh0608/Radish/blob/dev/Docs/guide/getting-started.md",
+        description: "本地启动、服务入口和上手路径说明。",
+        boundary: "仅作为开发者阅读入口，不代表 RadishX 官网提供 Radish 业务功能。",
+      },
+    ],
     links: [
       {
         label: "GitHub",
@@ -146,6 +168,20 @@ export const projects: Project[] = [
       boundary: "只按概念视觉展示，不是 gameplay、实机截图或上线承诺。",
       nextNeed: "后续补真实 gameplay、trailer、独立 Logo 或正式 key visual。",
     },
+    documentation: [
+      {
+        label: "Docs index",
+        href: "https://github.com/laugh0608/RadishCatalyst/tree/dev/docs",
+        description: "项目文档总入口，覆盖产品定义、设计、架构、规划和参考资料。",
+        boundary: "开发者文档入口，不等同于可游玩版本、下载页或上线承诺。",
+      },
+      {
+        label: "Player wiki source",
+        href: "https://github.com/laugh0608/RadishCatalyst/tree/dev/wiki",
+        description: "未来面向玩家的 Wiki 源内容目录。",
+        boundary: "当前作为源内容预览，不声明正式玩家站点已上线。",
+      },
+    ],
     links: [
       {
         label: "GitHub",
@@ -194,6 +230,20 @@ export const projects: Project[] = [
       boundary: "只展示历史 UI 方向；项目公开维护已暂停，不表达下载、演示或继续交付。",
       nextNeed: "如未来恢复公开维护，再重新审核当前截图、版本状态和发布口径。",
     },
+    documentation: [
+      {
+        label: "Docs index",
+        href: "https://github.com/laugh0608/RadishFlow/tree/dev/docs",
+        description: "历史文档入口，覆盖 Studio guide、reference、architecture、status 和 MVP 文档。",
+        boundary: "项目已停止公开维护；该入口只作为历史代码与个人学习记录索引。",
+      },
+      {
+        label: "Current status",
+        href: "https://github.com/laugh0608/RadishFlow/blob/dev/docs/status/current.md",
+        description: "当前阶段、维护边界和验证基线说明。",
+        boundary: "不构成继续公开开发、发布、支持或交付承诺。",
+      },
+    ],
     links: [
       {
         label: "GitHub",
@@ -257,6 +307,20 @@ export const projects: Project[] = [
       boundary: "表达公开定位，不是 RadishMind Console 或正式产品 UI 截图。",
       nextNeed: "后续补项目自有 Logo、Console 截图或真实协议 / 评测可视化图。",
     },
+    documentation: [
+      {
+        label: "Docs index",
+        href: "https://github.com/laugh0608/RadishMind/tree/dev/docs",
+        description: "正式文档入口，覆盖项目指南、当前焦点、产品范围、战略、能力矩阵和路线图。",
+        boundary: "文档说明产品与工程边界，不代表 RadishX 官网提供模型服务或 Console。",
+      },
+      {
+        label: "Integration contracts",
+        href: "https://github.com/laugh0608/RadishMind/blob/dev/docs/radishmind-integration-contracts.md",
+        description: "跨项目集成契约入口，用于说明 Radish 体系内的协议和边界。",
+        boundary: "只链接契约文档，不暴露真实 API key、生产环境或后端服务。",
+      },
+    ],
     links: [
       {
         label: "GitHub",
