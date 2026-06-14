@@ -2,7 +2,7 @@
 
 RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 RadishX 官网根站点，通过 GitHub 托管代码，并使用 Vercel 免费额度部署；当前主域为 <https://radishx.com/>，`www.radishx.com` 作为兼容入口跳转到根域。
 
-当前仓库状态：基础仓库和远程仓库已创建，官网定位、页面内容、域名结构和素材归档已完成首轮规划；Vite + React + TypeScript 官网骨架已初始化，并接入路由、数据层、favicon、metadata、Open Graph 分享预览图、`sitemap.xml`、`robots.txt`、首批 Mascot / About 公开图片和 `--rx-*` 样式 token；已完成首次线上访问和站内路由 fallback 检查。
+当前仓库状态：基础仓库和远程仓库已创建，官网定位、页面内容、域名结构和素材归档已完成首轮规划；Vite + React + TypeScript 官网骨架已初始化，并接入路由、数据层、favicon、metadata、Open Graph 分享预览图、`sitemap.xml`、`robots.txt`、首批 Mascot / About 公开图片、项目详情页代表视觉和 `--rx-*` 样式 token；已完成首次线上访问、站内路由 fallback 检查和目标级开发文档拆分。
 
 ## 已确认方向
 
@@ -37,6 +37,7 @@ RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 Rad
 
 - [文档首页](docs/README.md)
 - [当前规划](docs/planning/current.md)
+- [功能与目标文档](docs/features/README.md)
 - [开发规范](docs/development/standards.md)
 - [视觉规范](docs/design/visual-guidelines.md)
 - [Vercel 与域名说明](docs/deployment/vercel.md)

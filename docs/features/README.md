@@ -1,0 +1,38 @@
+# 功能与目标文档
+
+本目录存放 RadishX 官网的页面、功能和开发目标级设计与开发文档。
+
+## 使用规则
+
+- `docs/planning/current.md` 负责阶段控制、当前目标和执行顺序。
+- 本目录文档负责具体目标的背景、范围、设计要求、开发任务、验证和完成标准。
+- 新增页面、功能、素材替换、发布检查或较大视觉调整前，先创建或更新对应目标文档。
+- 完成目标后，更新目标文档状态、`docs/planning/current.md` 和当周开发日志。
+- 历史过程、验证输出和关键决策写入 `docs/devlogs/`，不要继续堆在入口规划页里。
+
+## 当前目标索引
+
+| 文档 | 目标 | 状态 |
+| --- | --- | --- |
+| [home-hero-visual.md](home-hero-visual.md) | 首页首屏、Radish Orbit 和主视觉替换 | 维护中 |
+| [project-detail-pages.md](project-detail-pages.md) | 四个项目详情页内容、视觉和公开素材边界 | 首版已实现 |
+| [mascot-page.md](mascot-page.md) | Mascot 虚拟形象页、三形态和 Gallery | 首版已实现 |
+| [about-contact-surface.md](about-contact-surface.md) | About 联系区、仓库入口和域名边界 | 下一开发目标 |
+| [asset-governance.md](asset-governance.md) | 素材审核、Web 优化和 `public/images` 准入 | 持续执行 |
+| [visual-qa-and-release.md](visual-qa-and-release.md) | 本地 / 线上视觉 QA、构建和发布检查 | 持续执行 |
+
+## 推荐文档结构
+
+每个目标文档优先包含：
+
+- 目标
+- 背景
+- 范围
+- 不做
+- 设计要求
+- 开发任务
+- 验证
+- 完成标准
+- 后续事项
+
+小目标可以合并条目，但必须保留范围、验证和完成标准。

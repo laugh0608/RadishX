@@ -4,54 +4,51 @@
 
 ## 当前阶段
 
-RadishX 当前处于官网项目初始化后的 React 实现阶段。
+RadishX 当前处于 React 官网首版实现后的页面完善与公开素材治理阶段。
 
-已完成：
+当前站点已具备：
 
-- 明确技术栈：Vite + React + TypeScript。
-- 明确部署目标：GitHub 公开仓库 + Vercel 免费部署 `radishx.com`。
-- 明确页面结构：首页、四个项目介绍页、Mascot、About。
-- 明确官网气质：创意品牌 / 游戏感 / 视觉冲击，参考 Apple 官网的节奏。
-- 整理虚拟形象和社交媒体素材。
-- 建立基础文档、协作文件和仓库通用配置。
-- 初始化 Git 仓库并推送到 `laugh0608/RadishX`。
-- 生成“萝小白”可爱Q版安全设定图候选 `assets/avatars/child/radish-child-safe-design-sheet-v1.png`。
-- 添加 RadishX source-available 许可证 `LICENSE`。
-- 创建 RadishX Pencil 设计源文件 `docs/design/sources/radishx-site-v0.pen`。
-- 形成 RadishX 视觉与前端规范、开发规范，明确先设计后实现的流程。
-- 完成首页桌面版当前方向 `Home Desktop v1 - Radish Orbit`，采用项目星图、四道入口和萝小白叙事结构。
-- 完成首页移动版 `Home Mobile v1 - Radish Orbit`，将桌面星图改为移动端可读的纵向项目轨道。
-- 完成项目详情页模板 `Project Detail Template v1 - Flow Example`，用于四个项目详情页复用。
-- 完成 `Mascot Page v1` 与 `About Page v1` 桌面版设计稿。
-- 确认第一版项目详情页暂不放真实截图和视频素材，使用图形化候选媒体框和项目状态信息承载视觉区域。
-- 确认萝小白原始形象可作为站点图标和第一版临时 Logo，并生成 `public/favicon.ico`。
-- 初始化 Vite + React + TypeScript 官网骨架。
-- 建立 `src/` 推荐目录结构，接入轻量路由、项目数据层、联系方式数据层和 Mascot 数据层。
-- 接入 `public/favicon.ico` 作为站点图标、导航图标和第一版临时 Logo。
-- 建立 `src/styles/tokens.css`、`global.css` 和 `utilities.css`，落地 `--rx-*` 语义 token。
-- 实现首页、四个项目详情页、Mascot 页、About 页和 404 页面首版响应式骨架。
-- 添加 `vercel.json`，为官网站内 History API 路由提供 `index.html` fallback。
-- 细化首页项目 band 的信息层级，补充未来域名、项目角色和公开信号。
-- 细化图形化候选媒体框，补充项目短名、阶段和项目轨道标签。
-- 细化 Mascot 页和 About 页移动端布局，补强三形态、素材口径、联系方式、二维码占位、仓库入口和域名边界的 390px 可读性。
-- 细化四个项目详情页移动端公开信息层级，补充 Hero 摘要、媒体框说明、公开状态行和项目矩阵回流入口。
-- 完成 768px tablet 和 1728px wide 第一轮响应式 QA，覆盖首页、四个项目详情页、Mascot 和 About 的横向溢出和关键区域渲染。
-- 细化首页主视觉的素材接入口径，在 Radish Orbit 星图下补充 Hero 主视觉、萝小白三形态和项目媒体三类素材状态槽，继续避免未审核图片进入正式页面。
-- 补齐官网第一版基础 metadata、canonical、Open Graph、Twitter Card、404 noindex、skip link 和外链安全口径，为 Vercel 首次部署检查做准备。
-- 完成 Vercel 首次线上 smoke：`https://www.radishx.com/` 可访问，站内路径和未知路径均返回 `index.html` fallback；完整视觉 smoke 需要在 Chrome 会话稳定后复查。
-- 完成 2026-06-14 本地桌面与 390px 移动端全路由响应式 smoke，覆盖首页、四个项目详情页、Mascot、About 和 404 测试路径；修正导航 / 信息栏小链接触控目标和 About 二维码占位文本溢出。
-- 复查 `https://www.radishx.com/` 线上 HTTP 状态，首页、站内路径和未知路径均返回 `200`；线上浏览器截图采集仍受当前 Browser / Playwright 会话稳定性限制。
-- 确认 `radishx.com` 为官网 canonical 主域，`www.radishx.com` 作为兼容入口跳转到根域，并验证根路径与 `/about` 跳转保留路径。
-- 添加 `public/sitemap.xml` 和 `public/robots.txt`，并调整 `vercel.json` rewrite 排除规则，确保 SEO 辅助文件不被 History API fallback 覆盖。
-- 完成首批 Mascot / About 素材审核，生成 `public/images/mascot/` 与 `public/images/social/` Web 版本，并接入首页 Mascot 辅助视觉、Mascot 页主视觉 / 三形态 / Gallery、About 微信公众号二维码。
-- 生成 1200x630 Open Graph 分享预览图 `public/images/social/radishx-og-image.png`，并接入 `og:image`、`twitter:image` 和 `summary_large_image`。
-- 完成一轮页面可访问性与生产质量检查，覆盖桌面和 390px 移动端的标题层级、交互命名、外链安全、触控目标、正文焦点、横向溢出、metadata 和图片资源可访问性。
-- 完成四个项目详情页独立素材审核：Radish、RadishCatalyst、RadishFlow 已生成 `public/images/projects/` Web 图片并接入对应详情页；RadishMind 只发现外部参考截图，未接入图片素材。
-- 将 RadishFlow 详情页公开状态收敛为 `Archived`，对应兄弟仓库 2026-06-12 起停止公开维护的边界，避免 UI baseline 被解读为继续公开迭代或产品化承诺。
-- 为 RadishMind 详情页补代码内 `Protocol map` 视觉，用协议、评测、工具编排和审计四个公开信号替换通用占位，不引入外部参考截图或未审核图片。
-- 细化首页 Hero Orbit 素材状态槽，将首屏主视觉、Mascot 三形态和项目媒体状态整理为可扫读检查项，明确 Radish Orbit 仍是 v1 主结构，未确认站姿图和项目图不进入首屏大图。
-- 细化四个项目详情页主媒体区审核图说明，统一展示素材来源、使用边界和后续素材需求，区分代表图、概念视觉、历史 UI baseline 和代码内协议图。
-- 细化 Mascot 页三形态展示，为原始形象、可爱Q版和虚拟形象完全体补充当前用途、审核状态、使用边界和后续素材需求，并修正形态图媒体框避免主体裁切。
+- Vite + React + TypeScript 静态官网骨架。
+- `/`、四个项目详情页、`/mascot`、`/about` 和 404 页面。
+- `radishx.com` canonical 域名、`www.radishx.com` 兼容跳转、Vercel History API fallback。
+- 基础 metadata、Open Graph / Twitter Card、`sitemap.xml` 和 `robots.txt`。
+- 首批已审核 Mascot / About 素材和项目详情页代表视觉。
+- 桌面与 390px 移动端的多轮响应式、可访问性和生产质量检查记录。
+
+下一阶段不再把所有后续事项堆在本文件中推进，而是按页面、功能或开发目标拆分为独立设计与开发文档。
+
+## 执行口径
+
+- `docs/planning/current.md` 只记录当前阶段、活跃目标、执行顺序和跨目标风险。
+- 具体页面、功能或素材治理工作写入 `docs/features/*.md`。
+- `docs/devlogs/` 记录已经完成的结果、关键决策、验证和遗留风险，不承载展开式任务清单。
+- 开始开发一个新目标前，先阅读或补齐对应 `docs/features/*.md`，再进入设计稿、代码或素材实现。
+- 如果目标涉及重大页面结构、视觉方向、素材版权、域名或部署边界，同时同步 `README.md`、`AGENTS.md`、`CLAUDE.md` 和相关 `docs/` 入口。
+
+## 目标文档索引
+
+| 目标 | 文档 | 当前状态 |
+| --- | --- | --- |
+| 首页首屏与主视觉 | [home-hero-visual.md](../features/home-hero-visual.md) | 维护中，等待最终主视觉选图 |
+| 四个项目详情页 | [project-detail-pages.md](../features/project-detail-pages.md) | 首版已实现，后续补 Logo / 截图 / 视频 |
+| Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | 首版已实现，后续补站姿、表情拆分和下载口径 |
+| About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 下一开发目标 |
+| 素材治理 | [asset-governance.md](../features/asset-governance.md) | 持续执行 |
+| 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 持续执行，线上截图级 smoke 待补 |
+
+## 当前活跃目标
+
+当前建议推进：
+
+1. 按 [About 联系区设计与开发文档](../features/about-contact-surface.md) 细化 `/about` 页面联系方式、微信公众号二维码、仓库入口和域名边界的视觉节奏。
+2. 保持 PC 与 390px 移动端可用，优先避免长邮箱、链接、二维码说明和按钮挤压。
+3. 完成后更新目标文档状态、本文件和本周开发日志。
+
+选择该目标的原因：
+
+- 不依赖新的外部素材或线上截图链路。
+- 能提升官网从“展示项目矩阵”到“可联系、可追踪、可进入仓库”的完成度。
+- 风险集中在页面层级和响应式排版，适合在现有 React / CSS 结构中继续推进。
 
 ## 产品边界
 
@@ -91,9 +88,9 @@ RadishX 当前处于官网项目初始化后的 React 实现阶段。
 - 是否需要为项目文档入口暴露仓库内 docs 链接。
 - 项目详情模板、Mascot 页和 About 页是否在 React 实现前补独立移动版设计稿。
 
-## 下一步建议
+## 后续顺序
 
-1. 在 Browser / Chrome 会话稳定后补一次线上桌面与 390px 移动端截图级视觉 smoke，确认生产站点视觉与本地验证一致。
-2. 继续让 React 实现贴近 Pencil v1，优先补 About 联系区的精细节奏。
-3. 评估四个项目是否需要独立 Logo、视频或更稳定的截图策略；RadishMind 后续重点转为自有 Logo / Console 截图素材审核。
-4. 后续首页首屏主视觉确认后，再评估是否替换当前 Open Graph 分享预览图。
+1. 推进 `/about` 联系区精细化，完成对应桌面和 390px 移动端验证。
+2. 根据素材治理文档继续评估独立 Logo、真实截图和公开视频素材。
+3. 首页首屏最终主视觉确认后，再评估是否替换当前 Open Graph 分享预览图。
+4. Browser / Chrome 会话稳定后，补跑线上截图级视觉 smoke。

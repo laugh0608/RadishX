@@ -35,15 +35,18 @@ RadishX 是 Radish 系列项目的官网与统一入口，通过 GitHub 托管�
 `docs/` 是本仓库正式文档源。开始任务时按需读取：
 
 1. `docs/planning/current.md`：当前阶段、范围和下一步。
-2. `docs/development/standards.md`：开发规范、响应式和验证要求。
-3. `docs/design/visual-guidelines.md`：视觉方向、素材使用和页面气质。
-4. `docs/deployment/vercel.md`：官网部署和域名边界。
-5. `docs/assets/materials.md`：素材归档、审核和使用规则。
+2. `docs/features/README.md` 与对应 `docs/features/*.md`：页面、功能、素材治理和发布检查的设计与开发边界。
+3. `docs/development/standards.md`：开发规范、响应式和验证要求。
+4. `docs/design/visual-guidelines.md`：视觉方向、素材使用和页面气质。
+5. `docs/deployment/vercel.md`：官网部署和域名边界。
+6. `docs/assets/materials.md`：素材归档、审核和使用规则。
 
 规则：
 
 - 若 README、docs 和实现冲突，优先判断哪一方过期，再统一修正。
 - 优先更新已有文档，不为一次性讨论创建大量散文档。
+- `docs/planning/current.md` 只保留当前阶段、活跃目标、执行顺序和跨目标风险。
+- 具体页面、功能、素材替换或发布检查目标写入 `docs/features/*.md`，避免把长任务清单堆在入口规划页。
 - 关键入口文档保持简约，只描述当前事实、稳定入口和必要约束。
 - 重大页面结构、视觉方向、域名策略、部署边界或协作规则变化，必须同步更新 `docs/`、`README.md`、`AGENTS.md` 和 `CLAUDE.md` 中对应内容。
 
@@ -54,6 +57,7 @@ RadishX 是 Radish 系列项目的官网与统一入口，通过 GitHub 托管�
 - 若用户没有明确要求直接修改，编写代码前应先说明方案。
 - 若需求不明确，或改动会影响架构、部署、域名、视觉基线、素材版权或验证基线，则先说明判断并做必要澄清。
 - 小规模、低风险、需求明确的文档、配置或素材整理类变更，可直接实施。
+- 新增或重做页面、功能、素材替换、发布检查等可独立验收目标时，先创建或更新对应 `docs/features/*.md`，再进入实现。
 - 新增功能或页面时，优先保证 PC 与移动端都可用，不把响应式适配放到最后补救。
 - 每次完成可分割子步骤后，做匹配的必要验证。
 
