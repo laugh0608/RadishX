@@ -25,6 +25,7 @@
 - `public/images/projects/catalyst/`：RadishCatalyst 详情页已审核 Web 图。
 - `public/images/projects/flow/`：RadishFlow 详情页已审核 Web 图。
 - RadishMind 当前没有可进入 `public/images/projects/` 的项目自有公开图片素材，详情页使用代码内生成的 `Evaluation loop` 协议 / 评测视觉。
+- 四个项目当前没有独立稳定 Logo；官网使用代码内文字 / CSS 临时项目标识，不进入 `public/images/`，不声明为正式 Logo。
 
 ## 使用审核
 
@@ -73,7 +74,7 @@
 | Mascot Gallery | `assets/avatars/mature/radish-mature-sticker-sheet-wide.png` | 已确认 | 适合虚拟形象完全体表情 Gallery。Web 版本：`public/images/mascot/radish-mature-sticker-sheet-wide-web.jpg`。 |
 | 参考素材 | `assets/avatars/mature/radish-mature-cosplay-board.png` | 暂不建议正式使用 | 三次元风格参考图，和当前官网长期视觉口径不完全一致。 |
 | 活动 / 彩蛋 | `assets/avatars/seasonal/*` | 暂不进入第一版长期页面 | 只建议用于节日活动 Banner、彩蛋或运营内容。 |
-| 站点图标 / Logo | `assets/avatars/origin/radish-origin-icon.jpg` | 已确认 | 已转换为 `public/favicon.ico`，第一版可作为站点图标和项目详情页临时 Logo。 |
+| 站点图标 / Logo | `assets/avatars/origin/radish-origin-icon.jpg` | 已确认 | 已转换为 `public/favicon.ico`，第一版只作为站点图标和 RadishX 小尺寸识别，不作为四个项目的临时 Logo。 |
 | About 二维码 | `assets/social/wechat-official-account-qr.png` | 已确认 | 适合 About 页联系方式区域，不放首页首屏。Web 版本：`public/images/social/wechat-official-account-qr-web.png`。 |
 | 社交分享图 | `public/images/social/radishx-og-image.png` | 已确认 | 1200x630 PNG，用于 Open Graph 与 Twitter `summary_large_image`。 |
 
@@ -96,7 +97,8 @@
 - Radish、RadishCatalyst、RadishFlow 详情页已接入审核后的代表性图片；这些图片不提供下载入口，也不声明可自由复用。
 - RadishMind 详情页已使用代码内 `Evaluation loop` 替代通用占位；仍等待项目自有 Logo、截图或代表性图片素材。
 - 四个项目都未发现可直接公开的视频素材；后续如需接入视频，必须单独审核来源、字幕/水印、压缩方案和移动端加载策略。
-- 四个项目仍缺独立稳定 Logo；后续如果项目有独立 Logo，再按项目替换当前 favicon / 视觉图口径。
+- 四个项目仍缺独立稳定 Logo；后续如果项目有独立 Logo，再按项目替换当前代码内临时项目标识。
+- 当前首页项目 band、项目详情页 Hero、Public Surface 和矩阵回流卡片已使用代码内临时项目标识；这些标识只用于官网信息识别，不作为项目正式 Logo 或素材下载内容。
 - Mascot 页首批主图、站姿图和 Gallery 图片已生成 Web 版本并进入 `public/images/`；页面三形态区已展示当前用途、审核状态、使用边界和后续素材需求。后续新增素材仍需继续审核，且不要覆盖原始素材。
 - 分享预览图已使用完全体设定图生成第一版；2026-06-15 本地评估结论为暂不替换，因为当前图包含 RadishX 标题、项目矩阵信息和横向 Mascot 视觉，更适合作为 `1200x630` 社交预览。
 

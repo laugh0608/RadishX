@@ -10,6 +10,13 @@ export type ProjectLink = {
   note?: string;
 };
 
+export type ProjectMark = {
+  monogram: string;
+  wordmark: string;
+  label: string;
+  note: string;
+};
+
 export type ProjectVisual = {
   src: string;
   alt: string;
@@ -62,6 +69,7 @@ export type Project = {
   path: string;
   futureDomain: string;
   githubUrl: string;
+  mark: ProjectMark;
   tagline: string;
   summary: string;
   orbitLabel: string;
@@ -87,6 +95,12 @@ export const projects: Project[] = [
     path: "/radish",
     futureDomain: "hub.radishx.com",
     githubUrl: "https://github.com/laugh0608/Radish",
+    mark: {
+      monogram: "R",
+      wordmark: "Radish",
+      label: "Temporary mark",
+      note: "RadishX 统一风格代码内标识，不是 Radish 正式 Logo。",
+    },
     tagline: "内容社区与 WebOS 风格工作台",
     summary:
       "Radish 是系列项目的内容核心，承载社区、内容发布、个人工作台和后续生态聚合能力。",
@@ -149,6 +163,12 @@ export const projects: Project[] = [
     path: "/catalyst",
     futureDomain: "forge.radishx.com",
     githubUrl: "https://github.com/laugh0608/RadishCatalyst",
+    mark: {
+      monogram: "C",
+      wordmark: "Catalyst",
+      label: "Temporary mark",
+      note: "RadishX 统一风格代码内标识，不是 RadishCatalyst 正式 Logo。",
+    },
     tagline: "异星工业科幻 ARPG",
     summary:
       "RadishCatalyst 面向游戏表达，探索异星化工基地、角色成长、战斗和协作联机的长期方向。",
@@ -211,6 +231,12 @@ export const projects: Project[] = [
     path: "/flow",
     futureDomain: "flow.radishx.com",
     githubUrl: "https://github.com/laugh0608/RadishFlow",
+    mark: {
+      monogram: "F",
+      wordmark: "Flow",
+      label: "Temporary mark",
+      note: "RadishX 统一风格代码内标识，不是 RadishFlow 正式 Logo。",
+    },
     tagline: "稳态流程模拟软件",
     summary:
       "RadishFlow 以 Rust 为核心，Rust UI 作为主界面，并通过 .NET 适配 CAPE-OPEN / COM。",
@@ -273,6 +299,12 @@ export const projects: Project[] = [
     path: "/mind",
     futureDomain: "mind.radishx.com",
     githubUrl: "https://github.com/laugh0608/RadishMind",
+    mark: {
+      monogram: "M",
+      wordmark: "Mind",
+      label: "Temporary mark",
+      note: "RadishX 统一风格代码内标识，不是 RadishMind 正式 Logo。",
+    },
     tagline: "外部智能层与模型实验",
     summary:
       "RadishMind 负责协议、评测、工具编排和模型实验，是 Radish 体系的智能能力外接层。",

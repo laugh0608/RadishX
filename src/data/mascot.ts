@@ -32,7 +32,7 @@ export const mascotHeroReview = [
 export const mascotForms = [
   {
     name: "原始形象",
-    role: "站点图标与第一版临时 Logo 来源",
+    role: "站点图标与原始形态来源",
     image: {
       src: "/images/mascot/radish-origin-icon-web.jpg",
       width: 360,
@@ -41,14 +41,14 @@ export const mascotForms = [
     },
     assetCue: "已确认",
     assetStatus: "已接入 favicon 和形态展示",
-    description: "作为 RadishX 的形态起点，适合小尺寸印章、图标和项目详情页临时 Logo。",
+    description: "作为 RadishX 的形态起点，适合小尺寸印章、站点图标和 Mascot 页原始形态展示。",
     review: {
       currentUse: "站点图标、导航标识和小尺寸形态起点。",
       auditStatus: "已生成 Web 版本并接入公开页面。",
-      usageBoundary: "只作为小尺寸印章或临时 Logo，不替代后续独立项目 Logo。",
+      usageBoundary: "只作为小尺寸印章、站点图标或原始形态展示，不替代后续独立项目 Logo。",
       nextNeed: "后续如出现新版主 Logo，需要重新审核并替换 favicon 口径。",
     },
-    notes: ["当前可用于站点图标", "项目详情页第一版临时 Logo 来源", "公开页只作为小尺寸形态起点"],
+    notes: ["当前可用于站点图标", "公开页只作为小尺寸形态起点", "四个项目标识另用代码内临时方案"],
   },
   {
     name: "可爱Q版",

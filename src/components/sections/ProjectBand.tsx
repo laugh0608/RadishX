@@ -1,5 +1,6 @@
 import type { Project } from "../../data/projects";
 import { MediaFrame } from "../ui/MediaFrame";
+import { ProjectMark } from "../ui/ProjectMark";
 import { RouteLink } from "../ui/RouteLink";
 import { StatusChip } from "../ui/StatusChip";
 
@@ -12,6 +13,7 @@ export function ProjectBand({ project, index }: ProjectBandProps) {
   return (
     <article className={`project-band project-band--${project.tone} ${index % 2 ? "project-band--reverse" : ""}`}>
       <div className="project-band__copy">
+        <ProjectMark project={project} />
         <div className="project-band__chips">
           <StatusChip tone={project.tone === "radish" ? "success" : project.tone === "flow" ? "ink" : "warning"}>
             {project.status}

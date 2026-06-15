@@ -1,5 +1,6 @@
 import { MediaFrame } from "../components/ui/MediaFrame";
 import { InfoRail } from "../components/ui/InfoRail";
+import { ProjectMark } from "../components/ui/ProjectMark";
 import { RouteLink } from "../components/ui/RouteLink";
 import { SectionHeader } from "../components/ui/SectionHeader";
 import { StatusChip } from "../components/ui/StatusChip";
@@ -45,6 +46,11 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
       note: project.status,
     },
     {
+      label: "Mark",
+      value: project.mark.wordmark,
+      note: project.mark.label,
+    },
+    {
       label: "Docs",
       value: `${project.documentation.length} public entries`,
       note: "Repository docs",
@@ -61,7 +67,10 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
       <section className={`project-hero project-hero--${project.tone}`}>
         <div className="project-hero__inner">
           <div className="project-hero__copy">
-            <p className="eyebrow">{project.futureDomain}</p>
+            <div className="project-hero__identity">
+              <ProjectMark project={project} size="hero" showNote />
+              <p className="eyebrow">{project.futureDomain}</p>
+            </div>
             <h1>{project.name}</h1>
             <p>{project.tagline}</p>
             <div className="project-hero__chips">
@@ -176,6 +185,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
           <div className="related-projects">
             {siblings.map((sibling) => (
               <RouteLink key={sibling.id} className={`related-project related-project--${sibling.tone}`} to={sibling.path}>
+                <ProjectMark project={sibling} size="compact" />
                 <span className="related-project__meta">{sibling.futureDomain}</span>
                 <strong>{sibling.name}</strong>
                 <span>{sibling.tagline}</span>
