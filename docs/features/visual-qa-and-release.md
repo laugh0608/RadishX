@@ -1,7 +1,7 @@
 # 视觉 QA 与发布检查
 
-状态：持续执行，线上截图级 smoke 待补  
-最后更新：2026-06-14
+状态：持续执行，本地发布检查已复跑，线上截图级 smoke 待补
+最后更新：2026-06-15
 
 ## 目标
 
@@ -32,6 +32,19 @@
 - `git diff --check`
 - 必要时检查 `dist/` 是否包含 `sitemap.xml`、`robots.txt` 和公开图片资源。
 - 视觉改动后检查至少一个桌面视口和一个 390px 移动端视口。
+
+## 本地检查记录
+
+2026-06-15 已完成一轮本地发布检查：
+
+- 执行 `npm run build` 通过，确认 TypeScript 与 Vite 生产构建正常。
+- 执行 `git diff --check` 通过，确认当前文档与代码改动无空白问题。
+- 使用 Browser 检查 `1440x900` 桌面视口下的 `/`、`/radish`、`/catalyst`、`/flow`、`/mind`、`/mascot`、`/about` 和 `/abc-test`；页面标题、H1、路由 fallback 和横向滚动检查正常，console error 为空。
+- 使用 Browser 检查 `390x844` 移动视口下的同一组路由；未发现横向溢出、导航挤压、关键文案遮挡或按钮明显错位。
+- 抽查桌面首页、移动首页、移动 Mascot、移动 About 和移动 404 首屏截图，未发现视觉阻断问题。
+- 在移动端滚动检查 `/mascot` Gallery，12 张页面图片滚入视口后均完成加载，console error 为空。
+- 检查 `dist/` 输出，包含 `index.html`、`favicon.ico`、`robots.txt`、`sitemap.xml`、构建后的 CSS / JS，以及项目、Mascot、社交图片资源。
+- 本轮不推送、不部署，不补跑线上截图级 smoke。
 
 ## 线上检查
 
