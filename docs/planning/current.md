@@ -34,7 +34,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 | 四个项目详情页 | [project-detail-pages.md](../features/project-detail-pages.md) | 首版已实现，已补代码内临时项目标识 |
 | Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | 站姿图已接入，后续补表情拆分和下载口径 |
 | About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 首轮精细化已完成 |
-| 素材治理 | [asset-governance.md](../features/asset-governance.md) | 持续执行 |
+| 素材治理 | [asset-governance.md](../features/asset-governance.md) | 项目素材二轮复核完成，下一步 Mascot 口径 |
 | 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 持续执行，线上截图级 smoke 待补 |
 
 ## 当前活跃目标
@@ -48,12 +48,13 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 5. Open Graph 分享预览图已完成本地评估，现有 `1200x630` 横图继续保留，本轮不生成新候选图。
 6. RadishMind 详情页已补强代码内 `Evaluation loop` 自有视觉，继续不接入外部参考截图或未审核图片。
 7. 四个项目已补代码内临时标识，覆盖首页项目 band、项目详情页 Hero、Public Surface 和矩阵回流卡片；这些标识不是正式 Logo。
-8. 目标文档、本文件和本周开发日志已同步记录。
+8. 已完成四个兄弟项目的 Logo、真实截图和公开视频素材二轮只读复核；未发现新增或修改的媒体文件，也未发现可直接公开的视频素材。
+9. 目标文档、本文件和本周开发日志已同步记录。
 
 下一步建议推进：
 
-1. 根据素材治理文档继续评估独立 Logo、真实截图和公开视频素材；没有确认素材前不接入正式页面。
-2. 继续评估 Mascot 表情拆分、节日图和下载口径；没有确认边界前不提供下载入口。
+1. 继续评估 Mascot 表情拆分、节日图和下载口径；没有确认边界前不提供下载入口。
+2. 四个项目后续只有出现新的独立 Logo、真实截图或视频候选来源时，再按素材治理文档重新审核。
 3. 本地开发阶段继续以本地真实 smoke 为准；暂不推送、部署或补跑线上 smoke。
 
 ## 产品边界
@@ -95,6 +96,6 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 
 ## 后续顺序
 
-1. 根据素材治理文档继续评估独立 Logo、真实截图和公开视频素材。
-2. 继续评估 Mascot 表情拆分、节日图和下载口径；确认前不提供下载入口。
+1. 继续评估 Mascot 表情拆分、节日图和下载口径；确认前不提供下载入口。
+2. 四个项目出现新的独立 Logo、真实截图或视频候选来源后，再回到项目素材审核和 Web 优化。
 3. 后续只有首页视觉再次明显变化或社交预览目标变化时，再评估 Open Graph 分享预览图。

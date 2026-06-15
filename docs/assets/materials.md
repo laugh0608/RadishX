@@ -82,6 +82,8 @@
 
 审核日期：2026-06-14。审核范围只读检查四个兄弟项目仓库中的 Logo、截图、视频和代表性视觉素材，不读取或修改 `.pen` 文件，不迁入兄弟项目代码。
 
+2026-06-15 二轮复核：只读检查四个兄弟项目仓库中已存在和未提交的图片、图标、视频候选；兄弟项目当前虽有开发中文档 / 代码改动，但未发现新增或修改的媒体文件。未发现 `.mp4`、`.mov`、`.webm`、`.m4v` 或 `.avi` 视频素材，因此本轮不接入新视频、不生成新 Web 图片，也不替换当前代码内临时项目标识。
+
 项目详情页当前已在主媒体区展示 `Asset source`、`Usage boundary` 和 `Next material need` 三项说明，用于区分代表图、概念视觉、历史 UI baseline 和代码内协议图的公开边界。
 
 | 项目 | 候选素材 | 推荐用途 | 风险与限制 | 结论 |
@@ -90,6 +92,13 @@
 | RadishCatalyst | `/Users/luobo/Code/RadishCatalyst/assets/concept-art/2026-04-25-visual-direction-rpg-exploration.png` | 详情页主媒体区概念视觉。 | 属于项目源资产目录的概念图，只能标注为 `Concept visual`；不作为实机截图、试玩状态或上线承诺。`client/icon.svg` 是 Godot 默认图标，不作为项目 Logo。 | 已生成 `public/images/projects/catalyst/radishcatalyst-rpg-exploration-concept-web.jpg` 并接入 `/catalyst`。 |
 | RadishFlow | `/Users/luobo/Code/RadishFlow/docs/architecture/assets/studio-ui/baseline/radishflow-workbench-concept.png` | 详情页主媒体区 UI baseline。 | 兄弟仓库 README 已声明 2026-06-12 起停止公开维护，因此只能作为历史 UI 方向展示，不代表继续公开迭代、产品化、下载或交付承诺。`adapters/reference/`、Aspen/HYSYS/DWSIM/COFE 等参考截图均不进入官网。 | 已生成 `public/images/projects/flow/radishflow-workbench-concept-web.jpg`，接入 `/flow`，并将页面状态收敛为 `Archived`。 |
 | RadishMind | 无项目自有 Logo、截图、视频或代表性公开图片素材。 | 暂不接入 `public/images` 图片；详情页使用代码内生成的 `Evaluation loop` 协议 / 评测视觉。 | 当前发现的 `docs/assets/ui-design-reference/` 均为 AFFINE、CodexApp、1Panel、GitHub、Cloudflare、Discourse 等外部产品参考截图，只能用于内部灵感，不可作为官网项目图。代码内视觉只表达公开定位，不声明已有正式产品 UI。 | 已补强代码内 `Evaluation loop`，后续若补自有 Logo、Console 截图或真实可视化图，再按图片素材重新审核。 |
+
+二轮复核结论：
+
+- Radish：`README.md` 仍使用 `Docs/images/RadishAcg-256.png` 作为“萝卜娘”公开代表图；`Clients/radish-tauri/icons/icon.png`、`DataBases/Uploads/DefaultIco/bailuobo.ico` 和默认头像属于客户端 / 运行时默认资源或既有代表形象，不是四项目独立稳定 Logo；未发现可公开为当前产品截图的视频或页面截图素材。
+- RadishCatalyst：`client/icon.svg` 为 Godot 默认图标，不作为项目 Logo；`assets/concept-art/` 下新增可见候选仍属于概念图、HUD 参考或生产基地参考，不作为实机截图、试玩状态或 trailer。
+- RadishFlow：README 已明确 2026-06-12 起停止公开维护；`radishflow-current-workbench-20260516.png` 和相关 workbench / dashboard 图片只能作为历史 UI 或内部参考，不上调为当前产品截图，也不新增推广素材。
+- RadishMind：`docs/assets/ui-design-reference/` 仍是外部产品参考截图；`radishmind-ui-design-spec.md` 明确当前产品 UI 是本地 / 只读边界，不声明正式 production console 已完成，因此不接入外部参考图或当前开发截图作为官网正式项目图。
 
 当前缺口：
 

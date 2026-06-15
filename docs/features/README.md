@@ -18,7 +18,7 @@
 | [project-detail-pages.md](project-detail-pages.md) | 四个项目详情页内容、视觉、公开文档入口和公开素材边界 | 首版已实现，已补代码内临时项目标识 |
 | [mascot-page.md](mascot-page.md) | Mascot 虚拟形象页、三形态和 Gallery | 站姿图已接入 |
 | [about-contact-surface.md](about-contact-surface.md) | About 联系区、仓库入口和域名边界 | 首轮精细化已完成 |
-| [asset-governance.md](asset-governance.md) | 素材审核、Web 优化和 `public/images` 准入 | 持续执行 |
+| [asset-governance.md](asset-governance.md) | 素材审核、Web 优化和 `public/images` 准入 | 项目素材二轮复核完成，下一步 Mascot 口径 |
 | [visual-qa-and-release.md](visual-qa-and-release.md) | 本地 / 线上视觉 QA、构建和发布检查 | 持续执行 |
 
 ## 推荐文档结构

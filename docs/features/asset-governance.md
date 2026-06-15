@@ -41,6 +41,13 @@ RadishX 已接入首批 Mascot / About 图片和三个项目详情页 Web 图。
 - Mascot 新图进入页面前同步更新 Mascot 目标文档。
 - 首页主视觉变化后，记录是否影响 Open Graph 图。
 
+## 当前复核
+
+- 2026-06-15 已完成四个兄弟项目的项目 Logo、真实截图和公开视频素材二轮只读复核。
+- 本轮没有发现新增或修改的媒体文件，也没有发现可直接公开的视频素材。
+- Radish 继续使用已接入代表图；RadishCatalyst 继续只使用概念视觉；RadishFlow 继续保留 archived / 历史 UI 口径；RadishMind 继续使用代码内 `Evaluation loop`，不接入外部产品参考截图。
+- 四个项目的独立稳定 Logo 仍等待未来单独确认；确认前继续使用代码内文字 / CSS 临时项目标识。
+
 ## 验证
 
 - `npm run build`
@@ -48,6 +55,7 @@ RadishX 已接入首批 Mascot / About 图片和三个项目详情页 Web 图。
 - 视觉改动时检查桌面和 390px 移动端。
 - 检查图片尺寸、格式、`alt`、加载状态和主体裁切。
 - 执行 `git diff --check`。
+- 纯文档复核类变更执行 `git diff --check`，不要求启动本地浏览器 smoke。
 
 ## 完成标准
 
@@ -58,7 +66,6 @@ RadishX 已接入首批 Mascot / About 图片和三个项目详情页 Web 图。
 
 ## 后续事项
 
-- 四个项目稳定 Logo。
-- RadishMind 自有公开视觉。
-- 可公开视频素材。
 - Mascot 表情拆分、节日图和下载口径。
+- 四个项目稳定 Logo、真实截图和可公开视频素材；只有出现新的候选来源时再重新进入审核和 Web 优化。
+- RadishMind 自有公开视觉。
