@@ -73,7 +73,7 @@
 | Mascot Gallery | `assets/avatars/child/radish-child-sticker-sheet-wide-01.png` 至 `04.png` | 已确认 | 适合表情包横图 Gallery，当前只作为整图预览接入，不拆分单张，不提供下载入口。Web 版本：`public/images/mascot/radish-child-sticker-sheet-wide-01-web.jpg` 至 `04-web.jpg`。 |
 | Mascot Gallery | `assets/avatars/mature/radish-mature-sticker-sheet-wide.png` | 已确认 | 适合虚拟形象完全体表情 Gallery。Web 版本：`public/images/mascot/radish-mature-sticker-sheet-wide-web.jpg`。 |
 | 参考素材 | `assets/avatars/mature/radish-mature-cosplay-board.png` | 暂不建议正式使用 | 三次元风格参考图，和当前官网长期视觉口径不完全一致。 |
-| 活动 / 彩蛋 | `assets/avatars/seasonal/*` | 暂不进入第一版长期页面 | 只建议用于节日活动 Banner、彩蛋或运营内容。 |
+| 活动 / 彩蛋 | `assets/avatars/seasonal/*` | 暂不进入当前实现 | 已完成 6 张 seasonal 图评估；全部只作为短期活动 Banner、节日彩蛋或运营内容候选，不进入长期 Gallery、默认主视觉或 `public/images/`。 |
 | 站点图标 / Logo | `assets/avatars/origin/radish-origin-icon.jpg` | 已确认 | 已转换为 `public/favicon.ico`，第一版只作为站点图标和 RadishX 小尺寸识别，不作为四个项目的临时 Logo。 |
 | About 二维码 | `assets/social/wechat-official-account-qr.png` | 已确认 | 适合 About 页联系方式区域，不放首页首屏。Web 版本：`public/images/social/wechat-official-account-qr-web.png`。 |
 | 社交分享图 | `public/images/social/radishx-og-image.png` | 已确认 | 1200x630 PNG，用于 Open Graph 与 Twitter `summary_large_image`。 |
@@ -110,7 +110,7 @@
 - 当前首页项目 band、项目详情页 Hero、Public Surface 和矩阵回流卡片已使用代码内临时项目标识；这些标识只用于官网信息识别，不作为项目正式 Logo 或素材下载内容。
 - Mascot 页首批主图、站姿图和 Gallery 图片已生成 Web 版本并进入 `public/images/`；页面三形态区已展示当前用途、审核状态、使用边界和后续素材需求。后续新增素材仍需继续审核，且不要覆盖原始素材。
 - 可爱Q版表情格和 4 张贴纸横图已进入 Mascot Gallery 整图预览；当前不拆分单张贴纸、不提供下载入口、不声明可自由复用。
-- `seasonal/` 下节日图继续只作为活动 Banner、彩蛋或运营内容候选，不进入长期 Gallery 或默认主视觉；使用前需单独确认具体活动窗口、页面位置和文案。
+- `seasonal/` 下 6 张节日图已完成评估；全部继续只作为活动 Banner、彩蛋或运营内容候选，不进入长期 Gallery、默认主视觉或当前实现；使用前需单独确认具体活动窗口、页面位置、文案和授权。
 - 分享预览图已使用完全体设定图生成第一版；2026-06-15 本地评估结论为暂不替换，因为当前图包含 RadishX 标题、项目矩阵信息和横向 Mascot 视觉，更适合作为 `1200x630` 社交预览。
 
 ## Mascot 表情拆分与下载评估
@@ -126,6 +126,25 @@
 - 下载入口继续关闭，不提供 ZIP、单图下载、素材 API 或“自由使用”声明。
 
 未来如启动单张拆分，先建清单再生成文件。清单至少记录 `id`、`source_sheet`、`source_cell`、`label`、`emotion`、`public_status`、`web_path`、`thumb_path` 和 `usage_boundary`。命名使用稳定英文 slug，例如 `radish-child-expression-<slug>-web.jpg`、`radish-child-sticker-wide-<sheet>-<nn>-<slug>-web.jpg` 和对应 `-thumb` 版本。
+
+## Mascot seasonal 活动图评估
+
+评估日期：2026-06-15。检查范围：`assets/avatars/seasonal/*`。
+
+当前总原则：
+
+- Seasonal 图带有固定年份、节日祝福、活动氛围或场景叙事，只能用于短期活动，不进入 Mascot 长期 Gallery 或默认主视觉。
+- 当前不生成 Web 版本，不移动到 `public/images/`，不开放下载，也不声明可自由复用。
+- 后续如果选择某张图进入活动实现，需先确认活动窗口、页面位置、文案、授权来源、撤下策略和移动端裁切方案。
+
+| 文件 | 规格 | 分类 | 活动窗口 | 页面位置 | 文案边界 | 版权 / 授权风险 | 当前结论 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `assets/avatars/seasonal/radish-seasonal-horse-year-gate.png` | `1024x1024` PNG | 活动 Banner | 2026 马年新春，建议 2026-02-03 至 2026-03-03；当前已过窗口。 | 未来可作为首页临时活动 band 或 `/mascot` 顶部活动条。 | 只表达新春祝福，不作为全年主视觉，不承诺项目发布。 | 需确认生成来源、公开传播授权和固定年号 / 祝福文案使用边界。 | 不进入当前实现。 |
+| `assets/avatars/seasonal/radish-seasonal-horse-year-scene.png` | `1024x1024` PNG | 活动 Banner | 2026 马年新春，建议 2026-02-03 至 2026-03-03；当前已过窗口。 | 未来可作为新春活动页首图或运营文章配图。 | 只表达马年祝福，不进入长期 Gallery。 | 画面信息密度较高，若用于移动端需要单独裁切检查；授权来源仍需补齐。 | 不进入当前实现。 |
+| `assets/avatars/seasonal/radish-seasonal-horse-year-poster-red.png` | `848x1264` PNG | 活动 Banner / 运营海报 | 2026 马年新春，建议 2026-02-03 至 2026-03-03；当前已过窗口。 | 更适合竖版社交海报、活动公告图，不适合桌面默认 Hero。 | 只表达 `Radish社区` 新春贺图，不替代官网常驻品牌视觉。 | 红金强节庆风格与官网低饱和基线有偏差；需确认文字、生成来源和公开运营授权。 | 不进入当前实现。 |
+| `assets/avatars/seasonal/radish-seasonal-new-year-2025-to-2026.png` | `1024x1024` PNG | 运营内容候选 | 跨年窗口建议 2025-12-26 至 2026-01-07；当前已过窗口。 | 适合社交媒体或一次性跨年运营内容；如进官网，只能作为活动归档。 | `2025→2026` 只能作为跨年文案，不可在 2026-06-15 后作为活跃活动。 | 需确认生成来源、字体 / 文案授权和公开二次传播边界。 | 不进入当前实现。 |
+| `assets/avatars/seasonal/radish-seasonal-new-year-2026-lantern.png` | `1024x1024` PNG | 节日彩蛋 | 元旦窗口建议 2025-12-31 至 2026-01-07；当前已过窗口。 | 未来可作为 `/mascot` 顶部轻量彩蛋、短期 toast 或局部装饰。 | 只表达元旦问候，不替换三形态主图。 | 固定 `2026年`、灯笼和烟花语义强，过期后需要撤下；授权来源需补齐。 | 不进入当前实现。 |
+| `assets/avatars/seasonal/radish-seasonal-sakura-goodbye-2025.png` | `1024x1024` PNG | 运营内容候选 | 以当前 `告别2025` 文案只适合 2025-12-15 至 2025-12-31；当前已过窗口。 | 更适合年末回顾、社交图或一次性文章配图。 | 不作为春季常驻活动图；若想改作樱花季，需要重新生成或替换文案。 | 校园 / 樱花场景和固定年份文本限制复用；需确认生成来源和公开传播授权。 | 不进入当前实现。 |
 
 ## 文件命名
 
