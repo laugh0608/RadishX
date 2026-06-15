@@ -285,8 +285,8 @@ p {
 .orbit-visual {
   position: relative;
   display: grid;
-  grid-template-rows: minmax(480px, 1fr) auto;
-  min-height: 660px;
+  grid-template-rows: minmax(520px, 1fr) auto;
+  min-height: 700px;
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
   background:
@@ -300,7 +300,7 @@ p {
 .orbit-visual__map {
   position: relative;
   z-index: 1;
-  min-height: 480px;
+  min-height: 520px;
 }
 
 .orbit-visual__map::before,
@@ -330,7 +330,7 @@ p {
   z-index: 2;
   display: grid;
   gap: 10px;
-  width: min(286px, 48%);
+  width: min(240px, 44%);
   min-width: 0;
   margin: 0;
   padding: 12px;
@@ -2060,12 +2060,12 @@ p {
   }
 
   .orbit-visual {
-    grid-template-rows: minmax(500px, auto) auto;
+    grid-template-rows: minmax(580px, auto) auto;
     min-height: 0;
   }
 
   .orbit-visual__map {
-    min-height: 500px;
+    min-height: 580px;
   }
 
   .orbit-visual__asset-rail {
@@ -2190,7 +2190,7 @@ p {
   }
 
   .orbit-visual__map {
-    min-height: 640px;
+    min-height: 700px;
   }
 
   .orbit-visual__mascot-anchor {

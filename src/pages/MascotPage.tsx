@@ -35,7 +35,7 @@ export function MascotPage() {
             />
             <div>
               <strong>萝小白</strong>
-              <span>虚拟形象完全体设定图已确认</span>
+              <span>虚拟形象完全体站姿图已确认</span>
             </div>
             <dl className="mascot-hero__review" aria-label="萝小白主视觉审核摘要">
               {mascotHeroReview.map((item) => (
@@ -53,7 +53,7 @@ export function MascotPage() {
           <SectionHeader
             eyebrow="Forms"
             title="三种形态"
-            description="原始形象、可爱Q版安全设定图和虚拟形象完全体设定图已确认接入公开页面。"
+            description="原始形象、可爱Q版站姿图和虚拟形象完全体站姿图已确认接入公开页面。"
           />
           <div className="mascot-form-grid">
             {mascotForms.map((form) => (
@@ -135,7 +135,7 @@ export function MascotPage() {
           <SectionHeader
             eyebrow="Usage"
             title="公开展示先守住素材口径"
-            description="萝小白是长期品牌资产，第一版页面已接入首批确认图片，后续继续审核站姿、表情拆分和节日素材。"
+            description="萝小白是长期品牌资产，第一版页面已接入首批确认图片和站姿图，后续继续审核表情拆分、节日素材和下载口径。"
           />
           <ul className="check-list">
             {mascotRules.map((rule) => (

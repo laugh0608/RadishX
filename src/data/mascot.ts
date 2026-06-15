@@ -8,16 +8,16 @@ export type MascotImage = {
 };
 
 export const mascotHeroImage: MascotImage = {
-  src: "/images/mascot/radish-mature-design-sheet-web.jpg",
+  src: "/images/mascot/radish-mature-standing-white-dress-web.jpg",
   width: 1400,
   height: 788,
-  alt: "萝小白虚拟形象完全体设定图",
+  alt: "萝小白虚拟形象完全体站姿图",
 };
 
 export const mascotHeroReview = [
   {
     label: "Main visual",
-    value: "完全体设定图",
+    value: "完全体站姿图",
   },
   {
     label: "Public use",
@@ -25,7 +25,7 @@ export const mascotHeroReview = [
   },
   {
     label: "Next review",
-    value: "站姿 / 表情拆分",
+    value: "表情拆分 / 下载口径",
   },
 ];
 
@@ -54,39 +54,39 @@ export const mascotForms = [
     name: "可爱Q版",
     role: "亲和、轻游戏感和社交传播",
     image: {
-      src: "/images/mascot/radish-child-safe-design-sheet-v1-web.jpg",
-      width: 1400,
-      height: 933,
-      alt: "萝小白可爱Q版安全设定图",
+      src: "/images/mascot/radish-child-standing-white-dress-tall-web.jpg",
+      width: 1254,
+      height: 1254,
+      alt: "萝小白可爱Q版站姿图",
     },
     assetCue: "已确认",
-    assetStatus: "安全设定图已接入公开页面",
-    description: "完整外装、非性感化、无内衣展示、无身体拆解，适合 Mascot 页主视觉和 Gallery。",
+    assetStatus: "站姿图已接入首页和形态展示",
+    description: "完整外装、非性感化、无内衣展示、无身体拆解，适合首页视觉锚点和 Mascot 页形态展示。",
     review: {
-      currentUse: "Mascot 页形态展示和首页 Mascot 辅助视觉。",
-      auditStatus: "安全设定图已确认，可进入 public/images。",
+      currentUse: "首页中心视觉锚点、首页 Mascot 辅助视觉和 Mascot 页形态展示。",
+      auditStatus: "安全设定图与站姿图已确认，可进入 public/images。",
       usageBoundary: "公开页只使用完整外装安全版本，不提供素材下载入口。",
-      nextNeed: "站姿、表情拆分和贴纸横图继续等待单独审核。",
+      nextNeed: "表情拆分和贴纸横图继续等待单独审核。",
     },
-    notes: ["公开页只使用安全候选口径", "适合作为首页辅助视觉", "不提供素材下载入口"],
+    notes: ["公开页只使用安全候选口径", "适合作为首页视觉锚点", "不提供素材下载入口"],
   },
   {
     name: "虚拟形象完全体",
     role: "品牌主视觉与长期角色表达",
     image: {
-      src: "/images/mascot/radish-mature-design-sheet-web.jpg",
+      src: "/images/mascot/radish-mature-standing-white-dress-web.jpg",
       width: 1400,
       height: 788,
-      alt: "萝小白虚拟形象完全体设定图",
+      alt: "萝小白虚拟形象完全体站姿图",
     },
     assetCue: "已确认",
-    assetStatus: "完全体设定图已接入 Mascot 主视觉",
+    assetStatus: "完全体站姿图已接入 Mascot 主视觉",
     description: "适合承担更强的品牌记忆点，后续可扩展为活动视觉、服装和表情素材。",
     review: {
-      currentUse: "Mascot 页首屏主视觉和品牌记忆点。",
-      auditStatus: "完全体设定图与表情包预览已接入公开页面。",
+      currentUse: "Mascot 页首屏主视觉、形态展示和品牌记忆点。",
+      auditStatus: "完全体设定图、站姿图与表情包预览已接入公开页面。",
       usageBoundary: "当前只做展示和品牌识别，不声明素材可自由复用。",
-      nextNeed: "后续活动图、站姿图和服装扩展需要继续审核。",
+      nextNeed: "后续活动图、服装扩展和下载口径需要继续审核。",
     },
     notes: ["可承担长期品牌记忆点", "适合作为 Mascot 页主视觉", "后续可扩展更多表情和服装"],
   },

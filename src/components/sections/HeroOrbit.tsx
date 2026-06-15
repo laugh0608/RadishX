@@ -31,16 +31,16 @@ export function HeroOrbit() {
           <div className="orbit-visual__map">
             <figure className="orbit-visual__mascot-anchor">
               <img
-                src="/images/mascot/radish-child-safe-design-sheet-v1-web.jpg"
-                width="1400"
-                height="933"
-                alt="萝小白可爱Q版安全设定图"
+                src="/images/mascot/radish-child-standing-white-dress-tall-web.jpg"
+                width="1254"
+                height="1254"
+                alt="萝小白可爱Q版站姿图"
                 loading="eager"
                 decoding="async"
               />
               <figcaption>
                 <span>RadishX Visual Anchor</span>
-                <strong>萝小白 · 可爱Q版安全设定</strong>
+                <strong>萝小白 · 可爱Q版站姿</strong>
               </figcaption>
             </figure>
             {projects.map((project, index) => (

@@ -61,11 +61,11 @@
 
 | 用途 | 候选素材 | 建议状态 | 说明 |
 | --- | --- | --- | --- |
-| 首页 / Mascot 主视觉 | `assets/avatars/child/radish-child-safe-design-sheet-v1.png` | 已确认 | 可爱Q版安全设定图，适合用于 Mascot 页设定展示、首页首屏 v1 中心视觉锚点和首页辅助视觉。Web 版本：`public/images/mascot/radish-child-safe-design-sheet-v1-web.jpg`。 |
-| 首页 / Mascot 主视觉 | `assets/avatars/child/radish-child-standing-white-dress.png` | 待确认 | 可爱Q版站姿，适合轻量主视觉或形态卡片。 |
-| 首页 / Mascot 主视觉 | `assets/avatars/child/radish-child-standing-white-dress-tall.png` | 待确认 | 可爱Q版站姿高分辨率版本，适合需要更完整裁切的区域。 |
-| 首页 / Mascot 主视觉 | `assets/avatars/mature/radish-mature-design-sheet.png` | 已确认 | 虚拟形象完全体设定图，适合 Mascot 页主视觉。Web 版本：`public/images/mascot/radish-mature-design-sheet-web.jpg`。 |
-| 首页 / Mascot 主视觉 | `assets/avatars/mature/radish-mature-standing-white-dress.png` | 待确认 | 虚拟形象完全体站姿，适合首页视觉区域或形态卡片。 |
+| 首页 / Mascot 主视觉 | `assets/avatars/child/radish-child-safe-design-sheet-v1.png` | 已确认 | 可爱Q版安全设定图，适合用于 Mascot 页设定展示和可爱Q版审核口径说明。Web 版本：`public/images/mascot/radish-child-safe-design-sheet-v1-web.jpg`。 |
+| 首页 / Mascot 主视觉 | `assets/avatars/child/radish-child-standing-white-dress.png` | 已确认 | 可爱Q版站姿，适合轻量主视觉或形态卡片。Web 版本：`public/images/mascot/radish-child-standing-white-dress-web.jpg`。 |
+| 首页 / Mascot 主视觉 | `assets/avatars/child/radish-child-standing-white-dress-tall.png` | 已确认 | 可爱Q版站姿高分辨率版本，已用于首页首屏中心视觉锚点和首页 Mascot 入口。Web 版本：`public/images/mascot/radish-child-standing-white-dress-tall-web.jpg`。 |
+| 首页 / Mascot 主视觉 | `assets/avatars/mature/radish-mature-design-sheet.png` | 已确认 | 虚拟形象完全体设定图，适合品牌设定展示和 Open Graph 首版分享预览来源。Web 版本：`public/images/mascot/radish-mature-design-sheet-web.jpg`。 |
+| 首页 / Mascot 主视觉 | `assets/avatars/mature/radish-mature-standing-white-dress.png` | 已确认 | 虚拟形象完全体站姿，已用于 Mascot 页主视觉和完全体形态卡片。Web 版本：`public/images/mascot/radish-mature-standing-white-dress-web.jpg`。 |
 | Mascot 原始形象 | `assets/avatars/origin/radish-origin-icon.jpg` | 已确认 | 适合用作原始形象图标、小印章或形态起点。Web 版本：`public/images/mascot/radish-origin-icon-web.jpg`。 |
 | Mascot Gallery | `assets/avatars/child/radish-child-outfit-variants.png` | 已确认 | 适合服装变体展示，不建议做首页首屏。Web 版本：`public/images/mascot/radish-child-outfit-variants-web.jpg`。 |
 | Mascot Gallery | `assets/avatars/child/radish-child-expression-sheet-grid.png` | 待确认 | 适合表情 Gallery，后续如需精细展示可再拆分单张。 |
@@ -92,13 +92,13 @@
 
 当前缺口：
 
-- 首页首屏继续以 Radish Orbit 项目星图为主，已确认可爱Q版安全设定图作为首页首屏 v1 中心视觉锚点和 Mascot 辅助视觉；长期最终主视觉仍待确认。
+- 首页首屏继续以 Radish Orbit 项目星图为主，已确认可爱Q版站姿高分辨率版本作为首页中心视觉锚点和 Mascot 辅助视觉；本轮不替换 Open Graph 分享预览图。
 - Radish、RadishCatalyst、RadishFlow 详情页已接入审核后的代表性图片；这些图片不提供下载入口，也不声明可自由复用。
 - RadishMind 详情页已使用代码内 `Protocol map` 替代通用占位；仍等待项目自有 Logo、截图或代表性图片素材。
 - 四个项目都未发现可直接公开的视频素材；后续如需接入视频，必须单独审核来源、字幕/水印、压缩方案和移动端加载策略。
 - 四个项目仍缺独立稳定 Logo；后续如果项目有独立 Logo，再按项目替换当前 favicon / 视觉图口径。
-- Mascot 页首批主图和 Gallery 图片已生成 Web 版本并进入 `public/images/`；页面三形态区已展示当前用途、审核状态、使用边界和后续素材需求。后续新增素材仍需继续审核，且不要覆盖原始素材。
-- 分享预览图已使用完全体设定图生成第一版，后续如果首页首屏主视觉确认，可再替换为更贴近首屏的版本。
+- Mascot 页首批主图、站姿图和 Gallery 图片已生成 Web 版本并进入 `public/images/`；页面三形态区已展示当前用途、审核状态、使用边界和后续素材需求。后续新增素材仍需继续审核，且不要覆盖原始素材。
+- 分享预览图已使用完全体设定图生成第一版，后续如果决定让分享预览贴近首页站姿中心视觉，可再单独替换。
 
 ## 文件命名
 
