@@ -14,6 +14,28 @@ type ProjectPageProps = {
 export function ProjectPage({ projectId }: ProjectPageProps) {
   const project = projectById[projectId];
   const siblings = projects.filter((item) => item.id !== projectId);
+  const sectionLinks = [
+    {
+      label: "Public Surface",
+      to: `${project.path}#status`,
+      note: "状态与入口",
+    },
+    {
+      label: "Documentation",
+      to: `${project.path}#documentation`,
+      note: "公开文档",
+    },
+    {
+      label: "Capabilities",
+      to: `${project.path}#capabilities`,
+      note: "能力与信号",
+    },
+    {
+      label: "Matrix",
+      to: `${project.path}#matrix`,
+      note: "项目关系",
+    },
+  ];
   const heroFacts = [
     {
       label: "Route",
@@ -110,6 +132,21 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
           <MediaFrame project={project} showVisual />
         </div>
       </section>
+      <section className="project-jump-section" aria-label={`${project.name} 页面导览`}>
+        <div className="section__inner">
+          <nav className="project-jump-nav" aria-label={`${project.name} 站内导览`}>
+            <span className="project-jump-nav__label">Page flow</span>
+            <div className="project-jump-nav__links">
+              {sectionLinks.map((link) => (
+                <RouteLink key={link.to} className="project-jump-nav__link" to={link.to}>
+                  <strong>{link.label}</strong>
+                  <span>{link.note}</span>
+                </RouteLink>
+              ))}
+            </div>
+          </nav>
+        </div>
+      </section>
       <section className="section section--surface">
         <div className="section__inner project-detail-grid">
           <article className="detail-panel detail-panel--wide">
@@ -134,7 +171,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
           <InfoRail items={projectInfo} tone="dark" />
         </div>
       </section>
-      <section className="section section--surface">
+      <section className="section section--surface" id="documentation">
         <div className="section__inner">
           <SectionHeader
             eyebrow="Documentation"
@@ -152,7 +189,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
           </div>
         </div>
       </section>
-      <section className="section">
+      <section className="section" id="capabilities">
         <div className="section__inner">
           <SectionHeader
             eyebrow="Capabilities"
@@ -179,7 +216,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
           </div>
         </div>
       </section>
-      <section className="section section--muted">
+      <section className="section section--muted" id="matrix">
         <div className="section__inner">
           <SectionHeader eyebrow="Matrix" title="回到 RadishX 项目矩阵" />
           <div className="related-projects">

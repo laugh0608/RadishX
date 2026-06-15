@@ -31,7 +31,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 | 目标 | 文档 | 当前状态 |
 | --- | --- | --- |
 | 首页首屏与主视觉 | [home-hero-visual.md](../features/home-hero-visual.md) | 站姿中心视觉锚点已接入，OG 已评估暂不替换 |
-| 四个项目详情页 | [project-detail-pages.md](../features/project-detail-pages.md) | 首版已实现，已补代码内临时项目标识 |
+| 四个项目详情页 | [project-detail-pages.md](../features/project-detail-pages.md) | 首版已实现，已补站内导览 |
 | Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | Seasonal 活动图已评估，当前不进入实现 |
 | About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 首轮精细化已完成 |
 | 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 表情 / 贴纸与 seasonal 使用边界已记录 |
@@ -54,7 +54,8 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 11. 已完成 `assets/avatars/seasonal/` 6 张节日活动图评估；当前全部只作为活动 Banner、节日彩蛋或运营内容候选，不进入长期 Gallery、默认主视觉或公开资源目录。
 12. 已完成本地发布检查复跑，覆盖 `npm run build`、`git diff --check`、`1440x900` 桌面视口、`390x844` 移动视口、关键路由、未知路径 fallback、Mascot Gallery 图片加载和 `dist/` 输出文件。
 13. 顶部 `Projects` 导航已补齐 `/#projects` 锚点 active 状态，和四个项目详情页的矩阵入口状态保持一致。
-14. 目标文档、本文件和本周开发日志已同步记录。
+14. 四个项目详情页已补 Hero 下方站内导览，可跳转到 `Public Surface`、`Documentation`、`Capabilities` 和 `Matrix`。
+15. 目标文档、本文件和本周开发日志已同步记录。
 
 下一步建议推进：
 
