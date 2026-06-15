@@ -16,9 +16,9 @@
 | --- | --- | --- |
 | [home-hero-visual.md](home-hero-visual.md) | 首页首屏、Radish Orbit 和主视觉替换 | 站姿中心视觉锚点已接入，OG 已评估暂不替换 |
 | [project-detail-pages.md](project-detail-pages.md) | 四个项目详情页内容、视觉、公开文档入口和公开素材边界 | 首版已实现，已补代码内临时项目标识 |
-| [mascot-page.md](mascot-page.md) | Mascot 虚拟形象页、三形态和 Gallery | 表情与贴纸整图预览已接入，下载口径继续关闭 |
+| [mascot-page.md](mascot-page.md) | Mascot 虚拟形象页、三形态和 Gallery | 单张拆分与下载政策已评估，当前继续整图预览 |
 | [about-contact-surface.md](about-contact-surface.md) | About 联系区、仓库入口和域名边界 | 首轮精细化已完成 |
-| [asset-governance.md](asset-governance.md) | 素材审核、Web 优化和 `public/images` 准入 | Mascot 表情与贴纸 Web 图已接入 |
+| [asset-governance.md](asset-governance.md) | 素材审核、Web 优化和 `public/images` 准入 | Mascot 表情 / 贴纸接入与拆分政策已记录 |
 | [visual-qa-and-release.md](visual-qa-and-release.md) | 本地 / 线上视觉 QA、构建和发布检查 | 持续执行 |
 
 ## 推荐文档结构

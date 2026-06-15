@@ -113,6 +113,20 @@
 - `seasonal/` 下节日图继续只作为活动 Banner、彩蛋或运营内容候选，不进入长期 Gallery 或默认主视觉；使用前需单独确认具体活动窗口、页面位置和文案。
 - 分享预览图已使用完全体设定图生成第一版；2026-06-15 本地评估结论为暂不替换，因为当前图包含 RadishX 标题、项目矩阵信息和横向 Mascot 视觉，更适合作为 `1200x630` 社交预览。
 
+## Mascot 表情拆分与下载评估
+
+评估日期：2026-06-15。
+
+当前结论：
+
+- 可爱Q版表情格和 4 张贴纸横图继续只作为 Mascot Gallery 整图预览，不拆分单张贴纸。
+- 单张拆分会形成可独立传播的衍生素材，必须先确认授权范围、使用场景、撤回策略和文件包边界。
+- 当前横图版式、边距、文字标注和网格密度不完全一致，不做无审核批量裁切。
+- 缩略图仅在未来单张展示或文件包真实需要时生成，不提前为整图 Gallery 生成。
+- 下载入口继续关闭，不提供 ZIP、单图下载、素材 API 或“自由使用”声明。
+
+未来如启动单张拆分，先建清单再生成文件。清单至少记录 `id`、`source_sheet`、`source_cell`、`label`、`emotion`、`public_status`、`web_path`、`thumb_path` 和 `usage_boundary`。命名使用稳定英文 slug，例如 `radish-child-expression-<slug>-web.jpg`、`radish-child-sticker-wide-<sheet>-<nn>-<slug>-web.jpg` 和对应 `-thumb` 版本。
+
 ## 文件命名
 
 - 使用英文语义化文件名。
