@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { type MouseEvent, useEffect, useMemo, useRef, useState } from "react";
 
 import { SiteFooter } from "../components/layout/SiteFooter";
 import { SiteHeader } from "../components/layout/SiteHeader";
@@ -34,6 +34,15 @@ export function App() {
   const mainRef = useRef<HTMLElement>(null);
   const previousPathRef = useRef(location.pathname);
   const route = useMemo(() => resolveRoute(location.pathname), [location.pathname]);
+
+  const handleSkipToMain = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    const behavior = prefersReducedMotion() ? "auto" : "smooth";
+
+    window.history.replaceState({}, "", `${window.location.pathname}${window.location.search}#main-content`);
+    mainRef.current?.focus({ preventScroll: true });
+    mainRef.current?.scrollIntoView({ behavior, block: "start" });
+  };
 
   useEffect(() => {
     const syncLocation = () => setLocation(getLocationSnapshot());
@@ -85,7 +94,7 @@ export function App() {
 
   return (
     <div className="app-shell">
-      <a className="skip-link" href="#main-content">
+      <a className="skip-link" href="#main-content" onClick={handleSkipToMain}>
         跳到正文
       </a>
       <SiteHeader currentHash={location.hash} currentPath={route.path} />

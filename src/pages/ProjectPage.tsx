@@ -112,7 +112,12 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
             <div className="project-hero__actions">
               {project.links.map((link) =>
                 link.isDisabled ? (
-                  <span key={link.label} className="button button--disabled" aria-disabled="true">
+                  <span
+                    key={link.label}
+                    className="button button--disabled"
+                    aria-disabled="true"
+                    aria-label={`${project.name} ${link.label}：${link.note}`}
+                  >
                     {link.label} · {link.note}
                   </span>
                 ) : (
@@ -122,6 +127,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
                     href={link.href}
                     target={link.isExternal ? "_blank" : undefined}
                     rel={link.isExternal ? "noopener noreferrer" : undefined}
+                    aria-label={`${project.name} ${link.label}`}
                   >
                     {link.label}
                   </a>

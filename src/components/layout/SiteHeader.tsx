@@ -27,7 +27,7 @@ export function SiteHeader({ currentHash, currentPath }: SiteHeaderProps) {
       <nav className="site-header__nav" aria-label="主导航">
         {mainNavigation.map((item) =>
           item.isExternal ? (
-            <a key={item.label} href={item.href} target="_blank" rel="noopener noreferrer">
+            <a key={item.label} href={item.href} target="_blank" rel="noopener noreferrer" aria-label="RadishX GitHub 仓库">
               {item.label}
             </a>
           ) : (

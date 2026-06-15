@@ -15,7 +15,7 @@ export function InfoRail({ items, tone = "light" }: InfoRailProps) {
     <div className={`info-rail info-rail--${tone}`}>
       {items.map((item) => {
         const value = item.href ? (
-          <a href={item.href} target="_blank" rel="noopener noreferrer">
+          <a href={item.href} target="_blank" rel="noopener noreferrer" aria-label={`${item.label}: ${item.value}`}>
             {item.value}
           </a>
         ) : (

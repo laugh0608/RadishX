@@ -34,10 +34,16 @@ export function ProjectBand({ project, index }: ProjectBandProps) {
           ))}
         </ul>
         <div className="project-band__actions">
-          <RouteLink className="button button--primary" to={project.path}>
+          <RouteLink className="button button--primary" to={project.path} aria-label={`查看 ${project.name} 详情`}>
             查看详情
           </RouteLink>
-          <a className="button button--secondary" href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+          <a
+            className="button button--secondary"
+            href={project.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${project.name} GitHub 仓库`}
+          >
             GitHub
           </a>
         </div>

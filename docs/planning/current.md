@@ -35,7 +35,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 | Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | Seasonal 活动图已评估，当前不进入实现 |
 | About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 首轮精细化已完成 |
 | 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 表情 / 贴纸与 seasonal 使用边界已记录 |
-| 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地发布检查已复跑，线上截图级 smoke 待补 |
+| 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地发布检查与可访问性整理已完成，线上截图级 smoke 待补 |
 
 ## 当前活跃目标
 
@@ -55,7 +55,8 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 12. 已完成本地发布检查复跑，覆盖 `npm run build`、`git diff --check`、`1440x900` 桌面视口、`390x844` 移动视口、关键路由、未知路径 fallback、Mascot Gallery 图片加载和 `dist/` 输出文件。
 13. 顶部 `Projects` 导航已补齐 `/#projects` 锚点 active 状态，和四个项目详情页的矩阵入口状态保持一致。
 14. 四个项目详情页已补 Hero 下方站内导览，可跳转到 `Public Surface`、`Documentation`、`Capabilities` 和 `Matrix`。
-15. 目标文档、本文件和本周开发日志已同步记录。
+15. 全站已完成本地可访问性整理，补强页脚导航语义、重复链接可访问名称、项目入口和外链上下文；本轮继续不推送、不部署。
+16. 目标文档、本文件和本周开发日志已同步记录。
 
 下一步建议推进：
 

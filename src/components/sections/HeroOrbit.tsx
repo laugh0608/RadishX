@@ -48,6 +48,7 @@ export function HeroOrbit() {
                 key={project.id}
                 className={`orbit-visual__project orbit-visual__project--${project.tone} orbit-visual__project--${index}`}
                 to={project.path}
+                aria-label={`查看 ${project.name} 项目页`}
               >
                 <strong>{project.name}</strong>
                 <span>{project.orbitLabel}</span>
