@@ -41,6 +41,16 @@ export function MediaFrame({ project, compact = false, showVisual = false }: Med
                 </div>
               ))}
             </div>
+            {diagram.lanes ? (
+              <div className="mind-diagram__lanes">
+                {diagram.lanes.map((lane) => (
+                  <div className="mind-diagram__lane" key={lane.label}>
+                    <span>{lane.label}</span>
+                    <strong>{lane.value}</strong>
+                  </div>
+                ))}
+              </div>
+            ) : null}
           </div>
           <figcaption>{diagram.title}</figcaption>
         </figure>

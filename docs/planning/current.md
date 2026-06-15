@@ -31,7 +31,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 | 目标 | 文档 | 当前状态 |
 | --- | --- | --- |
 | 首页首屏与主视觉 | [home-hero-visual.md](../features/home-hero-visual.md) | 站姿中心视觉锚点已接入，OG 已评估暂不替换 |
-| 四个项目详情页 | [project-detail-pages.md](../features/project-detail-pages.md) | 首版已实现，已补公开文档入口，后续补 Logo / 截图 / 视频 |
+| 四个项目详情页 | [project-detail-pages.md](../features/project-detail-pages.md) | 首版已实现，RadishMind 自有代码内视觉已补强 |
 | Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | 站姿图已接入，后续补表情拆分和下载口径 |
 | About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 首轮精细化已完成 |
 | 素材治理 | [asset-governance.md](../features/asset-governance.md) | 持续执行 |
@@ -46,7 +46,8 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 3. 四个项目详情页已补公开文档入口，链接对应仓库 `dev` 分支中的 README / docs / wiki / status / contracts 等稳定入口，并保留 RadishFlow archived 口径。
 4. 首页首屏已把已审核可爱Q版站姿图接入 Radish Orbit 中心视觉锚点，四个项目节点和素材状态槽在桌面与 390px 移动端已复查，无横向溢出或节点相交。
 5. Open Graph 分享预览图已完成本地评估，现有 `1200x630` 横图继续保留，本轮不生成新候选图。
-6. 目标文档、本文件和本周开发日志已同步记录。
+6. RadishMind 详情页已补强代码内 `Evaluation loop` 自有视觉，继续不接入外部参考截图或未审核图片。
+7. 目标文档、本文件和本周开发日志已同步记录。
 
 下一步建议推进：
 
@@ -86,7 +87,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 ## 待确认
 
 - 四个项目详情页后续是否需要独立稳定 Logo、真实截图或视频素材。
-- RadishMind 是否补项目自有 Logo、Console 截图或真实图片素材，用于替换当前代码内协议图。
+- RadishMind 后续是否补项目自有 Logo、Console 截图或真实图片素材，用于替换当前代码内评测回路图。
 - “萝小白”后续表情拆分、活动图和下载口径。
 - 项目详情模板、Mascot 页和 About 页是否在 React 实现前补独立移动版设计稿。
 

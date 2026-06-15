@@ -949,7 +949,7 @@ p {
 .mind-diagram {
   position: relative;
   display: grid;
-  min-height: 300px;
+  min-height: 420px;
   place-items: center;
   padding: 28px;
   border: 1px solid rgba(132, 105, 146, 0.2);
@@ -991,10 +991,12 @@ p {
   border-radius: 8px;
   background: rgba(251, 247, 240, 0.92);
   text-align: center;
+  transform: translateY(-28px);
 }
 
 .mind-diagram__core span,
-.mind-diagram__node span {
+.mind-diagram__node span,
+.mind-diagram__lane span {
   color: var(--rx-text-muted);
   font-family: var(--rx-font-mono);
   font-size: 11px;
@@ -1003,7 +1005,8 @@ p {
 }
 
 .mind-diagram__core strong,
-.mind-diagram__node strong {
+.mind-diagram__node strong,
+.mind-diagram__lane strong {
   color: var(--rx-text-primary);
   font-size: 13px;
   line-height: 1.4;
@@ -1011,7 +1014,7 @@ p {
 
 .mind-diagram__nodes {
   position: absolute;
-  inset: 20px;
+  inset: 20px 20px 108px;
 }
 
 .mind-diagram__node {
@@ -1044,6 +1047,32 @@ p {
 .mind-diagram__node:nth-child(4) {
   bottom: 0;
   left: 0;
+}
+
+.mind-diagram__lanes {
+  position: absolute;
+  right: 28px;
+  bottom: 24px;
+  left: 28px;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.mind-diagram__lane {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid rgba(67, 92, 116, 0.16);
+  border-radius: 8px;
+  background: rgba(251, 247, 240, 0.76);
+}
+
+.mind-diagram__lane span,
+.mind-diagram__lane strong {
+  overflow-wrap: anywhere;
 }
 
 .media-frame__diagram-figure figcaption {
@@ -2451,6 +2480,7 @@ p {
     width: 100%;
     min-height: 0;
     padding: 16px;
+    transform: none;
   }
 
   .mind-diagram__nodes {
@@ -2463,6 +2493,12 @@ p {
   .mind-diagram__node {
     position: static;
     width: 100%;
+  }
+
+  .mind-diagram__lanes {
+    position: static;
+    grid-template-columns: 1fr;
+    margin-top: 8px;
   }
 
   .media-frame__diagram-figure figcaption {

@@ -26,6 +26,11 @@ export type ProjectDiagramNode = {
   value: string;
 };
 
+export type ProjectDiagramLane = {
+  label: string;
+  value: string;
+};
+
 export type ProjectDiagram = {
   label: string;
   title: string;
@@ -33,6 +38,7 @@ export type ProjectDiagram = {
   coreLabel: string;
   coreTitle: string;
   nodes: ProjectDiagramNode[];
+  lanes?: ProjectDiagramLane[];
 };
 
 export type ProjectAssetReview = {
@@ -278,34 +284,48 @@ export const projects: Project[] = [
     capabilities: ["模型实验记录", "工具编排", "审计与评测口径"],
     signals: ["强调可审计与可复用", "未来独立域名为 mind.radishx.com", "首版官网只展示稳定公开信息"],
     diagram: {
-      label: "Protocol map",
-      title: "协议与评测视觉",
-      note: "基于当前公开定位生成的代码内视觉，不引入外部产品参考截图，也不声明已有正式产品 UI。",
+      label: "Evaluation loop",
+      title: "协议评测回路",
+      note: "基于当前公开定位生成的代码内自有视觉，不引入外部产品参考截图，也不声明已有正式产品 UI。",
       coreLabel: "RadishMind",
-      coreTitle: "External Intelligence Layer",
+      coreTitle: "Contracts + Evaluation",
       nodes: [
         {
-          label: "Protocol",
-          value: "上下文与工具契约",
-        },
-        {
-          label: "Evaluation",
-          value: "样本、基线与失败分类",
+          label: "Context",
+          value: "任务范围与会话约束",
         },
         {
           label: "Tooling",
-          value: "工具编排与运行边界",
+          value: "工具调用与运行边界",
         },
         {
-          label: "Audit",
-          value: "证据链与可复用记录",
+          label: "Scoring",
+          value: "样本、基线与失败分类",
+        },
+        {
+          label: "Trace",
+          value: "证据链与复用记录",
+        },
+      ],
+      lanes: [
+        {
+          label: "Input",
+          value: "Context packages",
+        },
+        {
+          label: "Run",
+          value: "Tool orchestration",
+        },
+        {
+          label: "Record",
+          value: "Auditable outputs",
         },
       ],
     },
     assetReview: {
-      source: "RadishX 代码内协议图",
-      boundary: "表达公开定位，不是 RadishMind Console 或正式产品 UI 截图。",
-      nextNeed: "后续补项目自有 Logo、Console 截图或真实协议 / 评测可视化图。",
+      source: "RadishX 代码内评测回路图",
+      boundary: "表达公开定位，不是 RadishMind Console、正式产品 UI 或运行截图。",
+      nextNeed: "后续补项目自有 Logo、真实 Console 截图或协议 / 评测可视化图。",
     },
     documentation: [
       {

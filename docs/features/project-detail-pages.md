@@ -1,7 +1,7 @@
 # 四个项目详情页
 
-状态：首版已实现，已补公开文档入口
-最后更新：2026-06-14
+状态：首版已实现，RadishMind 自有代码内视觉已补强
+最后更新：2026-06-15
 
 ## 目标
 
@@ -33,7 +33,7 @@
 - Radish：已接入 README 使用过的代表图 `radish-acg-web.jpg`。
 - RadishCatalyst：已接入概念视觉 `radishcatalyst-rpg-exploration-concept-web.jpg`。
 - RadishFlow：已接入历史 UI baseline `radishflow-workbench-concept-web.jpg`，页面状态为 `Archived`。
-- RadishMind：未接入图片，使用代码内 `Protocol map` 表达协议、评测、工具编排和审计。
+- RadishMind：未接入图片，使用代码内 `Evaluation loop` 表达上下文约束、工具边界、样本评测、证据链和可审计输出。
 - 每页主媒体区展示 `Asset source`、`Usage boundary` 和 `Next material need`。
 - 每页已补公开文档入口，只链接对应 GitHub 仓库 `dev` 分支中的 README / docs / wiki / status / contracts 等稳定入口，不复制文档正文。
 
@@ -48,7 +48,7 @@
 
 - 后续项目拥有稳定 Logo、真实截图或视频时，按项目单独审核并更新本文件。
 - 如果接入视频，先确认来源、压缩策略、字幕 / 水印、移动端加载和降级图。
-- RadishMind 后续优先补自有 Logo、Console 截图或真实可视化图。
+- RadishMind 当前先补强代码内自有视觉；后续再评估项目自有 Logo、Console 截图或真实可视化图。
 - 已确认并接入公开文档入口：Radish 链接 `Docs/` 与快速开始，RadishCatalyst 链接 `docs/` 与 `wiki/`，RadishFlow 链接 `docs/` 与当前状态且保留 archived 口径，RadishMind 链接 `docs/` 与跨项目集成契约。
 
 ## 验证
@@ -71,6 +71,6 @@
 ## 后续事项
 
 - 四个项目独立稳定 Logo。
-- Radish / RadishCatalyst / RadishMind 的真实产品截图或可视化图。
+- Radish / RadishCatalyst / RadishMind 的真实产品截图或项目自有可视化图。
 - RadishCatalyst trailer 或 gameplay 视频素材审核。
 - RadishFlow archived 页面长期口径复查。
