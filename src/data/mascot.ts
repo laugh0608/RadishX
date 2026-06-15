@@ -66,7 +66,7 @@ export const mascotForms = [
       currentUse: "首页中心视觉锚点、首页 Mascot 辅助视觉和 Mascot 页形态展示。",
       auditStatus: "安全设定图与站姿图已确认，可进入 public/images。",
       usageBoundary: "公开页只使用完整外装安全版本，不提供素材下载入口。",
-      nextNeed: "表情拆分和贴纸横图继续等待单独审核。",
+      nextNeed: "表情和贴纸横图已作为整图预览接入；单张拆分和下载口径仍需单独确认。",
     },
     notes: ["公开页只使用安全候选口径", "适合作为首页视觉锚点", "不提供素材下载入口"],
   },
@@ -105,6 +105,61 @@ export const mascotGalleryItems = [
     },
   },
   {
+    title: "可爱Q版表情格",
+    category: "Expressions",
+    description: "作为整图预览接入 Mascot Gallery；当前不拆分单张贴纸，不提供下载入口。",
+    image: {
+      src: "/images/mascot/radish-child-expression-sheet-grid-web.jpg",
+      width: 933,
+      height: 1400,
+      alt: "萝小白可爱Q版表情格展示",
+    },
+  },
+  {
+    title: "可爱Q版贴纸横图 01",
+    category: "Stickers",
+    description: "社交表达方向整图预览，保留原始组合，不作为可下载素材包。",
+    image: {
+      src: "/images/mascot/radish-child-sticker-sheet-wide-01-web.jpg",
+      width: 1024,
+      height: 572,
+      alt: "萝小白可爱Q版贴纸横图 01",
+    },
+  },
+  {
+    title: "可爱Q版贴纸横图 02",
+    category: "Stickers",
+    description: "社交表达方向整图预览，保留原始组合，不作为可下载素材包。",
+    image: {
+      src: "/images/mascot/radish-child-sticker-sheet-wide-02-web.jpg",
+      width: 1376,
+      height: 768,
+      alt: "萝小白可爱Q版贴纸横图 02",
+    },
+  },
+  {
+    title: "可爱Q版贴纸横图 03",
+    category: "Stickers",
+    description: "社交表达方向整图预览，保留原始组合，不作为可下载素材包。",
+    image: {
+      src: "/images/mascot/radish-child-sticker-sheet-wide-03-web.jpg",
+      width: 1400,
+      height: 788,
+      alt: "萝小白可爱Q版贴纸横图 03",
+    },
+  },
+  {
+    title: "可爱Q版贴纸横图 04",
+    category: "Stickers",
+    description: "社交表达方向整图预览，保留原始组合，不作为可下载素材包。",
+    image: {
+      src: "/images/mascot/radish-child-sticker-sheet-wide-04-web.jpg",
+      width: 1376,
+      height: 768,
+      alt: "萝小白可爱Q版贴纸横图 04",
+    },
+  },
+  {
     title: "完全体表情包",
     category: "Stickers",
     description: "展示虚拟形象完全体的表情包方向，不提供下载入口。",
@@ -118,7 +173,8 @@ export const mascotGalleryItems = [
 ];
 
 export const mascotGalleryNotes = [
-  "表情包素材适合 Mascot 页 Gallery，第一版不提供下载入口。",
-  "节日素材只用于活动 Banner、彩蛋或运营内容。",
+  "表情包素材当前只做整图预览，不拆分单张贴纸。",
+  "节日素材只用于活动 Banner、彩蛋或运营内容，不进入长期 Gallery。",
+  "第一版不提供素材下载入口，也不声明素材可自由复用。",
   "后续新增素材仍需先进入 assets/ 并完成审核，再生成 public/images Web 版本。",
 ];

@@ -1785,7 +1785,16 @@ p {
   height: clamp(180px, 32vw, 360px);
   border: 1px solid var(--rx-border-soft);
   border-radius: 6px;
-  object-fit: cover;
+  background: rgba(255, 255, 255, 0.72);
+  object-fit: contain;
+}
+
+.gallery-card--wide img {
+  height: clamp(180px, 24vw, 320px);
+}
+
+.gallery-card--portrait img {
+  height: clamp(320px, 48vw, 540px);
 }
 
 .gallery-card > div {

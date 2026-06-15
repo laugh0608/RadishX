@@ -47,6 +47,8 @@ RadishX 已接入首批 Mascot / About 图片和三个项目详情页 Web 图。
 - 本轮没有发现新增或修改的媒体文件，也没有发现可直接公开的视频素材。
 - Radish 继续使用已接入代表图；RadishCatalyst 继续只使用概念视觉；RadishFlow 继续保留 archived / 历史 UI 口径；RadishMind 继续使用代码内 `Evaluation loop`，不接入外部产品参考截图。
 - 四个项目的独立稳定 Logo 仍等待未来单独确认；确认前继续使用代码内文字 / CSS 临时项目标识。
+- 2026-06-15 已将可爱Q版表情格和 4 张贴纸横图生成 Web 版本并接入 Mascot Gallery；当前只做整图预览，不拆分单张，不提供下载入口。
+- `seasonal/` 节日图继续只作为活动 Banner、彩蛋或运营候选，不进入长期 Gallery 或默认主视觉。
 
 ## 验证
 
@@ -66,6 +68,6 @@ RadishX 已接入首批 Mascot / About 图片和三个项目详情页 Web 图。
 
 ## 后续事项
 
-- Mascot 表情拆分、节日图和下载口径。
+- Mascot 单张表情拆分、节日图和下载口径。
 - 四个项目稳定 Logo、真实截图和可公开视频素材；只有出现新的候选来源时再重新进入审核和 Web 优化。
 - RadishMind 自有公开视觉。

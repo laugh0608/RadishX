@@ -105,12 +105,12 @@ export function MascotPage() {
         <div className="section__inner">
           <SectionHeader
             eyebrow="Gallery"
-            title="首批 Gallery 素材已确认"
-            description="服装变体和表情包素材先作为公开预览接入；第一版不提供素材下载入口。"
+            title="表情与贴纸先做整图预览"
+            description="服装变体、表情格和贴纸横图作为公开 Gallery 预览接入；第一版不拆分单张贴纸，不提供素材下载入口。"
           />
           <div className="mascot-gallery-grid">
             {mascotGalleryItems.map((item) => (
-              <article key={item.title} className="gallery-card">
+              <article key={item.title} className={`gallery-card gallery-card--${item.image.height > item.image.width ? "portrait" : "wide"}`}>
                 <img src={item.image.src} width={item.image.width} height={item.image.height} alt={item.image.alt} loading="lazy" />
                 <div>
                   <span>{item.category}</span>
