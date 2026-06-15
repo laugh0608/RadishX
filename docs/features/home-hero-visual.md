@@ -30,6 +30,7 @@
 ## 当前实现
 
 - 首页首屏继续使用 Radish Orbit 作为 v1 主结构，四个项目入口围绕中心视觉锚点展开。
+- 顶部 `Projects` 导航在首页 `/#projects` 锚点和四个项目详情页中都保持 active 状态。
 - 已接入 `public/images/mascot/radish-child-standing-white-dress-tall-web.jpg` 作为首屏中心视觉锚点和后续 Mascot 入口的辅助视觉。
 - 素材状态槽已展示 Hero 主视觉、Mascot 三形态和项目媒体的当前状态、边界和后续需求。
 - 当前 Open Graph 图使用已确认完全体设定图生成，已完成本地视觉评估；它包含 RadishX 标题、项目矩阵信息和横向 Mascot 视觉，更适合作为当前 `1200x630` 分享预览，本轮不替换。
@@ -55,6 +56,7 @@
 - 桌面视口检查 `/`，建议 `1440x900`。
 - 移动视口检查 `/`，建议 `390x844`。
 - 检查首屏标题、CTA、项目节点、素材状态槽无横向溢出。
+- 检查 `/#projects` 锚点滚动后顶部 `Projects` 导航 active 状态正确。
 - 检查新增图片实际加载、`alt` 合理、主体不被裁切。
 
 ## 完成标准

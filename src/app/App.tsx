@@ -56,8 +56,10 @@ export function App() {
     if (location.hash) {
       const target = getHashTarget(location.hash);
       if (target) {
-        target.scrollIntoView({ behavior, block: "start" });
-        return;
+        const frameId = window.requestAnimationFrame(() => {
+          target.scrollIntoView({ behavior, block: "start" });
+        });
+        return () => window.cancelAnimationFrame(frameId);
       }
     }
 
@@ -86,7 +88,7 @@ export function App() {
       <a className="skip-link" href="#main-content">
         跳到正文
       </a>
-      <SiteHeader currentPath={route.path} />
+      <SiteHeader currentHash={location.hash} currentPath={route.path} />
       <main id="main-content" ref={mainRef} tabIndex={-1}>
         {page}
       </main>

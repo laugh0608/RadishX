@@ -3,20 +3,21 @@ import { projects } from "../../data/projects";
 import { RouteLink } from "../ui/RouteLink";
 
 type SiteHeaderProps = {
+  currentHash: string;
   currentPath: string;
 };
 
-function isActive(currentPath: string, href: string) {
+function isActive(currentPath: string, currentHash: string, href: string) {
   const path = href.split("#")[0];
 
   if (href === "/#projects") {
-    return projects.some((project) => project.path === currentPath);
+    return currentHash === "#projects" || projects.some((project) => project.path === currentPath);
   }
 
   return path === currentPath;
 }
 
-export function SiteHeader({ currentPath }: SiteHeaderProps) {
+export function SiteHeader({ currentHash, currentPath }: SiteHeaderProps) {
   return (
     <header className="site-header">
       <RouteLink className="site-header__brand" to="/" aria-label="RadishX 首页">
@@ -33,7 +34,7 @@ export function SiteHeader({ currentPath }: SiteHeaderProps) {
             <RouteLink
               key={item.label}
               to={item.href}
-              aria-current={isActive(currentPath, item.href) ? "page" : undefined}
+              aria-current={isActive(currentPath, currentHash, item.href) ? "page" : undefined}
             >
               {item.label}
             </RouteLink>
