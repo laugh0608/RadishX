@@ -2,7 +2,7 @@
 
 RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 RadishX 官网根站点，通过 GitHub 托管代码，并使用 Vercel 免费额度部署；当前主域为 <https://radishx.com/>，`www.radishx.com` 作为兼容入口跳转到根域。
 
-当前仓库状态：基础仓库和远程仓库已创建，官网定位、页面内容、域名结构和素材归档已完成首轮规划；Vite + React + TypeScript 官网骨架已初始化，并接入路由、数据层、favicon、metadata、Open Graph 分享预览图、`sitemap.xml`、`robots.txt`、首批 Mascot / About 公开图片、项目详情页代表视觉和 `--rx-*` 样式 token；已完成首次线上访问、站内路由 fallback 检查和目标级开发文档拆分。
+当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、四个项目详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、首批 Mascot / About 公开图片、项目详情页代表视觉、Radish Orbit 首页中心视觉、Mascot Gallery 整图预览和 `--rx-*` 样式 token；已完成多轮本地响应式、可访问性、发布检查和目标级开发文档同步。
 
 ## 已确认方向
 
@@ -12,7 +12,7 @@ RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 Rad
 - 官网气质：偏创意品牌、游戏感和视觉冲击，参考 Apple 官网的克制文案、大幅视觉、清晰节奏和强产品呈现，同时继承 Radish 的淡雅新中式、纸感、印色感和低饱和轻纹样
 - 设计流程：先在 `docs/design/sources/radishx-site-v0.pen` 完成页面设计稿，审核后再进入 React 实现
 - 前端实现：已建立 `src/` 推荐目录结构，使用轻量路由表实现 `/`、四个项目页、`/mascot` 和 `/about`
-- 素材使用：首批 Mascot / About 图片已审核并生成 Web 版本；后续截图、Logo、角色图或活动图正式用于页面前仍需先审核具体选图
+- 素材使用：首批 Mascot / About 图片、项目代表图、表情 / 贴纸整图预览已审核并生成 Web 版本；后续截图、Logo、角色图、单张贴纸或活动图正式用于页面前仍需先审核具体选图
 - GitHub 仓库：公开仓库
 - 许可证：source-available，详见 [LICENSE](LICENSE)
 
@@ -77,10 +77,10 @@ npm run build
 项目详情页第一版优先开放稳定链接：
 
 - GitHub 仓库链接：全部展示。
-- 文档链接：如果项目已有公开文档站或适合公开的仓库文档入口，再展示。
+- 文档链接：当前已展示各仓库 `dev` 分支中的 README / docs / wiki / status / contracts 等稳定入口。
 - 演示站、下载页、在线应用：没有稳定公开入口前先不展示，避免用户点到不可用服务。
 
-也就是说，第一版官网可以先把四个项目都指向 GitHub；后续哪个项目有稳定 Demo、文档站或下载页，再单独补入口。
+也就是说，第一版官网展示 GitHub 和公开文档，不把未来独立域名伪装成已上线服务；后续哪个项目有稳定 Demo、文档站或下载页，再单独补入口。
 
 ## 部署与跳转策略
 
@@ -141,30 +141,45 @@ npm run build
 当前已确认并接入首批公开 Web 素材：
 
 - `public/images/mascot/radish-child-safe-design-sheet-v1-web.jpg`
+- `public/images/mascot/radish-child-standing-white-dress-web.jpg`
+- `public/images/mascot/radish-child-standing-white-dress-tall-web.jpg`
 - `public/images/mascot/radish-mature-design-sheet-web.jpg`
+- `public/images/mascot/radish-mature-standing-white-dress-web.jpg`
 - `public/images/mascot/radish-origin-icon-web.jpg`
 - `public/images/mascot/radish-child-outfit-variants-web.jpg`
+- `public/images/mascot/radish-child-expression-sheet-grid-web.jpg`
+- `public/images/mascot/radish-child-sticker-sheet-wide-01-web.jpg`
+- `public/images/mascot/radish-child-sticker-sheet-wide-02-web.jpg`
+- `public/images/mascot/radish-child-sticker-sheet-wide-03-web.jpg`
+- `public/images/mascot/radish-child-sticker-sheet-wide-04-web.jpg`
 - `public/images/mascot/radish-mature-sticker-sheet-wide-web.jpg`
+- `public/images/projects/radish/radish-acg-web.jpg`
+- `public/images/projects/catalyst/radishcatalyst-rpg-exploration-concept-web.jpg`
+- `public/images/projects/flow/radishflow-workbench-concept-web.jpg`
 - `public/images/social/wechat-official-account-qr-web.png`
 - `public/images/social/radishx-og-image.png`：1200x630 Open Graph / Twitter 分享预览图。
 
-节日素材不建议作为官网长期主视觉，更适合作为活动 Banner 或节日彩蛋。官网长期主视觉更适合从可爱Q版和虚拟形象完全体的设定图、站姿图中挑选。
+可爱Q版表情格和贴纸横图当前只做整图预览，不拆分单张、不生成缩略图、不提供下载入口。节日素材不建议作为官网长期主视觉，更适合作为活动 Banner、节日彩蛋或运营内容候选；具体进入页面前需要确认活动窗口、页面位置、文案和授权。
 
-## 待讨论方案
+## 待确认事项
 
 后续需要继续确认以下内容：
 
-- 首页主视觉选图：需要从现有素材或后续新图中审核确认。
+- 四个项目后续是否补独立稳定 Logo，用于替换当前代码内临时项目标识。
+- 四个项目后续是否提供真实截图或可公开视频素材。
+- RadishMind 后续是否补项目自有 Logo、Console 截图或协议 / 评测可视化图。
+- “萝小白”后续是否启动单张表情拆分清单、具体 seasonal 活动实现和下载口径。
+- 如果进入发布阶段，先补跑线上 HTTP、根域跳转、路径保留和截图级 smoke。
 
-## 初步建议
+## 当前实现状态
 
-推荐第一版先做成静态多页面官网：
+第一版已按静态多页面官网实现：
 
 1. 顶部导航：RadishX、Projects、Mascot、About、GitHub。
-2. 首页首屏：大幅视觉 + 极少文案，突出 RadishX 是 Radish 系列项目矩阵。
-3. 首页项目区：四个项目作为四个强视觉入口，而不是普通信息卡片。
-4. 项目详情页：每页围绕一句核心定位、当前状态、关键能力、入口链接组织。
-5. 虚拟形象页：以角色设定页方式展示三种形态，后续可扩展为素材库或下载页。
-6. About 页：联系方式、社交媒体、组织说明、项目仓库入口。
+2. 首页首屏：Radish Orbit 项目星图 + 已审核可爱Q版站姿中心视觉锚点。
+3. 首页项目区：四个项目作为大幅 band 入口，保留 GitHub、未来域名和素材边界说明。
+4. 项目详情页：每页围绕定位、当前状态、公开文档、关键能力、素材审核和项目矩阵关系组织，并提供 Hero 下方站内导览。
+5. Mascot 页：展示三种形态、主视觉、Gallery 整图预览和使用边界，不提供下载入口。
+6. About 页：联系方式、微信公众号二维码、GitHub 仓库入口和域名边界。
 
-当前阶段已进入 React 实现，第一版页面先使用图形化候选媒体框、项目状态信息和萝小白原始形象 favicon 作为临时 Logo；首批确认图片已进入 Mascot、About 和首页 Mascot 辅助视觉，未确认的大图素材仍不进入公开页面实现。
+当前阶段已进入 React 官网首版实现后的页面完善与公开素材治理阶段。四个项目当前使用 RadishX 统一风格代码内临时项目标识，不声明为正式 Logo；未审核图片、外部参考图、活动图和可独立传播素材不进入正式页面实现。
