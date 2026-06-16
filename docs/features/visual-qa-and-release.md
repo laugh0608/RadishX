@@ -1,6 +1,6 @@
 # 视觉 QA 与发布检查
 
-状态：持续执行，本地发布检查、可访问性整理、实现口径对齐检查与设计源同步说明已完成，线上截图级 smoke 待补
+状态：持续执行，本地发布前复查、可访问性整理、实现口径对齐检查与设计源同步说明已完成，线上截图级 smoke 待补
 最后更新：2026-06-16
 
 ## 目标
@@ -39,6 +39,19 @@
 - 可访问性整理后检查 skip link、`main` 聚焦、导航 / 页脚语义、重复链接名称、heading 序列、横向溢出和 console error。
 
 ## 本地检查记录
+
+2026-06-16 已完成一轮本地发布前复查：
+
+- 执行 `npm run build` 通过，确认 TypeScript 与 Vite 生产构建正常。
+- 检查 `dist/` 输出，包含 `index.html`、`favicon.ico`、`robots.txt`、`sitemap.xml`、构建后的 CSS / JS、3 张项目代表图、13 张 Mascot 图和 2 张社交 / 联系图片。
+- 使用 Browser 检查 `1440x900` 桌面视口下的 `/`、`/radish`、`/catalyst`、`/flow`、`/mind`、`/mascot`、`/about` 和 `/abc-test`；页面标题、H1、路由 fallback、导航 active 状态、横向滚动、主内容和 skip link 均正常，console error 为空。
+- 使用 Browser 检查 `390x844` 移动视口下的同一组路由；未发现横向溢出、低于 `44px` 的可点击目标、关键文案遮挡或按钮明显错位。
+- 使用 Browser 检查 8 个路由的 metadata、canonical、Open Graph、Twitter Card 和 robots 口径；正常页面为 `index, follow`，未知路径为 `noindex, nofollow`。
+- 使用 Browser 直接打开 `sitemap.xml` 和 `robots.txt`，确认本地可访问且内容类型正确。
+- 使用 Browser 直接打开 `public/images` 中 18 个公开图片路径，均可解码并返回有效原始尺寸。
+- 本轮 Browser 后台滚动动作未改变页面 `scrollY`，因此未把 Gallery lazy 图片的页面内滚动触发作为本轮结论；资源解码和页面结构已完成复查，后续如需截图级或滚动级视觉结论，可换可滚动的浏览器会话复跑。
+- 执行 `git diff --check` 通过。
+- 本轮不推送、不部署，不补跑线上截图级 smoke。
 
 2026-06-15 已完成一轮本地发布检查：
 
