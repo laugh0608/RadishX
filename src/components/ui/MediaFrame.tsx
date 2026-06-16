@@ -10,6 +10,8 @@ type MediaFrameProps = {
 export function MediaFrame({ project, compact = false, showVisual = false }: MediaFrameProps) {
   const visual = showVisual && project.visual ? project.visual : undefined;
   const diagram = showVisual && !visual && project.diagram ? project.diagram : undefined;
+  const shouldLoadVisualEagerly = Boolean(visual && showVisual);
+  const isPriorityVisual = Boolean(visual && showVisual && !compact);
 
   return (
     <div
@@ -23,7 +25,15 @@ export function MediaFrame({ project, compact = false, showVisual = false }: Med
       </div>
       {visual ? (
         <figure className={`media-frame__visual media-frame__visual--${visual.ratio}`}>
-          <img src={visual.src} width={visual.width} height={visual.height} alt={visual.alt} loading="lazy" decoding="async" />
+          <img
+            src={visual.src}
+            width={visual.width}
+            height={visual.height}
+            alt={visual.alt}
+            loading={shouldLoadVisualEagerly ? "eager" : "lazy"}
+            decoding="async"
+            fetchPriority={isPriorityVisual ? "high" : "auto"}
+          />
           <figcaption>{visual.title}</figcaption>
         </figure>
       ) : diagram ? (
@@ -77,7 +87,7 @@ export function MediaFrame({ project, compact = false, showVisual = false }: Med
         <span>{visual ? "Reviewed asset" : diagram ? "Code-native visual" : "Visual placeholder"}</span>
         <strong>{visual ? visual.note : diagram ? diagram.note : "第一版暂不展示真实截图或视频"}</strong>
       </div>
-      {showVisual ? (
+      {showVisual && !compact ? (
         <dl className="media-frame__review" aria-label={`${project.name} 素材审核说明`}>
           <div>
             <dt>Asset source</dt>

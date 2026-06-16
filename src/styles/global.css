@@ -918,6 +918,10 @@ p {
   min-height: 0;
 }
 
+.media-frame--compact.media-frame--visual {
+  align-content: start;
+}
+
 .media-frame--radish {
   --rx-media-accent: var(--rx-accent-jade);
 }
@@ -1045,6 +1049,14 @@ p {
   text-align: center;
 }
 
+.media-frame--compact .media-frame__visual {
+  margin-top: 0;
+}
+
+.media-frame--compact .media-frame__visual--square {
+  width: min(100%, 260px);
+}
+
 .media-frame__diagram-figure {
   position: relative;
   z-index: 2;
@@ -1069,6 +1081,11 @@ p {
   background-size: 42px 42px, 42px 42px, auto, auto;
   box-shadow: var(--rx-shadow-soft);
   overflow: hidden;
+}
+
+.media-frame--compact .mind-diagram {
+  min-height: 260px;
+  padding: 18px;
 }
 
 .mind-diagram::before,
@@ -1101,6 +1118,13 @@ p {
   transform: translateY(-28px);
 }
 
+.media-frame--compact .mind-diagram__core {
+  width: 142px;
+  min-height: 92px;
+  padding: 16px;
+  transform: translateY(-18px);
+}
+
 .mind-diagram__core span,
 .mind-diagram__node span,
 .mind-diagram__lane span {
@@ -1124,6 +1148,10 @@ p {
   inset: 20px 20px 108px;
 }
 
+.media-frame--compact .mind-diagram__nodes {
+  inset: 16px 16px 84px;
+}
+
 .mind-diagram__node {
   position: absolute;
   z-index: 2;
@@ -1134,6 +1162,11 @@ p {
   border: 1px solid rgba(136, 99, 73, 0.16);
   border-radius: 8px;
   background: rgba(251, 247, 240, 0.86);
+}
+
+.media-frame--compact .mind-diagram__node {
+  width: min(136px, 42%);
+  padding: 9px;
 }
 
 .mind-diagram__node:nth-child(1) {
@@ -1165,6 +1198,12 @@ p {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
+}
+
+.media-frame--compact .mind-diagram__lanes {
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
 }
 
 .mind-diagram__lane {
@@ -2726,6 +2765,33 @@ p {
     position: static;
     grid-template-columns: 1fr;
     margin-top: 8px;
+  }
+
+  .media-frame--compact .mind-diagram__lanes {
+    display: none;
+  }
+
+  .media-frame--compact .mind-diagram__nodes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .media-frame--compact .mind-diagram__node {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .media-frame--compact .mind-diagram__node strong {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .media-frame--compact .media-frame__note strong {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
   }
 
   .media-frame__diagram-figure figcaption {

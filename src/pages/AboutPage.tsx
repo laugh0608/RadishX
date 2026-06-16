@@ -57,7 +57,9 @@ export function AboutPage() {
                   width="512"
                   height="509"
                   alt={`${officialAccount.name}微信公众号二维码`}
-                  loading="lazy"
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
                 />
               </div>
               <figcaption className="qr-panel__copy">

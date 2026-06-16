@@ -37,6 +37,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 | 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 表情 / 贴纸与 seasonal 使用边界已记录 |
 | 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地发布检查、可访问性整理、实现口径对齐检查与设计源同步说明已完成，线上截图级 smoke 待补 |
 | 设计源精确化 | [design-source-refresh.md](../features/design-source-refresh.md) | 首页桌面 / 移动、项目详情模板、Mascot 和 About v1.1 已新增 |
+| React 与设计源对照校准 | [react-design-alignment.md](../features/react-design-alignment.md) | 已完成，首页项目 band 和关键媒体加载已对齐 |
 
 ## 当前活跃目标
 
@@ -61,11 +62,12 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 17. 已完成设计源、视觉规范、开发规范和 React 实现的口径对齐检查；首页、项目页、Mascot 页和 About 页的页面节奏、移动端结构、说明文案、素材边界和本地 Browser smoke 均未发现阻断问题。
 18. Pencil 设计源已通过 MCP 补做只读复核，确认 5 个顶层 v1 画板结构完整且无布局问题；这些画板保留为早期设计记录，并已在底部追加 `2026-06-16 实现口径同步` 说明 band。
 19. 已通过 Pencil 新增 5 个 v1.1 精确实现稿：`Home Desktop v1.1 - React Accurate`、`Home Mobile v1.1 - React Accurate`、`Project Detail Template v1.1 - Flow Example`、`Mascot Page v1.1 - React Accurate` 和 `About Page v1.1 - React Accurate`，并逐一完成 `snapshot_layout` 检查。
+20. 已完成 React 页面与 v1.1 设计源对照校准：首页项目 band 已接入项目详情页同口径媒体，`/flow` 主媒体、`/mascot` 主视觉和 `/about` 二维码已调整首屏加载策略，并通过本地构建、空白检查和桌面 / 移动端浏览器检查。
 
 下一步建议推进：
 
 1. 继续先不推送、不部署；如果后续进入发布阶段，再补跑线上 HTTP、根域跳转、路径保留和截图级 smoke。
-2. 基于 v1.1 设计源做一次 React 页面截图对照和细节差异清单；若只发现低风险视觉差异，再按页面小步修正实现。
+2. 若继续推进页面质量，优先补项目详情模板、Mascot 页和 About 页的独立移动版 Pencil 画板，或进入本地发布前复查；不要引入新素材或下载入口。
 3. 如果后续选择具体 seasonal 活动，再按已评估的窗口、位置、文案边界和授权要求生成 Web 版本并进入短期页面实现。
 4. 四个项目后续只有出现新的独立 Logo、真实截图或视频候选来源时，再按素材治理文档重新审核。
 
@@ -108,7 +110,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 
 ## 后续顺序
 
-1. 基于 v1.1 设计源复查 React 实现细节；涉及 `.pen` 设计源时只通过 Pencil 工具处理。
+1. 如需要继续设计侧推进，补项目详情模板、Mascot 页和 About 页的独立移动版 Pencil 画板；涉及 `.pen` 设计源时只通过 Pencil 工具处理。
 2. 如进入部署阶段，先补跑线上 HTTP、根域跳转、路径保留和截图级 smoke。
 3. 如需使用 seasonal 图，先选择具体活动目标并确认上线 / 下线时间、页面位置、文案、授权和撤下策略，再生成 Web 版本。
 4. 四个项目出现新的独立 Logo、真实截图或视频候选来源后，再回到项目素材审核和 Web 优化。

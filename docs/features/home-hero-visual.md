@@ -1,6 +1,6 @@
 # 首页首屏与主视觉
 
-状态：站姿中心视觉锚点已接入，Open Graph 已评估暂不替换
+状态：站姿中心视觉锚点已接入，首页项目 band 已对齐审核媒体口径
 最后更新：2026-06-15
 
 ## 目标
@@ -32,6 +32,7 @@
 - 首页首屏继续使用 Radish Orbit 作为 v1 主结构，四个项目入口围绕中心视觉锚点展开。
 - 顶部 `Projects` 导航在首页 `/#projects` 锚点和四个项目详情页中都保持 active 状态。
 - 已接入 `public/images/mascot/radish-child-standing-white-dress-tall-web.jpg` 作为首屏中心视觉锚点和后续 Mascot 入口的辅助视觉。
+- 首页项目 band 已对齐项目详情页媒体口径：Radish、RadishCatalyst、RadishFlow 使用已审核代表图，RadishMind 使用代码内 `Evaluation loop` 自有视觉。
 - 素材状态槽已展示 Hero 主视觉、Mascot 三形态和项目媒体的当前状态、边界和后续需求。
 - 当前 Open Graph 图使用已确认完全体设定图生成，已完成本地视觉评估；它包含 RadishX 标题、项目矩阵信息和横向 Mascot 视觉，更适合作为当前 `1200x630` 分享预览，本轮不替换。
 
@@ -47,7 +48,7 @@
 - 保持可爱Q版站姿图作为当前首页中心视觉锚点，后续如再替换主视觉需重新记录素材结论。
 - 如果主视觉替换改变页面首屏气质，同步检查 `docs/design/visual-guidelines.md`。
 - 保留 `public/images/social/radishx-og-image.png`；后续只有首页视觉再次明显变化或社交预览目标变化时再评估替换。
-- 保持首页项目 band 与四个项目详情页素材口径一致。
+- 首页项目 band 已与四个项目详情页素材口径一致；后续如替换正式 Logo、真实截图或视频，需同步检查首页与详情页。
 - 后续如果改用其他主视觉，必须先在 `docs/assets/materials.md` 中把对应素材状态更新为可正式使用。
 
 ## 验证

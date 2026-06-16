@@ -32,6 +32,9 @@ export function MascotPage() {
               width={mascotHeroImage.width}
               height={mascotHeroImage.height}
               alt={mascotHeroImage.alt}
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
             />
             <div>
               <strong>萝小白</strong>

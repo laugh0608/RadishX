@@ -48,7 +48,7 @@ export function ProjectBand({ project, index }: ProjectBandProps) {
           </a>
         </div>
       </div>
-      <MediaFrame project={project} compact />
+      <MediaFrame project={project} compact showVisual />
     </article>
   );
 }
