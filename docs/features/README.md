@@ -19,9 +19,9 @@
 | [mascot-page.md](mascot-page.md) | Mascot 虚拟形象页、三形态和 Gallery | Seasonal 活动图已评估，当前不进入实现 |
 | [about-contact-surface.md](about-contact-surface.md) | About 联系区、仓库入口和域名边界 | 首轮精细化已完成 |
 | [asset-governance.md](asset-governance.md) | 素材审核、Web 优化和 `public/images` 准入 | Mascot 表情 / 贴纸与 seasonal 使用边界已记录 |
-| [visual-qa-and-release.md](visual-qa-and-release.md) | 本地 / 线上视觉 QA、构建和发布检查 | 本地发布检查、可访问性整理、实现口径对齐检查与设计源同步说明已完成，线上截图级 smoke 待补 |
-| [design-source-refresh.md](design-source-refresh.md) | Pencil 设计源 v1.1 精确实现稿 | 首页桌面 / 移动、项目详情模板、Mascot 和 About v1.1 已新增 |
-| [react-design-alignment.md](react-design-alignment.md) | React 页面与 v1.1 设计源对照校准 | 已完成，首页项目 band 和关键媒体加载已对齐 |
+| [visual-qa-and-release.md](visual-qa-and-release.md) | 本地 / 线上视觉 QA、构建和发布检查 | 本地发布检查、HTTP smoke 准备、可访问性整理、实现口径对齐检查与设计源同步说明已完成，线上截图级 smoke 待补 |
+| [design-source-refresh.md](design-source-refresh.md) | Pencil 设计源 v1.1 精确实现稿 | 首页桌面 / 移动、项目详情模板、Mascot 和 About v1.1 已新增，三张独立移动稿已补齐 |
+| [react-design-alignment.md](react-design-alignment.md) | React 页面与 v1.1 设计源对照校准 | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
 
 ## 推荐文档结构
 
