@@ -1,6 +1,6 @@
 # React 与设计源对照校准
 
-状态：已完成
+状态：已完成，独立移动稿对照复查已完成
 最后更新：2026-06-16
 
 ## 目标
@@ -54,6 +54,16 @@ Pencil 设计源已新增首页桌面、首页移动、项目详情模板 Flow �
 - 首页 RadishMind 紧凑媒体框在 390px 移动端压缩 `Evaluation loop`：隐藏 lanes、节点改两列、长说明限行，降低单个 band 的纵向压力。
 - Mascot Gallery 和下方贴纸图继续使用 lazy，不改变下载关闭和整图预览边界。
 
+## 独立移动稿对照复查
+
+2026-06-16 基于新增的 3 张独立 `390px` v1.1 移动画板，复查当前 React 页面：
+
+- `/flow`：区块顺序覆盖 Hero、Page flow、Role / Stage、Public Surface、Documentation、Capabilities 和 Matrix；`390x844` 下无横向溢出，4 个站内导览、2 个文档卡片和 3 个矩阵回流入口均存在，主媒体加载完成。
+- `/mascot`：区块顺序覆盖 Hero、Forms、Gallery 和 Usage；`390x844` 下无横向溢出，3 个形态卡片、7 个 Gallery 整图预览和 4 条 Gallery notes 均存在，滚动后 12 张页面图片全部加载完成。
+- `/about`：区块顺序覆盖 Hero、Contact / WeChat、Repositories 和 Deployment；`390x844` 下无横向溢出，4 个联系方式、二维码、5 个仓库入口和 6 个域名卡片均存在。
+- 三页可点击目标未发现低于 `44px` 的移动端触控尺寸问题，console 未发现 error。
+- 本轮没有发现需要立即修改 React 代码的差异；页面继续保持不接新素材、不接 seasonal、不开放下载入口和不部署的边界。
+
 ## 对照结论
 
 - 必须修正：首页项目 band 仍使用抽象媒体框，未对齐 v1.1 设计源和项目详情页代表视觉口径；已修正。
@@ -69,6 +79,9 @@ Pencil 设计源已新增首页桌面、首页移动、项目详情模板 Flow �
 - 检查关键图片加载、主要 section 可读、console 无 error。
 - Browser 滚动检查 `/`、`/flow`、`/mascot`、`/about` 桌面端图片均完成加载，无横向溢出。
 - Browser 检查移动端 `/` 项目 band 媒体、`/flow` 主媒体、`/mascot` 主视觉和 `/about` 二维码加载完成，无横向溢出。
+- Browser 对照新增独立移动稿检查 `/flow`、`/mascot`、`/about` 在 `390x844` 下无横向溢出、无低于 `44px` 的可点击目标、console 无 error。
+- Browser 滚动检查 `/flow`、`/mascot`、`/about` 移动端图片全部加载完成；其中 `/mascot` 12 张页面图片全部加载完成。
+- `git diff --check`
 
 ## 完成标准
 

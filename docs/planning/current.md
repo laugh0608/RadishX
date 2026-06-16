@@ -37,7 +37,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 | 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 表情 / 贴纸与 seasonal 使用边界已记录 |
 | 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地发布检查、可访问性整理、实现口径对齐检查与设计源同步说明已完成，线上截图级 smoke 待补 |
 | 设计源精确化 | [design-source-refresh.md](../features/design-source-refresh.md) | 首页桌面 / 移动、项目详情模板、Mascot 和 About v1.1 已新增，三张独立移动稿已补齐 |
-| React 与设计源对照校准 | [react-design-alignment.md](../features/react-design-alignment.md) | 已完成，首页项目 band 和关键媒体加载已对齐 |
+| React 与设计源对照校准 | [react-design-alignment.md](../features/react-design-alignment.md) | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
 
 ## 当前活跃目标
 
@@ -64,11 +64,12 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 19. 已通过 Pencil 新增 5 个 v1.1 精确实现稿：`Home Desktop v1.1 - React Accurate`、`Home Mobile v1.1 - React Accurate`、`Project Detail Template v1.1 - Flow Example`、`Mascot Page v1.1 - React Accurate` 和 `About Page v1.1 - React Accurate`，并逐一完成 `snapshot_layout` 检查。
 20. 已完成 React 页面与 v1.1 设计源对照校准：首页项目 band 已接入项目详情页同口径媒体，`/flow` 主媒体、`/mascot` 主视觉和 `/about` 二维码已调整首屏加载策略，并通过本地构建、空白检查和桌面 / 移动端浏览器检查。
 21. 已通过 Pencil 新增 3 个独立 `390px` 移动版 v1.1 画板：`Project Detail Template Mobile v1.1 - Flow Example`、`Mascot Page Mobile v1.1 - React Accurate` 和 `About Page Mobile v1.1 - React Accurate`，并逐一完成 `snapshot_layout` 检查。
+22. 已基于新增独立移动稿复查 `/flow`、`/mascot` 和 `/about` 的 `390x844` React 实现：区块顺序、关键数量、图片加载、触控目标、横向溢出和 console 均未发现阻断问题，本轮不需要改 React 代码。
 
 下一步建议推进：
 
 1. 继续先不推送、不部署；如果后续进入发布阶段，再补跑线上 HTTP、根域跳转、路径保留和截图级 smoke。
-2. 若继续推进页面质量，优先进入本地发布前复查或基于新增独立移动稿做后续小步对照；不要引入新素材或下载入口。
+2. 若继续推进页面质量，优先进入本地发布前复查；不要引入新素材或下载入口。
 3. 如果后续选择具体 seasonal 活动，再按已评估的窗口、位置、文案边界和授权要求生成 Web 版本并进入短期页面实现。
 4. 四个项目后续只有出现新的独立 Logo、真实截图或视频候选来源时，再按素材治理文档重新审核。
 
@@ -110,7 +111,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 
 ## 后续顺序
 
-1. 如需要继续设计侧推进，基于已补齐的独立移动版 Pencil 画板做小步对照或后续改版同步；涉及 `.pen` 设计源时只通过 Pencil 工具处理。
+1. 如需要继续设计侧推进，基于已补齐的独立移动版 Pencil 画板做后续改版同步；涉及 `.pen` 设计源时只通过 Pencil 工具处理。
 2. 如进入部署阶段，先补跑线上 HTTP、根域跳转、路径保留和截图级 smoke。
 3. 如需使用 seasonal 图，先选择具体活动目标并确认上线 / 下线时间、页面位置、文案、授权和撤下策略，再生成 Web 版本。
 4. 四个项目出现新的独立 Logo、真实截图或视频候选来源后，再回到项目素材审核和 Web 优化。
