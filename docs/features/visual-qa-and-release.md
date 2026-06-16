@@ -1,6 +1,6 @@
 # 视觉 QA 与发布检查
 
-状态：持续执行，本地发布前复查、可访问性整理、实现口径对齐检查与设计源同步说明已完成，线上截图级 smoke 待补
+状态：持续执行，本地发布前复查、HTTP smoke 准备、可访问性整理、实现口径对齐检查与设计源同步说明已完成，线上截图级 smoke 待补
 最后更新：2026-06-16
 
 ## 目标
@@ -10,6 +10,8 @@
 ## 背景
 
 当前已经完成多轮本地响应式、可访问性和生产质量检查；线上 HTTP 状态、根域跳转、`sitemap.xml` 和 `robots.txt` 已验证。Browser / Chrome 截图采集链路曾出现不稳定，线上截图级视觉 smoke 需要后续补跑。
+
+已新增可复用 HTTP smoke 脚本，用于在本地或未来线上目标上检查路由 HTML、SEO 文件、公开图片资源和可选 `www` 跳转；该脚本不替代 Browser / Chrome 的截图级视觉检查。
 
 本轮按“跳过发布，继续本地开发”的节奏，只推进本地站点级质量与可访问性整理，不触发推送、部署或线上 smoke。
 
@@ -34,6 +36,7 @@
 
 - `npm run build`
 - `npm run check:local-release`
+- `npm run check:http-smoke -- --base-url http://127.0.0.1:4500`
 - `git diff --check`
 - 必要时检查 `dist/` 是否包含 `sitemap.xml`、`robots.txt` 和公开图片资源。
 - 视觉改动后检查至少一个桌面视口和一个 390px 移动端视口。
@@ -53,6 +56,15 @@
 - 使用 Browser 直接打开 `sitemap.xml` 和 `robots.txt`，确认本地可访问且内容类型正确。
 - 使用 Browser 直接打开 `public/images` 中 18 个公开图片路径，均可解码并返回有效原始尺寸。
 - 本轮 Browser 后台滚动动作未改变页面 `scrollY`，因此未把 Gallery lazy 图片的页面内滚动触发作为本轮结论；资源解码和页面结构已完成复查，后续如需截图级或滚动级视觉结论，可换可滚动的浏览器会话复跑。
+- 执行 `git diff --check` 通过。
+- 本轮不推送、不部署，不补跑线上截图级 smoke。
+
+2026-06-16 已完成一轮本地 HTTP smoke 准备：
+
+- 新增 `npm run check:http-smoke`，用于对指定 `--base-url` 做站内路由 HTML、`robots.txt`、`sitemap.xml` 和公开图片 HTTP 检查。
+- 该命令默认检查 `http://127.0.0.1:4500`，可通过 `--base-url` 或 `SITE_BASE_URL` 指定目标；进入发布阶段后可增加 `--www-url` 或 `SITE_WWW_URL` 检查 `www` 到 canonical 根域的路径保留跳转。
+- 执行 `npm run check:http-smoke -- --base-url http://127.0.0.1:4500` 通过，确认 8 个路由和 18 个公开图片资源可访问。
+- 本地沙箱内本机 HTTP 请求受限时，该命令需要按权限规则在沙箱外复跑；这不改变脚本的检查范围。
 - 执行 `git diff --check` 通过。
 - 本轮不推送、不部署，不补跑线上截图级 smoke。
 
@@ -116,6 +128,14 @@ Browser / Chrome 会话稳定后补跑：
 - 关键图片加载成功。
 - metadata、canonical、Open Graph 和 noindex 口径符合预期。
 - 页面 error console 为空或无项目相关错误。
+
+可先使用 HTTP smoke 做状态层检查：
+
+```bash
+npm run check:http-smoke -- --base-url https://radishx.com --www-url https://www.radishx.com
+```
+
+该命令只覆盖 HTTP、SEO 文件和公开图片资源，不覆盖视觉截图、滚动加载和交互状态。
 
 ## 完成标准
 

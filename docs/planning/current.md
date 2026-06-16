@@ -35,7 +35,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 | Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | Seasonal 活动图已评估，当前不进入实现 |
 | About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 首轮精细化已完成 |
 | 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 表情 / 贴纸与 seasonal 使用边界已记录 |
-| 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地发布前复查、可访问性整理、实现口径对齐检查与设计源同步说明已完成，线上截图级 smoke 待补 |
+| 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地发布前复查、HTTP smoke 准备、可访问性整理、实现口径对齐检查与设计源同步说明已完成，线上截图级 smoke 待补 |
 | 设计源精确化 | [design-source-refresh.md](../features/design-source-refresh.md) | 首页桌面 / 移动、项目详情模板、Mascot 和 About v1.1 已新增，三张独立移动稿已补齐 |
 | React 与设计源对照校准 | [react-design-alignment.md](../features/react-design-alignment.md) | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
 
@@ -67,11 +67,12 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 22. 已基于新增独立移动稿复查 `/flow`、`/mascot` 和 `/about` 的 `390x844` React 实现：区块顺序、关键数量、图片加载、触控目标、横向溢出和 console 均未发现阻断问题，本轮不需要改 React 代码。
 23. 已完成本地发布前复查：`npm run build` 通过，`dist/` 输出完整，`1440x900` 和 `390x844` 下关键路由、未知路径 fallback、metadata、SEO 文件、公开图片资源、触控目标和横向溢出均未发现阻断问题；Browser 后台滚动本轮无法触发页面内 lazy 图片，已改用直接资源解码补充验证。
 24. 已新增 `npm run check:local-release` 本地发布检查命令，复用生产构建并检查 `dist/` 入口文件、SEO 文件、Vite asset 和 18 个公开图片输出。
+25. 已新增 `npm run check:http-smoke` HTTP 目标检查命令，可对指定 `--base-url` 检查关键路由 HTML、SEO 文件和公开图片资源；本地 `127.0.0.1:4500` 目标已验证通过，未来进入发布阶段时可追加 `--www-url` 检查路径保留跳转。
 
 下一步建议推进：
 
 1. 继续先不推送、不部署；如果后续进入发布阶段，再补跑线上 HTTP、根域跳转、路径保留和截图级 smoke。
-2. 若继续推进页面质量，优先处理线上截图级 smoke 准备或下一轮具体页面内容优化；不要引入新素材或下载入口。
+2. 若继续推进页面质量，优先选择具体页面内容优化、截图级 smoke 准备或公开素材治理复查；不要引入新素材或下载入口。
 3. 如果后续选择具体 seasonal 活动，再按已评估的窗口、位置、文案边界和授权要求生成 Web 版本并进入短期页面实现。
 4. 四个项目后续只有出现新的独立 Logo、真实截图或视频候选来源时，再按素材治理文档重新审核。
 

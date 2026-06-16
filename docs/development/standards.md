@@ -182,6 +182,14 @@ npm run check:local-release
 
 该命令会先运行生产构建，再检查 `dist/` 中的入口文件、SEO 文件、Vite 产物和公开图片资源是否完整输出。
 
+需要检查一个正在运行的 HTTP 目标时，可执行：
+
+```bash
+npm run check:http-smoke -- --base-url http://127.0.0.1:4500
+```
+
+该命令会检查指定站点的关键路由 HTML、`robots.txt`、`sitemap.xml` 和公开图片资源；进入发布阶段后可追加 `--www-url` 检查 `www` 到 canonical 根域的路径保留跳转。它不替代桌面 / 移动端 Browser 视觉 smoke。
+
 建议脚本：
 
 ```bash

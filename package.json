@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "check:local-release": "npm run build && node scripts/check-local-release.mjs",
+    "check:http-smoke": "node scripts/check-http-smoke.mjs",
     "type-check": "tsc --noEmit",
     "preview": "vite preview"
   },
