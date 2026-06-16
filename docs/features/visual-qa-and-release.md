@@ -1,7 +1,7 @@
 # 视觉 QA 与发布检查
 
-状态：持续执行，本地发布检查与可访问性整理已完成，线上截图级 smoke 待补
-最后更新：2026-06-15
+状态：持续执行，本地发布检查、可访问性整理、实现口径对齐检查与设计源同步说明已完成，线上截图级 smoke 待补
+最后更新：2026-06-16
 
 ## 目标
 
@@ -62,6 +62,23 @@
 - 使用 Browser 检查 `/`、`/radish`、`/mascot`、`/about` 和 `/abc-test` 在 `1440x900` 与 `390x844` 下的语义结构；确认每页 1 个 `h1`、存在 skip link 与 `main#main-content`、顶部和页脚导航语义正常、图片均有 `alt`、重复链接已具备具体可访问名称、无横向溢出，console 无 error。
 - 本轮不改视觉方向、不接入新素材、不修改部署配置。
 
+## 设计源与实现口径对齐记录
+
+2026-06-16 按“跳过发布，继续本地开发”的节奏完成一轮对齐检查：
+
+- 对照 `docs/design/visual-guidelines.md`、`docs/development/standards.md`、当前目标文档和 React 实现，复查首页、四个项目页、Mascot 页、About 页的页面节奏、移动端结构、说明文案和素材边界。
+- 首页继续符合“首屏品牌与项目矩阵 -> 项目 band -> 生态关系 -> 公开入口 -> Mascot 入口”的节奏；Radish Orbit 使用已审核可爱Q版站姿图作为中心视觉锚点，未接入新的未审核主视觉。
+- 四个项目详情页继续使用克制的信息结构，保留 Hero 下方站内导览、公开文档入口、未来域名、禁用访问入口、素材审核说明和代码内临时项目标识；未把临时标识描述为正式 Logo。
+- Mascot 页继续保留三形态、Gallery 整图预览和使用边界；表情、贴纸、seasonal 图和下载入口仍按素材治理文档后置，不进入本轮实现。
+- About 页继续保持联系方式、微信公众号二维码、GitHub 仓库入口和域名边界的收束结构；微信公众号二维码未进入首页首屏。
+- 样式层继续以 `--rx-*` token 为主，未在 JSX 中扩散硬编码复杂样式；移动端已降低背景密度，主要按钮和站内导览触控高度不低于 `44px`。
+- 初次尝试读取 Pencil 设计源时，Pencil 应用连接不可用；后续用户启动 Pencil 后，确认 active editor 为 `docs/design/sources/radishx-site-v0.pen`。
+- 通过 Pencil 检查 5 个顶层画板：`Home Desktop v1 - Radish Orbit`、`Home Mobile v1 - Radish Orbit`、`Project Detail Template v1 - Flow Example`、`Mascot Page v1` 和 `About Page v1`；Pencil 报告无布局问题。
+- 设计源当前结构稳定，但视觉内容仍偏 v1 早期设计：首页、项目模板和 Mascot 页仍存在候选 / 占位表达，尚未逐屏重绘为当前 React 实现。
+- 已通过 Pencil 在 5 个画板底部追加 `2026-06-16 实现口径同步` 说明 band，记录当前 React 实现、素材边界和后续重绘注意事项；同步后再次检查无布局问题。
+- 使用 Browser 检查 `/`、`/radish`、`/catalyst`、`/flow`、`/mind`、`/mascot`、`/about` 和 `/abc-test` 在 `1440x900` 与 `390x844` 下的标题、H1、导航 active 状态、横向滚动、触控目标和 console error；未发现阻断问题。
+- 对首页和 `/mascot` 追加滚动加载复查；Mascot 页 12 张图片滚入视口后均完成加载，首页重复使用的可爱Q版站姿图具备有效原始尺寸，无图片资源 404 或页面 error。
+
 ## 线上检查
 
 Browser / Chrome 会话稳定后补跑：
@@ -93,6 +110,7 @@ Browser / Chrome 会话稳定后补跑：
 
 ## 后续事项
 
+- 后续如需要把设计源升级为精确实现稿，再通过 Pencil 逐屏重绘首页、项目详情模板、Mascot 页和 About 页；当前只完成实现口径同步说明，不做大面积视觉重做。
 - Browser / Chrome 稳定后补跑线上截图级 smoke。
 - 首页主视觉或 Open Graph 图替换后，复查分享预览。
 - 四个项目有独立站上线后，重新评估域名区和 sitemap 边界。

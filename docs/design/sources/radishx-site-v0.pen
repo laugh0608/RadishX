@@ -9,7 +9,7 @@
       "name": "Home Desktop v1 - Radish Orbit",
       "clip": true,
       "width": 1440,
-      "height": 1980,
+      "height": 2164,
       "fill": "$rx-bg-app",
       "layout": "vertical",
       "children": [
@@ -1240,6 +1240,60 @@
               ]
             }
           ]
+        },
+        {
+          "type": "frame",
+          "id": "vneCk",
+          "name": "Implementation Sync Note",
+          "width": "fill_container",
+          "height": 144,
+          "fill": "#fbf7f0",
+          "stroke": "#d9cbb9",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 10,
+          "padding": [
+            18,
+            72
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "XXVPH",
+              "name": "Implementation Sync Date",
+              "fill": "#b24057",
+              "content": "2026-06-16 实现口径同步",
+              "fontFamily": "Geist Mono",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "p1f7L",
+              "name": "Implementation Sync Title",
+              "fill": "#2f2a25",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "首页桌面稿：React 实现已进入站姿主视觉与项目素材状态槽",
+              "lineHeight": 1.22,
+              "fontFamily": "Geist",
+              "fontSize": 22,
+              "fontWeight": "760"
+            },
+            {
+              "type": "text",
+              "id": "gwUaT",
+              "name": "Implementation Sync Body",
+              "fill": "#6a5c4f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "当前实现中，Radish Orbit 中心视觉已使用已审核可爱Q版站姿图；首页项目 band 已承接项目代表图、RadishMind 代码内评测回路和素材边界说明。此画板保留 v1 构图参考，后续若重绘应替换早期候选 / 占位表达。",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            }
+          ]
         }
       ]
     },
@@ -1251,7 +1305,7 @@
       "name": "Home Mobile v1 - Radish Orbit",
       "clip": true,
       "width": 390,
-      "height": 2800,
+      "height": 3028,
       "fill": "$rx-bg-app",
       "layout": "vertical",
       "children": [
@@ -2848,6 +2902,60 @@
               ]
             }
           ]
+        },
+        {
+          "type": "frame",
+          "id": "umiKo",
+          "name": "Implementation Sync Note",
+          "width": "fill_container",
+          "height": 188,
+          "fill": "#fbf7f0",
+          "stroke": "#d9cbb9",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 10,
+          "padding": [
+            18,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "a0ymCf",
+              "name": "Implementation Sync Date",
+              "fill": "#b24057",
+              "content": "2026-06-16 实现口径同步",
+              "fontFamily": "Geist Mono",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "LsCvn",
+              "name": "Implementation Sync Title",
+              "fill": "#2f2a25",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "首页移动稿：结构可参考，导航和素材口径需按 React 现状重绘",
+              "lineHeight": 1.22,
+              "fontFamily": "Geist",
+              "fontSize": 18,
+              "fontWeight": "760"
+            },
+            {
+              "type": "text",
+              "id": "yByCh",
+              "name": "Implementation Sync Body",
+              "fill": "#6a5c4f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "当前移动端 Browser smoke 已覆盖 390x844，无横向溢出；实现使用紧凑导航、站姿中心视觉、项目 band 单列和素材状态槽。此画板中的菜单示意与候选图标签仅保留为早期设计记录。",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
         }
       ]
     },
@@ -2859,7 +2967,7 @@
       "name": "Project Detail Template v1 - Flow Example",
       "clip": true,
       "width": 1440,
-      "height": 2020,
+      "height": 2204,
       "fill": "$rx-bg-app",
       "layout": "vertical",
       "children": [
@@ -4252,6 +4360,60 @@
               ]
             }
           ]
+        },
+        {
+          "type": "frame",
+          "id": "ibOZF",
+          "name": "Implementation Sync Note",
+          "width": "fill_container",
+          "height": 144,
+          "fill": "#fbf7f0",
+          "stroke": "#d9cbb9",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 10,
+          "padding": [
+            18,
+            72
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "o3aFnV",
+              "name": "Implementation Sync Date",
+              "fill": "#b24057",
+              "content": "2026-06-16 实现口径同步",
+              "fontFamily": "Geist Mono",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "VWXsh",
+              "name": "Implementation Sync Title",
+              "fill": "#2f2a25",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "项目详情模板：当前实现已扩展为四项目页和站内导览",
+              "lineHeight": 1.22,
+              "fontFamily": "Geist",
+              "fontSize": 22,
+              "fontWeight": "760"
+            },
+            {
+              "type": "text",
+              "id": "pAtMN",
+              "name": "Implementation Sync Body",
+              "fill": "#6a5c4f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "当前 React 项目页包含 Hero 下方 Page flow、Public Surface、Documentation、Capabilities、Matrix、素材审核说明和代码内临时项目标识。此 Flow 示例模板仍可参考节奏，但需要补绘四项目状态、公开文档入口和临时标识口径。",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            }
+          ]
         }
       ]
     },
@@ -4263,7 +4425,7 @@
       "name": "Mascot Page v1",
       "clip": true,
       "width": 1440,
-      "height": 2480,
+      "height": 2664,
       "fill": "$rx-bg-app",
       "layout": "vertical",
       "children": [
@@ -5602,6 +5764,60 @@
               ]
             }
           ]
+        },
+        {
+          "type": "frame",
+          "id": "x1LtEj",
+          "name": "Implementation Sync Note",
+          "width": "fill_container",
+          "height": 144,
+          "fill": "#fbf7f0",
+          "stroke": "#d9cbb9",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 10,
+          "padding": [
+            18,
+            72
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "EvFQv",
+              "name": "Implementation Sync Date",
+              "fill": "#b24057",
+              "content": "2026-06-16 实现口径同步",
+              "fontFamily": "Geist Mono",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "nVs9J",
+              "name": "Implementation Sync Title",
+              "fill": "#2f2a25",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Mascot 页：当前实现已接入确认站姿图与 Gallery 整图预览",
+              "lineHeight": 1.22,
+              "fontFamily": "Geist",
+              "fontSize": 22,
+              "fontWeight": "760"
+            },
+            {
+              "type": "text",
+              "id": "keGKk",
+              "name": "Implementation Sync Body",
+              "fill": "#6a5c4f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "当前实现使用完全体站姿图作为主视觉，可爱Q版站姿图作为首页和形态展示；表情格与 4 张贴纸横图只做整图预览，不拆分、不下载。此画板中的候选图和 Gallery 占位需要后续替换为已审核 Web 素材口径。",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            }
+          ]
         }
       ]
     },
@@ -5613,7 +5829,7 @@
       "name": "About Page v1",
       "clip": true,
       "width": 1440,
-      "height": 2432,
+      "height": 2616,
       "fill": "$rx-bg-app",
       "layout": "vertical",
       "children": [
@@ -7252,6 +7468,60 @@
                   ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "mtpR6",
+          "name": "Implementation Sync Note",
+          "width": "fill_container",
+          "height": 144,
+          "fill": "#fbf7f0",
+          "stroke": "#d9cbb9",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 10,
+          "padding": [
+            18,
+            72
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "GqiCJ",
+              "name": "Implementation Sync Date",
+              "fill": "#b24057",
+              "content": "2026-06-16 实现口径同步",
+              "fontFamily": "Geist Mono",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "PNuv5",
+              "name": "Implementation Sync Title",
+              "fill": "#2f2a25",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "About 页：当前实现已细化联系、二维码、仓库和域名边界",
+              "lineHeight": 1.22,
+              "fontFamily": "Geist",
+              "fontSize": 22,
+              "fontWeight": "760"
+            },
+            {
+              "type": "text",
+              "id": "T3VYZ5",
+              "name": "Implementation Sync Body",
+              "fill": "#6a5c4f",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "当前实现已接入微信公众号二维码 Web 图、五个 GitHub 仓库入口和 radishx.com / www.radishx.com / 四个未来项目域名边界。此画板结构基本可用，后续重绘时需同步真实二维码事实项和 6 个域名卡片。",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "normal"
             }
           ]
         }

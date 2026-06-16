@@ -1,6 +1,6 @@
 # 当前规划
 
-最后更新：2026-06-15
+最后更新：2026-06-16
 
 ## 当前阶段
 
@@ -35,7 +35,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 | Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | Seasonal 活动图已评估，当前不进入实现 |
 | About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 首轮精细化已完成 |
 | 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 表情 / 贴纸与 seasonal 使用边界已记录 |
-| 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地发布检查与可访问性整理已完成，线上截图级 smoke 待补 |
+| 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地发布检查、可访问性整理、实现口径对齐检查与设计源同步说明已完成，线上截图级 smoke 待补 |
 
 ## 当前活跃目标
 
@@ -57,11 +57,13 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 14. 四个项目详情页已补 Hero 下方站内导览，可跳转到 `Public Surface`、`Documentation`、`Capabilities` 和 `Matrix`。
 15. 全站已完成本地可访问性整理，补强页脚导航语义、重复链接可访问名称、项目入口和外链上下文；本轮继续不推送、不部署。
 16. README、目标文档、本文件和本周开发日志已同步记录。
+17. 已完成设计源、视觉规范、开发规范和 React 实现的口径对齐检查；首页、项目页、Mascot 页和 About 页的页面节奏、移动端结构、说明文案、素材边界和本地 Browser smoke 均未发现阻断问题。
+18. Pencil 设计源已通过 MCP 补做只读复核，确认 5 个顶层画板结构完整且无布局问题；当前画板仍偏 v1 早期候选 / 占位表达，已在每个画板底部追加 `2026-06-16 实现口径同步` 说明 band。
 
 下一步建议推进：
 
-1. 2026-06-16 先不推送、不部署；若继续本地开发，优先做设计源与实现口径对齐检查，重点核对首页、项目页、Mascot 页、About 页的移动端结构、页面节奏、说明文案和当前目标文档是否一致。
-2. 如果后续进入部署阶段，再补跑线上 HTTP、根域跳转、路径保留和截图级 smoke。
+1. 继续先不推送、不部署；如果后续进入发布阶段，再补跑线上 HTTP、根域跳转、路径保留和截图级 smoke。
+2. 如果后续需要精确设计稿，再通过 Pencil 逐屏重绘首页、项目详情模板、Mascot 页和 About 页，把 v1 候选 / 占位视觉升级为当前 React 实现口径。
 3. 如果后续选择具体 seasonal 活动，再按已评估的窗口、位置、文案边界和授权要求生成 Web 版本并进入短期页面实现。
 4. 四个项目后续只有出现新的独立 Logo、真实截图或视频候选来源时，再按素材治理文档重新审核。
 
@@ -104,7 +106,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 
 ## 后续顺序
 
-1. 先做设计源、视觉规范、开发规范和 React 实现的口径对齐检查；涉及 `.pen` 设计源时只通过 Pencil 工具处理。
+1. 如需精确实现稿，后续通过 Pencil 逐屏重绘当前 `.pen` 设计源；涉及 `.pen` 设计源时只通过 Pencil 工具处理。
 2. 如进入部署阶段，先补跑线上 HTTP、根域跳转、路径保留和截图级 smoke。
 3. 如需使用 seasonal 图，先选择具体活动目标并确认上线 / 下线时间、页面位置、文案、授权和撤下策略，再生成 Web 版本。
 4. 四个项目出现新的独立 Logo、真实截图或视频候选来源后，再回到项目素材审核和 Web 优化。
