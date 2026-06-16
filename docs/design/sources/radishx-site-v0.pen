@@ -17634,6 +17634,4794 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "LtHcq",
+      "x": 9726,
+      "y": 6840,
+      "name": "Project Detail Template Mobile v1.1 - Flow Example",
+      "clip": true,
+      "width": 390,
+      "height": 3180,
+      "fill": "$rx-bg-app",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Hohg3",
+          "name": "Mobile Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "#fbf7f0ee",
+          "stroke": "$rx-border-soft",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "BLFEh",
+              "name": "Header Brand",
+              "fill": "$rx-text-primary",
+              "content": "RadishX",
+              "lineHeight": 1.2,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "uSdzx",
+              "name": "Header Nav",
+              "fill": "$rx-text-secondary",
+              "content": "Projects / Mascot / About",
+              "lineHeight": 1.2,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Yyjxi",
+          "name": "Hero",
+          "width": "fill_container",
+          "fill": "$rx-bg-surface",
+          "layout": "vertical",
+          "gap": 18,
+          "padding": [
+            30,
+            20,
+            36,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "rjKaK",
+              "name": "Hero Eyebrow",
+              "fill": "$rx-brand-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Project Detail / 390px mobile",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "y9ngBH",
+              "name": "Hero Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "RadishFlow",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 38,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "OmuWO",
+              "name": "Hero Tagline",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "稳态流程模拟软件",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 20,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "TiTvt",
+              "name": "Hero Summary",
+              "fill": "$rx-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "以 Rust 为核心、Rust UI 为主界面，并通过 .NET 适配 CAPE-OPEN / COM。当前公开维护已暂停，本页保留历史 UI 方向与文档入口。",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 15
+            },
+            {
+              "type": "frame",
+              "id": "R79O32",
+              "name": "Hero Status Chips",
+              "width": "fill_container",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "OvqRE",
+                  "name": "Archived Chip",
+                  "height": 28,
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    0,
+                    11
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "honL9",
+                      "name": "Archived Label",
+                      "fill": "$rx-text-primary",
+                      "content": "Archived",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mPnf7",
+                  "name": "Rust Chip",
+                  "height": 28,
+                  "fill": "$rx-brand-soft",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    0,
+                    11
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "c11ZxQ",
+                      "name": "Rust Label",
+                      "fill": "$rx-text-primary",
+                      "content": "Rust",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "n0nk6",
+                  "name": "CAPE-OPEN Chip",
+                  "height": 28,
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    0,
+                    11
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "s3Dbxk",
+                      "name": "CAPE-OPEN Label",
+                      "fill": "$rx-text-primary",
+                      "content": "CAPE-OPEN",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lOf2s",
+              "name": "Hero Actions",
+              "width": "fill_container",
+              "height": 46,
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PrD2S",
+                  "name": "GitHub Button",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "$rx-bg-ink",
+                  "cornerRadius": "$rx-radius-control",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rp1P4",
+                      "name": "GitHub Button Label",
+                      "fill": "$rx-bg-surface",
+                      "content": "GitHub",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "q63m4",
+                  "name": "Paused Button",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "S9j5hK",
+                      "name": "Paused Button Label",
+                      "fill": "$rx-text-secondary",
+                      "content": "Paused",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gHlUs",
+              "name": "Flow UI Baseline Media",
+              "clip": true,
+              "width": "fill_container",
+              "height": 190,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "../../../public/images/projects/flow/radishflow-workbench-concept-web.jpg",
+                "mode": "fill"
+              },
+              "cornerRadius": 8,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1
+            },
+            {
+              "type": "frame",
+              "id": "dzWuG",
+              "name": "Hero Review Stack",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "R9UWq",
+                  "name": "Asset Boundary Card",
+                  "width": "fill_container",
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": "$rx-radius-card",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 3,
+                      "id": "Cw1QV",
+                      "name": "UI baseline Accent",
+                      "fill": "$rx-accent-ink",
+                      "width": "fill_container",
+                      "height": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "NUPvh",
+                      "name": "UI baseline Title",
+                      "fill": "$rx-text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "UI baseline",
+                      "lineHeight": 1.25,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 17,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "QuLzQ",
+                      "name": "UI baseline Body",
+                      "fill": "$rx-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "历史 UI 方向展示，不代表继续公开维护、下载入口或产品化承诺。",
+                      "lineHeight": 1.25,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 13
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "D2r4ZW",
+          "name": "Page Flow",
+          "width": "fill_container",
+          "fill": "$rx-bg-app",
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            32,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "n3xLbK",
+              "name": "Page Flow Eyebrow",
+              "fill": "$rx-brand-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Page flow",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "CIIqG",
+              "name": "Page Flow Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "移动端扫读顺序",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 26,
+              "fontWeight": "800"
+            },
+            {
+              "type": "frame",
+              "id": "K1WOS9",
+              "name": "Flow Row 1",
+              "width": "fill_container",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "agigk",
+                  "name": "Flow Hero Card",
+                  "width": "fill_container",
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": "$rx-radius-card",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 3,
+                      "id": "j6PCkl",
+                      "name": "Hero Accent",
+                      "fill": "$rx-accent-ink",
+                      "width": "fill_container",
+                      "height": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "awyiR",
+                      "name": "Hero Title",
+                      "fill": "$rx-text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Hero",
+                      "lineHeight": 1.25,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 17,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "n2HLx",
+                      "name": "Hero Body",
+                      "fill": "$rx-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "项目定位、状态和主媒体。",
+                      "lineHeight": 1.25,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 13
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PjBWq",
+                  "name": "Flow Public Card",
+                  "width": "fill_container",
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": "$rx-radius-card",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 3,
+                      "id": "QR5qZ",
+                      "name": "Public Accent",
+                      "fill": "$rx-accent-jade",
+                      "width": "fill_container",
+                      "height": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "dwCgo",
+                      "name": "Public Title",
+                      "fill": "$rx-text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Public",
+                      "lineHeight": 1.25,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 17,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VLKAr",
+                      "name": "Public Body",
+                      "fill": "$rx-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "GitHub、未来域名和维护状态。",
+                      "lineHeight": 1.25,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 13
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wlGvH",
+              "name": "Flow Row 2",
+              "width": "fill_container",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "NoBdn",
+                  "name": "Flow Docs Card",
+                  "width": "fill_container",
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": "$rx-radius-card",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 3,
+                      "id": "yzJIu",
+                      "name": "Docs Accent",
+                      "fill": "$rx-accent-earth",
+                      "width": "fill_container",
+                      "height": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "gKdfX",
+                      "name": "Docs Title",
+                      "fill": "$rx-text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Docs",
+                      "lineHeight": 1.25,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 17,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pkuR7",
+                      "name": "Docs Body",
+                      "fill": "$rx-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "文档入口与边界说明。",
+                      "lineHeight": 1.25,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 13
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GZhiK",
+                  "name": "Flow Matrix Card",
+                  "width": "fill_container",
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": "$rx-radius-card",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 3,
+                      "id": "SJJco",
+                      "name": "Matrix Accent",
+                      "fill": "$rx-accent-purple",
+                      "width": "fill_container",
+                      "height": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "SGzU4",
+                      "name": "Matrix Title",
+                      "fill": "$rx-text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Matrix",
+                      "lineHeight": 1.25,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 17,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PqV2i",
+                      "name": "Matrix Body",
+                      "fill": "$rx-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "回到四项目矩阵关系。",
+                      "lineHeight": 1.25,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 13
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "qEXDr",
+          "name": "Public Surface",
+          "width": "fill_container",
+          "fill": "$rx-bg-muted",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            32,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "RYsB1",
+              "name": "Public Eyebrow",
+              "fill": "$rx-brand-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Public Surface",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "mIuj4",
+              "name": "Public Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "公开入口保持克制",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 26,
+              "fontWeight": "800"
+            },
+            {
+              "type": "frame",
+              "id": "ZOzQ5",
+              "name": "GitHub Surface Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 3,
+                  "id": "a9U7J",
+                  "name": "GitHub Accent",
+                  "fill": "$rx-bg-ink",
+                  "width": "fill_container",
+                  "height": 3
+                },
+                {
+                  "type": "text",
+                  "id": "JQAmq",
+                  "name": "GitHub Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "GitHub",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "G4m8p",
+                  "name": "GitHub Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "laugh0608/RadishFlow，作为历史代码和个人学习记录入口。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qkUod",
+              "name": "Future Domain Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 3,
+                  "id": "M8PKTy",
+                  "name": "flow.radishx.com Accent",
+                  "fill": "$rx-accent-ink",
+                  "width": "fill_container",
+                  "height": 3
+                },
+                {
+                  "type": "text",
+                  "id": "V9ion",
+                  "name": "flow.radishx.com Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "flow.radishx.com",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "e7yeO",
+                  "name": "flow.radishx.com Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "未来独立部署入口，当前不配置为本官网 Vercel rewrite。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xZF0j",
+              "name": "Status Surface Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 3,
+                  "id": "EIlMj",
+                  "name": "Archived / Paused Accent",
+                  "fill": "$rx-accent-earth",
+                  "width": "fill_container",
+                  "height": 3
+                },
+                {
+                  "type": "text",
+                  "id": "tNYul",
+                  "name": "Archived / Paused Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Archived / Paused",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "ntsdd",
+                  "name": "Archived / Paused Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "官网只展示合规和维护边界，不提供下载、演示或交付承诺。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "BOKyi",
+          "name": "Documentation",
+          "width": "fill_container",
+          "fill": "$rx-bg-surface",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            32,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "DJfbJ",
+              "name": "Docs Eyebrow",
+              "fill": "$rx-brand-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Documentation",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "mKDbs",
+              "name": "Docs Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "文档入口不复制内容",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 26,
+              "fontWeight": "800"
+            },
+            {
+              "type": "frame",
+              "id": "vVyJ5",
+              "name": "Docs Index Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 3,
+                  "id": "exR3T",
+                  "name": "Docs index Accent",
+                  "fill": "$rx-accent-ink",
+                  "width": "fill_container",
+                  "height": 3
+                },
+                {
+                  "type": "text",
+                  "id": "sjaLX",
+                  "name": "Docs index Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Docs index",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "lqHzJ",
+                  "name": "Docs index Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "覆盖 Studio guide、reference、architecture、status 和 MVP 文档。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "cWNgE",
+              "name": "Current Status Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 3,
+                  "id": "F5LIZL",
+                  "name": "Current status Accent",
+                  "fill": "$rx-accent-earth",
+                  "width": "fill_container",
+                  "height": 3
+                },
+                {
+                  "type": "text",
+                  "id": "Evypv",
+                  "name": "Current status Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Current status",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "l3mma",
+                  "name": "Current status Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "说明当前阶段、维护边界和验证基线。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "abwRi",
+          "name": "Capabilities",
+          "width": "fill_container",
+          "fill": "$rx-bg-app",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            32,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "BxZwA",
+              "name": "Capabilities Eyebrow",
+              "fill": "$rx-brand-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Capabilities",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "wToya",
+              "name": "Capabilities Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "能力描述保留工程可信感",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 26,
+              "fontWeight": "800"
+            },
+            {
+              "type": "frame",
+              "id": "mt5we",
+              "name": "Capability Simulation",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 3,
+                  "id": "zcq3L",
+                  "name": "稳态流程模拟 Accent",
+                  "fill": "$rx-accent-ink",
+                  "width": "fill_container",
+                  "height": 3
+                },
+                {
+                  "type": "text",
+                  "id": "C07mL",
+                  "name": "稳态流程模拟 Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "稳态流程模拟",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "N1Yf4G",
+                  "name": "稳态流程模拟 Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "页面表达项目方向，不伪装为当前可用 SaaS 或下载页。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "u1CLH",
+              "name": "Capability Rust UI",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 3,
+                  "id": "W4r1AH",
+                  "name": "Rust UI 主界面 Accent",
+                  "fill": "$rx-accent-jade",
+                  "width": "fill_container",
+                  "height": 3
+                },
+                {
+                  "type": "text",
+                  "id": "wJuWh",
+                  "name": "Rust UI 主界面 Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Rust UI 主界面",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "xekaS",
+                  "name": "Rust UI 主界面 Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "主视觉展示历史工作台 baseline。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "i2lXDQ",
+              "name": "Capability COM",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 3,
+                  "id": "ft39b",
+                  "name": ".NET / COM 适配边界 Accent",
+                  "fill": "$rx-accent-earth",
+                  "width": "fill_container",
+                  "height": 3
+                },
+                {
+                  "type": "text",
+                  "id": "uf5BB",
+                  "name": ".NET / COM 适配边界 Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": ".NET / COM 适配边界",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "i0SaP8",
+                  "name": ".NET / COM 适配边界 Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "CAPE-OPEN / COM 适配只作为技术方向说明。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KUHBz",
+          "name": "Matrix",
+          "width": "fill_container",
+          "fill": "$rx-bg-ink",
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            32,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "iQRFS",
+              "name": "Matrix Eyebrow",
+              "fill": "$rx-brand-soft",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Matrix",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "Tncpu",
+              "name": "Matrix Title",
+              "fill": "$rx-bg-surface",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "回到 RadishX 四项目关系",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 25,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "bXc1K",
+              "name": "Matrix Body",
+              "fill": "#e8ded1",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Flow 是工程与流程画布；Radish、Catalyst 和 Mind 分别承担内容、游戏表达与智能协议方向。",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 14
+            },
+            {
+              "type": "frame",
+              "id": "WpBGf",
+              "name": "Matrix Rows",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "z7EXPb",
+                  "name": "Radish Matrix Row",
+                  "width": "fill_container",
+                  "height": 42,
+                  "fill": "#fbf7f014",
+                  "cornerRadius": 8,
+                  "stroke": "#fbf7f033",
+                  "strokeWidth": 1,
+                  "padding": [
+                    0,
+                    12
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xG7uz",
+                      "name": "Radish Name",
+                      "fill": "$rx-bg-surface",
+                      "content": "Radish",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "FAGds",
+                      "name": "Radish Role",
+                      "fill": "#d7cbbb",
+                      "content": "内容与社区",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "S26oE",
+                  "name": "Catalyst Matrix Row",
+                  "width": "fill_container",
+                  "height": 42,
+                  "fill": "#fbf7f014",
+                  "cornerRadius": 8,
+                  "stroke": "#fbf7f033",
+                  "strokeWidth": 1,
+                  "padding": [
+                    0,
+                    12
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "a2l9X",
+                      "name": "Catalyst Name",
+                      "fill": "$rx-bg-surface",
+                      "content": "Catalyst",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "x0u72",
+                      "name": "Catalyst Role",
+                      "fill": "#d7cbbb",
+                      "content": "游戏与世界观",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "qasCz",
+                  "name": "Flow Matrix Row",
+                  "width": "fill_container",
+                  "height": 42,
+                  "fill": "#fbf7f014",
+                  "cornerRadius": 8,
+                  "stroke": "#fbf7f033",
+                  "strokeWidth": 1,
+                  "padding": [
+                    0,
+                    12
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CPLWw",
+                      "name": "Flow Name",
+                      "fill": "$rx-bg-surface",
+                      "content": "Flow",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mSB1T",
+                      "name": "Flow Role",
+                      "fill": "#d7cbbb",
+                      "content": "工程与流程画布",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "I0kAu",
+                  "name": "Mind Matrix Row",
+                  "width": "fill_container",
+                  "height": 42,
+                  "fill": "#fbf7f014",
+                  "cornerRadius": 8,
+                  "stroke": "#fbf7f033",
+                  "strokeWidth": 1,
+                  "padding": [
+                    0,
+                    12
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "aGm1m",
+                      "name": "Mind Name",
+                      "fill": "$rx-bg-surface",
+                      "content": "Mind",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ib2ct",
+                      "name": "Mind Role",
+                      "fill": "#d7cbbb",
+                      "content": "智能与工具编排",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "XiDsh",
+          "name": "Mobile Footer",
+          "width": "fill_container",
+          "height": 96,
+          "fill": "$rx-bg-app",
+          "stroke": "$rx-border-soft",
+          "strokeWidth": {
+            "top": 1
+          },
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            22,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "p44U8e",
+              "name": "Footer Brand",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "RadishX",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "k3ObPI",
+              "name": "Footer Note",
+              "fill": "$rx-text-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "390px independent mobile v1.1 board / no deployment change",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Tmdhh",
+      "x": 10212,
+      "y": 6840,
+      "name": "Mascot Page Mobile v1.1 - React Accurate",
+      "clip": true,
+      "width": 390,
+      "height": 4300,
+      "fill": "$rx-bg-app",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "BYcoD",
+          "name": "Mobile Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "#fbf7f0ee",
+          "stroke": "$rx-border-soft",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "R1l6V3",
+              "name": "Header Brand",
+              "fill": "$rx-text-primary",
+              "content": "RadishX",
+              "lineHeight": 1.2,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "A9x7uB",
+              "name": "Header Nav",
+              "fill": "$rx-text-secondary",
+              "content": "Mascot / Gallery / About",
+              "lineHeight": 1.2,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "zxgfK",
+          "name": "Mascot Hero",
+          "width": "fill_container",
+          "fill": "$rx-bg-surface",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            30,
+            20,
+            34,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "Ggmxd",
+              "name": "Hero Eyebrow",
+              "fill": "$rx-brand-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Mascot / 390px mobile",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "V0cn1k",
+              "name": "Hero Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "萝小白",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 40,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "D8YnHy",
+              "name": "Hero Body",
+              "fill": "$rx-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "RadishX 的虚拟形象页，移动端首屏保留完全体站姿、三形态入口和公开使用边界。",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 15
+            },
+            {
+              "type": "frame",
+              "id": "mzIIC",
+              "name": "Hero Form Badges",
+              "width": "fill_container",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "HIwRr",
+                  "name": "原始形象 Chip",
+                  "height": 28,
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    0,
+                    11
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Gdu1m",
+                      "name": "原始形象 Label",
+                      "fill": "$rx-text-primary",
+                      "content": "原始形象",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "h7qOA",
+                  "name": "可爱Q版 Chip",
+                  "height": 28,
+                  "fill": "$rx-brand-soft",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    0,
+                    11
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "q03WM",
+                      "name": "可爱Q版 Label",
+                      "fill": "$rx-text-primary",
+                      "content": "可爱Q版",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "BQYjr",
+                  "name": "完全体 Chip",
+                  "height": 28,
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    0,
+                    11
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "KW3eI",
+                      "name": "完全体 Label",
+                      "fill": "$rx-text-primary",
+                      "content": "完全体",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "OGwye",
+              "name": "Mature Standing Main Visual",
+              "clip": true,
+              "width": "fill_container",
+              "height": 238,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "../../../public/images/mascot/radish-mature-standing-white-dress-web.jpg",
+                "mode": "fit"
+              },
+              "cornerRadius": 8,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1
+            },
+            {
+              "type": "frame",
+              "id": "JFgg3",
+              "name": "Hero Review",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gm1mr",
+                  "name": "Main visual Review Row",
+                  "width": "fill_container",
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "gap": 8,
+                  "padding": [
+                    10,
+                    12
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "x2PJ8",
+                      "name": "Main visual Label",
+                      "fill": "$rx-text-muted",
+                      "content": "Main visual",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ib15x",
+                      "name": "Main visual Value",
+                      "fill": "$rx-text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "完全体站姿图",
+                      "lineHeight": 1.25,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "A4LGZ",
+                  "name": "Public use Review Row",
+                  "width": "fill_container",
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "gap": 8,
+                  "padding": [
+                    10,
+                    12
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ANRVU",
+                      "name": "Public use Label",
+                      "fill": "$rx-text-muted",
+                      "content": "Public use",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "aLEMs",
+                      "name": "Public use Value",
+                      "fill": "$rx-text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "展示，不提供下载",
+                      "lineHeight": 1.25,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Cs3cX",
+                  "name": "Next review Review Row",
+                  "width": "fill_container",
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "gap": 8,
+                  "padding": [
+                    10,
+                    12
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "V2s1OC",
+                      "name": "Next review Label",
+                      "fill": "$rx-text-muted",
+                      "content": "Next review",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EspSx",
+                      "name": "Next review Value",
+                      "fill": "$rx-text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "表情拆分 / 下载口径",
+                      "lineHeight": 1.25,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "RYXIT",
+          "name": "Forms",
+          "width": "fill_container",
+          "fill": "$rx-bg-app",
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            32,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "X5PhH",
+              "name": "Forms Eyebrow",
+              "fill": "$rx-brand-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Forms",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "AD0vb",
+              "name": "Forms Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "三种形态连续展示",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 26,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "s3cS4",
+              "name": "Forms Body",
+              "fill": "$rx-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "移动端改为单列，先看形态与审核状态，再读使用边界。",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 14
+            },
+            {
+              "type": "frame",
+              "id": "oI0fQ",
+              "name": "原始形象 Form Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "nzdyH",
+                  "name": "原始形象 Image",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 176,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../../public/images/mascot/radish-origin-icon-web.jpg",
+                    "mode": "fit"
+                  },
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "fllOI",
+                  "name": "已确认 Chip",
+                  "height": 28,
+                  "fill": "$rx-brand-soft",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    0,
+                    11
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vvy1Z",
+                      "name": "已确认 Label",
+                      "fill": "$rx-text-primary",
+                      "content": "已确认",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "WzDPm",
+                  "name": "原始形象 Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "原始形象",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 19,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "t6bYz",
+                  "name": "原始形象 Role",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "站点图标与原始形态来源",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "P3CSu",
+                  "name": "原始形象 Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "用于小尺寸印章、favicon 和形态起点；不替代四个项目的正式 Logo。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "q7LxGR",
+              "name": "可爱Q版 Form Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Fc3p3",
+                  "name": "可爱Q版 Image",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 176,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../../public/images/mascot/radish-child-standing-white-dress-tall-web.jpg",
+                    "mode": "fit"
+                  },
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "D5id0V",
+                  "name": "已确认 Chip",
+                  "height": 28,
+                  "fill": "$rx-brand-soft",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    0,
+                    11
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kIrrm",
+                      "name": "已确认 Label",
+                      "fill": "$rx-text-primary",
+                      "content": "已确认",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "k8ru8",
+                  "name": "可爱Q版 Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "可爱Q版",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 19,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "jfSjl",
+                  "name": "可爱Q版 Role",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "亲和、轻游戏感和社交传播",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "Cbv9p",
+                  "name": "可爱Q版 Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "首页中心视觉锚点和 Mascot 页形态展示；公开页只使用完整外装安全版本。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oI9Y7",
+              "name": "虚拟形象完全体 Form Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wQp7a",
+                  "name": "虚拟形象完全体 Image",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 176,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../../public/images/mascot/radish-mature-standing-white-dress-web.jpg",
+                    "mode": "fit"
+                  },
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "BLHJf",
+                  "name": "已确认 Chip",
+                  "height": 28,
+                  "fill": "$rx-brand-soft",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    0,
+                    11
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "e4yqCe",
+                      "name": "已确认 Label",
+                      "fill": "$rx-text-primary",
+                      "content": "已确认",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "NvLYR",
+                  "name": "虚拟形象完全体 Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "虚拟形象完全体",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 19,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "r9582",
+                  "name": "虚拟形象完全体 Role",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "品牌主视觉与长期角色表达",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "K5QiK",
+                  "name": "虚拟形象完全体 Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Mascot 页首屏主视觉和品牌记忆点；当前只做展示和品牌识别。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "axSzR",
+          "name": "Gallery",
+          "width": "fill_container",
+          "fill": "$rx-bg-muted",
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            32,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "duTUz",
+              "name": "Gallery Eyebrow",
+              "fill": "$rx-brand-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Gallery",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "ebSll",
+              "name": "Gallery Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "整图预览，不拆分单张",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 26,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "rcuwG",
+              "name": "Gallery Body",
+              "fill": "$rx-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "所有表情和贴纸都按整图预览展示，不生成单张文件、缩略图或下载入口。",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 14
+            },
+            {
+              "type": "frame",
+              "id": "Vivfb",
+              "name": "服装变体 Gallery Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Tp8sw",
+                  "name": "服装变体 Preview",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../../public/images/mascot/radish-child-outfit-variants-web.jpg",
+                    "mode": "fit"
+                  },
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "dSuRs",
+                  "name": "服装变体 Meta",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "O27A9",
+                      "name": "服装变体 Title",
+                      "fill": "$rx-text-primary",
+                      "content": "服装变体",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "IPL7j",
+                      "name": "服装变体 Category",
+                      "fill": "$rx-text-muted",
+                      "content": "Outfits",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "y2ZKe",
+                  "name": "服装变体 Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "展示可爱Q版服装扩展方向。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "U9VVO",
+              "name": "可爱Q版表情格 Gallery Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "GqXcH",
+                  "name": "可爱Q版表情格 Preview",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../../public/images/mascot/radish-child-expression-sheet-grid-web.jpg",
+                    "mode": "fit"
+                  },
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "IIte1",
+                  "name": "可爱Q版表情格 Meta",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JW5pl",
+                      "name": "可爱Q版表情格 Title",
+                      "fill": "$rx-text-primary",
+                      "content": "可爱Q版表情格",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "btJPZ",
+                      "name": "可爱Q版表情格 Category",
+                      "fill": "$rx-text-muted",
+                      "content": "Expressions",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "dqcCL",
+                  "name": "可爱Q版表情格 Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "整图接入，当前不拆分单张贴纸。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Z5ZCy",
+              "name": "贴纸横图 01 Gallery Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KRLZN",
+                  "name": "贴纸横图 01 Preview",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../../public/images/mascot/radish-child-sticker-sheet-wide-01-web.jpg",
+                    "mode": "fit"
+                  },
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "XK4wD",
+                  "name": "贴纸横图 01 Meta",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yC2iZ",
+                      "name": "贴纸横图 01 Title",
+                      "fill": "$rx-text-primary",
+                      "content": "贴纸横图 01",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ivPyg",
+                      "name": "贴纸横图 01 Category",
+                      "fill": "$rx-text-muted",
+                      "content": "Stickers",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "GQtB8",
+                  "name": "贴纸横图 01 Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "社交表达方向整图预览。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "tHvDK",
+              "name": "贴纸横图 02 Gallery Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "svt5B",
+                  "name": "贴纸横图 02 Preview",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../../public/images/mascot/radish-child-sticker-sheet-wide-02-web.jpg",
+                    "mode": "fit"
+                  },
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "ys99H",
+                  "name": "贴纸横图 02 Meta",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "d4xhdN",
+                      "name": "贴纸横图 02 Title",
+                      "fill": "$rx-text-primary",
+                      "content": "贴纸横图 02",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "LIFAx",
+                      "name": "贴纸横图 02 Category",
+                      "fill": "$rx-text-muted",
+                      "content": "Stickers",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "mftMb",
+                  "name": "贴纸横图 02 Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "保留原始组合，不作为素材包。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "B0ChW",
+              "name": "贴纸横图 03 Gallery Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "z14Kq",
+                  "name": "贴纸横图 03 Preview",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../../public/images/mascot/radish-child-sticker-sheet-wide-03-web.jpg",
+                    "mode": "fit"
+                  },
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "UGzPB",
+                  "name": "贴纸横图 03 Meta",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cxHue",
+                      "name": "贴纸横图 03 Title",
+                      "fill": "$rx-text-primary",
+                      "content": "贴纸横图 03",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "qn9Os",
+                      "name": "贴纸横图 03 Category",
+                      "fill": "$rx-text-muted",
+                      "content": "Stickers",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Xx8Sa",
+                  "name": "贴纸横图 03 Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "不声明素材可自由复用。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "P9qIP2",
+              "name": "贴纸横图 04 Gallery Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "y6JruM",
+                  "name": "贴纸横图 04 Preview",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../../public/images/mascot/radish-child-sticker-sheet-wide-04-web.jpg",
+                    "mode": "fit"
+                  },
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "gMt77",
+                  "name": "贴纸横图 04 Meta",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Xcskp",
+                      "name": "贴纸横图 04 Title",
+                      "fill": "$rx-text-primary",
+                      "content": "贴纸横图 04",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "LzkXQ",
+                      "name": "贴纸横图 04 Category",
+                      "fill": "$rx-text-muted",
+                      "content": "Stickers",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "LXDi3",
+                  "name": "贴纸横图 04 Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "后续拆分需另建清单和授权边界。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "E7aBs",
+              "name": "完全体表情包 Gallery Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "cHDZI",
+                  "name": "完全体表情包 Preview",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 150,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../../public/images/mascot/radish-mature-sticker-sheet-wide-web.jpg",
+                    "mode": "fit"
+                  },
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "Uj1yc",
+                  "name": "完全体表情包 Meta",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hr1nZ",
+                      "name": "完全体表情包 Title",
+                      "fill": "$rx-text-primary",
+                      "content": "完全体表情包",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WxRVK",
+                      "name": "完全体表情包 Category",
+                      "fill": "$rx-text-muted",
+                      "content": "Stickers",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "BKd3w",
+                  "name": "完全体表情包 Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "展示完全体表情包方向，不提供下载入口。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LVhmG",
+          "name": "Usage Policy",
+          "width": "fill_container",
+          "fill": "$rx-bg-ink",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            32,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "DpA7Y",
+              "name": "Policy Eyebrow",
+              "fill": "$rx-brand-soft",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Usage",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "l8wzA",
+              "name": "Policy Title",
+              "fill": "$rx-bg-surface",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "公开使用边界",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 25,
+              "fontWeight": "800"
+            },
+            {
+              "type": "frame",
+              "id": "Ql83p",
+              "name": "不提供下载入口 Policy Card",
+              "width": "fill_container",
+              "fill": "#fbf7f014",
+              "cornerRadius": 8,
+              "stroke": "#fbf7f033",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 6,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bo7Oc",
+                  "name": "不提供下载入口 Title",
+                  "fill": "$rx-bg-surface",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "不提供下载入口",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 15,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "y2lHxS",
+                  "name": "不提供下载入口 Body",
+                  "fill": "#d7cbbb",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "站点只展示素材，不提供文件包、单张贴纸或下载按钮。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Kcbdx",
+              "name": "Seasonal 不进入当前页 Policy Card",
+              "width": "fill_container",
+              "fill": "#fbf7f014",
+              "cornerRadius": 8,
+              "stroke": "#fbf7f033",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 6,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "TnZNY",
+                  "name": "Seasonal 不进入当前页 Title",
+                  "fill": "$rx-bg-surface",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Seasonal 不进入当前页",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 15,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "myLxZ",
+                  "name": "Seasonal 不进入当前页 Body",
+                  "fill": "#d7cbbb",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "节日素材只作为未来活动 Banner、彩蛋或运营内容候选。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VJEzC",
+              "name": "新增素材先审核 Policy Card",
+              "width": "fill_container",
+              "fill": "#fbf7f014",
+              "cornerRadius": 8,
+              "stroke": "#fbf7f033",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 6,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "u4xjKH",
+                  "name": "新增素材先审核 Title",
+                  "fill": "$rx-bg-surface",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "新增素材先审核",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 15,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "whuyE",
+                  "name": "新增素材先审核 Body",
+                  "fill": "#d7cbbb",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "新图仍需进入 assets/ 完成审核，再生成 public/images Web 版本。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tUxgy",
+          "name": "Mobile Footer",
+          "width": "fill_container",
+          "height": 96,
+          "fill": "$rx-bg-app",
+          "stroke": "$rx-border-soft",
+          "strokeWidth": {
+            "top": 1
+          },
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            22,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "fIeeX",
+              "name": "Footer Brand",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "RadishX",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "l5BDJ",
+              "name": "Footer Note",
+              "fill": "$rx-text-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "390px independent mobile v1.1 board / no download entry",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "DPzBi",
+      "x": 10698,
+      "y": 6840,
+      "name": "About Page Mobile v1.1 - React Accurate",
+      "clip": true,
+      "width": 390,
+      "height": 3600,
+      "fill": "$rx-bg-app",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "NgfYD",
+          "name": "Mobile Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "#fbf7f0ee",
+          "stroke": "$rx-border-soft",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "VAYwa",
+              "name": "Header Brand",
+              "fill": "$rx-text-primary",
+              "content": "RadishX",
+              "lineHeight": 1.2,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "c29t8",
+              "name": "Header Nav",
+              "fill": "$rx-text-secondary",
+              "content": "About / GitHub / Domains",
+              "lineHeight": 1.2,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JKmwK",
+          "name": "About Hero",
+          "width": "fill_container",
+          "fill": "$rx-bg-surface",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            34,
+            20,
+            36,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "rg5zF",
+              "name": "Hero Eyebrow",
+              "fill": "$rx-brand-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "About / 390px mobile",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "r87w4Y",
+              "name": "Hero Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "关于 RadishX",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 38,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "duaxF",
+              "name": "Hero Body",
+              "fill": "$rx-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Radish 系列项目官网与统一入口。移动端 About 页集中展示联系渠道、微信公众号二维码、仓库入口和域名边界。",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 15
+            },
+            {
+              "type": "frame",
+              "id": "UjEcT",
+              "name": "Hero Chips",
+              "width": "fill_container",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QEBsp",
+                  "name": "radishx.com Chip",
+                  "height": 28,
+                  "fill": "$rx-brand-soft",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    0,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NcvbA",
+                      "name": "radishx.com Label",
+                      "fill": "$rx-text-primary",
+                      "content": "radishx.com",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "c1DlN",
+                  "name": "GitHub Chip",
+                  "height": 28,
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    0,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VYq9X",
+                      "name": "GitHub Label",
+                      "fill": "$rx-text-primary",
+                      "content": "GitHub",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kkbZm",
+                  "name": "Vercel Chip",
+                  "height": 28,
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    0,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vB40N",
+                      "name": "Vercel Label",
+                      "fill": "$rx-text-primary",
+                      "content": "Vercel",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "knF3f",
+          "name": "Contacts",
+          "width": "fill_container",
+          "fill": "$rx-bg-app",
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            32,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "HaaBm",
+              "name": "Contacts Eyebrow",
+              "fill": "$rx-brand-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Contact",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "rdcOq",
+              "name": "Contacts Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "联系入口保持可读",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 26,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "ELPB7",
+              "name": "Contacts Body",
+              "fill": "$rx-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "长邮箱和外链都必须在 390px 宽度内换行，不挤压按钮和说明。",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 14
+            },
+            {
+              "type": "frame",
+              "id": "kl73j",
+              "name": "QQ Contact",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "n4VYi",
+                  "name": "QQ Contact Header",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JFM8g",
+                      "name": "QQ Contact Label",
+                      "fill": "$rx-text-muted",
+                      "content": "QQ",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "X3NCZs",
+                      "name": "打开 QQ Chip",
+                      "height": 28,
+                      "fill": "$rx-bg-muted",
+                      "cornerRadius": "$rx-radius-control",
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "f2PYc",
+                          "name": "打开 QQ Label",
+                          "fill": "$rx-text-primary",
+                          "content": "打开 QQ",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "XgORB",
+                  "name": "QQ Contact Value",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "2101827166",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "fBAOG",
+                  "name": "QQ Contact Note",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "公开联系号，适合临时沟通和事项确认。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 3,
+                  "id": "qGbj9",
+                  "name": "QQ Contact Accent",
+                  "fill": "$rx-accent-jade",
+                  "width": "fill_container",
+                  "height": 3
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XMftS",
+              "name": "Email Contact",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "VGv9X",
+                  "name": "Email Contact Header",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wemUz",
+                      "name": "Email Contact Label",
+                      "fill": "$rx-text-muted",
+                      "content": "Email",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "AO0xE",
+                      "name": "发送邮件 Chip",
+                      "height": 28,
+                      "fill": "$rx-bg-muted",
+                      "cornerRadius": "$rx-radius-control",
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Pe3kt",
+                          "name": "发送邮件 Label",
+                          "fill": "$rx-text-primary",
+                          "content": "发送邮件",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "HOBFw",
+                  "name": "Email Contact Value",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "luobo0608@foxmail.com",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "v6Qudg",
+                  "name": "Email Contact Note",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "适合项目合作、素材授权和较长说明。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 3,
+                  "id": "kuOz7",
+                  "name": "Email Contact Accent",
+                  "fill": "$rx-brand-primary",
+                  "width": "fill_container",
+                  "height": 3
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "sgDi9",
+              "name": "GitHub Contact",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "hJC0u",
+                  "name": "GitHub Contact Header",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "leOsz",
+                      "name": "GitHub Contact Label",
+                      "fill": "$rx-text-muted",
+                      "content": "GitHub",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kM3wJ",
+                      "name": "访问主页 Chip",
+                      "height": 28,
+                      "fill": "$rx-bg-muted",
+                      "cornerRadius": "$rx-radius-control",
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FgH07",
+                          "name": "访问主页 Label",
+                          "fill": "$rx-text-primary",
+                          "content": "访问主页",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "P9scT1",
+                  "name": "GitHub Contact Value",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "laugh0608",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "tIagv",
+                  "name": "GitHub Contact Note",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "查看公开仓库、提交记录和项目入口。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 3,
+                  "id": "LIPXM",
+                  "name": "GitHub Contact Accent",
+                  "fill": "$rx-bg-ink",
+                  "width": "fill_container",
+                  "height": 3
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rvx1l",
+              "name": "Homepage Contact",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "rTzn8",
+                  "name": "Homepage Contact Header",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gOTEp",
+                      "name": "Homepage Contact Label",
+                      "fill": "$rx-text-muted",
+                      "content": "个人主页",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vrerI",
+                      "name": "访问站点 Chip",
+                      "height": 28,
+                      "fill": "$rx-bg-muted",
+                      "cornerRadius": "$rx-radius-control",
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "oKZLP",
+                          "name": "访问站点 Label",
+                          "fill": "$rx-text-primary",
+                          "content": "访问站点",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "ZfBNY",
+                  "name": "Homepage Contact Value",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "imbhj.com",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "BiB7Z",
+                  "name": "Homepage Contact Note",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "个人主页入口，不替代 RadishX 官网主域。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 3,
+                  "id": "Llv5s",
+                  "name": "Homepage Contact Accent",
+                  "fill": "$rx-accent-earth",
+                  "width": "fill_container",
+                  "height": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "K9Eud",
+          "name": "Official Account",
+          "width": "fill_container",
+          "fill": "$rx-bg-muted",
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            32,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "AvJNG",
+              "name": "Official Account Eyebrow",
+              "fill": "$rx-brand-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "WeChat",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "qLjOf",
+              "name": "Official Account Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "微信公众号二维码",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 26,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "YUEWm",
+              "name": "Official Account Body",
+              "fill": "$rx-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "二维码只放 About 或联系区域，不进入首页首屏，也不新增订阅表单或后端服务。",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 14
+            },
+            {
+              "type": "frame",
+              "id": "OZemI",
+              "name": "WeChat QR Panel",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WpPc6",
+                  "name": "WeChat QR Image",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 220,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../../public/images/social/wechat-official-account-qr-web.png",
+                    "mode": "fit"
+                  },
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "srkaf",
+                  "name": "WeChat Name",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "大白萝卜的坑",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 18,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "uPhaq",
+                  "name": "WeChat Summary",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "用于 Radish 系列项目动态、开发记录和公开说明；当前仅作为联系和社交媒体入口。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "XGAwq",
+          "name": "Repositories",
+          "width": "fill_container",
+          "fill": "$rx-bg-surface",
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            32,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "z0LkqH",
+              "name": "Repositories Eyebrow",
+              "fill": "$rx-brand-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "GitHub",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "G5fVFi",
+              "name": "Repositories Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "五个仓库入口",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 26,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "QfvJH",
+              "name": "Repositories Body",
+              "fill": "$rx-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "仓库卡片只作为公开源码和文档入口，不代表四个项目业务功能已部署。",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 14
+            },
+            {
+              "type": "frame",
+              "id": "mtQvu",
+              "name": "RadishX Repo Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WIPgD",
+                  "name": "RadishX Repo Header",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HoMfI",
+                      "name": "RadishX Repo Name",
+                      "fill": "$rx-text-primary",
+                      "content": "RadishX",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JD8rY",
+                      "name": "Current Site Chip",
+                      "height": 28,
+                      "fill": "$rx-brand-soft",
+                      "cornerRadius": "$rx-radius-control",
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GPMtW",
+                          "name": "Current Site Label",
+                          "fill": "$rx-text-primary",
+                          "content": "Current Site",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "QG4tS",
+                  "name": "RadishX Repo Owner",
+                  "fill": "$rx-text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "laugh0608/RadishX",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "eHXos",
+                  "name": "RadishX Repo Role",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "官网、文档和公开素材说明源。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                },
+                {
+                  "type": "text",
+                  "id": "RsB5S",
+                  "name": "RadishX Repo Surface",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "radishx.com",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kACsE",
+              "name": "Radish Repo Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "t23L2R",
+                  "name": "Radish Repo Header",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "BzPu3",
+                      "name": "Radish Repo Name",
+                      "fill": "$rx-text-primary",
+                      "content": "Radish",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "lQRKj",
+                      "name": "Source Available Chip",
+                      "height": 28,
+                      "fill": "$rx-brand-soft",
+                      "cornerRadius": "$rx-radius-control",
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "X4lsw7",
+                          "name": "Source Available Label",
+                          "fill": "$rx-text-primary",
+                          "content": "Source Available",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "y8uVaY",
+                  "name": "Radish Repo Owner",
+                  "fill": "$rx-text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "laugh0608/Radish",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "WfMUX",
+                  "name": "Radish Repo Role",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Radish 体系的内容与用户入口。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                },
+                {
+                  "type": "text",
+                  "id": "j4khqN",
+                  "name": "Radish Repo Surface",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "hub.radishx.com",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WfmpQ",
+              "name": "RadishCatalyst Repo Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "x0VtaX",
+                  "name": "RadishCatalyst Repo Header",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cqwNo",
+                      "name": "RadishCatalyst Repo Name",
+                      "fill": "$rx-text-primary",
+                      "content": "RadishCatalyst",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "IKbzX",
+                      "name": "Coming Soon Chip",
+                      "height": 28,
+                      "fill": "$rx-brand-soft",
+                      "cornerRadius": "$rx-radius-control",
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "bNtk3",
+                          "name": "Coming Soon Label",
+                          "fill": "$rx-text-primary",
+                          "content": "Coming Soon",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "MAJMe",
+                  "name": "RadishCatalyst Repo Owner",
+                  "fill": "$rx-text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "laugh0608/RadishCatalyst",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "LBVta",
+                  "name": "RadishCatalyst Repo Role",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "RadishX 的叙事、角色和游戏化表达。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                },
+                {
+                  "type": "text",
+                  "id": "xgRpN",
+                  "name": "RadishCatalyst Repo Surface",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "forge.radishx.com",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dQAAG",
+              "name": "RadishFlow Repo Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "jw6gN",
+                  "name": "RadishFlow Repo Header",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "MIoUM",
+                      "name": "RadishFlow Repo Name",
+                      "fill": "$rx-text-primary",
+                      "content": "RadishFlow",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NM8ng",
+                      "name": "Archived Chip",
+                      "height": 28,
+                      "fill": "$rx-brand-soft",
+                      "cornerRadius": "$rx-radius-control",
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Sld7d",
+                          "name": "Archived Label",
+                          "fill": "$rx-text-primary",
+                          "content": "Archived",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "YWGZR",
+                  "name": "RadishFlow Repo Owner",
+                  "fill": "$rx-text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "laugh0608/RadishFlow",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "xxd0b",
+                  "name": "RadishFlow Repo Role",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "RadishX 中最强调工程可信感的桌面工具。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                },
+                {
+                  "type": "text",
+                  "id": "jvb9P",
+                  "name": "RadishFlow Repo Surface",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "flow.radishx.com",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "z6j4L",
+              "name": "RadishMind Repo Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "pStZd",
+                  "name": "RadishMind Repo Header",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qlEA8",
+                      "name": "RadishMind Repo Name",
+                      "fill": "$rx-text-primary",
+                      "content": "RadishMind",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "b1dAn4",
+                      "name": "Planning Chip",
+                      "height": 28,
+                      "fill": "$rx-brand-soft",
+                      "cornerRadius": "$rx-radius-control",
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jaxHm",
+                          "name": "Planning Label",
+                          "fill": "$rx-text-primary",
+                          "content": "Planning",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "PWywq",
+                  "name": "RadishMind Repo Owner",
+                  "fill": "$rx-text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "laugh0608/RadishMind",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "kuwQd",
+                  "name": "RadishMind Repo Role",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "RadishX 的智能协议、评测和实验入口。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                },
+                {
+                  "type": "text",
+                  "id": "FBiZa",
+                  "name": "RadishMind Repo Surface",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "mind.radishx.com",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "B690Mf",
+          "name": "Domain Boundaries",
+          "width": "fill_container",
+          "fill": "$rx-bg-app",
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            32,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "zIj79",
+              "name": "Domain Boundaries Eyebrow",
+              "fill": "$rx-brand-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Domains",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "UoBaH",
+              "name": "Domain Boundaries Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "域名与部署边界",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 26,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "y9JoY",
+              "name": "Domain Boundaries Body",
+              "fill": "$rx-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "当前只有 radishx.com 是本官网项目；四个项目域名是未来独立部署后的访问入口。",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 14
+            },
+            {
+              "type": "frame",
+              "id": "U04UK",
+              "name": "radishx.com Domain Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 7,
+              "padding": 13,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "z08KC",
+                  "name": "radishx.com Header",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lgYQ4",
+                      "name": "radishx.com Label",
+                      "fill": "$rx-text-muted",
+                      "content": "Canonical",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UzOrv",
+                      "name": "radishx.com Status",
+                      "fill": "$rx-accent-jade",
+                      "content": "Current Vercel site",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "DXpPM",
+                  "name": "radishx.com Domain",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "radishx.com",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "cBtQg",
+                  "name": "radishx.com Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "当前官网主域，承载首页、四个项目介绍页、Mascot 和 About。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XyVbS",
+              "name": "www.radishx.com Domain Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 7,
+              "padding": 13,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yVd0R",
+                  "name": "www.radishx.com Header",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "oMtNP",
+                      "name": "www.radishx.com Label",
+                      "fill": "$rx-text-muted",
+                      "content": "Compatibility",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uh6PA",
+                      "name": "www.radishx.com Status",
+                      "fill": "$rx-accent-earth",
+                      "content": "Redirect to root",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "lo2u4",
+                  "name": "www.radishx.com Domain",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "www.radishx.com",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "j3qBE",
+                  "name": "www.radishx.com Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "兼容访问入口，保留路径跳转到 radishx.com，不作为独立站点。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "N27vV5",
+              "name": "hub.radishx.com Domain Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 7,
+              "padding": 13,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "o3LuDa",
+                  "name": "hub.radishx.com Header",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vwH1x",
+                      "name": "hub.radishx.com Label",
+                      "fill": "$rx-text-muted",
+                      "content": "Radish",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "N7nDiD",
+                      "name": "hub.radishx.com Status",
+                      "fill": "$rx-text-secondary",
+                      "content": "Future domain",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "NiFfw",
+                  "name": "hub.radishx.com Domain",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "hub.radishx.com",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "QxssE",
+                  "name": "hub.radishx.com Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "未来独立部署入口，当前不配置为本官网 Vercel rewrite。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "W4b4r",
+              "name": "forge.radishx.com Domain Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 7,
+              "padding": 13,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QXjQV",
+                  "name": "forge.radishx.com Header",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "X1FLxs",
+                      "name": "forge.radishx.com Label",
+                      "fill": "$rx-text-muted",
+                      "content": "Catalyst",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "iXwie",
+                      "name": "forge.radishx.com Status",
+                      "fill": "$rx-text-secondary",
+                      "content": "Future domain",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "l86abI",
+                  "name": "forge.radishx.com Domain",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "forge.radishx.com",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "nf6sz",
+                  "name": "forge.radishx.com Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "未来独立部署入口，当前不配置为本官网 Vercel rewrite。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QMZww",
+              "name": "flow.radishx.com Domain Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 7,
+              "padding": 13,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "i4q6RJ",
+                  "name": "flow.radishx.com Header",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Lvy80",
+                      "name": "flow.radishx.com Label",
+                      "fill": "$rx-text-muted",
+                      "content": "Flow",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BuE8W",
+                      "name": "flow.radishx.com Status",
+                      "fill": "$rx-text-secondary",
+                      "content": "Future domain",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "VluR3",
+                  "name": "flow.radishx.com Domain",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "flow.radishx.com",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "xSysL",
+                  "name": "flow.radishx.com Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "未来独立部署入口，当前不配置为本官网 Vercel rewrite。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "d9P8m",
+              "name": "mind.radishx.com Domain Card",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 7,
+              "padding": 13,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Zsqa0",
+                  "name": "mind.radishx.com Header",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Pokox",
+                      "name": "mind.radishx.com Label",
+                      "fill": "$rx-text-muted",
+                      "content": "Mind",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PvrlY",
+                      "name": "mind.radishx.com Status",
+                      "fill": "$rx-text-secondary",
+                      "content": "Future domain",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "tQhng",
+                  "name": "mind.radishx.com Domain",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "mind.radishx.com",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "b8FqAd",
+                  "name": "mind.radishx.com Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "未来独立部署入口，当前不配置为本官网 Vercel rewrite。",
+                  "lineHeight": 1.25,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wcXwg",
+          "name": "Mobile Footer",
+          "width": "fill_container",
+          "height": 96,
+          "fill": "$rx-bg-ink",
+          "stroke": "$rx-border-soft",
+          "strokeWidth": {
+            "top": 1
+          },
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            22,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "JO9dK",
+              "name": "Footer Brand",
+              "fill": "$rx-bg-surface",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "RadishX",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "LsuyG",
+              "name": "Footer Note",
+              "fill": "#d7cbbb",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "390px independent mobile v1.1 board / no deployment change",
+              "lineHeight": 1.25,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12
+            }
+          ]
+        }
+      ]
     }
   ],
   "variables": {
