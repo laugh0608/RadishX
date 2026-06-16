@@ -66,6 +66,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 21. 已通过 Pencil 新增 3 个独立 `390px` 移动版 v1.1 画板：`Project Detail Template Mobile v1.1 - Flow Example`、`Mascot Page Mobile v1.1 - React Accurate` 和 `About Page Mobile v1.1 - React Accurate`，并逐一完成 `snapshot_layout` 检查。
 22. 已基于新增独立移动稿复查 `/flow`、`/mascot` 和 `/about` 的 `390x844` React 实现：区块顺序、关键数量、图片加载、触控目标、横向溢出和 console 均未发现阻断问题，本轮不需要改 React 代码。
 23. 已完成本地发布前复查：`npm run build` 通过，`dist/` 输出完整，`1440x900` 和 `390x844` 下关键路由、未知路径 fallback、metadata、SEO 文件、公开图片资源、触控目标和横向溢出均未发现阻断问题；Browser 后台滚动本轮无法触发页面内 lazy 图片，已改用直接资源解码补充验证。
+24. 已新增 `npm run check:local-release` 本地发布检查命令，复用生产构建并检查 `dist/` 入口文件、SEO 文件、Vite asset 和 18 个公开图片输出。
 
 下一步建议推进：
 

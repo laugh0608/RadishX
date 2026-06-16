@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
+    "check:local-release": "npm run build && node scripts/check-local-release.mjs",
     "type-check": "tsc --noEmit",
     "preview": "vite preview"
   },

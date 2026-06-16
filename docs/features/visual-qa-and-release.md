@@ -33,6 +33,7 @@
 ## 基础检查
 
 - `npm run build`
+- `npm run check:local-release`
 - `git diff --check`
 - 必要时检查 `dist/` 是否包含 `sitemap.xml`、`robots.txt` 和公开图片资源。
 - 视觉改动后检查至少一个桌面视口和一个 390px 移动端视口。
@@ -42,6 +43,8 @@
 
 2026-06-16 已完成一轮本地发布前复查：
 
+- 新增 `npm run check:local-release`，用于复用本地发布前静态输出检查；该命令会先执行生产构建，再检查 `dist/` 入口文件、SEO 文件、Vite asset 和公开图片资源。
+- 执行 `npm run check:local-release` 通过，确认 18 个公开图片文件和 2 个 Vite asset 文件已输出。
 - 执行 `npm run build` 通过，确认 TypeScript 与 Vite 生产构建正常。
 - 检查 `dist/` 输出，包含 `index.html`、`favicon.ico`、`robots.txt`、`sitemap.xml`、构建后的 CSS / JS、3 张项目代表图、13 张 Mascot 图和 2 张社交 / 联系图片。
 - 使用 Browser 检查 `1440x900` 桌面视口下的 `/`、`/radish`、`/catalyst`、`/flow`、`/mind`、`/mascot`、`/about` 和 `/abc-test`；页面标题、H1、路由 fallback、导航 active 状态、横向滚动、主内容和 skip link 均正常，console error 为空。

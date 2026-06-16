@@ -174,6 +174,14 @@ PC 和移动端都是一等目标。
 npm run build
 ```
 
+本地发布前复查可执行：
+
+```bash
+npm run check:local-release
+```
+
+该命令会先运行生产构建，再检查 `dist/` 中的入口文件、SEO 文件、Vite 产物和公开图片资源是否完整输出。
+
 建议脚本：
 
 ```bash
