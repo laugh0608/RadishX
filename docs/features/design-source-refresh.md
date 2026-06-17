@@ -1,7 +1,7 @@
 # 设计源精确化
 
-状态：已完成，桌面与独立移动 v1.1 画板已补齐
-最后更新：2026-06-16
+状态：已完成，桌面与独立移动 v1.1 画板已补齐，Mascot Gallery / Usage 已同步到最新实现口径
+最后更新：2026-06-17
 
 ## 目标
 
@@ -13,6 +13,8 @@
 
 2026-06-16 已在 5 个 v1 画板底部追加实现口径同步说明。本目标继续推进后，已新增 v1.1 精确实现稿，不直接覆盖原 v1 画板。
 
+2026-06-17 Mascot 页完成 Gallery 信息层级与 Usage 说明二轮实现后，已继续同步桌面和独立移动 v1.1 画板，避免 Pencil 设计源停留在旧 Gallery notes 和三条 Usage 规则口径。
+
 ## 范围
 
 - 新增首页桌面 v1.1 画板。
@@ -21,6 +23,7 @@
 - 新增 Mascot 页 v1.1 画板。
 - 新增 About 页 v1.1 画板。
 - 新增项目详情模板、Mascot 页和 About 页的独立 `390px` 移动版 v1.1 画板。
+- 同步 Mascot 页桌面与独立移动 v1.1 画板中的 Gallery 状态 / 边界 / 后续处理，以及 Usage 四组边界。
 - 使用已审核公开素材或代码内视觉语义，不引入新素材。
 
 ## 不做
@@ -50,6 +53,7 @@
 5. 已使用 Pencil `snapshot_layout` 检查布局问题。
 6. 已抽查关键画板截图，确认无裁切、重叠或明显旧口径。
 7. 已更新本文件、`docs/planning/current.md` 和本周开发日志。
+8. 已同步 Mascot 桌面与独立移动 v1.1 画板的 Gallery / Usage 二轮实现口径。
 
 ## 本轮实现记录
 
@@ -62,6 +66,8 @@
 - `Mascot Page Mobile v1.1 - React Accurate`：以 `390px` 移动端单列结构覆盖完全体站姿主视觉、三形态、7 张 Gallery 整图预览和不拆分 / 不下载 / 不接 seasonal 口径。
 - `About Page Mobile v1.1 - React Accurate`：以 `390px` 移动端单列结构覆盖联系方式、微信公众号二维码、5 个 GitHub 仓库入口和 6 个域名 / 部署边界。
 - 所有 v1.1 画板均使用已审核公开素材或代码内视觉语义；未引入新素材，未开放下载入口。
+- 2026-06-17 已更新 `Mascot Page v1.1 - React Accurate`：Gallery 说明和卡片说明补齐公开状态、使用边界和后续处理；底部 Governance Summary 改为 Status、Boundary、Next 和 Seasonal 四项。
+- 2026-06-17 已更新 `Mascot Page Mobile v1.1 - React Accurate`：Gallery 卡片说明补齐状态 / 边界摘要；Usage 从三条规则改为 Display、Safety、License 和 Seasonal 四组。
 
 ## 验证
 
@@ -75,6 +81,8 @@
 - Pencil `snapshot_layout` 检查 `About Page Mobile v1.1 - React Accurate` 无布局问题。
 - 已抽查首页桌面、首页移动、项目详情模板、Mascot 页和 About 页截图。
 - `git diff --check` 通过。
+- 2026-06-17 Pencil `snapshot_layout` 复查 `Mascot Page v1.1 - React Accurate` 无布局问题。
+- 2026-06-17 Pencil `snapshot_layout` 复查 `Mascot Page Mobile v1.1 - React Accurate` 无布局问题；移动画板高度调整为 `4500px` 以完整容纳四组 Usage 边界和页脚。
 
 ## 完成标准
 

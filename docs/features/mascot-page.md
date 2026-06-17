@@ -1,6 +1,6 @@
 # Mascot 虚拟形象页
 
-状态：Gallery 信息层级与 Usage 说明实现已完成，浏览器视觉 smoke 待补
+状态：Gallery 信息层级与 Usage 说明实现已完成，Pencil 设计源已同步，浏览器视觉 smoke 待补
 最后更新：2026-06-17
 
 ## 目标
@@ -36,6 +36,7 @@ Mascot 页已接入首批确认图片，包含原始形象、可爱Q版安全设
 - 可爱Q版表情格和 4 张贴纸横图已作为整图预览进入 Gallery，不拆分单张贴纸。
 - Gallery 已展示每张公开图的当前状态、使用边界和后续处理，降低误解为下载素材包的风险。
 - Usage 说明已按公开展示、安全口径、授权 / 下载和活动图边界分组。
+- Pencil 桌面与独立移动 v1.1 画板已同步 Gallery 状态 / 边界 / 后续处理和 Usage 四组边界，继续不新增素材、不拆分贴纸、不开放下载。
 - 单张拆分、缩略图命名和下载政策已完成当前阶段评估，结论为继续保持整图预览和下载关闭。
 - `assets/avatars/seasonal/` 下 6 张节日活动图已完成评估，当前均不进入长期 Gallery、默认主视觉或公开资源目录。
 - 三形态卡片展示当前用途、审核状态、使用边界和后续素材需求。
@@ -106,6 +107,7 @@ Mascot 页已接入首批确认图片，包含原始形象、可爱Q版安全设
 - 2026-06-17 Gallery / Usage 二轮执行 `git diff --check` 通过。
 - 2026-06-17 Gallery / Usage 二轮执行 `npm run check:http-smoke -- --base-url http://127.0.0.1:4500` 通过，确认 8 个路由和 18 个公开图片资源可访问。
 - 2026-06-17 尝试使用 Browser 检查 `/mascot` 桌面与 `390x844` 移动视口时，Browser Use URL policy 拦截本地页面访问；本轮不使用替代浏览器规避该限制，桌面 / 移动截图级或 DOM 级视觉 smoke 待后续可用浏览器会话补跑。
+- 2026-06-17 Pencil `snapshot_layout` 复查 `Mascot Page v1.1 - React Accurate` 和 `Mascot Page Mobile v1.1 - React Accurate` 均无布局问题。
 
 ## 完成标准
 

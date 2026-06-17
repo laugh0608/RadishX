@@ -14413,7 +14413,7 @@
               "fill": "$rx-text-secondary",
               "textGrowth": "fixed-width",
               "width": 820,
-              "content": "服装变体、表情格和贴纸横图作为公开 Gallery 预览接入；第一版不拆分单张贴纸，不提供素材下载入口。",
+              "content": "Gallery 现在展示每张公开图的状态、使用边界和后续处理；仍只做整图预览，不拆分单张贴纸，不提供下载入口。",
               "lineHeight": 1.55,
               "fontFamily": "$rx-font-body",
               "fontSize": 16,
@@ -14486,7 +14486,7 @@
                       "fill": "$rx-text-secondary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "展示萝小白可爱Q版的服装扩展方向，第一版只做 Gallery 预览。",
+                      "content": "状态: 已审核预览 / 边界: 品牌形象展示 / 后续: 保持整图",
                       "lineHeight": 1.35,
                       "fontFamily": "$rx-font-body",
                       "fontSize": 12,
@@ -14554,7 +14554,7 @@
                       "fill": "$rx-text-secondary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "作为整图预览接入；当前不拆分单张贴纸，不提供下载入口。",
+                      "content": "状态: 已审核主视觉 / 边界: 公开页展示 / 后续: 保持完整站姿",
                       "lineHeight": 1.35,
                       "fontFamily": "$rx-font-body",
                       "fontSize": 12,
@@ -14622,7 +14622,7 @@
                       "fill": "$rx-text-secondary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "展示虚拟形象完全体的表情包方向，不提供下载入口。",
+                      "content": "状态: 已审核预览 / 边界: 服装变体展示 / 后续: 不做下载",
                       "lineHeight": 1.35,
                       "fontFamily": "$rx-font-body",
                       "fontSize": 12,
@@ -14699,7 +14699,7 @@
                       "fill": "$rx-text-secondary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "社交表达方向整图预览，保留原始组合，不作为可下载素材包。",
+                      "content": "状态: 表情格整图 / 边界: 只预览 / 后续: 拆分清单后置",
                       "lineHeight": 1.35,
                       "fontFamily": "$rx-font-body",
                       "fontSize": 12,
@@ -14767,7 +14767,7 @@
                       "fill": "$rx-text-secondary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "社交表达方向整图预览，保留原始组合，不作为可下载素材包。",
+                      "content": "状态: 贴纸横图 / 边界: 只预览 / 后续: 不批量裁切",
                       "lineHeight": 1.35,
                       "fontFamily": "$rx-font-body",
                       "fontSize": 12,
@@ -14835,7 +14835,7 @@
                       "fill": "$rx-text-secondary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "社交表达方向整图预览，保留原始组合，不作为可下载素材包。",
+                      "content": "状态: 贴纸横图 / 边界: 只预览 / 后续: 不批量裁切",
                       "lineHeight": 1.35,
                       "fontFamily": "$rx-font-body",
                       "fontSize": 12,
@@ -14903,7 +14903,7 @@
                       "fill": "$rx-text-secondary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "社交表达方向整图预览，保留原始组合，不作为可下载素材包。",
+                      "content": "状态: 贴纸横图 / 边界: 只预览 / 后续: 不批量裁切",
                       "lineHeight": 1.35,
                       "fontFamily": "$rx-font-body",
                       "fontSize": 12,
@@ -14915,164 +14915,160 @@
             },
             {
               "type": "frame",
-              "id": "J3vtK",
-              "name": "Mascot Gallery Notes",
-              "width": "fill_container",
+              "id": "gvTqV",
+              "name": "Gallery Governance Summary",
+              "width": 1296,
               "gap": 18,
               "children": [
                 {
                   "type": "frame",
-                  "id": "ZbwNJ",
-                  "name": "Gallery Note 1",
+                  "id": "HDtx7",
+                  "name": "Status",
                   "width": "fill_container",
                   "fill": "$rx-bg-surface",
-                  "cornerRadius": 8,
+                  "cornerRadius": "$rx-radius-card",
                   "stroke": "$rx-border-soft",
                   "strokeWidth": 1,
                   "layout": "vertical",
-                  "gap": 9,
+                  "gap": 10,
                   "padding": 18,
                   "children": [
                     {
                       "type": "text",
-                      "id": "QEy6h",
-                      "name": "Gallery Note Index 1",
+                      "id": "fbIyh",
+                      "name": "Status Label",
                       "fill": "$rx-brand-primary",
-                      "content": "01",
-                      "lineHeight": 1.35,
+                      "content": "Status",
                       "fontFamily": "$rx-font-mono",
-                      "fontSize": 12,
-                      "fontWeight": "760"
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
-                      "id": "h1ksFF",
-                      "name": "Gallery Note Text 1",
+                      "id": "MoNnx",
+                      "name": "Status Body",
                       "fill": "$rx-text-secondary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "表情包素材当前只做整图预览，不拆分单张贴纸。",
-                      "lineHeight": 1.45,
+                      "content": "7 张 Gallery 图均为已审核 Web 预览，用于页面识别和角色展示。",
+                      "lineHeight": 1.35,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600"
+                      "fontSize": 15,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "id": "SWoHh",
-                  "name": "Gallery Note 2",
+                  "id": "TtxVc",
+                  "name": "Boundary",
                   "width": "fill_container",
                   "fill": "$rx-bg-surface",
-                  "cornerRadius": 8,
+                  "cornerRadius": "$rx-radius-card",
                   "stroke": "$rx-border-soft",
                   "strokeWidth": 1,
                   "layout": "vertical",
-                  "gap": 9,
+                  "gap": 10,
                   "padding": 18,
                   "children": [
                     {
                       "type": "text",
-                      "id": "ubexo",
-                      "name": "Gallery Note Index 2",
+                      "id": "p9WQD",
+                      "name": "Boundary Label",
                       "fill": "$rx-brand-primary",
-                      "content": "02",
-                      "lineHeight": 1.35,
+                      "content": "Boundary",
                       "fontFamily": "$rx-font-mono",
-                      "fontSize": 12,
-                      "fontWeight": "760"
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
-                      "id": "O63vAz",
-                      "name": "Gallery Note Text 2",
+                      "id": "RU740",
+                      "name": "Boundary Body",
                       "fill": "$rx-text-secondary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "节日素材只用于活动 Banner、彩蛋或运营内容，不进入长期 Gallery。",
-                      "lineHeight": 1.45,
+                      "content": "继续关闭下载、复用声明、单张贴纸拆分和缩略图生成。",
+                      "lineHeight": 1.35,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600"
+                      "fontSize": 15,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "id": "evXW7",
-                  "name": "Gallery Note 3",
+                  "id": "oc3E4",
+                  "name": "Next",
                   "width": "fill_container",
                   "fill": "$rx-bg-surface",
-                  "cornerRadius": 8,
+                  "cornerRadius": "$rx-radius-card",
                   "stroke": "$rx-border-soft",
                   "strokeWidth": 1,
                   "layout": "vertical",
-                  "gap": 9,
+                  "gap": 10,
                   "padding": 18,
                   "children": [
                     {
                       "type": "text",
-                      "id": "IcXrd",
-                      "name": "Gallery Note Index 3",
+                      "id": "fC7Xl",
+                      "name": "Next Label",
                       "fill": "$rx-brand-primary",
-                      "content": "03",
-                      "lineHeight": 1.35,
+                      "content": "Next",
                       "fontFamily": "$rx-font-mono",
-                      "fontSize": 12,
-                      "fontWeight": "760"
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
-                      "id": "d5dE8k",
-                      "name": "Gallery Note Text 3",
+                      "id": "k10iO",
+                      "name": "Next Body",
                       "fill": "$rx-text-secondary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "第一版不提供素材下载入口，也不声明素材可自由复用。",
-                      "lineHeight": 1.45,
+                      "content": "如要拆分，先建立清单、命名规则、授权边界和撤回策略。",
+                      "lineHeight": 1.35,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600"
+                      "fontSize": 15,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "id": "XMb7o",
-                  "name": "Gallery Note 4",
+                  "id": "QQkzM",
+                  "name": "Seasonal",
                   "width": "fill_container",
                   "fill": "$rx-bg-surface",
-                  "cornerRadius": 8,
+                  "cornerRadius": "$rx-radius-card",
                   "stroke": "$rx-border-soft",
                   "strokeWidth": 1,
                   "layout": "vertical",
-                  "gap": 9,
+                  "gap": 10,
                   "padding": 18,
                   "children": [
                     {
                       "type": "text",
-                      "id": "w1aTT",
-                      "name": "Gallery Note Index 4",
+                      "id": "Mdn7p",
+                      "name": "Seasonal Label",
                       "fill": "$rx-brand-primary",
-                      "content": "04",
-                      "lineHeight": 1.35,
+                      "content": "Seasonal",
                       "fontFamily": "$rx-font-mono",
-                      "fontSize": 12,
-                      "fontWeight": "760"
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
-                      "id": "ED0jt",
-                      "name": "Gallery Note Text 4",
+                      "id": "xV76S",
+                      "name": "Seasonal Body",
                       "fill": "$rx-text-secondary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "新增素材仍需先进入 assets/ 并完成审核。",
-                      "lineHeight": 1.45,
+                      "content": "节日图只保留活动候选，不进入长期 Gallery 或默认主视觉。",
+                      "lineHeight": 1.35,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13,
-                      "fontWeight": "600"
+                      "fontSize": 15,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -15129,7 +15125,7 @@
                   "fill": "$rx-text-secondary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "萝小白是长期品牌资产，第一版页面已接入首批确认图片和站姿图，后续继续审核表情拆分、节日素材和下载口径。",
+                  "content": "公开页只表达展示、审核、安全和授权边界；下载、复用声明和 seasonal 常驻入口继续关闭。",
                   "lineHeight": 1.55,
                   "fontFamily": "$rx-font-body",
                   "fontSize": 16,
@@ -15139,107 +15135,173 @@
             },
             {
               "type": "frame",
-              "id": "p3idg",
-              "name": "Mascot Usage Rule List",
-              "width": "fill_container",
-              "fill": "$rx-bg-surface",
-              "cornerRadius": 8,
-              "stroke": "$rx-border-soft",
-              "strokeWidth": 1,
+              "id": "q5NZW",
+              "name": "Usage Boundary Groups",
+              "width": 734,
               "layout": "vertical",
-              "gap": 15,
-              "padding": 24,
+              "gap": 10,
               "children": [
                 {
                   "type": "frame",
-                  "id": "V7IxS",
-                  "name": "Mascot Usage Rule 可爱Q版公开素材必须完整外装、非性感化、无内衣展示、无身体拆解。",
+                  "id": "izTuA",
+                  "name": "Display",
                   "width": "fill_container",
-                  "gap": 12,
-                  "alignItems": "center",
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": "$rx-radius-card",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    12,
+                    14
+                  ],
                   "children": [
                     {
-                      "type": "ellipse",
-                      "id": "mprTx",
-                      "name": "Mascot Usage Rule Dot 可爱Q版公开素材必须完整外装、非性感化、无内衣展示、无身体拆解。",
-                      "fill": "$rx-brand-primary",
-                      "width": 8,
-                      "height": 8
+                      "type": "text",
+                      "id": "tjF9J",
+                      "name": "Display Title",
+                      "fill": "$rx-text-primary",
+                      "content": "Display",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
-                      "id": "IkWkO",
-                      "name": "Mascot Usage Rule Text 可爱Q版公开素材必须完整外装、非性感化、无内衣展示、无身体拆解。",
+                      "id": "t9Rq2",
+                      "name": "Display Copy",
                       "fill": "$rx-text-secondary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "可爱Q版公开素材必须完整外装、非性感化、无内衣展示、无身体拆解。",
-                      "lineHeight": 1.45,
+                      "content": "公开页只展示已审核 Web 版本，表达角色状态和页面用途。",
+                      "lineHeight": 1.35,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 15,
-                      "fontWeight": "600"
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "id": "CZl41",
-                  "name": "Mascot Usage Rule 已确认素材使用 public/images 下的 Web 版本，原图保留在 assets 中。",
+                  "id": "pHqK0",
+                  "name": "Safety",
                   "width": "fill_container",
-                  "gap": 12,
-                  "alignItems": "center",
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": "$rx-radius-card",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    12,
+                    14
+                  ],
                   "children": [
                     {
-                      "type": "ellipse",
-                      "id": "vzsR5",
-                      "name": "Mascot Usage Rule Dot 已确认素材使用 public/images 下的 Web 版本，原图保留在 assets 中。",
-                      "fill": "$rx-brand-primary",
-                      "width": 8,
-                      "height": 8
+                      "type": "text",
+                      "id": "im6GD",
+                      "name": "Safety Title",
+                      "fill": "$rx-text-primary",
+                      "content": "Safety",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
-                      "id": "HoGrt",
-                      "name": "Mascot Usage Rule Text 已确认素材使用 public/images 下的 Web 版本，原图保留在 assets 中。",
+                      "id": "oquAi",
+                      "name": "Safety Copy",
                       "fill": "$rx-text-secondary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "已确认素材使用 public/images 下的 Web 版本，原图保留在 assets 中。",
-                      "lineHeight": 1.45,
+                      "content": "可爱Q版继续遵守完整外装、非性感化和无身体拆解口径。",
+                      "lineHeight": 1.35,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 15,
-                      "fontWeight": "600"
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "id": "GfQRV",
-                  "name": "Mascot Usage Rule 不提供素材下载入口，不声明素材可自由复用。",
+                  "id": "b4dSoK",
+                  "name": "License",
                   "width": "fill_container",
-                  "gap": 12,
-                  "alignItems": "center",
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": "$rx-radius-card",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    12,
+                    14
+                  ],
                   "children": [
                     {
-                      "type": "ellipse",
-                      "id": "m9u1yT",
-                      "name": "Mascot Usage Rule Dot 不提供素材下载入口，不声明素材可自由复用。",
-                      "fill": "$rx-brand-primary",
-                      "width": 8,
-                      "height": 8
+                      "type": "text",
+                      "id": "a8FVox",
+                      "name": "License Title",
+                      "fill": "$rx-text-primary",
+                      "content": "License",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
-                      "id": "h3NMI",
-                      "name": "Mascot Usage Rule Text 不提供素材下载入口，不声明素材可自由复用。",
+                      "id": "OThnD",
+                      "name": "License Copy",
                       "fill": "$rx-text-secondary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "不提供素材下载入口，不声明素材可自由复用。",
-                      "lineHeight": 1.45,
+                      "content": "下载、文件包和自由复用声明继续关闭，授权边界后置确认。",
+                      "lineHeight": 1.35,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 15,
-                      "fontWeight": "600"
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "m4uYb",
+                  "name": "Seasonal",
+                  "width": "fill_container",
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": "$rx-radius-card",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    12,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fSBGh",
+                      "name": "Seasonal Title",
+                      "fill": "$rx-text-primary",
+                      "content": "Seasonal",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jwruG",
+                      "name": "Seasonal Copy",
+                      "fill": "$rx-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "活动图只作为短期 Banner、彩蛋或运营候选，不进入长期 Gallery。",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -17753,7 +17815,8 @@
               "content": "以 Rust 为核心、Rust UI 为主界面，并通过 .NET 适配 CAPE-OPEN / COM。当前公开维护已暂停，本页保留历史 UI 方向与文档入口。",
               "lineHeight": 1.25,
               "fontFamily": "$rx-font-body",
-              "fontSize": 15
+              "fontSize": 15,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -17981,7 +18044,8 @@
                       "content": "历史 UI 方向展示，不代表继续公开维护、下载入口或产品化承诺。",
                       "lineHeight": 1.25,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -18080,7 +18144,8 @@
                       "content": "项目定位、状态和主媒体。",
                       "lineHeight": 1.25,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -18129,7 +18194,8 @@
                       "content": "GitHub、未来域名和维护状态。",
                       "lineHeight": 1.25,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -18187,7 +18253,8 @@
                       "content": "文档入口与边界说明。",
                       "lineHeight": 1.25,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -18236,7 +18303,8 @@
                       "content": "回到四项目矩阵关系。",
                       "lineHeight": 1.25,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -18328,7 +18396,8 @@
                   "content": "laugh0608/RadishFlow，作为历史代码和个人学习记录入口。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -18377,7 +18446,8 @@
                   "content": "未来独立部署入口，当前不配置为本官网 Vercel rewrite。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -18426,7 +18496,8 @@
                   "content": "官网只展示合规和维护边界，不提供下载、演示或交付承诺。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             }
@@ -18516,7 +18587,8 @@
                   "content": "覆盖 Studio guide、reference、architecture、status 和 MVP 文档。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -18565,7 +18637,8 @@
                   "content": "说明当前阶段、维护边界和验证基线。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             }
@@ -18655,7 +18728,8 @@
                   "content": "页面表达项目方向，不伪装为当前可用 SaaS 或下载页。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -18704,7 +18778,8 @@
                   "content": "主视觉展示历史工作台 baseline。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -18753,7 +18828,8 @@
                   "content": "CAPE-OPEN / COM 适配只作为技术方向说明。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             }
@@ -18808,7 +18884,8 @@
               "content": "Flow 是工程与流程画布；Radish、Catalyst 和 Mind 分别承担内容、游戏表达与智能协议方向。",
               "lineHeight": 1.25,
               "fontFamily": "$rx-font-body",
-              "fontSize": 14
+              "fontSize": 14,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -19027,7 +19104,8 @@
               "content": "390px independent mobile v1.1 board / no deployment change",
               "lineHeight": 1.25,
               "fontFamily": "$rx-font-body",
-              "fontSize": 12
+              "fontSize": 12,
+              "fontWeight": "normal"
             }
           ]
         }
@@ -19041,7 +19119,7 @@
       "name": "Mascot Page Mobile v1.1 - React Accurate",
       "clip": true,
       "width": 390,
-      "height": 4300,
+      "height": 4500,
       "fill": "$rx-bg-app",
       "layout": "vertical",
       "children": [
@@ -19138,7 +19216,8 @@
               "content": "RadishX 的虚拟形象页，移动端首屏保留完全体站姿、三形态入口和公开使用边界。",
               "lineHeight": 1.25,
               "fontFamily": "$rx-font-body",
-              "fontSize": 15
+              "fontSize": 15,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -19443,7 +19522,8 @@
               "content": "移动端改为单列，先看形态与审核状态，再读使用边界。",
               "lineHeight": 1.25,
               "fontFamily": "$rx-font-body",
-              "fontSize": 14
+              "fontSize": 14,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -19540,7 +19620,8 @@
                   "content": "用于小尺寸印章、favicon 和形态起点；不替代四个项目的正式 Logo。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -19639,7 +19720,8 @@
                   "content": "首页中心视觉锚点和 Mascot 页形态展示；公开页只使用完整外装安全版本。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -19738,7 +19820,8 @@
                   "content": "Mascot 页首屏主视觉和品牌记忆点；当前只做展示和品牌识别。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             }
@@ -19790,10 +19873,11 @@
               "fill": "$rx-text-secondary",
               "textGrowth": "fixed-width",
               "width": "fill_container",
-              "content": "所有表情和贴纸都按整图预览展示，不生成单张文件、缩略图或下载入口。",
+              "content": "每张图补充状态、使用边界和后续处理；继续整图预览，不拆分单张，不提供下载入口。",
               "lineHeight": 1.25,
               "fontFamily": "$rx-font-body",
-              "fontSize": 14
+              "fontSize": 14,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -19865,10 +19949,11 @@
                   "fill": "$rx-text-secondary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "展示可爱Q版服装扩展方向。",
+                  "content": "已审核公开图 / 页面展示 / 保持完整",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -19942,10 +20027,11 @@
                   "fill": "$rx-text-secondary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "整图接入，当前不拆分单张贴纸。",
+                  "content": "已审核主视觉 / 页面展示 / 保持站姿",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -20019,10 +20105,11 @@
                   "fill": "$rx-text-secondary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "社交表达方向整图预览。",
+                  "content": "已审核预览 / 服装变体展示 / 不下载",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -20096,10 +20183,11 @@
                   "fill": "$rx-text-secondary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "保留原始组合，不作为素材包。",
+                  "content": "表情格整图 / 只预览 / 拆分清单后置",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -20173,10 +20261,11 @@
                   "fill": "$rx-text-secondary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "不声明素材可自由复用。",
+                  "content": "贴纸横图整图 / 不批量裁切 / 下载关闭",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -20250,10 +20339,11 @@
                   "fill": "$rx-text-secondary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "后续拆分需另建清单和授权边界。",
+                  "content": "贴纸横图整图 / 不批量裁切 / 下载关闭",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -20327,10 +20417,11 @@
                   "fill": "$rx-text-secondary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "展示完全体表情包方向，不提供下载入口。",
+                  "content": "贴纸横图整图 / 不批量裁切 / 下载关闭",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             }
@@ -20377,12 +20468,12 @@
             },
             {
               "type": "frame",
-              "id": "Ql83p",
-              "name": "不提供下载入口 Policy Card",
-              "width": "fill_container",
-              "fill": "#fbf7f014",
-              "cornerRadius": 8,
-              "stroke": "#fbf7f033",
+              "id": "OU7A9",
+              "name": "Display",
+              "width": 350,
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
               "strokeWidth": 1,
               "layout": "vertical",
               "gap": 6,
@@ -20390,39 +20481,37 @@
               "children": [
                 {
                   "type": "text",
-                  "id": "bo7Oc",
-                  "name": "不提供下载入口 Title",
-                  "fill": "$rx-bg-surface",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container",
-                  "content": "不提供下载入口",
-                  "lineHeight": 1.25,
-                  "fontFamily": "$rx-font-body",
-                  "fontSize": 15,
-                  "fontWeight": "800"
+                  "id": "v13Rd",
+                  "name": "Display Title",
+                  "fill": "$rx-text-primary",
+                  "content": "Display",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
-                  "id": "y2lHxS",
-                  "name": "不提供下载入口 Body",
-                  "fill": "#d7cbbb",
+                  "id": "yJPyp",
+                  "name": "Display Copy",
+                  "fill": "$rx-text-secondary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "站点只展示素材，不提供文件包、单张贴纸或下载按钮。",
-                  "lineHeight": 1.25,
+                  "content": "公开页只展示已审核 Web 版本，表达角色状态和页面用途。",
+                  "lineHeight": 1.35,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             },
             {
               "type": "frame",
-              "id": "Kcbdx",
-              "name": "Seasonal 不进入当前页 Policy Card",
-              "width": "fill_container",
-              "fill": "#fbf7f014",
-              "cornerRadius": 8,
-              "stroke": "#fbf7f033",
+              "id": "WFkz7",
+              "name": "Safety",
+              "width": 350,
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
               "strokeWidth": 1,
               "layout": "vertical",
               "gap": 6,
@@ -20430,39 +20519,37 @@
               "children": [
                 {
                   "type": "text",
-                  "id": "TnZNY",
-                  "name": "Seasonal 不进入当前页 Title",
-                  "fill": "$rx-bg-surface",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container",
-                  "content": "Seasonal 不进入当前页",
-                  "lineHeight": 1.25,
-                  "fontFamily": "$rx-font-body",
-                  "fontSize": 15,
-                  "fontWeight": "800"
+                  "id": "CFJLQ",
+                  "name": "Safety Title",
+                  "fill": "$rx-text-primary",
+                  "content": "Safety",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
-                  "id": "myLxZ",
-                  "name": "Seasonal 不进入当前页 Body",
-                  "fill": "#d7cbbb",
+                  "id": "ueW9g",
+                  "name": "Safety Copy",
+                  "fill": "$rx-text-secondary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "节日素材只作为未来活动 Banner、彩蛋或运营内容候选。",
-                  "lineHeight": 1.25,
+                  "content": "可爱Q版继续遵守完整外装、非性感化和无身体拆解口径。",
+                  "lineHeight": 1.35,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             },
             {
               "type": "frame",
-              "id": "VJEzC",
-              "name": "新增素材先审核 Policy Card",
-              "width": "fill_container",
-              "fill": "#fbf7f014",
-              "cornerRadius": 8,
-              "stroke": "#fbf7f033",
+              "id": "fAvgk",
+              "name": "License",
+              "width": 350,
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
               "strokeWidth": 1,
               "layout": "vertical",
               "gap": 6,
@@ -20470,28 +20557,64 @@
               "children": [
                 {
                   "type": "text",
-                  "id": "u4xjKH",
-                  "name": "新增素材先审核 Title",
-                  "fill": "$rx-bg-surface",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container",
-                  "content": "新增素材先审核",
-                  "lineHeight": 1.25,
-                  "fontFamily": "$rx-font-body",
-                  "fontSize": 15,
-                  "fontWeight": "800"
+                  "id": "Ibx3D",
+                  "name": "License Title",
+                  "fill": "$rx-text-primary",
+                  "content": "License",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
-                  "id": "whuyE",
-                  "name": "新增素材先审核 Body",
-                  "fill": "#d7cbbb",
+                  "id": "DNrnB",
+                  "name": "License Copy",
+                  "fill": "$rx-text-secondary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "新图仍需进入 assets/ 完成审核，再生成 public/images Web 版本。",
-                  "lineHeight": 1.25,
+                  "content": "下载、文件包和自由复用声明继续关闭，授权边界后置确认。",
+                  "lineHeight": 1.35,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wQH8I",
+              "name": "Seasonal",
+              "width": 350,
+              "fill": "$rx-bg-surface",
+              "cornerRadius": "$rx-radius-card",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 6,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "KbNnC",
+                  "name": "Seasonal Title",
+                  "fill": "$rx-text-primary",
+                  "content": "Seasonal",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "O4wru",
+                  "name": "Seasonal Copy",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "活动图只作为短期 Banner、彩蛋或运营候选，不进入长期 Gallery。",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             }
@@ -20538,7 +20661,8 @@
               "content": "390px independent mobile v1.1 board / no download entry",
               "lineHeight": 1.25,
               "fontFamily": "$rx-font-body",
-              "fontSize": 12
+              "fontSize": 12,
+              "fontWeight": "normal"
             }
           ]
         }
@@ -20649,7 +20773,8 @@
               "content": "Radish 系列项目官网与统一入口。移动端 About 页集中展示联系渠道、微信公众号二维码、仓库入口和域名边界。",
               "lineHeight": 1.25,
               "fontFamily": "$rx-font-body",
-              "fontSize": 15
+              "fontSize": 15,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -20798,7 +20923,8 @@
               "content": "长邮箱和外链都必须在 390px 宽度内换行，不挤压按钮和说明。",
               "lineHeight": 1.25,
               "fontFamily": "$rx-font-body",
-              "fontSize": 14
+              "fontSize": 14,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -20887,7 +21013,8 @@
                   "content": "公开联系号，适合临时沟通和事项确认。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "rectangle",
@@ -20987,7 +21114,8 @@
                   "content": "适合项目合作、素材授权和较长说明。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "rectangle",
@@ -21087,7 +21215,8 @@
                   "content": "查看公开仓库、提交记录和项目入口。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "rectangle",
@@ -21187,7 +21316,8 @@
                   "content": "个人主页入口，不替代 RadishX 官网主域。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "rectangle",
@@ -21251,7 +21381,8 @@
               "content": "二维码只放 About 或联系区域，不进入首页首屏，也不新增订阅表单或后端服务。",
               "lineHeight": 1.25,
               "fontFamily": "$rx-font-body",
-              "fontSize": 14
+              "fontSize": 14,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -21306,7 +21437,8 @@
                   "content": "用于 Radish 系列项目动态、开发记录和公开说明；当前仅作为联系和社交媒体入口。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             }
@@ -21361,7 +21493,8 @@
               "content": "仓库卡片只作为公开源码和文档入口，不代表四个项目业务功能已部署。",
               "lineHeight": 1.25,
               "fontFamily": "$rx-font-body",
-              "fontSize": 14
+              "fontSize": 14,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -21450,7 +21583,8 @@
                   "content": "官网、文档和公开素材说明源。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -21554,7 +21688,8 @@
                   "content": "Radish 体系的内容与用户入口。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -21658,7 +21793,8 @@
                   "content": "RadishX 的叙事、角色和游戏化表达。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -21762,7 +21898,8 @@
                   "content": "RadishX 中最强调工程可信感的桌面工具。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -21866,7 +22003,8 @@
                   "content": "RadishX 的智能协议、评测和实验入口。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -21934,7 +22072,8 @@
               "content": "当前只有 radishx.com 是本官网项目；四个项目域名是未来独立部署后的访问入口。",
               "lineHeight": 1.25,
               "fontFamily": "$rx-font-body",
-              "fontSize": 14
+              "fontSize": 14,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -22005,7 +22144,8 @@
                   "content": "当前官网主域，承载首页、四个项目介绍页、Mascot 和 About。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -22078,7 +22218,8 @@
                   "content": "兼容访问入口，保留路径跳转到 radishx.com，不作为独立站点。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -22151,7 +22292,8 @@
                   "content": "未来独立部署入口，当前不配置为本官网 Vercel rewrite。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -22224,7 +22366,8 @@
                   "content": "未来独立部署入口，当前不配置为本官网 Vercel rewrite。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -22297,7 +22440,8 @@
                   "content": "未来独立部署入口，当前不配置为本官网 Vercel rewrite。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -22370,7 +22514,8 @@
                   "content": "未来独立部署入口，当前不配置为本官网 Vercel rewrite。",
                   "lineHeight": 1.25,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             }
@@ -22417,7 +22562,8 @@
               "content": "390px independent mobile v1.1 board / no deployment change",
               "lineHeight": 1.25,
               "fontFamily": "$rx-font-body",
-              "fontSize": 12
+              "fontSize": 12,
+              "fontWeight": "normal"
             }
           ]
         }
