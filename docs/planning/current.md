@@ -32,7 +32,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 | --- | --- | --- |
 | 首页首屏与主视觉 | [home-hero-visual.md](../features/home-hero-visual.md) | 站姿中心视觉锚点已接入，OG 已评估暂不替换 |
 | 四个项目详情页 | [project-detail-pages.md](../features/project-detail-pages.md) | 首版已实现，已补站内导览 |
-| Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | Seasonal 活动图已评估，当前不进入实现 |
+| Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | Gallery / Usage 实现已完成，浏览器视觉 smoke 待补 |
 | About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 二轮扫读优化已完成 |
 | 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 表情 / 贴纸与 seasonal 使用边界已记录 |
 | 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地发布前复查、HTTP smoke 准备、可访问性整理、实现口径对齐检查与设计源同步说明已完成，线上截图级 smoke 待补 |
@@ -51,7 +51,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 6. RadishMind 详情页已补强代码内 `Evaluation loop` 自有视觉，继续不接入外部参考截图或未审核图片。
 7. 四个项目已补代码内临时标识，覆盖首页项目 band、项目详情页 Hero、Public Surface 和矩阵回流卡片；这些标识不是正式 Logo。
 8. 已完成四个兄弟项目的 Logo、真实截图和公开视频素材二轮只读复核；未发现新增或修改的媒体文件，也未发现可直接公开的视频素材。
-9. Mascot 页已接入可爱Q版表情格和 4 张贴纸横图的 Web 版本，当前只做整图预览，不拆分单张贴纸，不提供下载入口。
+9. Mascot 页已接入可爱Q版表情格和 4 张贴纸横图的 Web 版本，当前只做整图预览，不拆分单张贴纸，不提供下载入口；Gallery 已补充公开状态、使用边界和后续处理。
 10. 已完成 Mascot 单张表情拆分、缩略图命名和下载政策评估；当前继续整图预览，不生成单张文件、不生成缩略图、不开放下载。
 11. 已完成 `assets/avatars/seasonal/` 6 张节日活动图评估；当前全部只作为活动 Banner、节日彩蛋或运营内容候选，不进入长期 Gallery、默认主视觉或公开资源目录。
 12. 已完成本地发布检查复跑，覆盖 `npm run build`、`git diff --check`、`1440x900` 桌面视口、`390x844` 移动视口、关键路由、未知路径 fallback、Mascot Gallery 图片加载和 `dist/` 输出文件。
@@ -69,13 +69,15 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 24. 已新增 `npm run check:local-release` 本地发布检查命令，复用生产构建并检查 `dist/` 入口文件、SEO 文件、Vite asset 和 18 个公开图片输出。
 25. 已新增 `npm run check:http-smoke` HTTP 目标检查命令，可对指定 `--base-url` 检查关键路由 HTML、SEO 文件和公开图片资源；本地 `127.0.0.1:4500` 目标已验证通过，未来进入发布阶段时可追加 `--www-url` 检查路径保留跳转。
 26. About 二轮扫读优化已完成，覆盖 `/about` 联系方式用途标签、微信公众号状态标签、仓库入口动作文案、域名边界说明和桌面 / 移动端 smoke；本轮不新增社交账号、不修改域名策略、不推送、不部署。
+27. Mascot 页 Gallery 信息层级与 Usage 说明实现已完成，覆盖 7 张整图预览的公开状态、使用边界、后续处理和四组 Usage 边界；本轮不新增素材、不拆分贴纸、不生成缩略图、不开放下载、不接 seasonal；浏览器视觉 smoke 因 Browser Use URL policy 待补。
 
 明天事项：
 
 1. 继续先不推送、不部署；如果后续进入发布阶段，再补跑线上 HTTP、根域跳转、路径保留和截图级 smoke。
-2. 若继续本地页面质量推进，备选处理 [Mascot 页](../features/mascot-page.md) Gallery 信息层级和 Usage 说明；继续保持整图预览、不拆分、不下载、不接 seasonal。
+2. Browser 会话可用后，先补跑 `/mascot` 桌面与 `390x844` 移动端视觉 smoke，重点检查 Gallery facts、Usage 分组、图片加载、横向溢出和 console error。
 3. 如需继续设计侧推进，基于已补齐的独立移动版 Pencil 画板做后续改版同步；涉及 `.pen` 设计源时只通过 Pencil 工具处理。
-4. 四个项目后续只有出现新的独立 Logo、真实截图或视频候选来源时，再按素材治理文档重新审核。
+4. 若进入发布阶段，先按 [视觉 QA 与发布检查](../features/visual-qa-and-release.md) 补跑线上 HTTP、根域跳转、路径保留和截图级 smoke。
+5. 四个项目后续只有出现新的独立 Logo、真实截图或视频候选来源时，再按素材治理文档重新审核。
 
 ## 产品边界
 

@@ -1,12 +1,14 @@
 import { SectionHeader } from "../components/ui/SectionHeader";
 import { StatusChip } from "../components/ui/StatusChip";
-import { mascotForms, mascotGalleryItems, mascotGalleryNotes, mascotHeroImage, mascotHeroReview, mascotName } from "../data/mascot";
-
-const mascotRules = [
-  "可爱Q版公开素材必须完整外装、非性感化、无内衣展示、无身体拆解。",
-  "已确认素材使用 public/images 下的 Web 版本，原图保留在 assets 中。",
-  "不提供素材下载入口，不声明素材可自由复用。",
-];
+import {
+  mascotForms,
+  mascotGalleryItems,
+  mascotGalleryNotes,
+  mascotHeroImage,
+  mascotHeroReview,
+  mascotName,
+  mascotUsageGroups,
+} from "../data/mascot";
 
 export function MascotPage() {
   return (
@@ -109,16 +111,29 @@ export function MascotPage() {
           <SectionHeader
             eyebrow="Gallery"
             title="表情与贴纸先做整图预览"
-            description="服装变体、表情格和贴纸横图作为公开 Gallery 预览接入；第一版不拆分单张贴纸，不提供素材下载入口。"
+            description="服装变体、表情格和贴纸横图作为公开 Gallery 预览接入；每张图都明确当前状态、使用边界和后续处理。"
           />
           <div className="mascot-gallery-grid">
             {mascotGalleryItems.map((item) => (
               <article key={item.title} className={`gallery-card gallery-card--${item.image.height > item.image.width ? "portrait" : "wide"}`}>
                 <img src={item.image.src} width={item.image.width} height={item.image.height} alt={item.image.alt} loading="lazy" />
                 <div>
-                  <span>{item.category}</span>
+                  <div className="gallery-card__meta">
+                    <span>{item.category}</span>
+                    <StatusChip tone="warning">{item.publicStatus}</StatusChip>
+                  </div>
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
+                  <dl className="gallery-card__facts" aria-label={`${item.title} 公开使用边界`}>
+                    <div>
+                      <dt>Boundary</dt>
+                      <dd>{item.usageBoundary}</dd>
+                    </div>
+                    <div>
+                      <dt>Next</dt>
+                      <dd>{item.nextStep}</dd>
+                    </div>
+                  </dl>
                 </div>
               </article>
             ))}
@@ -138,13 +153,22 @@ export function MascotPage() {
           <SectionHeader
             eyebrow="Usage"
             title="公开展示先守住素材口径"
-            description="萝小白是长期品牌资产，第一版页面已接入首批确认图片和站姿图，后续继续审核表情拆分、节日素材和下载口径。"
+            description="萝小白是长期品牌资产，当前页面只展示已审核素材；下载、拆分、活动图和复用声明继续按审核流程推进。"
           />
-          <ul className="check-list">
-            {mascotRules.map((rule) => (
-              <li key={rule}>{rule}</li>
+          <div className="mascot-usage-grid">
+            {mascotUsageGroups.map((group) => (
+              <article key={group.label} className="mascot-usage-card">
+                <span>{group.label}</span>
+                <h3>{group.title}</h3>
+                <p>{group.summary}</p>
+                <ul className="check-list">
+                  {group.rules.map((rule) => (
+                    <li key={rule}>{rule}</li>
+                  ))}
+                </ul>
+              </article>
             ))}
-          </ul>
+          </div>
         </div>
       </section>
     </>
