@@ -15,6 +15,7 @@ export function AboutPage() {
             <span>radishx.com</span>
             <span>5 GitHub repositories</span>
             <span>WeChat QR reviewed</span>
+            <span>No login / API surface</span>
           </div>
         </div>
       </section>
@@ -36,7 +37,10 @@ export function AboutPage() {
                   rel={contact.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   aria-label={`${contact.action}：${contact.value}`}
                 >
-                  <span className="contact-list__label">{contact.label}</span>
+                  <span className="contact-list__label">
+                    <span>{contact.label}</span>
+                    <small>{contact.intent}</small>
+                  </span>
                   <span className="contact-list__content">
                     <strong>{contact.value}</strong>
                     <span>{contact.note}</span>
@@ -64,18 +68,19 @@ export function AboutPage() {
               </div>
               <figcaption className="qr-panel__copy">
                 <strong>{officialAccount.name}</strong>
-                <p>{officialAccount.summary}</p>
+                <p>扫码关注微信公众号，{officialAccount.summary}</p>
+                <ul className="qr-panel__signals" aria-label="微信公众号展示状态">
+                  {officialAccount.highlights.map((highlight) => (
+                    <li key={highlight}>{highlight}</li>
+                  ))}
+                </ul>
                 <dl className="qr-panel__facts">
                   <div>
-                    <dt>Asset</dt>
-                    <dd>{officialAccount.assetLabel}</dd>
-                  </div>
-                  <div>
-                    <dt>Status</dt>
+                    <dt>状态</dt>
                     <dd>{officialAccount.status}</dd>
                   </div>
                   <div>
-                    <dt>Boundary</dt>
+                    <dt>边界</dt>
                     <dd>{officialAccount.boundary}</dd>
                   </div>
                 </dl>
@@ -93,7 +98,14 @@ export function AboutPage() {
           />
           <div className="repo-grid">
             {repositories.map((repo) => (
-              <a key={repo.name} className="repo-card" href={repo.href} target="_blank" rel="noopener noreferrer">
+              <a
+                key={repo.name}
+                className="repo-card"
+                href={repo.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${repo.action}：${repo.ownerRepo}`}
+              >
                 <span className="repo-card__head">
                   <span className="repo-card__meta">{repo.ownerRepo}</span>
                   <span className="repo-card__status">{repo.status}</span>
@@ -110,7 +122,7 @@ export function AboutPage() {
                     <dd>{repo.surface}</dd>
                   </div>
                 </dl>
-                <span className="repo-card__action">Open GitHub</span>
+                <span className="repo-card__action">{repo.action}</span>
               </a>
             ))}
           </div>
