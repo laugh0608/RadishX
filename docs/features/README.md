@@ -20,7 +20,7 @@
 | [mascot-page.md](mascot-page.md) | Mascot 虚拟形象页、三形态和 Gallery | Gallery / Usage 实现、设计源同步和 Chrome smoke 已完成 |
 | [about-contact-surface.md](about-contact-surface.md) | About 联系区、仓库入口和域名边界 | 二轮扫读优化已完成 |
 | [asset-governance.md](asset-governance.md) | 素材审核、Web 优化和 `public/images` 准入 | Mascot 表情 / 贴纸、seasonal 与项目视觉素材准入边界已记录 |
-| [visual-qa-and-release.md](visual-qa-and-release.md) | 本地 / 线上视觉 QA、构建和发布检查 | 本地发布检查、HTTP smoke 准备、可访问性整理、实现口径对齐、设计源同步和 Mascot Chrome smoke 已完成，线上截图级 smoke 待补 |
+| [visual-qa-and-release.md](visual-qa-and-release.md) | 本地 / 线上视觉 QA、构建和发布检查 | 本地质量基线收束、HTTP smoke、实现口径对齐、设计源同步和 Mascot Chrome smoke 已完成，线上截图级 smoke 待补 |
 | [design-source-refresh.md](design-source-refresh.md) | Pencil 设计源 v1.1 精确实现稿 | v1.1 桌面 / 移动画板已补齐，Mascot Gallery / Usage 已同步 |
 | [react-design-alignment.md](react-design-alignment.md) | React 页面与 v1.1 设计源对照校准 | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
 
