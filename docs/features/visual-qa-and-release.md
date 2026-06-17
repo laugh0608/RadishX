@@ -141,8 +141,11 @@
 2026-06-17 已使用 Browser 插件做线上默认视口抽查：
 
 - `https://radishx.com/` 标题为 `RadishX - Radish 系列项目矩阵`，默认视口截图可见首页 Hero、Radish Orbit、中心 Mascot 视觉和顶部导航；未发现首屏视觉阻断。
+- `https://radishx.com/flow` 标题为 `RadishFlow - RadishX`，默认视口截图可见项目 Hero、archived 状态、历史 UI baseline、未来域名和仓库入口；未发现首屏视觉阻断。
 - `https://radishx.com/mascot` 标题为 `萝小白 - RadishX`，默认视口截图可见 Mascot Hero、主视觉图和顶部导航 active 状态；DOM 指标显示 `scrollWidth` 与 `clientWidth` 均为 `1280`，无横向溢出，12 张页面图片中 9 张首屏或已加载图片完成解码，broken image 为空，页面相关 console error 为空。
-- Browser 插件在 `tab.goto()` 跨路由导航、`390x844` 视口设置和移动截图调用中多次出现控制层超时；当前只能把本轮记录为“线上 HTTP smoke 已完成、默认视口抽查已完成、移动截图级 smoke 待补”。
+- `https://radishx.com/about` 标题为 `About - RadishX`，默认视口截图可见 About Hero、公开边界说明、状态标签和顶部导航 active 状态；未发现首屏视觉阻断。
+- `https://radishx.com/abc-test` 标题为 `页面不存在 - RadishX`，默认视口截图可见 404 fallback、回到首页入口和页脚导航；fallback 视觉正常。
+- Browser 插件在 `tab.goto()` 跨路由导航偶发等待较长，`390x844` 视口下 `Page.captureScreenshot` 对完整截图和小范围 clip 均出现控制层超时；当前只能把本轮记录为“线上 HTTP smoke 已完成、默认视口代表路由截图抽查已完成、移动截图级 smoke 待补”。
 - 期间出现的 `ab.chatgpt.com` Statsig 请求超时来自 Codex / Browser 插件环境，不是 `radishx.com` 页面错误。
 
 Browser / Chrome 会话稳定后补跑：
