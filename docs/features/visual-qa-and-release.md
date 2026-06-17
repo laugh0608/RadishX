@@ -201,6 +201,6 @@ npm run check:http-smoke -- --base-url https://radishx.com --www-url https://www
 ## 后续事项
 
 - 后续如需要把设计源升级为精确实现稿，再通过 Pencil 逐屏重绘首页、项目详情模板、Mascot 页和 About 页；当前只完成实现口径同步说明，不做大面积视觉重做。
-- Browser / Chrome 稳定后补跑线上截图级 smoke。
+- Browser / Chrome 稳定后补跑线上截图级 smoke；如果控制层继续超时，优先改用稳定的 Playwright CLI 完成桌面与移动端截图检查，并在本文件记录工具差异和覆盖范围。
 - 首页主视觉或 Open Graph 图替换后，复查分享预览。
 - 四个项目有独立站上线后，重新评估域名区和 sitemap 边界。
