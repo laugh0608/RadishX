@@ -1,7 +1,7 @@
 # 视觉 QA 与发布检查
 
-状态：持续执行，本地发布前复查、HTTP smoke 准备、可访问性整理、实现口径对齐检查与设计源同步说明已完成，线上截图级 smoke 待补
-最后更新：2026-06-16
+状态：持续执行，本地发布前复查、HTTP smoke 准备、可访问性整理、实现口径对齐检查、设计源同步说明与 Mascot Chrome smoke 已完成，线上截图级 smoke 待补
+最后更新：2026-06-17
 
 ## 目标
 
@@ -12,6 +12,8 @@
 当前已经完成多轮本地响应式、可访问性和生产质量检查；线上 HTTP 状态、根域跳转、`sitemap.xml` 和 `robots.txt` 已验证。Browser / Chrome 截图采集链路曾出现不稳定，线上截图级视觉 smoke 需要后续补跑。
 
 已新增可复用 HTTP smoke 脚本，用于在本地或未来线上目标上检查路由 HTML、SEO 文件、公开图片资源和可选 `www` 跳转；该脚本不替代 Browser / Chrome 的截图级视觉检查。
+
+2026-06-17 用户明确要求使用 Chrome 插件后，已补跑本地 `/mascot` 桌面与移动端 smoke，用于收束 Gallery / Usage 二轮实现后的本地浏览器验证；这不触发发布，也不替代未来线上截图级 smoke。
 
 本轮按“跳过发布，继续本地开发”的节奏，只推进本地站点级质量与可访问性整理，不触发推送、部署或线上 smoke。
 
@@ -67,6 +69,14 @@
 - 本地沙箱内本机 HTTP 请求受限时，该命令需要按权限规则在沙箱外复跑；这不改变脚本的检查范围。
 - 执行 `git diff --check` 通过。
 - 本轮不推送、不部署，不补跑线上截图级 smoke。
+
+2026-06-17 已通过 Chrome 插件补跑本地 `/mascot` smoke：
+
+- 使用临时本地 Vite 服务 `http://127.0.0.1:4500/mascot`。
+- `1440x900` 桌面视口：页面标题为 `萝小白 - RadishX`，H1 为 `萝小白`；`scrollWidth` 与 `clientWidth` 均为 `1440`；7 张 Gallery 卡片、7 个状态标签、14 条 Boundary / Next facts、4 个 Gallery notes 和 4 个 Usage 分组均渲染；11 张页面图片滚动后全部完成解码；无横向溢出，console error 为空。
+- `390x844` 移动视口：`scrollWidth` 与 `clientWidth` 均为 `390`；7 张 Gallery 卡片、14 条 Boundary / Next facts 和 Display / Safety / License / Seasonal 四个 Usage 分组均渲染；11 张页面图片滚动后全部完成解码；无横向溢出，无小于 `44px` 的可点击目标，console error 为空。
+- 已做桌面 Gallery 与移动 Usage 视口截图抽查，未发现文字遮挡、卡片错位或下载入口误导。
+- 本轮不改页面代码、不新增素材、不推送、不部署。
 
 2026-06-15 已完成一轮本地发布检查：
 
