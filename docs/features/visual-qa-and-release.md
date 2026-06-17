@@ -1,6 +1,6 @@
 # 视觉 QA 与发布检查
 
-状态：持续执行，本地质量基线收束、本地发布前复查、HTTP smoke 准备、可访问性整理、实现口径对齐检查、设计源同步说明与 Mascot Chrome smoke 已完成，线上截图级 smoke 待补
+状态：持续执行，本地质量基线收束、本地发布前复查、HTTP smoke 准备、可访问性整理、实现口径对齐检查、设计源同步说明与 Mascot Chrome smoke 已完成，线上 HTTP smoke 已通过，线上截图级 smoke 待补
 最后更新：2026-06-17
 
 ## 目标
@@ -9,7 +9,7 @@
 
 ## 背景
 
-当前已经完成多轮本地响应式、可访问性和生产质量检查；线上 HTTP 状态、根域跳转、`sitemap.xml` 和 `robots.txt` 已验证。Browser / Chrome 截图采集链路曾出现不稳定，线上截图级视觉 smoke 需要后续补跑。
+当前已经完成多轮本地响应式、可访问性和生产质量检查；线上 HTTP 状态、根域跳转、`sitemap.xml`、`robots.txt`、关键路由和公开图片资源已验证。Browser / Chrome 截图采集链路曾出现不稳定，线上截图级视觉 smoke 需要后续补跑。
 
 已新增可复用 HTTP smoke 脚本，用于在本地或未来线上目标上检查路由 HTML、SEO 文件、公开图片资源和可选 `www` 跳转；该脚本不替代 Browser / Chrome 的截图级视觉检查。
 
@@ -18,6 +18,8 @@
 2026-06-17 继续按“不发布，先稳定本地质量基线”的节奏复跑本地构建、静态输出检查和本地 HTTP smoke；这只确认当前本地可发布状态，不触发推送、部署或线上检查。
 
 本轮按“跳过发布，继续本地开发”的节奏，只推进本地站点级质量与可访问性整理，不触发推送、部署或线上 smoke。
+
+2026-06-17 进入线上发布准备检查后，已补跑 `https://radishx.com` 与 `https://www.radishx.com` 的 HTTP smoke；该轮只验证线上状态层、路径保留、SEO 文件和公开图片资源，不触发推送、部署或页面改动。Browser 插件已能读取线上首页和 Mascot 页标题，并完成默认视口截图 / DOM 抽查；移动视口设置和跨路由批量截图在 Browser 控制层出现超时，线上截图级 smoke 仍不视为完成。
 
 ## 范围
 
@@ -127,6 +129,21 @@
 - 对首页和 `/mascot` 追加滚动加载复查；Mascot 页 12 张图片滚入视口后均完成加载，首页重复使用的可爱Q版站姿图具备有效原始尺寸，无图片资源 404 或页面 error。
 
 ## 线上检查
+
+2026-06-17 已完成线上 HTTP smoke：
+
+- 执行 `npm run check:http-smoke -- --base-url https://radishx.com --www-url https://www.radishx.com` 通过。
+- 确认 `https://radishx.com` 下 8 个关键路由 HTML 可访问。
+- 确认 18 个公开图片资源可访问。
+- 确认 `https://www.radishx.com` 跳转到 canonical 根域入口，并纳入路径保留检查。
+- 本轮不推送、不部署、不改页面代码。
+
+2026-06-17 已使用 Browser 插件做线上默认视口抽查：
+
+- `https://radishx.com/` 标题为 `RadishX - Radish 系列项目矩阵`，默认视口截图可见首页 Hero、Radish Orbit、中心 Mascot 视觉和顶部导航；未发现首屏视觉阻断。
+- `https://radishx.com/mascot` 标题为 `萝小白 - RadishX`，默认视口截图可见 Mascot Hero、主视觉图和顶部导航 active 状态；DOM 指标显示 `scrollWidth` 与 `clientWidth` 均为 `1280`，无横向溢出，12 张页面图片中 9 张首屏或已加载图片完成解码，broken image 为空，页面相关 console error 为空。
+- Browser 插件在 `tab.goto()` 跨路由导航、`390x844` 视口设置和移动截图调用中多次出现控制层超时；当前只能把本轮记录为“线上 HTTP smoke 已完成、默认视口抽查已完成、移动截图级 smoke 待补”。
+- 期间出现的 `ab.chatgpt.com` Statsig 请求超时来自 Codex / Browser 插件环境，不是 `radishx.com` 页面错误。
 
 Browser / Chrome 会话稳定后补跑：
 

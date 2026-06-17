@@ -36,7 +36,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 | Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | Gallery / Usage、设计源、Chrome smoke 与单张拆分准备清单已完成 |
 | About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 二轮扫读优化已完成 |
 | 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 单张拆分准备清单、seasonal 与项目视觉素材准入边界已记录 |
-| 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地质量基线收束、HTTP smoke、实现口径对齐、设计源同步和 Mascot Chrome smoke 已完成，线上截图级 smoke 待补 |
+| 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地质量基线收束、HTTP smoke、实现口径对齐、设计源同步、Mascot Chrome smoke 和线上 HTTP smoke 已完成，线上截图级 smoke 待补 |
 | 设计源精确化 | [design-source-refresh.md](../features/design-source-refresh.md) | v1.1 桌面 / 移动画板已补齐，Mascot Gallery / Usage 已同步 |
 | React 与设计源对照校准 | [react-design-alignment.md](../features/react-design-alignment.md) | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
 
@@ -76,10 +76,12 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 30. Chrome 插件已补跑本地 `/mascot` smoke：`1440x900` 桌面和 `390x844` 移动端均确认 7 张 Gallery 卡片、14 条 Boundary / Next facts、4 个 Usage 分组、11 张页面图片、横向宽度、触控目标和 console error 正常；本轮不推送、不部署，线上截图级 smoke 仍留到发布阶段。
 31. 已完成一轮本地质量基线收束：`npm run build`、`npm run check:local-release` 和 `npm run check:http-smoke -- --base-url http://127.0.0.1:4500` 均通过；确认 8 个关键路由、18 个公开图片资源、18 个公开图片文件和 2 个 Vite asset 文件正常，本轮不推送、不部署。
 32. 已完成 Mascot 单张表情拆分准备清单，覆盖首批 10 个表情格候选、命名规则、审核字段、授权边界、使用场景、撤回策略和下载关闭口径；本轮不切图、不生成单张 Web 文件或缩略图、不开放下载入口、不新增 seasonal 实现。
+33. 已补跑线上 HTTP smoke：`npm run check:http-smoke -- --base-url https://radishx.com --www-url https://www.radishx.com` 通过，确认 8 个线上关键路由、18 个公开图片资源和 `www` 到 canonical 根域入口检查正常；本轮不推送、不部署。
+34. Browser 插件已完成线上首页和 Mascot 页默认视口抽查：标题、首屏截图、Mascot 默认视口 DOM 指标、横向宽度、broken image 和页面相关 console error 未发现阻断问题；`390x844` 移动视口和跨路由批量截图在 Browser 控制层出现超时，线上截图级 smoke 仍待补。
 
 明天事项：
 
-1. 继续先不推送、不部署；如果后续进入发布阶段，再按 [视觉 QA 与发布检查](../features/visual-qa-and-release.md) 补跑线上 HTTP、根域跳转、路径保留和截图级 smoke。
+1. 继续先不推送、不部署；线上 HTTP smoke 已通过，如果后续进入完整发布阶段，再按 [视觉 QA 与发布检查](../features/visual-qa-and-release.md) 补跑线上桌面 / 移动端截图级 smoke。
 2. 本地质量基线已收束，后续不因日常文档推进重复跑完整发布检查；只有代码、资源、配置或发布计划变化时再复跑对应检查。
 3. 后续设计侧只在 React 页面继续调整或新增正式素材时再同步对应 v1.1 画板；涉及 `.pen` 设计源时只通过 Pencil 工具处理。
 4. 四个项目后续只有出现新的独立 Logo、真实截图、视频或 RadishMind 自有视觉候选来源时，再按项目视觉素材准入清单重新审核。
@@ -125,7 +127,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 ## 后续顺序
 
 1. 如 React 页面继续调整或新增正式素材，先同步对应目标文档，再通过 Pencil 工具维护桌面与移动 v1.1 画板。
-2. 如进入部署阶段，先补跑线上 HTTP、根域跳转、路径保留和截图级 smoke。
+2. 如进入部署阶段，线上 HTTP smoke 可复用当前脚本复跑确认；截图级发布检查仍需补齐桌面与移动端 Browser / Chrome smoke。
 3. 如需使用 seasonal 图，先选择具体活动目标并确认上线 / 下线时间、页面位置、文案、授权和撤下策略，再生成 Web 版本。
 4. 四个项目出现新的独立 Logo、真实截图、视频或 RadishMind 自有视觉候选来源后，先按项目视觉素材准入清单补齐字段，再进入素材审核和 Web 优化。
 5. 后续只有首页视觉再次明显变化或社交预览目标变化时，再评估 Open Graph 分享预览图。
