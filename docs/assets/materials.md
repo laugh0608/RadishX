@@ -118,7 +118,7 @@
 
 ## Mascot 表情拆分与下载评估
 
-评估日期：2026-06-15。
+评估日期：2026-06-15。准备清单更新：2026-06-17。
 
 当前结论：
 
@@ -128,7 +128,37 @@
 - 缩略图仅在未来单张展示或文件包真实需要时生成，不提前为整图 Gallery 生成。
 - 下载入口继续关闭，不提供 ZIP、单图下载、素材 API 或“自由使用”声明。
 
-未来如启动单张拆分，先建清单再生成文件。清单至少记录 `id`、`source_sheet`、`source_cell`、`label`、`emotion`、`public_status`、`web_path`、`thumb_path` 和 `usage_boundary`。命名使用稳定英文 slug，例如 `radish-child-expression-<slug>-web.jpg`、`radish-child-sticker-wide-<sheet>-<nn>-<slug>-web.jpg` 和对应 `-thumb` 版本。
+2026-06-17 已建立准备清单，但没有生成任何单张 Web 文件或缩略图。清单至少记录 `id`、`source_sheet`、`source_cell`、`label`、`emotion`、`slug`、`public_status`、`usage_scenario`、`usage_boundary`、`license_scope`、`withdrawal_policy`、`planned_web_path`、`planned_thumb_path`、`download_policy` 和 `review_note`。
+
+首批候选只从 `assets/avatars/child/radish-child-expression-sheet-grid.png` 中选取，原因是该表情格边框、标签和主体比例较统一，适合后续人工逐格复核。`assets/avatars/child/radish-child-sticker-sheet-wide-01.png` 至 `04.png` 先列为二批复核来源，进入单张前需额外确认文字方向、边缘留白、社交语境和授权。
+
+| id | 来源格位 | 标签 | emotion | slug | 当前状态 | 计划 Web 路径 | 使用场景 | 审核备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `rx-expression-001` | `R1C1` | 开心 | `happy` | `happy` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-happy-web.jpg` | 未来 Mascot 页面基础情绪候选。 | 保留双手、表情符号和中文标签。 |
+| `rx-expression-002` | `R1C2` | 生气 | `angry` | `angry` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-angry-web.jpg` | 未来状态反馈或轻量情绪说明候选。 | 保留头顶怒气符号和手臂姿态。 |
+| `rx-expression-003` | `R1C3` | 震惊 | `surprised` | `surprised` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-surprised-web.jpg` | 未来异常、惊讶或提示类轻量插图候选。 | 保留双手、眼睛和惊叹符号。 |
+| `rx-expression-004` | `R2C3` | 得意 | `proud` | `proud` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-proud-web.jpg` | 未来完成、亮点或正向反馈候选。 | 保留眨眼、手势和星形符号。 |
+| `rx-expression-005` | `R2C4` | 期待 | `expectant` | `expectant` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-expectant-web.jpg` | 未来待办、预告或轻量引导候选。 | 不写成上线承诺。 |
+| `rx-expression-006` | `R3C2` | 疑问 | `question` | `question` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-question-web.jpg` | 未来 FAQ、待确认事项或说明提示候选。 | 保留右上问号和手势。 |
+| `rx-expression-007` | `R3C3` | 无语 | `speechless` | `speechless` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-speechless-web.jpg` | 未来轻量空状态或非阻断提示候选。 | 不用于嘲讽用户或错误归因。 |
+| `rx-expression-008` | `R5C2` | OK | `ok` | `ok` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-ok-web.jpg` | 未来完成状态或确认反馈候选。 | 不作为独立授权图标。 |
+| `rx-expression-009` | `R5C3` | 加油 | `cheer` | `cheer` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-cheer-web.jpg` | 未来项目进展或开发日志辅助视觉候选。 | 不用于商业承诺或进度承诺。 |
+| `rx-expression-010` | `R6C4` | 再见 | `goodbye` | `goodbye` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-goodbye-web.jpg` | 未来页尾彩蛋、404 辅助或结束状态候选。 | 不作为可下载贴纸。 |
+
+命名规则：
+
+- 表情格单张文件使用 `radish-child-expression-<slug>-web.jpg`。
+- 表情格缩略图使用 `radish-child-expression-<slug>-thumb.jpg`。
+- 贴纸横图如未来进入单张，使用 `radish-child-sticker-wide-<sheet>-<nn>-<slug>-web.jpg` 和对应 `-thumb` 版本。
+- `<slug>` 只能来自审核清单；如语义冲突，先更新清单再生成文件。
+
+授权、使用和撤回口径：
+
+- 当前授权边界只支持 RadishX 官网展示候选记录；对外二次使用、社交贴纸包、商用复用、下载和再分发均未开放。
+- 当前使用场景只限未来官网内部轻量插图、状态反馈、FAQ、开发日志辅助视觉或页面彩蛋候选，不作为独立品牌 Logo、项目图标或素材包。
+- 如果候选未通过安全、授权、文字或裁切复核，直接从清单移除，不生成公开文件。
+- 如果未来已生成单张 Web 文件后需要撤回，必须同步删除公开文件、数据引用、页面入口、文档清单和下载说明；如已发布到线上，需要在下一次发布中撤下对应资源。
+- 下载入口继续关闭，公开页面不能写成“可下载”、“自由使用”、“素材包”或“贴纸包”。
 
 ## Mascot seasonal 活动图评估
 

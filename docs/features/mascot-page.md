@@ -1,6 +1,6 @@
 # Mascot 虚拟形象页
 
-状态：Gallery 信息层级与 Usage 说明实现已完成，Pencil 设计源与 Chrome 视觉 smoke 已同步
+状态：Gallery / Usage 实现、设计源同步、Chrome smoke 与单张拆分准备清单已完成
 最后更新：2026-06-17
 
 ## 目标
@@ -12,6 +12,8 @@
 Mascot 页已接入首批确认图片，包含原始形象、可爱Q版安全设定图、可爱Q版站姿图、虚拟形象完全体设定图、完全体站姿图、服装变体、表情格和贴纸横图 Gallery。页面暂不提供下载入口，也不声明素材可自由复用。
 
 2026-06-17 继续按页面质量推进，只优化现有 Gallery 的信息层级和 Usage 说明。此轮不新增图片、不替换素材、不拆分单张贴纸、不生成缩略图、不开放下载、不接入 seasonal 活动图。
+
+2026-06-17 追加 Mascot 单张表情拆分准备清单，只建立审核字段、首批候选和命名 / 授权 / 撤回口径；仍不实际切图，不生成单张 Web 文件或缩略图，不开放下载入口，不新增 seasonal 实现。
 
 ## 范围
 
@@ -39,6 +41,7 @@ Mascot 页已接入首批确认图片，包含原始形象、可爱Q版安全设
 - Pencil 桌面与独立移动 v1.1 画板已同步 Gallery 状态 / 边界 / 后续处理和 Usage 四组边界，继续不新增素材、不拆分贴纸、不开放下载。
 - 已使用 Chrome 插件补跑本地 `/mascot` 桌面与 `390x844` 移动端视觉 smoke，Gallery facts、Usage 分组、图片加载、横向溢出、触控目标和 console error 均未发现阻断问题。
 - 单张拆分、缩略图命名和下载政策已完成当前阶段评估，结论为继续保持整图预览和下载关闭。
+- 已建立单张表情拆分准备清单：首批只从 `assets/avatars/child/radish-child-expression-sheet-grid.png` 选取低风险基础情绪候选；4 张贴纸横图因版式、文字方向和间距不一致，先列为二批复核来源。
 - `assets/avatars/seasonal/` 下 6 张节日活动图已完成评估，当前均不进入长期 Gallery、默认主视觉或公开资源目录。
 - 三形态卡片展示当前用途、审核状态、使用边界和后续素材需求。
 
@@ -59,10 +62,11 @@ Mascot 页已接入首批确认图片，包含原始形象、可爱Q版安全设
 - 本轮已更新 `src/data/mascot.ts`、`src/pages/MascotPage.tsx` 和 `src/styles/global.css`，只调整页面信息结构和样式。
 - 后续如替换其他站姿、活动图或 Gallery 图片，先更新素材审核清单再生成 Web 版本。
 - 表情包单张拆分继续后置；如需单张展示，先做清单、命名规则、授权边界和下载口径，再生成 Web 版本。
+- 本轮已完成单张拆分准备清单；后续进入裁切前，还需逐格确认主体完整、文字可读、安全口径、授权来源和撤回策略。
 - 节日图继续只作为活动 Banner、彩蛋或运营内容候选；如进入正式页面，需单独确认活动窗口、页面位置和文案。
 - 如未来开放下载，需要先补版权、授权和文件包边界。
 
-## 拆分与下载评估
+## 拆分准备与下载评估
 
 2026-06-15 评估结论：
 
@@ -77,6 +81,73 @@ Mascot 页已接入首批确认图片，包含原始形象、可爱Q版安全设
 2. 单张 Web 文件使用稳定英文 slug，例如 `radish-child-expression-<slug>-web.jpg` 或 `radish-child-sticker-wide-<sheet>-<nn>-<slug>-web.jpg`。
 3. 缩略图仅服务页面性能和网格浏览，命名为对应单张文件的 `-thumb` 版本，不作为额外授权素材。
 4. 下载入口继续关闭；只有确认版权、授权范围、允许 / 禁止使用场景、文件包内容、归属说明和撤回策略后，才重新评估下载。
+
+2026-06-17 准备清单：
+
+- 清单只记录未来裁切所需审核信息，不代表单张文件已经生成。
+- 首批候选优先来自 `radish-child-expression-sheet-grid.png`，原因是 24 个格子边框、标签和主体比例较统一，适合人工逐格复核。
+- `radish-child-sticker-sheet-wide-01.png` 至 `04.png` 继续作为二批复核来源；这些横图存在纵排文字、自由排版、局部出血和密度差异，不能直接批量裁切。
+- 所有计划路径均为占位口径；生成文件前必须再次确认版权、授权和页面用途。
+
+审核字段：
+
+| 字段 | 含义 | 当前要求 |
+| --- | --- | --- |
+| `id` | 清单内稳定编号 | 使用 `rx-expression-001` 这类递增编号，不随文件名变化。 |
+| `source_sheet` | 原始来源图 | 记录 `assets/avatars/child/...` 原图路径，不指向 Web 预览图。 |
+| `source_cell` | 来源格位 | 表情格使用 `R<row>C<col>`；横图在确认网格前使用 `manual-<nn>`。 |
+| `label` | 图内中文标签 | 保留原图标签，不改写情绪含义。 |
+| `emotion` | 英文情绪 / 动作用途 | 使用稳定英文词，服务 slug、alt 和后续数据层。 |
+| `slug` | 文件名片段 | 小写英文短横线，不使用中文、空格或临时编号替代语义。 |
+| `public_status` | 公开状态 | 当前统一为 `candidate-only`，表示只在清单中准备，未生成公开单张文件。 |
+| `usage_scenario` | 使用场景 | 仅限未来官网页面内轻量表情展示候选，不作为素材包或社交贴纸包。 |
+| `usage_boundary` | 使用边界 | 保持完整外装、非性感化、无身体拆解，不裁掉关键手势、脸部或图内文字。 |
+| `license_scope` | 授权边界 | 当前只按 RadishX 官网展示候选记录；对外二次使用、下载和再分发未开放。 |
+| `withdrawal_policy` | 撤回策略 | 未生成前从清单移除；未来若已生成，需要同步移除 Web 文件、数据引用和页面入口。 |
+| `planned_web_path` | 计划单张 Web 路径 | 仅作为计划路径，格式为 `public/images/mascot/expressions/<filename>-web.jpg`。 |
+| `planned_thumb_path` | 计划缩略图路径 | 仅在单张进入页面或文件包时生成，格式为对应单张文件的 `-thumb` 版本。 |
+| `download_policy` | 下载口径 | 当前固定为 `closed`，不提供 ZIP、单图下载、素材 API 或自由复用声明。 |
+| `review_note` | 复核备注 | 记录是否需要二次框选、文字修正、边缘留白或安全复核。 |
+
+首批候选：
+
+| id | source_sheet | source_cell | label | emotion | slug | public_status | usage_scenario | usage_boundary | planned_web_path | planned_thumb_path | review_note |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `rx-expression-001` | `assets/avatars/child/radish-child-expression-sheet-grid.png` | `R1C1` | 开心 | happy | `happy` | `candidate-only` | 未来 Mascot 页面单张表情基础情绪候选。 | 保留双手、表情符号和中文标签；不作为下载素材。 | `public/images/mascot/expressions/radish-child-expression-happy-web.jpg` | `public/images/mascot/expressions/radish-child-expression-happy-thumb.jpg` | 低风险，优先人工框选。 |
+| `rx-expression-002` | `assets/avatars/child/radish-child-expression-sheet-grid.png` | `R1C2` | 生气 | angry | `angry` | `candidate-only` | 未来用于状态反馈或轻量情绪说明。 | 保留头顶怒气符号和手臂姿态；不做攻击性语境延展。 | `public/images/mascot/expressions/radish-child-expression-angry-web.jpg` | `public/images/mascot/expressions/radish-child-expression-angry-thumb.jpg` | 需确认边缘蒸汽符号完整。 |
+| `rx-expression-003` | `assets/avatars/child/radish-child-expression-sheet-grid.png` | `R1C3` | 震惊 | surprised | `surprised` | `candidate-only` | 未来用于异常、惊讶或提示类轻量插图。 | 保留双手、眼睛和惊叹符号；不裁掉上方符号。 | `public/images/mascot/expressions/radish-child-expression-surprised-web.jpg` | `public/images/mascot/expressions/radish-child-expression-surprised-thumb.jpg` | 需确认脸部和符号留白。 |
+| `rx-expression-004` | `assets/avatars/child/radish-child-expression-sheet-grid.png` | `R2C3` | 得意 | proud | `proud` | `candidate-only` | 未来用于完成、亮点或正向反馈。 | 保留眨眼、手势和星形符号；不替代正式品牌 Logo。 | `public/images/mascot/expressions/radish-child-expression-proud-web.jpg` | `public/images/mascot/expressions/radish-child-expression-proud-thumb.jpg` | 低风险，优先人工框选。 |
+| `rx-expression-005` | `assets/avatars/child/radish-child-expression-sheet-grid.png` | `R2C4` | 期待 | expectant | `expectant` | `candidate-only` | 未来用于待办、预告或轻量引导。 | 保留双手和星形符号；不写成上线承诺。 | `public/images/mascot/expressions/radish-child-expression-expectant-web.jpg` | `public/images/mascot/expressions/radish-child-expression-expectant-thumb.jpg` | 需确认文字底部完整。 |
+| `rx-expression-006` | `assets/avatars/child/radish-child-expression-sheet-grid.png` | `R3C2` | 疑问 | question | `question` | `candidate-only` | 未来用于 FAQ、待确认事项或说明提示。 | 保留问号符号和手势；不脱离上下文暗示错误。 | `public/images/mascot/expressions/radish-child-expression-question-web.jpg` | `public/images/mascot/expressions/radish-child-expression-question-thumb.jpg` | 需确认右上问号完整。 |
+| `rx-expression-007` | `assets/avatars/child/radish-child-expression-sheet-grid.png` | `R3C3` | 无语 | speechless | `speechless` | `candidate-only` | 未来用于轻量空状态或非阻断提示。 | 保留省略号，不用于嘲讽用户或错误归因。 | `public/images/mascot/expressions/radish-child-expression-speechless-web.jpg` | `public/images/mascot/expressions/radish-child-expression-speechless-thumb.jpg` | 需确认省略号和表情留白。 |
+| `rx-expression-008` | `assets/avatars/child/radish-child-expression-sheet-grid.png` | `R5C2` | OK | ok | `ok` | `candidate-only` | 未来用于完成状态、确认或轻量成功反馈。 | 保留手势和 `OK` 字样；不作为独立授权图标。 | `public/images/mascot/expressions/radish-child-expression-ok-web.jpg` | `public/images/mascot/expressions/radish-child-expression-ok-thumb.jpg` | 低风险，优先人工框选。 |
+| `rx-expression-009` | `assets/avatars/child/radish-child-expression-sheet-grid.png` | `R5C3` | 加油 | cheer | `cheer` | `candidate-only` | 未来用于项目进展、开发日志或鼓励类提示。 | 保留举拳和强调线；不用于商业承诺或进度承诺。 | `public/images/mascot/expressions/radish-child-expression-cheer-web.jpg` | `public/images/mascot/expressions/radish-child-expression-cheer-thumb.jpg` | 需确认上方强调线完整。 |
+| `rx-expression-010` | `assets/avatars/child/radish-child-expression-sheet-grid.png` | `R6C4` | 再见 | goodbye | `goodbye` | `candidate-only` | 未来用于页尾彩蛋、404 辅助或结束状态。 | 保留挥手和红色强调线；不作为可下载贴纸。 | `public/images/mascot/expressions/radish-child-expression-goodbye-web.jpg` | `public/images/mascot/expressions/radish-child-expression-goodbye-thumb.jpg` | 需确认右侧手部和符号完整。 |
+
+二批复核来源：
+
+| source_sheet | 当前判断 | 进入单张前必须补齐 |
+| --- | --- | --- |
+| `assets/avatars/child/radish-child-sticker-sheet-wide-01.png` | 贴纸文字方向和间距混合，包含纵排短句和自由排版。 | 逐项人工框选、文字完整性、边缘留白和社交语境复核。 |
+| `assets/avatars/child/radish-child-sticker-sheet-wide-02.png` | 贴纸数量较多且部分姿态带物件或更强语义。 | 使用场景分级、是否适合官网页面、是否需要去阴影或统一边距。 |
+| `assets/avatars/child/radish-child-sticker-sheet-wide-03.png` | 网格较规整，但包含更明显的手写文案和单张贴纸语义。 | 逐格文字授权、手写文案可读性、是否进入官网而非贴纸包。 |
+| `assets/avatars/child/radish-child-sticker-sheet-wide-04.png` | 以大字短句为主，部分内容偏社交聊天表情。 | 文案边界、使用场景、是否会被误解为可下载聊天贴纸。 |
+
+命名规则：
+
+- 表情格单张文件使用 `radish-child-expression-<slug>-web.jpg`。
+- 表情格缩略图使用 `radish-child-expression-<slug>-thumb.jpg`。
+- 贴纸横图未来如进入单张，使用 `radish-child-sticker-wide-<sheet>-<nn>-<slug>-web.jpg`，例如 `radish-child-sticker-wide-03-01-received-web.jpg`。
+- `<slug>` 必须来自审核清单，不从中文标签自动音译；如语义冲突，先改清单再生成文件。
+- 单张文件和缩略图只存放在未来确认的公开目录中，不覆盖 `assets/avatars/child/` 原图。
+
+授权、使用场景和撤回策略：
+
+- 当前授权边界只支持 RadishX 官网展示候选记录；未确认对外二次使用、商用复用、社交平台贴纸包或素材下载授权。
+- 当前使用场景只考虑未来官网内部的轻量插图、状态反馈、FAQ 或开发日志辅助视觉，不作为独立品牌 Logo、项目图标或下载素材。
+- 如果某个候选未通过安全、授权、文字或裁切复核，直接从清单移除，不生成公开文件。
+- 如果未来已经生成单张 Web 文件后需要撤回，必须同步删除公开文件、数据引用、页面入口、文档清单和任何下载说明；如已经发布到线上，需要在下一次发布中撤下对应资源。
+- 下载入口继续关闭。公开页面只能表达“展示中 / 候选中 / 待审核”，不能写成“可下载”、“自由使用”、“素材包”或“贴纸包”。
 
 ## Seasonal 活动图评估
 

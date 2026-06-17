@@ -1,6 +1,6 @@
 # 素材治理目标
 
-状态：持续执行，Seasonal 活动图评估与项目视觉素材准入清单已完成
+状态：持续执行，Mascot 单张拆分准备清单、seasonal 活动图评估与项目视觉素材准入清单已完成
 最后更新：2026-06-17
 
 ## 目标
@@ -9,7 +9,7 @@
 
 ## 背景
 
-RadishX 已接入首批 Mascot / About 图片和三个项目详情页 Web 图。首页首屏已使用已审核可爱Q版站姿图作为 Radish Orbit 中心视觉锚点。Mascot 表情拆分、缩略图命名和下载政策已完成当前阶段评估，项目 Logo、真实截图、视频和 RadishMind 自有视觉的准入字段已拆分到独立目标文档，后续仍等待新的正式候选素材。
+RadishX 已接入首批 Mascot / About 图片和三个项目详情页 Web 图。首页首屏已使用已审核可爱Q版站姿图作为 Radish Orbit 中心视觉锚点。Mascot 表情拆分、缩略图命名和下载政策已完成当前阶段评估，并已建立单张拆分准备清单；项目 Logo、真实截图、视频和 RadishMind 自有视觉的准入字段已拆分到独立目标文档，后续仍等待新的正式候选素材。
 
 ## 范围
 
@@ -40,7 +40,7 @@ RadishX 已接入首批 Mascot / About 图片和三个项目详情页 Web 图。
 - 为项目 Logo、截图和视频分别记录来源、用途、风险和接入结论。
 - 四项目正式 Logo、截图、视频或 RadishMind 自有视觉出现候选时，先按 [项目视觉素材准入准备](project-visual-asset-readiness.md) 补齐字段，再判断是否生成 Web 版本。
 - Mascot 新图进入页面前同步更新 Mascot 目标文档。
-- Mascot 单张表情如未来进入页面，先建立拆分清单、命名规则、授权边界和下载口径，再生成单张 Web 文件。
+- Mascot 单张表情如未来进入页面，先按准备清单完成逐格审核、命名确认、授权边界、撤回策略和下载口径复核，再生成单张 Web 文件。
 - 首页主视觉变化后，记录是否影响 Open Graph 图。
 
 ## 当前复核
@@ -53,6 +53,33 @@ RadishX 已接入首批 Mascot / About 图片和三个项目详情页 Web 图。
 - 2026-06-15 已将可爱Q版表情格和 4 张贴纸横图生成 Web 版本并接入 Mascot Gallery；当前只做整图预览，不拆分单张，不提供下载入口。
 - 2026-06-15 已完成 Mascot 单张拆分、缩略图命名和下载政策评估；当前继续整图预览，不生成单张文件、不生成缩略图、不开放下载。
 - 2026-06-15 已完成 `assets/avatars/seasonal/` 6 张节日活动图评估；全部只作为短期活动 Banner、节日彩蛋或运营内容候选，不进入长期 Gallery、默认主视觉或当前实现。
+- 2026-06-17 已建立 Mascot 单张表情拆分准备清单，字段覆盖 `id`、来源图、来源格位、中文标签、英文情绪、slug、公开状态、使用场景、授权边界、撤回策略、计划 Web / 缩略图路径、下载口径和复核备注；当前没有生成单张 Web 文件或缩略图。
+- 首批候选只从 `assets/avatars/child/radish-child-expression-sheet-grid.png` 选取 `开心`、`生气`、`震惊`、`得意`、`期待`、`疑问`、`无语`、`OK`、`加油`、`再见` 10 个基础情绪 / 动作格；4 张贴纸横图继续作为二批复核来源。
+
+## Mascot 单张表情准入
+
+当前准备清单是审核入口，不是文件生成授权。后续如果进入单张展示或文件包评估，按以下顺序执行：
+
+1. 在 `docs/assets/materials.md` 和 `docs/features/mascot-page.md` 中确认候选条目的 `public_status`、`usage_scenario`、`usage_boundary`、`license_scope`、`withdrawal_policy` 和 `download_policy`。
+2. 对候选格做人工框选复核，确认主体完整、外装完整、表情符号和中文标签未被裁掉，且无身体拆解或性感化风险。
+3. 确认命名：表情格使用 `radish-child-expression-<slug>-web.jpg`；缩略图仅在页面或文件包真实需要时使用 `radish-child-expression-<slug>-thumb.jpg`。
+4. 生成文件前再次确认授权来源、允许 / 禁止使用场景、归属说明和撤回策略；未确认前不写入 `public/images/mascot/expressions/`。
+5. 页面接入前同步更新数据层、页面文案和完成标准，继续保持下载入口关闭。
+
+准入字段：
+
+| 字段 | 准入要求 |
+| --- | --- |
+| `id` | 清单稳定编号，不复用已撤回编号。 |
+| `source_sheet` / `source_cell` | 指向原始候选图和明确格位，不能只记录 Web 整图预览。 |
+| `label` / `emotion` / `slug` | 中文标签、英文语义和文件名片段必须一致；冲突时先改清单。 |
+| `public_status` | 生成前为 `candidate-only`；通过裁切和授权复核后才可改为待接入状态。 |
+| `usage_scenario` | 只允许官网内部轻量插图、状态反馈、FAQ、开发日志辅助视觉或页面彩蛋候选。 |
+| `usage_boundary` | 保持完整外装、非性感化、无身体拆解；不能裁掉关键手势、脸部、符号或标签。 |
+| `license_scope` | 当前不开放对外二次使用、商用复用、社交贴纸包、下载或再分发。 |
+| `withdrawal_policy` | 撤回时同步移除文件、数据引用、页面入口、文档清单和下载说明。 |
+| `planned_web_path` / `planned_thumb_path` | 仅作为计划路径；生成前不得在页面中引用。 |
+| `download_policy` | 当前固定为 `closed`，不提供 ZIP、单图下载、素材 API 或自由复用声明。 |
 
 ## Seasonal 活动图准入
 
