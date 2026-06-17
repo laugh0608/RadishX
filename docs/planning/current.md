@@ -32,9 +32,10 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 | --- | --- | --- |
 | 首页首屏与主视觉 | [home-hero-visual.md](../features/home-hero-visual.md) | 站姿中心视觉锚点已接入，OG 已评估暂不替换 |
 | 四个项目详情页 | [project-detail-pages.md](../features/project-detail-pages.md) | 首版已实现，已补站内导览 |
+| 项目视觉素材准入准备 | [project-visual-asset-readiness.md](../features/project-visual-asset-readiness.md) | 四项目正式 Logo、截图、视频和自有视觉准入清单已建立 |
 | Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | Gallery / Usage 实现与设计源同步已完成，浏览器视觉 smoke 待补 |
 | About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 二轮扫读优化已完成 |
-| 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 表情 / 贴纸与 seasonal 使用边界已记录 |
+| 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 表情 / 贴纸、seasonal 与项目视觉素材准入边界已记录 |
 | 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地发布前复查、HTTP smoke 准备、可访问性整理、实现口径对齐检查与设计源同步说明已完成，线上截图级 smoke 待补 |
 | 设计源精确化 | [design-source-refresh.md](../features/design-source-refresh.md) | v1.1 桌面 / 移动画板已补齐，Mascot Gallery / Usage 已同步 |
 | React 与设计源对照校准 | [react-design-alignment.md](../features/react-design-alignment.md) | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
@@ -71,6 +72,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 26. About 二轮扫读优化已完成，覆盖 `/about` 联系方式用途标签、微信公众号状态标签、仓库入口动作文案、域名边界说明和桌面 / 移动端 smoke；本轮不新增社交账号、不修改域名策略、不推送、不部署。
 27. Mascot 页 Gallery 信息层级与 Usage 说明实现已完成，覆盖 7 张整图预览的公开状态、使用边界、后续处理和四组 Usage 边界；本轮不新增素材、不拆分贴纸、不生成缩略图、不开放下载、不接 seasonal；浏览器视觉 smoke 因 Browser Use URL policy 待补。
 28. Pencil 设计源已同步 Mascot 页 Gallery / Usage 二轮口径，覆盖桌面 `Mascot Page v1.1 - React Accurate` 和独立移动 `Mascot Page Mobile v1.1 - React Accurate`；两张画板 `snapshot_layout` 均无布局问题，本轮不改 React 代码、不新增素材、不推送、不部署。
+29. 已建立四项目视觉素材准入清单，覆盖正式 Logo、真实截图、视频、key visual、diagram、RadishMind 自有视觉、替换范围、降级策略和授权备注；当前没有新的正式候选素材，不替换代码内临时项目标识、不迁入兄弟项目素材。
 
 明天事项：
 
@@ -78,7 +80,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 2. Browser 会话可用后，先补跑 `/mascot` 桌面与 `390x844` 移动端视觉 smoke，重点检查 Gallery facts、Usage 分组、图片加载、横向溢出和 console error。
 3. 后续设计侧只在 React 页面继续调整或新增正式素材时再同步对应 v1.1 画板；涉及 `.pen` 设计源时只通过 Pencil 工具处理。
 4. 若进入发布阶段，先按 [视觉 QA 与发布检查](../features/visual-qa-and-release.md) 补跑线上 HTTP、根域跳转、路径保留和截图级 smoke。
-5. 四个项目后续只有出现新的独立 Logo、真实截图或视频候选来源时，再按素材治理文档重新审核。
+5. 四个项目后续只有出现新的独立 Logo、真实截图、视频或 RadishMind 自有视觉候选来源时，再按项目视觉素材准入清单重新审核。
 
 ## 产品边界
 
@@ -121,6 +123,6 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 1. 如 React 页面继续调整或新增正式素材，先同步对应目标文档，再通过 Pencil 工具维护桌面与移动 v1.1 画板。
 2. 如进入部署阶段，先补跑线上 HTTP、根域跳转、路径保留和截图级 smoke。
 3. 如需使用 seasonal 图，先选择具体活动目标并确认上线 / 下线时间、页面位置、文案、授权和撤下策略，再生成 Web 版本。
-4. 四个项目出现新的独立 Logo、真实截图或视频候选来源后，再回到项目素材审核和 Web 优化。
+4. 四个项目出现新的独立 Logo、真实截图、视频或 RadishMind 自有视觉候选来源后，先按项目视觉素材准入清单补齐字段，再进入素材审核和 Web 优化。
 5. 后续只有首页视觉再次明显变化或社交预览目标变化时，再评估 Open Graph 分享预览图。
 6. 如需推进 Mascot 单张表情展示，先建立拆分清单和首批候选；确认版权、授权和文件包边界前不提供下载入口。

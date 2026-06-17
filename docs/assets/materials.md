@@ -86,6 +86,8 @@
 
 项目详情页当前已在主媒体区展示 `Asset source`、`Usage boundary` 和 `Next material need` 三项说明，用于区分代表图、概念视觉、历史 UI baseline 和代码内协议图的公开边界。
 
+2026-06-17 已新增四项目视觉素材准入准备文档：[project-visual-asset-readiness.md](../features/project-visual-asset-readiness.md)。后续独立 Logo、真实截图、视频、key visual、RadishMind 自有可视化图或其他项目视觉候选出现时，先按该文档补齐 `asset_type`、`source_path`、`public_status`、`usage_boundary`、`replacement_scope`、`web_output`、`fallback` 和 `license_note`，再判断是否生成 Web 版本进入 `public/images/projects/`。
+
 | 项目 | 候选素材 | 推荐用途 | 风险与限制 | 结论 |
 | --- | --- | --- | --- | --- |
 | Radish | `/Users/luobo/Code/Radish/Docs/images/RadishAcg-1024.png` | 详情页主媒体区项目代表图。 | README 已使用该图作为“萝卜娘”视觉，适合代表 Radish 气质；未发现可直接公开的当前产品截图或视频。`DataBases/TestOutput`、测试上传文件、第三方 UI 参考图和默认商品图不进入官网。 | 已生成 `public/images/projects/radish/radish-acg-web.jpg` 并接入 `/radish`。 |
@@ -107,6 +109,7 @@
 - RadishMind 详情页已使用代码内 `Evaluation loop` 替代通用占位；仍等待项目自有 Logo、截图或代表性图片素材。
 - 四个项目都未发现可直接公开的视频素材；后续如需接入视频，必须单独审核来源、字幕/水印、压缩方案和移动端加载策略。
 - 四个项目仍缺独立稳定 Logo；后续如果项目有独立 Logo，再按项目替换当前代码内临时项目标识。
+- 四项目视觉素材准入清单已建立；当前没有新的正式候选来源时，不主动迁入兄弟项目素材，不替换代码内临时项目标识。
 - 当前首页项目 band、项目详情页 Hero、Public Surface 和矩阵回流卡片已使用代码内临时项目标识；这些标识只用于官网信息识别，不作为项目正式 Logo 或素材下载内容。
 - Mascot 页首批主图、站姿图和 Gallery 图片已生成 Web 版本并进入 `public/images/`；页面三形态区已展示当前用途、审核状态、使用边界和后续素材需求。后续新增素材仍需继续审核，且不要覆盖原始素材。
 - 可爱Q版表情格和 4 张贴纸横图已进入 Mascot Gallery 整图预览；当前不拆分单张贴纸、不提供下载入口、不声明可自由复用。

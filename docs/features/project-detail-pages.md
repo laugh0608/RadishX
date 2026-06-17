@@ -1,7 +1,7 @@
 # 四个项目详情页
 
-状态：首版已实现，已补站内导览
-最后更新：2026-06-15
+状态：首版已实现，已补站内导览，项目视觉素材准入清单已建立
+最后更新：2026-06-17
 
 ## 目标
 
@@ -38,6 +38,7 @@
 - 每页主媒体区展示 `Asset source`、`Usage boundary` 和 `Next material need`。
 - 每页已补公开文档入口，只链接对应 GitHub 仓库 `dev` 分支中的 README / docs / wiki / status / contracts 等稳定入口，不复制文档正文。
 - 每页 Hero 下方已补轻量站内导览，链接到 `Public Surface`、`Documentation`、`Capabilities` 和 `Matrix` 四个 section。
+- 四项目正式 Logo、真实截图、视频和 RadishMind 自有视觉的准入清单已拆分到 [project-visual-asset-readiness.md](project-visual-asset-readiness.md)；新候选素材出现前不替换当前临时标识或主媒体口径。
 
 ## 设计要求
 
@@ -51,6 +52,7 @@
 ## 开发任务
 
 - 后续项目拥有稳定 Logo、真实截图或视频时，按项目单独审核并更新本文件。
+- 新候选素材先按 [项目视觉素材准入准备](project-visual-asset-readiness.md) 记录字段、来源、公开状态、替换范围和验证要求，再进入页面实现。
 - 临时项目标识已接入，后续如有正式 Logo，需先确认来源、授权、Web 版本和替换范围。
 - 如果接入视频，先确认来源、压缩策略、字幕 / 水印、移动端加载和降级图。
 - RadishMind 当前先补强代码内自有视觉；后续再评估项目自有 Logo、Console 截图或真实可视化图。
