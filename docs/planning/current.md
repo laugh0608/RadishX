@@ -79,6 +79,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 33. 已补跑线上 HTTP smoke：`npm run check:http-smoke -- --base-url https://radishx.com --www-url https://www.radishx.com` 通过，确认 8 个线上关键路由、18 个公开图片资源和 `www` 到 canonical 根域入口检查正常；本轮不推送、不部署。
 34. Browser 插件已完成线上首页和 Mascot 页默认视口抽查：标题、首屏截图、Mascot 默认视口 DOM 指标、横向宽度、broken image 和页面相关 console error 未发现阻断问题；`390x844` 移动视口和跨路由批量截图在 Browser 控制层出现超时，线上截图级 smoke 仍待补。
 35. Browser 插件已扩展线上默认视口截图抽查到 `/flow`、`/about` 和 `/abc-test`：项目 Hero、About Hero、404 fallback、导航 active 状态和关键首屏信息未发现视觉阻断；`390x844` 移动截图仍因 Browser 控制层 `Page.captureScreenshot` 超时待补。
+36. 已按用户要求尝试 Chrome 插件补测线上移动截图：Chrome 默认视口截图可用，但 CDP 移动指标设置、轻量脚本读取和 DevTools 设备模式切换未能稳定进入 `390x844` 移动 viewport；线上移动截图级 smoke 仍待补。
 
 明天事项：
 

@@ -148,6 +148,13 @@
 - Browser 插件在 `tab.goto()` 跨路由导航偶发等待较长，`390x844` 视口下 `Page.captureScreenshot` 对完整截图和小范围 clip 均出现控制层超时；当前只能把本轮记录为“线上 HTTP smoke 已完成、默认视口代表路由截图抽查已完成、移动截图级 smoke 待补”。
 - 期间出现的 `ab.chatgpt.com` Statsig 请求超时来自 Codex / Browser 插件环境，不是 `radishx.com` 页面错误。
 
+2026-06-17 已按用户要求尝试 Chrome 插件补测线上移动截图：
+
+- Chrome extension 轻量通信正常，可列出当前 Chrome tab，并能对 `https://radishx.com/` 执行默认视口截图；截图可见首页 Hero、Radish Orbit、中心 Mascot 视觉和顶部导航。
+- 尝试通过 Chrome tab CDP 执行 `Emulation.setDeviceMetricsOverride` 设置 `390x844` 移动指标时出现控制层超时；随后轻量 `Runtime.evaluate` 和 Chrome Playwright `evaluate` 读取宽度也超时。
+- 尝试通过 Chrome 快捷键打开 DevTools 设备模式后再次截图，页面仍保持桌面布局，未进入可确认的移动 viewport。
+- 本轮已关闭 Chrome 测试会话；Chrome 插件仍未完成线上 `390x844` 移动截图级 smoke。
+
 Browser / Chrome 会话稳定后补跑：
 
 - `https://radishx.com/`
