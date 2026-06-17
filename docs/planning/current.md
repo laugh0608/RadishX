@@ -80,6 +80,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 34. Browser 插件已完成线上首页和 Mascot 页默认视口抽查：标题、首屏截图、Mascot 默认视口 DOM 指标、横向宽度、broken image 和页面相关 console error 未发现阻断问题；`390x844` 移动视口和跨路由批量截图在 Browser 控制层出现超时，线上截图级 smoke 仍待补。
 35. Browser 插件已扩展线上默认视口截图抽查到 `/flow`、`/about` 和 `/abc-test`：项目 Hero、About Hero、404 fallback、导航 active 状态和关键首屏信息未发现视觉阻断；`390x844` 移动截图仍因 Browser 控制层 `Page.captureScreenshot` 超时待补。
 36. 已按用户要求尝试 Chrome 插件补测线上移动截图：Chrome 默认视口截图可用，但 CDP 移动指标设置、轻量脚本读取和 DevTools 设备模式切换未能稳定进入 `390x844` 移动 viewport；线上移动截图级 smoke 仍待补。
+37. 用户手动打开 Chrome 移动端视图后，已补读线上首页移动 DOM 指标：`innerWidth`、`clientWidth` 和 `scrollWidth` 均为 `321`，H1、图片解码、broken image 和页面 error console 未发现阻断问题；但 Chrome 截图、CDP、可见 DOM、DOM snapshot 和跨路由补查仍出现控制层超时，因此线上移动截图级 smoke 仍待补。
 
 明天事项：
 

@@ -155,6 +155,14 @@
 - 尝试通过 Chrome 快捷键打开 DevTools 设备模式后再次截图，页面仍保持桌面布局，未进入可确认的移动 viewport。
 - 本轮已关闭 Chrome 测试会话；Chrome 插件仍未完成线上 `390x844` 移动截图级 smoke。
 
+2026-06-17 用户手动在 Chrome 中打开移动端视图后，继续补测线上首页：
+
+- Chrome extension 能认领用户已打开的 `https://radishx.com/` 标签页，并读取标题和 URL。
+- 首页移动视图 DOM 指标读取成功：`innerWidth`、`clientWidth` 和 `scrollWidth` 均为 `321`，`devicePixelRatio` 为 `2`，H1 为 `Radish 系列项目矩阵`，6 张页面图片中 5 张已完成解码，broken image 为空，页面 error console 为空。
+- `tab.screenshot()`、CDP `Page.getLayoutMetrics`、CDP `Page.captureScreenshot`、`dom_cua.get_visible_dom()` 和 `domSnapshot()` 在该 Chrome 手动移动视图下仍出现控制层超时。
+- 尝试在同一移动视图中批量补查关键路由时，长循环在工具层超时，重连后标签页停在 `/flow`；随后 `/flow` 的轻量指标和 console 读取也开始超时。
+- 本轮结论只记录为“Chrome 手动移动视图已确认线上首页移动 DOM 指标无横向溢出、无 broken image、无页面 error”，不能替代线上移动截图级 smoke。
+
 Browser / Chrome 会话稳定后补跑：
 
 - `https://radishx.com/`
