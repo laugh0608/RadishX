@@ -1,7 +1,7 @@
 # 视觉 QA 与发布检查
 
-状态：持续执行，本地质量基线收束、本地发布前复查、HTTP smoke 准备、可访问性整理、实现口径对齐检查、设计源同步说明与 Mascot Chrome smoke 已完成，线上 HTTP smoke 已通过，线上截图级 smoke 待补
-最后更新：2026-06-17
+状态：持续执行，本地质量基线收束、本地发布前复查、HTTP smoke 准备、可访问性整理、实现口径对齐检查、设计源同步说明、Mascot Chrome smoke、线上 HTTP smoke 和线上截图级 smoke 已完成
+最后更新：2026-06-18
 
 ## 目标
 
@@ -9,7 +9,7 @@
 
 ## 背景
 
-当前已经完成多轮本地响应式、可访问性和生产质量检查；线上 HTTP 状态、根域跳转、`sitemap.xml`、`robots.txt`、关键路由和公开图片资源已验证。Browser / Chrome 截图采集链路曾出现不稳定，线上截图级视觉 smoke 需要后续补跑。
+当前已经完成多轮本地响应式、可访问性和生产质量检查；线上 HTTP 状态、根域跳转、`sitemap.xml`、`robots.txt`、关键路由、公开图片资源和线上桌面 / 移动端截图级视觉 smoke 已验证。
 
 已新增可复用 HTTP smoke 脚本，用于在本地或未来线上目标上检查路由 HTML、SEO 文件、公开图片资源和可选 `www` 跳转；该脚本不替代 Browser / Chrome 的截图级视觉检查。
 
@@ -20,6 +20,8 @@
 本轮按“跳过发布，继续本地开发”的节奏，只推进本地站点级质量与可访问性整理，不触发推送、部署或线上 smoke。
 
 2026-06-17 进入线上发布准备检查后，已补跑 `https://radishx.com` 与 `https://www.radishx.com` 的 HTTP smoke；该轮只验证线上状态层、路径保留、SEO 文件和公开图片资源，不触发推送、部署或页面改动。Browser 插件已能读取线上首页和 Mascot 页标题，并完成默认视口截图 / DOM 抽查；移动视口设置和跨路由批量截图在 Browser 控制层出现超时，线上截图级 smoke 仍不视为完成。
+
+2026-06-18 已改用 Playwright 加本机 Google Chrome 完成线上截图级 smoke，覆盖 `1440x900` 桌面和 `390x844` 移动视口下 8 个关键路由。检查中对 lazy 图片做逐图滚动和解码等待，避免 full-page 截图过早截到空白 Gallery。截图与汇总输出保存在本地 `output/playwright/online-visual-smoke-2026-06-18/`，该目录作为 QA artifact 不提交。
 
 ## 范围
 
@@ -163,18 +165,18 @@
 - 尝试在同一移动视图中批量补查关键路由时，长循环在工具层超时，重连后标签页停在 `/flow`；随后 `/flow` 的轻量指标和 console 读取也开始超时。
 - 本轮结论只记录为“Chrome 手动移动视图已确认线上首页移动 DOM 指标无横向溢出、无 broken image、无页面 error”，不能替代线上移动截图级 smoke。
 
-Browser / Chrome 会话稳定后补跑：
+2026-06-18 已使用 Playwright + 本机 Google Chrome 完成线上截图级 smoke：
 
-- `https://radishx.com/`
-- `https://radishx.com/radish`
-- `https://radishx.com/catalyst`
-- `https://radishx.com/flow`
-- `https://radishx.com/mind`
-- `https://radishx.com/mascot`
-- `https://radishx.com/about`
-- 一个未知路径，例如 `/abc-test`
+- 覆盖路由：`/`、`/radish`、`/catalyst`、`/flow`、`/mind`、`/mascot`、`/about` 和 `/abc-test`。
+- 覆盖视口：`1440x900` 桌面与 `390x844` 移动端。
+- 16 个路由 / 视口组合均返回 `200`，未知路径正常落到 404 fallback 页面。
+- 所有组合 `scrollWidth` 与 `clientWidth` 一致；桌面为 `1440`，移动端为 `390`，未发现横向溢出。
+- 所有页面图片均完成解码：桌面首页 `6/6`、桌面 Mascot `12/12`、移动首页 `6/6`、移动 Mascot `12/12`，其余路由图片也均为全量解码。
+- broken image、console error、page error 和小于 `44px` 的主链接触控目标均为 `0`。
+- 人工抽查桌面首页、移动首页、桌面 Mascot 和移动 Mascot full-page 截图，未发现空白图、Gallery 错位、文字遮挡或下载入口误导。
+- 本轮不推送、不部署、不改页面代码、不新增素材。
 
-检查重点：
+后续若页面、资源或部署发生变化，仍按以下重点复跑：
 
 - HTTP 状态和 fallback 正常。
 - `www.radishx.com` 跳转到根域并保留路径。
@@ -201,6 +203,6 @@ npm run check:http-smoke -- --base-url https://radishx.com --www-url https://www
 ## 后续事项
 
 - 后续如需要把设计源升级为精确实现稿，再通过 Pencil 逐屏重绘首页、项目详情模板、Mascot 页和 About 页；当前只完成实现口径同步说明，不做大面积视觉重做。
-- Browser / Chrome 稳定后补跑线上截图级 smoke；如果控制层继续超时，优先改用稳定的 Playwright CLI 完成桌面与移动端截图检查，并在本文件记录工具差异和覆盖范围。
+- 后续如页面代码、公开图片资源、Vercel 部署或域名策略变化，复跑线上 HTTP smoke 和 Playwright 桌面 / 移动端截图级 smoke。
 - 首页主视觉或 Open Graph 图替换后，复查分享预览。
 - 四个项目有独立站上线后，重新评估域名区和 sitemap 边界。

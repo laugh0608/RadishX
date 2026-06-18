@@ -190,6 +190,8 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 
 该命令会检查指定站点的关键路由 HTML、`robots.txt`、`sitemap.xml` 和公开图片资源；进入发布阶段后可追加 `--www-url` 检查 `www` 到 canonical 根域的路径保留跳转。它不替代桌面 / 移动端 Browser 视觉 smoke。
 
+线上截图级发布检查优先使用 Playwright + 本机 Google Chrome，覆盖 `1440 x 900` 桌面和 `390 x 844` 移动端关键路由。对 lazy 图片较多的页面，需要逐图滚入视口并等待图片完成解码后再截 full-page 图。截图和临时汇总文件放在 `output/playwright/`，作为本地 QA artifact，不提交到仓库。
+
 建议脚本：
 
 ```bash

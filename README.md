@@ -2,7 +2,7 @@
 
 RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 RadishX 官网根站点，通过 GitHub 托管代码，并使用 Vercel 免费额度部署；当前主域为 <https://radishx.com/>，`www.radishx.com` 作为兼容入口跳转到根域。
 
-当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、四个项目详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、首批 Mascot / About 公开图片、项目详情页代表视觉、Radish Orbit 首页中心视觉、Mascot Gallery 整图预览和 `--rx-*` 样式 token；Pencil v1.1 桌面与独立移动设计源已补齐；已完成多轮本地响应式、可访问性、发布检查、HTTP smoke 准备、实现口径对齐检查、设计源同步说明和目标级开发文档同步。
+当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、四个项目详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、首批 Mascot / About 公开图片、项目详情页代表视觉、Radish Orbit 首页中心视觉、Mascot Gallery 整图预览和 `--rx-*` 样式 token；Pencil v1.1 桌面与独立移动设计源已补齐；已完成多轮本地响应式、可访问性、发布检查、HTTP smoke 准备、线上桌面 / 移动端截图级 smoke、实现口径对齐检查、设计源同步说明和目标级开发文档同步。
 
 ## 已确认方向
 
@@ -183,7 +183,7 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 - 四个项目后续是否提供真实截图或可公开视频素材。
 - RadishMind 后续是否补项目自有 Logo、Console 截图或协议 / 评测可视化图。
 - “萝小白”后续是否启动单张表情拆分清单、具体 seasonal 活动实现和下载口径。
-- 线上 HTTP、根域跳转和路径保留已完成 smoke；后续如果进入完整发布阶段，重点补齐桌面与移动端截图级 smoke。
+- 线上 HTTP、根域跳转、路径保留以及桌面 / 移动端截图级 smoke 已完成；后续如果页面、资源或部署变化，再复跑对应检查。
 
 ## 当前实现状态
 
