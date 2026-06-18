@@ -33,9 +33,9 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 | 首页首屏与主视觉 | [home-hero-visual.md](../features/home-hero-visual.md) | 站姿中心视觉锚点已接入，OG 已评估暂不替换 |
 | 四个项目详情页 | [project-detail-pages.md](../features/project-detail-pages.md) | 首版已实现，已补站内导览 |
 | 项目视觉素材准入准备 | [project-visual-asset-readiness.md](../features/project-visual-asset-readiness.md) | 四项目正式 Logo、截图、视频和自有视觉准入清单已建立 |
-| Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | Gallery / Usage、设计源、Chrome smoke、单张拆分准备清单与首批人工框选复核准备已完成 |
+| Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | Gallery / Usage、设计源、Chrome smoke、单张拆分准备清单、首批人工框选复核准备与授权 / 页面接入范围确认已完成 |
 | About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 二轮扫读优化已完成 |
-| 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 单张拆分准备清单、首批人工框选复核准备、seasonal 与项目视觉素材准入边界已记录 |
+| 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 单张拆分准备清单、首批人工框选复核准备、授权 / 页面接入范围、seasonal 与项目视觉素材准入边界已记录 |
 | 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地质量基线收束、HTTP smoke、实现口径对齐、设计源同步、Mascot Chrome smoke、线上 HTTP smoke 和线上截图级 smoke 已完成 |
 | 设计源精确化 | [design-source-refresh.md](../features/design-source-refresh.md) | v1.1 桌面 / 移动画板已补齐，Mascot Gallery / Usage 已同步 |
 | React 与设计源对照校准 | [react-design-alignment.md](../features/react-design-alignment.md) | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
@@ -83,10 +83,11 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 37. 用户手动打开 Chrome 移动端视图后，已补读线上首页移动 DOM 指标：`innerWidth`、`clientWidth` 和 `scrollWidth` 均为 `321`，H1、图片解码、broken image 和页面 error console 未发现阻断问题；但 Chrome 截图、CDP、可见 DOM、DOM snapshot 和跨路由补查仍出现控制层超时，因此线上移动截图级 smoke 仍待补。
 38. 已使用 Playwright + 本机 Google Chrome 完成线上截图级发布检查：覆盖 `https://radishx.com` 下 8 个关键路由在 `1440x900` 桌面与 `390x844` 移动视口的 full-page 截图、逐图 lazy 解码、横向宽度、broken image、console / page error 和触控目标检查，16 个组合均通过；截图与汇总保存在本地 `output/playwright/online-visual-smoke-2026-06-18/`，作为 QA artifact 不提交。
 39. 已完成 Mascot 首批 10 个单张表情候选的人工框选复核准备：源图 `1024x1536`、4 列 6 行，计划使用原图整格 `256x256` 框保留圆角边框、角色主体、表情符号和中文标签；当前仍不生成单张 Web 文件、不生成缩略图、不开放下载，全部保持 `candidate-only`。
+40. 已完成 Mascot 首批单张表情授权与页面接入范围确认：当前只允许作为 RadishX 官网内部轻量展示候选，允许位置为 `/mascot` 单张预览候选、404 辅助、FAQ / 状态反馈和开发日志辅助视觉；禁止进入下载区、素材包、社交贴纸包、首页首屏、四项目 Logo 或外部复用场景。
 
 下一步事项：
 
-1. 下一项可推进的开发准备是 Mascot 首批单张表情授权来源和页面接入范围确认：先确认允许 / 禁止使用场景、归属说明、撤回策略和是否只用于官网内部轻量展示，再决定是否生成公开 Web 文件。
+1. 下一项可推进的开发准备是 Mascot 首批单张表情 Web 文件生成与页面接入决策：先决定是否生成 `public/images/mascot/expressions/*-web.jpg`，以及是否在 `/mascot` 新增单张预览区；确认后再同步数据层、页面文案、设计源和验证计划。
 2. 四个项目视觉素材继续按准入清单等待真实候选来源；只有出现独立 Logo、真实截图、视频或 RadishMind 自有视觉候选时，才进入素材审核、Web 优化和设计源同步。
 3. 设计源只在 React 页面继续调整、公开素材替换或单张表情进入页面展示时同步对应 v1.1 桌面 / 移动画板；涉及 `.pen` 设计源时只通过 Pencil 工具处理。
 4. 不启动 seasonal 页面实现，除非先确认具体活动目标、上线 / 下线时间、页面位置、文案边界、授权来源和撤下策略。
@@ -126,7 +127,7 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 - 四个项目后续是否补独立稳定 Logo，用于替换当前代码内临时标识。
 - 四个项目详情页后续是否需要真实截图或视频素材。
 - RadishMind 后续是否补项目自有 Logo、Console 截图或真实图片素材，用于替换当前代码内评测回路图。
-- “萝小白”首批单张表情候选已完成人工框选复核准备，后续是否进入授权确认、文件生成和页面接入仍待确认；具体 seasonal 活动实现和下载口径仍待确认。
+- “萝小白”首批单张表情候选已完成人工框选复核准备和授权 / 页面接入范围确认，后续是否生成单张 Web 文件并进入 `/mascot` 页面仍待确认；具体 seasonal 活动实现和下载口径仍待确认。
 
 ## 后续顺序
 
