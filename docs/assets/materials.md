@@ -118,7 +118,7 @@
 
 ## Mascot 表情拆分与下载评估
 
-评估日期：2026-06-15。准备清单更新：2026-06-17。
+评估日期：2026-06-15。准备清单更新：2026-06-17。人工框选复核准备：2026-06-18。
 
 当前结论：
 
@@ -132,6 +132,8 @@
 
 首批候选只从 `assets/avatars/child/radish-child-expression-sheet-grid.png` 中选取，原因是该表情格边框、标签和主体比例较统一，适合后续人工逐格复核。`assets/avatars/child/radish-child-sticker-sheet-wide-01.png` 至 `04.png` 先列为二批复核来源，进入单张前需额外确认文字方向、边缘留白、社交语境和授权。
 
+2026-06-18 已完成首批候选的人工框选复核准备：源图为 `1024x1536` PNG，按 4 列 6 行记录原图整格 `256x256` 计划裁切框，用于保留圆角边框、角色主体、表情符号和中文标签。本轮没有生成单张 Web 文件、缩略图或下载入口；全部候选继续保持 `candidate-only`，后续生成文件前仍需确认授权来源、页面接入范围和撤回策略。
+
 | id | 来源格位 | 标签 | emotion | slug | 当前状态 | 计划 Web 路径 | 使用场景 | 审核备注 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `rx-expression-001` | `R1C1` | 开心 | `happy` | `happy` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-happy-web.jpg` | 未来 Mascot 页面基础情绪候选。 | 保留双手、表情符号和中文标签。 |
@@ -144,6 +146,21 @@
 | `rx-expression-008` | `R5C2` | OK | `ok` | `ok` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-ok-web.jpg` | 未来完成状态或确认反馈候选。 | 不作为独立授权图标。 |
 | `rx-expression-009` | `R5C3` | 加油 | `cheer` | `cheer` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-cheer-web.jpg` | 未来项目进展或开发日志辅助视觉候选。 | 不用于商业承诺或进度承诺。 |
 | `rx-expression-010` | `R6C4` | 再见 | `goodbye` | `goodbye` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-goodbye-web.jpg` | 未来页尾彩蛋、404 辅助或结束状态候选。 | 不作为可下载贴纸。 |
+
+计划框选坐标使用原始 PNG 坐标：
+
+| id | 计划裁切框 | 保留要素 | 复核结论 |
+| --- | --- | --- | --- |
+| `rx-expression-001` | `x=0,y=0,w=256,h=256` | 双手、黄色强调线、中文标签。 | 可进入授权确认；不建议收紧到只剩脸部。 |
+| `rx-expression-002` | `x=256,y=0,w=256,h=256` | 怒气符号、两侧蒸汽、抱臂姿态、中文标签。 | 可进入授权确认；必须保留蒸汽符号。 |
+| `rx-expression-003` | `x=512,y=0,w=256,h=256` | 左侧爆点、双手、张口表情、中文标签。 | 可进入授权确认；避免裁掉左侧符号。 |
+| `rx-expression-004` | `x=512,y=256,w=256,h=256` | 星形符号、眨眼、手势、中文标签。 | 可进入授权确认；低风险优先候选。 |
+| `rx-expression-005` | `x=768,y=256,w=256,h=256` | 两侧星形符号、合手姿态、中文标签。 | 可进入授权确认；不写成上线承诺。 |
+| `rx-expression-006` | `x=256,y=512,w=256,h=256` | 右上问号、思考姿态、中文标签。 | 可进入授权确认；避免裁掉问号。 |
+| `rx-expression-007` | `x=512,y=512,w=256,h=256` | 省略号、脸部表情、中文标签。 | 可进入授权确认；不用于嘲讽用户。 |
+| `rx-expression-008` | `x=256,y=1024,w=256,h=256` | `OK` 字样、手势、眨眼表情、中文标签。 | 可进入授权确认；不作为独立授权图标。 |
+| `rx-expression-009` | `x=512,y=1024,w=256,h=256` | 强调线、举拳姿态、中文标签。 | 可进入授权确认；不用于商业承诺或进度承诺。 |
+| `rx-expression-010` | `x=768,y=1280,w=256,h=256` | 红色强调线、挥手、完整外装、中文标签。 | 可进入授权确认；适合页尾或 404 辅助候选。 |
 
 命名规则：
 
