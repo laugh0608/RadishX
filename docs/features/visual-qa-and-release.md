@@ -23,7 +23,7 @@
 
 2026-06-18 已改用 Playwright 加本机 Google Chrome 完成线上截图级 smoke，覆盖 `1440x900` 桌面和 `390x844` 移动视口下 8 个关键路由。检查中对 lazy 图片做逐图滚动和解码等待，避免 full-page 截图过早截到空白 Gallery。截图与汇总输出保存在本地 `output/playwright/online-visual-smoke-2026-06-18/`，该目录作为 QA artifact 不提交。
 
-2026-06-18 Mascot 首批单张表情 Web 文件生成并接入 `/mascot` 后，已完成本地构建、静态输出检查、本地 HTTP smoke、`sips` 尺寸检查和 Playwright 桌面 / 移动端 smoke。检查确认 10 张单张表情均为 `256x256`，`/mascot` 在 `1440x900` 与 `390x844` 下无横向溢出、无 broken image、无 console / page error，单张表情候选区没有下载按钮。
+2026-06-18 Mascot 首批单张表情 Web 文件生成并接入 `/mascot` 后，已完成本地构建、静态输出检查、本地 HTTP smoke、`sips` 尺寸检查、Playwright 桌面 / 移动端 smoke 和 Pencil 桌面 / 移动 v1.1 设计源同步。检查确认 10 张单张表情均为 `256x256`，`/mascot` 在 `1440x900` 与 `390x844` 下无横向溢出、无 broken image、无 console / page error，单张表情候选区没有下载按钮。
 
 ## 范围
 
@@ -102,7 +102,7 @@
 - 使用 Playwright + 本机 Google Chrome 检查 `/mascot`：`1440x900` 桌面与 `390x844` 移动视口均返回 `200`，单张表情卡片 `10/10`、单张表情图片 `10/10`，Gallery 卡片 `7`、Usage 卡片 `4`；所有单张表情图完成解码，natural size 均为 `256x256`。
 - 两个视口 `scrollWidth` 与 `clientWidth` 一致，desktop 为 `1440/1440`，mobile 为 `390/390`；broken image、console error、page error、单张候选区链接 / 按钮和横向溢出元素均为 `0`。
 - 截图与报告保存在本地 `output/playwright/mascot-expression-smoke-2026-06-18/`，作为 QA artifact 不提交。
-- 本轮不推送、不部署；Pencil 桌面编辑器当前无法连接，设计源同步需后续在 Pencil 可用时补做。
+- 本轮不推送、不部署；Pencil 桌面 / 移动 v1.1 设计源已同步并通过 `snapshot_layout`。
 
 2026-06-15 已完成一轮本地发布检查：
 
@@ -142,6 +142,8 @@
 - 已通过 Pencil 在 5 个画板底部追加 `2026-06-16 实现口径同步` 说明 band，记录当前 React 实现、素材边界和后续重绘注意事项；同步后再次检查无布局问题。
 - 使用 Browser 检查 `/`、`/radish`、`/catalyst`、`/flow`、`/mind`、`/mascot`、`/about` 和 `/abc-test` 在 `1440x900` 与 `390x844` 下的标题、H1、导航 active 状态、横向滚动、触控目标和 console error；未发现阻断问题。
 - 对首页和 `/mascot` 追加滚动加载复查；Mascot 页 12 张图片滚入视口后均完成加载，首页重复使用的可爱Q版站姿图具备有效原始尺寸，无图片资源 404 或页面 error。
+- 2026-06-18 使用 Pencil 同步 `Mascot Page v1.1 - React Accurate` 与 `Mascot Page Mobile v1.1 - React Accurate` 的单张表情候选预览区；桌面为 5 列 x 2 行，移动为 2 列 x 5 行，均保留“官网内部展示”状态和下载关闭口径。
+- 2026-06-18 Pencil `snapshot_layout` 复查两张 Mascot v1.1 画板均无布局问题，并已截图抽查新增候选区，未发现裁切、重叠或下载入口误导。
 
 ## 线上检查
 

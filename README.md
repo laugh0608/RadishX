@@ -2,7 +2,7 @@
 
 RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 RadishX 官网根站点，通过 GitHub 托管代码，并使用 Vercel 免费额度部署；当前主域为 <https://radishx.com/>，`www.radishx.com` 作为兼容入口跳转到根域。
 
-当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、四个项目详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、首批 Mascot / About 公开图片、项目详情页代表视觉、Radish Orbit 首页中心视觉、Mascot Gallery 整图预览和 `--rx-*` 样式 token；Pencil v1.1 桌面与独立移动设计源已补齐；已完成多轮本地响应式、可访问性、发布检查、HTTP smoke 准备、线上桌面 / 移动端截图级 smoke、实现口径对齐检查、设计源同步说明和目标级开发文档同步。
+当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、四个项目详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、首批 Mascot / About 公开图片、项目详情页代表视觉、Radish Orbit 首页中心视觉、Mascot Gallery 整图预览、首批单张表情候选预览和 `--rx-*` 样式 token；Pencil v1.1 桌面与独立移动设计源已补齐，并已同步 Mascot 单张表情候选预览区；已完成多轮本地响应式、可访问性、发布检查、HTTP smoke 准备、线上桌面 / 移动端截图级 smoke、实现口径对齐检查、设计源同步说明和目标级开发文档同步。
 
 ## 已确认方向
 

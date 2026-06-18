@@ -45,7 +45,7 @@ Mascot 页已接入首批确认图片，包含原始形象、可爱Q版安全设
 - 首批 10 张可爱Q版基础表情已生成 `256x256` Web 展示图，接入 `/mascot` 单张候选预览区，状态为 `internal-preview`。
 - Gallery 已展示每张公开图的当前状态、使用边界和后续处理，降低误解为下载素材包的风险。
 - Usage 说明已按公开展示、安全口径、授权 / 下载和活动图边界分组。
-- Pencil 桌面与独立移动 v1.1 画板已同步 Gallery 状态 / 边界 / 后续处理和 Usage 四组边界；首批单张表情候选预览区需要在本轮页面改动后继续同步。
+- Pencil 桌面与独立移动 v1.1 画板已同步 Gallery 状态 / 边界 / 后续处理、首批单张表情候选预览区和 Usage 四组边界。
 - 已使用 Chrome 插件补跑本地 `/mascot` 桌面与 `390x844` 移动端视觉 smoke，Gallery facts、Usage 分组、图片加载、横向溢出、触控目标和 console error 均未发现阻断问题。
 - 单张拆分、缩略图命名和下载政策已完成当前阶段评估；首批单张表情进入官网内部候选预览，下载继续关闭。
 - 已建立单张表情拆分准备清单：首批只从 `assets/avatars/child/radish-child-expression-sheet-grid.png` 选取低风险基础情绪候选；4 张贴纸横图因版式、文字方向和间距不一致，先列为二批复核来源。
@@ -234,7 +234,7 @@ Mascot 页已接入首批确认图片，包含原始形象、可爱Q版安全设
 - 2026-06-18 授权与页面接入范围确认为纯文档治理变更，未改 React 代码、未新增公开资源、未生成单张 Web 文件或缩略图；执行 `git diff --check` 验证即可。
 - 2026-06-18 首批单张表情 Web 文件生成与页面接入需执行 `npm run build`、`npm run check:local-release`、本地 HTTP smoke、`git diff --check`、`sips` 尺寸检查，以及 `/mascot` 桌面 / 移动端 smoke。
 - 2026-06-18 首批单张表情 Web 文件生成与页面接入验证通过：`npm run build`、`npm run check:local-release`、`npm run check:http-smoke -- --base-url http://127.0.0.1:4500`、`git diff --check` 和 `sips` 尺寸检查均通过；Playwright + 本机 Chrome 确认 `/mascot` 在 `1440x900` 与 `390x844` 下单张表情卡片 `10/10`、图片 `10/10`，无横向溢出、broken image、console error 或 page error。
-- 2026-06-18 尝试通过 Pencil 同步桌面 / 移动 v1.1 设计源时，Pencil 桌面编辑器未连接，`get_editor_state` 两次失败；本轮不直接读写 `.pen`，设计源同步留到 Pencil 可用后补做。
+- 2026-06-18 通过 Pencil 同步桌面 / 移动 v1.1 设计源：`Mascot Page v1.1 - React Accurate` 新增 5 列 x 2 行单张表情候选区，`Mascot Page Mobile v1.1 - React Accurate` 新增 2 列 x 5 行单张表情候选区；两张画板 `snapshot_layout` 均无布局问题，并已截图抽查。
 
 ## 完成标准
 
@@ -252,5 +252,5 @@ Mascot 页已接入首批确认图片，包含原始形象、可爱Q版安全设
 
 - 如果未来确认具体 seasonal 活动，先按本页评估表确认活动窗口、页面位置、文案边界和撤下策略，再生成 Web 版本。
 - 后续如继续扩展单张表情，先基于本页计划框选和接入范围评估新增格位、缩略图或页面位置，再同步数据层、页面文案和设计源。
-- Pencil 可用后，同步 `Mascot Page v1.1 - React Accurate` 与 `Mascot Page Mobile v1.1 - React Accurate` 的单张表情候选预览区，并执行 `snapshot_layout`。
+- 如后续继续调整单张表情展示区，需同步 `Mascot Page v1.1 - React Accurate` 与 `Mascot Page Mobile v1.1 - React Accurate` 并执行 `snapshot_layout`。
 - 素材下载政策待版权、授权和文件包边界确认后再重新评估。

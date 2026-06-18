@@ -13093,7 +13093,7 @@
       "name": "Mascot Page v1.1 - React Accurate",
       "clip": true,
       "width": 1440,
-      "height": 3560,
+      "height": 4320,
       "fill": "$rx-bg-app",
       "layout": "vertical",
       "children": [
@@ -15069,6 +15069,1183 @@
                       "fontFamily": "$rx-font-body",
                       "fontSize": 15,
                       "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xr7aL",
+          "name": "Expressions - Internal Preview",
+          "width": "fill_container",
+          "height": 760,
+          "fill": "$rx-bg-surface",
+          "layout": "vertical",
+          "gap": 30,
+          "padding": [
+            86,
+            72
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "DKe5Y",
+              "name": "Expressions Header",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "RSF5o",
+                  "name": "Expressions Eyebrow",
+                  "fill": "$rx-brand-primary",
+                  "content": "EXPRESSIONS",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "pFVhB",
+                  "name": "Expressions Title",
+                  "fill": "$rx-text-primary",
+                  "content": "首批单张表情展示候选",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 34,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "CQf7X",
+                  "name": "Expressions Description",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 760,
+                  "content": "10 张基础表情已生成 Web 展示图，只用于官网内部预览；下载、素材包和外部分发口径继续关闭。",
+                  "lineHeight": 1.55,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FXhIp",
+              "name": "Expressions Grid",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "cdtvb",
+                  "name": "Expression Row 1",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "u8FfJq",
+                      "name": "Expression Card 开心",
+                      "width": "fill_container",
+                      "height": 230,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "ixVhU",
+                          "name": "Expression Image 开心",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-happy-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 108,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "OqDVN",
+                          "name": "Expression Meta 开心",
+                          "width": "fill_container",
+                          "gap": 6,
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "V4Kkz",
+                              "name": "Expression Cell 开心",
+                              "fill": "$rx-brand-primary",
+                              "content": "R1C1",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "ukvqj",
+                              "name": "Expression Badge 开心",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                8
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "u1dsC",
+                                  "name": "Expression Badge Text 开心",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 10,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "w6qxp3",
+                          "name": "Expression Label 开心",
+                          "fill": "$rx-text-primary",
+                          "content": "开心",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Tcfkc",
+                          "name": "Expression Emotion 开心",
+                          "fill": "$rx-text-muted",
+                          "content": "HAPPY",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "RbKBh",
+                          "name": "Expression Use 开心",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "正向反馈候选",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "EmX98",
+                      "name": "Expression Card 生气",
+                      "width": "fill_container",
+                      "height": 230,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "ClNFF",
+                          "name": "Expression Image 生气",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-angry-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 108,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "S5XU1",
+                          "name": "Expression Meta 生气",
+                          "width": "fill_container",
+                          "gap": 6,
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "DbuXX",
+                              "name": "Expression Cell 生气",
+                              "fill": "$rx-brand-primary",
+                              "content": "R1C2",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "vmzzO",
+                              "name": "Expression Badge 生气",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                8
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "HqaOh",
+                                  "name": "Expression Badge Text 生气",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 10,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "VyvUD",
+                          "name": "Expression Label 生气",
+                          "fill": "$rx-text-primary",
+                          "content": "生气",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "HJpSu",
+                          "name": "Expression Emotion 生气",
+                          "fill": "$rx-text-muted",
+                          "content": "ANGRY",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "E0Rwmo",
+                          "name": "Expression Use 生气",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "轻量状态提醒",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YhK2r",
+                      "name": "Expression Card 震惊",
+                      "width": "fill_container",
+                      "height": 230,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "u1PNtM",
+                          "name": "Expression Image 震惊",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-surprised-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 108,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Q9khn",
+                          "name": "Expression Meta 震惊",
+                          "width": "fill_container",
+                          "gap": 6,
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "xS7bV",
+                              "name": "Expression Cell 震惊",
+                              "fill": "$rx-brand-primary",
+                              "content": "R1C3",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "WITm1",
+                              "name": "Expression Badge 震惊",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                8
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "o0U4x",
+                                  "name": "Expression Badge Text 震惊",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 10,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "Bv91b",
+                          "name": "Expression Label 震惊",
+                          "fill": "$rx-text-primary",
+                          "content": "震惊",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PstJC",
+                          "name": "Expression Emotion 震惊",
+                          "fill": "$rx-text-muted",
+                          "content": "SURPRISED",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "fytdo",
+                          "name": "Expression Use 震惊",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "异常提示候选",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gIea6",
+                      "name": "Expression Card 得意",
+                      "width": "fill_container",
+                      "height": 230,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "L7O8o3",
+                          "name": "Expression Image 得意",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-proud-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 108,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "G1NIw",
+                          "name": "Expression Meta 得意",
+                          "width": "fill_container",
+                          "gap": 6,
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "OwBml",
+                              "name": "Expression Cell 得意",
+                              "fill": "$rx-brand-primary",
+                              "content": "R2C3",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "h8XVX",
+                              "name": "Expression Badge 得意",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                8
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "gXioW",
+                                  "name": "Expression Badge Text 得意",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 10,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "YWzRK",
+                          "name": "Expression Label 得意",
+                          "fill": "$rx-text-primary",
+                          "content": "得意",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "q3U4gH",
+                          "name": "Expression Emotion 得意",
+                          "fill": "$rx-text-muted",
+                          "content": "PROUD",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "I9aQS",
+                          "name": "Expression Use 得意",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "完成反馈候选",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SJpdZ",
+                      "name": "Expression Card 期待",
+                      "width": "fill_container",
+                      "height": 230,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "pqds6",
+                          "name": "Expression Image 期待",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-expectant-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 108,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "jkHY5",
+                          "name": "Expression Meta 期待",
+                          "width": "fill_container",
+                          "gap": 6,
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "tuPjj",
+                              "name": "Expression Cell 期待",
+                              "fill": "$rx-brand-primary",
+                              "content": "R2C4",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "g0zXND",
+                              "name": "Expression Badge 期待",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                8
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "LMe4T",
+                                  "name": "Expression Badge Text 期待",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 10,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "fWlYF",
+                          "name": "Expression Label 期待",
+                          "fill": "$rx-text-primary",
+                          "content": "期待",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dcWU5",
+                          "name": "Expression Emotion 期待",
+                          "fill": "$rx-text-muted",
+                          "content": "EXPECTANT",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PWPZ4",
+                          "name": "Expression Use 期待",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "预告引导候选",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "rco2P",
+                  "name": "Expression Row 2",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "OoM5Q",
+                      "name": "Expression Card 疑问",
+                      "width": "fill_container",
+                      "height": 230,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "fxXcH",
+                          "name": "Expression Image 疑问",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-question-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 108,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "g1a2UX",
+                          "name": "Expression Meta 疑问",
+                          "width": "fill_container",
+                          "gap": 6,
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "c2ACBU",
+                              "name": "Expression Cell 疑问",
+                              "fill": "$rx-brand-primary",
+                              "content": "R3C2",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "thKls",
+                              "name": "Expression Badge 疑问",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                8
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "T2M9nX",
+                                  "name": "Expression Badge Text 疑问",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 10,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "nbXGa",
+                          "name": "Expression Label 疑问",
+                          "fill": "$rx-text-primary",
+                          "content": "疑问",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Aw9Lp",
+                          "name": "Expression Emotion 疑问",
+                          "fill": "$rx-text-muted",
+                          "content": "QUESTION",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "P03gX",
+                          "name": "Expression Use 疑问",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "FAQ 提示候选",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "v3Jlw",
+                      "name": "Expression Card 无语",
+                      "width": "fill_container",
+                      "height": 230,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "erz4a",
+                          "name": "Expression Image 无语",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-speechless-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 108,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "x6t2T",
+                          "name": "Expression Meta 无语",
+                          "width": "fill_container",
+                          "gap": 6,
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "q5jLR",
+                              "name": "Expression Cell 无语",
+                              "fill": "$rx-brand-primary",
+                              "content": "R3C3",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "ADy0e",
+                              "name": "Expression Badge 无语",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                8
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "C4MBHM",
+                                  "name": "Expression Badge Text 无语",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 10,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "pkU96",
+                          "name": "Expression Label 无语",
+                          "fill": "$rx-text-primary",
+                          "content": "无语",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "B3Rgk",
+                          "name": "Expression Emotion 无语",
+                          "fill": "$rx-text-muted",
+                          "content": "SPEECHLESS",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Tl0ar",
+                          "name": "Expression Use 无语",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "空状态候选",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "N0A04",
+                      "name": "Expression Card OK",
+                      "width": "fill_container",
+                      "height": 230,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "Ydb0J",
+                          "name": "Expression Image OK",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-ok-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 108,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "gFYTH",
+                          "name": "Expression Meta OK",
+                          "width": "fill_container",
+                          "gap": 6,
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "zNr5z",
+                              "name": "Expression Cell OK",
+                              "fill": "$rx-brand-primary",
+                              "content": "R5C2",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "M7rcF",
+                              "name": "Expression Badge OK",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                8
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "QuJby",
+                                  "name": "Expression Badge Text OK",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 10,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "LjkQT",
+                          "name": "Expression Label OK",
+                          "fill": "$rx-text-primary",
+                          "content": "OK",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Co44H",
+                          "name": "Expression Emotion OK",
+                          "fill": "$rx-text-muted",
+                          "content": "OK",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "T8nis",
+                          "name": "Expression Use OK",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "确认反馈候选",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "jbyq0",
+                      "name": "Expression Card 加油",
+                      "width": "fill_container",
+                      "height": 230,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "ybQoC",
+                          "name": "Expression Image 加油",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-cheer-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 108,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "J1llq",
+                          "name": "Expression Meta 加油",
+                          "width": "fill_container",
+                          "gap": 6,
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "xKXhJ",
+                              "name": "Expression Cell 加油",
+                              "fill": "$rx-brand-primary",
+                              "content": "R5C3",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "cXsOv",
+                              "name": "Expression Badge 加油",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                8
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "x4Hfew",
+                                  "name": "Expression Badge Text 加油",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 10,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "QKugE",
+                          "name": "Expression Label 加油",
+                          "fill": "$rx-text-primary",
+                          "content": "加油",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Pf91U",
+                          "name": "Expression Emotion 加油",
+                          "fill": "$rx-text-muted",
+                          "content": "CHEER",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "zlJOw",
+                          "name": "Expression Use 加油",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "开发日志候选",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JL6N4",
+                      "name": "Expression Card 再见",
+                      "width": "fill_container",
+                      "height": 230,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "cKT4U",
+                          "name": "Expression Image 再见",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-goodbye-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 108,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "E9iLIq",
+                          "name": "Expression Meta 再见",
+                          "width": "fill_container",
+                          "gap": 6,
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "m2gsU",
+                              "name": "Expression Cell 再见",
+                              "fill": "$rx-brand-primary",
+                              "content": "R6C4",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "B56fv",
+                              "name": "Expression Badge 再见",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                8
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "RDWjn",
+                                  "name": "Expression Badge Text 再见",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 10,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "RKXTz",
+                          "name": "Expression Label 再见",
+                          "fill": "$rx-text-primary",
+                          "content": "再见",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kTpf7",
+                          "name": "Expression Emotion 再见",
+                          "fill": "$rx-text-muted",
+                          "content": "GOODBYE",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "uJEAd",
+                          "name": "Expression Use 再见",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "页尾 / 404 候选",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
                     }
                   ]
                 }
@@ -19119,7 +20296,7 @@
       "name": "Mascot Page Mobile v1.1 - React Accurate",
       "clip": true,
       "width": 390,
-      "height": 4500,
+      "height": 6160,
       "fill": "$rx-bg-app",
       "layout": "vertical",
       "children": [
@@ -20422,6 +21599,1203 @@
                   "fontFamily": "$rx-font-body",
                   "fontSize": 12,
                   "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bNiLK",
+          "name": "Mobile Expressions - Internal Preview",
+          "width": "fill_container",
+          "height": 1560,
+          "fill": "$rx-bg-surface",
+          "layout": "vertical",
+          "gap": 22,
+          "padding": [
+            58,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "gQzT1",
+              "name": "Mobile Expressions Header",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mIP1I",
+                  "name": "Mobile Expressions Eyebrow",
+                  "fill": "$rx-brand-primary",
+                  "content": "EXPRESSIONS",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "dXIUV",
+                  "name": "Mobile Expressions Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "首批单张表情展示候选",
+                  "lineHeight": 1.12,
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 26,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "o9wvN3",
+                  "name": "Mobile Expressions Description",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "10 张基础表情只用于官网内部预览；下载、素材包和外部分发继续关闭。",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FFkv0",
+              "name": "Mobile Expressions Grid",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "n2KqwA",
+                  "name": "Mobile Expression Row 1",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "XG2yE",
+                      "name": "Mobile Expression Card 开心",
+                      "width": "fill_container",
+                      "height": 252,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 7,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "Qqvzd",
+                          "name": "Mobile Expression Image 开心",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-happy-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 118,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "nyr16",
+                          "name": "Mobile Expression Meta 开心",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "cwPso",
+                              "name": "Mobile Expression Cell 开心",
+                              "fill": "$rx-brand-primary",
+                              "content": "R1C1",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "HwgIK",
+                              "name": "Mobile Expression Badge 开心",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                7
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "wuDAA",
+                                  "name": "Mobile Expression Badge Text 开心",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 9,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "D1J53A",
+                          "name": "Mobile Expression Label 开心",
+                          "fill": "$rx-text-primary",
+                          "content": "开心",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "YOrF8",
+                          "name": "Mobile Expression Emotion 开心",
+                          "fill": "$rx-text-muted",
+                          "content": "HAPPY",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 9,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JiDxm",
+                          "name": "Mobile Expression Use 开心",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "正向反馈",
+                          "lineHeight": 1.35,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "lK5B2",
+                      "name": "Mobile Expression Card 生气",
+                      "width": "fill_container",
+                      "height": 252,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 7,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "I3DRL",
+                          "name": "Mobile Expression Image 生气",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-angry-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 118,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "SJ9hH",
+                          "name": "Mobile Expression Meta 生气",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "EqBWW",
+                              "name": "Mobile Expression Cell 生气",
+                              "fill": "$rx-brand-primary",
+                              "content": "R1C2",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "S6zyT1",
+                              "name": "Mobile Expression Badge 生气",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                7
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "ggpx5",
+                                  "name": "Mobile Expression Badge Text 生气",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 9,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "a6yd6",
+                          "name": "Mobile Expression Label 生气",
+                          "fill": "$rx-text-primary",
+                          "content": "生气",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "eystO",
+                          "name": "Mobile Expression Emotion 生气",
+                          "fill": "$rx-text-muted",
+                          "content": "ANGRY",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 9,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Oxzng",
+                          "name": "Mobile Expression Use 生气",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "状态提醒",
+                          "lineHeight": 1.35,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "U4fuSH",
+                  "name": "Mobile Expression Row 2",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "HfUdN",
+                      "name": "Mobile Expression Card 震惊",
+                      "width": "fill_container",
+                      "height": 252,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 7,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "sVZw9",
+                          "name": "Mobile Expression Image 震惊",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-surprised-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 118,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "N9qerK",
+                          "name": "Mobile Expression Meta 震惊",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "AKCg6",
+                              "name": "Mobile Expression Cell 震惊",
+                              "fill": "$rx-brand-primary",
+                              "content": "R1C3",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Rz6v6",
+                              "name": "Mobile Expression Badge 震惊",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                7
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "pvBFj",
+                                  "name": "Mobile Expression Badge Text 震惊",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 9,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "xupuU",
+                          "name": "Mobile Expression Label 震惊",
+                          "fill": "$rx-text-primary",
+                          "content": "震惊",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "o4jqW",
+                          "name": "Mobile Expression Emotion 震惊",
+                          "fill": "$rx-text-muted",
+                          "content": "SURPRISED",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 9,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "el8Aq",
+                          "name": "Mobile Expression Use 震惊",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "异常提示",
+                          "lineHeight": 1.35,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JPc8R",
+                      "name": "Mobile Expression Card 得意",
+                      "width": "fill_container",
+                      "height": 252,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 7,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "x80bq",
+                          "name": "Mobile Expression Image 得意",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-proud-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 118,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "i687e",
+                          "name": "Mobile Expression Meta 得意",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "UmrHR",
+                              "name": "Mobile Expression Cell 得意",
+                              "fill": "$rx-brand-primary",
+                              "content": "R2C3",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "jaVWW",
+                              "name": "Mobile Expression Badge 得意",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                7
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "GijiE",
+                                  "name": "Mobile Expression Badge Text 得意",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 9,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "mhnDi",
+                          "name": "Mobile Expression Label 得意",
+                          "fill": "$rx-text-primary",
+                          "content": "得意",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "APkZZ",
+                          "name": "Mobile Expression Emotion 得意",
+                          "fill": "$rx-text-muted",
+                          "content": "PROUD",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 9,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "xylJZ",
+                          "name": "Mobile Expression Use 得意",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "完成反馈",
+                          "lineHeight": 1.35,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "b4gZV",
+                  "name": "Mobile Expression Row 3",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "NcyD1",
+                      "name": "Mobile Expression Card 期待",
+                      "width": "fill_container",
+                      "height": 252,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 7,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "O02dyh",
+                          "name": "Mobile Expression Image 期待",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-expectant-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 118,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "T7nmd",
+                          "name": "Mobile Expression Meta 期待",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "tHrDe",
+                              "name": "Mobile Expression Cell 期待",
+                              "fill": "$rx-brand-primary",
+                              "content": "R2C4",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "E0XUZV",
+                              "name": "Mobile Expression Badge 期待",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                7
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "WZi34",
+                                  "name": "Mobile Expression Badge Text 期待",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 9,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "uH716",
+                          "name": "Mobile Expression Label 期待",
+                          "fill": "$rx-text-primary",
+                          "content": "期待",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "F6NDh",
+                          "name": "Mobile Expression Emotion 期待",
+                          "fill": "$rx-text-muted",
+                          "content": "EXPECTANT",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 9,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "IPOsk",
+                          "name": "Mobile Expression Use 期待",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "预告引导",
+                          "lineHeight": 1.35,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hWY4t",
+                      "name": "Mobile Expression Card 疑问",
+                      "width": "fill_container",
+                      "height": 252,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 7,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "bJ2UW",
+                          "name": "Mobile Expression Image 疑问",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-question-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 118,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "SDK08",
+                          "name": "Mobile Expression Meta 疑问",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "GDQrz",
+                              "name": "Mobile Expression Cell 疑问",
+                              "fill": "$rx-brand-primary",
+                              "content": "R3C2",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "ee4Bf",
+                              "name": "Mobile Expression Badge 疑问",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                7
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Udjy5",
+                                  "name": "Mobile Expression Badge Text 疑问",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 9,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "VdWUG",
+                          "name": "Mobile Expression Label 疑问",
+                          "fill": "$rx-text-primary",
+                          "content": "疑问",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "FUDSV",
+                          "name": "Mobile Expression Emotion 疑问",
+                          "fill": "$rx-text-muted",
+                          "content": "QUESTION",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 9,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "x3dwHw",
+                          "name": "Mobile Expression Use 疑问",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "FAQ 提示",
+                          "lineHeight": 1.35,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "o4BMgB",
+                  "name": "Mobile Expression Row 4",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "v6RqHM",
+                      "name": "Mobile Expression Card 无语",
+                      "width": "fill_container",
+                      "height": 252,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 7,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "EgEiD",
+                          "name": "Mobile Expression Image 无语",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-speechless-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 118,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "mHqDK",
+                          "name": "Mobile Expression Meta 无语",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "JsNwl",
+                              "name": "Mobile Expression Cell 无语",
+                              "fill": "$rx-brand-primary",
+                              "content": "R3C3",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "kf0t0",
+                              "name": "Mobile Expression Badge 无语",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                7
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "lXlGM",
+                                  "name": "Mobile Expression Badge Text 无语",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 9,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "FrmmJ",
+                          "name": "Mobile Expression Label 无语",
+                          "fill": "$rx-text-primary",
+                          "content": "无语",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "RHS4L",
+                          "name": "Mobile Expression Emotion 无语",
+                          "fill": "$rx-text-muted",
+                          "content": "SPEECHLESS",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 9,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "rySo2",
+                          "name": "Mobile Expression Use 无语",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "空状态",
+                          "lineHeight": 1.35,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "sluYT",
+                      "name": "Mobile Expression Card OK",
+                      "width": "fill_container",
+                      "height": 252,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 7,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "DJsmw",
+                          "name": "Mobile Expression Image OK",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-ok-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 118,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "PgMcO",
+                          "name": "Mobile Expression Meta OK",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "PtTKN",
+                              "name": "Mobile Expression Cell OK",
+                              "fill": "$rx-brand-primary",
+                              "content": "R5C2",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "pY7iY",
+                              "name": "Mobile Expression Badge OK",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                7
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "hrjNs",
+                                  "name": "Mobile Expression Badge Text OK",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 9,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "wZHN3",
+                          "name": "Mobile Expression Label OK",
+                          "fill": "$rx-text-primary",
+                          "content": "OK",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "w5SMs",
+                          "name": "Mobile Expression Emotion OK",
+                          "fill": "$rx-text-muted",
+                          "content": "OK",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 9,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "af2bK",
+                          "name": "Mobile Expression Use OK",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "确认反馈",
+                          "lineHeight": 1.35,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Vxp0n",
+                  "name": "Mobile Expression Row 5",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "v6phQd",
+                      "name": "Mobile Expression Card 加油",
+                      "width": "fill_container",
+                      "height": 252,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 7,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "SBMcj",
+                          "name": "Mobile Expression Image 加油",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-cheer-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 118,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "sy2RQ",
+                          "name": "Mobile Expression Meta 加油",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "QrPrT",
+                              "name": "Mobile Expression Cell 加油",
+                              "fill": "$rx-brand-primary",
+                              "content": "R5C3",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "GXMhM",
+                              "name": "Mobile Expression Badge 加油",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                7
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "R8ZPG",
+                                  "name": "Mobile Expression Badge Text 加油",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 9,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZE3VY",
+                          "name": "Mobile Expression Label 加油",
+                          "fill": "$rx-text-primary",
+                          "content": "加油",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "f64lWu",
+                          "name": "Mobile Expression Emotion 加油",
+                          "fill": "$rx-text-muted",
+                          "content": "CHEER",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 9,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JL4lY",
+                          "name": "Mobile Expression Use 加油",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "开发日志",
+                          "lineHeight": 1.35,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Cyoq5",
+                      "name": "Mobile Expression Card 再见",
+                      "width": "fill_container",
+                      "height": 252,
+                      "fill": "#fbf7f0cc",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 7,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "ULWTG",
+                          "name": "Mobile Expression Image 再见",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/expressions/radish-child-expression-goodbye-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 118,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Au98n",
+                          "name": "Mobile Expression Meta 再见",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "VrYaf",
+                              "name": "Mobile Expression Cell 再见",
+                              "fill": "$rx-brand-primary",
+                              "content": "R6C4",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "WIrW0",
+                              "name": "Mobile Expression Badge 再见",
+                              "fill": "$rx-brand-soft",
+                              "cornerRadius": "$rx-radius-control",
+                              "padding": [
+                                4,
+                                7
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "QvUZF",
+                                  "name": "Mobile Expression Badge Text 再见",
+                                  "fill": "$rx-brand-primary",
+                                  "content": "官网内部展示",
+                                  "fontFamily": "$rx-font-body",
+                                  "fontSize": 9,
+                                  "fontWeight": "760"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "POJZm",
+                          "name": "Mobile Expression Label 再见",
+                          "fill": "$rx-text-primary",
+                          "content": "再见",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "p8G4Lb",
+                          "name": "Mobile Expression Emotion 再见",
+                          "fill": "$rx-text-muted",
+                          "content": "GOODBYE",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 9,
+                          "fontWeight": "720"
+                        },
+                        {
+                          "type": "text",
+                          "id": "h1LVJ",
+                          "name": "Mobile Expression Use 再见",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "页尾 / 404",
+                          "lineHeight": 1.35,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }

@@ -33,11 +33,11 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 | 首页首屏与主视觉 | [home-hero-visual.md](../features/home-hero-visual.md) | 站姿中心视觉锚点已接入，OG 已评估暂不替换 |
 | 四个项目详情页 | [project-detail-pages.md](../features/project-detail-pages.md) | 首版已实现，已补站内导览 |
 | 项目视觉素材准入准备 | [project-visual-asset-readiness.md](../features/project-visual-asset-readiness.md) | 四项目正式 Logo、截图、视频和自有视觉准入清单已建立 |
-| Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | Gallery / Usage、Chrome smoke、单张表情 Web 文件生成与 `/mascot` 候选预览区接入已完成 |
+| Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | Gallery / Usage、Chrome smoke、单张表情 Web 文件生成、`/mascot` 候选预览区接入与设计源同步已完成 |
 | About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 二轮扫读优化已完成 |
 | 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 首批单张表情已生成 Web 展示图，下载、素材包和外部分发继续关闭 |
 | 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地质量基线收束、HTTP smoke、实现口径对齐、设计源同步、Mascot Chrome smoke、Mascot 单张表情 smoke、线上 HTTP smoke 和线上截图级 smoke 已完成 |
-| 设计源精确化 | [design-source-refresh.md](../features/design-source-refresh.md) | v1.1 桌面 / 移动画板已补齐，Mascot Gallery / Usage 已同步 |
+| 设计源精确化 | [design-source-refresh.md](../features/design-source-refresh.md) | v1.1 桌面 / 移动画板已补齐，Mascot 单张表情候选预览区已同步 |
 | React 与设计源对照校准 | [react-design-alignment.md](../features/react-design-alignment.md) | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
 
 ## 当前活跃目标
@@ -86,10 +86,11 @@ RadishX 当前处于 React 官网首版实现后的页面完善与公开素材�
 40. 已完成 Mascot 首批单张表情授权与页面接入范围确认：当前只允许作为 RadishX 官网内部轻量展示候选，允许位置为 `/mascot` 单张预览候选、404 辅助、FAQ / 状态反馈和开发日志辅助视觉；禁止进入下载区、素材包、社交贴纸包、首页首屏、四项目 Logo 或外部复用场景。
 41. 已生成 Mascot 首批 10 张单张表情 Web 展示图，路径为 `public/images/mascot/expressions/radish-child-expression-*-web.jpg`；`/mascot` 已新增单张表情候选预览区，页面文案只表达官网内部展示候选，不提供下载、素材包或外部分发口径。
 42. 已完成 Mascot 单张表情接入后的本地验证：`npm run build`、`npm run check:local-release`、`npm run check:http-smoke -- --base-url http://127.0.0.1:4500`、`git diff --check` 和 `sips` 尺寸检查均通过；Playwright + 本机 Chrome 确认 `/mascot` 在 `1440x900` 与 `390x844` 下单张表情卡片 `10/10`、图片 `10/10`、无横向溢出、无 broken image、无 console / page error。
+43. 已通过 Pencil 同步 Mascot 桌面 / 移动 v1.1 设计源：`Mascot Page v1.1 - React Accurate` 新增 5 列 x 2 行单张表情候选区，`Mascot Page Mobile v1.1 - React Accurate` 新增 2 列 x 5 行单张表情候选区；两张画板 `snapshot_layout` 均无布局问题。
 
 下一步事项：
 
-1. 下一项可推进的是 Mascot 单张表情候选预览区的设计源同步：Pencil 桌面编辑器当前无法连接，待 Pencil 可用后同步桌面 / 移动 v1.1 画板并执行 `snapshot_layout`。
+1. 下一项可推进的是维持当前本地成果等待后续素材或发布节奏：没有新的正式项目 Logo、截图、视频、seasonal 活动目标或下载授权前，不继续扩展素材入口。
 2. 四个项目视觉素材继续按准入清单等待真实候选来源；只有出现独立 Logo、真实截图、视频或 RadishMind 自有视觉候选时，才进入素材审核、Web 优化和设计源同步。
 3. 设计源只在 React 页面继续调整、公开素材替换或单张表情进入页面展示时同步对应 v1.1 桌面 / 移动画板；涉及 `.pen` 设计源时只通过 Pencil 工具处理。
 4. 不启动 seasonal 页面实现，除非先确认具体活动目标、上线 / 下线时间、页面位置、文案边界、授权来源和撤下策略。

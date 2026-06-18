@@ -1,7 +1,7 @@
 # 设计源精确化
 
-状态：已完成，桌面与独立移动 v1.1 画板已补齐，Mascot Gallery / Usage 已同步到最新实现口径
-最后更新：2026-06-17
+状态：已完成，桌面与独立移动 v1.1 画板已补齐，Mascot 单张表情候选预览区已同步到最新实现口径
+最后更新：2026-06-18
 
 ## 目标
 
@@ -15,6 +15,8 @@
 
 2026-06-17 Mascot 页完成 Gallery 信息层级与 Usage 说明二轮实现后，已继续同步桌面和独立移动 v1.1 画板，避免 Pencil 设计源停留在旧 Gallery notes 和三条 Usage 规则口径。
 
+2026-06-18 Mascot 页新增首批 10 张单张表情候选预览区后，已继续同步桌面和独立移动 v1.1 画板；单张表情候选区位于 Gallery 与 Usage 之间，继续表达官网内部展示候选和下载关闭口径。
+
 ## 范围
 
 - 新增首页桌面 v1.1 画板。
@@ -24,6 +26,7 @@
 - 新增 About 页 v1.1 画板。
 - 新增项目详情模板、Mascot 页和 About 页的独立 `390px` 移动版 v1.1 画板。
 - 同步 Mascot 页桌面与独立移动 v1.1 画板中的 Gallery 状态 / 边界 / 后续处理，以及 Usage 四组边界。
+- 同步 Mascot 页桌面与独立移动 v1.1 画板中的首批单张表情候选预览区。
 - 使用已审核公开素材或代码内视觉语义，不引入新素材。
 
 ## 不做
@@ -31,7 +34,7 @@
 - 不修改 React 代码。
 - 不推送、不部署、不补跑线上 smoke。
 - 不接入新的 seasonal 活动图。
-- 不启动 Mascot 单张拆分、缩略图或下载入口。
+- 不开放 Mascot 缩略图、下载入口、素材包或外部分发口径。
 - 不把代码内临时项目标识描述为正式 Logo。
 - 不删除原 v1 画板。
 
@@ -40,7 +43,7 @@
 - v1.1 画板应反映当前 React 页面结构和素材治理口径，而不是继续保留未审核候选图占位。
 - 首页应体现 Radish Orbit 中心站姿图、四项目节点、素材状态槽、项目 band、生态说明、公开入口和 Mascot 入口。
 - 项目详情模板应体现 Hero、Page flow、Public Surface、Documentation、Capabilities、Matrix 和素材审核说明。
-- Mascot 页应体现完全体站姿主视觉、三形态、Gallery 整图预览和下载关闭口径。
+- Mascot 页应体现完全体站姿主视觉、三形态、Gallery 整图预览、首批单张表情候选预览区和下载关闭口径。
 - About 页应体现联系方式、微信公众号二维码、五个仓库入口和六个域名边界。
 - 移动稿以 `390 x 844` 为基准，优先保证连续浏览、换行和触控目标。
 
@@ -54,6 +57,7 @@
 6. 已抽查关键画板截图，确认无裁切、重叠或明显旧口径。
 7. 已更新本文件、`docs/planning/current.md` 和本周开发日志。
 8. 已同步 Mascot 桌面与独立移动 v1.1 画板的 Gallery / Usage 二轮实现口径。
+9. 已同步 Mascot 桌面与独立移动 v1.1 画板的单张表情候选预览区，并复查布局。
 
 ## 本轮实现记录
 
@@ -68,6 +72,8 @@
 - 所有 v1.1 画板均使用已审核公开素材或代码内视觉语义；未引入新素材，未开放下载入口。
 - 2026-06-17 已更新 `Mascot Page v1.1 - React Accurate`：Gallery 说明和卡片说明补齐公开状态、使用边界和后续处理；底部 Governance Summary 改为 Status、Boundary、Next 和 Seasonal 四项。
 - 2026-06-17 已更新 `Mascot Page Mobile v1.1 - React Accurate`：Gallery 卡片说明补齐状态 / 边界摘要；Usage 从三条规则改为 Display、Safety、License 和 Seasonal 四组。
+- 2026-06-18 已更新 `Mascot Page v1.1 - React Accurate`：在 Gallery 与 Usage 之间新增 `Expressions - Internal Preview` 区块，使用 5 列 x 2 行展示首批 10 张单张表情候选，标注来源格位、官网内部展示状态、中文标签、英文语义和轻量使用场景。
+- 2026-06-18 已更新 `Mascot Page Mobile v1.1 - React Accurate`：在 Gallery 与 Usage 之间新增 `Mobile Expressions - Internal Preview` 区块，使用 2 列 x 5 行展示首批 10 张单张表情候选；移动画板高度调整为 `6160px` 以完整容纳新增区块、Usage 和页脚。
 
 ## 验证
 
@@ -83,6 +89,9 @@
 - `git diff --check` 通过。
 - 2026-06-17 Pencil `snapshot_layout` 复查 `Mascot Page v1.1 - React Accurate` 无布局问题。
 - 2026-06-17 Pencil `snapshot_layout` 复查 `Mascot Page Mobile v1.1 - React Accurate` 无布局问题；移动画板高度调整为 `4500px` 以完整容纳四组 Usage 边界和页脚。
+- 2026-06-18 Pencil `snapshot_layout` 复查 `Mascot Page v1.1 - React Accurate` 无布局问题；新增桌面单张表情候选区后，画板高度调整为 `4320px`。
+- 2026-06-18 Pencil `snapshot_layout` 复查 `Mascot Page Mobile v1.1 - React Accurate` 无布局问题；新增移动单张表情候选区后，画板高度调整为 `6160px`。
+- 2026-06-18 已抽查 Mascot 桌面与移动 v1.1 画板截图，未发现新增候选区裁切、重叠或下载入口误导。
 
 ## 完成标准
 
