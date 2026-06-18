@@ -69,7 +69,8 @@
 | 首页 / Mascot 主视觉 | `assets/avatars/mature/radish-mature-standing-white-dress.png` | 已确认 | 虚拟形象完全体站姿，已用于 Mascot 页主视觉和完全体形态卡片。Web 版本：`public/images/mascot/radish-mature-standing-white-dress-web.jpg`。 |
 | Mascot 原始形象 | `assets/avatars/origin/radish-origin-icon.jpg` | 已确认 | 适合用作原始形象图标、小印章或形态起点。Web 版本：`public/images/mascot/radish-origin-icon-web.jpg`。 |
 | Mascot Gallery | `assets/avatars/child/radish-child-outfit-variants.png` | 已确认 | 适合服装变体展示，不建议做首页首屏。Web 版本：`public/images/mascot/radish-child-outfit-variants-web.jpg`。 |
-| Mascot Gallery | `assets/avatars/child/radish-child-expression-sheet-grid.png` | 已确认 | 适合表情 Gallery，当前只作为整图预览接入，不拆分单张，不提供下载入口。Web 版本：`public/images/mascot/radish-child-expression-sheet-grid-web.jpg`。 |
+| Mascot Gallery | `assets/avatars/child/radish-child-expression-sheet-grid.png` | 已确认 | 适合表情 Gallery，整图预览继续保留来源与审核边界。Web 版本：`public/images/mascot/radish-child-expression-sheet-grid-web.jpg`。 |
+| Mascot 单张表情候选 | `assets/avatars/child/radish-child-expression-sheet-grid.png` | 已确认 | 首批 10 张基础表情已按原图整格 `256x256` 生成 Web 展示图，只用于 `/mascot` 官网内部候选预览，不提供下载入口。Web 版本：`public/images/mascot/expressions/radish-child-expression-*-web.jpg`。 |
 | Mascot Gallery | `assets/avatars/child/radish-child-sticker-sheet-wide-01.png` 至 `04.png` | 已确认 | 适合表情包横图 Gallery，当前只作为整图预览接入，不拆分单张，不提供下载入口。Web 版本：`public/images/mascot/radish-child-sticker-sheet-wide-01-web.jpg` 至 `04-web.jpg`。 |
 | Mascot Gallery | `assets/avatars/mature/radish-mature-sticker-sheet-wide.png` | 已确认 | 适合虚拟形象完全体表情 Gallery。Web 版本：`public/images/mascot/radish-mature-sticker-sheet-wide-web.jpg`。 |
 | 参考素材 | `assets/avatars/mature/radish-mature-cosplay-board.png` | 暂不建议正式使用 | 三次元风格参考图，和当前官网长期视觉口径不完全一致。 |
@@ -112,40 +113,42 @@
 - 四项目视觉素材准入清单已建立；当前没有新的正式候选来源时，不主动迁入兄弟项目素材，不替换代码内临时项目标识。
 - 当前首页项目 band、项目详情页 Hero、Public Surface 和矩阵回流卡片已使用代码内临时项目标识；这些标识只用于官网信息识别，不作为项目正式 Logo 或素材下载内容。
 - Mascot 页首批主图、站姿图和 Gallery 图片已生成 Web 版本并进入 `public/images/`；页面三形态区已展示当前用途、审核状态、使用边界和后续素材需求。后续新增素材仍需继续审核，且不要覆盖原始素材。
-- 可爱Q版表情格和 4 张贴纸横图已进入 Mascot Gallery 整图预览；当前不拆分单张贴纸、不提供下载入口、不声明可自由复用。
+- 可爱Q版表情格和 4 张贴纸横图已进入 Mascot Gallery 整图预览；首批 10 张可爱Q版单张表情已生成 Web 展示图并进入 `/mascot` 候选预览区；不提供下载入口、不声明可自由复用。
 - `seasonal/` 下 6 张节日图已完成评估；全部继续只作为活动 Banner、彩蛋或运营内容候选，不进入长期 Gallery、默认主视觉或当前实现；使用前需单独确认具体活动窗口、页面位置、文案和授权。
 - 分享预览图已使用完全体设定图生成第一版；2026-06-15 本地评估结论为暂不替换，因为当前图包含 RadishX 标题、项目矩阵信息和横向 Mascot 视觉，更适合作为 `1200x630` 社交预览。
 
 ## Mascot 表情拆分与下载评估
 
-评估日期：2026-06-15。准备清单更新：2026-06-17。人工框选复核准备：2026-06-18。
+评估日期：2026-06-15。准备清单更新：2026-06-17。人工框选复核准备：2026-06-18。首批 Web 文件生成与页面接入：2026-06-18。
 
 当前结论：
 
-- 可爱Q版表情格和 4 张贴纸横图继续只作为 Mascot Gallery 整图预览，不拆分单张贴纸。
-- 单张拆分会形成可独立传播的衍生素材，必须先确认授权范围、使用场景、撤回策略和文件包边界。
+- 可爱Q版表情格和 4 张贴纸横图继续作为 Mascot Gallery 整图预览；首批 10 张基础表情已额外生成单张 Web 展示图，用于 `/mascot` 官网内部候选预览。
+- 单张展示文件会形成可独立传播的衍生素材，因此只按官网内部展示候选接入；下载、素材包、社交贴纸包、商用复用和外部分发仍未开放。
 - 当前横图版式、边距、文字标注和网格密度不完全一致，不做无审核批量裁切。
-- 缩略图仅在未来单张展示或文件包真实需要时生成，不提前为整图 Gallery 生成。
+- 缩略图仅在页面性能或网格浏览真实需要时生成；本轮不生成缩略图。
 - 下载入口继续关闭，不提供 ZIP、单图下载、素材 API 或“自由使用”声明。
 
 2026-06-17 已建立准备清单，但没有生成任何单张 Web 文件或缩略图。清单至少记录 `id`、`source_sheet`、`source_cell`、`label`、`emotion`、`slug`、`public_status`、`usage_scenario`、`usage_boundary`、`license_scope`、`withdrawal_policy`、`planned_web_path`、`planned_thumb_path`、`download_policy` 和 `review_note`。
 
 首批候选只从 `assets/avatars/child/radish-child-expression-sheet-grid.png` 中选取，原因是该表情格边框、标签和主体比例较统一，适合后续人工逐格复核。`assets/avatars/child/radish-child-sticker-sheet-wide-01.png` 至 `04.png` 先列为二批复核来源，进入单张前需额外确认文字方向、边缘留白、社交语境和授权。
 
-2026-06-18 已完成首批候选的人工框选复核准备：源图为 `1024x1536` PNG，按 4 列 6 行记录原图整格 `256x256` 计划裁切框，用于保留圆角边框、角色主体、表情符号和中文标签。本轮没有生成单张 Web 文件、缩略图或下载入口；全部候选继续保持 `candidate-only`，后续生成文件前仍需确认授权来源、页面接入范围和撤回策略。
+2026-06-18 已完成首批候选的人工框选复核准备：源图为 `1024x1536` PNG，按 4 列 6 行记录原图整格 `256x256` 计划裁切框，用于保留圆角边框、角色主体、表情符号和中文标签。
 
-| id | 来源格位 | 标签 | emotion | slug | 当前状态 | 计划 Web 路径 | 使用场景 | 审核备注 |
+2026-06-18 在项目所有者允许后，使用上述整格框生成首批 10 张 `256x256` JPEG Web 展示图，路径为 `public/images/mascot/expressions/radish-child-expression-*-web.jpg`，并接入 `/mascot` 单张候选预览区。当前状态为 `internal-preview`：只代表官网内部展示候选，不提供下载、素材包、社交贴纸包、商用复用或外部分发授权。
+
+| id | 来源格位 | 标签 | emotion | slug | 当前状态 | Web 路径 | 使用场景 | 审核备注 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `rx-expression-001` | `R1C1` | 开心 | `happy` | `happy` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-happy-web.jpg` | 未来 Mascot 页面基础情绪候选。 | 保留双手、表情符号和中文标签。 |
-| `rx-expression-002` | `R1C2` | 生气 | `angry` | `angry` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-angry-web.jpg` | 未来状态反馈或轻量情绪说明候选。 | 保留头顶怒气符号和手臂姿态。 |
-| `rx-expression-003` | `R1C3` | 震惊 | `surprised` | `surprised` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-surprised-web.jpg` | 未来异常、惊讶或提示类轻量插图候选。 | 保留双手、眼睛和惊叹符号。 |
-| `rx-expression-004` | `R2C3` | 得意 | `proud` | `proud` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-proud-web.jpg` | 未来完成、亮点或正向反馈候选。 | 保留眨眼、手势和星形符号。 |
-| `rx-expression-005` | `R2C4` | 期待 | `expectant` | `expectant` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-expectant-web.jpg` | 未来待办、预告或轻量引导候选。 | 不写成上线承诺。 |
-| `rx-expression-006` | `R3C2` | 疑问 | `question` | `question` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-question-web.jpg` | 未来 FAQ、待确认事项或说明提示候选。 | 保留右上问号和手势。 |
-| `rx-expression-007` | `R3C3` | 无语 | `speechless` | `speechless` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-speechless-web.jpg` | 未来轻量空状态或非阻断提示候选。 | 不用于嘲讽用户或错误归因。 |
-| `rx-expression-008` | `R5C2` | OK | `ok` | `ok` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-ok-web.jpg` | 未来完成状态或确认反馈候选。 | 不作为独立授权图标。 |
-| `rx-expression-009` | `R5C3` | 加油 | `cheer` | `cheer` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-cheer-web.jpg` | 未来项目进展或开发日志辅助视觉候选。 | 不用于商业承诺或进度承诺。 |
-| `rx-expression-010` | `R6C4` | 再见 | `goodbye` | `goodbye` | `candidate-only` | `public/images/mascot/expressions/radish-child-expression-goodbye-web.jpg` | 未来页尾彩蛋、404 辅助或结束状态候选。 | 不作为可下载贴纸。 |
+| `rx-expression-001` | `R1C1` | 开心 | `happy` | `happy` | `internal-preview` | `public/images/mascot/expressions/radish-child-expression-happy-web.jpg` | Mascot 页面基础情绪候选。 | 保留双手、表情符号和中文标签。 |
+| `rx-expression-002` | `R1C2` | 生气 | `angry` | `angry` | `internal-preview` | `public/images/mascot/expressions/radish-child-expression-angry-web.jpg` | 状态反馈或轻量情绪说明候选。 | 保留头顶怒气符号和手臂姿态。 |
+| `rx-expression-003` | `R1C3` | 震惊 | `surprised` | `surprised` | `internal-preview` | `public/images/mascot/expressions/radish-child-expression-surprised-web.jpg` | 异常、惊讶或提示类轻量插图候选。 | 保留双手、眼睛和惊叹符号。 |
+| `rx-expression-004` | `R2C3` | 得意 | `proud` | `proud` | `internal-preview` | `public/images/mascot/expressions/radish-child-expression-proud-web.jpg` | 完成、亮点或正向反馈候选。 | 保留眨眼、手势和星形符号。 |
+| `rx-expression-005` | `R2C4` | 期待 | `expectant` | `expectant` | `internal-preview` | `public/images/mascot/expressions/radish-child-expression-expectant-web.jpg` | 待办、预告或轻量引导候选。 | 不写成上线承诺。 |
+| `rx-expression-006` | `R3C2` | 疑问 | `question` | `question` | `internal-preview` | `public/images/mascot/expressions/radish-child-expression-question-web.jpg` | FAQ、待确认事项或说明提示候选。 | 保留右上问号和手势。 |
+| `rx-expression-007` | `R3C3` | 无语 | `speechless` | `speechless` | `internal-preview` | `public/images/mascot/expressions/radish-child-expression-speechless-web.jpg` | 轻量空状态或非阻断提示候选。 | 不用于嘲讽用户或错误归因。 |
+| `rx-expression-008` | `R5C2` | OK | `ok` | `ok` | `internal-preview` | `public/images/mascot/expressions/radish-child-expression-ok-web.jpg` | 完成状态或确认反馈候选。 | 不作为独立授权图标。 |
+| `rx-expression-009` | `R5C3` | 加油 | `cheer` | `cheer` | `internal-preview` | `public/images/mascot/expressions/radish-child-expression-cheer-web.jpg` | 项目进展或开发日志辅助视觉候选。 | 不用于商业承诺或进度承诺。 |
+| `rx-expression-010` | `R6C4` | 再见 | `goodbye` | `goodbye` | `internal-preview` | `public/images/mascot/expressions/radish-child-expression-goodbye-web.jpg` | 页尾彩蛋、404 辅助或结束状态候选。 | 不作为可下载贴纸。 |
 
 计划框选坐标使用原始 PNG 坐标：
 
@@ -172,20 +175,20 @@
 授权、使用和撤回口径：
 
 - 授权来源记录为 RadishX 仓库内原创候选素材，沿用仓库 `LICENSE` 的 source-available 口径；仓库公开展示不等于授予素材复用、改作、下载、商用或再分发权利。
-- 当前授权边界只支持 RadishX 官网内部展示候选记录；对外二次使用、社交贴纸包、商用复用、下载和再分发均未开放。
-- 当前使用场景只限未来官网内部轻量插图、状态反馈、FAQ、开发日志辅助视觉、404 辅助或 Mascot 页彩蛋候选，不作为独立品牌 Logo、项目图标或素材包。
+- 当前授权边界只支持 RadishX 官网内部展示候选；对外二次使用、社交贴纸包、商用复用、下载和再分发均未开放。
+- 当前使用场景只限官网内部轻量插图、状态反馈、FAQ、开发日志辅助视觉、404 辅助或 Mascot 页彩蛋候选，不作为独立品牌 Logo、项目图标或素材包。
 - 如果候选未通过安全、授权、文字或裁切复核，直接从清单移除，不生成公开文件。
-- 如果未来已生成单张 Web 文件后需要撤回，必须同步删除公开文件、数据引用、页面入口、文档清单和下载说明；如已发布到线上，需要在下一次发布中撤下对应资源。
+- 如果已生成的单张 Web 文件后续需要撤回，必须同步删除公开文件、数据引用、页面入口、文档清单和下载说明；如已发布到线上，需要在下一次发布中撤下对应资源。
 - 下载入口继续关闭，公开页面不能写成“可下载”、“自由使用”、“素材包”或“贴纸包”。
 
 2026-06-18 授权与页面接入范围确认：
 
 | 范围 | 当前结论 |
 | --- | --- |
-| 授权来源 | 记录为 RadishX 仓库内原创候选素材，仍需在生成单张 Web 文件前由项目所有者确认最终公开展示授权。 |
+| 授权来源 | 记录为 RadishX 仓库内原创候选素材，项目所有者已允许首批 Web 展示文件生成和 `/mascot` 候选预览接入。 |
 | 允许页面位置 | `/mascot` 单张表情预览区候选、404 辅助视觉、FAQ / 状态反馈、开发日志辅助视觉。 |
 | 禁止页面位置 | 首页首屏主视觉、四项目 Logo、项目图标、下载区、素材包入口、社交贴纸包入口、商业宣传授权页。 |
-| 文件生成边界 | 仅在授权确认后生成 `public/images/mascot/expressions/*-web.jpg`；缩略图只在页面性能或网格浏览真实需要时生成。 |
+| 文件生成边界 | 已生成 10 张 `public/images/mascot/expressions/*-web.jpg`；缩略图只在页面性能或网格浏览真实需要时生成。 |
 | 页面文案边界 | 只能写“展示候选”“官网内部展示”“待审核”，不能写“免费下载”“自由使用”“贴纸包”“素材 API”。 |
 | 撤回策略 | 撤回时同步移除公开文件、数据引用、页面入口、文档清单和任何下载 / 复用暗示；线上已发布时随下一次发布撤下。 |
 

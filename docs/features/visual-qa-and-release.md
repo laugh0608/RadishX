@@ -1,6 +1,6 @@
 # 视觉 QA 与发布检查
 
-状态：持续执行，本地质量基线收束、本地发布前复查、HTTP smoke 准备、可访问性整理、实现口径对齐检查、设计源同步说明、Mascot Chrome smoke、线上 HTTP smoke 和线上截图级 smoke 已完成
+状态：持续执行，本地质量基线收束、本地发布前复查、HTTP smoke 准备、可访问性整理、实现口径对齐检查、设计源同步说明、Mascot Chrome smoke、Mascot 单张表情本地 smoke、线上 HTTP smoke 和线上截图级 smoke 已完成
 最后更新：2026-06-18
 
 ## 目标
@@ -22,6 +22,8 @@
 2026-06-17 进入线上发布准备检查后，已补跑 `https://radishx.com` 与 `https://www.radishx.com` 的 HTTP smoke；该轮只验证线上状态层、路径保留、SEO 文件和公开图片资源，不触发推送、部署或页面改动。Browser 插件已能读取线上首页和 Mascot 页标题，并完成默认视口截图 / DOM 抽查；移动视口设置和跨路由批量截图在 Browser 控制层出现超时，线上截图级 smoke 仍不视为完成。
 
 2026-06-18 已改用 Playwright 加本机 Google Chrome 完成线上截图级 smoke，覆盖 `1440x900` 桌面和 `390x844` 移动视口下 8 个关键路由。检查中对 lazy 图片做逐图滚动和解码等待，避免 full-page 截图过早截到空白 Gallery。截图与汇总输出保存在本地 `output/playwright/online-visual-smoke-2026-06-18/`，该目录作为 QA artifact 不提交。
+
+2026-06-18 Mascot 首批单张表情 Web 文件生成并接入 `/mascot` 后，已完成本地构建、静态输出检查、本地 HTTP smoke、`sips` 尺寸检查和 Playwright 桌面 / 移动端 smoke。检查确认 10 张单张表情均为 `256x256`，`/mascot` 在 `1440x900` 与 `390x844` 下无横向溢出、无 broken image、无 console / page error，单张表情候选区没有下载按钮。
 
 ## 范围
 
@@ -90,6 +92,17 @@
 - 执行 `npm run check:local-release` 通过；脚本复跑生产构建，并确认 18 个公开图片文件和 2 个 Vite asset 文件已输出。
 - 临时启动 `http://127.0.0.1:4500/` 后，执行 `npm run check:http-smoke -- --base-url http://127.0.0.1:4500` 通过，确认 8 个关键路由和 18 个公开图片资源可访问。
 - 本轮不改 React 代码、不新增素材、不推送、不部署；线上 HTTP、根域跳转、路径保留和截图级 smoke 仍留到发布阶段。
+
+2026-06-18 已完成 Mascot 单张表情接入后的本地检查：
+
+- 执行 `npm run build` 通过，确认 TypeScript 与 Vite 生产构建正常。
+- 执行 `npm run check:local-release` 通过；脚本复跑生产构建，并确认 28 个公开图片文件和 2 个 Vite asset 文件已输出。
+- 临时启动 `http://127.0.0.1:4500/` 后，执行 `npm run check:http-smoke -- --base-url http://127.0.0.1:4500` 通过，确认 8 个关键路由和 28 个公开图片资源可访问。
+- 使用 `sips` 检查 `public/images/mascot/expressions/*.jpg`，10 张单张表情 Web 图均为 `256x256`。
+- 使用 Playwright + 本机 Google Chrome 检查 `/mascot`：`1440x900` 桌面与 `390x844` 移动视口均返回 `200`，单张表情卡片 `10/10`、单张表情图片 `10/10`，Gallery 卡片 `7`、Usage 卡片 `4`；所有单张表情图完成解码，natural size 均为 `256x256`。
+- 两个视口 `scrollWidth` 与 `clientWidth` 一致，desktop 为 `1440/1440`，mobile 为 `390/390`；broken image、console error、page error、单张候选区链接 / 按钮和横向溢出元素均为 `0`。
+- 截图与报告保存在本地 `output/playwright/mascot-expression-smoke-2026-06-18/`，作为 QA artifact 不提交。
+- 本轮不推送、不部署；Pencil 桌面编辑器当前无法连接，设计源同步需后续在 Pencil 可用时补做。
 
 2026-06-15 已完成一轮本地发布检查：
 

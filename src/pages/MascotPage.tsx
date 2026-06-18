@@ -2,6 +2,7 @@ import { SectionHeader } from "../components/ui/SectionHeader";
 import { StatusChip } from "../components/ui/StatusChip";
 import {
   mascotForms,
+  mascotExpressionItems,
   mascotGalleryItems,
   mascotGalleryNotes,
   mascotHeroImage,
@@ -143,6 +144,40 @@ export function MascotPage() {
               <article key={note} className="info-tile">
                 <span className="info-tile__index">{String(index + 1).padStart(2, "0")}</span>
                 <p>{note}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="section section--surface">
+        <div className="section__inner">
+          <SectionHeader
+            eyebrow="Expressions"
+            title="首批单张表情展示候选"
+            description="10 张基础表情已生成 Web 展示图，只用于官网内部预览；下载、素材包和外部分发口径继续关闭。"
+          />
+          <div className="mascot-expression-grid" aria-label="萝小白首批单张表情展示候选">
+            {mascotExpressionItems.map((item) => (
+              <article key={item.id} className="mascot-expression-card">
+                <img src={item.image.src} width={item.image.width} height={item.image.height} alt={item.image.alt} loading="lazy" />
+                <div className="mascot-expression-card__body">
+                  <div className="mascot-expression-card__meta">
+                    <span>{item.sourceCell}</span>
+                    <StatusChip tone="brand">官网内部展示</StatusChip>
+                  </div>
+                  <h3>{item.label}</h3>
+                  <p>{item.emotion}</p>
+                  <dl className="mascot-expression-card__facts" aria-label={`${item.label} 表情使用边界`}>
+                    <div>
+                      <dt>Use</dt>
+                      <dd>{item.usage}</dd>
+                    </div>
+                    <div>
+                      <dt>Boundary</dt>
+                      <dd>{item.boundary}</dd>
+                    </div>
+                  </dl>
+                </div>
               </article>
             ))}
           </div>

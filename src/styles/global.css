@@ -1966,6 +1966,106 @@ p {
   overflow-wrap: anywhere;
 }
 
+.mascot-expression-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.mascot-expression-card {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--rx-border-soft);
+  border-radius: 8px;
+  background: rgba(251, 247, 240, 0.78);
+}
+
+.mascot-expression-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--rx-border-soft);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.74);
+  object-fit: contain;
+}
+
+.mascot-expression-card__body {
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+}
+
+.mascot-expression-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  min-width: 0;
+}
+
+.mascot-expression-card__meta > span {
+  color: var(--rx-brand-primary);
+  font-family: var(--rx-font-mono);
+  font-size: 11px;
+  font-weight: 760;
+  line-height: 1.35;
+}
+
+.mascot-expression-card__meta .status-chip {
+  min-height: 26px;
+  padding: 4px 8px;
+  white-space: normal;
+}
+
+.mascot-expression-card h3 {
+  font-size: 20px;
+}
+
+.mascot-expression-card p {
+  color: var(--rx-text-muted);
+  font-family: var(--rx-font-mono);
+  font-size: 12px;
+  font-weight: 720;
+  text-transform: uppercase;
+}
+
+.mascot-expression-card__facts {
+  display: grid;
+  gap: 8px;
+  margin: 2px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid rgba(136, 99, 73, 0.14);
+}
+
+.mascot-expression-card__facts div {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.mascot-expression-card__facts dt {
+  color: var(--rx-text-muted);
+  font-family: var(--rx-font-mono);
+  font-size: 10px;
+  font-weight: 760;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.mascot-expression-card__facts dd {
+  min-width: 0;
+  margin: 0;
+  color: var(--rx-text-secondary);
+  font-size: 12px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
 .mascot-usage-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -2515,6 +2615,10 @@ p {
   .mascot-form-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .mascot-expression-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 640px) {
@@ -2726,6 +2830,7 @@ p {
   .contact-panel,
   .qr-panel,
   .domain-card,
+  .mascot-expression-card,
   .mascot-form,
   .mascot-usage-card {
     padding: 20px;
@@ -2820,6 +2925,18 @@ p {
 
   .mascot-form__review dd {
     font-size: 12px;
+  }
+
+  .mascot-expression-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mascot-expression-card {
+    padding: 12px;
+  }
+
+  .mascot-expression-card h3 {
+    font-size: 18px;
   }
 
   .info-tile,
@@ -3038,6 +3155,7 @@ p {
 }
 
 @media (max-width: 360px) {
+  .mascot-expression-grid,
   .mascot-form {
     grid-template-columns: 1fr;
   }

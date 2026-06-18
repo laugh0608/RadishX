@@ -7,6 +7,16 @@ export type MascotImage = {
   alt: string;
 };
 
+export type MascotExpressionItem = {
+  id: string;
+  label: string;
+  emotion: string;
+  sourceCell: string;
+  usage: string;
+  boundary: string;
+  image: MascotImage;
+};
+
 export const mascotHeroImage: MascotImage = {
   src: "/images/mascot/radish-mature-standing-white-dress-web.jpg",
   width: 1400,
@@ -25,7 +35,7 @@ export const mascotHeroReview = [
   },
   {
     label: "Next review",
-    value: "表情拆分 / 下载口径",
+    value: "单张表情候选展示",
   },
 ];
 
@@ -65,10 +75,10 @@ export const mascotForms = [
     review: {
       currentUse: "首页中心视觉锚点、首页 Mascot 辅助视觉和 Mascot 页形态展示。",
       auditStatus: "安全设定图与站姿图已确认，可进入 public/images。",
-      usageBoundary: "公开页只使用完整外装安全版本，不提供素材下载入口。",
-      nextNeed: "表情和贴纸横图已作为整图预览接入；单张拆分和下载口径仍需单独确认。",
+      usageBoundary: "公开页只使用完整外装安全版本；单张表情只做官网内部展示候选。",
+      nextNeed: "首批 10 张基础表情已生成 Web 展示图；下载口径继续关闭。",
     },
-    notes: ["公开页只使用安全候选口径", "适合作为首页视觉锚点", "不提供素材下载入口"],
+    notes: ["公开页只使用安全候选口径", "适合作为首页视觉锚点", "单张表情只做内部展示候选"],
   },
   {
     name: "虚拟形象完全体",
@@ -112,8 +122,8 @@ export const mascotGalleryItems = [
     category: "Expressions",
     publicStatus: "Sheet preview only",
     usageBoundary: "整图预览，不拆分单张表情，不开放下载。",
-    nextStep: "如需单张展示，先建立拆分清单、命名规则和授权边界。",
-    description: "作为整图预览接入 Mascot Gallery；当前不拆分单张贴纸，不提供下载入口。",
+    nextStep: "首批单张候选已单独展示；整图继续保留来源预览。",
+    description: "作为整图预览接入 Mascot Gallery；首批基础表情另设单张展示候选区，不提供下载入口。",
     image: {
       src: "/images/mascot/radish-child-expression-sheet-grid-web.jpg",
       width: 933,
@@ -194,10 +204,153 @@ export const mascotGalleryItems = [
 ];
 
 export const mascotGalleryNotes = [
-  "表情包素材当前只做整图预览，不拆分单张贴纸。",
+  "首批可爱Q版单张表情只做官网内部展示候选，不作为下载素材。",
+  "表情格和贴纸横图继续保留整图预览，便于回看来源和审核边界。",
   "节日素材只用于活动 Banner、彩蛋或运营内容，不进入长期 Gallery。",
-  "第一版不提供素材下载入口，也不声明素材可自由复用。",
   "后续新增素材仍需先进入 assets/ 并完成审核，再生成 public/images Web 版本。",
+];
+
+export const mascotExpressionItems: MascotExpressionItem[] = [
+  {
+    id: "rx-expression-001",
+    label: "开心",
+    emotion: "Happy",
+    sourceCell: "R1C1",
+    usage: "正向反馈、欢迎或轻量成功提示候选。",
+    boundary: "保留中文标签和双手，不作为下载素材。",
+    image: {
+      src: "/images/mascot/expressions/radish-child-expression-happy-web.jpg",
+      width: 256,
+      height: 256,
+      alt: "萝小白可爱Q版开心表情",
+    },
+  },
+  {
+    id: "rx-expression-002",
+    label: "生气",
+    emotion: "Angry",
+    sourceCell: "R1C2",
+    usage: "轻量状态提醒或情绪说明候选。",
+    boundary: "保留蒸汽和怒气符号，不延展为攻击性语境。",
+    image: {
+      src: "/images/mascot/expressions/radish-child-expression-angry-web.jpg",
+      width: 256,
+      height: 256,
+      alt: "萝小白可爱Q版生气表情",
+    },
+  },
+  {
+    id: "rx-expression-003",
+    label: "震惊",
+    emotion: "Surprised",
+    sourceCell: "R1C3",
+    usage: "异常、提示或惊讶类轻量插图候选。",
+    boundary: "保留左侧符号和双手，不裁成单独头像。",
+    image: {
+      src: "/images/mascot/expressions/radish-child-expression-surprised-web.jpg",
+      width: 256,
+      height: 256,
+      alt: "萝小白可爱Q版震惊表情",
+    },
+  },
+  {
+    id: "rx-expression-004",
+    label: "得意",
+    emotion: "Proud",
+    sourceCell: "R2C3",
+    usage: "完成反馈、亮点说明或小成就候选。",
+    boundary: "保留手势和星形符号，不替代品牌 Logo。",
+    image: {
+      src: "/images/mascot/expressions/radish-child-expression-proud-web.jpg",
+      width: 256,
+      height: 256,
+      alt: "萝小白可爱Q版得意表情",
+    },
+  },
+  {
+    id: "rx-expression-005",
+    label: "期待",
+    emotion: "Expectant",
+    sourceCell: "R2C4",
+    usage: "预告、待办或轻量引导候选。",
+    boundary: "保留双手和星形符号，不写成上线承诺。",
+    image: {
+      src: "/images/mascot/expressions/radish-child-expression-expectant-web.jpg",
+      width: 256,
+      height: 256,
+      alt: "萝小白可爱Q版期待表情",
+    },
+  },
+  {
+    id: "rx-expression-006",
+    label: "疑问",
+    emotion: "Question",
+    sourceCell: "R3C2",
+    usage: "FAQ、待确认事项或说明提示候选。",
+    boundary: "保留右上问号，不脱离上下文暗示错误。",
+    image: {
+      src: "/images/mascot/expressions/radish-child-expression-question-web.jpg",
+      width: 256,
+      height: 256,
+      alt: "萝小白可爱Q版疑问表情",
+    },
+  },
+  {
+    id: "rx-expression-007",
+    label: "无语",
+    emotion: "Speechless",
+    sourceCell: "R3C3",
+    usage: "空状态、非阻断提示或轻量反馈候选。",
+    boundary: "保留省略号，不用于嘲讽用户或错误归因。",
+    image: {
+      src: "/images/mascot/expressions/radish-child-expression-speechless-web.jpg",
+      width: 256,
+      height: 256,
+      alt: "萝小白可爱Q版无语表情",
+    },
+  },
+  {
+    id: "rx-expression-008",
+    label: "OK",
+    emotion: "OK",
+    sourceCell: "R5C2",
+    usage: "完成状态、确认或轻量成功反馈候选。",
+    boundary: "保留 OK 字样和手势，不作为独立授权图标。",
+    image: {
+      src: "/images/mascot/expressions/radish-child-expression-ok-web.jpg",
+      width: 256,
+      height: 256,
+      alt: "萝小白可爱Q版 OK 表情",
+    },
+  },
+  {
+    id: "rx-expression-009",
+    label: "加油",
+    emotion: "Cheer",
+    sourceCell: "R5C3",
+    usage: "开发日志、项目进展或鼓励类提示候选。",
+    boundary: "保留举拳和强调线，不用于商业承诺。",
+    image: {
+      src: "/images/mascot/expressions/radish-child-expression-cheer-web.jpg",
+      width: 256,
+      height: 256,
+      alt: "萝小白可爱Q版加油表情",
+    },
+  },
+  {
+    id: "rx-expression-010",
+    label: "再见",
+    emotion: "Goodbye",
+    sourceCell: "R6C4",
+    usage: "页尾彩蛋、404 辅助或结束状态候选。",
+    boundary: "保留挥手和红色强调线，不开放外部分发。",
+    image: {
+      src: "/images/mascot/expressions/radish-child-expression-goodbye-web.jpg",
+      width: 256,
+      height: 256,
+      alt: "萝小白可爱Q版再见表情",
+    },
+  },
 ];
 
 export const mascotUsageGroups = [
@@ -206,7 +359,7 @@ export const mascotUsageGroups = [
     title: "公开页只展示已审核 Web 版本",
     summary: "页面引用 `public/images/mascot/` 中的 Web 图，原始候选继续保留在 `assets/avatars/`。",
     rules: [
-      "现有 Gallery 保持整图预览，避免把素材升级为独立传播文件。",
+      "首批单张表情只作为官网内部展示候选，不作为素材包或贴纸包。",
       "图片说明需要区分服装、表情格、贴纸横图和完全体表情包。",
     ],
   },
@@ -216,7 +369,7 @@ export const mascotUsageGroups = [
     summary: "公开素材必须完整外装、非性感化、无内衣展示、无身体拆解。",
     rules: [
       "旧可爱Q版设定图和未审核候选不进入公开页面。",
-      "任何裁切或单张展示都要重新确认主体完整、文字可读和边界清楚。",
+      "单张表情保留整格边框、中文标签、主体动作和关键符号。",
     ],
   },
   {
@@ -224,8 +377,8 @@ export const mascotUsageGroups = [
     title: "下载和复用声明继续关闭",
     summary: "当前页面只做品牌展示，不提供 ZIP、单图下载、素材 API 或自由使用声明。",
     rules: [
-      "如未来开放下载，先确认授权范围、允许 / 禁止使用场景、文件包内容和撤回策略。",
-      "缩略图只在单张素材真实进入页面或文件包时生成。",
+      "新增单张 Web 文件仅用于页面展示，不附带复用、改作、商用或再分发授权。",
+      "缩略图只在页面性能或网格浏览真实需要时再生成。",
     ],
   },
   {

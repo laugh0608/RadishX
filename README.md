@@ -167,13 +167,14 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 - `public/images/mascot/radish-child-sticker-sheet-wide-03-web.jpg`
 - `public/images/mascot/radish-child-sticker-sheet-wide-04-web.jpg`
 - `public/images/mascot/radish-mature-sticker-sheet-wide-web.jpg`
+- `public/images/mascot/expressions/radish-child-expression-*-web.jpg`：首批 10 张可爱Q版单张表情 Web 展示图，只用于官网内部展示候选。
 - `public/images/projects/radish/radish-acg-web.jpg`
 - `public/images/projects/catalyst/radishcatalyst-rpg-exploration-concept-web.jpg`
 - `public/images/projects/flow/radishflow-workbench-concept-web.jpg`
 - `public/images/social/wechat-official-account-qr-web.png`
 - `public/images/social/radishx-og-image.png`：1200x630 Open Graph / Twitter 分享预览图。
 
-可爱Q版表情格和贴纸横图当前只做整图预览，不拆分单张、不生成缩略图、不提供下载入口。节日素材不建议作为官网长期主视觉，更适合作为活动 Banner、节日彩蛋或运营内容候选；具体进入页面前需要确认活动窗口、页面位置、文案和授权。
+可爱Q版表情格和贴纸横图继续保留整图预览；首批 10 张基础表情已生成单张 Web 展示图并接入 `/mascot` 候选预览区，不生成缩略图、不提供下载入口、不声明可自由复用。节日素材不建议作为官网长期主视觉，更适合作为活动 Banner、节日彩蛋或运营内容候选；具体进入页面前需要确认活动窗口、页面位置、文案和授权。
 
 ## 待确认事项
 
@@ -182,7 +183,7 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 - 四个项目后续是否补独立稳定 Logo，用于替换当前代码内临时项目标识。
 - 四个项目后续是否提供真实截图或可公开视频素材。
 - RadishMind 后续是否补项目自有 Logo、Console 截图或协议 / 评测可视化图。
-- “萝小白”首批单张表情拆分清单、人工框选复核准备和授权 / 页面接入范围确认已完成，后续是否生成单张 Web 文件并进入 `/mascot` 页面仍待确认；具体 seasonal 活动实现和下载口径仍待确认。
+- “萝小白”首批单张表情已生成 Web 展示图并接入 `/mascot` 候选预览区；后续如需开放下载、素材包、社交贴纸包或外部分发，仍需另行确认授权和文件包边界。具体 seasonal 活动实现仍待确认。
 - 线上 HTTP、根域跳转、路径保留以及桌面 / 移动端截图级 smoke 已完成；后续如果页面、资源或部署变化，再复跑对应检查。
 
 ## 当前实现状态
@@ -193,7 +194,7 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 2. 首页首屏：Radish Orbit 项目星图 + 已审核可爱Q版站姿中心视觉锚点。
 3. 首页项目区：四个项目作为大幅 band 入口，保留 GitHub、未来域名和素材边界说明。
 4. 项目详情页：每页围绕定位、当前状态、公开文档、关键能力、素材审核和项目矩阵关系组织，并提供 Hero 下方站内导览。
-5. Mascot 页：展示三种形态、主视觉、Gallery 整图预览和使用边界，不提供下载入口。
+5. Mascot 页：展示三种形态、主视觉、Gallery 整图预览、首批单张表情候选预览和使用边界，不提供下载入口。
 6. About 页：联系方式、微信公众号二维码、GitHub 仓库入口和域名边界。
 
 当前阶段已进入 React 官网首版实现后的页面完善与公开素材治理阶段。四个项目当前使用 RadishX 统一风格代码内临时项目标识，不声明为正式 Logo；未审核图片、外部参考图、活动图和可独立传播素材不进入正式页面实现。
