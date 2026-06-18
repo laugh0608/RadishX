@@ -12,6 +12,10 @@
 - [素材治理](assets/materials.md)：虚拟形象、社交媒体素材和审核规则。
 - [开发日志](devlogs/README.md)：周志索引。
 
+## 当前节奏
+
+RadishX 官网首版功能已收束，当前只推进发布复核、文档一致性、验证脚本维护和必要的小范围质量修正。下一轮官网开发等待 Radish、RadishCatalyst、RadishFlow 和 RadishMind 自身开发成熟，并补齐正式 Logo、真实截图、公开视频、稳定 Demo、文档站、下载页或授权材料后再启动。
+
 ## 文档规则
 
 - `docs/` 是本仓库正式文档源。

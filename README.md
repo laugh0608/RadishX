@@ -2,7 +2,7 @@
 
 RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 RadishX 官网根站点，通过 GitHub 托管代码，并使用 Vercel 免费额度部署；当前主域为 <https://radishx.com/>，`www.radishx.com` 作为兼容入口跳转到根域。
 
-当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、四个项目详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、首批 Mascot / About 公开图片、项目详情页代表视觉、Radish Orbit 首页中心视觉、Mascot Gallery 整图预览、首批单张表情候选预览和 `--rx-*` 样式 token；Pencil v1.1 桌面与独立移动设计源已补齐，并已同步 Mascot 单张表情候选预览区；已完成多轮本地响应式、可访问性、发布检查、HTTP smoke 准备、线上桌面 / 移动端截图级 smoke、实现口径对齐检查、设计源同步说明和目标级开发文档同步。
+当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、四个项目详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、首批 Mascot / About 公开图片、项目详情页代表视觉、Radish Orbit 首页中心视觉、Mascot Gallery 整图预览、首批单张表情候选预览和 `--rx-*` 样式 token；Pencil v1.1 桌面与独立移动设计源已补齐，并已同步 Mascot 单张表情候选预览区；已完成多轮本地响应式、可访问性、发布检查、HTTP smoke 准备、线上桌面 / 移动端截图级 smoke、实现口径对齐检查、设计源同步说明和目标级开发文档同步。当前官网功能开发进入等待期，除发布复核、文档一致性、验证脚本维护和必要的小范围质量修正外，不继续扩展新页面、素材入口、下载能力或 seasonal 活动。
 
 ## 已确认方向
 
@@ -15,6 +15,20 @@ RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 Rad
 - 素材使用：首批 Mascot / About 图片、项目代表图、表情 / 贴纸整图预览已审核并生成 Web 版本；后续截图、Logo、角色图、单张贴纸或活动图正式用于页面前仍需先审核具体选图
 - GitHub 仓库：公开仓库
 - 许可证：source-available，详见 [LICENSE](LICENSE)
+
+## 当前开发节奏
+
+RadishX 官网首版已经完成当前阶段需要承载的内容：项目矩阵、四个项目介绍页、Mascot 页、About 页、基础 SEO、发布检查和设计源同步。后续不为了保持开发动作而继续新增功能。
+
+下一轮官网开发应等待 Radish、RadishCatalyst、RadishFlow 和 RadishMind 各自开发到更适合公开展示的阶段，并补齐正式材料后再启动。可触发恢复开发的材料包括：
+
+- 独立稳定 Logo。
+- 真实产品截图、项目自有可视化图或公开视频。
+- 稳定 Demo、文档站、下载页或在线入口。
+- 项目域名、部署策略、发布计划或下载授权变化。
+- Mascot 下载、素材包、社交贴纸包、seasonal 活动或外部分发授权。
+
+恢复开发前先更新对应 `docs/features/*.md`、素材清单和当前规划，再进入设计源、React 实现和验证。
 
 ## 参考项目
 
@@ -183,6 +197,7 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 - 四个项目后续是否补独立稳定 Logo，用于替换当前代码内临时项目标识。
 - 四个项目后续是否提供真实截图或可公开视频素材。
 - RadishMind 后续是否补项目自有 Logo、Console 截图或协议 / 评测可视化图。
+- 四个项目是否已有稳定 Demo、文档站、下载页、在线入口、项目域名或发布计划需要官网同步。
 - “萝小白”首批单张表情已生成 Web 展示图并接入 `/mascot` 候选预览区；后续如需开放下载、素材包、社交贴纸包或外部分发，仍需另行确认授权和文件包边界。具体 seasonal 活动实现仍待确认。
 - 线上 HTTP、根域跳转、路径保留以及桌面 / 移动端截图级 smoke 已完成；后续如果页面、资源或部署变化，再复跑对应检查。
 
@@ -197,4 +212,4 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 5. Mascot 页：展示三种形态、主视觉、Gallery 整图预览、首批单张表情候选预览和使用边界，不提供下载入口。
 6. About 页：联系方式、微信公众号二维码、GitHub 仓库入口和域名边界。
 
-当前阶段已进入 React 官网首版实现后的页面完善与公开素材治理阶段。四个项目当前使用 RadishX 统一风格代码内临时项目标识，不声明为正式 Logo；未审核图片、外部参考图、活动图和可独立传播素材不进入正式页面实现。
+当前阶段已进入 React 官网首版实现后的发布准备、文档一致性维护和公开素材治理等待期。四个项目当前使用 RadishX 统一风格代码内临时项目标识，不声明为正式 Logo；未审核图片、外部参考图、活动图和可独立传播素材不进入正式页面实现。下一轮功能开发等待四个项目自身进展和正式材料补齐后再启动。
