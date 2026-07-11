@@ -1,30 +1,42 @@
+/*
+ * RadishX 站点 token（--rx-*）
+ * 语义值继承 Radish 家族统一规范 family-ui 的 --rd-*（L2 别名，见 docs/design/family-ui/09-adoption.md）。
+ * 组件与 global.css 继续消费 --rx-*，无需改动；仅 Brand 面站点特有项保留独立值。
+ * --rd-* 上游定义见 ./family-ui-tokens.css（从 docs/design/family-ui/tokens/tokens.css 复制）。
+ */
 :root {
-  --rx-bg-app: #f4efe6;
-  --rx-bg-surface: #fbf7f0;
-  --rx-bg-muted: #efe7db;
-  --rx-bg-ink: #11100f;
-  --rx-text-primary: #2f2a25;
-  --rx-text-secondary: #6a5c4f;
-  --rx-text-muted: #8d7b6c;
-  --rx-border-soft: rgba(136, 99, 73, 0.18);
-  --rx-border-strong: rgba(136, 99, 73, 0.32);
-  --rx-brand-primary: #b24057;
-  --rx-brand-soft: rgba(178, 64, 87, 0.14);
-  --rx-accent-jade: #4f9c83;
-  --rx-accent-ink: #435c74;
-  --rx-accent-earth: #886349;
-  --rx-accent-purple: #846992;
-  --rx-state-success: #4f9c83;
-  --rx-state-warning: #b5826d;
-  --rx-state-danger: #c3564d;
-  --rx-pattern-line: rgba(122, 92, 64, 0.14);
-  --rx-shadow-soft: 0 16px 40px rgba(91, 66, 44, 0.12);
-  --rx-radius-card: 8px;
-  --rx-radius-control: 999px;
+  /* —— 继承 family-ui 语义层（Brand 面）—— */
+  --rx-bg-app: var(--rd-bg-app);
+  --rx-bg-surface: var(--rd-bg-surface);
+  --rx-bg-muted: var(--rd-bg-muted);
+  --rx-bg-ink: var(--rd-bg-ink);
+  --rx-text-primary: var(--rd-text-primary);
+  --rx-text-secondary: var(--rd-text-secondary);
+  --rx-text-muted: var(--rd-text-muted);
+  --rx-border-soft: var(--rd-border-soft);
+  --rx-border-strong: var(--rd-border-strong);
+  --rx-brand-primary: var(--rd-brand-primary);
+  --rx-brand-soft: var(--rd-brand-soft);
+  --rx-accent-jade: var(--rd-accent-jade);
+  --rx-accent-ink: var(--rd-accent-ink);
+  --rx-accent-earth: var(--rd-accent-earth);
+  --rx-accent-purple: var(--rd-accent-purple);
+  --rx-state-success: var(--rd-state-success);
+  --rx-state-warning: var(--rd-state-warning);
+  --rx-state-danger: var(--rd-state-danger);
+  --rx-pattern-line: var(--rd-pattern-line);
+  --rx-shadow-soft: var(--rd-shadow-soft);
+  --rx-radius-card: var(--rd-radius-sm);
+  --rx-radius-control: var(--rd-radius-pill);
+
+  /* —— 站点特有：Brand 面品牌字体与页面尺度 —— */
   --rx-font-body: Inter, "PingFang SC", "Microsoft YaHei UI", "Noto Sans SC", system-ui, sans-serif;
   --rx-font-heading: Geist, Inter, "PingFang SC", "Microsoft YaHei UI", system-ui, sans-serif;
   --rx-font-serif: "Noto Serif SC", "Songti SC", STSong, serif;
   --rx-font-mono: "Geist Mono", "SFMono-Regular", Consolas, monospace;
   --rx-space-page-x: clamp(20px, 5vw, 72px);
   --rx-content-max: 1180px;
+
+  /* —— 过渡：补齐此前被 .repo-card 引用但从未定义的 token，取自 family-ui motion —— */
+  --rx-transition-base: var(--rd-motion-base) var(--rd-ease-standard);
 }
