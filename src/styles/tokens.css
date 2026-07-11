@@ -40,4 +40,9 @@
 
   /* —— 过渡：补齐此前被 .repo-card 引用但从未定义的 token，取自 family-ui motion —— */
   --rx-transition-base: var(--rd-motion-base) var(--rd-ease-standard);
+
+  /* —— 站点特有：阴影暖棕分量（供 rgba() 叠加）与状态 chip 深字 —— */
+  --rx-shadow-color: 91, 66, 44;
+  --rx-state-success-strong: #2f705e;
+  --rx-state-warning-strong: #7d5749;
 }

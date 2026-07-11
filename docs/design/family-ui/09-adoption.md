@@ -6,7 +6,7 @@
 
 | 项目 | Profile | 现有规范 | 接入状态 |
 | --- | --- | --- | --- |
-| RadishX 官网 | Brand | `docs/design/visual-guidelines.md`（`--rx-*`） | 已声明上游为本规范；`--rx-*` 作为 L2 别名保留 |
+| RadishX 官网 | Brand | `docs/design/visual-guidelines.md` + `ui-addendum.md`（`--rx-*`） | 已完整接入：token 别名 + 硬编码颜色收敛 + 差异附录（2026-07-11） |
 | Radish | Brand（公开 Web）+ Workbench（私域 / Console） | `Docs/frontend/visual-theme-spec.md` 等（`--theme-*` / `--console-*`） | 待迁移 |
 | RadishMind | Workbench | `docs/radishmind-ui-design-spec.md`（`--rm-*`） | 待迁移 |
 | RadishFlow | Workbench | `studio-visual-system.md`（`studio-*`） | 已归档项目；规范适用，迁移不设时限 |

@@ -1,49 +1,49 @@
 .orbit-visual__project--radish,
 .related-project--radish,
 .domain-card--radish {
-  border-color: rgba(79, 156, 131, 0.28);
+  border-color: color-mix(in srgb, var(--rx-accent-jade) 28%, transparent);
 }
 
 .orbit-visual__project--catalyst,
 .related-project--catalyst,
 .domain-card--catalyst {
-  border-color: rgba(136, 99, 73, 0.3);
+  border-color: color-mix(in srgb, var(--rx-accent-earth) 30%, transparent);
 }
 
 .orbit-visual__project--flow,
 .related-project--flow,
 .domain-card--flow {
-  border-color: rgba(67, 92, 116, 0.3);
+  border-color: color-mix(in srgb, var(--rx-accent-ink) 30%, transparent);
 }
 
 .orbit-visual__project--mind,
 .related-project--mind,
 .domain-card--mind {
-  border-color: rgba(132, 105, 146, 0.3);
+  border-color: color-mix(in srgb, var(--rx-accent-purple) 30%, transparent);
 }
 
 .domain-card--root {
-  border-color: rgba(178, 64, 87, 0.28);
+  border-color: color-mix(in srgb, var(--rx-brand-primary) 28%, transparent);
 }
 
 .project-hero--radish {
-  background: linear-gradient(160deg, rgba(79, 156, 131, 0.13), transparent 52%);
+  background: linear-gradient(160deg, color-mix(in srgb, var(--rx-accent-jade) 13%, transparent), transparent 52%);
 }
 
 .project-hero--catalyst {
-  background: linear-gradient(160deg, rgba(136, 99, 73, 0.13), transparent 52%);
+  background: linear-gradient(160deg, color-mix(in srgb, var(--rx-accent-earth) 13%, transparent), transparent 52%);
 }
 
 .project-hero--flow {
-  background: linear-gradient(160deg, rgba(67, 92, 116, 0.13), transparent 52%);
+  background: linear-gradient(160deg, color-mix(in srgb, var(--rx-accent-ink) 13%, transparent), transparent 52%);
 }
 
 .project-hero--mind {
-  background: linear-gradient(160deg, rgba(132, 105, 146, 0.13), transparent 52%);
+  background: linear-gradient(160deg, color-mix(in srgb, var(--rx-accent-purple) 13%, transparent), transparent 52%);
 }
 
 .project-band--radish {
-  background: linear-gradient(105deg, rgba(79, 156, 131, 0.1), rgba(251, 247, 240, 0.92));
+  background: linear-gradient(105deg, color-mix(in srgb, var(--rx-accent-jade) 10%, transparent), color-mix(in srgb, var(--rx-bg-surface) 92%, transparent));
 }
 
 .project-band--radish .project-band__signals li::before {
@@ -51,7 +51,7 @@
 }
 
 .project-band--catalyst {
-  background: linear-gradient(105deg, rgba(136, 99, 73, 0.1), rgba(251, 247, 240, 0.92));
+  background: linear-gradient(105deg, color-mix(in srgb, var(--rx-accent-earth) 10%, transparent), color-mix(in srgb, var(--rx-bg-surface) 92%, transparent));
 }
 
 .project-band--catalyst .project-band__signals li::before {
@@ -59,7 +59,7 @@
 }
 
 .project-band--flow {
-  background: linear-gradient(105deg, rgba(67, 92, 116, 0.1), rgba(251, 247, 240, 0.92));
+  background: linear-gradient(105deg, color-mix(in srgb, var(--rx-accent-ink) 10%, transparent), color-mix(in srgb, var(--rx-bg-surface) 92%, transparent));
 }
 
 .project-band--flow .project-band__signals li::before {
@@ -67,7 +67,7 @@
 }
 
 .project-band--mind {
-  background: linear-gradient(105deg, rgba(132, 105, 146, 0.1), rgba(251, 247, 240, 0.92));
+  background: linear-gradient(105deg, color-mix(in srgb, var(--rx-accent-purple) 10%, transparent), color-mix(in srgb, var(--rx-bg-surface) 92%, transparent));
 }
 
 .project-band--mind .project-band__signals li::before {
@@ -77,15 +77,15 @@
 .orbit-visual__project--lex,
 .related-project--lex,
 .domain-card--lex {
-  border-color: rgba(120, 164, 150, 0.32);
+  border-color: color-mix(in srgb, var(--rx-accent-grayjade) 32%, transparent);
 }
 
 .project-hero--lex {
-  background: linear-gradient(160deg, rgba(120, 164, 150, 0.13), transparent 52%);
+  background: linear-gradient(160deg, color-mix(in srgb, var(--rx-accent-grayjade) 13%, transparent), transparent 52%);
 }
 
 .project-band--lex {
-  background: linear-gradient(105deg, rgba(120, 164, 150, 0.1), rgba(251, 247, 240, 0.92));
+  background: linear-gradient(105deg, color-mix(in srgb, var(--rx-accent-grayjade) 10%, transparent), color-mix(in srgb, var(--rx-bg-surface) 92%, transparent));
 }
 
 .project-band--lex .project-band__signals li::before {

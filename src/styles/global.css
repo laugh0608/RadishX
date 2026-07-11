@@ -10,8 +10,8 @@ html {
 body {
   margin: 0;
   background:
-    linear-gradient(115deg, rgba(178, 64, 87, 0.08), transparent 34%),
-    radial-gradient(circle at 85% 8%, rgba(79, 156, 131, 0.12), transparent 28%),
+    linear-gradient(115deg, color-mix(in srgb, var(--rx-brand-primary) 8%, transparent), transparent 34%),
+    radial-gradient(circle at 85% 8%, color-mix(in srgb, var(--rx-accent-jade) 12%, transparent), transparent 28%),
     var(--rx-bg-app);
   color: var(--rx-text-primary);
   font-family: var(--rx-font-body);
@@ -84,7 +84,7 @@ p {
 }
 
 :focus-visible {
-  outline: 3px solid rgba(178, 64, 87, 0.48);
+  outline: 3px solid color-mix(in srgb, var(--rx-brand-primary) 48%, transparent);
   outline-offset: 4px;
 }
 
@@ -123,7 +123,7 @@ p {
   min-height: 76px;
   padding: 18px var(--rx-space-page-x);
   border-bottom: 1px solid var(--rx-border-soft);
-  background: rgba(244, 239, 230, 0.88);
+  background: color-mix(in srgb, var(--rx-bg-app) 88%, transparent);
   backdrop-filter: blur(16px);
 }
 
@@ -140,7 +140,7 @@ p {
 
 .site-header__brand img {
   border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(91, 66, 44, 0.18);
+  box-shadow: 0 4px 12px rgba(var(--rx-shadow-color), 0.18);
 }
 
 .site-header__nav {
@@ -150,7 +150,7 @@ p {
   padding: 6px;
   border: 1px solid var(--rx-border-soft);
   border-radius: var(--rx-radius-control);
-  background: rgba(251, 247, 240, 0.72);
+  background: color-mix(in srgb, var(--rx-bg-surface) 72%, transparent);
 }
 
 .site-header__nav a {
@@ -186,7 +186,7 @@ p {
 .site-footer p {
   max-width: 520px;
   margin-top: 10px;
-  color: rgba(251, 247, 240, 0.68);
+  color: color-mix(in srgb, var(--rx-bg-surface) 68%, transparent);
 }
 
 .site-footer__links {
@@ -195,7 +195,7 @@ p {
   justify-content: flex-end;
   gap: 8px 18px;
   max-width: 520px;
-  color: rgba(251, 247, 240, 0.78);
+  color: color-mix(in srgb, var(--rx-bg-surface) 78%, transparent);
 }
 
 .site-footer__links a {
@@ -260,7 +260,7 @@ p {
   padding: 12px;
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
-  background: rgba(251, 247, 240, 0.68);
+  background: color-mix(in srgb, var(--rx-bg-surface) 68%, transparent);
 }
 
 .project-hero__facts dt {
@@ -290,9 +290,9 @@ p {
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
   background:
-    radial-gradient(circle at 50% 50%, rgba(178, 64, 87, 0.14), transparent 26%),
-    radial-gradient(circle at 22% 78%, rgba(79, 156, 131, 0.12), transparent 22%),
-    linear-gradient(160deg, rgba(251, 247, 240, 0.86), rgba(239, 231, 219, 0.64));
+    radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--rx-brand-primary) 14%, transparent), transparent 26%),
+    radial-gradient(circle at 22% 78%, color-mix(in srgb, var(--rx-accent-jade) 12%, transparent), transparent 22%),
+    linear-gradient(160deg, color-mix(in srgb, var(--rx-bg-surface) 86%, transparent), color-mix(in srgb, var(--rx-bg-muted) 64%, transparent));
   box-shadow: var(--rx-shadow-soft);
   overflow: hidden;
 }
@@ -336,7 +336,7 @@ p {
   padding: 12px;
   border: 1px solid var(--rx-border-strong);
   border-radius: 8px;
-  background: rgba(251, 247, 240, 0.92);
+  background: color-mix(in srgb, var(--rx-bg-surface) 92%, transparent);
   box-shadow: var(--rx-shadow-soft);
   transform: translate(-50%, -50%);
 }
@@ -383,8 +383,8 @@ p {
   padding: 18px;
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
-  background: rgba(251, 247, 240, 0.88);
-  box-shadow: 0 10px 26px rgba(91, 66, 44, 0.1);
+  background: color-mix(in srgb, var(--rx-bg-surface) 88%, transparent);
+  box-shadow: 0 10px 26px rgba(var(--rx-shadow-color), 0.1);
 }
 
 .orbit-visual__project span {
@@ -436,8 +436,8 @@ p {
   padding: 14px;
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
-  background: rgba(251, 247, 240, 0.9);
-  box-shadow: 0 10px 24px rgba(91, 66, 44, 0.08);
+  background: color-mix(in srgb, var(--rx-bg-surface) 90%, transparent);
+  box-shadow: 0 10px 24px rgba(var(--rx-shadow-color), 0.08);
 }
 
 .orbit-visual__asset-slot:first-child {
@@ -534,28 +534,28 @@ p {
 }
 
 .section--surface {
-  background: rgba(251, 247, 240, 0.74);
+  background: color-mix(in srgb, var(--rx-bg-surface) 74%, transparent);
 }
 
 .section--muted {
-  background: rgba(239, 231, 219, 0.68);
+  background: color-mix(in srgb, var(--rx-bg-muted) 68%, transparent);
 }
 
 .section--mascot {
   background:
-    linear-gradient(90deg, rgba(178, 64, 87, 0.08), transparent 42%),
+    linear-gradient(90deg, color-mix(in srgb, var(--rx-brand-primary) 8%, transparent), transparent 42%),
     var(--rx-bg-surface);
 }
 
 .section--ink {
   background:
-    linear-gradient(135deg, rgba(178, 64, 87, 0.18), transparent 38%),
+    linear-gradient(135deg, color-mix(in srgb, var(--rx-brand-primary) 18%, transparent), transparent 38%),
     var(--rx-bg-ink);
   color: var(--rx-bg-surface);
 }
 
 .section--ink .eyebrow {
-  color: rgba(251, 247, 240, 0.74);
+  color: color-mix(in srgb, var(--rx-bg-surface) 74%, transparent);
 }
 
 .section--ink h2,
@@ -564,7 +564,7 @@ p {
 }
 
 .section--ink p {
-  color: rgba(251, 247, 240, 0.68);
+  color: color-mix(in srgb, var(--rx-bg-surface) 68%, transparent);
 }
 
 .section__inner {
@@ -613,7 +613,7 @@ p {
 
 .button--secondary {
   border-color: var(--rx-border-strong);
-  background: rgba(251, 247, 240, 0.64);
+  background: color-mix(in srgb, var(--rx-bg-surface) 64%, transparent);
   color: var(--rx-text-primary);
 }
 
@@ -638,7 +638,7 @@ p {
   padding: 12px 16px;
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
-  background: rgba(251, 247, 240, 0.74);
+  background: color-mix(in srgb, var(--rx-bg-surface) 74%, transparent);
 }
 
 .info-rail__label,
@@ -663,18 +663,18 @@ p {
   min-height: 44px;
   min-width: 44px;
   text-decoration: underline;
-  text-decoration-color: rgba(178, 64, 87, 0.34);
+  text-decoration-color: color-mix(in srgb, var(--rx-brand-primary) 34%, transparent);
   text-underline-offset: 4px;
 }
 
 .info-rail--dark .info-rail__item {
-  border-color: rgba(251, 247, 240, 0.16);
-  background: rgba(251, 247, 240, 0.07);
+  border-color: color-mix(in srgb, var(--rx-bg-surface) 16%, transparent);
+  background: color-mix(in srgb, var(--rx-bg-surface) 7%, transparent);
 }
 
 .info-rail--dark .info-rail__label,
 .info-rail--dark .info-rail__note {
-  color: rgba(251, 247, 240, 0.54);
+  color: color-mix(in srgb, var(--rx-bg-surface) 54%, transparent);
 }
 
 .info-rail--dark .info-rail__value {
@@ -688,7 +688,7 @@ p {
   padding: 5px 10px;
   border: 1px solid var(--rx-border-soft);
   border-radius: var(--rx-radius-control);
-  background: rgba(251, 247, 240, 0.72);
+  background: color-mix(in srgb, var(--rx-bg-surface) 72%, transparent);
   color: var(--rx-text-secondary);
   font-size: 12px;
   font-weight: 760;
@@ -696,26 +696,26 @@ p {
 }
 
 .status-chip--brand {
-  border-color: rgba(178, 64, 87, 0.26);
+  border-color: color-mix(in srgb, var(--rx-brand-primary) 26%, transparent);
   background: var(--rx-brand-soft);
   color: var(--rx-brand-primary);
 }
 
 .status-chip--success {
-  border-color: rgba(79, 156, 131, 0.28);
-  background: rgba(79, 156, 131, 0.12);
-  color: #2f705e;
+  border-color: color-mix(in srgb, var(--rx-accent-jade) 28%, transparent);
+  background: color-mix(in srgb, var(--rx-accent-jade) 12%, transparent);
+  color: var(--rx-state-success-strong);
 }
 
 .status-chip--warning {
-  border-color: rgba(181, 130, 109, 0.32);
-  background: rgba(181, 130, 109, 0.13);
-  color: #7d5749;
+  border-color: color-mix(in srgb, var(--rx-state-warning) 32%, transparent);
+  background: color-mix(in srgb, var(--rx-state-warning) 13%, transparent);
+  color: var(--rx-state-warning-strong);
 }
 
 .status-chip--ink {
-  border-color: rgba(67, 92, 116, 0.28);
-  background: rgba(67, 92, 116, 0.12);
+  border-color: color-mix(in srgb, var(--rx-accent-ink) 28%, transparent);
+  background: color-mix(in srgb, var(--rx-accent-ink) 12%, transparent);
   color: var(--rx-accent-ink);
 }
 
@@ -759,13 +759,13 @@ p {
   border-radius: 8px;
   background:
     radial-gradient(circle at 50% 42%, color-mix(in srgb, var(--rx-mark-accent) 18%, transparent), transparent 62%),
-    rgba(251, 247, 240, 0.86);
+    color-mix(in srgb, var(--rx-bg-surface) 86%, transparent);
   color: var(--rx-mark-accent);
   font-family: var(--rx-font-heading);
   font-size: 24px;
   font-weight: 800;
   line-height: 1;
-  box-shadow: 0 10px 24px rgba(91, 66, 44, 0.08);
+  box-shadow: 0 10px 24px rgba(var(--rx-shadow-color), 0.08);
 }
 
 .project-mark__body {
@@ -835,7 +835,7 @@ p {
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
   background: var(--rx-bg-surface);
-  box-shadow: 0 10px 28px rgba(91, 66, 44, 0.08);
+  box-shadow: 0 10px 28px rgba(var(--rx-shadow-color), 0.08);
 }
 
 .project-band--reverse {
@@ -913,8 +913,8 @@ p {
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
   background:
-    radial-gradient(circle at 64% 38%, rgba(178, 64, 87, 0.14), transparent 24%),
-    linear-gradient(145deg, rgba(251, 247, 240, 0.94), rgba(239, 231, 219, 0.72));
+    radial-gradient(circle at 64% 38%, color-mix(in srgb, var(--rx-brand-primary) 14%, transparent), transparent 24%),
+    linear-gradient(145deg, color-mix(in srgb, var(--rx-bg-surface) 94%, transparent), color-mix(in srgb, var(--rx-bg-muted) 72%, transparent));
   overflow: hidden;
 }
 
@@ -982,7 +982,7 @@ p {
 
 .media-frame__ring--inner {
   inset: 22%;
-  border-color: rgba(67, 92, 116, 0.18);
+  border-color: color-mix(in srgb, var(--rx-accent-ink) 18%, transparent);
 }
 
 .media-frame__node {
@@ -1089,9 +1089,9 @@ p {
   border-radius: 8px;
   background:
     linear-gradient(90deg, color-mix(in srgb, var(--rx-media-accent) 12%, transparent) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(79, 156, 131, 0.1) 1px, transparent 1px),
+    linear-gradient(0deg, color-mix(in srgb, var(--rx-accent-jade) 10%, transparent) 1px, transparent 1px),
     radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--rx-media-accent) 18%, transparent), transparent 44%),
-    rgba(251, 247, 240, 0.76);
+    color-mix(in srgb, var(--rx-bg-surface) 76%, transparent);
   background-size: 42px 42px, 42px 42px, auto, auto;
   box-shadow: var(--rx-shadow-soft);
   overflow: hidden;
@@ -1106,7 +1106,7 @@ p {
 .mind-diagram::after {
   position: absolute;
   inset: 24px;
-  border: 1px solid rgba(67, 92, 116, 0.16);
+  border: 1px solid color-mix(in srgb, var(--rx-accent-ink) 16%, transparent);
   border-radius: 50%;
   content: "";
 }
@@ -1127,7 +1127,7 @@ p {
   padding: 22px;
   border: 1px solid color-mix(in srgb, var(--rx-media-accent) 28%, transparent);
   border-radius: 8px;
-  background: rgba(251, 247, 240, 0.92);
+  background: color-mix(in srgb, var(--rx-bg-surface) 92%, transparent);
   text-align: center;
   transform: translateY(-28px);
 }
@@ -1173,9 +1173,9 @@ p {
   gap: 4px;
   width: min(164px, 38%);
   padding: 12px;
-  border: 1px solid rgba(136, 99, 73, 0.16);
+  border: 1px solid color-mix(in srgb, var(--rx-accent-earth) 16%, transparent);
   border-radius: 8px;
-  background: rgba(251, 247, 240, 0.86);
+  background: color-mix(in srgb, var(--rx-bg-surface) 86%, transparent);
 }
 
 .media-frame--compact .mind-diagram__node {
@@ -1225,9 +1225,9 @@ p {
   gap: 4px;
   min-width: 0;
   padding: 10px;
-  border: 1px solid rgba(67, 92, 116, 0.16);
+  border: 1px solid color-mix(in srgb, var(--rx-accent-ink) 16%, transparent);
   border-radius: 8px;
-  background: rgba(251, 247, 240, 0.76);
+  background: color-mix(in srgb, var(--rx-bg-surface) 76%, transparent);
 }
 
 .mind-diagram__lane span,
@@ -1277,9 +1277,9 @@ p {
   align-self: end;
   margin-top: 16px;
   padding: 12px;
-  border: 1px solid rgba(136, 99, 73, 0.16);
+  border: 1px solid color-mix(in srgb, var(--rx-accent-earth) 16%, transparent);
   border-radius: 8px;
-  background: rgba(251, 247, 240, 0.72);
+  background: color-mix(in srgb, var(--rx-bg-surface) 72%, transparent);
 }
 
 .media-frame__note span {
@@ -1307,9 +1307,9 @@ p {
   gap: 8px;
   margin: 0;
   padding: 12px;
-  border: 1px solid rgba(136, 99, 73, 0.16);
+  border: 1px solid color-mix(in srgb, var(--rx-accent-earth) 16%, transparent);
   border-radius: 8px;
-  background: rgba(251, 247, 240, 0.64);
+  background: color-mix(in srgb, var(--rx-bg-surface) 64%, transparent);
 }
 
 .media-frame__review div {
@@ -1359,7 +1359,7 @@ p {
 .mascot-form {
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
-  background: rgba(251, 247, 240, 0.78);
+  background: color-mix(in srgb, var(--rx-bg-surface) 78%, transparent);
 }
 
 .info-tile {
@@ -1453,13 +1453,13 @@ p {
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
   background:
-    radial-gradient(circle at 50% 38%, rgba(178, 64, 87, 0.16), transparent 28%),
+    radial-gradient(circle at 50% 38%, color-mix(in srgb, var(--rx-brand-primary) 16%, transparent), transparent 28%),
     var(--rx-bg-app);
   overflow: hidden;
 }
 
 .mascot-sigil span {
-  color: rgba(178, 64, 87, 0.16);
+  color: color-mix(in srgb, var(--rx-brand-primary) 16%, transparent);
   font-family: var(--rx-font-serif);
   font-size: 120px;
   line-height: 1;
@@ -1517,7 +1517,7 @@ p {
   padding: 18px var(--rx-space-page-x);
   border-top: 1px solid var(--rx-border-soft);
   border-bottom: 1px solid var(--rx-border-soft);
-  background: rgba(251, 247, 240, 0.82);
+  background: color-mix(in srgb, var(--rx-bg-surface) 82%, transparent);
 }
 
 .project-jump-nav {
@@ -1552,7 +1552,7 @@ p {
   padding: 8px 12px;
   border: 1px solid var(--rx-border-soft);
   border-radius: var(--rx-radius-control);
-  background: rgba(251, 247, 240, 0.72);
+  background: color-mix(in srgb, var(--rx-bg-surface) 72%, transparent);
 }
 
 .project-jump-nav__link strong {
@@ -1660,7 +1660,7 @@ p {
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
   background:
-    radial-gradient(circle at 50% 45%, rgba(178, 64, 87, 0.16), transparent 30%),
+    radial-gradient(circle at 50% 45%, color-mix(in srgb, var(--rx-brand-primary) 16%, transparent), transparent 30%),
     linear-gradient(155deg, var(--rx-bg-surface), var(--rx-bg-muted));
   box-shadow: var(--rx-shadow-soft);
   text-align: center;
@@ -1674,7 +1674,7 @@ p {
   width: 100%;
   height: auto;
   border: 1px solid var(--rx-border-soft);
-  box-shadow: 0 14px 34px rgba(91, 66, 44, 0.1);
+  box-shadow: 0 14px 34px rgba(var(--rx-shadow-color), 0.1);
 }
 
 .mascot-hero__mark > div {
@@ -1744,7 +1744,7 @@ p {
   align-items: center;
   min-height: 32px;
   padding: 6px 11px;
-  border: 1px solid rgba(178, 64, 87, 0.22);
+  border: 1px solid color-mix(in srgb, var(--rx-brand-primary) 22%, transparent);
   border-radius: var(--rx-radius-control);
   background: var(--rx-brand-soft);
   color: var(--rx-brand-primary);
@@ -1771,7 +1771,7 @@ p {
   aspect-ratio: 1;
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
-  background: rgba(239, 231, 219, 0.74);
+  background: color-mix(in srgb, var(--rx-bg-muted) 74%, transparent);
   overflow: hidden;
 }
 
@@ -1783,7 +1783,7 @@ p {
 }
 
 .mascot-form__media span {
-  color: rgba(178, 64, 87, 0.34);
+  color: color-mix(in srgb, var(--rx-brand-primary) 34%, transparent);
   font-family: var(--rx-font-serif);
   font-size: 72px;
   line-height: 1;
@@ -1822,7 +1822,7 @@ p {
   display: grid;
   gap: 4px;
   padding: 12px;
-  border: 1px solid rgba(178, 64, 87, 0.22);
+  border: 1px solid color-mix(in srgb, var(--rx-brand-primary) 22%, transparent);
   border-radius: 8px;
   background: var(--rx-brand-soft);
 }
@@ -1852,7 +1852,7 @@ p {
   gap: 3px;
   min-width: 0;
   padding-top: 8px;
-  border-top: 1px solid rgba(136, 99, 73, 0.14);
+  border-top: 1px solid color-mix(in srgb, var(--rx-accent-earth) 14%, transparent);
 }
 
 .mascot-form__notes {
@@ -1896,7 +1896,7 @@ p {
   padding: 18px;
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
-  background: rgba(251, 247, 240, 0.78);
+  background: color-mix(in srgb, var(--rx-bg-surface) 78%, transparent);
 }
 
 .gallery-card img {
@@ -1953,7 +1953,7 @@ p {
   gap: 8px;
   margin: 4px 0 0;
   padding-top: 10px;
-  border-top: 1px solid rgba(136, 99, 73, 0.14);
+  border-top: 1px solid color-mix(in srgb, var(--rx-accent-earth) 14%, transparent);
 }
 
 .gallery-card__facts div {
@@ -1994,7 +1994,7 @@ p {
   padding: 14px;
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
-  background: rgba(251, 247, 240, 0.78);
+  background: color-mix(in srgb, var(--rx-bg-surface) 78%, transparent);
 }
 
 .mascot-expression-card img {
@@ -2053,7 +2053,7 @@ p {
   gap: 8px;
   margin: 2px 0 0;
   padding-top: 10px;
-  border-top: 1px solid rgba(136, 99, 73, 0.14);
+  border-top: 1px solid color-mix(in srgb, var(--rx-accent-earth) 14%, transparent);
 }
 
 .mascot-expression-card__facts div {
@@ -2095,7 +2095,7 @@ p {
   padding: 22px;
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
-  background: rgba(251, 247, 240, 0.76);
+  background: color-mix(in srgb, var(--rx-bg-surface) 76%, transparent);
 }
 
 .mascot-usage-card > span {
@@ -2150,7 +2150,7 @@ p {
   padding: 6px 12px;
   border: 1px solid var(--rx-border-soft);
   border-radius: var(--rx-radius-control);
-  background: rgba(251, 247, 240, 0.7);
+  background: color-mix(in srgb, var(--rx-bg-surface) 70%, transparent);
   color: var(--rx-text-secondary);
   font-family: var(--rx-font-mono);
   font-size: 12px;
@@ -2245,7 +2245,7 @@ p {
 }
 
 .contact-list__item:hover .contact-list__action {
-  border-color: rgba(178, 64, 87, 0.28);
+  border-color: color-mix(in srgb, var(--rx-brand-primary) 28%, transparent);
   background: var(--rx-brand-soft);
 }
 
@@ -2323,7 +2323,7 @@ p {
   padding: 5px 9px;
   border: 1px solid var(--rx-border-soft);
   border-radius: var(--rx-radius-control);
-  background: rgba(251, 247, 240, 0.72);
+  background: color-mix(in srgb, var(--rx-bg-surface) 72%, transparent);
   color: var(--rx-text-secondary);
   font-size: 12px;
   font-weight: 760;
@@ -2342,7 +2342,7 @@ p {
   gap: 3px;
   min-width: 0;
   padding-top: 8px;
-  border-top: 1px solid rgba(136, 99, 73, 0.14);
+  border-top: 1px solid color-mix(in srgb, var(--rx-accent-earth) 14%, transparent);
 }
 
 .qr-panel__facts dt {
@@ -2379,14 +2379,14 @@ p {
   padding: 22px;
   border: 1px solid var(--rx-border-soft);
   border-radius: 8px;
-  background: rgba(251, 247, 240, 0.78);
+  background: color-mix(in srgb, var(--rx-bg-surface) 78%, transparent);
 }
 
 .domain-card:first-child {
-  border-color: rgba(178, 64, 87, 0.28);
+  border-color: color-mix(in srgb, var(--rx-brand-primary) 28%, transparent);
   background:
-    linear-gradient(135deg, rgba(178, 64, 87, 0.1), transparent 46%),
-    rgba(251, 247, 240, 0.84);
+    linear-gradient(135deg, color-mix(in srgb, var(--rx-brand-primary) 10%, transparent), transparent 46%),
+    color-mix(in srgb, var(--rx-bg-surface) 84%, transparent);
 }
 
 .domain-card span {
@@ -2404,7 +2404,7 @@ p {
 }
 
 .repo-card:hover {
-  border-color: rgba(178, 64, 87, 0.26);
+  border-color: color-mix(in srgb, var(--rx-brand-primary) 26%, transparent);
   box-shadow: var(--rx-shadow-soft);
   transform: translateY(-1px);
 }
@@ -2433,7 +2433,7 @@ p {
   padding: 4px 9px;
   border: 1px solid var(--rx-border-soft);
   border-radius: var(--rx-radius-control);
-  background: rgba(239, 231, 219, 0.68);
+  background: color-mix(in srgb, var(--rx-bg-muted) 68%, transparent);
   color: var(--rx-text-secondary);
   font-size: 11px;
   font-weight: 760;
@@ -2488,7 +2488,7 @@ p {
   min-height: 34px;
   max-width: 100%;
   padding: 6px 10px;
-  border: 1px solid rgba(178, 64, 87, 0.2);
+  border: 1px solid color-mix(in srgb, var(--rx-brand-primary) 20%, transparent);
   border-radius: var(--rx-radius-control);
   background: var(--rx-brand-soft);
   align-self: end;
@@ -2500,8 +2500,8 @@ p {
 }
 
 .repo-card:hover .repo-card__action {
-  border-color: rgba(178, 64, 87, 0.34);
-  background: rgba(178, 64, 87, 0.18);
+  border-color: color-mix(in srgb, var(--rx-brand-primary) 34%, transparent);
+  background: color-mix(in srgb, var(--rx-brand-primary) 18%, transparent);
 }
 
 .domain-card strong {
@@ -2638,7 +2638,7 @@ p {
 @media (max-width: 640px) {
   body {
     background:
-      linear-gradient(150deg, rgba(178, 64, 87, 0.08), transparent 40%),
+      linear-gradient(150deg, color-mix(in srgb, var(--rx-brand-primary) 8%, transparent), transparent 40%),
       var(--rx-bg-app);
   }
 
