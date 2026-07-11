@@ -6,7 +6,7 @@
 
 - 现有项目决定退役自己的通用视觉规范（颜色、字体、间距、通用组件条款）。
 - 新产品启动，需要建立 UI 基线。
-- family-ui 发布 major 版本，下游需要跟进。
+- family-ui 发布破坏性变更版本，下游需要跟进。
 
 ## 1. 复制还是引用
 
@@ -41,7 +41,7 @@
 
 **Step 5 更新项目入口**：在目标项目 `CLAUDE.md` / `AGENTS.md` / README 的规范入口处改为：
 
-> UI 通用规范遵循 RadishX `docs/design/family-ui/`（vX.Y）；项目差异见 `docs/ui-addendum.md`。
+> UI 通用规范遵循 RadishX `docs/design/family-ui/`（版本 <YYYY-MM-DD>）；项目差异见 `docs/ui-addendum.md`。
 
 **Step 6 验证与回写**：目标项目构建 + 至少一桌面一窄屏视觉 smoke；按 09 章「合规检查清单」自查；回写 RadishX [09-adoption.md](09-adoption.md) 接入状态表。
 
@@ -59,7 +59,7 @@
 ```markdown
 # <项目名> UI 差异附录
 
-- 遵循：RadishX family-ui v<X.Y>（docs/design/family-ui/）
+- 遵循：RadishX family-ui <YYYY-MM-DD>（docs/design/family-ui/）
 - Profile：Brand / Workbench / Game（多面产品分别标注）
 - 主 accent：<母板色系>；辅 accent：<母板色系>（与 family-ui 02 章登记一致）
 
@@ -83,13 +83,13 @@
 ## 维护规则
 
 - 通用条款变更走 family-ui，不在本附录扩写。
-- family-ui minor 升级后 <N> 周内评估跟进；major 升级按其迁移窗口执行。
+- family-ui 非破坏性更新后择机评估跟进；破坏性更新按其迁移窗口执行。
 ```
 
 ## 5. 版本升级跟进
 
-- minor / patch：下游择机跟进，更新附录中的遵循版本号即可。
-- major：family-ui 会在 [09-adoption.md](09-adoption.md) 登记迁移窗口与破坏性变更清单；下游按清单逐项处理后更新版本号。
+- 非破坏性更新：下游择机跟进，更新附录中的遵循版本日期即可。
+- 破坏性更新：family-ui 会在 [09-adoption.md](09-adoption.md) 登记迁移窗口与破坏性变更清单；下游按清单逐项处理后更新版本日期。
 
 ## 6. 撤专题的"不做"
 

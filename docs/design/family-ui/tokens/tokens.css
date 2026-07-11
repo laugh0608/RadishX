@@ -1,6 +1,6 @@
 /*
  * Radish 家族统一 UI 规范 —— CSS 参考实现
- * family-ui v1.0.0 (2026-07-11)
+ * family-ui 2026-07-11
  *
  * 真相源：docs/design/family-ui/02-color.md 等章节与 tokens/tokens.json。
  * 用法：
@@ -123,7 +123,7 @@
   --rd-bg-muted: #f3eee5;
 }
 
-/* —— 暗色核心映射（v1.0 初稿，全表排期 v1.1）—— */
+/* —— 暗色核心映射（初稿，全表排期后续版本）—— */
 [data-rd-theme="dark"] {
   --rd-bg-app: #1a1713;
   --rd-bg-surface: #23201a;

@@ -1,6 +1,6 @@
 # Radish 家族统一 UI 规范（family-ui）
 
-版本：`1.0.0`（2026-07-11）
+版本：`2026-07-11`
 
 本专题是 Radish 家族所有产品的统一 UI / 视觉设计规范，是家族级视觉真相源。各项目的通用视觉规则以本专题为准；项目仓库只保留「差异附录」，不再各自维护整套通用规范。
 
@@ -58,16 +58,16 @@
 
 ## 引用与迁移方式
 
-- 各项目在其 `CLAUDE.md` / `AGENTS.md` / README 中声明「UI 通用规范遵循 RadishX `docs/design/family-ui/` vX.Y」。
+- 各项目在其 `CLAUDE.md` / `AGENTS.md` / README 中声明「UI 通用规范遵循 RadishX `docs/design/family-ui/`」，并记录所遵循的版本日期。
 - token 文件以复制为主（进入各项目构建），规范正文以引用为主；具体步骤、差异附录模板与新产品接入模板见 [10-migration-playbook.md](10-migration-playbook.md)。
 - 各项目接入或迁移完成后，回写 [09-adoption.md](09-adoption.md) 登记状态。
 
 ## 版本与变更流程
 
-- 版本号 `major.minor.patch`：破坏性变更（改语义、删 token、换值域）升 major；新增 token / 章节升 minor；勘误升 patch。
+- 版本号采用日期类型 `YYYY-MM-DD`（与家族兄弟项目文档一致），每次实质变更更新为当次变更日期；破坏性变更（改语义、删 token、换值域）在 Changelog 标注 `[breaking]`。
 - 变更先改本规范，再改实现；实现与规范冲突时优先修实现，规范不合理再回到本专题迭代（沿用 Radish 维护规则）。
 - 破坏性变更必须在 [09-adoption.md](09-adoption.md) 登记各项目迁移窗口。
 
 ## Changelog
 
-- `1.0.0`（2026-07-11）：首版。建立三 Profile、合规三档、`--rd-*` 双层 token、亮色全表与暗色核心映射、组件形态学、平台适配、迁移说明书与参考图索引。
+- `2026-07-11`：首版。建立三 Profile、合规三档、`--rd-*` 双层 token、亮色全表与暗色核心映射、组件形态学、平台适配、迁移说明书与参考图索引；新增灰玉 `--rd-accent-grayjade` 供 RadishLex 使用。
