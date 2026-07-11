@@ -29,6 +29,7 @@
 | [visual-qa-and-release.md](visual-qa-and-release.md) | 本地 / 线上视觉 QA、构建和发布检查 | 本地质量基线收束、HTTP smoke、实现口径对齐、设计源同步、Mascot Chrome smoke、Mascot 单张表情 smoke、线上 HTTP smoke 和线上截图级 smoke 已完成 |
 | [design-source-refresh.md](design-source-refresh.md) | Pencil 设计源 v1.1 精确实现稿 | v1.1 桌面 / 移动画板已补齐，Mascot 单张表情候选预览区已同步 |
 | [react-design-alignment.md](react-design-alignment.md) | React 页面与 v1.1 设计源对照校准 | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
+| [family-ui-spec.md](family-ui-spec.md) | Radish 家族统一 UI / 视觉设计规范 | v1.0.0 已建立，参考图入库，各兄弟项目待按迁移说明书接入 |
 
 ## 推荐文档结构
 

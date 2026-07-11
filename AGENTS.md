@@ -38,8 +38,9 @@ RadishX 是 Radish 系列项目的官网与统一入口，通过 GitHub 托管�
 2. `docs/features/README.md` 与对应 `docs/features/*.md`：页面、功能、素材治理和发布检查的设计与开发边界。
 3. `docs/development/standards.md`：开发规范、响应式和验证要求。
 4. `docs/design/visual-guidelines.md`：视觉方向、素材使用和页面气质。
-5. `docs/deployment/vercel.md`：官网部署和域名边界。
-6. `docs/assets/materials.md`：素材归档、审核和使用规则。
+5. `docs/design/family-ui/`：Radish 家族统一 UI / 视觉规范（family-ui），家族级视觉真相源。
+6. `docs/deployment/vercel.md`：官网部署和域名边界。
+7. `docs/assets/materials.md`：素材归档、审核和使用规则。
 
 规则：
 
@@ -93,7 +94,7 @@ RadishX 是 Radish 系列项目的官网与统一入口，通过 GitHub 托管�
 
 ## 前端实现原则
 
-- 设计和实现前先读取 `docs/design/visual-guidelines.md` 与 `docs/development/standards.md`，并以其中的视觉 token、Pencil-first 流程、响应式规则和验证口径为准。
+- 设计和实现前先读取 `docs/design/visual-guidelines.md` 与 `docs/development/standards.md`，并以其中的视觉 token、Pencil-first 流程、响应式规则和验证口径为准。官网视觉的通用口径继承家族统一规范 `docs/design/family-ui/`（RadishX 属 Brand 展示面）。
 - PC 和移动端都是一等目标，页面首版必须具备响应式布局。
 - 参考 Apple 官网的节奏：强视觉、少文案、清晰层级、明确入口。
 - 参考 Radish 的视觉规范：温润、克制、留白、纸感、印色感、低饱和、轻纹样。

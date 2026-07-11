@@ -2,6 +2,10 @@
 
 本文定义 RadishX 官网的视觉基线、前端表现规则和 Pencil 设计约束。后续官网设计稿和 React 实现应优先遵守本文。
 
+## 与家族统一 UI 规范的关系
+
+`docs/design/family-ui/` 是服务整个 Radish 家族的统一 UI / 视觉规范（family-ui），是家族级视觉真相源。本文是 RadishX 官网作为 **Brand 展示面** 对 family-ui 的站点级应用与补充：官网色彩、字体、状态色、组件与响应式的通用口径以 family-ui 为准；本文只保留官网页面节奏、Mascot 页 / About 页等站点特有的结构与素材约定。`--rx-*` token 作为 family-ui `--rd-*` 的 L2 别名保留，映射见 [family-ui/09-adoption.md](family-ui/09-adoption.md)。若本文与 family-ui 通用条款冲突，以 family-ui 为准并回修本文。
+
 ## 参考来源
 
 RadishX 的视觉方向综合以下来源：

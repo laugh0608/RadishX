@@ -6,6 +6,17 @@
 
 - `assets/avatars/`：虚拟形象候选素材。
 - `assets/social/`：社交媒体素材。
+- `assets/design-references/ui/`：Radish 家族统一 UI 规范的外部风格参考截图。
+
+### UI 视觉参考图
+
+`assets/design-references/ui/` 存放 16 张外部产品界面截图，用于 [family-ui 统一 UI 规范](../design/family-ui/README.md) 的结构与组件形态学参考，索引见 [family-ui/references.md](../design/family-ui/references.md)。
+
+使用边界（与 RadishMind `ui-design-reference` 口径一致）：
+
+- 仅供家族内部风格学习，吸收布局、密度、组件形态与状态表达，不复制页面、图标、配色、品牌或文案。
+- 不进入 `public/`、不用于官网或任何产品页面实现素材、不对外分发或再托管。
+- 属于外部第三方界面截图，不纳入本仓库 source-available 原创素材授权范围。
 
 虚拟形象“萝小白”素材已按用途整理：
 

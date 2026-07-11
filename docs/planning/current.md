@@ -41,14 +41,17 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 | 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地质量基线收束、HTTP smoke、实现口径对齐、设计源同步、Mascot Chrome smoke、Mascot 单张表情 smoke、线上 HTTP smoke 和线上截图级 smoke 已完成 |
 | 设计源精确化 | [design-source-refresh.md](../features/design-source-refresh.md) | v1.1 桌面 / 移动画板已补齐，Mascot 单张表情候选预览区已同步 |
 | React 与设计源对照校准 | [react-design-alignment.md](../features/react-design-alignment.md) | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
+| 家族统一 UI 规范 | [family-ui-spec.md](../features/family-ui-spec.md) | v1.0.0 规范正文、tokens 与迁移说明书已入库，参考图已登记 |
 
 ## 当前活跃目标
 
 当前没有新的页面、素材、下载、seasonal 或部署目标。当前活跃目标从功能开发转为保持官网首版可发布状态，并做轻量的状态复核、文档一致性检查和必要的小范围质量改进。
 
+例外：家族统一 UI 规范（family-ui）作为跨项目文档目标已启动，详见 [family-ui-spec.md](../features/family-ui-spec.md)。该目标只产出 `docs/design/family-ui/` 规范、tokens 与参考素材，不改动官网页面代码、公开图片资源或部署配置，因此不与官网功能等待期冲突。
+
 本阶段优先级：
 
-1. 保持 README、`docs/features/*`、`docs/assets/materials.md`、`docs/development/standards.md`、`docs/design/visual-guidelines.md` 和实现口径一致。
+1. 保持 README、`docs/features/*`、`docs/assets/materials.md`、`docs/development/standards.md`、`docs/design/visual-guidelines.md`、`docs/design/family-ui/` 和实现口径一致。
 2. 只修复会影响后续发布判断、素材授权边界或验证复跑的文档 / 脚本 / 小范围实现问题。
 3. 页面代码、公开图片资源、Vercel 配置或域名策略没有变化时，不重复触发完整线上截图级 smoke。
 4. 如果出现新素材、下载授权、seasonal 活动目标或发布要求，先更新对应目标文档，再进入设计源、实现和验证。
