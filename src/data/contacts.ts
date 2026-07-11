@@ -73,7 +73,7 @@ export const domainSurfaces = [
     label: "Canonical",
     domain: "radishx.com",
     status: "Current Vercel site",
-    description: "当前官网主域，承载首页、四个项目介绍页、Mascot 和 About。",
+    description: "当前官网主域，承载首页、五个项目介绍页、Mascot 和 About。",
   },
   {
     label: "Compatibility",

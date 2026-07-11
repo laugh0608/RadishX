@@ -1,15 +1,15 @@
-# 四个项目详情页
+# 五个项目详情页
 
-状态：首版已实现，已补站内导览，项目视觉素材准入清单已建立
-最后更新：2026-06-17
+状态：首版已实现，已补站内导览，项目视觉素材准入清单已建立；2026-07-11 新增 RadishLex 第五个项目详情页
+最后更新：2026-07-11
 
 ## 目标
 
-让 Radish、RadishCatalyst、RadishFlow、RadishMind 四个项目详情页稳定说明项目定位、公开状态、GitHub 入口、未来域名和素材边界。
+让 Radish、RadishCatalyst、RadishFlow、RadishMind、RadishLex 五个项目详情页稳定说明项目定位、公开状态、GitHub 入口、未来域名和素材边界。
 
 ## 背景
 
-四个项目详情页已完成独立素材只读审核，并在不修改兄弟项目的前提下接入低风险 Web 图或代码内视觉。页面需要持续避免把概念图、历史 UI baseline 或外部参考截图误表达为正式产品状态。
+五个项目详情页已完成独立素材只读审核，并在不修改兄弟项目的前提下接入低风险 Web 图或代码内视觉；RadishLex 与 RadishMind 一样暂无外部公开素材，使用代码内视觉。页面需要持续避免把概念图、历史 UI baseline 或外部参考截图误表达为正式产品状态。
 
 ## 范围
 
@@ -17,6 +17,7 @@
 - `/catalyst`
 - `/flow`
 - `/mind`
+- `/lex`
 - 项目数据层中的定位、状态、链接、未来域名、Public Surface 和主媒体元数据。
 - `public/images/projects/` 中已审核 Web 图。
 
@@ -34,7 +35,8 @@
 - RadishCatalyst：已接入概念视觉 `radishcatalyst-rpg-exploration-concept-web.jpg`。
 - RadishFlow：已接入历史 UI baseline `radishflow-workbench-concept-web.jpg`，页面状态为 `Archived`。
 - RadishMind：未接入图片，使用代码内 `Evaluation loop` 表达上下文约束、工具边界、样本评测、证据链和可审计输出。
-- 四个项目已接入 RadishX 统一风格代码内临时标识，覆盖首页项目 band、项目详情页 Hero、Public Surface 和矩阵回流卡片；这些标识不是正式项目 Logo。
+- RadishLex：未接入图片，使用代码内 `Input pipeline` 表达拼音候选、候选重排、可解释学习和端到端加密同步；页面状态为 `Source Available`，未来域名 `lex.radishx.com`。
+- 五个项目已接入 RadishX 统一风格代码内临时标识，覆盖首页项目 band、项目详情页 Hero、Public Surface 和矩阵回流卡片；这些标识不是正式项目 Logo。
 - 每页主媒体区展示 `Asset source`、`Usage boundary` 和 `Next material need`。
 - 每页已补公开文档入口，只链接对应 GitHub 仓库 `dev` 分支中的 README / docs / wiki / status / contracts 等稳定入口，不复制文档正文。
 - 每页 Hero 下方已补轻量站内导览，链接到 `Public Surface`、`Documentation`、`Capabilities` 和 `Matrix` 四个 section。

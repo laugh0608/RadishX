@@ -1,4 +1,4 @@
-export type ProjectRouteId = "radish" | "catalyst" | "flow" | "mind";
+export type ProjectRouteId = "radish" | "catalyst" | "flow" | "mind" | "lex";
 
 export type AppRoute =
   | {
@@ -32,7 +32,7 @@ export const appRoutes: AppRoute[] = [
     kind: "home",
     path: "/",
     title: "RadishX - Radish 系列项目矩阵",
-    description: "RadishX 是 Radish 系列项目的官网与统一入口，展示内容社区、游戏、流程模拟、智能工具和虚拟形象萝小白。",
+    description: "RadishX 是 Radish 系列项目的官网与统一入口，展示内容社区、游戏、流程模拟、智能工具、中文输入和虚拟形象萝小白。",
   },
   {
     kind: "project",
@@ -63,6 +63,13 @@ export const appRoutes: AppRoute[] = [
     description: "RadishMind 是 RadishX 的外部智能层与模型实验入口，聚焦协议、评测、工具编排和可审计能力。",
   },
   {
+    kind: "project",
+    path: "/lex",
+    projectId: "lex",
+    title: "RadishLex - RadishX",
+    description: "RadishLex 是 RadishX 的本地优先中文输入系统方向，聚焦离线输入、可解释学习和端到端加密同步。",
+  },
+  {
     kind: "mascot",
     path: "/mascot",
     title: "萝小白 - RadishX",
@@ -80,7 +87,7 @@ export const notFoundRoute = (path: string): AppRoute => ({
   kind: "not-found",
   path,
   title: "页面不存在 - RadishX",
-  description: "该页面不存在。RadishX 当前开放首页、四个项目介绍页、Mascot 和 About。",
+  description: "该页面不存在。RadishX 当前开放首页、五个项目介绍页、Mascot 和 About。",
 });
 
 export function resolveRoute(pathname: string): AppRoute {

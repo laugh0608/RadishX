@@ -58,15 +58,15 @@ export const homeVisualAssetSlots: HomeVisualAssetSlot[] = [
     title: "详情页媒体状态",
     status: "已分流",
     statusTone: "ink",
-    note: "Radish、Catalyst、Flow 已接入审核图；RadishMind 使用代码内协议图，Logo 与视频继续等待素材。",
+    note: "Radish、Catalyst、Flow 已接入审核图；RadishMind 与 RadishLex 使用代码内视觉，Logo 与视频继续等待素材。",
     checkpoints: [
       {
         label: "Images",
         value: "3 个审核图",
       },
       {
-        label: "Mind",
-        value: "Protocol map",
+        label: "Diagram",
+        value: "Mind / Lex 视觉",
       },
       {
         label: "Pending",

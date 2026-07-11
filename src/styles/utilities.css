@@ -74,11 +74,30 @@
   background: var(--rx-accent-purple);
 }
 
+.orbit-visual__project--lex,
+.related-project--lex,
+.domain-card--lex {
+  border-color: rgba(120, 164, 150, 0.32);
+}
+
+.project-hero--lex {
+  background: linear-gradient(160deg, rgba(120, 164, 150, 0.13), transparent 52%);
+}
+
+.project-band--lex {
+  background: linear-gradient(105deg, rgba(120, 164, 150, 0.1), rgba(251, 247, 240, 0.92));
+}
+
+.project-band--lex .project-band__signals li::before {
+  background: var(--rx-accent-grayjade);
+}
+
 @media (max-width: 640px) {
   .project-band--radish,
   .project-band--catalyst,
   .project-band--flow,
-  .project-band--mind {
+  .project-band--mind,
+  .project-band--lex {
     background: var(--rx-bg-surface);
   }
 }

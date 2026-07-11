@@ -19,9 +19,9 @@ RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 Rad
 
 ## 当前开发节奏
 
-RadishX 官网首版已经完成当前阶段需要承载的内容：项目矩阵、四个项目介绍页、Mascot 页、About 页、基础 SEO、发布检查和设计源同步。后续不为了保持开发动作而继续新增功能。
+RadishX 官网首版已经完成当前阶段需要承载的内容：项目矩阵、五个项目介绍页、Mascot 页、About 页、基础 SEO、发布检查和设计源同步。后续不为了保持开发动作而继续新增功能。
 
-下一轮官网开发应等待 Radish、RadishCatalyst、RadishFlow 和 RadishMind 各自开发到更适合公开展示的阶段，并补齐正式材料后再启动。可触发恢复开发的材料包括：
+下一轮官网开发应等待 Radish、RadishCatalyst、RadishFlow、RadishMind 和 RadishLex 各自开发到更适合公开展示的阶段，并补齐正式材料后再启动。可触发恢复开发的材料包括：
 
 - 独立稳定 Logo。
 - 真实产品截图、项目自有可视化图或公开视频。
@@ -117,7 +117,7 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 
 - 当前官网 Vercel 项目承载 RadishX 官网，`https://radishx.com/` 是 canonical 主域。
 - `www.radishx.com` 已配置为跳转到 `radishx.com`，用于兼容访问和旧入口。
-- 首页、四个项目介绍页、虚拟形象页和 About 页面都属于本官网项目。
+- 首页、五个项目介绍页、虚拟形象页和 About 页面都属于本官网项目。
 - `hub.radishx.com`、`forge.radishx.com`、`flow.radishx.com`、`mind.radishx.com` 是未来四个项目各自上线后的独立域名。
 - 官网中的项目详情页可以展示这些域名作为“访问项目”按钮；对应项目还没上线前，可以先禁用按钮或标注 Coming Soon。
 - `sitemap.xml` 和 `robots.txt` 只覆盖当前官网站内页面，不包含四个未来项目子域。

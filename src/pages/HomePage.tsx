@@ -23,6 +23,10 @@ const ecosystemItems = [
     title: "智能外接",
     body: "RadishMind 负责协议、评测、工具编排和模型实验，强调可审计和可复用。",
   },
+  {
+    title: "输入入口",
+    body: "RadishLex 把中文输入、个人词库和学习留在本地，强调隐私优先、可解释和可删除。",
+  },
 ];
 
 const homeSignals = [
@@ -54,7 +58,7 @@ export function HomePage() {
           <SectionHeader
             eyebrow="Ecosystem"
             title="RadishX 只做官网和入口"
-            description="四个项目的业务功能、未来独立站点和部署都保持边界清晰，官网只展示稳定公开信息。"
+            description="五个项目的业务功能、未来独立站点和部署都保持边界清晰，官网只展示稳定公开信息。"
           />
           <div className="ecosystem-grid">
             {ecosystemItems.map((item) => (
@@ -73,7 +77,7 @@ export function HomePage() {
               <p className="eyebrow">Open Signals</p>
               <h2>公开入口保持清楚，未来项目边界保持独立</h2>
               <p>
-                官网负责说明项目矩阵和稳定链接；四个项目的真实业务、下载页、演示站和独立部署在各自成熟后再开放。
+                官网负责说明项目矩阵和稳定链接；五个项目的真实业务、下载页、演示站和独立部署在各自成熟后再开放。
               </p>
             </div>
             <InfoRail items={homeSignals} />

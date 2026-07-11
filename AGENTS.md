@@ -26,7 +26,7 @@ RadishX 是 Radish 系列项目的官网与统一入口，通过 GitHub 托管�
 页面范围：
 
 - 首页
-- 四个项目介绍页：Radish、RadishCatalyst、RadishFlow、RadishMind
+- 五个项目介绍页：Radish、RadishCatalyst、RadishFlow、RadishMind、RadishLex
 - Mascot 虚拟形象页
 - About 页面
 

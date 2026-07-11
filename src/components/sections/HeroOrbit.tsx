@@ -11,7 +11,7 @@ export function HeroOrbit() {
           <p className="eyebrow">radishx.com</p>
           <h1>Radish 系列项目矩阵</h1>
           <p>
-            一个温润、克制、带一点游戏感的统一入口，连接内容社区、异星工业游戏、流程模拟软件与智能工具实验。
+            一个温润、克制、带一点游戏感的统一入口，连接内容社区、异星工业游戏、流程模拟软件、智能工具实验与中文输入系统。
           </p>
           <div className="hero-section__actions">
             <RouteLink className="button button--primary" to="/#projects">

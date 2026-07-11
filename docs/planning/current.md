@@ -9,12 +9,12 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 当前站点已具备：
 
 - Vite + React + TypeScript 静态官网骨架。
-- `/`、四个项目详情页、`/mascot`、`/about` 和 404 页面。
+- `/`、五个项目详情页、`/mascot`、`/about` 和 404 页面。
 - `radishx.com` canonical 域名、`www.radishx.com` 兼容跳转、Vercel History API fallback。
 - 基础 metadata、Open Graph / Twitter Card、`sitemap.xml` 和 `robots.txt`。
 - 首批已审核 Mascot / About 素材、项目详情页代表视觉和首页 Radish Orbit 中心视觉锚点。
 - Mascot Gallery 整图预览、首批 10 张单张表情 Web 展示图和 `/mascot` 候选预览区。
-- 四个项目详情页公开文档入口、Hero 下方站内导览和代码内临时项目标识。
+- 五个项目详情页公开文档入口、Hero 下方站内导览和代码内临时项目标识。
 - Pencil v1.1 桌面与独立移动设计源，已同步 Mascot 单张表情候选预览区。
 - 本地构建、静态输出检查、HTTP smoke、桌面 / 移动端视觉 smoke、线上 HTTP smoke 和线上截图级 smoke 的阶段性记录。
 
@@ -33,8 +33,8 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 | 目标 | 文档 | 当前状态 |
 | --- | --- | --- |
 | 首页首屏与主视觉 | [home-hero-visual.md](../features/home-hero-visual.md) | 站姿中心视觉锚点已接入，OG 已评估暂不替换 |
-| 四个项目详情页 | [project-detail-pages.md](../features/project-detail-pages.md) | 首版已实现，已补站内导览 |
-| 项目视觉素材准入准备 | [project-visual-asset-readiness.md](../features/project-visual-asset-readiness.md) | 四项目正式 Logo、截图、视频和自有视觉准入清单已建立 |
+| 五个项目详情页 | [project-detail-pages.md](../features/project-detail-pages.md) | 首版已实现，已补站内导览 |
+| 项目视觉素材准入准备 | [project-visual-asset-readiness.md](../features/project-visual-asset-readiness.md) | 五项目正式 Logo、截图、视频和自有视觉准入清单已建立 |
 | Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | Gallery / Usage、Chrome smoke、单张表情 Web 文件生成、`/mascot` 候选预览区接入与设计源同步已完成 |
 | About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 二轮扫读优化已完成 |
 | 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 首批单张表情已生成 Web 展示图，下载、素材包和外部分发继续关闭 |
@@ -60,7 +60,7 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 
 - 不迁入兄弟项目代码或未审核素材。
 - 不把代码内临时项目标识声明为正式 Logo。
-- 不替换四个项目详情页为真实截图或视频，除非先出现明确候选来源和授权记录。
+- 不替换五个项目详情页为真实截图或视频，除非先出现明确候选来源和授权记录。
 - 不把 Mascot 首批单张表情升级为下载素材、素材包、社交贴纸包或外部分发资源。
 - 不生成 Mascot 单张缩略图，除非页面性能或文件包边界出现真实需要并另行确认。
 - 不启动 seasonal 页面、活动 Banner 或节日彩蛋实现。
@@ -69,7 +69,7 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 
 ## 产品边界
 
-当前官网只负责展示 RadishX 和四个项目矩阵。
+当前官网只负责展示 RadishX 和五个项目矩阵。
 
 本官网包含：
 
@@ -80,8 +80,8 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 
 本官网不包含：
 
-- 四个项目的实际业务功能。
-- 四个项目未来独立站点的部署。
+- 五个项目的实际业务功能。
+- 五个项目未来独立站点的部署。
 - 登录、后台、数据库、服务端 API。
 
 ## 域名决策
@@ -92,14 +92,15 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 - `forge.radishx.com`：RadishCatalyst 未来独立访问域名。
 - `flow.radishx.com`：RadishFlow 未来独立访问域名。
 - `mind.radishx.com`：RadishMind 未来独立访问域名。
+- `lex.radishx.com`：RadishLex 未来独立访问域名。
 - `x.radishx.com`：保留给 RadishX Labs、实验入口、短链或统一跳转页。
 
-四个项目域名不是当前 Vercel 官网项目的路由或重写规则。
+五个项目域名不是当前 Vercel 官网项目的路由或重写规则。
 
 ## 待确认
 
-- 四个项目后续是否补独立稳定 Logo，用于替换当前代码内临时标识。
-- 四个项目详情页后续是否需要真实截图或视频素材。
+- 五个项目后续是否补独立稳定 Logo，用于替换当前代码内临时标识。
+- 五个项目详情页后续是否需要真实截图或视频素材。
 - RadishMind 后续是否补项目自有 Logo、Console 截图或真实图片素材，用于替换当前代码内评测回路图。
 - “萝小白”首批单张表情已生成 Web 展示图并进入 `/mascot` 候选预览区；后续如果开放下载、素材包、社交贴纸包或外部分发，仍需另行确认授权和文件包边界。
 - 具体 seasonal 活动实现仍待确认活动目标、上线 / 下线时间、页面位置、文案边界、授权来源和撤下策略。
@@ -109,7 +110,7 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 下一轮 RadishX 官网功能开发应至少满足以下条件之一：
 
 1. Radish、RadishCatalyst、RadishFlow 或 RadishMind 有新的公开阶段成果，需要在官网更新定位、状态、入口或页面结构。
-2. 四个项目补齐正式 Logo、真实截图、公开视频、稳定 Demo、文档站、下载页或项目自有可视化素材。
+2. 五个项目补齐正式 Logo、真实截图、公开视频、稳定 Demo、文档站、下载页或项目自有可视化素材。
 3. 项目域名、部署策略、下载授权、素材授权或公开发布计划发生变化，需要官网同步。
 4. Mascot 素材确认新的授权范围，例如下载、素材包、社交贴纸包、seasonal 活动或外部分发。
 5. 首页主视觉、Open Graph、信息架构或品牌表达需要随项目实质进展更新。
@@ -119,8 +120,8 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 ## 后续顺序
 
 1. 保持当前首版官网可发布状态，必要时复核文档、验证脚本和发布检查记录。
-2. 等待四个项目进入更适合公开展示的阶段，并补齐正式 Logo、真实截图、视频、Demo、下载页、文档站或 RadishMind 自有视觉等材料。
-3. 四个项目出现新的正式候选来源后，先按项目视觉素材准入清单补齐字段，再进入素材审核和 Web 优化。
+2. 等待五个项目进入更适合公开展示的阶段，并补齐正式 Logo、真实截图、视频、Demo、下载页、文档站或 RadishMind 自有视觉等材料。
+3. 五个项目出现新的正式候选来源后，先按项目视觉素材准入清单补齐字段，再进入素材审核和 Web 优化。
 4. 如 React 页面继续调整或新增正式素材，先同步对应目标文档，再通过 Pencil 工具维护桌面与移动 v1.1 画板。
 5. 如进入新的部署阶段或页面 / 资源发生变化，线上 HTTP smoke 可复用当前脚本复跑确认；截图级发布检查使用 Playwright + 本机 Chrome 覆盖桌面与移动端。
 6. 如需使用 seasonal 图，先选择具体活动目标并确认上线 / 下线时间、页面位置、文案、授权和撤下策略，再生成 Web 版本。

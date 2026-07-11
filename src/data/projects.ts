@@ -1,6 +1,6 @@
 import type { ProjectRouteId } from "../app/routes";
 
-export type ProjectTone = "radish" | "catalyst" | "flow" | "mind";
+export type ProjectTone = "radish" | "catalyst" | "flow" | "mind" | "lex";
 
 export type ProjectLink = {
   label: string;
@@ -382,6 +382,82 @@ export const projects: Project[] = [
       {
         label: "访问项目",
         href: "https://mind.radishx.com",
+        isExternal: true,
+        isDisabled: true,
+        note: "Coming Soon",
+      },
+    ],
+  },
+  {
+    id: "lex",
+    tone: "lex",
+    name: "RadishLex",
+    shortName: "Lex",
+    path: "/lex",
+    futureDomain: "lex.radishx.com",
+    githubUrl: "https://github.com/laugh0608/RadishLex",
+    mark: {
+      monogram: "L",
+      wordmark: "Lex",
+      label: "Temporary mark",
+      note: "RadishX 统一风格代码内标识，不是 RadishLex 正式 Logo。",
+    },
+    tagline: "本地优先的源代码可见中文输入系统",
+    summary:
+      "RadishLex（萝卜词核）以 Rust 输入核心、Go 自部署同步后端和 Flutter 管理端，构建本地优先、可解释、可删除的中文输入法，把输入习惯留在用户自己手里。",
+    orbitLabel: "输入与个人词库",
+    role: "RadishX 体系的本地输入与个人化入口",
+    stage: "M1 macOS 离线输入推进中",
+    status: "Source Available",
+    chips: ["Rust Core", "Local-first", "Chinese IME"],
+    capabilities: ["本地优先的离线输入", "可解释、可删除的个人化学习", "端到端加密的自部署同步"],
+    signals: ["源码可见、隐私优先与删除优先", "未来独立域名为 lex.radishx.com", "第一平台为 macOS InputMethodKit"],
+    diagram: {
+      label: "Input pipeline",
+      title: "本地输入链路",
+      note: "基于当前公开定位生成的代码内自有视觉，不引入平台候选窗或 manager 截图，也不声明已有正式产品 UI。",
+      coreLabel: "RadishLex",
+      coreTitle: "Rust Core + UserDB",
+      nodes: [
+        { label: "Compose", value: "拼音切分与候选生成" },
+        { label: "Rank", value: "候选重排与个人偏好" },
+        { label: "Learn", value: "可解释可删除学习" },
+        { label: "Sync", value: "端到端加密同步" },
+      ],
+      lanes: [
+        { label: "Local", value: "离线输入热路径" },
+        { label: "UserDB", value: "本地词库与学习" },
+        { label: "Encrypted", value: "密文对象同步" },
+      ],
+    },
+    assetReview: {
+      source: "RadishX 代码内输入链路图",
+      boundary: "表达公开定位，不是平台候选窗、manager 界面或真实输入截图。",
+      nextNeed: "后续补项目自有 Logo、真实候选窗截图或 manager 可视化图。",
+    },
+    documentation: [
+      {
+        label: "Docs index",
+        href: "https://github.com/laugh0608/RadishLex/tree/dev/docs",
+        description: "项目文档总入口，覆盖技术方案、路线图、隐私同步、引擎边界和平台策略。",
+        boundary: "开发者文档入口，不代表 RadishX 官网提供输入法下载或安装。",
+      },
+      {
+        label: "Technical plan",
+        href: "https://github.com/laugh0608/RadishLex/blob/dev/docs/technical-plan.md",
+        description: "稳定架构、职责边界、输入链和平台策略说明。",
+        boundary: "只说明工程方向，不构成发布、下载或安装承诺。",
+      },
+    ],
+    links: [
+      {
+        label: "GitHub",
+        href: "https://github.com/laugh0608/RadishLex",
+        isExternal: true,
+      },
+      {
+        label: "访问项目",
+        href: "https://lex.radishx.com",
         isExternal: true,
         isDisabled: true,
         note: "Coming Soon",
