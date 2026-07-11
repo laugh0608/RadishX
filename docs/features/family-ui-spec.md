@@ -50,7 +50,7 @@
 
 ## 完成标准
 
-- family-ui（2026-07-11）全部章节与 tokens 文件入库，索引完整。
+- family-ui v26.7.1 全部章节与 tokens 文件入库，索引完整。
 - 16 张参考图入库并在 `references.md` 与 `docs/assets/materials.md` 登记边界。
 - 各入口文档同步完成，官网构建通过。
 

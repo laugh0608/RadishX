@@ -41,7 +41,7 @@
 
 **Step 5 更新项目入口**：在目标项目 `CLAUDE.md` / `AGENTS.md` / README 的规范入口处改为：
 
-> UI 通用规范遵循 RadishX `docs/design/family-ui/`（版本 <YYYY-MM-DD>）；项目差异见 `docs/ui-addendum.md`。
+> UI 通用规范遵循 RadishX `docs/design/family-ui/`（版本 <vYY.M.RELEASE>）；项目差异见 `docs/ui-addendum.md`。
 
 **Step 6 验证与回写**：目标项目构建 + 至少一桌面一窄屏视觉 smoke；按 09 章「合规检查清单」自查；回写 RadishX [09-adoption.md](09-adoption.md) 接入状态表。
 
@@ -59,7 +59,7 @@
 ```markdown
 # <项目名> UI 差异附录
 
-- 遵循：RadishX family-ui <YYYY-MM-DD>（docs/design/family-ui/）
+- 遵循：RadishX family-ui <vYY.M.RELEASE>（docs/design/family-ui/）
 - Profile：Brand / Workbench / Game（多面产品分别标注）
 - 主 accent：<母板色系>；辅 accent：<母板色系>（与 family-ui 02 章登记一致）
 
@@ -88,8 +88,8 @@
 
 ## 5. 版本升级跟进
 
-- 非破坏性更新：下游择机跟进，更新附录中的遵循版本日期即可。
-- 破坏性更新：family-ui 会在 [09-adoption.md](09-adoption.md) 登记迁移窗口与破坏性变更清单；下游按清单逐项处理后更新版本日期。
+- 非破坏性更新：下游择机跟进，更新附录中的遵循版本号即可。
+- 破坏性更新：family-ui 会在 [09-adoption.md](09-adoption.md) 登记迁移窗口与破坏性变更清单；下游按清单逐项处理后更新版本号。
 
 ## 6. 撤专题的"不做"
 

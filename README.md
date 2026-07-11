@@ -10,7 +10,7 @@ RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 Rad
 - 部署目标：GitHub 仓库 + Vercel 免费部署，当前主域为 `https://radishx.com/`
 - 页面结构：首页 + 四个项目详情页 + About 页面 + 虚拟形象页面
 - 官网气质：偏创意品牌、游戏感和视觉冲击，参考 Apple 官网的克制文案、大幅视觉、清晰节奏和强产品呈现，同时继承 Radish 的淡雅新中式、纸感、印色感和低饱和轻纹样
-- 家族 UI 规范：`docs/design/family-ui/` 是服务整个 Radish 家族的统一 UI / 视觉规范（family-ui 2026-07-11），官网作为 Brand 展示面继承其通用口径；各兄弟项目未来按 `family-ui/10-migration-playbook.md` 撤除各自通用 UI 专题并接入本规范
+- 家族 UI 规范：`docs/design/family-ui/` 是服务整个 Radish 家族的统一 UI / 视觉规范（family-ui v26.7.1），官网作为 Brand 展示面继承其通用口径；各兄弟项目未来按 `family-ui/10-migration-playbook.md` 撤除各自通用 UI 专题并接入本规范
 - 设计流程：先在 `docs/design/sources/radishx-site-v0.pen` 完成页面设计稿，审核后再进入 React 实现
 - 前端实现：已建立 `src/` 推荐目录结构，使用轻量路由表实现 `/`、四个项目页、`/mascot` 和 `/about`
 - 素材使用：首批 Mascot / About 图片、项目代表图、表情 / 贴纸整图预览已审核并生成 Web 版本；后续截图、Logo、角色图、单张贴纸或活动图正式用于页面前仍需先审核具体选图

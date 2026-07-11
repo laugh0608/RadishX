@@ -1,6 +1,6 @@
 # RadishX 官网 UI 差异附录
 
-- 遵循：RadishX family-ui `2026-07-11`（`docs/design/family-ui/`）
+- 遵循：RadishX family-ui `v26.7.1`（`docs/design/family-ui/`）
 - Profile：Brand 展示面
 - 主 accent：全色系编排（官网做家族陈列）；遵守同屏 ≤ 2 组强色
 
@@ -41,5 +41,5 @@
 ## 维护规则
 
 - 通用条款变更走 family-ui，不在本附录扩写。
-- family-ui 非破坏性更新后择机跟进，更新上方遵循版本日期；破坏性更新按其迁移窗口执行。
+- family-ui 非破坏性更新后择机跟进，更新上方遵循版本号；破坏性更新按其迁移窗口执行。
 - 本项目视觉收敛已完成（硬编码 → token）；后续新增样式只消费 `--rx-*`，不再引入硬编码颜色。
