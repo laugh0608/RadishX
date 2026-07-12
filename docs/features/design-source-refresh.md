@@ -88,6 +88,21 @@
 - `About Page v1.1 - React Accurate`：仓库区补 RadishLex 卡（6 张），域名区补 `lex.radishx.com` 并将「四个项目」描述改「五个」；header 补主题入口；画板高度 3120 → 3180 消除 footer 裁切。
 - 原 v1 画板与 Mascot / 详情 / About 独立移动稿的精简 condensed header 保留不动；主题入口以首页与桌面 site header 作为示范。
 
+### 2026-07-12 v1.2「craft」视觉精修方向
+
+对照家族 UI 参考图（现代工作台 craft：通透、去框、留白、柔投影分层、克制强调）重做一套 v1.2 craft 画板，与 v1 / v1.1 并存，不覆盖旧稿。核心 craft 规则：
+
+- 去框：容器改无描边 + 柔投影漂浮 + 大圆角（12–20）；仅浮层 / 卡片用 shadow。
+- 留白：section padding 拉到 88 / hero 92，内容呼吸；一屏一个强焦点。
+- 强调色收敛：品牌玫红只留 eyebrow 小点 + 主 CTA；项目色只作小色点；chip 收敛为点分隔 meta 行。
+- 段控主题切换：三段（system / light / dark），active 段浮起，镜像 `ThemeToggle`。
+- 项目改单列全宽交替 band（顺带对齐真实实现结构）；Mind / Lex 用 craft 链路 chips。
+- primary 按钮亮色近黑 pill、暗色转 `brand-primary` + 浅字。
+
+已产出 v1.2 画板：`Home Desktop / Mobile v1.2 - Craft`、`Project Detail v1.2 - Craft`、`Project Detail Mobile v1.2 - Craft`、`Mascot Page v1.2 - Craft`、`Mascot Mobile v1.2 - Craft`、`About Page v1.2 - Craft`、`Home Desktop / Mobile v1.2 - Dark`（共 9 张）。
+
+已知缺口：`About Mobile v1.2 - Craft` 在本次 Pencil MCP 会话触发可复现的引擎 glitch（首个子级幽灵 50px 偏移 + 截图空白，连硬编码色块都不渲染；三次重建、换位、内联 header 均复现，但 batch_get 确认存储数据正确）。为不交付本会话渲染异常的画板，已暂时删除，留待新会话重建。其余 8 张 + 2 暗色均 `snapshot_layout` 无问题并截图核对通过。
+
 ## 验证
 
 - Pencil `snapshot_layout` 检查 `Home Desktop v1.1 - React Accurate` 无布局问题。

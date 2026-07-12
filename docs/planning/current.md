@@ -39,7 +39,7 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 | About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 二轮扫读优化已完成 |
 | 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 首批单张表情已生成 Web 展示图，下载、素材包和外部分发继续关闭 |
 | 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地质量基线收束、HTTP smoke、实现口径对齐、设计源同步、Mascot Chrome smoke、Mascot 单张表情 smoke、线上 HTTP smoke 和线上截图级 smoke 已完成 |
-| 设计源精确化 | [design-source-refresh.md](../features/design-source-refresh.md) | v1.1 桌面 / 移动画板已补齐；2026-07-12 已同步 family-ui 双主题变量、RadishLex 第五项目、暗色画板与 header 主题入口 |
+| 设计源精确化 | [design-source-refresh.md](../features/design-source-refresh.md) | v1.1 桌面 / 移动画板已补齐；2026-07-12 已同步 family-ui 双主题变量、RadishLex 第五项目、暗色画板与 header 主题入口，并新增一套 v1.2「craft」精修画板（去框 / 留白 / 柔投影，About 移动待补） |
 | React 与设计源对照校准 | [react-design-alignment.md](../features/react-design-alignment.md) | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
 | 家族统一 UI 规范 | [family-ui-spec.md](../features/family-ui-spec.md) | v1.0.0 规范正文、tokens 与迁移说明书已入库，参考图已登记 |
 
