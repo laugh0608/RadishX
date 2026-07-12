@@ -41,7 +41,7 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 | 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地质量基线收束、HTTP smoke、实现口径对齐、设计源同步、Mascot Chrome smoke、Mascot 单张表情 smoke、线上 HTTP smoke 和线上截图级 smoke 已完成 |
 | 设计源精确化 | [design-source-refresh.md](../features/design-source-refresh.md) | 已切换到 v1.2「craft」单基线（10 张：去框 / 留白 / 柔投影 / 段控主题）；v1 / v1.1 / v1.1 暗色旧画板已从画布删除，留存 git 历史 |
 | React 与设计源对照校准 | [react-design-alignment.md](../features/react-design-alignment.md) | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
-| craft 视觉基线落地 | [craft-visual-refresh.md](../features/craft-visual-refresh.md) | Phase 0 文档先行已建；分阶段把 v1.2 craft 迁进 React 实现 |
+| craft 视觉基线落地 | [craft-visual-refresh.md](../features/craft-visual-refresh.md) | Phase 0 文档 + Phase 1 CSS 基础层 + Phase 2 首页已落地并验证；Phase 3/4（详情/Mascot/About 细化）、Phase 5（全站三态对照）待续 |
 | 家族统一 UI 规范 | [family-ui-spec.md](../features/family-ui-spec.md) | v1.0.0 规范正文、tokens 与迁移说明书已入库，参考图已登记 |
 
 ## 当前活跃目标

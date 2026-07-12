@@ -1,6 +1,6 @@
 # craft 视觉基线落地（v1.2 → React 实现）
 
-状态：进行中（Phase 0 文档先行）
+状态：进行中（Phase 0 文档、Phase 1 CSS 基础层、Phase 2 首页已完成）
 最后更新：2026-07-12
 
 ## 背景
@@ -58,3 +58,27 @@ npm run build
 
 - 每完成一个可验收阶段，回写本文件状态并同步 devlog。
 - 若实现过程中发现 v1.2 设计源本身需微调，回到 Pencil 先改设计源再落实现，保持 Pencil-first。
+
+## 进度记录
+
+### 2026-07-12 Phase 1 + Phase 2 落地
+
+Phase 1（CSS craft 基础层，`src/styles`）：
+
+- `tokens.css` 新增 `--rx-shadow-panel` / `--rx-shadow-popover`（复用 family-ui `--rd-shadow-*`，亮 / 暗自适应）与 `--rx-radius-craft`（16）。
+- `utilities.css` 给各 project tone 加语义变量 `--rx-tone`（jade / earth / ink / purple / grayjade），供 craft 色点消费。
+- `global.css`：移除背景网格纹理（`body::before`）降噪；header 导航去容器边框改无框文字、active / hover 用 `text-primary`（删除暗色 nav pill 覆盖）；`.button--secondary` 改无框柔投影软按钮；共享卡片组（info-tile / document-card / repo-card / related-project / detail-panel / contact-panel / qr-panel / mascot-form）与 `.info-rail__item` 由描边改无框柔投影；`.mascot-sigil` 去框加柔投影。
+- 主题切换控件由单图标循环改为三段段控（`ThemeToggle.tsx` 重写为 system / light / dark 直选，新增 `.theme-seg` 样式，active 段浮起）。
+
+Phase 2（首页，`src/components/sections` + `global.css`）：
+
+- hero orbit：容器、mascot 锚点、5 个 project 节点全部去描边改柔投影漂浮，节点用 `--rx-tone` 彩色点标识，圆角加大。
+- project band：去描边、加大圆角与留白、柔投影漂浮；`.project-band__domain` 去上下描边。
+
+验证：
+
+- `npm run build`（tsc --noEmit + vite build）通过。
+- 本机 Chrome headless + `vite preview` 截图：首页浅色桌面、深色桌面、浅色移动均为通透 craft，orbit 无框漂浮 + 彩色点、段控主题切换、软按钮、纸面无网格噪音，与 v1.2 设计源一致。
+- 抽查 `/flow`、`/about`：全局基础层顺带把详情 / 关于页卡片、按钮、header 一并 craft 化，未破坏布局。
+
+Phase 3 / 4 待办：细化详情 / Mascot / About 页页面特有描边残留（如 `.project-hero__facts` 小卡）与各页 hero 层次；Phase 5 全站三态截图逐页对照。

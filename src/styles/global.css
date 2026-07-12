@@ -19,18 +19,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-body::before {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  content: "";
-  background-image:
-    linear-gradient(var(--rx-pattern-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--rx-pattern-line) 1px, transparent 1px);
-  background-size: 56px 56px;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.16), transparent 62%);
-}
+/* 纸面留白优先：v1.2 craft 移除背景网格纹理，降低仪表盘噪音 */
 
 button,
 input,
@@ -146,11 +135,7 @@ p {
 .site-header__nav {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 6px;
-  border: 1px solid var(--rx-border-soft);
-  border-radius: var(--rx-radius-control);
-  background: color-mix(in srgb, var(--rx-bg-surface) 72%, transparent);
+  gap: 4px;
 }
 
 .site-header__nav a {
@@ -168,8 +153,7 @@ p {
 
 .site-header__nav a[aria-current="page"],
 .site-header__nav a:hover {
-  background: var(--rx-bg-ink);
-  color: var(--rx-text-on-ink);
+  color: var(--rx-text-primary);
 }
 
 .site-header__actions {
@@ -178,25 +162,38 @@ p {
   gap: 10px;
 }
 
-.theme-toggle {
+.theme-seg {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border-radius: var(--rx-radius-control);
+  background: var(--rx-bg-muted);
+}
+
+.theme-seg__item {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 44px;
-  min-height: 44px;
-  padding: 8px;
-  border: 1px solid var(--rx-border-soft);
+  width: 40px;
+  height: 38px;
+  border: none;
   border-radius: var(--rx-radius-control);
-  background: color-mix(in srgb, var(--rx-bg-surface) 72%, transparent);
-  color: var(--rx-text-secondary);
+  background: transparent;
+  color: var(--rx-text-muted);
   cursor: pointer;
   transition:
-    border-color var(--rx-transition-base),
-    color var(--rx-transition-base);
+    color var(--rx-transition-base),
+    background var(--rx-transition-base);
 }
 
-.theme-toggle:hover {
-  border-color: var(--rx-border-strong);
+.theme-seg__item:hover {
+  color: var(--rx-text-secondary);
+}
+
+.theme-seg__item[aria-pressed="true"] {
+  background: var(--rx-bg-surface);
+  box-shadow: var(--rx-shadow-panel);
   color: var(--rx-text-primary);
 }
 
@@ -315,8 +312,7 @@ p {
   display: grid;
   grid-template-rows: minmax(520px, 1fr) auto;
   min-height: 700px;
-  border: 1px solid var(--rx-border-soft);
-  border-radius: 8px;
+  border-radius: var(--rx-radius-craft);
   background:
     radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--rx-brand-primary) 14%, transparent), transparent 26%),
     radial-gradient(circle at 22% 78%, color-mix(in srgb, var(--rx-accent-jade) 12%, transparent), transparent 22%),
@@ -362,9 +358,8 @@ p {
   min-width: 0;
   margin: 0;
   padding: 12px;
-  border: 1px solid var(--rx-border-strong);
-  border-radius: 8px;
-  background: color-mix(in srgb, var(--rx-bg-surface) 92%, transparent);
+  border-radius: var(--rx-radius-craft);
+  background: var(--rx-bg-surface);
   box-shadow: var(--rx-shadow-soft);
   transform: translate(-50%, -50%);
 }
@@ -406,13 +401,20 @@ p {
   position: absolute;
   z-index: 3;
   display: grid;
-  gap: 4px;
+  gap: 6px;
   width: 200px;
-  padding: 18px;
-  border: 1px solid var(--rx-border-soft);
-  border-radius: 8px;
-  background: color-mix(in srgb, var(--rx-bg-surface) 88%, transparent);
-  box-shadow: 0 10px 26px rgba(var(--rx-shadow-color), 0.1);
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--rx-bg-surface);
+  box-shadow: var(--rx-shadow-panel);
+}
+
+.orbit-visual__project::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--rx-tone, var(--rx-brand-primary));
+  content: "";
 }
 
 .orbit-visual__project span {
@@ -640,8 +642,8 @@ p {
 }
 
 .button--secondary {
-  border-color: var(--rx-border-strong);
-  background: color-mix(in srgb, var(--rx-bg-surface) 64%, transparent);
+  background: var(--rx-bg-surface);
+  box-shadow: var(--rx-shadow-panel);
   color: var(--rx-text-primary);
 }
 
@@ -664,9 +666,9 @@ p {
   gap: 14px;
   min-height: 56px;
   padding: 12px 16px;
-  border: 1px solid var(--rx-border-soft);
-  border-radius: 8px;
-  background: color-mix(in srgb, var(--rx-bg-surface) 74%, transparent);
+  border-radius: 12px;
+  background: var(--rx-bg-surface);
+  box-shadow: var(--rx-shadow-panel);
 }
 
 .info-rail__label,
@@ -859,11 +861,10 @@ p {
   grid-template-columns: minmax(0, 0.9fr) minmax(360px, 0.72fr);
   align-items: center;
   gap: 40px;
-  padding: 34px;
-  border: 1px solid var(--rx-border-soft);
-  border-radius: 8px;
+  padding: 40px;
+  border-radius: var(--rx-radius-craft);
   background: var(--rx-bg-surface);
-  box-shadow: 0 10px 28px rgba(var(--rx-shadow-color), 0.08);
+  box-shadow: var(--rx-shadow-soft);
 }
 
 .project-band--reverse {
@@ -890,9 +891,7 @@ p {
 .project-band__domain {
   display: grid;
   gap: 6px;
-  padding: 14px 0;
-  border-top: 1px solid var(--rx-border-soft);
-  border-bottom: 1px solid var(--rx-border-soft);
+  padding: 4px 0;
 }
 
 .project-band__domain span {
@@ -1385,9 +1384,9 @@ p {
 .contact-panel,
 .qr-panel,
 .mascot-form {
-  border: 1px solid var(--rx-border-soft);
-  border-radius: 8px;
-  background: color-mix(in srgb, var(--rx-bg-surface) 78%, transparent);
+  border-radius: 12px;
+  background: var(--rx-bg-surface);
+  box-shadow: var(--rx-shadow-panel);
 }
 
 .info-tile {
@@ -1478,11 +1477,11 @@ p {
   display: grid;
   place-items: center;
   min-height: 320px;
-  border: 1px solid var(--rx-border-soft);
-  border-radius: 8px;
+  border-radius: var(--rx-radius-craft);
   background:
     radial-gradient(circle at 50% 38%, color-mix(in srgb, var(--rx-brand-primary) 16%, transparent), transparent 28%),
     var(--rx-bg-app);
+  box-shadow: var(--rx-shadow-soft);
   overflow: hidden;
 }
 
@@ -3214,10 +3213,5 @@ p {
 
 /* —— 暗色组件覆盖：浅色的深底强调块在暗色下的转译 —— */
 [data-rd-theme="dark"] .button--primary {
-  background: var(--rx-brand-primary);
-}
-
-[data-rd-theme="dark"] .site-header__nav a[aria-current="page"],
-[data-rd-theme="dark"] .site-header__nav a:hover {
   background: var(--rx-brand-primary);
 }

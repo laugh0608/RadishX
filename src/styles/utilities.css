@@ -2,24 +2,28 @@
 .related-project--radish,
 .domain-card--radish {
   border-color: color-mix(in srgb, var(--rx-accent-jade) 28%, transparent);
+  --rx-tone: var(--rx-accent-jade);
 }
 
 .orbit-visual__project--catalyst,
 .related-project--catalyst,
 .domain-card--catalyst {
   border-color: color-mix(in srgb, var(--rx-accent-earth) 30%, transparent);
+  --rx-tone: var(--rx-accent-earth);
 }
 
 .orbit-visual__project--flow,
 .related-project--flow,
 .domain-card--flow {
   border-color: color-mix(in srgb, var(--rx-accent-ink) 30%, transparent);
+  --rx-tone: var(--rx-accent-ink);
 }
 
 .orbit-visual__project--mind,
 .related-project--mind,
 .domain-card--mind {
   border-color: color-mix(in srgb, var(--rx-accent-purple) 30%, transparent);
+  --rx-tone: var(--rx-accent-purple);
 }
 
 .domain-card--root {
@@ -78,6 +82,7 @@
 .related-project--lex,
 .domain-card--lex {
   border-color: color-mix(in srgb, var(--rx-accent-grayjade) 32%, transparent);
+  --rx-tone: var(--rx-accent-grayjade);
 }
 
 .project-hero--lex {

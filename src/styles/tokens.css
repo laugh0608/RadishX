@@ -28,7 +28,10 @@
   --rx-state-danger: var(--rd-state-danger);
   --rx-pattern-line: var(--rd-pattern-line);
   --rx-shadow-soft: var(--rd-shadow-soft);
+  --rx-shadow-panel: var(--rd-shadow-panel);
+  --rx-shadow-popover: var(--rd-shadow-popover);
   --rx-radius-card: var(--rd-radius-sm);
+  --rx-radius-craft: var(--rd-radius-lg);
   --rx-radius-control: var(--rd-radius-pill);
 
   /* —— 站点特有：Brand 面品牌字体与页面尺度 —— */
