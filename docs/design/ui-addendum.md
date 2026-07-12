@@ -1,6 +1,6 @@
 # RadishX 官网 UI 差异附录
 
-- 遵循：RadishX family-ui `v26.7.1`（`docs/design/family-ui/`）
+- 遵循：RadishX family-ui `v26.7.2`（`docs/design/family-ui/`）
 - Profile：Brand 展示面
 - 主 accent：全色系编排（官网做家族陈列）；遵守同屏 ≤ 2 组强色
 
@@ -21,6 +21,14 @@
 | `--rx-space-page-x` / `--rx-content-max` | 页面边距与内容宽度 |
 | `--rx-shadow-color` | 阴影暖棕分量 `91, 66, 44`（供 `rgba()` 叠加） |
 | `--rx-state-success-strong` / `--rx-state-warning-strong` | 状态 chip 深字（family-ui 暂未定义，后续可提请上升） |
+
+## 主题与暗色
+
+- 明暗切换机制在 `src/app/theme.ts`：`ThemePreference`（system / light / dark）+ localStorage 记忆 + `prefers-color-scheme` 监听；`index.html` 内联脚本在样式应用前设 `data-rd-theme`，避免首屏闪烁。
+- 切换入口 `src/components/ui/ThemeToggle.tsx` 位于 header，三态循环（跟随系统 → 浅色 → 深色）。
+- 暗色仅覆盖 `[data-rd-theme="dark"]` 下的 `--rd-*`（`family-ui-tokens.css`）与少量站点 token（`tokens.css`），别名层不变即整站生效。
+- 深底强调块（footer / section--ink / nav active / primary 按钮）在暗色下：前景统一用 `--rx-text-on-ink`；primary 按钮与 nav active 用 `--rx-brand-primary` 提亮避免沉底（见 `global.css` 的 `[data-rd-theme="dark"]` 覆盖）。
+- 站点 `--rx-shadow-color` 暗色转黑、`--rx-state-*-strong` 暗色转亮字。
 
 ## 领域自治组件
 

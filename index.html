@@ -3,6 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var pref = localStorage.getItem("radishx-theme") || "system";
+          var dark =
+            pref === "dark" ||
+            (pref === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+          if (dark) {
+            document.documentElement.setAttribute("data-rd-theme", "dark");
+          }
+          document.documentElement.style.colorScheme = dark ? "dark" : "light";
+        } catch (e) {}
+      })();
+    </script>
     <meta
       name="description"
       content="RadishX 是 Radish 系列项目的官网与统一入口，展示 Radish、RadishCatalyst、RadishFlow、RadishMind、RadishLex 与虚拟形象萝小白。"

@@ -1,6 +1,6 @@
 /*
  * Radish 家族统一 UI 规范 —— CSS 参考实现
- * family-ui v26.7.1 (2026-07-11)
+ * family-ui v26.7.2 (2026-07-12)
  *
  * 真相源：docs/design/family-ui/02-color.md 等章节与 tokens/tokens.json。
  * 用法：
@@ -123,29 +123,53 @@
   --rd-bg-muted: #f3eee5;
 }
 
-/* —— 暗色核心映射（初稿，全表排期后续版本）—— */
+/* —— 暗色全表（墨底 / 印色提亮一档 / 纹样减弱 / 阴影转黑；随 v26.7.2 补全）—— */
 [data-rd-theme="dark"] {
   --rd-bg-app: #1a1713;
   --rd-bg-surface: #23201a;
   --rd-bg-muted: #2b2721;
   --rd-bg-ink: #0d0c0a;
+  --rd-bg-canvas: #201d17;
 
   --rd-text-primary: #ede5d8;
   --rd-text-secondary: #b8ab9a;
   --rd-text-muted: #8d8172;
+  --rd-text-on-accent: #fffdf8;
+  --rd-text-on-ink: #ede5d8;
 
   --rd-border-soft: rgba(237, 229, 216, 0.14);
   --rd-border-strong: rgba(237, 229, 216, 0.26);
+  --rd-focus-ring: rgba(127, 160, 189, 0.55);
 
   --rd-brand-primary: #cd5076;
+  --rd-brand-hover: #da738a;
+  --rd-brand-soft: rgba(205, 80, 118, 0.20);
   --rd-action-primary: #7fa0bd;
+  --rd-action-hover: #98b4cd;
+  --rd-action-soft: rgba(127, 160, 189, 0.18);
+
+  --rd-accent-rouge: #cd5076;
+  --rd-accent-jade: #6fb39c;
+  --rd-accent-ink: #7fa0bd;
+  --rd-accent-earth: #c9997f;
+  --rd-accent-purple: #a88bb5;
+  --rd-accent-grayjade: #8fb3a5;
 
   --rd-state-success: #6fb39c;
+  --rd-state-success-soft: rgba(111, 179, 156, 0.18);
   --rd-state-warning: #c9997f;
+  --rd-state-warning-soft: rgba(201, 153, 127, 0.18);
   --rd-state-danger: #d4726a;
+  --rd-state-danger-soft: rgba(212, 114, 106, 0.18);
   --rd-state-info: #7fa0bd;
+  --rd-state-info-soft: rgba(127, 160, 189, 0.16);
+  --rd-state-neutral: #9a9a94;
+  --rd-state-neutral-soft: rgba(154, 154, 148, 0.16);
 
   --rd-pattern-line: rgba(237, 229, 216, 0.10);
+  --rd-shadow-soft: 0 16px 40px rgba(0, 0, 0, 0.44);
+  --rd-shadow-panel: 0 8px 24px rgba(0, 0, 0, 0.36);
+  --rd-shadow-popover: 0 12px 32px rgba(0, 0, 0, 0.48);
 }
 
 @media (prefers-reduced-motion: reduce) {

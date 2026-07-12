@@ -13,6 +13,7 @@
   --rx-text-primary: var(--rd-text-primary);
   --rx-text-secondary: var(--rd-text-secondary);
   --rx-text-muted: var(--rd-text-muted);
+  --rx-text-on-ink: var(--rd-text-on-ink);
   --rx-border-soft: var(--rd-border-soft);
   --rx-border-strong: var(--rd-border-strong);
   --rx-brand-primary: var(--rd-brand-primary);
@@ -45,4 +46,11 @@
   --rx-shadow-color: 91, 66, 44;
   --rx-state-success-strong: #2f705e;
   --rx-state-warning-strong: #7d5749;
+}
+
+/* —— 站点特有 token 的暗色覆盖 —— */
+[data-rd-theme="dark"] {
+  --rx-shadow-color: 0, 0, 0;
+  --rx-state-success-strong: #8fd4bd;
+  --rx-state-warning-strong: #e0b090;
 }

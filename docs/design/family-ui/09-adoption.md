@@ -73,7 +73,7 @@
 | 5 | Radish | border 三版本（`#d9cbb9` / `#ded4c7` / rgba） | `--rd-border-soft` | 全局 | 建 alias 层时 |
 | 6 | Radish console | text-primary `#25221f` | `#2f2a25` | 全局文本 | 建 alias 层时 |
 | 7 | 全家族 | 五套 token 前缀并存 | L2 别名 → 逐步替换为 `--rd-*` | — | 各项目节奏自定 |
-| 8 | 全家族 | 暗色模式无统一定义 | 02 章核心映射 → 后续版本全表 | — | 后续版本 |
+| 8 | 全家族 | 暗色全表已定义（v26.7.2），RadishX 已落地验证 | 各项目按 02 章暗色表 + `[data-rd-theme="dark"]` 接入 | 全局 | 定义完成，待各项目接入 |
 
 ## 4. 合规检查清单
 

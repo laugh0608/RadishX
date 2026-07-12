@@ -9,6 +9,7 @@ import { NotFoundPage } from "../pages/NotFoundPage";
 import { ProjectPage } from "../pages/ProjectPage";
 import { applyRouteMetadata } from "./metadata";
 import { resolveRoute } from "./routes";
+import { useTheme } from "./theme";
 
 function getLocationSnapshot() {
   return {
@@ -34,6 +35,7 @@ export function App() {
   const mainRef = useRef<HTMLElement>(null);
   const previousPathRef = useRef(location.pathname);
   const route = useMemo(() => resolveRoute(location.pathname), [location.pathname]);
+  const { preference, setPreference } = useTheme();
 
   const handleSkipToMain = (event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
@@ -97,7 +99,12 @@ export function App() {
       <a className="skip-link" href="#main-content" onClick={handleSkipToMain}>
         跳到正文
       </a>
-      <SiteHeader currentHash={location.hash} currentPath={route.path} />
+      <SiteHeader
+        currentHash={location.hash}
+        currentPath={route.path}
+        themePreference={preference}
+        onThemeChange={setPreference}
+      />
       <main id="main-content" ref={mainRef} tabIndex={-1}>
         {page}
       </main>

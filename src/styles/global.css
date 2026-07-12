@@ -102,7 +102,7 @@ p {
   border: 1px solid var(--rx-border-strong);
   border-radius: var(--rx-radius-control);
   background: var(--rx-bg-ink);
-  color: var(--rx-bg-surface);
+  color: var(--rx-text-on-ink);
   font-size: 14px;
   font-weight: 760;
   transform: translateY(-160%);
@@ -169,7 +169,35 @@ p {
 .site-header__nav a[aria-current="page"],
 .site-header__nav a:hover {
   background: var(--rx-bg-ink);
-  color: var(--rx-bg-surface);
+  color: var(--rx-text-on-ink);
+}
+
+.site-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px;
+  border: 1px solid var(--rx-border-soft);
+  border-radius: var(--rx-radius-control);
+  background: color-mix(in srgb, var(--rx-bg-surface) 72%, transparent);
+  color: var(--rx-text-secondary);
+  cursor: pointer;
+  transition:
+    border-color var(--rx-transition-base),
+    color var(--rx-transition-base);
+}
+
+.theme-toggle:hover {
+  border-color: var(--rx-border-strong);
+  color: var(--rx-text-primary);
 }
 
 .site-footer {
@@ -180,13 +208,13 @@ p {
   padding: 48px var(--rx-space-page-x);
   border-top: 1px solid var(--rx-border-soft);
   background: var(--rx-bg-ink);
-  color: var(--rx-bg-surface);
+  color: var(--rx-text-on-ink);
 }
 
 .site-footer p {
   max-width: 520px;
   margin-top: 10px;
-  color: color-mix(in srgb, var(--rx-bg-surface) 68%, transparent);
+  color: color-mix(in srgb, var(--rx-text-on-ink) 68%, transparent);
 }
 
 .site-footer__links {
@@ -195,7 +223,7 @@ p {
   justify-content: flex-end;
   gap: 8px 18px;
   max-width: 520px;
-  color: color-mix(in srgb, var(--rx-bg-surface) 78%, transparent);
+  color: color-mix(in srgb, var(--rx-text-on-ink) 78%, transparent);
 }
 
 .site-footer__links a {
@@ -551,20 +579,20 @@ p {
   background:
     linear-gradient(135deg, color-mix(in srgb, var(--rx-brand-primary) 18%, transparent), transparent 38%),
     var(--rx-bg-ink);
-  color: var(--rx-bg-surface);
+  color: var(--rx-text-on-ink);
 }
 
 .section--ink .eyebrow {
-  color: color-mix(in srgb, var(--rx-bg-surface) 74%, transparent);
+  color: color-mix(in srgb, var(--rx-text-on-ink) 74%, transparent);
 }
 
 .section--ink h2,
 .section--ink h3 {
-  color: var(--rx-bg-surface);
+  color: var(--rx-text-on-ink);
 }
 
 .section--ink p {
-  color: color-mix(in srgb, var(--rx-bg-surface) 68%, transparent);
+  color: color-mix(in srgb, var(--rx-text-on-ink) 68%, transparent);
 }
 
 .section__inner {
@@ -608,7 +636,7 @@ p {
 
 .button--primary {
   background: var(--rx-bg-ink);
-  color: var(--rx-bg-surface);
+  color: var(--rx-text-on-ink);
 }
 
 .button--secondary {
@@ -668,17 +696,17 @@ p {
 }
 
 .info-rail--dark .info-rail__item {
-  border-color: color-mix(in srgb, var(--rx-bg-surface) 16%, transparent);
-  background: color-mix(in srgb, var(--rx-bg-surface) 7%, transparent);
+  border-color: color-mix(in srgb, var(--rx-text-on-ink) 16%, transparent);
+  background: color-mix(in srgb, var(--rx-text-on-ink) 7%, transparent);
 }
 
 .info-rail--dark .info-rail__label,
 .info-rail--dark .info-rail__note {
-  color: color-mix(in srgb, var(--rx-bg-surface) 54%, transparent);
+  color: color-mix(in srgb, var(--rx-text-on-ink) 54%, transparent);
 }
 
 .info-rail--dark .info-rail__value {
-  color: var(--rx-bg-surface);
+  color: var(--rx-text-on-ink);
 }
 
 .status-chip {
@@ -2557,8 +2585,13 @@ p {
     flex-direction: column;
   }
 
-  .site-header__nav {
+  .site-header__actions {
     width: 100%;
+  }
+
+  .site-header__nav {
+    flex: 1;
+    min-width: 0;
     justify-content: space-between;
     overflow-x: auto;
   }
@@ -3177,4 +3210,14 @@ p {
     width: 100%;
     height: 180px;
   }
+}
+
+/* —— 暗色组件覆盖：浅色的深底强调块在暗色下的转译 —— */
+[data-rd-theme="dark"] .button--primary {
+  background: var(--rx-brand-primary);
+}
+
+[data-rd-theme="dark"] .site-header__nav a[aria-current="page"],
+[data-rd-theme="dark"] .site-header__nav a:hover {
+  background: var(--rx-brand-primary);
 }

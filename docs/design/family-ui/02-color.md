@@ -138,9 +138,9 @@ Game 面不使用本表；只须保证状态色语义与双通道原则成立。
 - 图表用色从 accent 与其浅阶衍生，网格线用 `--rd-border-soft`，不引入荧光色。
 - 主观校验：颜色应更接近「纸、墨、印、染、玉、木」，而不是「荧光、塑料、金属」。
 
-## 6. 暗色模式（核心映射，全表排期后续版本）
+## 6. 暗色模式（v26.7.2 起完整全表）
 
-原则：墨色暗纸底（暖黑，不用纯黑冷灰）、印色整体提亮一档、纹样进一步减弱、对比度达标后再谈气质。
+原则：墨色暗纸底（暖黑，不用纯黑冷灰）、印色整体提亮一档、纹样进一步减弱、阴影转黑、对比度达标后再谈气质。
 
 | Token | 暗色值 |
 | --- | --- |
@@ -148,17 +148,40 @@ Game 面不使用本表；只须保证状态色语义与双通道原则成立。
 | `--rd-bg-surface` | `#23201a` |
 | `--rd-bg-muted` | `#2b2721` |
 | `--rd-bg-ink` | `#0d0c0a` |
+| `--rd-bg-canvas` | `#201d17` |
 | `--rd-text-primary` | `#ede5d8` |
 | `--rd-text-secondary` | `#b8ab9a` |
 | `--rd-text-muted` | `#8d8172` |
+| `--rd-text-on-accent` | `#fffdf8` |
+| `--rd-text-on-ink` | `#ede5d8` |
 | `--rd-border-soft` | `rgba(237, 229, 216, 0.14)` |
 | `--rd-border-strong` | `rgba(237, 229, 216, 0.26)` |
+| `--rd-focus-ring` | `rgba(127, 160, 189, 0.55)` |
 | `--rd-brand-primary` | `#cd5076` |
+| `--rd-brand-hover` | `#da738a` |
+| `--rd-brand-soft` | `rgba(205, 80, 118, 0.20)` |
 | `--rd-action-primary` | `#7fa0bd` |
+| `--rd-action-hover` | `#98b4cd` |
+| `--rd-action-soft` | `rgba(127, 160, 189, 0.18)` |
+| `--rd-accent-rouge` | `#cd5076` |
+| `--rd-accent-jade` | `#6fb39c` |
+| `--rd-accent-ink` | `#7fa0bd` |
+| `--rd-accent-earth` | `#c9997f` |
+| `--rd-accent-purple` | `#a88bb5` |
+| `--rd-accent-grayjade` | `#8fb3a5` |
 | `--rd-state-success` | `#6fb39c` |
+| `--rd-state-success-soft` | `rgba(111, 179, 156, 0.18)` |
 | `--rd-state-warning` | `#c9997f` |
+| `--rd-state-warning-soft` | `rgba(201, 153, 127, 0.18)` |
 | `--rd-state-danger` | `#d4726a` |
+| `--rd-state-danger-soft` | `rgba(212, 114, 106, 0.18)` |
 | `--rd-state-info` | `#7fa0bd` |
+| `--rd-state-info-soft` | `rgba(127, 160, 189, 0.16)` |
+| `--rd-state-neutral` | `#9a9a94` |
+| `--rd-state-neutral-soft` | `rgba(154, 154, 148, 0.16)` |
 | `--rd-pattern-line` | `rgba(237, 229, 216, 0.10)` |
+| `--rd-shadow-soft` | `0 16px 40px rgba(0, 0, 0, 0.44)` |
+| `--rd-shadow-panel` | `0 8px 24px rgba(0, 0, 0, 0.36)` |
+| `--rd-shadow-popover` | `0 12px 32px rgba(0, 0, 0, 0.48)` |
 
-该表为初稿，未经对比度全量验证；各项目当前阶段不要求实现暗色，但新建 token 层时应预留主题切换机制（Radish `default / guofeng` 双主题机制即为可用先例）。
+该表已由 RadishX（Brand 面）明暗双态截图验证。接入要点：暗色下 `bg-ink` 强调块的前景统一用 `--rd-text-on-ink`；primary 按钮与导航 active 态改用 `--rd-brand-primary` 提亮，避免纯黑沉底；阴影转黑增强暗底纵深。各项目接入暗色时用 `[data-rd-theme="dark"]` 覆盖 `--rd-*`，并保证「颜色 + 图标 / 文字」双通道与对比度。主题切换机制可参考 RadishX `src/app/theme.ts`（跟随系统 + 手动三态 + localStorage 记忆 + 防 FOUC 内联脚本）与 Radish `default / guofeng` 双主题先例。
