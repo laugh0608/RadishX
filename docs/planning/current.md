@@ -41,6 +41,7 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 | 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地质量基线收束、HTTP smoke、实现口径对齐、设计源同步、Mascot Chrome smoke、Mascot 单张表情 smoke、线上 HTTP smoke 和线上截图级 smoke 已完成 |
 | 设计源精确化 | [design-source-refresh.md](../features/design-source-refresh.md) | 已切换到 v1.2「craft」单基线（10 张：去框 / 留白 / 柔投影 / 段控主题）；v1 / v1.1 / v1.1 暗色旧画板已从画布删除，留存 git 历史 |
 | React 与设计源对照校准 | [react-design-alignment.md](../features/react-design-alignment.md) | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
+| craft 视觉基线落地 | [craft-visual-refresh.md](../features/craft-visual-refresh.md) | Phase 0 文档先行已建；分阶段把 v1.2 craft 迁进 React 实现 |
 | 家族统一 UI 规范 | [family-ui-spec.md](../features/family-ui-spec.md) | v1.0.0 规范正文、tokens 与迁移说明书已入库，参考图已登记 |
 
 ## 当前活跃目标
@@ -48,6 +49,8 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 当前没有新的页面、素材、下载、seasonal 或部署目标。当前活跃目标从功能开发转为保持官网首版可发布状态，并做轻量的状态复核、文档一致性检查和必要的小范围质量改进。
 
 例外：家族统一 UI 规范（family-ui）作为跨项目文档目标已启动，详见 [family-ui-spec.md](../features/family-ui-spec.md)。该目标只产出 `docs/design/family-ui/` 规范、tokens 与参考素材，不改动官网页面代码、公开图片资源或部署配置，因此不与官网功能等待期冲突。
+
+例外：craft 视觉基线落地作为视觉表现层收敛目标已启动，详见 [craft-visual-refresh.md](../features/craft-visual-refresh.md)。设计源已切换到 v1.2 craft 单基线，本目标按 Pencil-first 把 craft 手感迁进 React 实现，只改视觉表现层，不改信息架构、路由、文案口径或素材边界，不新增页面 / 素材 / 依赖。
 
 本阶段优先级：
 
