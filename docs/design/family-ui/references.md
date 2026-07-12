@@ -1,6 +1,6 @@
 # 参考图索引与版权口径
 
-本页登记 `assets/design-references/ui/` 中的 16 张外部 UI 风格参考图：每张图学什么、明确不学什么、对应规范章节。
+本页登记 `assets/design-references/ui/` 中的 27 张外部 UI 风格参考图：每张图学什么、明确不学什么、对应规范章节。
 
 ## 版权与使用边界
 
@@ -29,6 +29,17 @@
 | `ui-ref-14-ats-candidates-table-stages.jpeg` | ATS 候选人管理 | 阶段漏斗 KPI 分组、表格列排序指示、来源图标 + 文本双通道表达 | 紫色主按钮 | 06 |
 | `ui-ref-15-seo-dashboard-charts.jpeg` | SEO 站点仪表盘 | 等宽字标签风格、柱线混合图、条状分布（keyword bars）、表格数值密度 | 蓝橙图表色（家族用母板衍生） | 02、06 |
 | `ui-ref-16-datasource-connection-wizard.jpeg` | 数据源连接向导 | 四步 stepper（编号 → 完成 √ + 连线）、选择卡网格、表单双列、成功状态条、radio 组 | 蓝色 accent | 06 |
+| `ui-ref-17-hr-dashboard-attendance-heatmap.jpeg` | Wiko HR 管理仪表盘 | employee manager 侧栏分组、出勤热力图（小时 × 星期）、设备占比条、KPI + 出勤表格三段 | 青绿整块高饱和 | 06、07 |
+| `ui-ref-18-legal-calendar-workspace.jpeg` | 律所 claim 工作台 Calendar | 侧栏功能 + Clients 分组、大字页面标题 + 计数徽章、Day/Week/Month 分段、日历网格 | 紫色 accent | 06、07 |
+| `ui-ref-19-docs-account-space-switcher.jpeg` | 文档应用账户菜单 | 账户下拉（头像 + 状态 + 快捷编号）、space 切换子菜单、Appearance / Settings 分组 | 彩虹渐变头像 | 06 |
+| `ui-ref-20-dark-analytics-dashboard.jpeg` | NuxtLabs 深色分析仪表盘 | **深色主题**：KPI 卡趋势 chip、点阵世界地图、双色柱状图、深底表格；暗色下卡片 / 边框 / 前景层次 | — | 02（暗色）、06、07 |
+| `ui-ref-21-email-client-reading.jpeg` | 邮件客户端阅读态 | 三栏（文件夹侧栏 + 邮件列表 + 阅读区）、附件卡、存储用量条、日期分组 | — | 06、07 |
+| `ui-ref-22-community-new-post-composer.png` | 社区发帖器 | 帖子类型分段（Idea/Question/Voice/Visual/Ama）、标题 + 正文 + 标签输入 + 添加、右侧 Active 线索栏 | 深色主按钮 | 06 |
+| `ui-ref-23-community-feed-toast.png` | 社区内容流 + 成功提示 | 帖子卡片（类型 chip + 标题 + 摘要 + 标签 + 投票 + 反应）、右下成功 toast、Active Now 侧栏 | — | 06、08 |
+| `ui-ref-24-alerts-notifications-ops.jpeg` | 告警运营台 | Quick Stats（Critical/Active/New/Unack）、Recent Alerts 表（头像 + 来源 + severity）、Alert Activity 双线图、自动刷新提示 | 紫底展示背景 | 06 |
+| `ui-ref-25-project-share-invite-settings.jpeg` | 项目协作设置 | 账户卡（含 Dark Mode 开关）、上传进度、Invite 权限下拉（can view）、Reset Password 表单、标签 max 提示 | — | 05（暗色开关）、06 |
+| `ui-ref-26-email-inbox-tabs-attachments.jpeg` | 邮件收件箱（tab + 附件） | 图标窄侧栏、Inbox/Sent/Drafts/Archive/Spam tab 行、列表勾选、Office 附件卡、认证徽标 | — | 06 |
+| `ui-ref-27-support-inbox-chat-agents.jpeg` | 客服协作 Inbox | 会话侧栏（Your inbox/Mentions 计数 + AI Agents 分组 + Team discussion 语音状态）、聊天气泡（深 / 浅双向）、纸纹背景 | — | 06、07 |
 
 ## 跨图共性结论（家族吸收基线）
 
@@ -37,3 +48,5 @@
 3. 单一 accent 小面积使用，品牌色不等于界面操作色 → 支撑 `brand` / `action` 拆分。
 4. 密度有序：KPI 卡 → 主内容 → 明细的页面节奏；留白靠间距阶梯而不是装饰分隔。
 5. 全部为桌面稿：**移动端规范不来自参考图**，以 [07-layout-platforms.md](07-layout-platforms.md) 为准。
+6. 深色样例（ref-20/24）与暗色开关（ref-05/25）印证暗色是主题选项：家族暗色以「墨底 + 印色提亮 + 卡片暗表面 + 前景层次」转译，见 [02-color.md](02-color.md) 暗色全表。
+7. 多栏工作台反复出现（邮件 ref-21/26、客服 ref-27、社区 ref-22/23）：侧栏导航 + 列表 + 详情三栏是 Workbench 面主力布局，与 [07-layout-platforms.md](07-layout-platforms.md) 的布局模式库一致。

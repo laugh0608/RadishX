@@ -10,7 +10,7 @@
 
 ### UI 视觉参考图
 
-`assets/design-references/ui/` 存放 16 张外部产品界面截图，用于 [family-ui 统一 UI 规范](../design/family-ui/README.md) 的结构与组件形态学参考，索引见 [family-ui/references.md](../design/family-ui/references.md)。
+`assets/design-references/ui/` 存放 27 张外部产品界面截图，用于 [family-ui 统一 UI 规范](../design/family-ui/README.md) 的结构与组件形态学参考，索引见 [family-ui/references.md](../design/family-ui/references.md)。2026-07-12 新增 17-27 共 11 张（含深色仪表盘、暗色开关、多栏邮件 / 客服 / 社区工作台等，为暗色模式与 Workbench 布局提供参考）。
 
 使用边界（与 RadishMind `ui-design-reference` 口径一致）：
 
@@ -105,7 +105,7 @@
 | 项目 | 候选素材 | 推荐用途 | 风险与限制 | 结论 |
 | --- | --- | --- | --- | --- |
 | Radish | `/Users/luobo/Code/Radish/Docs/images/RadishAcg-1024.png` | 详情页主媒体区项目代表图。 | README 已使用该图作为“萝卜娘”视觉，适合代表 Radish 气质；未发现可直接公开的当前产品截图或视频。`DataBases/TestOutput`、测试上传文件、第三方 UI 参考图和默认商品图不进入官网。 | 已生成 `public/images/projects/radish/radish-acg-web.jpg` 并接入 `/radish`。 |
-| RadishCatalyst | `/Users/luobo/Code/RadishCatalyst/assets/concept-art/2026-04-25-visual-direction-rpg-exploration.png` | 详情页主媒体区概念视觉。 | 属于项目源资产目录的概念图，只能标注为 `Concept visual`；不作为实机截图、试玩状态或上线承诺。`client/icon.svg` 是 Godot 默认图标，不作为项目 Logo。 | 已生成 `public/images/projects/catalyst/radishcatalyst-rpg-exploration-concept-web.jpg` 并接入 `/catalyst`。 |
+| RadishCatalyst | `/Users/luobo/Code/RadishCatalyst/assets/concept-art/2026-06-25-demo-first-screen-wide-reference.png` | 详情页主媒体区 demo 首屏概念视觉。 | 属于项目源资产目录的 demo 首屏宽幅参考图，标注为 `Demo concept`；展示异星工业基地与 HUD 方向，不作为实机 gameplay、试玩状态或上线承诺。`client/icon.svg` 是 Godot 默认图标，不作为项目 Logo。 | 2026-07-12 已替换为 `public/images/projects/catalyst/radishcatalyst-demo-first-screen-web.jpg`（1600×900），旧 `radishcatalyst-rpg-exploration-concept-web.jpg` 已移除。 |
 | RadishFlow | `/Users/luobo/Code/RadishFlow/docs/architecture/assets/studio-ui/baseline/radishflow-workbench-concept.png` | 详情页主媒体区 UI baseline。 | 兄弟仓库 README 已声明 2026-06-12 起停止公开维护，因此只能作为历史 UI 方向展示，不代表继续公开迭代、产品化、下载或交付承诺。`adapters/reference/`、Aspen/HYSYS/DWSIM/COFE 等参考截图均不进入官网。 | 已生成 `public/images/projects/flow/radishflow-workbench-concept-web.jpg`，接入 `/flow`，并将页面状态收敛为 `Archived`。 |
 | RadishMind | 无项目自有 Logo、截图、视频或代表性公开图片素材。 | 暂不接入 `public/images` 图片；详情页使用代码内生成的 `Evaluation loop` 协议 / 评测视觉。 | 当前发现的 `docs/assets/ui-design-reference/` 均为 AFFINE、CodexApp、1Panel、GitHub、Cloudflare、Discourse 等外部产品参考截图，只能用于内部灵感，不可作为官网项目图。代码内视觉只表达公开定位，不声明已有正式产品 UI。 | 已补强代码内 `Evaluation loop`，后续若补自有 Logo、Console 截图或真实可视化图，再按图片素材重新审核。 |
 
