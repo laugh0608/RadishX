@@ -1,6 +1,6 @@
 # 设计源精确化
 
-状态：已完成，桌面与独立移动 v1.1 画板已补齐；2026-07-12 已同步 family-ui 双主题变量、RadishLex 第五项目、暗色画板与 header 主题入口
+状态：已切换到 v1.2「craft」单基线（10 张画板）；v1 / v1.1 / v1.1 暗色旧画板已从设计源画布删除，保留在 git 历史
 最后更新：2026-07-12
 
 ## 目标
@@ -38,7 +38,7 @@
 - 不接入新的 seasonal 活动图。
 - 不开放 Mascot 缩略图、下载入口、素材包或外部分发口径。
 - 不把代码内临时项目标识描述为正式 Logo。
-- 不删除原 v1 画板。
+- 不删除原 v1 画板。（v1.1 阶段约束；已被 2026-07-12 v1.2 基线切换覆盖。）
 
 ## 设计要求
 
@@ -99,9 +99,11 @@
 - 项目改单列全宽交替 band（顺带对齐真实实现结构）；Mind / Lex 用 craft 链路 chips。
 - primary 按钮亮色近黑 pill、暗色转 `brand-primary` + 浅字。
 
-已产出 v1.2 画板：`Home Desktop / Mobile v1.2 - Craft`、`Project Detail v1.2 - Craft`、`Project Detail Mobile v1.2 - Craft`、`Mascot Page v1.2 - Craft`、`Mascot Mobile v1.2 - Craft`、`About Page v1.2 - Craft`、`Home Desktop / Mobile v1.2 - Dark`（共 9 张）。
+已产出 v1.2 画板：`Home Desktop / Mobile v1.2 - Craft`、`Project Detail v1.2 - Craft`、`Project Detail Mobile v1.2 - Craft`、`Mascot Page v1.2 - Craft`、`Mascot Mobile v1.2 - Craft`、`About Page v1.2 - Craft`、`About Mobile v1.2 - Craft`、`Home Desktop / Mobile v1.2 - Dark`（共 10 张）。
 
-已知缺口：`About Mobile v1.2 - Craft` 在本次 Pencil MCP 会话触发可复现的引擎 glitch（首个子级幽灵 50px 偏移 + 截图空白，连硬编码色块都不渲染；三次重建、换位、内联 header 均复现，但 batch_get 确认存储数据正确）。为不交付本会话渲染异常的画板，已暂时删除，留待新会话重建。其余 8 张 + 2 暗色均 `snapshot_layout` 无问题并截图核对通过。
+`About Mobile v1.2 - Craft` 首次构建曾触发可复现的 Pencil MCP 会话引擎 glitch（首个子级幽灵 50px 偏移 + 截图空白，连硬编码色块都不渲染；三次重建、换位、内联 header 均复现，但 batch_get 确认存储数据正确）。新会话重建后 glitch 消失，`snapshot_layout` 堆叠正常、截图正常，已补齐。
+
+设计源已切换到 v1.2 单基线：确认 v1.2 craft 方向后，已删除全部 v1 / v1.1 / v1.1 暗色旧画板（15 张），画布仅保留 10 张 v1.2 craft 画板，两行排布（亮色 8 张 + 暗色 2 张）。v1 / v1.1 作为历史记录保留在 git 历史，不在当前设计源画布中。
 
 ## 验证
 
@@ -126,7 +128,7 @@
 
 - v1.1 画板覆盖首页桌面、首页移动、项目详情模板、Mascot 页、About 页，以及项目详情模板、Mascot 页和 About 页的独立 `390px` 移动版。
 - 新画板明确表达当前实现中的已审核素材、临时项目标识、公开文档入口和素材边界。
-- 原 v1 画板保留，作为早期设计记录。
+- 原 v1 画板保留，作为早期设计记录。（已被 2026-07-12 v1.2 阶段覆盖：确认 v1.2 craft 基线后，v1 / v1.1 旧画板已从画布删除，仅留存于 git 历史。）
 - 文档和开发日志同步记录。
 
 ## 后续事项
