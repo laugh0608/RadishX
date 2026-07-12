@@ -1,7 +1,7 @@
 # 设计源精确化
 
-状态：已完成，桌面与独立移动 v1.1 画板已补齐，Mascot 单张表情候选预览区已同步到最新实现口径
-最后更新：2026-06-18
+状态：已完成，桌面与独立移动 v1.1 画板已补齐；2026-07-12 已同步 family-ui 双主题变量、RadishLex 第五项目、暗色画板与 header 主题入口
+最后更新：2026-07-12
 
 ## 目标
 
@@ -16,6 +16,8 @@
 2026-06-17 Mascot 页完成 Gallery 信息层级与 Usage 说明二轮实现后，已继续同步桌面和独立移动 v1.1 画板，避免 Pencil 设计源停留在旧 Gallery notes 和三条 Usage 规则口径。
 
 2026-06-18 Mascot 页新增首批 10 张单张表情候选预览区后，已继续同步桌面和独立移动 v1.1 画板；单张表情候选区位于 Gallery 与 Usage 之间，继续表达官网内部展示候选和下载关闭口径。
+
+2026-07-12 官网完成 family-ui v26.7.2 接入（`--rx-*` 作为 `--rd-*` 别名、暗色三态、RadishLex 第五项目）后，设计源相对实现再次滞后（仍是四项目、orbit 四点、无 RadishLex、无暗色画板、Catalyst 为旧图、header 无主题入口）。本轮按 Pencil-first 原则把上述实现进展同步回设计源，恢复设计源—实现一致。
 
 ## 范围
 
@@ -74,6 +76,17 @@
 - 2026-06-17 已更新 `Mascot Page Mobile v1.1 - React Accurate`：Gallery 卡片说明补齐状态 / 边界摘要；Usage 从三条规则改为 Display、Safety、License 和 Seasonal 四组。
 - 2026-06-18 已更新 `Mascot Page v1.1 - React Accurate`：在 Gallery 与 Usage 之间新增 `Expressions - Internal Preview` 区块，使用 5 列 x 2 行展示首批 10 张单张表情候选，标注来源格位、官网内部展示状态、中文标签、英文语义和轻量使用场景。
 - 2026-06-18 已更新 `Mascot Page Mobile v1.1 - React Accurate`：在 Gallery 与 Usage 之间新增 `Mobile Expressions - Internal Preview` 区块，使用 2 列 x 5 行展示首批 10 张单张表情候选；移动画板高度调整为 `6160px` 以完整容纳新增区块、Usage 和页脚。
+- 2026-07-12 family-ui / RadishLex / 暗色同步（见下）。
+
+### 2026-07-12 family-ui 双主题 + RadishLex + 暗色同步
+
+- 变量层：`.pen` 的 `--rx-*` 色 token 从单套亮色扩为 `light / dark` 双主题值（axis `mode`），并新增 `rx-accent-grayjade`；未改动的 v1 / v1.1 亮色画板默认解析 light，视觉不变。
+- `Home Desktop v1.1 - React Accurate`：orbit 四点重排为五点（顶部居中 Radish + 上排 Catalyst / Flow + 下排 Mind / Lex + 中心站姿），hero 文案补第五方向，矩阵标题「四个 → 五个」，新增 RadishLex 全宽 band（Input pipeline 代码内视觉），Catalyst band 主图换为 demo 首屏图；header 补主题切换入口。
+- `Home Mobile v1.1 - React Accurate`：新增 RadishLex 卡与 orbit 第五点，纠正早期滞后口径（Catalyst 定位 / 域名 / 状态、Radish 域名 / 状态、Flow 状态、orbit 节点 meta），标题「四 → 五」，header 补主题入口。
+- 新增 `Home Desktop v1.1 - Dark` 与 `Home Mobile v1.1 - Dark`：根 frame `theme:{mode:"dark"}` 令全部 `$rx-*` 走暗色值；primary 按钮暗色底色改 `brand-primary` + 浅字，镜像实现避免深底深字。
+- `Project Detail Template v1.1 - Flow Example`：矩阵回链补 RadishLex 关联卡；header 补主题入口。
+- `About Page v1.1 - React Accurate`：仓库区补 RadishLex 卡（6 张），域名区补 `lex.radishx.com` 并将「四个项目」描述改「五个」；header 补主题入口；画板高度 3120 → 3180 消除 footer 裁切。
+- 原 v1 画板与 Mascot / 详情 / About 独立移动稿的精简 condensed header 保留不动；主题入口以首页与桌面 site header 作为示范。
 
 ## 验证
 
@@ -92,6 +105,7 @@
 - 2026-06-18 Pencil `snapshot_layout` 复查 `Mascot Page v1.1 - React Accurate` 无布局问题；新增桌面单张表情候选区后，画板高度调整为 `4320px`。
 - 2026-06-18 Pencil `snapshot_layout` 复查 `Mascot Page Mobile v1.1 - React Accurate` 无布局问题；新增移动单张表情候选区后，画板高度调整为 `6160px`。
 - 2026-06-18 已抽查 Mascot 桌面与移动 v1.1 画板截图，未发现新增候选区裁切、重叠或下载入口误导。
+- 2026-07-12 Pencil `snapshot_layout` 全文档 `problemsOnly` 通过（无裁切 / 重叠）；抽查首页桌面 / 移动 hero + 矩阵、暗色桌面 / 移动母板、详情页矩阵回链、About 仓库 + 域名、桌面 header 截图，五点 orbit、五 band、六仓库、`lex.radishx.com`、主题入口均正常；About 板高度抬升后 footer 完整。
 
 ## 完成标准
 

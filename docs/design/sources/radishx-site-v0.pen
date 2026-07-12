@@ -1,5 +1,5 @@
 {
-  "version": "2.13",
+  "version": "2.14",
   "children": [
     {
       "type": "frame",
@@ -7535,7 +7535,7 @@
       "name": "Home Desktop v1.1 - React Accurate",
       "clip": true,
       "width": 1440,
-      "height": 2500,
+      "height": 2774,
       "fill": "$rx-bg-app",
       "layout": "vertical",
       "children": [
@@ -7631,6 +7631,31 @@
                   "fontFamily": "$rx-font-body",
                   "fontSize": 14,
                   "fontWeight": "760"
+                },
+                {
+                  "type": "frame",
+                  "id": "P8HOAE",
+                  "name": "Theme Toggle",
+                  "width": 36,
+                  "height": 36,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "WcMAK",
+                      "name": "Theme Icon",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "monitor",
+                      "library": "lucide",
+                      "fill": "$rx-text-secondary"
+                    }
+                  ]
                 }
               ]
             }
@@ -7687,7 +7712,7 @@
                   "fill": "$rx-text-secondary",
                   "textGrowth": "fixed-width",
                   "width": 510,
-                  "content": "一个温润、克制、带一点游戏感的统一入口，连接内容社区、异星工业游戏、流程模拟软件与智能工具实验。",
+                  "content": "一个温润、克制、带一点游戏感的统一入口，连接内容社区、异星工业游戏、流程模拟软件、智能工具实验与中文输入系统。",
                   "lineHeight": 1.55,
                   "fontFamily": "$rx-font-body",
                   "fontSize": 20,
@@ -7887,8 +7912,8 @@
                     {
                       "type": "frame",
                       "id": "O5wVDF",
-                      "x": 282,
-                      "y": 70,
+                      "x": 266,
+                      "y": 96,
                       "name": "Mascot Standing Anchor",
                       "width": 170,
                       "height": 252,
@@ -7939,8 +7964,8 @@
                     {
                       "type": "frame",
                       "id": "HWWMD",
-                      "x": 34,
-                      "y": 34,
+                      "x": 266,
+                      "y": 6,
                       "name": "Orbit Node Radish",
                       "width": 170,
                       "height": 78,
@@ -7977,8 +8002,8 @@
                     {
                       "type": "frame",
                       "id": "h3plox",
-                      "x": 486,
-                      "y": 34,
+                      "x": 16,
+                      "y": 120,
                       "name": "Orbit Node RadishCatalyst",
                       "width": 170,
                       "height": 78,
@@ -8015,8 +8040,8 @@
                     {
                       "type": "frame",
                       "id": "CCad2",
-                      "x": 500,
-                      "y": 286,
+                      "x": 516,
+                      "y": 120,
                       "name": "Orbit Node RadishFlow",
                       "width": 170,
                       "height": 78,
@@ -8053,8 +8078,8 @@
                     {
                       "type": "frame",
                       "id": "Py9rB",
-                      "x": 38,
-                      "y": 286,
+                      "x": 16,
+                      "y": 326,
                       "name": "Orbit Node RadishMind",
                       "width": 170,
                       "height": 78,
@@ -8082,6 +8107,44 @@
                           "name": "RadishMind Node Meta",
                           "fill": "$rx-text-secondary",
                           "content": "智能与工具编排",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "srM3r",
+                      "x": 516,
+                      "y": 326,
+                      "name": "Orbit Node RadishLex",
+                      "width": 170,
+                      "height": 78,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-accent-grayjade",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Im7tM",
+                          "name": "RadishLex Node Title",
+                          "fill": "$rx-text-primary",
+                          "content": "RadishLex",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pLC4h",
+                          "name": "RadishLex Node Meta",
+                          "fill": "$rx-text-secondary",
+                          "content": "输入与个人词库",
                           "fontFamily": "$rx-font-body",
                           "fontSize": 12,
                           "fontWeight": "normal"
@@ -8256,7 +8319,7 @@
           "id": "kyCU8",
           "name": "Project Matrix Accurate",
           "width": "fill_container",
-          "height": 820,
+          "height": 1094,
           "fill": "$rx-bg-surface",
           "layout": "vertical",
           "gap": 24,
@@ -8282,7 +8345,7 @@
               "fill": "$rx-text-primary",
               "textGrowth": "fixed-width",
               "width": 860,
-              "content": "四个方向，一组连续的 Radish 生态",
+              "content": "五个方向，一组连续的 Radish 生态",
               "lineHeight": 1.14,
               "fontFamily": "$rx-font-heading",
               "fontSize": 42,
@@ -8535,7 +8598,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "../../../public/images/projects/catalyst/radishcatalyst-rpg-exploration-concept-web.jpg",
+                            "url": "../../../public/images/projects/catalyst/radishcatalyst-demo-first-screen-web.jpg",
                             "mode": "fill"
                           },
                           "width": "fill_container",
@@ -8546,7 +8609,7 @@
                           "id": "OpXCs",
                           "name": "RadishCatalyst Boundary",
                           "fill": "$rx-brand-primary",
-                          "content": "Reviewed / code-native visual",
+                          "content": "Demo concept · 异星基地首屏",
                           "fontFamily": "$rx-font-mono",
                           "fontSize": 12,
                           "fontWeight": "760"
@@ -8824,6 +8887,171 @@
                           "type": "text",
                           "id": "TvW15",
                           "name": "RadishMind Boundary",
+                          "fill": "$rx-brand-primary",
+                          "content": "Reviewed / code-native visual",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "coyOL",
+              "name": "Project Band Row 3",
+              "width": "fill_container",
+              "height": 250,
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QOg1O",
+                  "name": "Project Band RadishLex",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "$rx-bg-app",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-accent-grayjade",
+                  "strokeWidth": 1,
+                  "gap": 18,
+                  "padding": 22,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "NNQpy",
+                      "name": "RadishLex Band Copy",
+                      "width": 330,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "uRvqp",
+                          "name": "RadishLex Status",
+                          "fill": "$rx-brand-soft",
+                          "cornerRadius": "$rx-radius-control",
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            7,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "hgDMi",
+                              "name": "RadishLex Status Label",
+                              "fill": "$rx-brand-primary",
+                              "content": "Source Available",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "760"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "T6xin",
+                          "name": "RadishLex Band Title",
+                          "fill": "$rx-text-primary",
+                          "content": "RadishLex",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 28,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "YYBes",
+                          "name": "RadishLex Band Summary",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": 330,
+                          "content": "本地优先的源代码可见中文输入系统",
+                          "lineHeight": 1.45,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "YLIyt",
+                          "name": "RadishLex Future Domain",
+                          "fill": "$rx-text-muted",
+                          "content": "lex.radishx.com",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rQdGS",
+                      "name": "RadishLex Band Media",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "v5vjN",
+                          "name": "Lex Input Pipeline Diagram",
+                          "width": "fill_container",
+                          "height": 96,
+                          "fill": "$rx-bg-muted",
+                          "cornerRadius": 6,
+                          "stroke": "$rx-accent-grayjade",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 12,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Jn9SU",
+                              "name": "Lex Diagram Nodes",
+                              "fill": "$rx-text-primary",
+                              "content": "Compose -> Rank -> Learn -> Sync",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 13,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "text",
+                              "id": "m0OyGv",
+                              "name": "Lex Diagram Lanes",
+                              "fill": "$rx-text-secondary",
+                              "content": "Local · UserDB · Encrypted",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "LjynU",
+                          "name": "Lex Diagram Label",
+                          "fill": "$rx-brand-primary",
+                          "content": "Input pipeline",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Z7D5F8",
+                          "name": "RadishLex Boundary",
                           "fill": "$rx-brand-primary",
                           "content": "Reviewed / code-native visual",
                           "fontFamily": "$rx-font-mono",
@@ -9177,7 +9405,7 @@
       "name": "Home Mobile v1.1 - React Accurate",
       "clip": true,
       "width": 390,
-      "height": 3820,
+      "height": 4200,
       "fill": "$rx-bg-app",
       "layout": "vertical",
       "children": [
@@ -9262,6 +9490,31 @@
                   "fontFamily": "$rx-font-body",
                   "fontSize": 11,
                   "fontWeight": "760"
+                },
+                {
+                  "type": "frame",
+                  "id": "NB25E",
+                  "name": "Mobile Theme Toggle",
+                  "width": 26,
+                  "height": 26,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "LSSN4",
+                      "name": "Mobile Theme Icon",
+                      "width": 15,
+                      "height": 15,
+                      "icon": "monitor",
+                      "library": "lucide",
+                      "fill": "$rx-text-secondary"
+                    }
+                  ]
                 }
               ]
             }
@@ -9329,7 +9582,7 @@
               "fill": "$rx-text-secondary",
               "textGrowth": "fixed-width",
               "width": "fill_container",
-              "content": "一个入口，连接 Radish、RadishCatalyst、RadishFlow 与 RadishMind。首页首屏保留强视觉、少文案和明确入口。",
+              "content": "一个入口，连接 Radish、RadishCatalyst、RadishFlow、RadishMind 与 RadishLex。首页首屏保留强视觉、少文案和明确入口。",
               "lineHeight": 1.58,
               "fontFamily": "$rx-font-body",
               "fontSize": 15,
@@ -9501,8 +9754,8 @@
                       "type": "rectangle",
                       "cornerRadius": 6,
                       "id": "VDZ5s",
-                      "x": 130,
-                      "y": 34,
+                      "x": 116,
+                      "y": 86,
                       "name": "Mobile Mascot Reviewed Image",
                       "fill": {
                         "type": "image",
@@ -9518,8 +9771,8 @@
                     {
                       "type": "frame",
                       "id": "u0inRL",
-                      "x": 22,
-                      "y": 34,
+                      "x": 112,
+                      "y": 8,
                       "name": "Mobile Orbit Node Radish",
                       "width": 94,
                       "fill": "$rx-bg-surface",
@@ -9550,7 +9803,7 @@
                           "fill": "$rx-text-muted",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "生态根系统",
+                          "content": "社区与内容入口",
                           "lineHeight": 1.25,
                           "fontFamily": "$rx-font-body",
                           "fontSize": 10,
@@ -9561,8 +9814,8 @@
                     {
                       "type": "frame",
                       "id": "Gf2t1",
-                      "x": 220,
-                      "y": 32,
+                      "x": 8,
+                      "y": 100,
                       "name": "Mobile Orbit Node Catalyst",
                       "width": 94,
                       "fill": "$rx-bg-surface",
@@ -9593,7 +9846,7 @@
                           "fill": "$rx-text-muted",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "催化框架",
+                          "content": "游戏与世界观",
                           "lineHeight": 1.25,
                           "fontFamily": "$rx-font-body",
                           "fontSize": 10,
@@ -9604,8 +9857,8 @@
                     {
                       "type": "frame",
                       "id": "kEJL9",
-                      "x": 32,
-                      "y": 228,
+                      "x": 216,
+                      "y": 100,
                       "name": "Mobile Orbit Node Flow",
                       "width": 94,
                       "fill": "$rx-bg-surface",
@@ -9636,7 +9889,7 @@
                           "fill": "$rx-text-muted",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "仿真软件",
+                          "content": "工程与流程画布",
                           "lineHeight": 1.25,
                           "fontFamily": "$rx-font-body",
                           "fontSize": 10,
@@ -9647,8 +9900,8 @@
                     {
                       "type": "frame",
                       "id": "N2brL",
-                      "x": 214,
-                      "y": 220,
+                      "x": 8,
+                      "y": 210,
                       "name": "Mobile Orbit Node Mind",
                       "width": 94,
                       "fill": "$rx-bg-surface",
@@ -9679,7 +9932,50 @@
                           "fill": "$rx-text-muted",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "智能层",
+                          "content": "智能与工具编排",
+                          "lineHeight": 1.25,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 10,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Z8G9H",
+                      "x": 216,
+                      "y": 210,
+                      "name": "Mobile Orbit Node Lex",
+                      "width": 94,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 6,
+                      "stroke": "$rx-accent-grayjade",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QxptG",
+                          "name": "Mobile Orbit Node Title Lex",
+                          "fill": "$rx-text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Lex",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "qtvVb",
+                          "name": "Mobile Orbit Node Meta Lex",
+                          "fill": "$rx-text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "输入与个人词库",
                           "lineHeight": 1.25,
                           "fontFamily": "$rx-font-body",
                           "fontSize": 10,
@@ -9934,7 +10230,7 @@
               "fill": "$rx-text-primary",
               "textGrowth": "fixed-width",
               "width": "fill_container",
-              "content": "四个方向，一组连续生态",
+              "content": "五个方向，一组连续生态",
               "lineHeight": 1.15,
               "fontFamily": "$rx-font-heading",
               "fontSize": 30,
@@ -9972,7 +10268,7 @@
                       "id": "whdDN",
                       "name": "Mobile Project Status Radish Label",
                       "fill": "$rx-brand-primary",
-                      "content": "Active",
+                      "content": "Source Available",
                       "lineHeight": 1.35,
                       "fontFamily": "$rx-font-mono",
                       "fontSize": 11,
@@ -10000,7 +10296,7 @@
                   "fill": "$rx-text-secondary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "基础生态与长期品牌根系统。",
+                  "content": "内容社区与 WebOS 风格工作台。",
                   "lineHeight": 1.45,
                   "fontFamily": "$rx-font-body",
                   "fontSize": 13,
@@ -10013,7 +10309,7 @@
                   "fill": "$rx-text-muted",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "radishx.com",
+                  "content": "hub.radishx.com",
                   "lineHeight": 1.35,
                   "fontFamily": "$rx-font-mono",
                   "fontSize": 11,
@@ -10040,7 +10336,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "../../../public/images/projects/radish/radish-ecosystem-vision-web.jpg",
+                        "url": "../../../public/images/projects/radish/radish-acg-web.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -10093,7 +10389,7 @@
                       "id": "SxrZl",
                       "name": "Mobile Project Status RadishCatalyst Label",
                       "fill": "$rx-brand-primary",
-                      "content": "Planning",
+                      "content": "Coming Soon",
                       "lineHeight": 1.35,
                       "fontFamily": "$rx-font-mono",
                       "fontSize": 11,
@@ -10121,7 +10417,7 @@
                   "fill": "$rx-text-secondary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "开发催化框架与工具组织层。",
+                  "content": "异星工业科幻 ARPG。",
                   "lineHeight": 1.45,
                   "fontFamily": "$rx-font-body",
                   "fontSize": 13,
@@ -10134,7 +10430,7 @@
                   "fill": "$rx-text-muted",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "catalyst.radishx.com",
+                  "content": "forge.radishx.com",
                   "lineHeight": 1.35,
                   "fontFamily": "$rx-font-mono",
                   "fontSize": 11,
@@ -10161,7 +10457,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "../../../public/images/projects/catalyst/radishcatalyst-lab-bench-web.jpg",
+                        "url": "../../../public/images/projects/catalyst/radishcatalyst-demo-first-screen-web.jpg",
                         "mode": "fill"
                       },
                       "width": "fill_container",
@@ -10214,7 +10510,7 @@
                       "id": "LFFFV",
                       "name": "Mobile Project Status RadishFlow Label",
                       "fill": "$rx-brand-primary",
-                      "content": "Planning",
+                      "content": "Archived",
                       "lineHeight": 1.35,
                       "fontFamily": "$rx-font-mono",
                       "fontSize": 11,
@@ -10439,6 +10735,153 @@
                       "type": "text",
                       "id": "B9ZgG",
                       "name": "Mobile Project Boundary RadishMind",
+                      "fill": "$rx-brand-primary",
+                      "content": "Code-native visual",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "760"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BvCTg",
+              "name": "Mobile Project Card RadishLex",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": 8,
+              "stroke": "$rx-accent-grayjade",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PvjHH",
+                  "name": "Mobile Project Status RadishLex",
+                  "fill": "$rx-brand-soft",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    7,
+                    11
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dAudP",
+                      "name": "Mobile Project Status RadishLex Label",
+                      "fill": "$rx-brand-primary",
+                      "content": "Source Available",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "760"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "HSiDP",
+                  "name": "Mobile Project Title RadishLex",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "RadishLex",
+                  "lineHeight": 1.2,
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 25,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "h6azy",
+                  "name": "Mobile Project Summary RadishLex",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "本地优先的源代码可见中文输入系统。",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "wFVvU",
+                  "name": "Mobile Project Domain RadishLex",
+                  "fill": "$rx-text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "lex.radishx.com",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "frame",
+                  "id": "Uwj8w",
+                  "name": "Mobile Project Media RadishLex",
+                  "width": "fill_container",
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": 6,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "C82a4",
+                      "name": "Mobile Lex Diagram",
+                      "width": "fill_container",
+                      "height": 118,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 5,
+                      "stroke": "$rx-accent-grayjade",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Tp6Ah",
+                          "name": "Mobile Lex Diagram Label",
+                          "fill": "$rx-brand-primary",
+                          "content": "Input pipeline",
+                          "lineHeight": 1.35,
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "g2iBO6",
+                          "name": "Mobile Lex Diagram Nodes",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Compose -> Rank -> Learn -> Sync",
+                          "lineHeight": 1.35,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Mn5Ue",
+                      "name": "Mobile Project Boundary RadishLex",
                       "fill": "$rx-brand-primary",
                       "content": "Code-native visual",
                       "lineHeight": 1.35,
@@ -10775,6 +11218,31 @@
                   "fontFamily": "$rx-font-body",
                   "fontSize": 13,
                   "fontWeight": "760"
+                },
+                {
+                  "type": "frame",
+                  "id": "rNuVe",
+                  "name": "Theme Toggle",
+                  "width": 34,
+                  "height": 34,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "TWemi",
+                      "name": "Theme Icon",
+                      "width": 17,
+                      "height": 17,
+                      "icon": "monitor",
+                      "library": "lucide",
+                      "fill": "$rx-text-secondary"
+                    }
+                  ]
                 }
               ]
             }
@@ -13040,6 +13508,93 @@
                       "fontWeight": "500"
                     }
                   ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kTZHw",
+                  "name": "Related Project RadishLex",
+                  "width": "fill_container",
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-accent-grayjade",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 22,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ca0a4",
+                      "name": "Related Project Mark RadishMind",
+                      "width": "fill_container",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "MKUK9",
+                          "name": "Related Project Glyph RadishMind",
+                          "width": 42,
+                          "height": 42,
+                          "fill": "$rx-bg-muted",
+                          "cornerRadius": 6,
+                          "stroke": "$rx-accent-grayjade",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "hFb0i",
+                              "name": "Related Project Glyph Letter RadishMind",
+                              "fill": "$rx-accent-grayjade",
+                              "content": "L",
+                              "fontFamily": "$rx-font-heading",
+                              "fontSize": 23,
+                              "fontWeight": "760"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "Gp5BL",
+                          "name": "Related Project Wordmark RadishMind",
+                          "fill": "$rx-text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "RadishLex",
+                          "lineHeight": 1.25,
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "P0uJh",
+                      "name": "Related Project Domain RadishMind",
+                      "fill": "$rx-text-muted",
+                      "content": "lex.radishx.com",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "760"
+                    },
+                    {
+                      "type": "text",
+                      "id": "T6Mfw",
+                      "name": "Related Project Tagline RadishMind",
+                      "fill": "$rx-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "本地优先的源代码可见中文输入系统",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
                 }
               ]
             }
@@ -13189,6 +13744,31 @@
                   "fontFamily": "$rx-font-body",
                   "fontSize": 13,
                   "fontWeight": "760"
+                },
+                {
+                  "type": "frame",
+                  "id": "Ic0zx",
+                  "name": "Theme Toggle",
+                  "width": 34,
+                  "height": 34,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "clON9",
+                      "name": "Theme Icon",
+                      "width": 17,
+                      "height": 17,
+                      "icon": "monitor",
+                      "library": "lucide",
+                      "fill": "$rx-text-secondary"
+                    }
+                  ]
                 }
               ]
             }
@@ -16534,7 +17114,7 @@
       "name": "About Page v1.1 - React Accurate",
       "clip": true,
       "width": 1440,
-      "height": 3120,
+      "height": 3180,
       "fill": "$rx-bg-app",
       "layout": "vertical",
       "children": [
@@ -16630,6 +17210,31 @@
                   "fontFamily": "$rx-font-body",
                   "fontSize": 13,
                   "fontWeight": "760"
+                },
+                {
+                  "type": "frame",
+                  "id": "XRLXW",
+                  "name": "Theme Toggle",
+                  "width": 34,
+                  "height": 34,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "WPpuV",
+                      "name": "Theme Icon",
+                      "width": 17,
+                      "height": 17,
+                      "icon": "monitor",
+                      "library": "lucide",
+                      "fill": "$rx-text-secondary"
+                    }
+                  ]
                 }
               ]
             }
@@ -18357,6 +18962,188 @@
                       "fontWeight": "760"
                     }
                   ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Dgs1Y",
+                  "name": "Repo Card RadishLex",
+                  "width": "fill_container",
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": 22,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "aqox0",
+                      "name": "Repo Card Head RadishMind",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "on5o1",
+                          "name": "Repo Meta RadishMind",
+                          "fill": "$rx-text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "laugh0608/RadishLex",
+                          "lineHeight": 1.25,
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "bkeBd",
+                          "name": "Repo Status RadishMind",
+                          "fill": "$rx-brand-soft",
+                          "cornerRadius": 999,
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            8,
+                            13
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "hGWTX",
+                              "name": "Repo Status RadishMind Label",
+                              "fill": "$rx-brand-primary",
+                              "content": "Source Available",
+                              "lineHeight": 1.35,
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "760"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZMbBO",
+                      "name": "Repo Name RadishMind",
+                      "fill": "$rx-text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "RadishLex",
+                      "lineHeight": 1.18,
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 24,
+                      "fontWeight": "760"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xgoRj",
+                      "name": "Repo Description RadishMind",
+                      "fill": "$rx-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "本地优先的源代码可见中文输入系统。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ncSJf",
+                      "name": "Repo Facts RadishMind",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "RIlVr",
+                          "name": "Repo Fact RadishMind Role",
+                          "width": "fill_container",
+                          "gap": 12,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "YuX4V",
+                              "name": "Repo Fact Label RadishMind Role",
+                              "fill": "$rx-brand-primary",
+                              "textGrowth": "fixed-width",
+                              "width": 70,
+                              "content": "Role",
+                              "lineHeight": 1.25,
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "text",
+                              "id": "iIIqw",
+                              "name": "Repo Fact Value RadishMind Role",
+                              "fill": "$rx-text-secondary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "RadishX 体系的本地输入与个人化入口。",
+                              "lineHeight": 1.35,
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ZSHYT",
+                          "name": "Repo Fact RadishMind Surface",
+                          "width": "fill_container",
+                          "gap": 12,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "hgjDu",
+                              "name": "Repo Fact Label RadishMind Surface",
+                              "fill": "$rx-brand-primary",
+                              "textGrowth": "fixed-width",
+                              "width": 70,
+                              "content": "Surface",
+                              "lineHeight": 1.25,
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "text",
+                              "id": "A5Vit",
+                              "name": "Repo Fact Value RadishMind Surface",
+                              "fill": "$rx-text-secondary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "lex.radishx.com",
+                              "lineHeight": 1.35,
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "CrHKZ",
+                      "name": "Repo Action RadishMind",
+                      "fill": "$rx-brand-primary",
+                      "content": "Open GitHub",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "760"
+                    }
+                  ]
                 }
               ]
             }
@@ -18406,7 +19193,7 @@
               "fill": "$rx-text-secondary",
               "textGrowth": "fixed-width",
               "width": 800,
-              "content": "当前只有 radishx.com 是本官网项目；四个项目域名是未来独立部署后的访问入口。",
+              "content": "当前只有 radishx.com 是本官网项目；五个项目域名是未来独立部署后的访问入口。",
               "lineHeight": 1.55,
               "fontFamily": "$rx-font-body",
               "fontSize": 16,
@@ -18478,7 +19265,7 @@
                       "fill": "$rx-text-secondary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "当前官网主域，承载首页、四个项目介绍页、Mascot 和 About。",
+                      "content": "当前官网主域，承载首页、五个项目介绍页、Mascot 和 About。",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
                       "fontSize": 13,
@@ -18818,6 +19605,73 @@
                     {
                       "type": "text",
                       "id": "qAVsW",
+                      "name": "Domain Description mind.radishx.com",
+                      "fill": "$rx-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "未来独立部署入口，当前不配置为本官网 Vercel rewrite。",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lA0gn",
+                  "name": "Domain Card lex.radishx.com",
+                  "width": "fill_container",
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 11,
+                  "padding": 22,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lgHco",
+                      "name": "Domain Label mind.radishx.com",
+                      "fill": "$rx-brand-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "RadishLex",
+                      "lineHeight": 1.25,
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "760"
+                    },
+                    {
+                      "type": "text",
+                      "id": "itAb1",
+                      "name": "Domain Name mind.radishx.com",
+                      "fill": "$rx-text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "lex.radishx.com",
+                      "lineHeight": 1.18,
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 22,
+                      "fontWeight": "760"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gl1j4",
+                      "name": "Domain Status mind.radishx.com",
+                      "fill": "$rx-text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Future project domain",
+                      "lineHeight": 1.25,
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "760"
+                    },
+                    {
+                      "type": "text",
+                      "id": "JR7sS",
                       "name": "Domain Description mind.radishx.com",
                       "fill": "$rx-text-secondary",
                       "textGrowth": "fixed-width",
@@ -24942,52 +25796,3794 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "P6TV10",
+      "x": 11208,
+      "y": 6840,
+      "name": "Home Desktop v1.1 - Dark",
+      "theme": {
+        "mode": "dark"
+      },
+      "clip": true,
+      "width": 1440,
+      "height": 2774,
+      "fill": "$rx-bg-app",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "ca3ey",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 92,
+          "padding": [
+            0,
+            72
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "VTaAS",
+              "name": "Brand",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 17,
+                  "id": "iP0P7",
+                  "name": "Brand Icon",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../../public/favicon.ico",
+                    "mode": "fit"
+                  },
+                  "width": 34,
+                  "height": 34
+                },
+                {
+                  "type": "text",
+                  "id": "E6em5",
+                  "name": "Brand Text",
+                  "fill": "$rx-text-primary",
+                  "content": "RadishX",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 20,
+                  "fontWeight": "760"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ZL1r7",
+              "name": "Desktop Nav",
+              "gap": 28,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Wr1vu",
+                  "name": "Nav Projects",
+                  "fill": "$rx-text-secondary",
+                  "content": "Projects",
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "L3NHnx",
+                  "name": "Nav Mascot",
+                  "fill": "$rx-text-secondary",
+                  "content": "Mascot",
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "h95miq",
+                  "name": "Nav About",
+                  "fill": "$rx-text-secondary",
+                  "content": "About",
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "v76ygU",
+                  "name": "Nav GitHub",
+                  "fill": "$rx-brand-primary",
+                  "content": "GitHub",
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 14,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "frame",
+                  "id": "kGxOl",
+                  "name": "Theme Toggle",
+                  "width": 36,
+                  "height": 36,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "oyg2E",
+                      "name": "Theme Icon",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "monitor",
+                      "library": "lucide",
+                      "fill": "$rx-text-secondary"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "RCOFZ",
+          "name": "Hero Orbit Accurate",
+          "width": "fill_container",
+          "height": 760,
+          "gap": 48,
+          "padding": [
+            64,
+            72
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "V7kKT",
+              "name": "Hero Copy",
+              "width": 510,
+              "layout": "vertical",
+              "gap": 22,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ugHN6",
+                  "name": "Hero Eyebrow",
+                  "fill": "$rx-brand-primary",
+                  "content": "radishx.com",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "j0Yil",
+                  "name": "Hero Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": 510,
+                  "content": "Radish 系列项目矩阵",
+                  "lineHeight": 1.08,
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 72,
+                  "fontWeight": "780"
+                },
+                {
+                  "type": "text",
+                  "id": "LMbVZ",
+                  "name": "Hero Description",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 510,
+                  "content": "一个温润、克制、带一点游戏感的统一入口，连接内容社区、异星工业游戏、流程模拟软件、智能工具实验与中文输入系统。",
+                  "lineHeight": 1.55,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 20,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "useMv",
+                  "name": "Hero Actions",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "DHRlt",
+                      "name": "View Projects Button",
+                      "fill": "$rx-brand-primary",
+                      "cornerRadius": "$rx-radius-control",
+                      "stroke": "$rx-brand-primary",
+                      "strokeWidth": 1,
+                      "padding": [
+                        12,
+                        18
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "k6pCWe",
+                          "name": "View Projects Button Text",
+                          "fill": "#fffdf8",
+                          "content": "查看项目",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 15,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rm7DJ",
+                      "name": "Mascot Button",
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": "$rx-radius-control",
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "padding": [
+                        12,
+                        18
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "m1sSBO",
+                          "name": "Mascot Button Text",
+                          "fill": "$rx-text-primary",
+                          "content": "认识萝小白",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 15,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "onOc9",
+                  "name": "Hero Chips",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "VStJ2",
+                      "name": "Chip Source",
+                      "fill": "$rx-brand-soft",
+                      "cornerRadius": "$rx-radius-control",
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "padding": [
+                        7,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mRKmI",
+                          "name": "Chip Source Label",
+                          "fill": "$rx-brand-primary",
+                          "content": "Source Available",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "jE2ip",
+                      "name": "Chip Stack",
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": "$rx-radius-control",
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "padding": [
+                        7,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "UTpUk",
+                          "name": "Chip Stack Label",
+                          "fill": "$rx-text-secondary",
+                          "content": "Vite + React + TypeScript",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bOzHf",
+                      "name": "Chip Vercel",
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": "$rx-radius-control",
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "padding": [
+                        7,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "PK04m",
+                          "name": "Chip Vercel Label",
+                          "fill": "$rx-text-secondary",
+                          "content": "Vercel Ready",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "f75R9",
+              "name": "Radish Orbit Visual",
+              "width": 738,
+              "height": 610,
+              "fill": "$rx-bg-surface",
+              "cornerRadius": 8,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "SXMZ3",
+                  "name": "Orbit Map",
+                  "width": "fill_container",
+                  "height": 410,
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": 8,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "ptSqC",
+                      "x": 78,
+                      "y": 44,
+                      "name": "Outer Orbit Ring",
+                      "fill": "#ffffff00",
+                      "width": 450,
+                      "height": 300,
+                      "stroke": "$rx-pattern-line",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "WsgFE",
+                      "x": 154,
+                      "y": 102,
+                      "name": "Inner Orbit Ring",
+                      "fill": "#ffffff00",
+                      "width": 300,
+                      "height": 184,
+                      "stroke": "$rx-pattern-line",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Akkkr",
+                      "x": 266,
+                      "y": 96,
+                      "name": "Mascot Standing Anchor",
+                      "width": 170,
+                      "height": 252,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "mclOG",
+                          "name": "Mascot Standing Image",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/mascot/radish-child-standing-white-dress-tall-web.jpg",
+                            "mode": "fit"
+                          },
+                          "width": "fill_container",
+                          "height": 184
+                        },
+                        {
+                          "type": "text",
+                          "id": "S52Yy",
+                          "name": "Anchor Label",
+                          "fill": "$rx-brand-primary",
+                          "content": "Visual Anchor",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "DoFuA",
+                          "name": "Anchor Title",
+                          "fill": "$rx-text-primary",
+                          "content": "萝小白 · 可爱Q版站姿",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 13,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "miE3Z",
+                      "x": 266,
+                      "y": 6,
+                      "name": "Orbit Node Radish",
+                      "width": 170,
+                      "height": 78,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-accent-jade",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sDhEZ",
+                          "name": "Radish Node Title",
+                          "fill": "$rx-text-primary",
+                          "content": "Radish",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "KcMZJ",
+                          "name": "Radish Node Meta",
+                          "fill": "$rx-text-secondary",
+                          "content": "社区与内容入口",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XzhAm",
+                      "x": 16,
+                      "y": 120,
+                      "name": "Orbit Node RadishCatalyst",
+                      "width": 170,
+                      "height": 78,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-accent-earth",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "F26eQf",
+                          "name": "RadishCatalyst Node Title",
+                          "fill": "$rx-text-primary",
+                          "content": "RadishCatalyst",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "P2Myh",
+                          "name": "RadishCatalyst Node Meta",
+                          "fill": "$rx-text-secondary",
+                          "content": "游戏与世界观",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Re0YK",
+                      "x": 516,
+                      "y": 120,
+                      "name": "Orbit Node RadishFlow",
+                      "width": 170,
+                      "height": 78,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-accent-ink",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "T5byto",
+                          "name": "RadishFlow Node Title",
+                          "fill": "$rx-text-primary",
+                          "content": "RadishFlow",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PuV2c",
+                          "name": "RadishFlow Node Meta",
+                          "fill": "$rx-text-secondary",
+                          "content": "工程与流程画布",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "T3JIsq",
+                      "x": 16,
+                      "y": 326,
+                      "name": "Orbit Node RadishMind",
+                      "width": 170,
+                      "height": 78,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-accent-purple",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "nfLL2",
+                          "name": "RadishMind Node Title",
+                          "fill": "$rx-text-primary",
+                          "content": "RadishMind",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TKplG",
+                          "name": "RadishMind Node Meta",
+                          "fill": "$rx-text-secondary",
+                          "content": "智能与工具编排",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "I2Kac",
+                      "x": 516,
+                      "y": 326,
+                      "name": "Orbit Node RadishLex",
+                      "width": 170,
+                      "height": 78,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-accent-grayjade",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "rmD5O",
+                          "name": "RadishLex Node Title",
+                          "fill": "$rx-text-primary",
+                          "content": "RadishLex",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tWaic",
+                          "name": "RadishLex Node Meta",
+                          "fill": "$rx-text-secondary",
+                          "content": "输入与个人词库",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gU6DS",
+                  "name": "Home Asset Status Rail",
+                  "width": "fill_container",
+                  "height": 150,
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "bke5v",
+                      "name": "Asset Slot Hero 主视觉",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XKApg",
+                          "name": "Asset Slot Label Hero 主视觉",
+                          "fill": "$rx-brand-primary",
+                          "content": "Hero 主视觉",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "nTGED",
+                          "name": "Asset Slot Title Hero 主视觉",
+                          "fill": "$rx-text-primary",
+                          "content": "已审核站姿图",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 16,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "wyj2Q",
+                          "name": "Asset Slot Body Hero 主视觉",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "可爱Q版站姿已进入首页中心锚点",
+                          "lineHeight": 1.45,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "AJOlt",
+                      "name": "Asset Slot Mascot 三形态",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jeFFT",
+                          "name": "Asset Slot Label Mascot 三形态",
+                          "fill": "$rx-brand-primary",
+                          "content": "Mascot 三形态",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "L7eJH",
+                          "name": "Asset Slot Title Mascot 三形态",
+                          "fill": "$rx-text-primary",
+                          "content": "已确认",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 16,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Q7Aqf",
+                          "name": "Asset Slot Body Mascot 三形态",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "原始、Q版、完全体进入公开页",
+                          "lineHeight": 1.45,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WsRtS",
+                      "name": "Asset Slot Project media",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qzEVC",
+                          "name": "Asset Slot Label Project media",
+                          "fill": "$rx-brand-primary",
+                          "content": "Project media",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "opfFK",
+                          "name": "Asset Slot Title Project media",
+                          "fill": "$rx-text-primary",
+                          "content": "边界清楚",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 16,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "sIBv5",
+                          "name": "Asset Slot Body Project media",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "代表图 / 代码视觉，不伪装截图",
+                          "lineHeight": 1.45,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "h0OIm",
+          "name": "Project Matrix Accurate",
+          "width": "fill_container",
+          "height": 1094,
+          "fill": "$rx-bg-surface",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            64,
+            72
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "utoJo",
+              "name": "Projects Eyebrow",
+              "fill": "$rx-brand-primary",
+              "content": "Projects",
+              "fontFamily": "$rx-font-mono",
+              "fontSize": 12,
+              "fontWeight": "760"
+            },
+            {
+              "type": "text",
+              "id": "FwgKr",
+              "name": "Projects Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": 860,
+              "content": "五个方向，一组连续的 Radish 生态",
+              "lineHeight": 1.14,
+              "fontFamily": "$rx-font-heading",
+              "fontSize": 42,
+              "fontWeight": "760"
+            },
+            {
+              "type": "text",
+              "id": "k0sFhB",
+              "name": "Projects Description",
+              "fill": "$rx-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 760,
+              "content": "首页按大幅 band 展示项目关系，项目详情页承接状态、入口和后续独立域名。",
+              "lineHeight": 1.5,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "QD9hm",
+              "name": "Project Band Row 1",
+              "width": "fill_container",
+              "height": 250,
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "V3y2Y3",
+                  "name": "Project Band Radish",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "$rx-bg-app",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-accent-jade",
+                  "strokeWidth": 1,
+                  "gap": 18,
+                  "padding": 22,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "zBgAi",
+                      "name": "Radish Band Copy",
+                      "width": 330,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "oYO3O",
+                          "name": "Radish Status",
+                          "fill": "$rx-brand-soft",
+                          "cornerRadius": "$rx-radius-control",
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            7,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "h7Pmop",
+                              "name": "Radish Status Label",
+                              "fill": "$rx-brand-primary",
+                              "content": "Source Available",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "760"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "wB94q",
+                          "name": "Radish Band Title",
+                          "fill": "$rx-text-primary",
+                          "content": "Radish",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 28,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JNgEb",
+                          "name": "Radish Band Summary",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": 330,
+                          "content": "内容社区与 WebOS 风格工作台",
+                          "lineHeight": 1.45,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "UIwxU",
+                          "name": "Radish Future Domain",
+                          "fill": "$rx-text-muted",
+                          "content": "hub.radishx.com",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rdqOX",
+                      "name": "Radish Band Media",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "O3UvNk",
+                          "name": "Radish Reviewed Visual",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/projects/radish/radish-acg-web.jpg",
+                            "mode": "fill"
+                          },
+                          "width": "fill_container",
+                          "height": 118
+                        },
+                        {
+                          "type": "text",
+                          "id": "XGrAB",
+                          "name": "Radish Boundary",
+                          "fill": "$rx-brand-primary",
+                          "content": "Reviewed / code-native visual",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JPMBX",
+                  "name": "Project Band RadishCatalyst",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "$rx-bg-app",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-accent-earth",
+                  "strokeWidth": 1,
+                  "gap": 18,
+                  "padding": 22,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "etnqH",
+                      "name": "RadishCatalyst Band Copy",
+                      "width": 330,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "iAbOE",
+                          "name": "RadishCatalyst Status",
+                          "fill": "$rx-brand-soft",
+                          "cornerRadius": "$rx-radius-control",
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            7,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "BcVTH",
+                              "name": "RadishCatalyst Status Label",
+                              "fill": "$rx-brand-primary",
+                              "content": "Coming Soon",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "760"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "mDPBD",
+                          "name": "RadishCatalyst Band Title",
+                          "fill": "$rx-text-primary",
+                          "content": "RadishCatalyst",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 28,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "objVP",
+                          "name": "RadishCatalyst Band Summary",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": 330,
+                          "content": "异星工业科幻 ARPG",
+                          "lineHeight": 1.45,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "vuldR",
+                          "name": "RadishCatalyst Future Domain",
+                          "fill": "$rx-text-muted",
+                          "content": "forge.radishx.com",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "q5omd",
+                      "name": "RadishCatalyst Band Media",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "E1WnG",
+                          "name": "RadishCatalyst Reviewed Visual",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/projects/catalyst/radishcatalyst-demo-first-screen-web.jpg",
+                            "mode": "fill"
+                          },
+                          "width": "fill_container",
+                          "height": 118
+                        },
+                        {
+                          "type": "text",
+                          "id": "PliUF",
+                          "name": "RadishCatalyst Boundary",
+                          "fill": "$rx-brand-primary",
+                          "content": "Demo concept · 异星基地首屏",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "H9Idi",
+              "name": "Project Band Row 2",
+              "width": "fill_container",
+              "height": 250,
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XhxnD",
+                  "name": "Project Band RadishFlow",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "$rx-bg-app",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-accent-ink",
+                  "strokeWidth": 1,
+                  "gap": 18,
+                  "padding": 22,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Mfy7c",
+                      "name": "RadishFlow Band Copy",
+                      "width": 330,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "rXGNJ",
+                          "name": "RadishFlow Status",
+                          "fill": "$rx-brand-soft",
+                          "cornerRadius": "$rx-radius-control",
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            7,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "IU2lg",
+                              "name": "RadishFlow Status Label",
+                              "fill": "$rx-brand-primary",
+                              "content": "Archived",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "760"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "n008gw",
+                          "name": "RadishFlow Band Title",
+                          "fill": "$rx-text-primary",
+                          "content": "RadishFlow",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 28,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "LvEx6",
+                          "name": "RadishFlow Band Summary",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": 330,
+                          "content": "稳态流程模拟软件",
+                          "lineHeight": 1.45,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "sYNMM",
+                          "name": "RadishFlow Future Domain",
+                          "fill": "$rx-text-muted",
+                          "content": "flow.radishx.com",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "h48sxc",
+                      "name": "RadishFlow Band Media",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "yEkj1",
+                          "name": "RadishFlow Reviewed Visual",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "../../../public/images/projects/flow/radishflow-workbench-concept-web.jpg",
+                            "mode": "fill"
+                          },
+                          "width": "fill_container",
+                          "height": 118
+                        },
+                        {
+                          "type": "text",
+                          "id": "CXnqs",
+                          "name": "RadishFlow Boundary",
+                          "fill": "$rx-brand-primary",
+                          "content": "Reviewed / code-native visual",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KCxMY",
+                  "name": "Project Band RadishMind",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "$rx-bg-app",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-accent-purple",
+                  "strokeWidth": 1,
+                  "gap": 18,
+                  "padding": 22,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "YtToZ",
+                      "name": "RadishMind Band Copy",
+                      "width": 330,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Kcv90",
+                          "name": "RadishMind Status",
+                          "fill": "$rx-brand-soft",
+                          "cornerRadius": "$rx-radius-control",
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            7,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "yq44R",
+                              "name": "RadishMind Status Label",
+                              "fill": "$rx-brand-primary",
+                              "content": "Planning",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "760"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "ct8Jg",
+                          "name": "RadishMind Band Title",
+                          "fill": "$rx-text-primary",
+                          "content": "RadishMind",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 28,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Mf3PL",
+                          "name": "RadishMind Band Summary",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": 330,
+                          "content": "外部智能层与模型实验",
+                          "lineHeight": 1.45,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "OB4Jm",
+                          "name": "RadishMind Future Domain",
+                          "fill": "$rx-text-muted",
+                          "content": "mind.radishx.com",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JLpcf",
+                      "name": "RadishMind Band Media",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "QCW8H",
+                          "name": "Mind Evaluation Loop Diagram",
+                          "width": "fill_container",
+                          "height": 96,
+                          "fill": "$rx-bg-muted",
+                          "cornerRadius": 6,
+                          "stroke": "$rx-accent-purple",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "m4enl",
+                          "name": "Mind Diagram Label",
+                          "fill": "$rx-brand-primary",
+                          "content": "Evaluation loop",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tqPio",
+                          "name": "Mind Diagram Nodes",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Context -> Tooling -> Scoring -> Trace",
+                          "lineHeight": 1.35,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "fgC8G",
+                          "name": "RadishMind Boundary",
+                          "fill": "$rx-brand-primary",
+                          "content": "Reviewed / code-native visual",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "j1pDym",
+              "name": "Project Band Row 3",
+              "width": "fill_container",
+              "height": 250,
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bKrZJ",
+                  "name": "Project Band RadishLex",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "$rx-bg-app",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-accent-grayjade",
+                  "strokeWidth": 1,
+                  "gap": 18,
+                  "padding": 22,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "j0ILy",
+                      "name": "RadishLex Band Copy",
+                      "width": 330,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "qaS4A",
+                          "name": "RadishLex Status",
+                          "fill": "$rx-brand-soft",
+                          "cornerRadius": "$rx-radius-control",
+                          "stroke": "$rx-border-soft",
+                          "strokeWidth": 1,
+                          "padding": [
+                            7,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "kI3q9",
+                              "name": "RadishLex Status Label",
+                              "fill": "$rx-brand-primary",
+                              "content": "Source Available",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "760"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "DMmF9",
+                          "name": "RadishLex Band Title",
+                          "fill": "$rx-text-primary",
+                          "content": "RadishLex",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 28,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "uSuHf",
+                          "name": "RadishLex Band Summary",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": 330,
+                          "content": "本地优先的源代码可见中文输入系统",
+                          "lineHeight": 1.45,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "M9vKn",
+                          "name": "RadishLex Future Domain",
+                          "fill": "$rx-text-muted",
+                          "content": "lex.radishx.com",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rKtLY",
+                      "name": "RadishLex Band Media",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 8,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "YIlyl",
+                          "name": "Lex Input Pipeline Diagram",
+                          "width": "fill_container",
+                          "height": 96,
+                          "fill": "$rx-bg-muted",
+                          "cornerRadius": 6,
+                          "stroke": "$rx-accent-grayjade",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 12,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "zPDam",
+                              "name": "Lex Diagram Nodes",
+                              "fill": "$rx-text-primary",
+                              "content": "Compose -> Rank -> Learn -> Sync",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 13,
+                              "fontWeight": "760"
+                            },
+                            {
+                              "type": "text",
+                              "id": "giiI4",
+                              "name": "Lex Diagram Lanes",
+                              "fill": "$rx-text-secondary",
+                              "content": "Local · UserDB · Encrypted",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "ssa9v",
+                          "name": "Lex Diagram Label",
+                          "fill": "$rx-brand-primary",
+                          "content": "Input pipeline",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "sDGWM",
+                          "name": "RadishLex Boundary",
+                          "fill": "$rx-brand-primary",
+                          "content": "Reviewed / code-native visual",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "S7AG7",
+          "name": "Ecosystem And Signals",
+          "width": "fill_container",
+          "height": 390,
+          "fill": "$rx-bg-muted",
+          "gap": 36,
+          "padding": [
+            60,
+            72
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "ipMiA",
+              "name": "Ecosystem Copy",
+              "width": 560,
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dUpGN",
+                  "name": "Ecosystem Eyebrow",
+                  "fill": "$rx-brand-primary",
+                  "content": "Ecosystem",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "Zlp16",
+                  "name": "Ecosystem Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": 560,
+                  "content": "官网只展示稳定公开信息",
+                  "lineHeight": 1.14,
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 38,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "xLd5Q",
+                  "name": "Ecosystem Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 560,
+                  "content": "业务功能、下载页、演示站和独立部署在各自成熟后再开放；当前站点保持矩阵、GitHub、文档和素材边界清楚。",
+                  "lineHeight": 1.55,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "R3gH03",
+              "name": "Open Signals Rail",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kAqwn",
+                  "name": "Signal Site",
+                  "width": "fill_container",
+                  "height": 70,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "gap": 16,
+                  "padding": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lI4lT",
+                      "name": "Site Label",
+                      "fill": "$rx-text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": 100,
+                      "content": "Site",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "760"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vZo9b",
+                      "name": "Site Value",
+                      "fill": "$rx-text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": 270,
+                      "content": "radishx.com",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 14,
+                      "fontWeight": "760"
+                    },
+                    {
+                      "type": "text",
+                      "id": "J2TyS",
+                      "name": "Site Note",
+                      "fill": "$rx-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 260,
+                      "content": "Vercel 静态官网",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "yhfJy",
+                  "name": "Signal Repository",
+                  "width": "fill_container",
+                  "height": 70,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "gap": 16,
+                  "padding": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ewshO",
+                      "name": "Repository Label",
+                      "fill": "$rx-text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": 100,
+                      "content": "Repository",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "760"
+                    },
+                    {
+                      "type": "text",
+                      "id": "eP6Fy",
+                      "name": "Repository Value",
+                      "fill": "$rx-text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": 270,
+                      "content": "laugh0608/RadishX",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 14,
+                      "fontWeight": "760"
+                    },
+                    {
+                      "type": "text",
+                      "id": "C4PI8",
+                      "name": "Repository Note",
+                      "fill": "$rx-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 260,
+                      "content": "Source Available",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "f0sHUc",
+                  "name": "Signal Matrix",
+                  "width": "fill_container",
+                  "height": 70,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": 8,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "gap": 16,
+                  "padding": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LJLeW",
+                      "name": "Matrix Label",
+                      "fill": "$rx-text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": 100,
+                      "content": "Matrix",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "760"
+                    },
+                    {
+                      "type": "text",
+                      "id": "sJW3l",
+                      "name": "Matrix Value",
+                      "fill": "$rx-text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": 270,
+                      "content": "hub / forge / flow / mind",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 14,
+                      "fontWeight": "760"
+                    },
+                    {
+                      "type": "text",
+                      "id": "nTQgZ",
+                      "name": "Matrix Note",
+                      "fill": "$rx-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 260,
+                      "content": "未来独立域名，不作为 rewrite",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "El7Yp",
+          "name": "Mascot Entry Accurate",
+          "width": "fill_container",
+          "height": 438,
+          "fill": "$rx-bg-surface",
+          "gap": 54,
+          "padding": [
+            60,
+            72
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "zjL0f",
+              "name": "Mascot Entry Copy",
+              "width": 650,
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "zrBGV",
+                  "name": "Mascot Eyebrow",
+                  "fill": "$rx-brand-primary",
+                  "content": "Mascot",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "M1H0TN",
+                  "name": "Mascot Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": 650,
+                  "content": "萝小白是 RadishX 的长期品牌记忆点",
+                  "lineHeight": 1.14,
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 40,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "cwkl2",
+                  "name": "Mascot Body",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 640,
+                  "content": "原始形象、可爱Q版和虚拟形象完全体三条线索已进入公开页面；Gallery 当前只做整图预览，不开放下载。",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 17,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "gV17c",
+                  "name": "Mascot Entry Button",
+                  "fill": "$rx-bg-ink",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-bg-ink",
+                  "strokeWidth": 1,
+                  "padding": [
+                    12,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "w0NDg",
+                      "name": "Mascot Entry Button Text",
+                      "fill": "$rx-bg-surface",
+                      "content": "查看萝小白",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "760"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 8,
+              "id": "afiKJ",
+              "name": "Mascot Entry Standing Image",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "../../../public/images/mascot/radish-child-standing-white-dress-tall-web.jpg",
+                "mode": "fit"
+              },
+              "width": 320,
+              "height": 320,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "S78V6w",
+      "x": 12768,
+      "y": 6840,
+      "name": "Home Mobile v1.1 - Dark",
+      "theme": {
+        "mode": "dark"
+      },
+      "clip": true,
+      "width": 390,
+      "height": 4200,
+      "fill": "$rx-bg-app",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "pspxm",
+          "name": "Mobile Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "#fbf7f0e6",
+          "padding": [
+            0,
+            22
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "D6YOr",
+              "name": "Mobile Brand",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "ysYE3",
+                  "name": "Mobile Brand Dot",
+                  "fill": "$rx-brand-primary",
+                  "width": 10,
+                  "height": 10
+                },
+                {
+                  "type": "text",
+                  "id": "Xo1OY",
+                  "name": "Mobile Brand Text",
+                  "fill": "$rx-text-primary",
+                  "content": "RadishX",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 15,
+                  "fontWeight": "760"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "j6Mm7B",
+              "name": "Mobile Inline Nav",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "lA0b2",
+                  "name": "Mobile Nav 首页",
+                  "fill": "$rx-brand-primary",
+                  "content": "首页",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 11,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "Kjz5H",
+                  "name": "Mobile Nav 项目",
+                  "fill": "$rx-text-muted",
+                  "content": "项目",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 11,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "n1gW6",
+                  "name": "Mobile Nav 关于",
+                  "fill": "$rx-text-muted",
+                  "content": "关于",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 11,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "frame",
+                  "id": "uMVxi",
+                  "name": "Mobile Theme Toggle",
+                  "width": 26,
+                  "height": 26,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "aPzOl",
+                      "name": "Mobile Theme Icon",
+                      "width": 15,
+                      "height": 15,
+                      "icon": "monitor",
+                      "library": "lucide",
+                      "fill": "$rx-text-secondary"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NxMS0",
+          "name": "Mobile Hero",
+          "width": "fill_container",
+          "fill": "$rx-bg-app",
+          "layout": "vertical",
+          "gap": 22,
+          "padding": [
+            38,
+            22,
+            30,
+            22
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "wxJEw",
+              "name": "Mobile Hero Eyebrow",
+              "fill": "$rx-brand-soft",
+              "cornerRadius": 999,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "padding": [
+                7,
+                11
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "acQvx",
+                  "name": "Mobile Hero Eyebrow Label",
+                  "fill": "$rx-brand-primary",
+                  "content": "radish system / official entry",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "760"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "CgSxO",
+              "name": "Mobile Hero Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Radish 系列项目矩阵",
+              "lineHeight": 1.12,
+              "fontFamily": "$rx-font-heading",
+              "fontSize": 38,
+              "fontWeight": "760"
+            },
+            {
+              "type": "text",
+              "id": "s5NPvR",
+              "name": "Mobile Hero Intro",
+              "fill": "$rx-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "一个入口，连接 Radish、RadishCatalyst、RadishFlow、RadishMind 与 RadishLex。首页首屏保留强视觉、少文案和明确入口。",
+              "lineHeight": 1.58,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 15,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "dqpCh",
+              "name": "Mobile Hero Actions",
+              "width": "fill_container",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dAmEW",
+                  "name": "Mobile Primary Action",
+                  "height": 42,
+                  "fill": "$rx-brand-primary",
+                  "cornerRadius": 999,
+                  "padding": [
+                    0,
+                    15
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Wu4gq",
+                      "name": "Mobile Primary Action Label",
+                      "fill": "#ffffff",
+                      "content": "查看项目",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 13,
+                      "fontWeight": "760"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "C44mg8",
+                  "name": "Mobile Secondary Action",
+                  "height": 42,
+                  "fill": "#00000000",
+                  "cornerRadius": 999,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    0,
+                    15
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "P6gk8",
+                      "name": "Mobile Secondary Action Label",
+                      "fill": "$rx-text-primary",
+                      "content": "Mascot",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 13,
+                      "fontWeight": "760"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "guc7i",
+              "name": "Mobile Trust Chips",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "B9zpFb",
+                  "name": "Mobile Chip radishx.com as canonical domain",
+                  "fill": "$rx-text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "radishx.com as canonical domain",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "nQnRr",
+                  "name": "Mobile Chip www.radishx.com redirects to root",
+                  "fill": "$rx-text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "www.radishx.com redirects to root",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "OVBUj",
+                  "name": "Mobile Chip GitHub + Vercel free tier boundary",
+                  "fill": "$rx-text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "GitHub + Vercel free tier boundary",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "760"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oPolE",
+              "name": "Mobile Orbit Visual",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": 8,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "lhB7C",
+                  "name": "Mobile Orbit Map",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 300,
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": 6,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "O4Smgm",
+                      "x": 32,
+                      "y": 40,
+                      "name": "Mobile Orbit Ring One",
+                      "fill": "#00000000",
+                      "width": 282,
+                      "height": 210,
+                      "stroke": "$rx-pattern-line",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "dMPKJ",
+                      "x": 72,
+                      "y": 76,
+                      "name": "Mobile Orbit Ring Two",
+                      "fill": "#00000000",
+                      "width": 190,
+                      "height": 138,
+                      "stroke": "$rx-pattern-line",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 6,
+                      "id": "qtklq",
+                      "x": 116,
+                      "y": 86,
+                      "name": "Mobile Mascot Reviewed Image",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../../../public/images/mascot/radish-child-standing-white-dress-tall-web.jpg",
+                        "mode": "fill"
+                      },
+                      "width": 86,
+                      "height": 186,
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Wce8r",
+                      "x": 112,
+                      "y": 8,
+                      "name": "Mobile Orbit Node Radish",
+                      "width": 94,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 6,
+                      "stroke": "$rx-accent-jade",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "iKOhz",
+                          "name": "Mobile Orbit Node Title Radish",
+                          "fill": "$rx-text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Radish",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "g9EVE8",
+                          "name": "Mobile Orbit Node Meta Radish",
+                          "fill": "$rx-text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "社区与内容入口",
+                          "lineHeight": 1.25,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 10,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "O6MWYC",
+                      "x": 8,
+                      "y": 100,
+                      "name": "Mobile Orbit Node Catalyst",
+                      "width": 94,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 6,
+                      "stroke": "$rx-accent-earth",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "R6AyN",
+                          "name": "Mobile Orbit Node Title Catalyst",
+                          "fill": "$rx-text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Catalyst",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "rjZvV",
+                          "name": "Mobile Orbit Node Meta Catalyst",
+                          "fill": "$rx-text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "游戏与世界观",
+                          "lineHeight": 1.25,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 10,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "n2oP0K",
+                      "x": 216,
+                      "y": 100,
+                      "name": "Mobile Orbit Node Flow",
+                      "width": 94,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 6,
+                      "stroke": "$rx-accent-ink",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qvZjI",
+                          "name": "Mobile Orbit Node Title Flow",
+                          "fill": "$rx-text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Flow",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "U1kFX",
+                          "name": "Mobile Orbit Node Meta Flow",
+                          "fill": "$rx-text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "工程与流程画布",
+                          "lineHeight": 1.25,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 10,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yGLfe",
+                      "x": 8,
+                      "y": 210,
+                      "name": "Mobile Orbit Node Mind",
+                      "width": 94,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 6,
+                      "stroke": "$rx-accent-purple",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cx5iJ",
+                          "name": "Mobile Orbit Node Title Mind",
+                          "fill": "$rx-text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Mind",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "sjICr",
+                          "name": "Mobile Orbit Node Meta Mind",
+                          "fill": "$rx-text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "智能与工具编排",
+                          "lineHeight": 1.25,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 10,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "jbFU5",
+                      "x": 216,
+                      "y": 210,
+                      "name": "Mobile Orbit Node Lex",
+                      "width": 94,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 6,
+                      "stroke": "$rx-accent-grayjade",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "c5eNYS",
+                          "name": "Mobile Orbit Node Title Lex",
+                          "fill": "$rx-text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Lex",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "eUFJt",
+                          "name": "Mobile Orbit Node Meta Lex",
+                          "fill": "$rx-text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "输入与个人词库",
+                          "lineHeight": 1.25,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 10,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "FTMi3",
+                  "name": "Mobile Orbit Caption",
+                  "fill": "$rx-text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "中心虚拟形象使用已审核素材，项目节点使用色彩 token 区分状态。",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "x4FGME",
+          "name": "Mobile Asset Governance",
+          "width": "fill_container",
+          "fill": "$rx-bg-surface",
+          "layout": "vertical",
+          "gap": 15,
+          "padding": [
+            34,
+            22
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "IRbUb",
+              "name": "Mobile Asset Eyebrow",
+              "fill": "$rx-brand-soft",
+              "cornerRadius": 999,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "padding": [
+                7,
+                11
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ZzqBj",
+                  "name": "Mobile Asset Eyebrow Label",
+                  "fill": "$rx-brand-primary",
+                  "content": "asset boundary",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "760"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "X2uTo",
+              "name": "Mobile Asset Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "素材先审核，再进入页面",
+              "lineHeight": 1.16,
+              "fontFamily": "$rx-font-heading",
+              "fontSize": 27,
+              "fontWeight": "760"
+            },
+            {
+              "type": "frame",
+              "id": "RMn4w",
+              "name": "Mobile Asset Row Reviewed",
+              "width": "fill_container",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "padding": [
+                13,
+                0
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dKtOf",
+                  "name": "Mobile Asset Row Label Reviewed",
+                  "fill": "$rx-brand-primary",
+                  "content": "Reviewed",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "S0BQc3",
+                  "name": "Mobile Asset Row Value Reviewed",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 210,
+                  "content": "Mascot / Radish / Catalyst / Flow",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "GInZJ",
+              "name": "Mobile Asset Row Code-native",
+              "width": "fill_container",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "padding": [
+                13,
+                0
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "st9rA",
+                  "name": "Mobile Asset Row Label Code-native",
+                  "fill": "$rx-brand-primary",
+                  "content": "Code-native",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "tG46R",
+                  "name": "Mobile Asset Row Value Code-native",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 210,
+                  "content": "RadishMind temporary visual",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CyytX",
+              "name": "Mobile Asset Row Not exposed",
+              "width": "fill_container",
+              "stroke": "$rx-border-soft",
+              "strokeWidth": {
+                "bottom": 1
+              },
+              "padding": [
+                13,
+                0
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "msYfx",
+                  "name": "Mobile Asset Row Label Not exposed",
+                  "fill": "$rx-brand-primary",
+                  "content": "Not exposed",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "Gz6Et",
+                  "name": "Mobile Asset Row Value Not exposed",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 210,
+                  "content": "Downloads and seasonal assets",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tX3hU",
+          "name": "Mobile Project Matrix",
+          "width": "fill_container",
+          "fill": "$rx-bg-app",
+          "layout": "vertical",
+          "gap": 18,
+          "padding": [
+            40,
+            22
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "nTgeh",
+              "name": "Mobile Projects Eyebrow",
+              "fill": "$rx-brand-soft",
+              "cornerRadius": 999,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "padding": [
+                7,
+                11
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "TQFuH",
+                  "name": "Mobile Projects Eyebrow Label",
+                  "fill": "$rx-brand-primary",
+                  "content": "projects",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "760"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "yCwYL",
+              "name": "Mobile Projects Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "五个方向，一组连续生态",
+              "lineHeight": 1.15,
+              "fontFamily": "$rx-font-heading",
+              "fontSize": 30,
+              "fontWeight": "760"
+            },
+            {
+              "type": "frame",
+              "id": "q3orxc",
+              "name": "Mobile Project Card Radish",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": 8,
+              "stroke": "$rx-accent-jade",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "MFfHI",
+                  "name": "Mobile Project Status Radish",
+                  "fill": "$rx-brand-soft",
+                  "cornerRadius": 999,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    7,
+                    11
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lp46n",
+                      "name": "Mobile Project Status Radish Label",
+                      "fill": "$rx-brand-primary",
+                      "content": "Source Available",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "760"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "T1Bv1",
+                  "name": "Mobile Project Title Radish",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Radish",
+                  "lineHeight": 1.2,
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 25,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "Y3uqph",
+                  "name": "Mobile Project Summary Radish",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "内容社区与 WebOS 风格工作台。",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "RpBCD",
+                  "name": "Mobile Project Domain Radish",
+                  "fill": "$rx-text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "hub.radishx.com",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "frame",
+                  "id": "FCNcC",
+                  "name": "Mobile Project Media Radish",
+                  "width": "fill_container",
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": 6,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 10,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 5,
+                      "id": "t9DoQJ",
+                      "name": "Mobile Project Image Radish",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../../../public/images/projects/radish/radish-acg-web.jpg",
+                        "mode": "fill"
+                      },
+                      "width": "fill_container",
+                      "height": 118
+                    },
+                    {
+                      "type": "text",
+                      "id": "d57fV",
+                      "name": "Mobile Project Boundary Radish",
+                      "fill": "$rx-brand-primary",
+                      "content": "Reviewed visual",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "760"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "whm7a",
+              "name": "Mobile Project Card RadishCatalyst",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": 8,
+              "stroke": "$rx-accent-earth",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "D6KAml",
+                  "name": "Mobile Project Status RadishCatalyst",
+                  "fill": "$rx-brand-soft",
+                  "cornerRadius": 999,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    7,
+                    11
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kVaLW",
+                      "name": "Mobile Project Status RadishCatalyst Label",
+                      "fill": "$rx-brand-primary",
+                      "content": "Coming Soon",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "760"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "zecbs",
+                  "name": "Mobile Project Title RadishCatalyst",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "RadishCatalyst",
+                  "lineHeight": 1.2,
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 25,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "sHhnj",
+                  "name": "Mobile Project Summary RadishCatalyst",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "异星工业科幻 ARPG。",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "ZhJE8",
+                  "name": "Mobile Project Domain RadishCatalyst",
+                  "fill": "$rx-text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "forge.radishx.com",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "frame",
+                  "id": "XJbQD",
+                  "name": "Mobile Project Media RadishCatalyst",
+                  "width": "fill_container",
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": 6,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 10,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 5,
+                      "id": "Lp5VT",
+                      "name": "Mobile Project Image RadishCatalyst",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../../../public/images/projects/catalyst/radishcatalyst-demo-first-screen-web.jpg",
+                        "mode": "fill"
+                      },
+                      "width": "fill_container",
+                      "height": 118
+                    },
+                    {
+                      "type": "text",
+                      "id": "UWEfN",
+                      "name": "Mobile Project Boundary RadishCatalyst",
+                      "fill": "$rx-brand-primary",
+                      "content": "Reviewed visual",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "760"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PJhvv",
+              "name": "Mobile Project Card RadishFlow",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": 8,
+              "stroke": "$rx-accent-ink",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ukBUo",
+                  "name": "Mobile Project Status RadishFlow",
+                  "fill": "$rx-brand-soft",
+                  "cornerRadius": 999,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    7,
+                    11
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TFkUQ",
+                      "name": "Mobile Project Status RadishFlow Label",
+                      "fill": "$rx-brand-primary",
+                      "content": "Archived",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "760"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "rbRO0",
+                  "name": "Mobile Project Title RadishFlow",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "RadishFlow",
+                  "lineHeight": 1.2,
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 25,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "noXJh",
+                  "name": "Mobile Project Summary RadishFlow",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "稳态流程模拟软件。",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "U8GVXd",
+                  "name": "Mobile Project Domain RadishFlow",
+                  "fill": "$rx-text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "flow.radishx.com",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "frame",
+                  "id": "BuT0m",
+                  "name": "Mobile Project Media RadishFlow",
+                  "width": "fill_container",
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": 6,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 10,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 5,
+                      "id": "tVVPa",
+                      "name": "Mobile Project Image RadishFlow",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../../../public/images/projects/flow/radishflow-workbench-concept-web.jpg",
+                        "mode": "fill"
+                      },
+                      "width": "fill_container",
+                      "height": 118
+                    },
+                    {
+                      "type": "text",
+                      "id": "zaIAU",
+                      "name": "Mobile Project Boundary RadishFlow",
+                      "fill": "$rx-brand-primary",
+                      "content": "Reviewed visual",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "760"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xGq0y",
+              "name": "Mobile Project Card RadishMind",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": 8,
+              "stroke": "$rx-accent-purple",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "EOC3s",
+                  "name": "Mobile Project Status RadishMind",
+                  "fill": "$rx-brand-soft",
+                  "cornerRadius": 999,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    7,
+                    11
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "f4tdP",
+                      "name": "Mobile Project Status RadishMind Label",
+                      "fill": "$rx-brand-primary",
+                      "content": "Planning",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "760"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "f9Qa0",
+                  "name": "Mobile Project Title RadishMind",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "RadishMind",
+                  "lineHeight": 1.2,
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 25,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "XK3Pq",
+                  "name": "Mobile Project Summary RadishMind",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "外部智能层与模型实验。",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "wd6Tc",
+                  "name": "Mobile Project Domain RadishMind",
+                  "fill": "$rx-text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "mind.radishx.com",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "frame",
+                  "id": "ZOaFq",
+                  "name": "Mobile Project Media RadishMind",
+                  "width": "fill_container",
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": 6,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "c8fSs",
+                      "name": "Mobile Mind Diagram",
+                      "width": "fill_container",
+                      "height": 118,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 5,
+                      "stroke": "$rx-accent-purple",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kbW5F",
+                          "name": "Mobile Mind Diagram Label",
+                          "fill": "$rx-brand-primary",
+                          "content": "Evaluation loop",
+                          "lineHeight": 1.35,
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "vGusj",
+                          "name": "Mobile Mind Diagram Nodes",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Context -> Tooling -> Scoring -> Trace",
+                          "lineHeight": 1.35,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "gheYX",
+                      "name": "Mobile Project Boundary RadishMind",
+                      "fill": "$rx-brand-primary",
+                      "content": "Code-native visual",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "760"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "T4JddL",
+              "name": "Mobile Project Card RadishLex",
+              "width": "fill_container",
+              "fill": "$rx-bg-surface",
+              "cornerRadius": 8,
+              "stroke": "$rx-accent-grayjade",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "sWsCK",
+                  "name": "Mobile Project Status RadishLex",
+                  "fill": "$rx-brand-soft",
+                  "cornerRadius": "$rx-radius-control",
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "padding": [
+                    7,
+                    11
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "MsB8T",
+                      "name": "Mobile Project Status RadishLex Label",
+                      "fill": "$rx-brand-primary",
+                      "content": "Source Available",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "760"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "yblcK",
+                  "name": "Mobile Project Title RadishLex",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "RadishLex",
+                  "lineHeight": 1.2,
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 25,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "text",
+                  "id": "CwTLl",
+                  "name": "Mobile Project Summary RadishLex",
+                  "fill": "$rx-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "本地优先的源代码可见中文输入系统。",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "keJ9U",
+                  "name": "Mobile Project Domain RadishLex",
+                  "fill": "$rx-text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "lex.radishx.com",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "frame",
+                  "id": "EBcJd",
+                  "name": "Mobile Project Media RadishLex",
+                  "width": "fill_container",
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": 6,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "v2YoNN",
+                      "name": "Mobile Lex Diagram",
+                      "width": "fill_container",
+                      "height": 118,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 5,
+                      "stroke": "$rx-accent-grayjade",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "f9jSP",
+                          "name": "Mobile Lex Diagram Label",
+                          "fill": "$rx-brand-primary",
+                          "content": "Input pipeline",
+                          "lineHeight": 1.35,
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "text",
+                          "id": "uz338",
+                          "name": "Mobile Lex Diagram Nodes",
+                          "fill": "$rx-text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Compose -> Rank -> Learn -> Sync",
+                          "lineHeight": 1.35,
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 12,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "UCeyz",
+                      "name": "Mobile Project Boundary RadishLex",
+                      "fill": "$rx-brand-primary",
+                      "content": "Code-native visual",
+                      "lineHeight": 1.35,
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "760"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KH086",
+          "name": "Mobile Runtime Signals",
+          "width": "fill_container",
+          "fill": "$rx-bg-surface",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            34,
+            22
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "VFTHE",
+              "name": "Mobile Signals Eyebrow",
+              "fill": "$rx-brand-soft",
+              "cornerRadius": 999,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "padding": [
+                7,
+                11
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rbuHd",
+                  "name": "Mobile Signals Eyebrow Label",
+                  "fill": "$rx-brand-primary",
+                  "content": "ecosystem signals",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "760"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "tUqyU",
+              "name": "Mobile Signals Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "官网只承担入口、识别和分流",
+              "lineHeight": 1.16,
+              "fontFamily": "$rx-font-heading",
+              "fontSize": 27,
+              "fontWeight": "760"
+            },
+            {
+              "type": "text",
+              "id": "KU6R7",
+              "name": "Mobile Signal 独立产品能力进入项目页，不在首页堆叠。",
+              "fill": "$rx-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "独立产品能力进入项目页，不在首页堆叠。",
+              "lineHeight": 1.5,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "hcfVS",
+              "name": "Mobile Signal 发布检查保持静态站点边界，不引入后台。",
+              "fill": "$rx-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "发布检查保持静态站点边界，不引入后台。",
+              "lineHeight": 1.5,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "i6MMj",
+              "name": "Mobile Signal 素材治理以 docs/assets/materials.md 为准。",
+              "fill": "$rx-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "素材治理以 docs/assets/materials.md 为准。",
+              "lineHeight": 1.5,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 13,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "m28Y4",
+          "name": "Mobile Mascot Entry",
+          "width": "fill_container",
+          "fill": "$rx-bg-app",
+          "layout": "vertical",
+          "gap": 18,
+          "padding": [
+            38,
+            22
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "VwI0v",
+              "name": "Mobile Mascot Eyebrow",
+              "fill": "$rx-brand-soft",
+              "cornerRadius": 999,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "padding": [
+                7,
+                11
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "wL2ox",
+                  "name": "Mobile Mascot Eyebrow Label",
+                  "fill": "$rx-brand-primary",
+                  "content": "mascot",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "760"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "z382B9",
+              "name": "Mobile Mascot Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "萝卜小白菜是 RadishX 的长期识别资产",
+              "lineHeight": 1.16,
+              "fontFamily": "$rx-font-heading",
+              "fontSize": 28,
+              "fontWeight": "760"
+            },
+            {
+              "type": "text",
+              "id": "E152v",
+              "name": "Mobile Mascot Copy",
+              "fill": "$rx-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "首页只展示审核后的基础形象；完整设定、表情和使用边界在 Mascot 页面维护。",
+              "lineHeight": 1.55,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 8,
+              "id": "sckCK",
+              "name": "Mobile Mascot Standing Image",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "../../../public/images/mascot/radish-mature-standing-white-dress-web.jpg",
+                "mode": "fit"
+              },
+              "width": "fill_container",
+              "height": 300,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "T5xyFS",
+          "name": "Mobile Footer Strip",
+          "width": "fill_container",
+          "fill": "$rx-bg-ink",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            24,
+            22
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "NzZbw",
+              "name": "Mobile Footer Domain",
+              "fill": "#ffffff",
+              "content": "radishx.com",
+              "lineHeight": 1.35,
+              "fontFamily": "$rx-font-mono",
+              "fontSize": 14,
+              "fontWeight": "760"
+            },
+            {
+              "type": "text",
+              "id": "ykTtF",
+              "name": "Mobile Footer Copy",
+              "fill": "#d8d0c7",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Static multi-page official entry. GitHub hosted source, Vercel free-tier deployment boundary.",
+              "lineHeight": 1.45,
+              "fontFamily": "$rx-font-body",
+              "fontSize": 12,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
     }
   ],
+  "themes": {
+    "mode": [
+      "light",
+      "dark"
+    ]
+  },
   "variables": {
     "rx-accent-earth": {
       "type": "color",
-      "value": "#886349"
+      "value": [
+        {
+          "value": "#886349",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#c9997f",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
     },
     "rx-accent-ink": {
       "type": "color",
-      "value": "#435c74"
+      "value": [
+        {
+          "value": "#435c74",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#7fa0bd",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
     },
     "rx-accent-jade": {
       "type": "color",
-      "value": "#4f9c83"
+      "value": [
+        {
+          "value": "#4f9c83",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#6fb39c",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
     },
     "rx-accent-purple": {
       "type": "color",
-      "value": "#846992"
+      "value": [
+        {
+          "value": "#846992",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#a88bb5",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
     },
     "rx-bg-app": {
       "type": "color",
-      "value": "#f4efe6"
+      "value": [
+        {
+          "value": "#f4efe6",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#1a1713",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
     },
     "rx-bg-ink": {
       "type": "color",
-      "value": "#11100f"
+      "value": [
+        {
+          "value": "#11100f",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#0d0c0a",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
     },
     "rx-bg-muted": {
       "type": "color",
-      "value": "#efe7db"
+      "value": [
+        {
+          "value": "#efe7db",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#2b2721",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
     },
     "rx-bg-surface": {
       "type": "color",
-      "value": "#fbf7f0"
+      "value": [
+        {
+          "value": "#fbf7f0",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#23201a",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
     },
     "rx-border-soft": {
       "type": "color",
-      "value": "#d9cbb9"
+      "value": [
+        {
+          "value": "#d9cbb9",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#ede5d824",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
     },
     "rx-brand-primary": {
       "type": "color",
-      "value": "#b24057"
+      "value": [
+        {
+          "value": "#b24057",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#cd5076",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
     },
     "rx-brand-soft": {
       "type": "color",
-      "value": "#ecd3db"
+      "value": [
+        {
+          "value": "#ecd3db",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#cd507633",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
     },
     "rx-font-body": {
       "type": "string",
@@ -25007,7 +29603,20 @@
     },
     "rx-pattern-line": {
       "type": "color",
-      "value": "#7a5c4024"
+      "value": [
+        {
+          "value": "#7a5c4024",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#ede5d81a",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
     },
     "rx-radius-card": {
       "type": "number",
@@ -25019,15 +29628,72 @@
     },
     "rx-text-muted": {
       "type": "color",
-      "value": "#8d7b6c"
+      "value": [
+        {
+          "value": "#8d7b6c",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#8d8172",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
     },
     "rx-text-primary": {
       "type": "color",
-      "value": "#2f2a25"
+      "value": [
+        {
+          "value": "#2f2a25",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#ede5d8",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
     },
     "rx-text-secondary": {
       "type": "color",
-      "value": "#6a5c4f"
+      "value": [
+        {
+          "value": "#6a5c4f",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#b8ab9a",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "rx-accent-grayjade": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#78a496",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#8fb3a5",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
     }
-  }
+  },
+  "fileToken": "ac405bfe-c116-4ee0-ace5-ccc5b2b8e15a"
 }
