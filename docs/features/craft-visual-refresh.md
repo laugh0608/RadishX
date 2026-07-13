@@ -1,11 +1,11 @@
 # craft 视觉基线落地（v1.2 → React 实现）
 
-状态：进行中（Phase 0 文档、Phase 1 CSS 基础层、Phase 2 首页已完成）
-最后更新：2026-07-12
+状态：进行中（Phase 0–3 已完成，Phase 4–5 待续）
+最后更新：2026-07-13
 
 ## 背景
 
-设计源 `docs/design/sources/radishx-site-v0.pen` 已切换到 v1.2「craft」单基线（去框、留白、柔投影分层、段控主题切换、单列全宽交替 band、强调色克制），并已删除全部 v1 / v1.1 旧画板。但当前 React 实现（`src/`）仍是旧的「描边卡片仪表盘」视觉——访客看到的与设计源分叉。
+设计源 `docs/design/sources/radishx-site-v0.pen` 已切换到 v1.2「craft」单基线（去框、留白、柔投影分层、段控主题切换、单列全宽交替 band、强调色克制），并已删除全部 v1 / v1.1 旧画板。目标启动时 React 实现（`src/`）仍是旧的「描边卡片仪表盘」视觉，当前已完成 Phase 0–3，Mascot / About 与全站终验仍待收敛。
 
 按 Pencil-first 原则（设计定稿后进入实现）与 `docs` 冲突处理口径（以较新的一方统一修正），本目标把 v1.2 craft 落到 `src/` 实际页面，消除设计源与实现的分叉。
 
@@ -81,4 +81,14 @@ Phase 2（首页，`src/components/sections` + `global.css`）：
 - 本机 Chrome headless + `vite preview` 截图：首页浅色桌面、深色桌面、浅色移动均为通透 craft，orbit 无框漂浮 + 彩色点、段控主题切换、软按钮、纸面无网格噪音，与 v1.2 设计源一致。
 - 抽查 `/flow`、`/about`：全局基础层顺带把详情 / 关于页卡片、按钮、header 一并 craft 化，未破坏布局。
 
-Phase 3 / 4 待办：细化详情 / Mascot / About 页页面特有描边残留（如 `.project-hero__facts` 小卡）与各页 hero 层次；Phase 5 全站三态截图逐页对照。
+### 2026-07-13 Phase 3 五项目详情页落地
+
+- 为五种 `.project-hero--*` tone 建立 `--rx-tone`，统一驱动 Hero 元信息圆点、项目柔光和媒体框强调。
+- Hero 状态 chip 与三项 facts 从描边胶囊 / 小卡收敛为点状 mono meta；临时项目标识 glyph 改无框柔投影。
+- 详情页主媒体外框改大圆角无框浮层，真实图片去内描边；审核 note / review 仅保留弱分隔，不再形成卡中卡。
+- Page flow 从上下描边条改为无框柔投影浮层，四个导览入口去描边并保留 hover / focus 反馈。
+- 主题段控触控目标从 `40×38` 补齐为 `44×44`，满足移动端触控建议。
+- `npm run build` 与 `git diff --check` 通过；Playwright 覆盖五条详情路由的 `1440×900`、`390×844`，均无横向溢出、broken image 或 console error，每页保留 3 项 Hero facts 和 4 个 Page flow 入口。
+- 截图抽查 `/flow` 跟随系统桌面、`/flow` 深色桌面、`/lex` 深色移动与 `/mind` 浅色移动，确认真实截图、代码内视觉、暗色和移动布局均保持 craft 层次。
+
+Phase 4 待办：细化 Mascot / About 页页面特有描边残留与 hero 层次；Phase 5 全站三态截图逐页对照。

@@ -175,8 +175,8 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
   border: none;
   border-radius: var(--rx-radius-control);
   background: transparent;
@@ -271,21 +271,56 @@ p {
   gap: 8px;
 }
 
+.project-hero__chips {
+  gap: 8px 18px;
+}
+
+.project-hero__chips .status-chip {
+  position: relative;
+  min-height: 0;
+  padding: 0 0 0 14px;
+  border: 0;
+  background: transparent;
+  color: var(--rx-text-secondary);
+  font-family: var(--rx-font-mono);
+  line-height: 1.5;
+}
+
+.project-hero__chips .status-chip::before {
+  position: absolute;
+  top: 0.68em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--rx-tone, var(--rx-brand-primary));
+  content: "";
+}
+
 .project-hero__facts {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
+  gap: 14px 20px;
   margin: 0;
 }
 
 .project-hero__facts div {
+  position: relative;
   display: grid;
   gap: 4px;
   min-width: 0;
-  padding: 12px;
-  border: 1px solid var(--rx-border-soft);
-  border-radius: 8px;
-  background: color-mix(in srgb, var(--rx-bg-surface) 68%, transparent);
+  padding-left: 16px;
+}
+
+.project-hero__facts div::before {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--rx-tone, var(--rx-brand-primary));
+  content: "";
 }
 
 .project-hero__facts dt {
@@ -1505,6 +1540,24 @@ p {
   padding: 86px var(--rx-space-page-x) 96px;
 }
 
+.project-hero {
+  position: relative;
+  isolation: isolate;
+}
+
+.project-hero::after {
+  position: absolute;
+  top: 8%;
+  right: -8%;
+  z-index: -1;
+  width: min(46vw, 660px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--rx-tone, var(--rx-brand-primary)) 12%, transparent), transparent 66%);
+  content: "";
+  pointer-events: none;
+}
+
 .project-hero__inner,
 .mascot-hero__inner {
   display: grid;
@@ -1533,6 +1586,42 @@ p {
   margin: 0;
 }
 
+.project-hero .project-mark__glyph {
+  border: 0;
+  border-radius: var(--rx-radius-craft);
+  background: var(--rx-bg-surface);
+  box-shadow: var(--rx-shadow-panel);
+}
+
+.project-hero .media-frame {
+  padding: 28px;
+  border: 0;
+  border-radius: var(--rx-radius-craft);
+  background:
+    radial-gradient(circle at 70% 24%, color-mix(in srgb, var(--rx-tone, var(--rx-brand-primary)) 12%, transparent), transparent 28%),
+    linear-gradient(145deg, color-mix(in srgb, var(--rx-bg-surface) 96%, transparent), color-mix(in srgb, var(--rx-bg-muted) 68%, transparent));
+  box-shadow: var(--rx-shadow-soft);
+}
+
+.project-hero .media-frame__visual img {
+  border: 0;
+  border-radius: 12px;
+}
+
+.project-hero .media-frame__note,
+.project-hero .media-frame__review {
+  padding: 14px 0 0;
+  border: 0;
+  border-top: 1px solid color-mix(in srgb, var(--rx-text-primary) 10%, transparent);
+  border-radius: 0;
+  background: transparent;
+}
+
+.project-hero .button--disabled {
+  border: 0;
+  box-shadow: var(--rx-shadow-panel);
+}
+
 .project-hero__copy > p:not(.eyebrow),
 .mascot-hero__copy > p:not(.eyebrow),
 .about-hero__inner > p {
@@ -1541,10 +1630,8 @@ p {
 }
 
 .project-jump-section {
-  padding: 18px var(--rx-space-page-x);
-  border-top: 1px solid var(--rx-border-soft);
-  border-bottom: 1px solid var(--rx-border-soft);
-  background: color-mix(in srgb, var(--rx-bg-surface) 82%, transparent);
+  padding: 16px var(--rx-space-page-x) 28px;
+  background: transparent;
 }
 
 .project-jump-nav {
@@ -1552,6 +1639,10 @@ p {
   align-items: center;
   gap: 16px;
   min-width: 0;
+  padding: 10px 12px;
+  border-radius: var(--rx-radius-craft);
+  background: color-mix(in srgb, var(--rx-bg-surface) 92%, transparent);
+  box-shadow: var(--rx-shadow-panel);
 }
 
 .project-jump-nav__label {
@@ -1577,9 +1668,12 @@ p {
   min-width: 0;
   min-height: 48px;
   padding: 8px 12px;
-  border: 1px solid var(--rx-border-soft);
   border-radius: var(--rx-radius-control);
-  background: color-mix(in srgb, var(--rx-bg-surface) 72%, transparent);
+  transition: background-color var(--rx-transition-base);
+}
+
+.project-jump-nav__link:hover {
+  background: var(--rx-bg-muted);
 }
 
 .project-jump-nav__link strong {

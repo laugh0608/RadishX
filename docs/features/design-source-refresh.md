@@ -5,7 +5,7 @@
 
 ## 目标
 
-把 `docs/design/sources/radishx-site-v0.pen` 从早期 v1 候选 / 占位设计源推进为更贴近当前 React 官网实现的 v1.1 设计稿，减少设计源与实现继续分叉。
+把 `docs/design/sources/radishx-site-v0.pen` 从早期候选 / 占位设计源推进为当前 v1.2 craft 单基线，减少设计源与实现继续分叉。
 
 ## 背景
 
@@ -43,7 +43,7 @@
 ## 设计要求
 
 - v1.1 画板应反映当前 React 页面结构和素材治理口径，而不是继续保留未审核候选图占位。
-- 首页应体现 Radish Orbit 中心站姿图、四项目节点、素材状态槽、项目 band、生态说明、公开入口和 Mascot 入口。
+- 首页应体现 Radish Orbit 中心站姿图、五项目节点、素材状态槽、项目 band、生态说明、公开入口和 Mascot 入口。
 - 项目详情模板应体现 Hero、Page flow、Public Surface、Documentation、Capabilities、Matrix 和素材审核说明。
 - Mascot 页应体现完全体站姿主视觉、三形态、Gallery 整图预览、首批单张表情候选预览区和下载关闭口径。
 - About 页应体现联系方式、微信公众号二维码、五个仓库入口和六个域名边界。
@@ -133,6 +133,6 @@
 
 ## 后续事项
 
-- 如 React 页面后续大幅调整，再回到 v1.1 设计源同步桌面与移动端结构。
+- 如 React 页面后续大幅调整，再回到 v1.2 craft 设计源同步桌面与移动端结构。
 - 如新增正式 Logo、真实截图、视频或 seasonal 活动，再单独更新对应目标文档和设计源。
 - 项目详情模板、Mascot 页和 About 页的独立移动版已补齐；后续若页面继续改版，再以这些移动稿作为对照基线。

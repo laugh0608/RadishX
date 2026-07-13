@@ -99,6 +99,7 @@ public/
 - `/catalyst`
 - `/flow`
 - `/mind`
+- `/lex`
 - `/mascot`
 - `/about`
 
@@ -108,8 +109,8 @@ public/
 
 禁止：
 
-- 不把 `hub.radishx.com`、`forge.radishx.com`、`flow.radishx.com`、`mind.radishx.com` 配成本官网 Vercel 路由。
-- 不在官网里实现四个项目的实际业务功能。
+- 不把 `hub.radishx.com`、`forge.radishx.com`、`flow.radishx.com`、`mind.radishx.com`、`lex.radishx.com` 配成本官网 Vercel 路由。
+- 不在官网里实现五个项目的实际业务功能。
 
 ## 样式规则
 
@@ -204,7 +205,7 @@ npm run format
 
 - 首页无明显错位。
 - 导航可用。
-- 四个项目页入口可访问。
+- 五个项目页入口可访问。
 - 项目详情页的 GitHub 链接和 Coming Soon 状态清楚。
 - Mascot 页图片不变形、不遮挡正文。
 - About 页二维码和联系方式可读。

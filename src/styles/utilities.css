@@ -31,18 +31,22 @@
 }
 
 .project-hero--radish {
+  --rx-tone: var(--rx-accent-jade);
   background: linear-gradient(160deg, color-mix(in srgb, var(--rx-accent-jade) 13%, transparent), transparent 52%);
 }
 
 .project-hero--catalyst {
+  --rx-tone: var(--rx-accent-earth);
   background: linear-gradient(160deg, color-mix(in srgb, var(--rx-accent-earth) 13%, transparent), transparent 52%);
 }
 
 .project-hero--flow {
+  --rx-tone: var(--rx-accent-ink);
   background: linear-gradient(160deg, color-mix(in srgb, var(--rx-accent-ink) 13%, transparent), transparent 52%);
 }
 
 .project-hero--mind {
+  --rx-tone: var(--rx-accent-purple);
   background: linear-gradient(160deg, color-mix(in srgb, var(--rx-accent-purple) 13%, transparent), transparent 52%);
 }
 
@@ -86,6 +90,7 @@
 }
 
 .project-hero--lex {
+  --rx-tone: var(--rx-accent-grayjade);
   background: linear-gradient(160deg, color-mix(in srgb, var(--rx-accent-grayjade) 13%, transparent), transparent 52%);
 }
 

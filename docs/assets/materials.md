@@ -36,14 +36,14 @@
 - `public/images/projects/catalyst/`：RadishCatalyst 详情页已审核 Web 图。
 - `public/images/projects/flow/`：RadishFlow 详情页已审核 Web 图。
 - RadishMind 当前没有可进入 `public/images/projects/` 的项目自有公开图片素材，详情页使用代码内生成的 `Evaluation loop` 协议 / 评测视觉。
-- 四个项目当前没有独立稳定 Logo；官网使用代码内文字 / CSS 临时项目标识，不进入 `public/images/`，不声明为正式 Logo。
+- 五个项目当前没有独立稳定 Logo；官网使用代码内文字 / CSS 临时项目标识，不进入 `public/images/`，不声明为正式 Logo。
 
 ## 使用审核
 
 以下情况必须先确认具体素材：
 
 - 首页首屏主视觉。
-- 四个项目详情页主图。
+- 五个项目详情页主图或代码内视觉。
 - Mascot 页首屏主图。
 - 任何对外发布或可下载的图片。
 - 对原图进行裁切、压缩、抠图、重采样或格式转换。
@@ -86,7 +86,7 @@
 | Mascot Gallery | `assets/avatars/mature/radish-mature-sticker-sheet-wide.png` | 已确认 | 适合虚拟形象完全体表情 Gallery。Web 版本：`public/images/mascot/radish-mature-sticker-sheet-wide-web.jpg`。 |
 | 参考素材 | `assets/avatars/mature/radish-mature-cosplay-board.png` | 暂不建议正式使用 | 三次元风格参考图，和当前官网长期视觉口径不完全一致。 |
 | 活动 / 彩蛋 | `assets/avatars/seasonal/*` | 暂不进入当前实现 | 已完成 6 张 seasonal 图评估；全部只作为短期活动 Banner、节日彩蛋或运营内容候选，不进入长期 Gallery、默认主视觉或 `public/images/`。 |
-| 站点图标 / Logo | `assets/avatars/origin/radish-origin-icon.jpg` | 已确认 | 已转换为 `public/favicon.ico`，第一版只作为站点图标和 RadishX 小尺寸识别，不作为四个项目的临时 Logo。 |
+| 站点图标 / Logo | `assets/avatars/origin/radish-origin-icon.jpg` | 已确认 | 已转换为 `public/favicon.ico`，第一版只作为站点图标和 RadishX 小尺寸识别，不作为五个项目的临时 Logo。 |
 | About 二维码 | `assets/social/wechat-official-account-qr.png` | 已确认 | 适合 About 页联系方式区域，不放首页首屏。Web 版本：`public/images/social/wechat-official-account-qr-web.png`。 |
 | 社交分享图 | `public/images/social/radishx-og-image.png` | 已确认 | 1200x630 PNG，用于 Open Graph 与 Twitter `summary_large_image`。 |
 
@@ -98,7 +98,9 @@
 
 项目详情页当前已在主媒体区展示 `Asset source`、`Usage boundary` 和 `Next material need` 三项说明，用于区分代表图、概念视觉、历史 UI baseline 和代码内协议图的公开边界。
 
-2026-06-17 已新增四项目视觉素材准入准备文档：[project-visual-asset-readiness.md](../features/project-visual-asset-readiness.md)。后续独立 Logo、真实截图、视频、key visual、RadishMind 自有可视化图或其他项目视觉候选出现时，先按该文档补齐 `asset_type`、`source_path`、`public_status`、`usage_boundary`、`replacement_scope`、`web_output`、`fallback` 和 `license_note`，再判断是否生成 Web 版本进入 `public/images/projects/`。
+项目视觉素材准入准备文档已扩展为五项目清单：[project-visual-asset-readiness.md](../features/project-visual-asset-readiness.md)。后续独立 Logo、真实截图、视频、key visual 或项目自有可视化图等候选出现时，先按该文档补齐 `asset_type`、`source_path`、`public_status`、`usage_boundary`、`replacement_scope`、`web_output`、`fallback` 和 `license_note`，再判断是否生成 Web 版本进入 `public/images/projects/`。
+
+2026-07-13 当前口径补齐：RadishLex 已作为第五个项目进入官网，但未新增公开图片素材；首页与详情页继续使用代码内 `Input pipeline`，等待项目自有 Logo、真实候选窗 / manager 截图或输入链路视觉后再按准入清单审核。
 
 2026-06-18 阶段口径：RadishX 官网功能开发暂时收住，项目素材接入等待 Radish、RadishCatalyst、RadishFlow 和 RadishMind 自身开发成熟，并补齐正式 Logo、真实截图、公开视频、稳定 Demo、文档站、下载页或 RadishMind 自有视觉等材料后再重启审核和页面开发。
 
@@ -108,10 +110,11 @@
 | RadishCatalyst | `/Users/luobo/Code/RadishCatalyst/assets/concept-art/2026-06-25-demo-first-screen-wide-reference.png` | 详情页主媒体区 demo 首屏概念视觉。 | 属于项目源资产目录的 demo 首屏宽幅参考图，标注为 `Demo concept`；展示异星工业基地与 HUD 方向，不作为实机 gameplay、试玩状态或上线承诺。`client/icon.svg` 是 Godot 默认图标，不作为项目 Logo。 | 2026-07-12 已替换为 `public/images/projects/catalyst/radishcatalyst-demo-first-screen-web.jpg`（1600×900），旧 `radishcatalyst-rpg-exploration-concept-web.jpg` 已移除。 |
 | RadishFlow | `/Users/luobo/Code/RadishFlow/docs/architecture/assets/studio-ui/baseline/radishflow-workbench-concept.png` | 详情页主媒体区 UI baseline。 | 兄弟仓库 README 已声明 2026-06-12 起停止公开维护，因此只能作为历史 UI 方向展示，不代表继续公开迭代、产品化、下载或交付承诺。`adapters/reference/`、Aspen/HYSYS/DWSIM/COFE 等参考截图均不进入官网。 | 已生成 `public/images/projects/flow/radishflow-workbench-concept-web.jpg`，接入 `/flow`，并将页面状态收敛为 `Archived`。 |
 | RadishMind | 无项目自有 Logo、截图、视频或代表性公开图片素材。 | 暂不接入 `public/images` 图片；详情页使用代码内生成的 `Evaluation loop` 协议 / 评测视觉。 | 当前发现的 `docs/assets/ui-design-reference/` 均为 AFFINE、CodexApp、1Panel、GitHub、Cloudflare、Discourse 等外部产品参考截图，只能用于内部灵感，不可作为官网项目图。代码内视觉只表达公开定位，不声明已有正式产品 UI。 | 已补强代码内 `Evaluation loop`，后续若补自有 Logo、Console 截图或真实可视化图，再按图片素材重新审核。 |
+| RadishLex | 当前无已审核公开 Logo、截图、视频或代表性图片素材。 | 暂不接入 `public/images` 图片；详情页使用代码内生成的 `Input pipeline` 输入链路视觉。 | 代码内视觉只表达公开定位，不是平台候选窗、manager 界面或真实输入截图；后续真实截图还需检查隐私数据、输入内容和同步状态。 | 保持代码内 `Input pipeline`；后续出现项目自有 Logo、候选窗 / manager 截图或输入链路视觉时重新审核。 |
 
 二轮复核结论：
 
-- Radish：`README.md` 仍使用 `Docs/images/RadishAcg-256.png` 作为“萝卜娘”公开代表图；`Clients/radish-tauri/icons/icon.png`、`DataBases/Uploads/DefaultIco/bailuobo.ico` 和默认头像属于客户端 / 运行时默认资源或既有代表形象，不是四项目独立稳定 Logo；未发现可公开为当前产品截图的视频或页面截图素材。
+- Radish：`README.md` 仍使用 `Docs/images/RadishAcg-256.png` 作为“萝卜娘”公开代表图；`Clients/radish-tauri/icons/icon.png`、`DataBases/Uploads/DefaultIco/bailuobo.ico` 和默认头像属于客户端 / 运行时默认资源或既有代表形象，不是五项目独立稳定 Logo；未发现可公开为当前产品截图的视频或页面截图素材。
 - RadishCatalyst：`client/icon.svg` 为 Godot 默认图标，不作为项目 Logo；`assets/concept-art/` 下新增可见候选仍属于概念图、HUD 参考或生产基地参考，不作为实机截图、试玩状态或 trailer。
 - RadishFlow：README 已明确 2026-06-12 起停止公开维护；`radishflow-current-workbench-20260516.png` 和相关 workbench / dashboard 图片只能作为历史 UI 或内部参考，不上调为当前产品截图，也不新增推广素材。
 - RadishMind：`docs/assets/ui-design-reference/` 仍是外部产品参考截图；`radishmind-ui-design-spec.md` 明确当前产品 UI 是本地 / 只读边界，不声明正式 production console 已完成，因此不接入外部参考图或当前开发截图作为官网正式项目图。
@@ -121,9 +124,10 @@
 - 首页首屏继续以 Radish Orbit 项目星图为主，已确认可爱Q版站姿高分辨率版本作为首页中心视觉锚点和 Mascot 辅助视觉；本轮不替换 Open Graph 分享预览图。
 - Radish、RadishCatalyst、RadishFlow 详情页已接入审核后的代表性图片；这些图片不提供下载入口，也不声明可自由复用。
 - RadishMind 详情页已使用代码内 `Evaluation loop` 替代通用占位；仍等待项目自有 Logo、截图或代表性图片素材。
-- 四个项目都未发现可直接公开的视频素材；后续如需接入视频，必须单独审核来源、字幕/水印、压缩方案和移动端加载策略。
-- 四个项目仍缺独立稳定 Logo；后续如果项目有独立 Logo，再按项目替换当前代码内临时项目标识。
-- 四项目视觉素材准入清单已建立；当前没有新的正式候选来源时，不主动迁入兄弟项目素材，不替换代码内临时项目标识，不继续扩展项目素材入口。
+- RadishLex 详情页已使用代码内 `Input pipeline`；仍等待项目自有 Logo、候选窗 / manager 截图或代表性图片素材。
+- 五个项目都未发现可直接公开的视频素材；后续如需接入视频，必须单独审核来源、字幕/水印、压缩方案和移动端加载策略。
+- 五个项目仍缺独立稳定 Logo；后续如果项目有独立 Logo，再按项目替换当前代码内临时项目标识。
+- 五项目视觉素材准入清单已建立；当前没有新的正式候选来源时，不主动迁入兄弟项目素材，不替换代码内临时项目标识，不继续扩展项目素材入口。
 - 当前首页项目 band、项目详情页 Hero、Public Surface 和矩阵回流卡片已使用代码内临时项目标识；这些标识只用于官网信息识别，不作为项目正式 Logo 或素材下载内容。
 - Mascot 页首批主图、站姿图和 Gallery 图片已生成 Web 版本并进入 `public/images/`；页面三形态区已展示当前用途、审核状态、使用边界和后续素材需求。后续新增素材仍需继续审核，且不要覆盖原始素材。
 - 可爱Q版表情格和 4 张贴纸横图已进入 Mascot Gallery 整图预览；首批 10 张可爱Q版单张表情已生成 Web 展示图并进入 `/mascot` 候选预览区；不提供下载入口、不声明可自由复用。
@@ -200,7 +204,7 @@
 | --- | --- |
 | 授权来源 | 记录为 RadishX 仓库内原创候选素材，项目所有者已允许首批 Web 展示文件生成和 `/mascot` 候选预览接入。 |
 | 允许页面位置 | `/mascot` 单张表情预览区候选、404 辅助视觉、FAQ / 状态反馈、开发日志辅助视觉。 |
-| 禁止页面位置 | 首页首屏主视觉、四项目 Logo、项目图标、下载区、素材包入口、社交贴纸包入口、商业宣传授权页。 |
+| 禁止页面位置 | 首页首屏主视觉、五项目 Logo、项目图标、下载区、素材包入口、社交贴纸包入口、商业宣传授权页。 |
 | 文件生成边界 | 已生成 10 张 `public/images/mascot/expressions/*-web.jpg`；缩略图只在页面性能或网格浏览真实需要时生成。 |
 | 页面文案边界 | 只能写“展示候选”“官网内部展示”“待审核”，不能写“免费下载”“自由使用”“贴纸包”“素材 API”。 |
 | 撤回策略 | 撤回时同步移除公开文件、数据引用、页面入口、文档清单和任何下载 / 复用暗示；线上已发布时随下一次发布撤下。 |

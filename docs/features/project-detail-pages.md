@@ -1,7 +1,7 @@
 # 五个项目详情页
 
-状态：首版已实现，已补站内导览，项目视觉素材准入清单已建立；2026-07-11 新增 RadishLex 第五个项目详情页
-最后更新：2026-07-11
+状态：首版、站内导览、素材准入清单与 craft Phase 3 均已完成
+最后更新：2026-07-13
 
 ## 目标
 
@@ -32,7 +32,7 @@
 ## 当前实现
 
 - Radish：已接入 README 使用过的代表图 `radish-acg-web.jpg`。
-- RadishCatalyst：已接入概念视觉 `radishcatalyst-rpg-exploration-concept-web.jpg`。
+- RadishCatalyst：已接入 demo 首屏概念视觉 `radishcatalyst-demo-first-screen-web.jpg`。
 - RadishFlow：已接入历史 UI baseline `radishflow-workbench-concept-web.jpg`，页面状态为 `Archived`。
 - RadishMind：未接入图片，使用代码内 `Evaluation loop` 表达上下文约束、工具边界、样本评测、证据链和可审计输出。
 - RadishLex：未接入图片，使用代码内 `Input pipeline` 表达拼音候选、候选重排、可解释学习和端到端加密同步；页面状态为 `Source Available`，未来域名 `lex.radishx.com`。
@@ -40,7 +40,7 @@
 - 每页主媒体区展示 `Asset source`、`Usage boundary` 和 `Next material need`。
 - 每页已补公开文档入口，只链接对应 GitHub 仓库 `dev` 分支中的 README / docs / wiki / status / contracts 等稳定入口，不复制文档正文。
 - 每页 Hero 下方已补轻量站内导览，链接到 `Public Surface`、`Documentation`、`Capabilities` 和 `Matrix` 四个 section。
-- 四项目正式 Logo、真实截图、视频和 RadishMind 自有视觉的准入清单已拆分到 [project-visual-asset-readiness.md](project-visual-asset-readiness.md)；新候选素材出现前不替换当前临时标识或主媒体口径。
+- 五项目正式 Logo、真实截图、视频和项目自有视觉的准入清单已拆分到 [project-visual-asset-readiness.md](project-visual-asset-readiness.md)；新候选素材出现前不替换当前临时标识或主媒体口径。
 
 ## 设计要求
 
@@ -60,22 +60,24 @@
 - RadishMind 当前先补强代码内自有视觉；后续再评估项目自有 Logo、Console 截图或真实可视化图。
 - 已确认并接入公开文档入口：Radish 链接 `Docs/` 与快速开始，RadishCatalyst 链接 `docs/` 与 `wiki/`，RadishFlow 链接 `docs/` 与当前状态且保留 archived 口径，RadishMind 链接 `docs/` 与跨项目集成契约。
 - 已接入项目页站内导览，复用现有 hash navigation，不引入新依赖，不改变素材或发布边界。
+- 已完成 craft Phase 3：Hero 元信息、主媒体、Page flow 和临时项目标识改为去框、留白、柔投影与克制项目色点，不改页面结构、文案、路由或素材边界。
 
 ## 验证
 
 - `npm run build`
-- 桌面视口检查 `/radish`、`/catalyst`、`/flow`、`/mind`。
-- 390px 移动端检查四个项目页。
+- 桌面视口检查 `/radish`、`/catalyst`、`/flow`、`/mind`、`/lex`。
+- 390px 移动端检查五个项目页。
 - 检查图片实际加载、`alt` 合理、主媒体说明完整。
 - 检查 GitHub 链接、公开文档入口、未来域名状态、禁用访问入口和矩阵回流入口。
 - 检查临时项目标识不挤压标题、chip、未来域名、按钮和主媒体说明。
 - 检查站内导览点击后能滚动到对应 section，桌面与 390px 移动端均无横向溢出。
 - 本轮 Browser 检查 `/radish`、`/catalyst`、`/flow`、`/mind` 在 `1440x900` 与 `390x844` 下的 Documentation 卡片，确认每页 2 个文档入口、Public Surface 中 Docs 行、外链 `rel`、触控目标和横向溢出均符合预期。
-- 本轮 Browser 检查首页项目 band、四个项目页 Hero / Public Surface / 矩阵回流卡片在桌面默认视口与 `390x844` 下的临时项目标识，确认标识可读、无横向溢出，console 无 error。
+- 本轮 Browser 检查首页项目 band、五个项目页 Hero / Public Surface / 矩阵回流卡片在桌面默认视口与 `390x844` 下的临时项目标识，确认标识可读、无横向溢出，console 无 error。
+- 2026-07-13 Playwright 在 `1440x900` 与 `390x844` 下覆盖五条详情路由，确认每页 3 项 Hero facts、4 个 Page flow 入口、无横向溢出、无 broken image、console 无 error；另抽查跟随系统、浅色和深色三态截图。
 
 ## 完成标准
 
-- 四个项目页在桌面和移动端无横向溢出。
+- 五个项目页在桌面和移动端无横向溢出。
 - 每个项目的素材来源、使用边界和下一步需求清楚。
 - 每个项目的公开文档入口与项目维护状态边界清楚。
 - 每个项目详情页可通过站内导览快速跳转到状态、文档、能力和矩阵关系。
@@ -85,7 +87,7 @@
 
 ## 后续事项
 
-- 四个项目独立稳定 Logo，确认后替换当前代码内临时标识。
+- 五个项目独立稳定 Logo，确认后替换当前代码内临时标识。
 - Radish / RadishCatalyst / RadishMind 的真实产品截图或项目自有可视化图。
 - RadishCatalyst trailer 或 gameplay 视频素材审核。
 - RadishFlow archived 页面长期口径复查。

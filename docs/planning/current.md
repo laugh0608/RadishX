@@ -1,6 +1,6 @@
 # 当前规划
 
-最后更新：2026-07-12
+最后更新：2026-07-13
 
 ## 当前阶段
 
@@ -15,10 +15,10 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 - 首批已审核 Mascot / About 素材、项目详情页代表视觉和首页 Radish Orbit 中心视觉锚点。
 - Mascot Gallery 整图预览、首批 10 张单张表情 Web 展示图和 `/mascot` 候选预览区。
 - 五个项目详情页公开文档入口、Hero 下方站内导览和代码内临时项目标识。
-- Pencil v1.1 桌面与独立移动设计源，已同步 Mascot 单张表情候选预览区。
+- Pencil 设计源已切换到 v1.2 craft 单基线，共 10 张桌面 / 移动 / 暗色画板。
 - 本地构建、静态输出检查、HTTP smoke、桌面 / 移动端视觉 smoke、线上 HTTP smoke 和线上截图级 smoke 的阶段性记录。
 
-当前没有新的正式项目 Logo、真实截图、公开视频素材、seasonal 活动目标、下载授权或发布要求。因此本阶段不继续扩展素材入口，不开放下载或素材包，不启动 seasonal 页面实现。下一轮 RadishX 官网开发应等待 Radish、RadishCatalyst、RadishFlow 和 RadishMind 各自开发到更适合公开展示的阶段，并补齐对应正式材料后再启动。
+当前没有新的正式项目 Logo、真实截图、公开视频素材、seasonal 活动目标、下载授权或发布要求。因此本阶段不继续扩展素材入口，不开放下载或素材包，不启动 seasonal 页面实现。下一轮 RadishX 官网功能开发应等待五个项目任一形成适合公开展示的新阶段成果，并补齐对应正式材料后再启动。
 
 ## 执行口径
 
@@ -41,8 +41,8 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 | 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地质量基线收束、HTTP smoke、实现口径对齐、设计源同步、Mascot Chrome smoke、Mascot 单张表情 smoke、线上 HTTP smoke 和线上截图级 smoke 已完成 |
 | 设计源精确化 | [design-source-refresh.md](../features/design-source-refresh.md) | 已切换到 v1.2「craft」单基线（10 张：去框 / 留白 / 柔投影 / 段控主题）；v1 / v1.1 / v1.1 暗色旧画板已从画布删除，留存 git 历史 |
 | React 与设计源对照校准 | [react-design-alignment.md](../features/react-design-alignment.md) | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
-| craft 视觉基线落地 | [craft-visual-refresh.md](../features/craft-visual-refresh.md) | Phase 0 文档 + Phase 1 CSS 基础层 + Phase 2 首页已落地并验证；Phase 3/4（详情/Mascot/About 细化）、Phase 5（全站三态对照）待续 |
-| 家族统一 UI 规范 | [family-ui-spec.md](../features/family-ui-spec.md) | v1.0.0 规范正文、tokens 与迁移说明书已入库，参考图已登记 |
+| craft 视觉基线落地 | [craft-visual-refresh.md](../features/craft-visual-refresh.md) | Phase 0–3 已落地并验证；Phase 4（Mascot/About 细化）、Phase 5（全站三态对照）待续 |
+| 家族统一 UI 规范 | [family-ui-spec.md](../features/family-ui-spec.md) | v26.7.2 规范正文、亮暗 tokens 与迁移说明书已入库，参考图已登记 |
 
 ## 当前活跃目标
 
@@ -67,7 +67,7 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 - 不把 Mascot 首批单张表情升级为下载素材、素材包、社交贴纸包或外部分发资源。
 - 不生成 Mascot 单张缩略图，除非页面性能或文件包边界出现真实需要并另行确认。
 - 不启动 seasonal 页面、活动 Banner 或节日彩蛋实现。
-- 不修改 `hub.radishx.com`、`forge.radishx.com`、`flow.radishx.com`、`mind.radishx.com` 的本官网路由 / rewrite 边界。
+- 不修改 `hub.radishx.com`、`forge.radishx.com`、`flow.radishx.com`、`mind.radishx.com`、`lex.radishx.com` 的本官网路由 / rewrite 边界。
 - 不为了保持开发节奏而新增页面、入口、视觉效果或素材分类；新增功能必须有明确项目进展、正式材料或发布需求支撑。
 
 ## 产品边界
@@ -112,7 +112,7 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 
 下一轮 RadishX 官网功能开发应至少满足以下条件之一：
 
-1. Radish、RadishCatalyst、RadishFlow 或 RadishMind 有新的公开阶段成果，需要在官网更新定位、状态、入口或页面结构。
+1. 五个项目任一有新的公开阶段成果，需要在官网更新定位、状态、入口或页面结构。
 2. 五个项目补齐正式 Logo、真实截图、公开视频、稳定 Demo、文档站、下载页或项目自有可视化素材。
 3. 项目域名、部署策略、下载授权、素材授权或公开发布计划发生变化，需要官网同步。
 4. Mascot 素材确认新的授权范围，例如下载、素材包、社交贴纸包、seasonal 活动或外部分发。
@@ -125,7 +125,7 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 1. 保持当前首版官网可发布状态，必要时复核文档、验证脚本和发布检查记录。
 2. 等待五个项目进入更适合公开展示的阶段，并补齐正式 Logo、真实截图、视频、Demo、下载页、文档站或 RadishMind 自有视觉等材料。
 3. 五个项目出现新的正式候选来源后，先按项目视觉素材准入清单补齐字段，再进入素材审核和 Web 优化。
-4. 如 React 页面继续调整或新增正式素材，先同步对应目标文档，再通过 Pencil 工具维护桌面与移动 v1.1 画板。
+4. 如 React 页面继续调整或新增正式素材，先同步对应目标文档，再通过 Pencil 工具维护桌面与移动 v1.2 craft 画板。
 5. 如进入新的部署阶段或页面 / 资源发生变化，线上 HTTP smoke 可复用当前脚本复跑确认；截图级发布检查使用 Playwright + 本机 Chrome 覆盖桌面与移动端。
 6. 如需使用 seasonal 图，先选择具体活动目标并确认上线 / 下线时间、页面位置、文案、授权和撤下策略，再生成 Web 版本。
 7. 后续只有首页视觉再次明显变化或社交预览目标变化时，再评估 Open Graph 分享预览图。

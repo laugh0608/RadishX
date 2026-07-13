@@ -4,22 +4,23 @@
 
 ## 当前官网部署
 
-当前只有 RadishX 官网部署到 Vercel。四个项目未来域名不属于本官网项目的路由或重写规则。
+当前只有 RadishX 官网部署到 Vercel。五个项目未来域名不属于本官网项目的路由或重写规则。
 
 - GitHub 仓库：`https://github.com/laugh0608/RadishX`
 - Vercel 项目：已创建，项目名以 Vercel 控制台为准
 - Canonical 主域名：`radishx.com`
 - 兼容访问入口：`https://www.radishx.com/`，跳转到 `https://radishx.com/`
-- 站点内容：首页、四个项目介绍页、Mascot、About
+- 站点内容：首页、五个项目介绍页、Mascot、About
 
 ## 未来项目域名
 
-以下域名是四个项目未来独立部署后的访问入口，不是当前官网 Vercel 项目的路由或重写规则。
+以下域名是五个项目未来独立部署后的访问入口，不是当前官网 Vercel 项目的路由或重写规则。
 
 - `hub.radishx.com`：Radish
 - `forge.radishx.com`：RadishCatalyst
 - `flow.radishx.com`：RadishFlow
 - `mind.radishx.com`：RadishMind
+- `lex.radishx.com`：RadishLex
 
 官网中可以把这些域名作为“访问项目”的外部链接。对应项目未上线前，按钮应禁用、隐藏或标注 Coming Soon。
 
@@ -31,7 +32,7 @@
 2. Vercel 只构建和部署本官网静态站点。
 3. `radishx.com` 是官网 canonical 主域。
 4. `www.radishx.com` 作为兼容访问入口跳转到根域，并保留路径。
-5. 四个未来项目域名不配置成本官网 rewrite。
+5. 五个未来项目域名不配置成本官网 rewrite。
 
 预期 Vite 配置：
 
@@ -51,17 +52,17 @@
 }
 ```
 
-该配置只处理官网自身的静态页面路径，不包含四个未来项目域名。`favicon.ico`、`robots.txt`、`sitemap.xml`、`assets/` 和 `images/` 明确排除在 History API fallback 之外。
+该配置只处理官网自身的静态页面路径，不包含五个未来项目域名。`favicon.ico`、`robots.txt`、`sitemap.xml`、`assets/` 和 `images/` 明确排除在 History API fallback 之外。
 
 ## SEO 辅助文件
 
 当前公开静态文件：
 
 - `public/robots.txt`：允许抓取当前官网，并声明 `https://radishx.com/sitemap.xml`。
-- `public/sitemap.xml`：只列出当前官网站内页面：`/`、四个项目介绍页、`/mascot` 和 `/about`。
+- `public/sitemap.xml`：只列出当前官网站内页面：`/`、五个项目介绍页、`/mascot` 和 `/about`。
 - `public/images/social/radishx-og-image.png`：1200x630 Open Graph / Twitter 分享预览图，metadata 中使用 `https://radishx.com/images/social/radishx-og-image.png`。
 
-四个未来项目子域名不写入当前官网 sitemap，等对应项目独立部署后由各自站点维护。
+五个未来项目子域名不写入当前官网 sitemap，等对应项目独立部署后由各自站点维护。
 
 ## 2026-06-13 线上 smoke 记录
 
@@ -87,7 +88,7 @@
 
 ## 不在当前阶段做
 
-- 不为四个未来项目域名配置 Vercel 重写。
-- 不把四个项目部署到当前官网 Vercel 项目中。
+- 不为五个未来项目域名配置 Vercel 重写。
+- 不把五个项目部署到当前官网 Vercel 项目中。
 - 不为官网引入后端服务。
 - 不在未上线项目前暴露不可用的跳转按钮。
