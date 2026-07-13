@@ -2873,20 +2873,42 @@ p {
   }
 
   .site-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
     gap: 14px;
     padding-top: 14px;
     padding-bottom: 14px;
   }
 
+  .site-header__brand {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .site-header__actions {
+    display: contents;
+  }
+
   .site-header__nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100%;
     gap: 4px;
-    padding: 4px;
+    padding: 0;
+    justify-content: flex-start;
   }
 
   .site-header__nav a {
+    flex: 0 0 auto;
     min-height: 44px;
     padding: 7px 10px;
     font-size: 13px;
+  }
+
+  .theme-seg {
+    grid-column: 2;
+    grid-row: 1;
   }
 
   .hero-section,

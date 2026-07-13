@@ -1,11 +1,11 @@
 # craft 视觉基线落地（v1.2 → React 实现）
 
-状态：进行中（Phase 0–4 已完成，Phase 5 待续）
+状态：已完成（Phase 0–5 全部落地并通过本地终验）
 最后更新：2026-07-13
 
 ## 背景
 
-设计源 `docs/design/sources/radishx-site-v0.pen` 已切换到 v1.2「craft」单基线（去框、留白、柔投影分层、段控主题切换、单列全宽交替 band、强调色克制），并已删除全部 v1 / v1.1 旧画板。目标启动时 React 实现（`src/`）仍是旧的「描边卡片仪表盘」视觉，当前已完成 Phase 0–4，仅剩全站终验待收敛。
+设计源 `docs/design/sources/radishx-site-v0.pen` 已切换到 v1.2「craft」单基线（去框、留白、柔投影分层、段控主题切换、单列全宽交替 band、强调色克制），并已删除全部 v1 / v1.1 旧画板。目标启动时 React 实现（`src/`）仍是旧的「描边卡片仪表盘」视觉，现已完成 Phase 0–5 并通过全站本地终验。
 
 按 Pencil-first 原则（设计定稿后进入实现）与 `docs` 冲突处理口径（以较新的一方统一修正），本目标把 v1.2 craft 落到 `src/` 实际页面，消除设计源与实现的分叉。
 
@@ -100,4 +100,13 @@ Phase 2（首页，`src/components/sections` + `global.css`）：
 - `npm run build` 与 `git diff --check` 通过；Playwright 覆盖 `/mascot`、`/about` 的 `1440×900`、`390×844` 及亮 / 暗主题，无横向溢出、broken image、console error 或小于 `44px` 的交互目标。
 - Mascot 结构保持 3 个形态、7 个 Gallery 预览、10 个单张表情候选、4 个 Usage 分组，22 张图片全部解码；About 保持 4 个联系方式、6 个仓库入口和 7 个域名入口。
 
-Phase 5 待办：全站亮色 / 深色 / 跟随系统逐页截图对照、发布前复核与残余一致性收束。
+### 2026-07-13 Phase 5 全站终验
+
+- Playwright 覆盖首页、五个项目页、Mascot、About 与 404 共 9 条路径，在 `1440×900`、`390×844` 和跟随系统 / 亮色 / 深色三态下完成 54 个组合检查。
+- 所有组合均保持单一 H1、`main#main-content`、skip link、导航语义、正确 robots / canonical 口径；无横向溢出、broken image、console error 或小于 `44px` 的交互目标。
+- 截图人工抽查首页、Radish / Catalyst / Flow / Mind / Lex、Mascot、About 和 404；修复移动端导航与主题段控同排造成的视觉拥挤，改为“品牌 + 主题”首行与完整导航次行，并在 `320px` 补测无导航溢出。
+- HTTP smoke 补齐 `/lex` 路由与 sitemap canonical 检查，关键路由计数从 8 更新为 9；28 个公开图片资源全部通过。
+- `npm run check:local-release`、`npm run check:http-smoke -- --base-url http://127.0.0.1:4500`、`npm run build` 与 `git diff --check` 通过。
+- QA artifact：`output/playwright/craft-phase5-2026-07-13/`，仅本地留存，不提交。
+
+目标完成后进入维护期；后续只有页面、素材或部署发生变化时，才按本文件口径复跑受影响页面与发布检查。

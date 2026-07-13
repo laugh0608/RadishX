@@ -1,7 +1,7 @@
 # 视觉 QA 与发布检查
 
-状态：持续执行，本地质量基线收束、本地发布前复查、HTTP smoke 准备、可访问性整理、实现口径对齐检查、设计源同步说明、Mascot Chrome smoke、Mascot 单张表情本地 smoke、线上 HTTP smoke 和线上截图级 smoke 已完成
-最后更新：2026-06-18
+状态：持续执行，craft Phase 5 本地三态终验、9 路由 HTTP smoke 与既有线上发布检查已完成
+最后更新：2026-07-13
 
 ## 目标
 
@@ -53,6 +53,17 @@
 - 可访问性整理后检查 skip link、`main` 聚焦、导航 / 页脚语义、重复链接名称、heading 序列、横向溢出和 console error。
 
 ## 本地检查记录
+
+2026-07-13 已完成 craft Phase 5 全站本地终验：
+
+- Playwright 覆盖 `/`、`/radish`、`/catalyst`、`/flow`、`/mind`、`/lex`、`/mascot`、`/about` 和 `/abc-test` 共 9 条路径。
+- 覆盖 `1440x900` 桌面、`390x844` 移动和跟随系统 / 亮色 / 深色三态，共 54 个路由 / 视口 / 主题组合。
+- 所有组合均为单一 H1，保留 `main#main-content`、skip link、顶部 / 页脚导航语义与正确 robots / canonical；无横向溢出、broken image、console error 或小于 `44px` 的交互目标。
+- Mascot 的 22 张图片在各组合滚动后均完成解码；其他页面图片也全部完成解码。
+- 人工截图抽查发现移动端导航与主题段控同排时过于拥挤，已调整为品牌与主题同处首行、完整导航独占次行；`390px` 与补充 `320px` 检查均无导航滚动或页面溢出。
+- `scripts/check-http-smoke.mjs` 补齐 `/lex` HTML 与 sitemap canonical 检查；本地 HTTP smoke 通过 9 条关键路由和 28 个公开图片资源。
+- `npm run check:local-release` 通过，确认 28 个公开图片和 2 个 Vite asset；`npm run build`、`git diff --check` 同步通过。
+- QA artifact 保存在 `output/playwright/craft-phase5-2026-07-13/`，不提交；本轮不推送、不部署，因此不重复线上截图级 smoke。
 
 2026-06-16 已完成一轮本地发布前复查：
 

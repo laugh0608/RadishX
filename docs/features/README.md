@@ -26,10 +26,10 @@
 | [mascot-page.md](mascot-page.md) | Mascot 虚拟形象页、三形态和 Gallery | Gallery / Usage、首批单张表情与 craft Phase 4 视觉收敛已完成 |
 | [about-contact-surface.md](about-contact-surface.md) | About 联系区、仓库入口和域名边界 | 二轮扫读优化与 craft Phase 4 视觉收敛已完成 |
 | [asset-governance.md](asset-governance.md) | 素材审核、Web 优化和 `public/images` 准入 | Mascot 首批单张表情 Web 展示图已接入，下载、素材包和外部分发继续关闭 |
-| [visual-qa-and-release.md](visual-qa-and-release.md) | 本地 / 线上视觉 QA、构建和发布检查 | 本地质量基线收束、HTTP smoke、实现口径对齐、设计源同步、Mascot Chrome smoke、Mascot 单张表情 smoke、线上 HTTP smoke 和线上截图级 smoke 已完成 |
+| [visual-qa-and-release.md](visual-qa-and-release.md) | 本地 / 线上视觉 QA、构建和发布检查 | craft Phase 5 本地 54 组合终验、9 路由 HTTP smoke 与既有线上发布检查已完成 |
 | [design-source-refresh.md](design-source-refresh.md) | Pencil 设计源精确化与 craft 基线 | 已切换到 v1.2 craft 单基线，保留 10 张桌面 / 移动 / 暗色画板 |
 | [react-design-alignment.md](react-design-alignment.md) | React 页面与 v1.1 设计源对照校准 | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
-| [craft-visual-refresh.md](craft-visual-refresh.md) | v1.2 craft 视觉基线落进 React | Phase 0–4 已完成，Phase 5 全站三态终验待续 |
+| [craft-visual-refresh.md](craft-visual-refresh.md) | v1.2 craft 视觉基线落进 React | Phase 0–5 已全部完成并通过全站三态终验 |
 | [family-ui-spec.md](family-ui-spec.md) | Radish 家族统一 UI / 视觉设计规范 | v26.7.2 已建立亮暗 token，参考图入库，各兄弟项目待按迁移说明书接入 |
 
 ## 推荐文档结构

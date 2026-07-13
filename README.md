@@ -2,7 +2,7 @@
 
 RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 RadishX 官网根站点，通过 GitHub 托管代码，并使用 Vercel 免费额度部署；当前主域为 <https://radishx.com/>，`www.radishx.com` 作为兼容入口跳转到根域。
 
-当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、五个项目详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、首批 Mascot / About 公开图片、项目详情页代表视觉、Radish Orbit 首页中心视觉、Mascot Gallery 整图预览、首批单张表情候选预览和 family-ui 双层样式 token；Pencil 设计源已切换到 v1.2 craft 桌面 / 移动单基线，React 正按阶段完成 craft 表现层收敛；已完成多轮本地响应式、可访问性、发布检查、HTTP smoke、线上桌面 / 移动端截图级 smoke、实现口径对齐检查和目标级开发文档同步。当前官网功能开发进入等待期，除既定 craft 视觉收敛、发布复核、文档一致性、验证脚本维护和必要的小范围质量修正外，不继续扩展新页面、素材入口、下载能力或 seasonal 活动。
+当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、五个项目详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、首批 Mascot / About 公开图片、项目详情页代表视觉、Radish Orbit 首页中心视觉、Mascot Gallery 整图预览、首批单张表情候选预览和 family-ui 双层样式 token；Pencil 设计源已切换到 v1.2 craft 桌面 / 移动单基线，React craft 表现层 Phase 0–5 已全部落地并完成本地三态终验；已完成多轮本地响应式、可访问性、发布检查、HTTP smoke、线上桌面 / 移动端截图级 smoke、实现口径对齐检查和目标级开发文档同步。当前官网功能开发进入等待期，除发布复核、文档一致性、验证脚本维护和必要的小范围质量修正外，不继续扩展新页面、素材入口、下载能力或 seasonal 活动。
 
 ## 已确认方向
 
