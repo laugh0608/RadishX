@@ -35,18 +35,18 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 | 首页首屏与主视觉 | [home-hero-visual.md](../features/home-hero-visual.md) | 站姿中心视觉锚点已接入，OG 已评估暂不替换 |
 | 五个项目详情页 | [project-detail-pages.md](../features/project-detail-pages.md) | 首版已实现，已补站内导览 |
 | 项目视觉素材准入准备 | [project-visual-asset-readiness.md](../features/project-visual-asset-readiness.md) | 五项目正式 Logo、截图、视频和自有视觉准入清单已建立 |
-| Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | Gallery / Usage、Chrome smoke、单张表情 Web 文件生成、`/mascot` 候选预览区接入与设计源同步已完成 |
-| About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 二轮扫读优化已完成 |
+| Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | Gallery / Usage、单张表情与 craft Phase 4 视觉收敛已完成 |
+| About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 二轮扫读优化与 craft Phase 4 视觉收敛已完成 |
 | 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 首批单张表情已生成 Web 展示图，下载、素材包和外部分发继续关闭 |
 | 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | 本地质量基线收束、HTTP smoke、实现口径对齐、设计源同步、Mascot Chrome smoke、Mascot 单张表情 smoke、线上 HTTP smoke 和线上截图级 smoke 已完成 |
 | 设计源精确化 | [design-source-refresh.md](../features/design-source-refresh.md) | 已切换到 v1.2「craft」单基线（10 张：去框 / 留白 / 柔投影 / 段控主题）；v1 / v1.1 / v1.1 暗色旧画板已从画布删除，留存 git 历史 |
 | React 与设计源对照校准 | [react-design-alignment.md](../features/react-design-alignment.md) | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
-| craft 视觉基线落地 | [craft-visual-refresh.md](../features/craft-visual-refresh.md) | Phase 0–3 已落地并验证；Phase 4（Mascot/About 细化）、Phase 5（全站三态对照）待续 |
+| craft 视觉基线落地 | [craft-visual-refresh.md](../features/craft-visual-refresh.md) | Phase 0–4 已落地并验证；Phase 5 全站三态对照待续 |
 | 家族统一 UI 规范 | [family-ui-spec.md](../features/family-ui-spec.md) | v26.7.2 规范正文、亮暗 tokens 与迁移说明书已入库，参考图已登记 |
 
 ## 当前活跃目标
 
-当前没有新的页面、素材、下载、seasonal 或部署目标。当前活跃目标从功能开发转为保持官网首版可发布状态，并做轻量的状态复核、文档一致性检查和必要的小范围质量改进。
+当前没有新的页面、素材、下载、seasonal 或部署目标。当前活跃目标从功能开发转为完成 craft Phase 5 全站终验、保持官网首版可发布状态，并做轻量的状态复核、文档一致性检查和必要的小范围质量改进。
 
 例外：家族统一 UI 规范（family-ui）作为跨项目文档目标已启动，详见 [family-ui-spec.md](../features/family-ui-spec.md)。该目标只产出 `docs/design/family-ui/` 规范、tokens 与参考素材，不改动官网页面代码、公开图片资源或部署配置，因此不与官网功能等待期冲突。
 

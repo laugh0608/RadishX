@@ -1,7 +1,7 @@
 # Mascot 虚拟形象页
 
-状态：Gallery / Usage 实现、Chrome smoke、首批单张表情 Web 文件生成与 `/mascot` 候选预览区接入已完成
-最后更新：2026-06-18
+状态：Gallery / Usage、首批单张表情与 craft Phase 4 视觉收敛已完成
+最后更新：2026-07-13
 
 ## 目标
 
@@ -54,6 +54,7 @@ Mascot 页已接入首批确认图片，包含原始形象、可爱Q版安全设
 - 已生成首批 10 张 `public/images/mascot/expressions/radish-child-expression-*-web.jpg`，并在 `src/data/mascot.ts` 中记录 `id`、来源格位、标签、英文语义、使用场景、边界和图片尺寸。
 - `assets/avatars/seasonal/` 下 6 张节日活动图已完成评估，当前均不进入长期 Gallery、默认主视觉或公开资源目录。
 - 三形态卡片展示当前用途、审核状态、使用边界和后续素材需求。
+- craft Phase 4 已把 Hero 主视觉、三形态、Gallery、单张表情候选和 Usage 卡片从描边层级收敛为大圆角、柔投影与点状 mono meta；页面内容、素材和授权边界未变化。
 
 ## 设计要求
 
@@ -218,6 +219,7 @@ Mascot 页已接入首批确认图片，包含原始形象、可爱Q版安全设
 - 桌面视口检查 `/mascot`。
 - 390px 移动端检查 `/mascot`。
 - 检查 Mascot 页面图片加载成功，并确认新增公开 Web 资源返回 `200`。
+- 2026-07-13 Playwright 覆盖 `1440x900`、`390x844` 和亮 / 暗主题：3 个形态、7 个 Gallery、10 个单张表情候选、4 个 Usage 分组完整；22 张图片全部解码，无横向溢出、broken image、console error 或小于 `44px` 的交互目标。
 - 本轮检查新增 5 张表情 / 贴纸 Web 资源返回 `200`。
 - 本轮检查新增 10 张单张表情 Web 资源返回 `200`，尺寸均为 `256x256`。
 - 检查主视觉摘要、三形态说明和 Gallery 无横向 / 高度溢出。

@@ -1,11 +1,11 @@
 # craft 视觉基线落地（v1.2 → React 实现）
 
-状态：进行中（Phase 0–3 已完成，Phase 4–5 待续）
+状态：进行中（Phase 0–4 已完成，Phase 5 待续）
 最后更新：2026-07-13
 
 ## 背景
 
-设计源 `docs/design/sources/radishx-site-v0.pen` 已切换到 v1.2「craft」单基线（去框、留白、柔投影分层、段控主题切换、单列全宽交替 band、强调色克制），并已删除全部 v1 / v1.1 旧画板。目标启动时 React 实现（`src/`）仍是旧的「描边卡片仪表盘」视觉，当前已完成 Phase 0–3，Mascot / About 与全站终验仍待收敛。
+设计源 `docs/design/sources/radishx-site-v0.pen` 已切换到 v1.2「craft」单基线（去框、留白、柔投影分层、段控主题切换、单列全宽交替 band、强调色克制），并已删除全部 v1 / v1.1 旧画板。目标启动时 React 实现（`src/`）仍是旧的「描边卡片仪表盘」视觉，当前已完成 Phase 0–4，仅剩全站终验待收敛。
 
 按 Pencil-first 原则（设计定稿后进入实现）与 `docs` 冲突处理口径（以较新的一方统一修正），本目标把 v1.2 craft 落到 `src/` 实际页面，消除设计源与实现的分叉。
 
@@ -91,4 +91,13 @@ Phase 2（首页，`src/components/sections` + `global.css`）：
 - `npm run build` 与 `git diff --check` 通过；Playwright 覆盖五条详情路由的 `1440×900`、`390×844`，均无横向溢出、broken image 或 console error，每页保留 3 项 Hero facts 和 4 个 Page flow 入口。
 - 截图抽查 `/flow` 跟随系统桌面、`/flow` 深色桌面、`/lex` 深色移动与 `/mind` 浅色移动，确认真实截图、代码内视觉、暗色和移动布局均保持 craft 层次。
 
-Phase 4 待办：细化 Mascot / About 页页面特有描边残留与 hero 层次；Phase 5 全站三态截图逐页对照。
+### 2026-07-13 Phase 4 Mascot / About 落地
+
+- Mascot Hero 主视觉、三形态、Gallery、首批单张表情与 Usage 卡片去除页面特有描边，统一为 craft 大圆角、纸面层次和柔投影。
+- 三形态审核状态、Gallery / 表情候选状态与 Hero 摘要从描边 chip 收敛为带语义色点的 mono meta；审核说明保留弱分隔，不形成卡中卡。
+- About Hero 摘要、微信公众号状态与 GitHub 仓库状态改为点状 meta；联系方式动作、二维码、仓库与域名卡片去除厚重描边，保持入口可点击性和信息边界。
+- 本阶段只修改 `src/styles/global.css`，未改 JSX、数据、路由、文案、素材、域名或部署边界。
+- `npm run build` 与 `git diff --check` 通过；Playwright 覆盖 `/mascot`、`/about` 的 `1440×900`、`390×844` 及亮 / 暗主题，无横向溢出、broken image、console error 或小于 `44px` 的交互目标。
+- Mascot 结构保持 3 个形态、7 个 Gallery 预览、10 个单张表情候选、4 个 Usage 分组，22 张图片全部解码；About 保持 4 个联系方式、6 个仓库入口和 7 个域名入口。
+
+Phase 5 待办：全站亮色 / 深色 / 跟随系统逐页截图对照、发布前复核与残余一致性收束。
