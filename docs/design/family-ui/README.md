@@ -6,11 +6,30 @@
 
 一句话方向：**现代工作台骨架 × 纸墨印色气质**——结构、密度与组件形态学取自现代清爽工作台语言（见 [references.md](references.md)），色彩与气质取自 Radish 人民币纸币色系配色母板。
 
+## 使用前必读：参考图不是可选灵感
+
+任何项目在评估、设计、迁移或重构 UI 前，必须同时完成以下阅读和观察：
+
+1. 完整阅读 [references.md](references.md)；
+2. 逐张查看 `assets/design-references/ui/` 中由该索引登记的参考图；
+3. 对照索引中的“主要学习点 / 明确不学”，再阅读与当前任务相关的颜色、组件、布局和平台章节；
+4. 明确当前页面采用哪些参考原则、拒绝哪些表面特征后，才进入 Pencil 或代码实现。
+
+`references.md` 与参考图共同定义“现代工作台骨架”的视觉依据，承担布局比例、信息密度、组件形态、状态双通道、列表 / 详情关系和多栏工作区节奏。只读本页或只复制 token，只能完成颜色与变量接入，不能视为完成 family-ui 视觉评估或页面迁移。
+
+参考素材的使用边界同样是强制规则：
+
+- 参考图仅用于家族内部观察和原则提炼，不是可复用产品素材；
+- 禁止把参考图复制到产品、`public/`、官网页面、设计交付物或对外文档；
+- 禁止照搬外部页面结构、品牌元素、图标、配色或文案；
+- 参考图以桌面工作台为主，移动端必须继续以 [07-layout-platforms.md](07-layout-platforms.md) 的重排规则为准，不能把桌面布局等比缩小；
+- 未实际查看参考图时，不得宣称已完成视觉方向评估，也不得直接开始页面级 Pencil 或代码重构。
+
 ## 适用范围
 
 | 项目 | 产品形态 | 适用面 |
 | --- | --- | --- |
-| Radish | Web 社区 + Console + Tauri 客户端 | 全部 |
+| Radish | Web 社区 + Console + Flutter 移动原生端；Tauri 暂时弃用 | Web / Console / Flutter；Tauri 只保留历史资产，未来重新评估 |
 | RadishCatalyst | Godot 游戏 + Wiki / 官方工具 | 游戏内为 Game 面；Wiki / 工具为 Workbench 面 |
 | RadishFlow | 流程模拟桌面软件（已归档，规范仍适用） | Workbench 面 |
 | RadishMind | AI runtime 工作台（console + web） | Workbench 面 |
@@ -52,7 +71,7 @@
 | [08-brand-assets.md](08-brand-assets.md) | 纹样、纸感、Mascot、图标、插画使用规则 |
 | [09-adoption.md](09-adoption.md) | 各项目现状映射、待收敛清单、合规检查清单 |
 | [10-migration-playbook.md](10-migration-playbook.md) | 撤项目 UI 专题的迁移说明书、差异附录模板、新产品接入模板 |
-| [references.md](references.md) | 16 张参考图索引与版权口径 |
+| [references.md](references.md) | **视觉设计前必读**：27 张参考图索引、学习 / 排除规则与版权口径 |
 | [tokens/tokens.json](tokens/tokens.json) | 机器可读 token（W3C design tokens 风格） |
 | [tokens/tokens.css](tokens/tokens.css) | CSS 参考实现（含暗色核心映射与 Workbench 覆盖） |
 

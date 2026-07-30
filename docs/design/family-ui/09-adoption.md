@@ -7,7 +7,7 @@
 | 项目 | Profile | 现有规范 | 接入状态 |
 | --- | --- | --- | --- |
 | RadishX 官网 | Brand | `docs/design/visual-guidelines.md` + `ui-addendum.md`（`--rx-*`） | 已完整接入：token 别名 + 硬编码颜色收敛 + 差异附录（2026-07-11） |
-| Radish | Brand（公开 Web）+ Workbench（私域 / Console） | `Docs/frontend/visual-theme-spec.md` 等（`--theme-*` / `--console-*`） | 待迁移 |
+| Radish | Brand（公开 Web）+ Workbench（私域 / Console / Flutter 移动原生变体） | `Docs/frontend/ui-addendum.md` + `visual-theme-spec.md`（`--rd-*` / L2 别名） | 接入中：A / B 治理与 Token 基线已完成（2026-07-30），Pencil / 组件 / 页面族待推进 |
 | RadishMind | Workbench | `docs/radishmind-ui-design-spec.md`（`--rm-*`） | 待迁移 |
 | RadishFlow | Workbench | `studio-visual-system.md`（`studio-*`） | 已归档项目；规范适用，迁移不设时限 |
 | RadishCatalyst | Game + Workbench（Wiki / 工具） | `docs/product/visual-and-ui-direction.md` | 游戏面自治；Wiki / 工具启动时按本规范 |
@@ -60,20 +60,18 @@
 
 `--rx-*` 草案值与家族值同源，一一对应改前缀即可；`--rx-state-warning` `#b5826d`、`--rx-state-danger` `#c3564d` 即家族值来源。`--rx-content-max-width` 等内容宽度 token 为站点层 token，保留 `--rx-*` 前缀不上升为家族层。
 
+Radish 当前产品顺位为 Web 优先、Flutter 次级；Tauri 暂时弃用，不进入 UI、CI、发布或验收门禁，未来只有桌面原生价值、目标用户和维护预算同时明确时再重新评估。
+
 ## 3. 待收敛清单
 
 各项目迁移时逐项处理，处理后勾除：
 
 | # | 项目 | 现状 | 目标 | 影响面 | 建议时机 |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Radish console | warning 基于 `#faad14`（AntD 黄） | `--rd-state-warning` `#b5826d` | console 全站警告态 | 下次 console 视觉批次 |
-| 2 | Radish console | danger `#a7374d` | `#c3564d` | 危险按钮、错误提示 | 同上 |
-| 3 | Radish console | success `#2f806c` | `#4f9c83` | 状态 chip | 同上 |
-| 4 | Radish client | 错误色曾复用品牌红 `#b24057` | danger 拆分为 `#c3564d` | 表单错误、危险操作 | 下次 client 视觉批次 |
-| 5 | Radish | border 三版本（`#d9cbb9` / `#ded4c7` / rgba） | `--rd-border-soft` | 全局 | 建 alias 层时 |
-| 6 | Radish console | text-primary `#25221f` | `#2f2a25` | 全局文本 | 建 alias 层时 |
 | 7 | 全家族 | 五套 token 前缀并存 | L2 别名 → 逐步替换为 `--rd-*` | — | 各项目节奏自定 |
-| 8 | 全家族 | 暗色全表已定义（v26.7.2），RadishX 已落地验证 | 各项目按 02 章暗色表 + `[data-rd-theme="dark"]` 接入 | 全局 | 定义完成，待各项目接入 |
+| 8 | 全家族 | 暗色全表已定义（v26.7.2），RadishX 已落地验证；Radish 已接入四主题语义基线 | 各项目按 02 章暗色表 + `[data-rd-theme="dark"]` 接入 | 全局 | Radish 页面族视觉验收待 C / D 批，其余项目按各自节奏 |
+
+Radish 已于 `2026-07-30` 完成原清单 `#1-#6` 的基础映射：Console warning / danger / success、Client danger、全局 border 别名和 Console 主文本均已收口到 `--rd-*`；视觉代表页和硬编码颜色清理仍按 C / D 批逐页面族验收。
 
 ## 4. 合规检查清单
 
