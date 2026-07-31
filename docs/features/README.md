@@ -12,7 +12,7 @@
 
 ## 当前开发节奏
 
-官网首版功能已经收束，当前不再主动扩展新页面、素材入口、下载能力或 seasonal 活动。后续功能开发等待五个项目任一进入更适合公开展示的阶段，并补齐正式 Logo、真实截图、公开视频、稳定 Demo、文档站、下载页或项目自有视觉等材料后再启动。
+官网首版功能已经收束，当前不再主动扩展新页面、素材入口、下载能力或 seasonal 活动。2026-07-31 新增的灰玉品牌视觉目标只推进 family-ui 通用规范与单页 Pencil 评审，不修改 React 页面。
 
 在恢复功能开发前，只推进发布复核、文档一致性、验证脚本维护和必要的小范围质量修正。任何新目标都应先更新对应 `docs/features/*.md`，再进入设计源、React 实现和验证。
 
@@ -28,9 +28,10 @@
 | [asset-governance.md](asset-governance.md) | 素材审核、Web 优化和 `public/images` 准入 | Mascot 首批单张表情 Web 展示图已接入，下载、素材包和外部分发继续关闭 |
 | [visual-qa-and-release.md](visual-qa-and-release.md) | 本地 / 线上视觉 QA、构建和发布检查 | craft Phase 5 本地 54 组合终验、9 路由 HTTP smoke 与既有线上发布检查已完成 |
 | [design-source-refresh.md](design-source-refresh.md) | Pencil 设计源精确化与 craft 基线 | 已切换到 v1.2 craft 单基线，保留 10 张桌面 / 移动 / 暗色画板 |
+| [grayjade-brand-refresh.md](grayjade-brand-refresh.md) | 灰玉品牌视觉与 `radishx-site-v1.pen` 单页评审 | 二轮创意重构已完成，等待视觉复核；React 暂不修改 |
 | [react-design-alignment.md](react-design-alignment.md) | React 页面与 v1.1 设计源对照校准 | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
 | [craft-visual-refresh.md](craft-visual-refresh.md) | v1.2 craft 视觉基线落进 React | Phase 0–5 已全部完成并通过全站三态终验 |
-| [family-ui-spec.md](family-ui-spec.md) | Radish 家族统一 UI / 视觉设计规范 | v26.7.2 已建立亮暗 token，参考图入库，各兄弟项目待按迁移说明书接入 |
+| [family-ui-spec.md](family-ui-spec.md) | Radish 家族统一 UI / 视觉参考规范 | v26.7.3：灰玉默认品牌参考、通用规范边界、参考 UI 同目录归档 |
 
 ## 推荐文档结构
 

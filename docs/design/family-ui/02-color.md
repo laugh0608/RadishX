@@ -1,12 +1,12 @@
 # 02 色彩系统
 
-家族色彩分两层：L0 原始母板（只定义、不直接消费）与 L1 语义 token（组件唯一消费层）。各项目现有前缀（`--theme-*`、`--console-*`、`--rm-*`、`studio-*`、`--rx-*`）作为 L2 别名过渡，映射表见 [09-adoption.md](09-adoption.md)。
+色彩系统分两层：L0 原始母板（只定义候选色阶、不直接消费）与 L1 语义 token（组件消费层）。母板是通用参考集合，不为任何具体项目预先分配主色或辅助色；使用方可按自身品牌与内容决定是否采用、覆盖或扩展。
 
 机器可读定义：[tokens/tokens.json](tokens/tokens.json)；CSS 参考实现：[tokens/tokens.css](tokens/tokens.css)。三处值必须一致，修改时三处同步。
 
 ## 1. L0 配色母板
 
-源自 Radish `Docs/frontend/visual-color-reference.md` 的人民币纸币色系，原值收录：
+由人民币纸币色系提炼的低饱和母板：
 
 | 色系 | 值 |
 | --- | --- |
@@ -46,6 +46,7 @@
 | `--rd-text-primary` | `#2f2a25` | 标题与正文 |
 | `--rd-text-secondary` | `#6a5c4f` | 辅助说明、时间、metadata |
 | `--rd-text-muted` | `#8d7b6c` | 弱提示、占位 |
+| `--rd-text-on-brand` | `#fffdf8` | 品牌实底上的文字；暗色下随品牌亮度切换 |
 | `--rd-text-on-accent` | `#fffdf8` | 深色 / 强色底上的文字 |
 | `--rd-text-on-ink` | `#f4efe6` | `bg-ink` 上的文字 |
 
@@ -59,13 +60,13 @@
 
 ### 品牌与操作（拆分定义）
 
-品牌色负责家族识别，操作色负责界面主操作。Brand 面可令 `action = brand`；Workbench 面默认用墨蓝操作色，避免整屏胭脂红。
+品牌色负责身份识别，操作色负责界面主操作。两者可以相同，也可以分离；本表以灰玉品牌色与墨蓝操作色演示二者分离后的参考实现。
 
 | Token | 值 | 用途 |
 | --- | --- | --- |
-| `--rd-brand-primary` | `#b24057` | 品牌识别、品牌 CTA、印色点缀 |
-| `--rd-brand-hover` | `#cd5076` | 品牌色悬停 |
-| `--rd-brand-soft` | `rgba(178, 64, 87, 0.12)` | 品牌柔化底 |
+| `--rd-brand-primary` | `#5d6c57` | 品牌识别、品牌 CTA、灰玉印色点缀 |
+| `--rd-brand-hover` | `#6e736d` | 品牌色悬停 |
+| `--rd-brand-soft` | `rgba(120, 164, 150, 0.16)` | 品牌柔化底 |
 | `--rd-action-primary` | `#435c74` | 工作面主按钮、激活态、链接 |
 | `--rd-action-hover` | `#55738f` | 操作色悬停 |
 | `--rd-action-soft` | `rgba(67, 92, 116, 0.12)` | 选中底、导航 active 柔底 |
@@ -93,7 +94,7 @@
 
 扩展语义不新增颜色，用组合表达（详见 [06-components.md](06-components.md)）：`blocked` = danger 柔底 + 锁形图标；`stale` = warning 柔底 + 时钟图标；`read-only` = neutral 柔底 + 文字标签。
 
-注意：**danger ≠ brand**。历史上 Radish 曾用品牌红 `#b24057` 兼任错误色，本规范起明确拆分。
+注意：**danger ≠ brand**。即使品牌色与危险色在某一主题中接近，也必须保留独立语义和双通道表达。
 
 ### 纹样与阴影
 
@@ -116,18 +117,13 @@ Workbench 面把底色抬亮一档（参考图的近白基底 + 家族暖纸倾�
 
 Game 面不使用本表；只须保证状态色语义与双通道原则成立。
 
-## 4. 项目 accent 分工
+## 4. 品牌与 accent 选色原则
 
-| 项目 | 主 accent | 辅 accent | 备注 |
-| --- | --- | --- | --- |
-| Radish | 胭脂 | 玉青、墨蓝 | 社区 / WebOS / 内容生态 |
-| RadishCatalyst | 赭石 | 胭脂 | 游戏、异星工业；游戏内自治 |
-| RadishFlow | 墨蓝 | 灰玉 | 工程可信、画布 |
-| RadishMind | 墨蓝 | 玉青、雅紫（小面积） | 评测、审计感 |
-| RadishLex | 灰玉 | 纸色系 | 输入法轻量安静；灰玉与 Radish 玉青区分，避免撞色 |
-| RadishX | 全色系编排 | — | 官网做家族陈列，遵守同屏 ≤ 2 组强色 |
-
-新产品从母板选主 / 辅两组，不与近邻产品撞色，登记回本表。
+- 母板中的胭脂、玉青、赭石、墨蓝、雅紫与灰玉都是可选色系，不绑定任何项目或产品类型。
+- 使用方自行决定品牌主色、辅助色和项目内部的 accent 分工，无须在本规范登记。
+- 默认参考实现以灰玉作为 `brand`、墨蓝作为 `action`；它表达一种可复用方案，不构成强制品牌分配。
+- 浅阶颜色优先用于柔底、选中态和低强度装饰；实底按钮应选择满足文字对比度的深阶颜色。
+- 若品牌色与 success、info 等状态色接近，需通过图标、文字、形状或位置保持语义可辨。
 
 ## 5. 用色纪律
 
@@ -138,7 +134,7 @@ Game 面不使用本表；只须保证状态色语义与双通道原则成立。
 - 图表用色从 accent 与其浅阶衍生，网格线用 `--rd-border-soft`，不引入荧光色。
 - 主观校验：颜色应更接近「纸、墨、印、染、玉、木」，而不是「荧光、塑料、金属」。
 
-## 6. 暗色模式（v26.7.2 起完整全表）
+## 6. 暗色模式
 
 原则：墨色暗纸底（暖黑，不用纯黑冷灰）、印色整体提亮一档、纹样进一步减弱、阴影转黑、对比度达标后再谈气质。
 
@@ -152,14 +148,15 @@ Game 面不使用本表；只须保证状态色语义与双通道原则成立。
 | `--rd-text-primary` | `#ede5d8` |
 | `--rd-text-secondary` | `#b8ab9a` |
 | `--rd-text-muted` | `#8d8172` |
+| `--rd-text-on-brand` | `#1a1713` |
 | `--rd-text-on-accent` | `#fffdf8` |
 | `--rd-text-on-ink` | `#ede5d8` |
 | `--rd-border-soft` | `rgba(237, 229, 216, 0.14)` |
 | `--rd-border-strong` | `rgba(237, 229, 216, 0.26)` |
 | `--rd-focus-ring` | `rgba(127, 160, 189, 0.55)` |
-| `--rd-brand-primary` | `#cd5076` |
-| `--rd-brand-hover` | `#da738a` |
-| `--rd-brand-soft` | `rgba(205, 80, 118, 0.20)` |
+| `--rd-brand-primary` | `#8fb3a5` |
+| `--rd-brand-hover` | `#a7c4b9` |
+| `--rd-brand-soft` | `rgba(143, 179, 165, 0.20)` |
 | `--rd-action-primary` | `#7fa0bd` |
 | `--rd-action-hover` | `#98b4cd` |
 | `--rd-action-soft` | `rgba(127, 160, 189, 0.18)` |
@@ -184,4 +181,4 @@ Game 面不使用本表；只须保证状态色语义与双通道原则成立。
 | `--rd-shadow-panel` | `0 8px 24px rgba(0, 0, 0, 0.36)` |
 | `--rd-shadow-popover` | `0 12px 32px rgba(0, 0, 0, 0.48)` |
 
-该表已由 RadishX（Brand 面）明暗双态截图验证。接入要点：暗色下 `bg-ink` 强调块的前景统一用 `--rd-text-on-ink`；primary 按钮与导航 active 态改用 `--rd-brand-primary` 提亮，避免纯黑沉底；阴影转黑增强暗底纵深。各项目接入暗色时用 `[data-rd-theme="dark"]` 覆盖 `--rd-*`，并保证「颜色 + 图标 / 文字」双通道与对比度。主题切换机制可参考 RadishX `src/app/theme.ts`（跟随系统 + 手动三态 + localStorage 记忆 + 防 FOUC 内联脚本）与 Radish `default / guofeng` 双主题先例。
+暗色接入要点：`bg-ink` 强调块使用 `--rd-text-on-ink`；亮灰玉品牌实底使用 `--rd-text-on-brand` 的深墨前景，不能沿用白字；阴影转黑增强暗底纵深。主题切换机制由具体实现决定，但必须保证首屏主题稳定、焦点可见，并维持「颜色 + 图标 / 文字」双通道。

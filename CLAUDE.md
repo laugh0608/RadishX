@@ -99,7 +99,7 @@ RadishX 是 Radish 系列项目的官网与统一入口，通过 GitHub 托管�
 - 参考 Apple 官网的节奏：强视觉、少文案、清晰层级、明确入口。
 - 参考 Radish 的视觉规范：温润、克制、留白、纸感、印色感、低饱和、轻纹样。
 - 可参考 MiMo Code 的现代东方页面节奏，例如居中首屏、命令条、横向图文 band 和水墨背景，但不复制其页面、图标、配色或文案。
-- 设计稿先维护在 `docs/design/sources/radishx-site-v0.pen`，确认后再进入 React 实现。
+- 新视觉设计稿先维护在 `docs/design/sources/radishx-site-v1.pen`；`radishx-site-v0.pen` 作为历史实现基线保留，确认后再进入 React 实现。
 - 不复刻 Radish WebOS，也不照搬 Console 管理后台结构。
 - 首页和项目页应使用真实项目、角色或截图资产，不使用空泛占位图。
 - 页面文字必须在移动端和桌面端都不溢出、不遮挡、不互相重叠。

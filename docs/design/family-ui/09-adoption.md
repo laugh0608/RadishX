@@ -1,96 +1,54 @@
-# 09 各项目接入映射与待收敛清单
+# 09 通用视觉质量自检
 
-本章登记各项目现有 token / 规范与 family-ui 的对应关系、值差异与接入状态。各项目执行迁移时以 [10-migration-playbook.md](10-migration-playbook.md) 为操作手册，完成后回写本章。
+本章只提供与具体项目无关的自检问题。它不登记采用方、实现进度、技术映射或升级计划，也不要求任何项目回写结果。
 
-## 1. 接入状态
+## 1. 参考与原创性
 
-| 项目 | Profile | 现有规范 | 接入状态 |
-| --- | --- | --- | --- |
-| RadishX 官网 | Brand | `docs/design/visual-guidelines.md` + `ui-addendum.md`（`--rx-*`） | 已完整接入：token 别名 + 硬编码颜色收敛 + 差异附录（2026-07-11） |
-| Radish | Brand（公开 Web）+ Workbench（私域 / Console / Flutter 移动原生变体） | `Docs/frontend/ui-addendum.md` + `visual-theme-spec.md`（`--rd-*` / L2 别名） | 接入中：A / B 治理与 Token 基线已完成（2026-07-30），Pencil / 组件 / 页面族待推进 |
-| RadishMind | Workbench | `docs/radishmind-ui-design-spec.md`（`--rm-*`） | 待迁移 |
-| RadishFlow | Workbench | `studio-visual-system.md`（`studio-*`） | 已归档项目；规范适用，迁移不设时限 |
-| RadishCatalyst | Game + Workbench（Wiki / 工具） | `docs/product/visual-and-ui-direction.md` | 游戏面自治；Wiki / 工具启动时按本规范 |
-| RadishLex | Workbench（管理端）+ 候选窗特例 | 无 | 绿地项目，直接按本规范建 token 层 |
+- [ ] 已查看与当前界面类型最相关的参考 UI，而不只阅读 token 表。
+- [ ] 已写清楚从参考图学习的结构、密度、层级或状态表达。
+- [ ] 最终信息架构由当前内容决定，不与某张参考图逐区对应。
+- [ ] 未复制外部品牌、图标、配色、图片、文案或独特交互组合。
+- [ ] 参考截图未进入产品资源、公开页面或对外交付物。
 
-## 2. Token 映射表（L2 别名 → L1）
+## 2. 色彩与语义
 
-### Radish `--theme-*` → `--rd-*`
+- [ ] 背景、文本、边框、操作、品牌和状态色职责分离。
+- [ ] 品牌色与操作色可以被视觉区分；danger 不借用品牌色表达。
+- [ ] 状态色只用于状态，且 success / warning / danger / info / neutral 含义稳定。
+- [ ] 同屏强强调色不超过两组，大面积区域优先使用中性或纸阶背景。
+- [ ] 浅色与暗色下的正文、按钮、链接、焦点环和状态文本均满足可读性要求。
+- [ ] 颜色不是状态或动作的唯一表达通道。
 
-| 现有 | family-ui | 值差异 |
-| --- | --- | --- |
-| `--theme-bg-app` `#f4efe6` | `--rd-bg-app` | 无 |
-| `--theme-bg-surface` `#fbf7f0` | `--rd-bg-surface` | 无 |
-| `--theme-bg-muted` `#efe7db` | `--rd-bg-muted` | 无 |
-| `--theme-text-primary` `#2f2a25` | `--rd-text-primary` | 无 |
-| `--theme-text-secondary` `#6a5c4f` | `--rd-text-secondary` | 无 |
-| `--theme-border-soft` `#d9cbb9` | `--rd-border-soft` | 实色 → 半透明，视觉近似 |
-| `--theme-brand-primary` `#b24057` | `--rd-brand-primary` | 无 |
-| `--theme-brand-soft` `#ecd3db` | `--rd-brand-soft` | 实色 → 半透明 |
-| `--theme-accent-jade` `#4f9c83` | `--rd-accent-jade` | 无 |
-| `--theme-accent-ink` `#435c74` | `--rd-accent-ink` | 无 |
-| `--theme-accent-earth` `#886349` | `--rd-accent-earth` | 无 |
-| `--theme-pattern-line` `rgba(122,92,64,0.18)` | `--rd-pattern-line` | 0.18 → 0.14 |
-| `--theme-font-serif` | `--rd-font-serif` | 无 |
+## 3. 排版与层级
 
-### Radish `--console-*` → `--rd-*`（Workbench 覆盖）
+- [ ] 页面只有一个明确的最高层标题，标题、正文和 metadata 有清晰字号跳级。
+- [ ] 正文行宽、行高和字重适合持续阅读。
+- [ ] 数值、单位、路径和长文本不会挤压相邻控件或状态。
+- [ ] 中英文切换、长名称和动态数据不会引起明显布局跳动。
 
-| 现有 | family-ui | 值差异 |
-| --- | --- | --- |
-| `--console-bg-app` `#f5f1ea` | `--rd-bg-app`(wb) `#f7f4ee` | 微调统一 |
-| `--console-bg-surface` `#fffdf8` | `--rd-bg-surface`(wb) | 无 |
-| `--console-bg-muted` `#f0ebe3` | `--rd-bg-muted`(wb) `#f3eee5` | 微调统一 |
-| `--console-text-primary` `#25221f` | `--rd-text-primary` `#2f2a25` | 统一为家族值 |
-| `--console-brand-primary` `#314b63` | `--rd-action-primary` `#435c74` | **语义修正**：console 的"蓝主色"本质是操作色 |
-| `--console-success` `#2f806c` | `--rd-state-success` `#4f9c83` | 统一为家族值 |
-| `--console-danger` `#a7374d` | `--rd-state-danger` `#c3564d` | 统一为家族值 |
-| `--console-warning-*`（基于 `#faad14`） | `--rd-state-warning` `#b5826d` | **收敛**：废弃 AntD 黄 |
-| `--console-radius-panel` `12px` | `--rd-radius-md` | 无 |
-| `--console-radius-control` `8px` | `--rd-radius-sm` | 无 |
+## 4. 组件与交互
 
-### RadishMind `--rm-*` → `--rd-*`
+- [ ] primary、secondary、danger 和 ghost 动作层级清楚。
+- [ ] 表单错误说明原因与下一步，禁用和阻断状态可解释。
+- [ ] 表格、列表、卡片、浮层和侧栏各自承担单一清晰职责。
+- [ ] 未出现卡片套卡片、双层强边框或无必要的装饰性容器。
+- [ ] 加载、空态、错误、只读和失败后的 last-good 状态均有明确呈现。
 
-`--rm-bg-app/surface/muted` → 对应 `(wb)` 值；`--rm-text-*`、`--rd-border-soft` 同名对应；`--rm-brand-primary`（克制蓝）→ `--rd-action-primary`；`--rm-state-success/warning/danger` → 对应家族状态色；`--rm-state-blocked` → danger 柔底组合语义；侧栏灰绿底可保留为项目差异（映射到 `--rd-bg-muted` 或附录自定义）。
+## 5. 布局与响应式
 
-### RadishFlow `studio-*` → `--rd-*`
+- [ ] 至少检查一个桌面视口和一个移动或窄屏视口。
+- [ ] 窄屏进行了内容重排，而不是简单等比缩小桌面布局。
+- [ ] 没有文本溢出、图片遮挡、横向滚动或交互目标挤压。
+- [ ] 移动端触控目标不小于 44px，复杂纹样和装饰已降密。
+- [ ] 多栏、表格和画布在窄屏下有明确降级方式。
 
-`studio-bg-*` / `studio-text-*` / `studio-border-*` → 同名语义；`studio-accent-primary`（克制蓝）→ `--rd-action-primary`；`studio-success/warning/error/info/draft` → success / warning / danger / info / neutral；`studio-canvas-grid` → `--rd-border-soft` 于 `--rd-bg-canvas` 上；`studio-canvas-unit/stream/port/attention` → 画布图元 token，**项目自治**，保留在差异附录。
+## 6. 动效与无障碍
 
-### RadishX `--rx-*` → `--rd-*`
+- [ ] 键盘焦点可见，交互顺序与视觉顺序一致。
+- [ ] 图标有可理解的文字或可访问名称。
+- [ ] `prefers-reduced-motion` 下关闭非必要位移、视差和循环动画。
+- [ ] 动效不承载唯一信息，停止动画后仍能理解状态。
 
-`--rx-*` 草案值与家族值同源，一一对应改前缀即可；`--rx-state-warning` `#b5826d`、`--rx-state-danger` `#c3564d` 即家族值来源。`--rx-content-max-width` 等内容宽度 token 为站点层 token，保留 `--rx-*` 前缀不上升为家族层。
+## 7. 设计完成判断
 
-Radish 当前产品顺位为 Web 优先、Flutter 次级；Tauri 暂时弃用，不进入 UI、CI、发布或验收门禁，未来只有桌面原生价值、目标用户和维护预算同时明确时再重新评估。
-
-## 3. 待收敛清单
-
-各项目迁移时逐项处理，处理后勾除：
-
-| # | 项目 | 现状 | 目标 | 影响面 | 建议时机 |
-| --- | --- | --- | --- | --- | --- |
-| 7 | 全家族 | 五套 token 前缀并存 | L2 别名 → 逐步替换为 `--rd-*` | — | 各项目节奏自定 |
-| 8 | 全家族 | 暗色全表已定义（v26.7.2），RadishX 已落地验证；Radish 已接入四主题语义基线 | 各项目按 02 章暗色表 + `[data-rd-theme="dark"]` 接入 | 全局 | Radish 页面族视觉验收待 C / D 批，其余项目按各自节奏 |
-
-Radish 已于 `2026-07-30` 完成原清单 `#1-#6` 的基础映射：Console warning / danger / success、Client danger、全局 border 别名和 Console 主文本均已收口到 `--rd-*`；视觉代表页和硬编码颜色清理仍按 C / D 批逐页面族验收。
-
-## 4. 合规检查清单
-
-### 必须统一（迁移完成的验收线）
-
-- [ ] 组件只消费 `--rd-*`（或其 L2 别名），无新增硬编码色值。
-- [ ] 状态色语义与 02 章一致；danger 与品牌红已区分。
-- [ ] 字体栈与衬线边界符合 03 章。
-- [ ] 图标 + 颜色 + 文字双通道表达状态。
-- [ ] Mascot 使用符合 08 章边界。
-- [ ] 无 01 章避免方向清单中的元素。
-
-### 强烈建议
-
-- [ ] 间距 / 圆角 / 阴影取自 04 章阶梯。
-- [ ] 组件形态与 06 章一致，偏离处在差异附录说明理由。
-- [ ] 断点与响应式规则符合 07 章；窄屏为重排而非缩放。
-
-### 项目自治（差异附录必须登记）
-
-- [ ] 领域组件清单已列出（画布图元 / HUD / 候选窗等）。
-- [ ] 项目 accent 分工与 02 章登记一致。
+满足检查项并不等于视觉已经优秀。完成前还应回看 [references.md](references.md)，比较的是空间关系、信息节奏和视觉重量，而不是表面相似度；最终方案应同时具备参考图的成熟度和自身内容的独立性。

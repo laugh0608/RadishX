@@ -7,7 +7,7 @@
 | `--rd-motion-fast` | 120ms | hover、焦点、chip 状态切换 |
 | `--rd-motion-base` | 200ms | 下拉、tab、开关、按钮反馈 |
 | `--rd-motion-slow` | 320ms | 浮层进入 / 退出、抽屉 |
-| `--rd-motion-brand` | 500ms | Brand 面主视觉进入、Radish 桌面「画轴平铺」类动效 |
+| `--rd-motion-brand` | 500ms | Brand 面主视觉进入或展示型叙事动效 |
 | `--rd-ease-standard` | `cubic-bezier(0.4, 0, 0.2, 1)` | 通用 |
 | `--rd-ease-out` | `cubic-bezier(0, 0, 0.2, 1)` | 进入 |
 | `--rd-ease-in` | `cubic-bezier(0.4, 0, 1, 1)` | 退出 |

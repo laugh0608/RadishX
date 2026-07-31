@@ -1,10 +1,11 @@
 # RadishX 官网 UI 差异附录
 
-- 遵循：RadishX family-ui `v26.7.2`（`docs/design/family-ui/`）
+- 当前 React 实现基线：family-ui `v26.7.2`
+- 设计评审目标：family-ui `v26.7.3` 灰玉品牌参考（见 `radishx-site-v1.pen`）
 - Profile：Brand 展示面
 - 主 accent：全色系编排（官网做家族陈列）；遵守同屏 ≤ 2 组强色
 
-本附录是 family-ui [10-migration-playbook.md](family-ui/10-migration-playbook.md) §4 定义的标准差异附录，RadishX 作为家族首个完整接入样例。站点页面视觉指南（页面节奏、素材边界）见 [visual-guidelines.md](visual-guidelines.md)。
+本附录只记录 RadishX 官网自己的 token 映射、站点特有规则与已知差异。family-ui 不要求其他项目采用相同实现，也不记录跨项目接入状态。站点页面视觉指南见 [visual-guidelines.md](visual-guidelines.md)。
 
 ## Token 实现
 
@@ -49,5 +50,5 @@
 ## 维护规则
 
 - 通用条款变更走 family-ui，不在本附录扩写。
-- family-ui 非破坏性更新后择机跟进，更新上方遵循版本号；破坏性更新按其迁移窗口执行。
+- family-ui 更新后由本站根据设计评审与实现风险自行决定是否采用，不依赖跨项目迁移窗口。
 - 本项目视觉收敛已完成（硬编码 → token）；后续新增样式只消费 `--rx-*`，不再引入硬编码颜色。

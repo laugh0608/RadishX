@@ -2,7 +2,7 @@
 
 RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 RadishX 官网根站点，通过 GitHub 托管代码，并使用 Vercel 免费额度部署；当前主域为 <https://radishx.com/>，`www.radishx.com` 作为兼容入口跳转到根域。
 
-当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、五个项目详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、首批 Mascot / About 公开图片、项目详情页代表视觉、Radish Orbit 首页中心视觉、Mascot Gallery 整图预览、首批单张表情候选预览和 family-ui 双层样式 token；Pencil 设计源已切换到 v1.2 craft 桌面 / 移动单基线，React craft 表现层 Phase 0–5 已全部落地并完成本地三态终验；已完成多轮本地响应式、可访问性、发布检查、HTTP smoke、线上桌面 / 移动端截图级 smoke、实现口径对齐检查和目标级开发文档同步。当前官网功能开发进入等待期，除发布复核、文档一致性、验证脚本维护和必要的小范围质量修正外，不继续扩展新页面、素材入口、下载能力或 seasonal 活动。
+当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、五个项目详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、公开图片和 family-ui 双层样式 token。React 仍维持 `radishx-site-v0.pen` 对应的 v1.2 craft 基线；新的 `radishx-site-v1.pen` 已完成首页桌面二轮创意重构，采用干净标题、不对称项目生态图谱和透明萝小白立绘舞台，等待视觉复核后再决定是否扩展和实现。官网功能开发仍处于等待期，不继续扩展新页面、素材入口、下载能力或 seasonal 活动。
 
 ## 已确认方向
 
@@ -10,8 +10,8 @@ RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 Rad
 - 部署目标：GitHub 仓库 + Vercel 免费部署，当前主域为 `https://radishx.com/`
 - 页面结构：首页 + 五个项目详情页 + About 页面 + 虚拟形象页面
 - 官网气质：偏创意品牌、游戏感和视觉冲击，参考 Apple 官网的克制文案、大幅视觉、清晰节奏和强产品呈现，同时继承 Radish 的淡雅新中式、纸感、印色感和低饱和轻纹样
-- 家族 UI 规范：`docs/design/family-ui/` 是服务整个 Radish 家族的统一 UI / 视觉规范（family-ui v26.7.2），官网作为 Brand 展示面继承其通用口径；各兄弟项目未来按 `family-ui/10-migration-playbook.md` 撤除各自通用 UI 专题并接入本规范
-- 设计流程：先在 `docs/design/sources/radishx-site-v0.pen` 完成页面设计稿，审核后再进入 React 实现
+- 家族 UI 规范：`docs/design/family-ui/` 提供 family-ui v26.7.3 通用视觉原则、参考 token、组件形态与 UI 参考，不分配具体项目配色，也不跟踪其他项目的采用进度
+- 设计流程：保留 `docs/design/sources/radishx-site-v0.pen` 作为已落地历史基线；新方向先在 `docs/design/sources/radishx-site-v1.pen` 评审，确认后再进入 React 实现
 - 前端实现：已建立 `src/` 推荐目录结构，使用轻量路由表实现 `/`、五个项目页、`/mascot` 和 `/about`
 - 素材使用：首批 Mascot / About 图片、项目代表图、表情 / 贴纸整图预览已审核并生成 Web 版本；后续截图、Logo、角色图、单张贴纸或活动图正式用于页面前仍需先审核具体选图
 - GitHub 仓库：公开仓库

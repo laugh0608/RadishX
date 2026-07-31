@@ -6,15 +6,15 @@
 
 - `assets/avatars/`：虚拟形象候选素材。
 - `assets/social/`：社交媒体素材。
-- `assets/design-references/ui/`：Radish 家族统一 UI 规范的外部风格参考截图。
+- `docs/design/family-ui/reference-ui/`：family-ui 的外部 UI 风格参考截图。
 
 ### UI 视觉参考图
 
-`assets/design-references/ui/` 存放 27 张外部产品界面截图，用于 [family-ui 统一 UI 规范](../design/family-ui/README.md) 的结构与组件形态学参考，索引见 [family-ui/references.md](../design/family-ui/references.md)。2026-07-12 新增 17-27 共 11 张（含深色仪表盘、暗色开关、多栏邮件 / 客服 / 社区工作台等，为暗色模式与 Workbench 布局提供参考）。
+`docs/design/family-ui/reference-ui/` 存放 27 张外部产品界面截图，用于 [family-ui 统一 UI 规范](../design/family-ui/README.md) 的结构、层级、密度、组件形态和视觉效果参考，索引见 [family-ui/references.md](../design/family-ui/references.md)。参考 UI 是理解文字规范的重要视觉上下文，但只能用于观察、拆解和灵感转译，不能作为页面模板或实现素材。
 
-使用边界（与 RadishMind `ui-design-reference` 口径一致）：
+使用边界：
 
-- 仅供家族内部风格学习，吸收布局、密度、组件形态与状态表达，不复制页面、图标、配色、品牌或文案。
+- 仅供内部风格学习，吸收布局、密度、组件形态、状态表达和视觉节奏，不复制页面、图标、配色、品牌、文案或独特交互组合。
 - 不进入 `public/`、不用于官网或任何产品页面实现素材、不对外分发或再托管。
 - 属于外部第三方界面截图，不纳入本仓库 source-available 原创素材授权范围。
 
@@ -24,6 +24,8 @@
 - `child/`：可爱Q版安全候选素材。
 - `mature/`：虚拟形象完全体。
 - `seasonal/`：节日和运营素材。
+
+2026-07-31 新增 `assets/avatars/mature/radish-mature-standing-grayjade-v1-candidate-transparent.png`：以现有完全体站姿图和设定图作为身份、服装与配色参考，通过 imagegen 生成并完成透明底处理。该文件当前只用于 `radishx-site-v1.pen` 二轮视觉评审，不进入 `public/`、React 页面、下载区或对外素材包，也不替代已经确认的完全体设定图。
 
 社交媒体素材：
 
@@ -78,6 +80,7 @@
 | 首页 / Mascot 主视觉 | `assets/avatars/child/radish-child-standing-white-dress-tall.png` | 已确认 | 可爱Q版站姿高分辨率版本，已用于首页首屏中心视觉锚点和首页 Mascot 入口。Web 版本：`public/images/mascot/radish-child-standing-white-dress-tall-web.jpg`。 |
 | 首页 / Mascot 主视觉 | `assets/avatars/mature/radish-mature-design-sheet.png` | 已确认 | 虚拟形象完全体设定图，适合品牌设定展示和 Open Graph 首版分享预览来源。Web 版本：`public/images/mascot/radish-mature-design-sheet-web.jpg`。 |
 | 首页 / Mascot 主视觉 | `assets/avatars/mature/radish-mature-standing-white-dress.png` | 已确认 | 虚拟形象完全体站姿，已用于 Mascot 页主视觉和完全体形态卡片。Web 版本：`public/images/mascot/radish-mature-standing-white-dress-web.jpg`。 |
+| v1 Pencil Mascot 舞台 | `assets/avatars/mature/radish-mature-standing-grayjade-v1-candidate-transparent.png` | 仅设计评审 | 基于已确认完全体设定重新生成的透明立绘候选，仅接入 `radishx-site-v1.pen`；身份特征保持白灰短发、萝卜叶发饰、白裙和灰玉装饰。未进入 `public/`，正式页面使用前仍需单独确认。 |
 | Mascot 原始形象 | `assets/avatars/origin/radish-origin-icon.jpg` | 已确认 | 适合用作原始形象图标、小印章或形态起点。Web 版本：`public/images/mascot/radish-origin-icon-web.jpg`。 |
 | Mascot Gallery | `assets/avatars/child/radish-child-outfit-variants.png` | 已确认 | 适合服装变体展示，不建议做首页首屏。Web 版本：`public/images/mascot/radish-child-outfit-variants-web.jpg`。 |
 | Mascot Gallery | `assets/avatars/child/radish-child-expression-sheet-grid.png` | 已确认 | 适合表情 Gallery，整图预览继续保留来源与审核边界。Web 版本：`public/images/mascot/radish-child-expression-sheet-grid-web.jpg`。 |

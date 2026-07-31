@@ -1,0 +1,2706 @@
+{
+  "version": "2.14",
+  "children": [
+    {
+      "type": "frame",
+      "id": "p2os7",
+      "x": 0,
+      "y": 0,
+      "name": "Home Desktop v1 - Grayjade Study",
+      "clip": true,
+      "width": 1440,
+      "height": 3425,
+      "fill": "$rx-bg-app",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "g7l5i",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 84,
+          "padding": [
+            0,
+            64
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "n1jInP",
+              "name": "Brand",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 9,
+                  "id": "D12pE",
+                  "name": "Brand Icon",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../../public/favicon.ico",
+                    "mode": "fit"
+                  },
+                  "width": 30,
+                  "height": 30
+                },
+                {
+                  "type": "text",
+                  "id": "BzwHc",
+                  "name": "Brand Text",
+                  "fill": "$rx-brand-primary",
+                  "content": "RadishX",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 19,
+                  "fontWeight": "760"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PfOX1",
+              "name": "Header Right",
+              "gap": 28,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "UMUqn",
+                  "name": "Nav",
+                  "gap": 26,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DHmoa",
+                      "name": "Nav Projects",
+                      "fill": "$rx-text-secondary",
+                      "content": "Projects",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Rl8cN",
+                      "name": "Nav Mascot",
+                      "fill": "$rx-text-secondary",
+                      "content": "Mascot",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "sD09l",
+                      "name": "Nav About",
+                      "fill": "$rx-text-secondary",
+                      "content": "About",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OyEDG",
+                      "name": "Nav GitHub",
+                      "cornerRadius": "$rx-radius-control",
+                      "stroke": "$rx-border-soft",
+                      "strokeWidth": 1,
+                      "gap": 6,
+                      "padding": [
+                        7,
+                        13
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "noSwL",
+                          "name": "GitHub Icon",
+                          "width": 14,
+                          "height": 14,
+                          "icon": "github",
+                          "library": "lucide",
+                          "fill": "$rx-text-primary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "QmdHq",
+                          "name": "GitHub Label",
+                          "fill": "$rx-text-primary",
+                          "content": "GitHub",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Hi0hX",
+                  "name": "Theme Segmented",
+                  "fill": "$rx-bg-muted",
+                  "cornerRadius": "$rx-radius-control",
+                  "gap": 2,
+                  "padding": 3,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "O63itF",
+                      "name": "Seg System",
+                      "width": 30,
+                      "height": 30,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": "$rx-radius-control",
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#5b422a29",
+                        "offset": {
+                          "x": 0,
+                          "y": 2
+                        },
+                        "blur": 6
+                      },
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "FQWqA",
+                          "name": "Seg System Icon",
+                          "width": 15,
+                          "height": 15,
+                          "icon": "monitor",
+                          "library": "lucide",
+                          "fill": "$rx-text-primary"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "sNdLc",
+                      "name": "Seg Light",
+                      "width": 30,
+                      "height": 30,
+                      "cornerRadius": "$rx-radius-control",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "EKAP7",
+                          "name": "Seg Light Icon",
+                          "width": 15,
+                          "height": 15,
+                          "icon": "sun",
+                          "library": "lucide",
+                          "fill": "$rx-text-muted"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ac7gb",
+                      "name": "Seg Dark",
+                      "width": 30,
+                      "height": 30,
+                      "cornerRadius": "$rx-radius-control",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "VBlpG",
+                          "name": "Seg Dark Icon",
+                          "width": 15,
+                          "height": 15,
+                          "icon": "moon",
+                          "library": "lucide",
+                          "fill": "$rx-text-muted"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "m6OgN",
+          "name": "Hero",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 150,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "$rx-brand-soft",
+                "position": 0
+              },
+              {
+                "color": "$rx-bg-app",
+                "position": 0.46
+              },
+              {
+                "color": "$rx-bg-app",
+                "position": 1
+              }
+            ]
+          },
+          "gap": 56,
+          "padding": [
+            64,
+            64,
+            92,
+            64
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "twREL",
+              "name": "Hero Copy",
+              "width": 520,
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "thAK9",
+                  "name": "Eyebrow",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "iIoRy",
+                      "name": "Eyebrow Dot",
+                      "fill": "$rx-brand-primary",
+                      "width": 7,
+                      "height": 7
+                    },
+                    {
+                      "type": "text",
+                      "id": "CoXIv",
+                      "name": "Eyebrow Text",
+                      "fill": "$rx-text-muted",
+                      "content": "radishx.com",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "760"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "y4O6a",
+                  "name": "Hero Title",
+                  "fill": "$rx-text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": 520,
+                  "content": "Radish\n项目矩阵",
+                  "lineHeight": 0.98,
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 84,
+                  "fontWeight": "760"
+                },
+                {
+                  "type": "frame",
+                  "id": "ovamK",
+                  "name": "Hero Actions",
+                  "gap": 18,
+                  "padding": [
+                    6,
+                    0,
+                    0,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "LcnL1",
+                      "name": "Primary CTA",
+                      "fill": "$rx-brand-primary",
+                      "cornerRadius": "$rx-radius-control",
+                      "padding": [
+                        13,
+                        22
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XfWsh",
+                          "name": "Primary CTA Label",
+                          "fill": "$rx-text-on-brand",
+                          "content": "查看项目",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 15,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NSExY",
+                      "name": "Secondary CTA",
+                      "gap": 6,
+                      "padding": [
+                        13,
+                        6
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "phnL9",
+                          "name": "Secondary CTA Label",
+                          "fill": "$rx-text-primary",
+                          "content": "认识萝小白",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 15,
+                          "fontWeight": "760"
+                        },
+                        {
+                          "type": "icon",
+                          "id": "JtBiL",
+                          "name": "Secondary CTA Arrow",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "arrow-right",
+                          "library": "lucide",
+                          "fill": "$rx-text-primary"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "pvYCg",
+                  "name": "Hero Meta",
+                  "fill": "$rx-text-muted",
+                  "content": "Source Available   ·   Vite + React + TypeScript   ·   Vercel Ready",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "afVPM",
+              "name": "Orbit Panel",
+              "width": 740,
+              "height": 560,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 150,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "$rx-bg-surface",
+                    "position": 0
+                  },
+                  {
+                    "color": "$rx-brand-soft",
+                    "position": 1
+                  }
+                ]
+              },
+              "cornerRadius": 20,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#5b422a24",
+                "offset": {
+                  "x": 0,
+                  "y": 16
+                },
+                "blur": 40,
+                "spread": -6
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "ISiSx",
+                  "x": 150,
+                  "y": 60,
+                  "name": "Ring Outer",
+                  "fill": "#ffffff00",
+                  "width": 440,
+                  "height": 440,
+                  "stroke": "$rx-pattern-line",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "ellipse",
+                  "id": "q5iNmj",
+                  "x": 230,
+                  "y": 140,
+                  "name": "Ring Inner",
+                  "fill": "#ffffff00",
+                  "width": 280,
+                  "height": 280,
+                  "stroke": "$rx-pattern-line",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "TXq3X",
+                  "x": 276,
+                  "y": 150,
+                  "name": "Mascot Anchor",
+                  "width": 188,
+                  "height": 256,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": 16,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#5b422a26",
+                    "offset": {
+                      "x": 0,
+                      "y": 8
+                    },
+                    "blur": 22,
+                    "spread": -6
+                  },
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 10,
+                      "id": "BqOj9",
+                      "name": "Mascot Image",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../../../public/images/mascot/radish-child-standing-white-dress-tall-web.jpg",
+                        "mode": "fit"
+                      },
+                      "width": "fill_container",
+                      "height": 176
+                    },
+                    {
+                      "type": "text",
+                      "id": "MfUSq",
+                      "name": "Anchor Caption",
+                      "fill": "$rx-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "萝小白 · 可爱Q版站姿",
+                      "textAlign": "center",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nrHOc",
+                  "x": 286,
+                  "y": 34,
+                  "name": "Orbit Radish",
+                  "width": 168,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": 12,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#5b422a26",
+                    "offset": {
+                      "x": 0,
+                      "y": 8
+                    },
+                    "blur": 22,
+                    "spread": -6
+                  },
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Qv2PZ",
+                      "name": "Head",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "t9lsP6",
+                          "name": "Dot",
+                          "fill": "$rx-accent-jade",
+                          "width": 8,
+                          "height": 8
+                        },
+                        {
+                          "type": "text",
+                          "id": "SKVOk",
+                          "name": "Name",
+                          "fill": "$rx-text-primary",
+                          "content": "Radish",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 15,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "gEX60",
+                      "name": "Meta",
+                      "fill": "$rx-text-muted",
+                      "content": "社区与内容入口",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "n03X1R",
+                  "x": 34,
+                  "y": 180,
+                  "name": "Orbit RadishCatalyst",
+                  "width": 168,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": 12,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#5b422a26",
+                    "offset": {
+                      "x": 0,
+                      "y": 8
+                    },
+                    "blur": 22,
+                    "spread": -6
+                  },
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dzhDV",
+                      "name": "Head",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "fu0PL",
+                          "name": "Dot",
+                          "fill": "$rx-accent-earth",
+                          "width": 8,
+                          "height": 8
+                        },
+                        {
+                          "type": "text",
+                          "id": "HsiaA",
+                          "name": "Name",
+                          "fill": "$rx-text-primary",
+                          "content": "RadishCatalyst",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 15,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "TaYvx",
+                      "name": "Meta",
+                      "fill": "$rx-text-muted",
+                      "content": "游戏与世界观",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dIRZG",
+                  "x": 538,
+                  "y": 180,
+                  "name": "Orbit RadishFlow",
+                  "width": 168,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": 12,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#5b422a26",
+                    "offset": {
+                      "x": 0,
+                      "y": 8
+                    },
+                    "blur": 22,
+                    "spread": -6
+                  },
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "l3x3SB",
+                      "name": "Head",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "cD85W",
+                          "name": "Dot",
+                          "fill": "$rx-accent-ink",
+                          "width": 8,
+                          "height": 8
+                        },
+                        {
+                          "type": "text",
+                          "id": "dVEdd",
+                          "name": "Name",
+                          "fill": "$rx-text-primary",
+                          "content": "RadishFlow",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 15,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "tlBXK",
+                      "name": "Meta",
+                      "fill": "$rx-text-muted",
+                      "content": "工程与流程画布",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "N4ExI1",
+                  "x": 34,
+                  "y": 360,
+                  "name": "Orbit RadishMind",
+                  "width": 168,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": 12,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#5b422a26",
+                    "offset": {
+                      "x": 0,
+                      "y": 8
+                    },
+                    "blur": 22,
+                    "spread": -6
+                  },
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "SQoot",
+                      "name": "Head",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "J5UJy",
+                          "name": "Dot",
+                          "fill": "$rx-accent-purple",
+                          "width": 8,
+                          "height": 8
+                        },
+                        {
+                          "type": "text",
+                          "id": "Q9u3v",
+                          "name": "Name",
+                          "fill": "$rx-text-primary",
+                          "content": "RadishMind",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 15,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "EPvE6",
+                      "name": "Meta",
+                      "fill": "$rx-text-muted",
+                      "content": "智能与工具编排",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "V2XUAt",
+                  "x": 538,
+                  "y": 360,
+                  "name": "Orbit RadishLex",
+                  "width": 168,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": 12,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#5b422a26",
+                    "offset": {
+                      "x": 0,
+                      "y": 8
+                    },
+                    "blur": 22,
+                    "spread": -6
+                  },
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "h6RBW",
+                      "name": "Head",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "o8wm4",
+                          "name": "Dot",
+                          "fill": "$rx-accent-grayjade",
+                          "width": 8,
+                          "height": 8
+                        },
+                        {
+                          "type": "text",
+                          "id": "jRDhX",
+                          "name": "Name",
+                          "fill": "$rx-text-primary",
+                          "content": "RadishLex",
+                          "fontFamily": "$rx-font-heading",
+                          "fontSize": 15,
+                          "fontWeight": "760"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Fnuu1",
+                      "name": "Meta",
+                      "fill": "$rx-text-muted",
+                      "content": "输入与个人词库",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pMGbi",
+          "name": "Projects · Ecosystem Atlas",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            112,
+            64,
+            104,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "E1nyx",
+              "name": "Projects Header",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jZ0tD",
+                  "name": "Projects Title",
+                  "fill": "$rx-text-primary",
+                  "content": "Radish 生态",
+                  "lineHeight": 1,
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 60,
+                  "fontWeight": "720"
+                },
+                {
+                  "type": "text",
+                  "id": "YkOxh",
+                  "name": "Projects Index",
+                  "fill": "$rx-text-muted",
+                  "content": "PROJECTS / 05",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 1.8
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "uXnix",
+              "name": "Project Ecosystem Atlas",
+              "width": "fill_container",
+              "height": 1448,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "C4NCZt",
+                  "x": 0,
+                  "y": 0,
+                  "name": "World 01 · Radish",
+                  "clip": true,
+                  "width": 464,
+                  "height": 600,
+                  "fill": "$rx-brand-soft",
+                  "cornerRadius": 28,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "b6wzR",
+                      "x": 34,
+                      "y": 32,
+                      "name": "Radish Index",
+                      "fill": "$rx-brand-primary",
+                      "content": "01",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "bJ8k2",
+                      "x": 34,
+                      "y": 64,
+                      "name": "Radish Name",
+                      "fill": "$rx-text-primary",
+                      "content": "Radish",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 52,
+                      "fontWeight": "720"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Zg3BT",
+                      "x": 22,
+                      "y": 398,
+                      "name": "Radish Back Type",
+                      "fill": "#5d6c5718",
+                      "content": "COMMUNITY",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 72,
+                      "fontWeight": "760",
+                      "letterSpacing": -3
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "zJ0pN",
+                      "x": 92,
+                      "y": 166,
+                      "name": "Radish Orbit Outer",
+                      "fill": "#ffffff00",
+                      "width": 280,
+                      "height": 280,
+                      "stroke": "#5d6c5742",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "rMeX2",
+                      "x": 142,
+                      "y": 216,
+                      "name": "Radish Orbit Inner",
+                      "fill": "#ffffff00",
+                      "width": 180,
+                      "height": 180,
+                      "stroke": "#5d6c5742",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "type": "path",
+                      "id": "y23o5",
+                      "x": 154,
+                      "y": 138,
+                      "name": "Radish Stem Line",
+                      "geometry": "M78 246c2-44-30-61-18-101 10-35 51-39 44-73-5-26-31-35-26-70",
+                      "viewBox": [
+                        0,
+                        0,
+                        158,
+                        248
+                      ],
+                      "fill": "#ffffff00",
+                      "width": 158,
+                      "height": 248,
+                      "stroke": "$rx-brand-primary",
+                      "strokeWidth": 2,
+                      "strokeLinecap": "round"
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "pExYw",
+                      "x": 184,
+                      "y": 236,
+                      "name": "Radish Root",
+                      "fill": "$rx-bg-surface",
+                      "width": 96,
+                      "height": 124,
+                      "stroke": "#5d6c5736",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "o51XJ",
+                      "x": 178,
+                      "y": 196,
+                      "name": "Leaf Left",
+                      "rotation": -28,
+                      "fill": "$rx-brand-primary",
+                      "width": 58,
+                      "height": 86
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "e1S1hl",
+                      "x": 216,
+                      "y": 174,
+                      "name": "Leaf Center",
+                      "fill": "$rx-accent-grayjade",
+                      "width": 52,
+                      "height": 92
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "up6V4",
+                      "x": 250,
+                      "y": 198,
+                      "name": "Leaf Right",
+                      "rotation": 28,
+                      "fill": "$rx-accent-jade",
+                      "width": 58,
+                      "height": 86
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Xt1Tn",
+                      "x": 44,
+                      "y": 166,
+                      "name": "Community Post A",
+                      "width": 122,
+                      "height": 42,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 21,
+                      "padding": [
+                        0,
+                        13
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "VvIhN",
+                          "name": "Post A Label",
+                          "fill": "$rx-text-muted",
+                          "content": "POST",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "650",
+                          "letterSpacing": 1.2
+                        },
+                        {
+                          "type": "text",
+                          "id": "j7RNYY",
+                          "name": "Post A Count",
+                          "fill": "$rx-brand-primary",
+                          "content": "28",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "J6daUk",
+                      "x": 296,
+                      "y": 324,
+                      "name": "Community Post B",
+                      "width": 126,
+                      "height": 42,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 21,
+                      "padding": [
+                        0,
+                        13
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "X7Nd6",
+                          "name": "Post B Label",
+                          "fill": "$rx-text-muted",
+                          "content": "LIVE",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "650",
+                          "letterSpacing": 1.2
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "GuBBZ",
+                          "name": "Post B Status",
+                          "fill": "$rx-accent-jade",
+                          "width": 8,
+                          "height": 8
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "K97c5g",
+                      "x": 34,
+                      "y": 544,
+                      "name": "Radish Domain",
+                      "fill": "$rx-text-secondary",
+                      "content": "hub.radishx.com",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "fDiuu",
+                      "x": 398,
+                      "y": 536,
+                      "name": "Radish Arrow",
+                      "width": 24,
+                      "height": 24,
+                      "icon": "arrow-up-right",
+                      "library": "lucide",
+                      "weight": 1.5,
+                      "fill": "$rx-text-primary"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xO4R0",
+                  "x": 504,
+                  "y": 0,
+                  "name": "World 02 · RadishCatalyst",
+                  "clip": true,
+                  "width": 808,
+                  "height": 600,
+                  "fill": "$rx-bg-ink",
+                  "cornerRadius": 28,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "YIKB8",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Catalyst Scene",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../../../public/images/projects/catalyst/radishcatalyst-demo-first-screen-web.jpg",
+                        "mode": "fill"
+                      },
+                      "width": 808,
+                      "height": 600
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "eCHlK",
+                      "x": 0,
+                      "y": 352,
+                      "name": "Catalyst Scrim",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 0,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#11100f00",
+                            "position": 0
+                          },
+                          {
+                            "color": "#11100fF2",
+                            "position": 0.58
+                          },
+                          {
+                            "color": "#11100f",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "width": 808,
+                      "height": 248
+                    },
+                    {
+                      "type": "text",
+                      "id": "LNLWG",
+                      "x": 36,
+                      "y": 34,
+                      "name": "Catalyst Index",
+                      "fill": "#fffdf8",
+                      "content": "02 / FORGE",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "650",
+                      "letterSpacing": 1.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "FzGat",
+                      "x": 340,
+                      "y": 36,
+                      "name": "Catalyst Back Type",
+                      "fill": "#fffdf824",
+                      "content": "CATALYST",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 74,
+                      "fontWeight": "800",
+                      "letterSpacing": -3
+                    },
+                    {
+                      "type": "text",
+                      "id": "EOlMJ",
+                      "x": 36,
+                      "y": 446,
+                      "name": "Catalyst Name",
+                      "fill": "#fffdf8",
+                      "content": "RadishCatalyst",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 52,
+                      "fontWeight": "720"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xWpf1",
+                      "x": 38,
+                      "y": 530,
+                      "name": "Catalyst Domain",
+                      "fill": "#dfe7df",
+                      "content": "forge.radishx.com",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "uxmGT",
+                      "x": 742,
+                      "y": 520,
+                      "name": "Catalyst Arrow",
+                      "width": 28,
+                      "height": 28,
+                      "icon": "arrow-up-right",
+                      "library": "lucide",
+                      "weight": 1.5,
+                      "fill": "#fffdf8"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "g527I",
+                  "x": 0,
+                  "y": 648,
+                  "name": "World 03 · RadishFlow",
+                  "clip": true,
+                  "width": 760,
+                  "height": 424,
+                  "fill": "#e8eee8",
+                  "cornerRadius": 28,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AN9AL",
+                      "x": 34,
+                      "y": 30,
+                      "name": "Flow Index",
+                      "fill": "$rx-brand-primary",
+                      "content": "03 / BLUEPRINT",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "650",
+                      "letterSpacing": 1.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "dujTp",
+                      "x": 34,
+                      "y": 60,
+                      "name": "Flow Name",
+                      "fill": "$rx-text-primary",
+                      "content": "RadishFlow",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 44,
+                      "fontWeight": "720"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BvFcO",
+                      "x": 480,
+                      "y": 18,
+                      "name": "Flow Back Type",
+                      "fill": "#5d6c5714",
+                      "content": "FLOW",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 88,
+                      "fontWeight": "800",
+                      "letterSpacing": -4
+                    },
+                    {
+                      "type": "path",
+                      "id": "LxQQQ",
+                      "x": 40,
+                      "y": 172,
+                      "name": "Flow Main Pipe",
+                      "geometry": "M0 78h122c26 0 24-56 52-56h154c28 0 24 80 54 80h266",
+                      "viewBox": [
+                        0,
+                        0,
+                        648,
+                        126
+                      ],
+                      "fill": "#ffffff00",
+                      "width": 648,
+                      "height": 126,
+                      "stroke": "$rx-brand-primary",
+                      "strokeWidth": 2,
+                      "strokeLinejoin": "round",
+                      "strokeLinecap": "round"
+                    },
+                    {
+                      "type": "path",
+                      "id": "PAcIt",
+                      "x": 118,
+                      "y": 194,
+                      "name": "Flow Return Pipe",
+                      "geometry": "M490 8h-80c-30 0-28 102-60 102h-350",
+                      "viewBox": [
+                        0,
+                        0,
+                        490,
+                        112
+                      ],
+                      "fill": "#ffffff00",
+                      "width": 490,
+                      "height": 112,
+                      "stroke": "#78a49699",
+                      "strokeWidth": 1,
+                      "strokeLinejoin": "round",
+                      "strokeLinecap": "round"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "sAtJV",
+                      "x": 34,
+                      "y": 220,
+                      "name": "Feed Unit",
+                      "width": 118,
+                      "height": 76,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 10,
+                      "stroke": "#5d6c5733",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 7,
+                      "padding": [
+                        0,
+                        14
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "M8hqBz",
+                          "name": "Feed Unit Label",
+                          "fill": "$rx-text-muted",
+                          "content": "FEED",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "700",
+                          "letterSpacing": 1.2
+                        },
+                        {
+                          "type": "text",
+                          "id": "KEN9U",
+                          "name": "Feed Unit Value",
+                          "fill": "$rx-text-primary",
+                          "content": "300 K",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "x8RF5l",
+                      "x": 214,
+                      "y": 170,
+                      "name": "Heater Unit",
+                      "width": 164,
+                      "height": 112,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 10,
+                      "stroke": "#5d6c5733",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 7,
+                      "padding": [
+                        0,
+                        14
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "iepey",
+                          "name": "Heater Unit Label",
+                          "fill": "$rx-text-muted",
+                          "content": "HEATER",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "700",
+                          "letterSpacing": 1.2
+                        },
+                        {
+                          "type": "text",
+                          "id": "WopFw",
+                          "name": "Heater Unit Value",
+                          "fill": "$rx-text-primary",
+                          "content": "5.43 MW",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "foHml",
+                      "x": 446,
+                      "y": 222,
+                      "name": "Separator Unit",
+                      "width": 150,
+                      "height": 84,
+                      "fill": "$rx-bg-surface",
+                      "cornerRadius": 10,
+                      "stroke": "#5d6c5733",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 7,
+                      "padding": [
+                        0,
+                        14
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Nz9Ek",
+                          "name": "Separator Unit Label",
+                          "fill": "$rx-text-muted",
+                          "content": "SEPARATOR",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "700",
+                          "letterSpacing": 1.2
+                        },
+                        {
+                          "type": "text",
+                          "id": "t2hOw2",
+                          "name": "Separator Unit Value",
+                          "fill": "$rx-text-primary",
+                          "content": "61.0 bar",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "NONBd",
+                      "x": 176,
+                      "y": 187,
+                      "name": "Flow Junction A",
+                      "fill": "$rx-accent-jade",
+                      "width": 14,
+                      "height": 14,
+                      "stroke": "#e8eee8",
+                      "strokeWidth": 4
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "y6zHdT",
+                      "x": 414,
+                      "y": 264,
+                      "name": "Flow Junction B",
+                      "fill": "$rx-accent-jade",
+                      "width": 14,
+                      "height": 14,
+                      "stroke": "#e8eee8",
+                      "strokeWidth": 4
+                    },
+                    {
+                      "type": "text",
+                      "id": "W5AR9",
+                      "x": 34,
+                      "y": 378,
+                      "name": "Flow Domain",
+                      "fill": "$rx-text-secondary",
+                      "content": "flow.radishx.com",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "U2r0s",
+                      "x": 700,
+                      "y": 370,
+                      "name": "Flow Arrow",
+                      "width": 24,
+                      "height": 24,
+                      "icon": "arrow-up-right",
+                      "library": "lucide",
+                      "weight": 1.5,
+                      "fill": "$rx-text-primary"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "n6FpGg",
+                  "x": 800,
+                  "y": 648,
+                  "name": "World 04 · RadishMind",
+                  "clip": true,
+                  "width": 512,
+                  "height": 424,
+                  "fill": "$rx-bg-ink",
+                  "cornerRadius": 28,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TYUvq",
+                      "x": 32,
+                      "y": 30,
+                      "name": "Mind Index",
+                      "fill": "$rx-accent-purple",
+                      "content": "04 / INTELLIGENCE",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "650",
+                      "letterSpacing": 1.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "T7Myl",
+                      "x": 32,
+                      "y": 60,
+                      "name": "Mind Name",
+                      "fill": "#fffdf8",
+                      "content": "RadishMind",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 44,
+                      "fontWeight": "720"
+                    },
+                    {
+                      "type": "path",
+                      "id": "VDlMo",
+                      "x": 102,
+                      "y": 128,
+                      "name": "Mind Lattice",
+                      "geometry": "M155 107l-131-79m131 79l131-87m-131 87l147 15m-147-15l91 99m-91-99l-87 95m87-95l-147 19m16-98l262-8 16 102-56 84-178-4-60-76z",
+                      "viewBox": [
+                        0,
+                        0,
+                        310,
+                        214
+                      ],
+                      "fill": "#ffffff00",
+                      "width": 310,
+                      "height": 214,
+                      "stroke": "#8fb3a54f",
+                      "strokeWidth": 1.2,
+                      "strokeLinejoin": "round",
+                      "strokeLinecap": "round"
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "tfAzI",
+                      "x": 208,
+                      "y": 180,
+                      "name": "Mind Core Halo",
+                      "fill": "#84699220",
+                      "width": 96,
+                      "height": 96,
+                      "stroke": "#a88bb588",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "WytNI",
+                      "x": 231,
+                      "y": 203,
+                      "name": "Mind Core",
+                      "fill": "$rx-accent-purple",
+                      "width": 50,
+                      "height": 50
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "E6jWs",
+                      "x": 112,
+                      "y": 146,
+                      "name": "Mind Node Context",
+                      "fill": "#11100f",
+                      "width": 18,
+                      "height": 18,
+                      "stroke": "#8fb3a5",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "f6CUUv",
+                      "x": 103,
+                      "y": 171,
+                      "name": "Mind Label Context",
+                      "fill": "#b9cbbf",
+                      "content": "CTX",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 9,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.8
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "lyxDb",
+                      "x": 373,
+                      "y": 138,
+                      "name": "Mind Node Tools",
+                      "fill": "#11100f",
+                      "width": 18,
+                      "height": 18,
+                      "stroke": "#8fb3a5",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "cL5UI",
+                      "x": 364,
+                      "y": 163,
+                      "name": "Mind Label Tools",
+                      "fill": "#b9cbbf",
+                      "content": "TOOL",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 9,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.8
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "hhTLd",
+                      "x": 400,
+                      "y": 241,
+                      "name": "Mind Node Eval",
+                      "fill": "#11100f",
+                      "width": 18,
+                      "height": 18,
+                      "stroke": "#8fb3a5",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "O9xgQ",
+                      "x": 391,
+                      "y": 266,
+                      "name": "Mind Label Eval",
+                      "fill": "#b9cbbf",
+                      "content": "EVAL",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 9,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.8
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "R2d4p",
+                      "x": 326,
+                      "y": 326,
+                      "name": "Mind Node Trace",
+                      "fill": "#11100f",
+                      "width": 18,
+                      "height": 18,
+                      "stroke": "#8fb3a5",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "F1bCPJ",
+                      "x": 317,
+                      "y": 351,
+                      "name": "Mind Label Trace",
+                      "fill": "#b9cbbf",
+                      "content": "TRACE",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 9,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.8
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "cVKvt",
+                      "x": 146,
+                      "y": 322,
+                      "name": "Mind Node Memory",
+                      "fill": "#11100f",
+                      "width": 18,
+                      "height": 18,
+                      "stroke": "#8fb3a5",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "KYRzR",
+                      "x": 137,
+                      "y": 347,
+                      "name": "Mind Label Memory",
+                      "fill": "#b9cbbf",
+                      "content": "MEM",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 9,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.8
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "Hp3gR",
+                      "x": 96,
+                      "y": 246,
+                      "name": "Mind Node Model",
+                      "fill": "#11100f",
+                      "width": 18,
+                      "height": 18,
+                      "stroke": "#8fb3a5",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "Bh1b3",
+                      "x": 87,
+                      "y": 271,
+                      "name": "Mind Label Model",
+                      "fill": "#b9cbbf",
+                      "content": "MODEL",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 9,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "akBoO",
+                      "x": 32,
+                      "y": 378,
+                      "name": "Mind Domain",
+                      "fill": "#b9cbbf",
+                      "content": "mind.radishx.com",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "HsWFh",
+                      "x": 454,
+                      "y": 370,
+                      "name": "Mind Arrow",
+                      "width": 24,
+                      "height": 24,
+                      "icon": "arrow-up-right",
+                      "library": "lucide",
+                      "weight": 1.5,
+                      "fill": "#fffdf8"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "TfpXZ",
+                  "x": 0,
+                  "y": 1112,
+                  "name": "World 05 · RadishLex",
+                  "clip": true,
+                  "width": 1312,
+                  "height": 336,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": 28,
+                  "stroke": "#5d6c5728",
+                  "strokeWidth": 1,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "p3JDb",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Lex Accent Rail",
+                      "fill": "$rx-accent-grayjade",
+                      "width": 12,
+                      "height": 336
+                    },
+                    {
+                      "type": "text",
+                      "id": "JKwVA",
+                      "x": 42,
+                      "y": 34,
+                      "name": "Lex Index",
+                      "fill": "$rx-brand-primary",
+                      "content": "05 / INPUT",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "650",
+                      "letterSpacing": 1.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "OHLaH",
+                      "x": 42,
+                      "y": 70,
+                      "name": "Lex Name",
+                      "fill": "$rx-text-primary",
+                      "content": "RadishLex",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 48,
+                      "fontWeight": "720"
+                    },
+                    {
+                      "type": "text",
+                      "id": "m2gT60",
+                      "x": 44,
+                      "y": 280,
+                      "name": "Lex Domain",
+                      "fill": "$rx-text-secondary",
+                      "content": "lex.radishx.com",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "b5NTay",
+                      "x": 1070,
+                      "y": 18,
+                      "name": "Lex Back Type",
+                      "fill": "#5d6c5714",
+                      "content": "LEX",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 92,
+                      "fontWeight": "800",
+                      "letterSpacing": -4
+                    },
+                    {
+                      "type": "path",
+                      "id": "HXG9H",
+                      "x": 340,
+                      "y": 93,
+                      "name": "Lex Keystroke Path",
+                      "geometry": "M0 92c88 0 96-78 174-78s100 108 180 108 100-84 164-84h114",
+                      "viewBox": [
+                        0,
+                        0,
+                        632,
+                        134
+                      ],
+                      "fill": "#ffffff00",
+                      "width": 632,
+                      "height": 134,
+                      "stroke": "#78a49699",
+                      "strokeWidth": 2,
+                      "strokeLinecap": "round"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tzIeN",
+                      "x": 394,
+                      "y": 80,
+                      "name": "Lex Glyph Luo",
+                      "fill": "$rx-brand-primary",
+                      "content": "萝",
+                      "fontFamily": "$rx-font-serif",
+                      "fontSize": 126,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "A4TQHC",
+                      "x": 574,
+                      "y": 80,
+                      "name": "Lex Glyph Bo",
+                      "fill": "$rx-accent-grayjade",
+                      "content": "卜",
+                      "fontFamily": "$rx-font-serif",
+                      "fontSize": 126,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dnxQZ",
+                      "x": 758,
+                      "y": 120,
+                      "name": "Lex Key Sequence",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "V1alE",
+                          "name": "Key R",
+                          "width": 44,
+                          "height": 44,
+                          "fill": "#efe7db",
+                          "cornerRadius": 8,
+                          "stroke": "#5d6c5726",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ByLJy",
+                              "name": "Key R Label",
+                              "fill": "$rx-text-secondary",
+                              "content": "R",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 13,
+                              "fontWeight": "650"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "vrGFx",
+                          "name": "Key A",
+                          "width": 44,
+                          "height": 44,
+                          "fill": "#efe7db",
+                          "cornerRadius": 8,
+                          "stroke": "#5d6c5726",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "lHjJv",
+                              "name": "Key A Label",
+                              "fill": "$rx-text-secondary",
+                              "content": "A",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 13,
+                              "fontWeight": "650"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "P59aZa",
+                          "name": "Key D",
+                          "width": 44,
+                          "height": 44,
+                          "fill": "#efe7db",
+                          "cornerRadius": 8,
+                          "stroke": "#5d6c5726",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "lmcaA",
+                              "name": "Key D Label",
+                              "fill": "$rx-text-secondary",
+                              "content": "D",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 13,
+                              "fontWeight": "650"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ipZ4q",
+                          "name": "Key I",
+                          "width": 44,
+                          "height": 44,
+                          "fill": "#efe7db",
+                          "cornerRadius": 8,
+                          "stroke": "#5d6c5726",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "saqVT",
+                              "name": "Key I Label",
+                              "fill": "$rx-text-secondary",
+                              "content": "I",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 13,
+                              "fontWeight": "650"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "sYFCT",
+                          "name": "Key S",
+                          "width": 44,
+                          "height": 44,
+                          "fill": "#efe7db",
+                          "cornerRadius": 8,
+                          "stroke": "#5d6c5726",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "hJgbF",
+                              "name": "Key S Label",
+                              "fill": "$rx-text-secondary",
+                              "content": "S",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 13,
+                              "fontWeight": "650"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "UpNdS",
+                          "name": "Key H",
+                          "width": 44,
+                          "height": 44,
+                          "fill": "#efe7db",
+                          "cornerRadius": 8,
+                          "stroke": "#5d6c5726",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Srf9H",
+                              "name": "Key H Label",
+                              "fill": "$rx-text-secondary",
+                              "content": "H",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 13,
+                              "fontWeight": "650"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ld7e0",
+                      "x": 758,
+                      "y": 184,
+                      "name": "Lex Candidate Bar",
+                      "fill": "$rx-brand-soft",
+                      "cornerRadius": 12,
+                      "gap": 16,
+                      "padding": [
+                        12,
+                        18
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dsSD8",
+                          "name": "Lex Candidate Active",
+                          "fill": "$rx-text-primary",
+                          "content": "1 萝卜",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 15,
+                          "fontWeight": "650"
+                        },
+                        {
+                          "type": "text",
+                          "id": "E0576",
+                          "name": "Lex Candidate Two",
+                          "fill": "$rx-text-secondary",
+                          "content": "2 radish",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kVLVM",
+                          "name": "Lex Candidate Three",
+                          "fill": "$rx-text-secondary",
+                          "content": "3 萝小白",
+                          "fontFamily": "$rx-font-body",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "icon",
+                      "id": "FMNCD",
+                      "x": 1248,
+                      "y": 272,
+                      "name": "Lex Arrow",
+                      "width": 26,
+                      "height": 26,
+                      "icon": "arrow-up-right",
+                      "library": "lucide",
+                      "weight": 1.5,
+                      "fill": "$rx-text-primary"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LNE6j",
+          "name": "Mascot · Cutout Stage",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            8,
+            64,
+            120,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "DZNFT",
+              "name": "Luo Xiaobai Stage",
+              "width": "fill_container",
+              "height": 680,
+              "fill": "#344039",
+              "cornerRadius": 36,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "X1yfn",
+                  "x": 48,
+                  "y": 46,
+                  "name": "Mascot Index",
+                  "fill": "#b9cbbf",
+                  "content": "MASCOT / 01",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "650",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "vlr5A",
+                  "x": 48,
+                  "y": 92,
+                  "name": "Mascot Title",
+                  "fill": "#fffdf8",
+                  "content": "萝小白",
+                  "fontFamily": "$rx-font-serif",
+                  "fontSize": 72,
+                  "fontWeight": "650"
+                },
+                {
+                  "type": "text",
+                  "id": "Y2lyp",
+                  "x": 42,
+                  "y": 208,
+                  "name": "Mascot English Back Type",
+                  "fill": "#fffdf812",
+                  "content": "LUO\nXIAO\nBAI",
+                  "lineHeight": 0.82,
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 88,
+                  "fontWeight": "780",
+                  "letterSpacing": -4
+                },
+                {
+                  "type": "path",
+                  "id": "JAzX5",
+                  "x": 62,
+                  "y": 190,
+                  "name": "Mascot Editorial Sweep",
+                  "geometry": "M0 210c118-164 290-192 588-210m-526 272c116-144 282-182 526-186",
+                  "viewBox": [
+                    0,
+                    0,
+                    588,
+                    272
+                  ],
+                  "fill": "#ffffff00",
+                  "width": 588,
+                  "height": 272,
+                  "stroke": "#dfe7df38",
+                  "strokeWidth": 1.2,
+                  "strokeLinecap": "round"
+                },
+                {
+                  "type": "ellipse",
+                  "id": "NCRil",
+                  "x": 746,
+                  "y": 52,
+                  "name": "Mascot Orbit Outer",
+                  "fill": "#ffffff00",
+                  "width": 520,
+                  "height": 520,
+                  "stroke": "#dfe7df38",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "ellipse",
+                  "id": "xhQwM",
+                  "x": 812,
+                  "y": 120,
+                  "name": "Mascot Orbit Inner",
+                  "fill": "#ffffff00",
+                  "width": 384,
+                  "height": 384,
+                  "stroke": "#dfe7df28",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "ellipse",
+                  "id": "T7fzIt",
+                  "x": 876,
+                  "y": 628,
+                  "name": "Mascot Ground Shadow",
+                  "fill": "#11100f4d",
+                  "width": 258,
+                  "height": 24
+                },
+                {
+                  "type": "rectangle",
+                  "id": "VqHNz",
+                  "x": 698,
+                  "y": 0,
+                  "name": "Luo Xiaobai Generated Cutout",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../../assets/avatars/mature/radish-mature-standing-grayjade-v1-candidate-transparent.png",
+                    "mode": "fit"
+                  },
+                  "width": 584,
+                  "height": 680
+                },
+                {
+                  "type": "frame",
+                  "id": "mE6yE",
+                  "x": 48,
+                  "y": 578,
+                  "name": "Mascot CTA",
+                  "height": 52,
+                  "fill": "#fffdf8",
+                  "cornerRadius": 26,
+                  "gap": 12,
+                  "padding": [
+                    0,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CMe4h",
+                      "name": "Mascot CTA Label",
+                      "fill": "#2f2a25",
+                      "content": "认识她",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 15,
+                      "fontWeight": "650"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "cdzLq",
+                      "name": "Mascot CTA Arrow",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "arrow-up-right",
+                      "library": "lucide",
+                      "weight": 1.7,
+                      "fill": "#2f2a25"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "QzTnU",
+                  "x": 1006,
+                  "y": 638,
+                  "name": "Mascot Vertical Mark",
+                  "fill": "#b9cbbf",
+                  "content": "RADISHX  ·  CHARACTER  ·  2026",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 10,
+                  "fontWeight": "600",
+                  "letterSpacing": 1.8
+                },
+                {
+                  "type": "frame",
+                  "id": "iIfeP",
+                  "x": 548,
+                  "y": 548,
+                  "name": "Mascot Leaf Mark",
+                  "width": 120,
+                  "height": 120,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "KHuBp",
+                      "x": 30,
+                      "y": 40,
+                      "name": "Leaf Mark Left",
+                      "rotation": -29.999999999999996,
+                      "fill": "#8fb3a5",
+                      "width": 34,
+                      "height": 52
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "KZayq",
+                      "x": 48,
+                      "y": 14,
+                      "name": "Leaf Mark Center",
+                      "fill": "#dfe7df",
+                      "width": 34,
+                      "height": 58
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "KgFLL",
+                      "x": 60,
+                      "y": 38,
+                      "name": "Leaf Mark Right",
+                      "rotation": 29.999999999999996,
+                      "fill": "#78a496",
+                      "width": 34,
+                      "height": 52
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "F18rg",
+                      "x": 49,
+                      "y": 58,
+                      "name": "Leaf Mark Root",
+                      "fill": "#fffdf8",
+                      "width": 34,
+                      "height": 42
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": {
+    "mode": [
+      "light",
+      "dark"
+    ]
+  },
+  "variables": {
+    "rx-accent-earth": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#886349",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#c9997f",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "rx-accent-ink": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#435c74",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#7fa0bd",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "rx-accent-jade": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#4f9c83",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#6fb39c",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "rx-accent-purple": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#846992",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#a88bb5",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "rx-bg-app": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#f4efe6",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#1a1713",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "rx-bg-ink": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#11100f",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#0d0c0a",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "rx-bg-muted": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#efe7db",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#2b2721",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "rx-bg-surface": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#fbf7f0",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#23201a",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "rx-border-soft": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#a8b6a633",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#dbe8df26",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "rx-brand-primary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#5d6c57",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#8fb3a5",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "rx-brand-soft": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#dfe7df",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#31443d",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "rx-font-body": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "rx-font-heading": {
+      "type": "string",
+      "value": "Geist"
+    },
+    "rx-font-mono": {
+      "type": "string",
+      "value": "Geist Mono"
+    },
+    "rx-font-serif": {
+      "type": "string",
+      "value": "Noto Serif SC"
+    },
+    "rx-pattern-line": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#5d6c5730",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#b9cbbf24",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "rx-radius-card": {
+      "type": "number",
+      "value": 8
+    },
+    "rx-radius-control": {
+      "type": "number",
+      "value": 999
+    },
+    "rx-text-muted": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#8d7b6c",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#8d8172",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "rx-text-primary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#2f2a25",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#ede5d8",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "rx-text-secondary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#6a5c4f",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#b8ab9a",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "rx-accent-grayjade": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#78a496",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#8fb3a5",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "rx-text-on-brand": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#fffdf8",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#1a1713",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    }
+  },
+  "fileToken": "1fbd2a02-88d4-4cc0-8857-219668df7cde"
+}

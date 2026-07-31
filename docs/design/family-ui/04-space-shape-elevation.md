@@ -34,7 +34,7 @@
 
 ## 3. 描边与阴影
 
-- 边框优先于重阴影表达层级（全家族）。
+- 优先使用留白、背景明度差和弱边框表达层级；阴影保持柔和，不制造悬浮堆叠感。
 - 默认边框 `--rd-border-soft`，可交互控件 `--rd-border-strong`，焦点 `--rd-focus-ring`（2px）。
 - 阴影三档：`--rd-shadow-panel`（卡片）、`--rd-shadow-popover`（浮层 / 菜单 / toast）、`--rd-shadow-soft`（Brand 面大图）。
 - 不做卡片套卡片；不做双层大白框浮层。
@@ -47,7 +47,7 @@
 | compact | 正文 1.5 | 32px | Workbench 面表格、表单、列表 |
 
 - 触控目标不小于 44px（移动与触控场景），即使 compact 档也须在触控端放大命中区。
-- 常驻侧栏默认宽度不低于 220px（Flow / Mind 先例）。
+- 常驻侧栏默认宽度不低于 220px。
 - 固定格式元素须有稳定尺寸或 min/max 约束，避免 hover、状态 chip、长标签或语言切换导致布局跳动。
 
 ## 5. 层级（z-index 语义）

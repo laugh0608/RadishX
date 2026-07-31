@@ -1,10 +1,10 @@
 # 当前规划
 
-最后更新：2026-07-13
+最后更新：2026-07-31
 
 ## 当前阶段
 
-RadishX 当前处于 React 官网首版实现后的发布准备、文档一致性维护和公开素材治理等待期。除发布复核、文档一致性、验证脚本维护和必要的小范围质量修正外，官网功能开发暂时收住。
+RadishX 当前处于 React 官网首版实现后的发布准备与视觉方向评审期。官网功能开发仍然收住；本轮只推进 family-ui 通用规范收敛、参考 UI 归档和灰玉品牌单页 Pencil 设计，不修改 React 页面。
 
 当前站点已具备：
 
@@ -15,7 +15,7 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 - 首批已审核 Mascot / About 素材、项目详情页代表视觉和首页 Radish Orbit 中心视觉锚点。
 - Mascot Gallery 整图预览、首批 10 张单张表情 Web 展示图和 `/mascot` 候选预览区。
 - 五个项目详情页公开文档入口、Hero 下方站内导览和代码内临时项目标识。
-- Pencil 设计源已切换到 v1.2 craft 单基线，共 10 张桌面 / 移动 / 暗色画板。
+- `radishx-site-v0.pen` 保留已落地的 v1.2 craft 历史基线；`radishx-site-v1.pen` 用于灰玉新方向，首轮只制作一张首页桌面评审页。
 - 本地构建、静态输出检查、HTTP smoke、桌面 / 移动端视觉 smoke、线上 HTTP smoke 和线上截图级 smoke 的阶段性记录。
 
 当前没有新的正式项目 Logo、真实截图、公开视频素材、seasonal 活动目标、下载授权或发布要求。因此本阶段不继续扩展素材入口，不开放下载或素材包，不启动 seasonal 页面实现。下一轮 RadishX 官网功能开发应等待五个项目任一形成适合公开展示的新阶段成果，并补齐对应正式材料后再启动。
@@ -40,24 +40,24 @@ RadishX 当前处于 React 官网首版实现后的发布准备、文档一致�
 | 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 首批单张表情已生成 Web 展示图，下载、素材包和外部分发继续关闭 |
 | 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | craft Phase 5 本地 54 组合终验、9 路由 HTTP smoke 与既有线上检查已完成 |
 | 设计源精确化 | [design-source-refresh.md](../features/design-source-refresh.md) | 已切换到 v1.2「craft」单基线（10 张：去框 / 留白 / 柔投影 / 段控主题）；v1 / v1.1 / v1.1 暗色旧画板已从画布删除，留存 git 历史 |
+| 灰玉品牌视觉 | [grayjade-brand-refresh.md](../features/grayjade-brand-refresh.md) | 首页桌面二轮创意重构已完成，等待视觉复核；React 暂不修改 |
 | React 与设计源对照校准 | [react-design-alignment.md](../features/react-design-alignment.md) | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
 | craft 视觉基线落地 | [craft-visual-refresh.md](../features/craft-visual-refresh.md) | Phase 0–5 已全部落地并通过全站三态终验 |
-| 家族统一 UI 规范 | [family-ui-spec.md](../features/family-ui-spec.md) | v26.7.2 规范正文、亮暗 tokens 与迁移说明书已入库，参考图已登记 |
+| 家族统一 UI 规范 | [family-ui-spec.md](../features/family-ui-spec.md) | v26.7.3：默认品牌参考切换为灰玉，移除项目配色 / 接入 / 进度治理，参考 UI 归入规范目录 |
 
 ## 当前活跃目标
 
-当前没有新的页面、素材、下载、seasonal 或部署目标。craft Phase 0–5 已完成，当前活跃目标转为保持官网首版可发布状态，并做轻量的状态复核、文档一致性检查和必要的小范围质量改进。
+当前没有新的页面功能、下载、seasonal 或部署目标。灰玉品牌方向已完成首页桌面二轮创意重构：标题去除解释型副标题，五项目改为不对称生态图谱，Mascot 改为透明立绘舞台。当前等待视觉复核；确认后再决定是否扩展移动、暗色、其他页面或 React 实现。
 
-例外：家族统一 UI 规范（family-ui）作为跨项目文档目标已启动，详见 [family-ui-spec.md](../features/family-ui-spec.md)。该目标只产出 `docs/design/family-ui/` 规范、tokens 与参考素材，不改动官网页面代码、公开图片资源或部署配置，因此不与官网功能等待期冲突。
+family-ui 同步收敛为通用规范与参考资料，详见 [family-ui-spec.md](../features/family-ui-spec.md)。它不再分配具体项目配色、不规定其他项目接入方式，也不记录其他项目进度。
 
 craft 视觉基线落地已完成，详见 [craft-visual-refresh.md](../features/craft-visual-refresh.md)。设计源与 React 实现现已统一到 v1.2 craft 表现层；后续只在页面、素材或发布状态变化时复跑对应检查。
 
 本阶段优先级：
 
-1. 保持 README、`docs/features/*`、`docs/assets/materials.md`、`docs/development/standards.md`、`docs/design/visual-guidelines.md`、`docs/design/family-ui/` 和实现口径一致。
-2. 只修复会影响后续发布判断、素材授权边界或验证复跑的文档 / 脚本 / 小范围实现问题。
+1. 评审 `radishx-site-v1.pen` 二轮首页方案的生态图谱、标题层级和萝小白舞台。
+2. 用户确认前不改 React 页面、不扩展其余设计页。
 3. 页面代码、公开图片资源、Vercel 配置或域名策略没有变化时，不重复触发完整线上截图级 smoke。
-4. 如果出现新素材、下载授权、seasonal 活动目标或发布要求，先更新对应目标文档，再进入设计源、实现和验证。
 
 ## 当前不推进
 

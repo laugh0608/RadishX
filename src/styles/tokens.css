@@ -1,6 +1,6 @@
 /*
  * RadishX 站点 token（--rx-*）
- * 语义值继承 Radish 家族统一规范 family-ui 的 --rd-*（L2 别名，见 docs/design/family-ui/09-adoption.md）。
+ * 语义值通过 --rd-* 接入；本站映射与当前版本见 docs/design/ui-addendum.md。
  * 组件与 global.css 继续消费 --rx-*，无需改动；仅 Brand 面站点特有项保留独立值。
  * --rd-* 上游定义见 ./family-ui-tokens.css（从 docs/design/family-ui/tokens/tokens.css 复制）。
  */

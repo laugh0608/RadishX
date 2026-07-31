@@ -1,93 +1,88 @@
 # Radish 家族统一 UI 规范（family-ui）
 
-版本：`v26.7.2`（2026-07-12）
+版本：`v26.7.3`（2026-07-31）
 
-本专题是 Radish 家族所有产品的统一 UI / 视觉设计规范，是家族级视觉真相源。各项目的通用视觉规则以本专题为准；项目仓库只保留「差异附录」，不再各自维护整套通用规范。
+本专题提供可复用的 UI / 视觉基础规范与参考资料，目标是形成一套温润、克制、清晰的「现代界面骨架 × 纸墨印色气质」。它只定义通用原则、语义 token、组件形态、布局规则和视觉参考，不承担任何具体项目的配色分配、接入方式、实施计划或进度跟踪。
 
-一句话方向：**现代工作台骨架 × 纸墨印色气质**——结构、密度与组件形态学取自现代清爽工作台语言（见 [references.md](references.md)），色彩与气质取自 Radish 人民币纸币色系配色母板。
+采用本规范的产品可按自身定位决定使用范围、品牌色、辅助色、技术实现和升级节奏；项目级决策留在各自上下文中维护，不回写本专题。
 
-## 使用前必读：参考图不是可选灵感
+## 参考 UI 是重要的视觉上下文
 
-任何项目在评估、设计、迁移或重构 UI 前，必须同时完成以下阅读和观察：
+[references.md](references.md) 与 [`reference-ui/`](reference-ui/) 中的参考截图，是理解本规范视觉效果的重要材料。它们补足纯文字与 token 无法表达的空间比例、信息密度、留白节奏、列表与详情关系、浮层层级和状态表达。`reference-ui` 的目录名同时强调这些图片用于参考，不是实现素材库。
 
-1. 完整阅读 [references.md](references.md)；
-2. 逐张查看 `assets/design-references/ui/` 中由该索引登记的参考图；
-3. 对照索引中的“主要学习点 / 明确不学”，再阅读与当前任务相关的颜色、组件、布局和平台章节；
-4. 明确当前页面采用哪些参考原则、拒绝哪些表面特征后，才进入 Pencil 或代码实现。
+使用这些参考时，应先观察和拆解，再进行符合当前内容与品牌的重新组织：
 
-`references.md` 与参考图共同定义“现代工作台骨架”的视觉依据，承担布局比例、信息密度、组件形态、状态双通道、列表 / 详情关系和多栏工作区节奏。只读本页或只复制 token，只能完成颜色与变量接入，不能视为完成 family-ui 视觉评估或页面迁移。
+1. 识别参考图中真正有效的结构、层级和视觉节奏；
+2. 对照索引中的“主要学习点 / 明确不学”，提炼可复用原则；
+3. 结合当前产品的信息架构、内容密度、品牌资产和平台约束重新设计；
+4. 用桌面与移动视口验证转译结果，而不是追求与参考图相似。
 
-参考素材的使用边界同样是强制规则：
+参考图不是模板，也不是可复用素材：
 
-- 参考图仅用于家族内部观察和原则提炼，不是可复用产品素材；
-- 禁止把参考图复制到产品、`public/`、官网页面、设计交付物或对外文档；
-- 禁止照搬外部页面结构、品牌元素、图标、配色或文案；
-- 参考图以桌面工作台为主，移动端必须继续以 [07-layout-platforms.md](07-layout-platforms.md) 的重排规则为准，不能把桌面布局等比缩小；
-- 未实际查看参考图时，不得宣称已完成视觉方向评估，也不得直接开始页面级 Pencil 或代码重构。
+- 不逐像素复刻页面，不复制其导航结构、组件组合或交互路径；
+- 不复制外部品牌元素、图标、配色、图片和文案；
+- 不把截图放进产品、`public/`、设计交付物或对外文档；
+- 不以“换色后的参考图”冒充原创设计；
+- 参考图以桌面界面为主，移动端仍需按 [07-layout-platforms.md](07-layout-platforms.md) 重新编排。
 
-## 适用范围
+## 表面 Profile
 
-| 项目 | 产品形态 | 适用面 |
+Profile 用于描述界面气质和密度，不绑定具体项目：
+
+| Profile | 典型载体 | 视觉特征 |
 | --- | --- | --- |
-| Radish | Web 社区 + Console + Flutter 移动原生端；Tauri 暂时弃用 | Web / Console / Flutter；Tauri 只保留历史资产，未来重新评估 |
-| RadishCatalyst | Godot 游戏 + Wiki / 官方工具 | 游戏内为 Game 面；Wiki / 工具为 Workbench 面 |
-| RadishFlow | 流程模拟桌面软件（已归档，规范仍适用） | Workbench 面 |
-| RadishMind | AI runtime 工作台（console + web） | Workbench 面 |
-| RadishLex | 输入法（Flutter 管理端 + 各平台候选窗） | 管理端为 Workbench 面；候选窗见平台章 |
-| RadishX | 官网 | Brand 面 |
-| 未来新产品 | — | 按 [10-migration-playbook.md](10-migration-playbook.md) 接入模板自定位 |
+| Brand 展示面 | 官网、品牌页、欢迎页、展示型内容 | 纸感较强，可用衬线大标题、轻纹样和大留白 |
+| Workbench 工作面 | 管理、编辑、审计、数据与工具界面 | 近白工作台、密度有序、状态明确、装饰克制 |
+| Game 游戏面 | HUD、基地面板、地图与沉浸式交互 | 保留状态语义、可读性与多通道表达，具体气质自主决定 |
 
-## 三种表面 Profile
+Profile 是可选参考。产品可以组合、扩展或不使用这些名称，只需保证最终界面语义清楚、可读且一致。
 
-共享同一套 token 底座，应用强度不同：
+## 规范边界
 
-| Profile | 典型载体 | 气质强度 |
-| --- | --- | --- |
-| Brand 展示面 | RadishX 官网、公开 Web 的欢迎 / 空态、未来营销页 | 纸感最强，允许衬线大标题、轻纹样、大留白 |
-| Workbench 工作面 | Console、Mind、Flow、Lex 管理端、Catalyst Wiki / 工具、Radish 私域 | 现代工作台 + 纸色化；纹样为零或近零，密度紧凑，状态 chip 体系完整 |
-| Game 游戏面 | Catalyst 游戏内 HUD、基地面板 | 只强制继承色彩语义、图标分类逻辑与可读性底线，气质自治 |
+本专题定义：
 
-## 合规三档
+- 纸墨印色的基础视觉原则；
+- L0 配色母板与 L1 语义 token 参考实现；
+- 状态语义、字体、间距、圆角、阴影和动效基线；
+- 常见组件形态与响应式原则；
+- UI 参考图的学习点、排除项与版权边界。
 
-| 档位 | 内容 |
-| --- | --- |
-| 必须统一 | 配色母板与 L1 语义 token 命名、状态色语义、字体策略、图标风格基线、Mascot 使用边界、避免方向清单 |
-| 强烈建议 | 组件形态学、间距 / 圆角 / 阴影阶梯、布局模式、断点与响应式规则 |
-| 项目自治 | 领域组件：Flow 画布图元、Mind 停止线 / 证据视觉、Catalyst HUD、Lex 候选窗细节等 |
+本专题不定义：
 
-通用性与差异性的详细边界见 [01-principles.md](01-principles.md)。
+- 任何具体项目必须采用哪组主色或辅助色；
+- 具体项目必须怎样引用、复制或实现 token；
+- 具体项目的技术栈映射、差异附录或迁移步骤；
+- 具体项目的接入状态、完成进度、升级窗口或待办清单；
+- 领域特有组件的业务结构与品牌资产决策。
 
 ## 文档地图
 
 | 文档 | 内容 |
 | --- | --- |
-| [01-principles.md](01-principles.md) | 气质关键词、设计原则、避免方向、通用与差异边界 |
-| [02-color.md](02-color.md) | L0 配色母板、L1 语义 token 全表、状态色、项目 accent 分工、暗色核心映射 |
+| [01-principles.md](01-principles.md) | 气质关键词、设计原则、避免方向与自治边界 |
+| [02-color.md](02-color.md) | 配色母板、语义 token、状态色、选色原则与暗色映射 |
 | [03-typography.md](03-typography.md) | 字体策略、衬线边界、字号与行高阶梯 |
-| [04-space-shape-elevation.md](04-space-shape-elevation.md) | 间距、圆角、描边、阴影、层级、密度档 |
-| [05-motion.md](05-motion.md) | 动效时长、缓动、reduced-motion |
-| [06-components.md](06-components.md) | 按钮、输入、chip、表格、侧栏、KPI 卡、通知、浮层等形态学规范 |
-| [07-layout-platforms.md](07-layout-platforms.md) | 布局模式、断点、Web / 桌面 / 移动 / 游戏 / 输入法平台适配 |
-| [08-brand-assets.md](08-brand-assets.md) | 纹样、纸感、Mascot、图标、插画使用规则 |
-| [09-adoption.md](09-adoption.md) | 各项目现状映射、待收敛清单、合规检查清单 |
-| [10-migration-playbook.md](10-migration-playbook.md) | 撤项目 UI 专题的迁移说明书、差异附录模板、新产品接入模板 |
-| [references.md](references.md) | **视觉设计前必读**：27 张参考图索引、学习 / 排除规则与版权口径 |
-| [tokens/tokens.json](tokens/tokens.json) | 机器可读 token（W3C design tokens 风格） |
-| [tokens/tokens.css](tokens/tokens.css) | CSS 参考实现（含暗色核心映射与 Workbench 覆盖） |
+| [04-space-shape-elevation.md](04-space-shape-elevation.md) | 间距、圆角、描边、阴影、层级与密度档 |
+| [05-motion.md](05-motion.md) | 动效时长、缓动与 reduced-motion |
+| [06-components.md](06-components.md) | 按钮、输入、chip、表格、侧栏、通知与浮层等通用形态 |
+| [07-layout-platforms.md](07-layout-platforms.md) | 布局模式、断点、响应式与平台适配原则 |
+| [08-brand-assets.md](08-brand-assets.md) | 纹样、纸感、Mascot、图标与插画边界 |
+| [09-adoption.md](09-adoption.md) | 通用视觉质量自检清单 |
+| [10-migration-playbook.md](10-migration-playbook.md) | 规范扩展、兼容与版本变更原则 |
+| [references.md](references.md) | **视觉设计重要参考**：27 张 UI 截图索引、学习点与版权口径 |
+| [`reference-ui/`](reference-ui/) | 参考 UI 截图，仅供内部观察与原则提炼 |
+| [tokens/tokens.json](tokens/tokens.json) | 机器可读 token 参考定义 |
+| [tokens/tokens.css](tokens/tokens.css) | CSS 参考实现 |
 
-## 引用与迁移方式
+## 版本与变更
 
-- 各项目在其 `CLAUDE.md` / `AGENTS.md` / README 中声明「UI 通用规范遵循 RadishX `docs/design/family-ui/`」，并记录所遵循的版本号。
-- token 文件以复制为主（进入各项目构建），规范正文以引用为主；具体步骤、差异附录模板与新产品接入模板见 [10-migration-playbook.md](10-migration-playbook.md)。
-- 各项目接入或迁移完成后，回写 [09-adoption.md](09-adoption.md) 登记状态。
-
-## 版本与变更流程
-
-- 版本号采用家族日历版本号 `vYY.M.RELEASE`（如 `v26.7.1` = 2026 年 7 月第 1 版，与 Radish / RadishFlow 发版格式一致）；破坏性变更（改语义、删 token、换值域）在 Changelog 标注 `[breaking]`。
-- 变更先改本规范，再改实现；实现与规范冲突时优先修实现，规范不合理再回到本专题迭代（沿用 Radish 维护规则）。
-- 破坏性变更必须在 [09-adoption.md](09-adoption.md) 登记各项目迁移窗口。
+- 版本号采用日历版本号 `vYY.M.RELEASE`。
+- 改变 token 语义、删除 token 或改变默认值域时，在 Changelog 标注 `[breaking]`。
+- 规范更新只记录规范本身的变化，不记录具体项目是否跟进。
+- 参考实现与规范正文冲突时，先确认语义是否仍合理，再让同一版本内的文档、JSON 与 CSS 保持一致。
 
 ## Changelog
 
-- `v26.7.2`（2026-07-12）：补全暗色模式全表（accent / state 柔底 / shadow / focus / on-ink 等约 40 个 `--rd-*`），经 RadishX Brand 面明暗双态截图验证；RadishX 落地主题切换（跟随系统 + 手动三态 + localStorage 记忆 + 防 FOUC）。
-- `v26.7.1`（2026-07-11）：首版。建立三 Profile、合规三档、`--rd-*` 双层 token、亮色全表与暗色核心映射、组件形态学、平台适配、迁移说明书与参考图索引；新增灰玉 `--rd-accent-grayjade` 供 RadishLex 使用。
+- `v26.7.3`（2026-07-31，`[breaking]`）：默认品牌识别由胭脂调整为灰玉；新增 `text-on-brand` 语义；取消具体项目配色分工、跨项目接入状态与迁移指令；参考 UI 迁入本专题并强化“重要但不可照抄”的使用边界。
+- `v26.7.2`（2026-07-12）：补全暗色模式全表，包括 accent、state 柔底、shadow、focus 与 on-ink。
+- `v26.7.1`（2026-07-11）：首版。建立三类表面参考、双层 token、组件形态、平台适配与参考图索引。

@@ -4,7 +4,9 @@
 
 ## 与家族统一 UI 规范的关系
 
-`docs/design/family-ui/` 是服务整个 Radish 家族的统一 UI / 视觉规范（family-ui），是家族级视觉真相源。本文是 RadishX 官网作为 **Brand 展示面** 对 family-ui 的站点级应用与补充：官网色彩、字体、状态色、组件与响应式的通用口径以 family-ui 为准；本文只保留官网页面节奏、Mascot 页 / About 页等站点特有的结构与素材约定。`--rx-*` token 作为 family-ui `--rd-*` 的 L2 别名保留，映射见 [family-ui/09-adoption.md](family-ui/09-adoption.md)。family-ui 的技术接入细节（token 别名、硬编码收敛、已知偏离）见 [ui-addendum.md](ui-addendum.md)。若本文与 family-ui 通用条款冲突，以 family-ui 为准并回修本文。
+`docs/design/family-ui/` 提供通用 UI / 视觉原则、参考 token、组件形态与 UI 参考。本文是 RadishX 官网作为 **Brand 展示面** 的站点级应用与补充，负责官网页面节奏、品牌用色、Mascot 页 / About 页结构与素材约定。family-ui 不为具体项目分配颜色或跟踪采用进度；RadishX 的技术映射和已知差异见 [ui-addendum.md](ui-addendum.md)。
+
+2026-07-31 起，family-ui 默认品牌参考改为灰玉；RadishX 先在 `radishx-site-v1.pen` 完成单页评审，React 实现暂时保留 v26.7.2 胭脂基线，待设计确认后再迁移。
 
 ## 参考来源
 
@@ -62,6 +64,8 @@ RadishX 是 Radish 系列项目矩阵官网，第一版应是创意品牌 / 游�
 
 第一版项目详情页暂不放真实截图和视频素材；主视觉区域可以使用图形化候选媒体框、项目状态信息和代码内文字 / CSS 临时项目标识。这些标识只作为官网信息识别，不是正式 Logo，后续在各项目有稳定素材后替换。
 
+Pencil 评审稿可以使用明确登记的生成式候选视觉探索构图，但候选必须留在 `assets/` 与设计源范围；未重新审核前不得进入 `public/` 或 React 实现。
+
 ## craft 视觉手法（v1.2 基线）
 
 v1.2 设计源确立官网 Brand 面的 craft 手感：以留白、去框和柔投影分层承载结构，强调色高度克制。以下为可执行口径，实现与后续设计稿以此为准；落地进度见 [craft-visual-refresh.md](../features/craft-visual-refresh.md)。
@@ -70,10 +74,12 @@ v1.2 设计源确立官网 Brand 面的 craft 手感：以留白、去框和柔�
 - 柔投影分层：卡片 `y 12–16 / blur 24–40 / spread 负值 / 暖黑低透` 一档；浮层更强一档；暗色下投影转纯黑并加深。
 - 留白节奏：section 纵向 padding 桌面约 88、hero 约 92，移动按比例收敛；一屏一个强焦点，其余安静。
 - 圆角：卡片 12–20，控件 pill；不用小于 8 的硬角堆叠。
-- 强调色克制：品牌玫红只用于主 CTA 与极小识别点（eyebrow 圆点）；项目色只作小色点，不做整块高饱和；状态从高饱和 chip 收敛为点分隔的 mono meta 行。
+- 强调色克制：v1 方向以灰玉承担主 CTA 与极小识别点，胭脂降为印章式点缀；页面不做大面积单一绿色，项目色只作小色点。
 - 主题切换：header 用三段段控（跟随系统 / 浅色 / 深色），active 段以浮起（surface + 柔投影）表达。
-- 项目 band：单列全宽、图文左右交替、无描边、柔投影漂浮；RadishMind / RadishLex 用代码内链路 chips 表达「自有视觉、非截图」。
-- primary 按钮：亮色近黑 pill + 浅字；暗色转 `--rx-brand-primary` + 浅字。
+- 标题层级：标题独立成立，不在其下追加解释布局、实现方式或页面职责的描述型副标题；确有必要的背景说明应进入正文内容区。
+- 项目矩阵：v1 新方向使用不对称生态图谱，为五个项目分别建立社区轨道、工业场景、流程蓝图、节点星图和中文输入路径；不再把五项内容套进重复横向 band。现有 React band 保留为 v1.2 craft 历史实现基线，等待评审后再决定是否迁移。
+- Mascot 舞台：优先采用透明立绘、背景大字和矢量轨道形成单一强焦点，不把角色缩进普通白底图片框。
+- primary 按钮：v1 亮色使用深灰玉 + 暖白字；暗色使用提亮灰玉 + 深墨字，前景由 `text-on-brand` 决定。
 - 移动端：同一手感下降密度，band 与卡片改单列，触控目标不小于 `44px`，投影与留白按比例收敛。
 
 避免：满屏描边卡片、卡中卡、高饱和整块强调、密排无呼吸的仪表盘式布局。
@@ -83,9 +89,9 @@ v1.2 设计源确立官网 Brand 面的 craft 手感：以留白、去框和柔�
 首页建议采用强视觉分段：
 
 1. 首屏：RadishX 品牌名、项目矩阵定位、少量入口按钮、角色或项目矩阵主视觉。
-2. 项目矩阵：各项目用大幅横向视觉 band 呈现，而不是普通卡片堆叠。
+2. 项目矩阵：用不对称生态图谱呈现，每个项目使用与自身领域相关的独立视觉语法，而不是普通卡片堆叠或重复横向 band。
 3. 生态关系：说明 Radish、Catalyst、Flow、Mind 的角色分工。
-4. Mascot 入口：虚拟形象“萝小白”作为品牌记忆点，展示三形态线索。
+4. Mascot 入口：虚拟形象“萝小白”作为品牌记忆点，使用透明立绘和场景化排版形成独立舞台。
 5. About / GitHub：收束到联系、仓库和组织说明。
 
 项目详情页建议结构：
@@ -125,10 +131,11 @@ About 页建议结构：
 | `--rx-text-primary` | `#2f2a25` | 主标题和正文 |
 | `--rx-text-secondary` | `#6a5c4f` | 辅助正文 |
 | `--rx-text-muted` | `#8d7b6c` | 元信息和弱提示 |
+| `--rx-text-on-brand` | `#fffdf8` | 亮色品牌实底上的文字；暗色映射为深墨 |
 | `--rx-border-soft` | `rgba(136, 99, 73, 0.18)` | 弱边框 |
 | `--rx-border-strong` | `rgba(136, 99, 73, 0.32)` | 强边框和分割 |
-| `--rx-brand-primary` | `#b24057` | 品牌焦点、主 CTA、小面积印色 |
-| `--rx-brand-soft` | `rgba(178, 64, 87, 0.14)` | 品牌柔化底 |
+| `--rx-brand-primary` | `#5d6c57` | 灰玉品牌焦点、主 CTA、小面积印色 |
+| `--rx-brand-soft` | `rgba(120, 164, 150, 0.16)` | 灰玉品牌柔化底 |
 | `--rx-accent-jade` | `#4f9c83` | 萝卜绿 / 成功 / Radish 辅助 |
 | `--rx-accent-ink` | `#435c74` | 墨蓝 / 信息 / Flow 和 Mind 辅助 |
 | `--rx-accent-earth` | `#886349` | 赭石 / Catalyst 辅助 |
@@ -140,6 +147,8 @@ About 页建议结构：
 | `--rx-shadow-soft` | `0 16px 40px rgba(91, 66, 44, 0.12)` | 图片和轻浮层阴影 |
 
 ### 项目色彩分工
+
+以下只描述 RadishX 官网内用于区分项目内容的展示色，不约束对应项目自身的品牌或 UI 配色：
 
 - Radish：胭脂红 + 玉青 + 墨蓝，突出社区、WebOS 和内容生态。
 - RadishCatalyst：赭石 + 胭脂红 + 暖纸色，突出游戏、异星工业和角色探索。
@@ -187,7 +196,7 @@ About 页建议结构：
 允许位置：
 
 - Hero 背景的次级层。
-- 项目 band 的边缘或图片背后。
+- 项目图谱模块的负空间、矢量路径或领域视觉背后。
 - Mascot 页角色图周围。
 - 页脚或 About 的收束背景。
 - 空状态或轻提示区域。
@@ -289,7 +298,7 @@ About 页建议结构：
 
 - PC 和移动端都是一等目标。
 - 首页首屏在移动端仍应能看到品牌、定位和至少一个主入口。
-- 项目 band 在移动端改成单列，按钮可换行但不能溢出。
+- v1 项目生态图谱在移动端按 Radish、RadishCatalyst、RadishFlow、RadishMind、RadishLex 的叙事顺序改单列；现有 React band 同样保持单列，按钮可换行但不能溢出。
 - 纹样、背景图和浮层在移动端降低密度。
 - 触控目标不小于 `44px`。
 - 任何文本不得遮挡图片主体或相邻内容。
@@ -304,7 +313,7 @@ About 页建议结构：
 
 ## Pencil 设计规则
 
-- RadishX 主设计稿路径：`docs/design/sources/radishx-site-v0.pen`。
+- RadishX 当前新视觉设计稿路径：`docs/design/sources/radishx-site-v1.pen`；`radishx-site-v0.pen` 作为已落地历史基线保留。
 - `.pen` 文件只能通过 Pencil MCP 或 Pencil 应用操作，不使用 shell 读取或解析。
 - 写入前必须确认 Pencil active editor 是 RadishX 路径，不能误写兄弟项目设计稿。
 - 设计稿第一轮至少覆盖：首页桌面版、首页移动版、项目详情模板、Mascot 页和 About 页。

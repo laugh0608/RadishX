@@ -24,7 +24,7 @@ npm run dev
 
 1. 先读取 `docs/planning/current.md`，确认当前活跃目标和执行顺序。
 2. 再读取或创建对应 `docs/features/*.md`，明确目标、范围、不做项、设计要求、开发任务和完成标准。
-3. 涉及页面结构、视觉方向或素材替换时，按需更新 `docs/design/sources/radishx-site-v0.pen`；`.pen` 文件只能通过 Pencil 读写。
+3. 涉及页面结构、视觉方向或素材替换时，按需更新当前设计源 `docs/design/sources/radishx-site-v1.pen`；`radishx-site-v0.pen` 作为历史实现基线保留，`.pen` 文件只能通过 Pencil 读写。
 4. 用户审核页面结构、视觉方向和候选素材后，再进入 React 实现。
 5. 按目标文档拆分实现任务，不把多个无关页面目标混在一次改动里。
 6. 运行构建、类型检查和桌面 / 移动端视觉 smoke。

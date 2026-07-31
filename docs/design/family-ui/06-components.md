@@ -5,9 +5,9 @@
 ## 按钮
 
 - 层级：primary（`--rd-action-primary` 实底 + `--rd-text-on-accent`）、secondary（`--rd-border-strong` 描边或 `--rd-action-soft` 柔底）、danger（`--rd-state-danger` 实底，仅确认破坏性动作）、ghost（无底，工具条内）。
-- Brand 面 primary 可用 `--rd-brand-primary` 或 `--rd-bg-ink`。
+- Brand 面 primary 可用 `--rd-brand-primary` + `--rd-text-on-brand`，或 `--rd-bg-ink` + `--rd-text-on-ink`。
 - 尺寸：高 32 / 36 / 40px；圆角 `--rd-radius-sm`；图标 + 短动词文案。
-- 同一行超过 5 个按钮时分组、折叠或进菜单（Flow 先例）。
+- 同一行超过 5 个按钮时分组、折叠或移入菜单。
 - 禁用态必须可发现，并用 tooltip、相邻短文案或状态区说明原因。
 - 禁止：塑料高光、夸张渐变、把灰 pill 当所有按钮默认形态。
 
@@ -15,7 +15,7 @@
 
 - 字段结构固定：label + input + （unit）+ hint / validation（ref-16）。
 - 输入底 `--rd-bg-surface` 或纯白，描边 `--rd-border-strong`，聚焦切换为 `--rd-focus-ring`；圆角 `--rd-radius-xs`～`sm`。
-- 错误信息定位到字段，说明原因与下一步，不吞掉无效输入原因（Flow 先例）。
+- 错误信息定位到字段，说明原因与下一步，不吞掉无效输入原因。
 - 数值字段单位紧贴数值；表单内部禁止纹样底图。
 - 行式编辑器形态（ref-10）：toggle + 多行时段 + 行内增删复制，用发丝分隔线不用卡片包裹。
 
@@ -23,7 +23,7 @@
 
 - 形态：胶囊（`--rd-radius-pill`），柔化底 + 对应状态深字，高 20–24px，文案 1–3 词（ref-01/08/12）。
 - 颜色只来自五个状态语义（[02-color.md](02-color.md)）；同一行 chip ≤ 5 个。
-- 扩展语义组合：`BLOCKED` = danger 柔底 + 锁图标；`STALE` = warning 柔底 + 时钟；`READ ONLY` = neutral 柔底。状态词表项目自定（如 Mind 的 READY/STALE/BLOCKED、RadishX 的 Coming Soon），色彩语义全家族一致。
+- 扩展语义组合：`BLOCKED` = danger 柔底 + 锁图标；`STALE` = warning 柔底 + 时钟；`READ ONLY` = neutral 柔底。具体状态词表由使用场景决定，但相同词义不得在不同位置重新着色。
 - chip 不承载长解释；不因位置不同重新定义含义。
 
 ## 表格
@@ -45,13 +45,13 @@
 
 - 宽度 220–280px；条目 = 图标 + 文案 +（计数徽标）；分组标题用 caption + `--rd-text-muted`（ref-03/06）。
 - active 态：`--rd-action-soft` 柔底 + `--rd-text-primary` 加重（不用高饱和整块反色，此处明确不学 ref-03 的蓝色实底）。
-- 底部固定区放账户 / 设置 / 边界提示（Mind 先例：read-only 边界放侧栏底部）。
+- 底部固定区可放账户、设置或持续可见的边界提示。
 - 可折叠为纯图标窄栏；移动端转为抽屉或底部导航（见 07 章）。
 
 ## 顶栏
 
 - 结构：产品身份 + 主导航 / 面包屑 + 全局搜索 + 状态区 + 账户（ref-07/09）。
-- 状态 chip 常驻数量 3–5 个封顶（Flow 先例）。
+- 状态 chip 常驻数量以 3–5 个为上限。
 - Brand 面顶栏可半透明纸色，不做强玻璃拟态。
 
 ## Tab / 分段控件
@@ -69,7 +69,7 @@
 - 通知条目：severity 图标 + 标题 + 摘要（≤ 2 行）+ 时间 + 级别 chip（ref-08）。
 - 通知面板顶部按 severity 分 tab 并计数；提供「全部已读」。
 - toast 用 `--rd-shadow-popover`，自动消失时长 ≥ 4s，危险操作结果不自动消失。
-- 状态迁移时间线：旧态删除线 → 新态（ref-12），操作者 + 时间戳必须可见（审计感，Mind 先例）。
+- 状态迁移时间线：旧态删除线 → 新态（ref-12），操作者与时间戳必须可见。
 
 ## 进度与流程指示
 
@@ -79,8 +79,8 @@
 ## 浮层（弹窗 / 抽屉 / 气泡）
 
 - 弹窗：标题 + 关闭 + 主体 + 动作区右对齐；圆角 `--rd-radius-md`，阴影 popover 档（ref-04）。
-- 内部已有完整卡片时外壳弱化边框，禁止双层大白框（Radish 先例）。
-- 高频创作 / 编辑浮层压缩 header / body 留白，让编辑主体占第一屏（Radish 先例）。
+- 内部已有完整卡片时外壳弱化边框，禁止双层大白框。
+- 高频创作或编辑浮层压缩 header / body 留白，让编辑主体占第一屏。
 - 危险动作弹窗必须写明动作结果（删除什么、覆盖什么）。
 - 详情侧栏（抽屉）：字段行 = label 左 + 值右，分组间用发丝线（ref-11）。
 
@@ -91,15 +91,15 @@
 
 ## 状态条（页面级）
 
-- Workbench 页面顶部提供：总体状态（ready / loading / stale / failed / blocked）+ 数据来源 + last refresh + retry 入口（Mind 先例，家族推广为通用形态）。
+- Workbench 页面顶部可提供：总体状态（ready / loading / stale / failed / blocked）+ 数据来源 + last refresh + retry 入口。
 - 失败态保留 last good 快照并明确标记，不清空已有可读数据。
 
 ## 空态 / 加载 / 错误
 
-- 空态必须说明原因 + 下一步动作入口，不出现无解释空白页（Radish `WebStateSlot` 先例）。
+- 空态必须说明原因与下一步动作入口，不出现无解释空白页。
 - 加载用骨架屏保布局；错误说明失败类别与重试入口，不升级恐慌语气。
 - Brand 面与轻量场景空态可用 Mascot 线稿或表情候选（边界见 [08-brand-assets.md](08-brand-assets.md)）。
 
 ## 命令 / 信息条
 
-- 等宽字展示域名、仓库路径、命令，附复制按钮（RadishX 先例）；是信息展示辅助，不替代主导航。
+- 等宽字展示域名、路径或命令，可附复制按钮；它是信息展示辅助，不替代主导航。
