@@ -4,7 +4,7 @@
 
 ## 当前阶段
 
-RadishX 当前处于 React 官网首版实现后的发布准备与视觉方向评审期。官网功能开发仍然收住；本轮只推进 family-ui 通用规范收敛、参考 UI 归档和灰玉品牌单页 Pencil 设计，不修改 React 页面。
+RadishX 已完成灰玉首页实现与本地视觉验收。`radishx-site-v1.pen` 的桌面与 390px 移动方向已落地到 `/` 首页、共享 Header 和运行时灰玉 token；五个项目详情页、Mascot 详情页、About 与部署边界保持现状。当前回到首页验收意见等待期，不继续扩展暗色精确稿或其他页面视觉。
 
 当前站点已具备：
 
@@ -12,7 +12,7 @@ RadishX 当前处于 React 官网首版实现后的发布准备与视觉方向�
 - `/`、五个项目详情页、`/mascot`、`/about` 和 404 页面。
 - `radishx.com` canonical 域名、`www.radishx.com` 兼容跳转、Vercel History API fallback。
 - 基础 metadata、Open Graph / Twitter Card、`sitemap.xml` 和 `robots.txt`。
-- 首批已审核 Mascot / About 素材、项目详情页代表视觉和首页 Radish Orbit 中心视觉锚点。
+- 首批已审核 Mascot / About 素材、项目详情页代表视觉、首页五项目内容舞台和透明完全体 Mascot 舞台。
 - Mascot Gallery 整图预览、首批 10 张单张表情 Web 展示图和 `/mascot` 候选预览区。
 - 五个项目详情页公开文档入口、Hero 下方站内导览和代码内临时项目标识。
 - `radishx-site-v0.pen` 保留已落地的 v1.2 craft 历史基线；`radishx-site-v1.pen` 用于灰玉新方向，当前包含首页桌面与 390px 移动评审页。
@@ -32,7 +32,7 @@ RadishX 当前处于 React 官网首版实现后的发布准备与视觉方向�
 
 | 目标 | 文档 | 当前状态 |
 | --- | --- | --- |
-| 首页首屏与主视觉 | [home-hero-visual.md](../features/home-hero-visual.md) | 站姿中心视觉锚点已接入，OG 已评估暂不替换 |
+| 首页首屏与主视觉 | [home-hero-visual.md](../features/home-hero-visual.md) | 灰玉项目舞台已实现并通过桌面 / 移动复核，OG 暂不替换 |
 | 五个项目详情页 | [project-detail-pages.md](../features/project-detail-pages.md) | 首版已实现，已补站内导览 |
 | 项目视觉素材准入准备 | [project-visual-asset-readiness.md](../features/project-visual-asset-readiness.md) | 五项目正式 Logo、截图、视频和自有视觉准入清单已建立 |
 | Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | Gallery / Usage、单张表情与 craft Phase 4 视觉收敛已完成 |
@@ -40,14 +40,14 @@ RadishX 当前处于 React 官网首版实现后的发布准备与视觉方向�
 | 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 首批单张表情已生成 Web 展示图，下载、素材包和外部分发继续关闭 |
 | 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | craft Phase 5 本地 54 组合终验、9 路由 HTTP smoke 与既有线上检查已完成 |
 | 设计源精确化 | [design-source-refresh.md](../features/design-source-refresh.md) | 已切换到 v1.2「craft」单基线（10 张：去框 / 留白 / 柔投影 / 段控主题）；v1 / v1.1 / v1.1 暗色旧画板已从画布删除，留存 git 历史 |
-| 灰玉品牌视觉 | [grayjade-brand-refresh.md](../features/grayjade-brand-refresh.md) | 首页桌面四轮视觉校正与 390px 移动首版已完成，等待视觉复核；React 暂不修改 |
-| React 与设计源对照校准 | [react-design-alignment.md](../features/react-design-alignment.md) | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
+| 灰玉品牌视觉 | [grayjade-brand-refresh.md](../features/grayjade-brand-refresh.md) | 桌面与移动设计已确认，React 首页已实现并通过双端浏览器复核 |
+| React 与设计源对照校准 | [react-design-alignment.md](../features/react-design-alignment.md) | 历史基线已完成；首页现由灰玉目标替代，其他页面继续保留 craft 基线 |
 | craft 视觉基线落地 | [craft-visual-refresh.md](../features/craft-visual-refresh.md) | Phase 0–5 已全部落地并通过全站三态终验 |
 | 家族统一 UI 规范 | [family-ui-spec.md](../features/family-ui-spec.md) | v26.7.3：默认品牌参考切换为灰玉，移除项目配色 / 接入 / 进度治理，参考 UI 归入规范目录 |
 
 ## 当前活跃目标
 
-当前没有新的页面功能、下载、seasonal 或部署目标。灰玉品牌方向已完成首页桌面四轮视觉校正与 390px 移动首版：标题去除解释型副标题，Hero 右侧由抽象环形矩阵改为 Radish 社区内容舞台与五轨索引，五项目正文改为不对称生态图谱，Mascot 改为透明立绘舞台，没有品牌依据的临时几何符号已经移除。当前等待视觉复核；确认后再决定是否扩展暗色、其他页面或 React 实现。
+当前没有新的下载、seasonal 或部署目标。灰玉品牌方向已完成首页桌面四轮视觉校正、390px 移动稿和 React 双端实现：标题去除解释型副标题，Hero 使用可切换单项目内容舞台与五轨索引，正文使用不对称生态图谱，Mascot 使用透明立绘舞台，没有品牌依据的临时几何符号已经移除。`1440x900` 与 `390x844` 应用内浏览器复核、9 路由 HTTP smoke 和本地发布检查均通过；当前等待首页实现验收意见，暗色精确化和其他页面视觉升级暂不展开。
 
 family-ui 同步收敛为通用规范与参考资料，详见 [family-ui-spec.md](../features/family-ui-spec.md)。它不再分配具体项目配色、不规定其他项目接入方式，也不记录其他项目进度。
 
@@ -55,9 +55,9 @@ craft 视觉基线落地已完成，详见 [craft-visual-refresh.md](../features
 
 本阶段优先级：
 
-1. 评审 `radishx-site-v1.pen` 的桌面四轮方案与 390px 移动首版，重点检查 Hero 项目舞台、五项目单列节奏和萝小白舞台。
-2. 用户确认前不改 React 页面、不扩展其余设计页。
-3. 页面代码、公开图片资源、Vercel 配置或域名策略没有变化时，不重复触发完整线上截图级 smoke。
+1. 等待首页 React 实现验收意见，重点关注 Hero 项目舞台、移动单列节奏和 Mascot 品牌舞台。
+2. 用户确认前不扩展暗色精确稿、其他页面视觉或新的公开素材。
+3. 如只调整首页视觉细节，复用 `1440x900` 与 `390x844` 应用内浏览器复核，不重复触发线上发布流程。
 
 ## 当前不推进
 
@@ -125,7 +125,7 @@ craft 视觉基线落地已完成，详见 [craft-visual-refresh.md](../features
 1. 保持当前首版官网可发布状态，必要时复核文档、验证脚本和发布检查记录。
 2. 等待五个项目进入更适合公开展示的阶段，并补齐正式 Logo、真实截图、视频、Demo、下载页、文档站或 RadishMind 自有视觉等材料。
 3. 五个项目出现新的正式候选来源后，先按项目视觉素材准入清单补齐字段，再进入素材审核和 Web 优化。
-4. 如 React 页面继续调整或新增正式素材，先同步对应目标文档，再通过 Pencil 工具维护桌面与移动 v1.2 craft 画板。
+4. 如 React 页面继续调整或新增正式素材，先同步对应目标文档，再通过 Pencil 工具维护 `radishx-site-v1.pen` 的桌面与移动灰玉画板。
 5. 如进入新的部署阶段或页面 / 资源发生变化，线上 HTTP smoke 可复用当前脚本复跑确认；截图级发布检查使用 Playwright + 本机 Chrome 覆盖桌面与移动端。
 6. 如需使用 seasonal 图，先选择具体活动目标并确认上线 / 下线时间、页面位置、文案、授权和撤下策略，再生成 Web 版本。
 7. 后续只有首页视觉再次明显变化或社交预览目标变化时，再评估 Open Graph 分享预览图。

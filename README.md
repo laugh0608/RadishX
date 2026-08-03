@@ -2,7 +2,7 @@
 
 RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 RadishX 官网根站点，通过 GitHub 托管代码，并使用 Vercel 免费额度部署；当前主域为 <https://radishx.com/>，`www.radishx.com` 作为兼容入口跳转到根域。
 
-当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、五个项目详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、公开图片和 family-ui 双层样式 token。React 仍维持 `radishx-site-v0.pen` 对应的 v1.2 craft 基线；新的 `radishx-site-v1.pen` 已完成首页桌面四轮视觉校正与 390px 移动首版，采用干净标题、项目内容舞台、不对称生态图谱和透明萝小白立绘舞台，等待视觉复核后再决定是否实现。官网功能开发仍处于等待期，不继续扩展新页面、素材入口、下载能力或 seasonal 活动。
+当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、五个项目详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、公开图片和 family-ui 双层样式 token。`radishx-site-v1.pen` 的首页桌面与 390px 移动灰玉方案已落地 React：使用干净标题、可切换项目内容舞台、不对称生态图谱和透明萝小白立绘舞台；其余页面继续保留 v1.2 craft 信息架构。官网当前等待首页实现验收意见，不继续扩展新页面、素材入口、下载能力或 seasonal 活动。
 
 ## 已确认方向
 
@@ -11,7 +11,7 @@ RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 Rad
 - 页面结构：首页 + 五个项目详情页 + About 页面 + 虚拟形象页面
 - 官网气质：偏创意品牌、游戏感和视觉冲击，参考 Apple 官网的克制文案、大幅视觉、清晰节奏和强产品呈现，同时继承 Radish 的淡雅新中式、纸感、印色感和低饱和轻纹样
 - 家族 UI 规范：`docs/design/family-ui/` 提供 family-ui v26.7.3 通用视觉原则、参考 token、组件形态与 UI 参考，不分配具体项目配色，也不跟踪其他项目的采用进度
-- 设计流程：保留 `docs/design/sources/radishx-site-v0.pen` 作为已落地历史基线；新方向先在 `docs/design/sources/radishx-site-v1.pen` 评审，确认后再进入 React 实现
+- 设计流程：保留 `docs/design/sources/radishx-site-v0.pen` 作为历史基线；首页新方向在 `docs/design/sources/radishx-site-v1.pen` 评审确认后已进入 React 实现
 - 前端实现：已建立 `src/` 推荐目录结构，使用轻量路由表实现 `/`、五个项目页、`/mascot` 和 `/about`
 - 素材使用：首批 Mascot / About 图片、项目代表图、表情 / 贴纸整图预览已审核并生成 Web 版本；后续截图、Logo、角色图、单张贴纸或活动图正式用于页面前仍需先审核具体选图
 - GitHub 仓库：公开仓库
@@ -20,6 +20,8 @@ RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 Rad
 ## 当前开发节奏
 
 RadishX 官网首版已经完成当前阶段需要承载的内容：项目矩阵、五个项目介绍页、Mascot 页、About 页、基础 SEO、发布检查和设计源同步。后续不为了保持开发动作而继续新增功能。
+
+2026-08-03 已完成首页灰玉视觉升级、共享移动菜单和双端本地浏览器复核；当前先等待首页验收意见，再决定是否推进暗色精确设计或其他页面视觉升级。
 
 下一轮官网开发应等待 Radish、RadishCatalyst、RadishFlow、RadishMind 和 RadishLex 各自开发到更适合公开展示的阶段，并补齐正式材料后再启动。可触发恢复开发的材料包括：
 
@@ -178,6 +180,7 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 - `public/images/mascot/radish-child-standing-white-dress-tall-web.jpg`
 - `public/images/mascot/radish-mature-design-sheet-web.jpg`
 - `public/images/mascot/radish-mature-standing-white-dress-web.jpg`
+- `public/images/mascot/radish-mature-standing-grayjade-v1-transparent.png`：首页 Mascot 舞台透明完全体立绘，只用于官网展示，不开放下载。
 - `public/images/mascot/radish-origin-icon-web.jpg`
 - `public/images/mascot/radish-child-outfit-variants-web.jpg`
 - `public/images/mascot/radish-child-expression-sheet-grid-web.jpg`
@@ -211,10 +214,10 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 第一版已按静态多页面官网实现：
 
 1. 顶部导航：RadishX、Projects、Mascot、About、GitHub。
-2. 首页首屏：Radish Orbit 项目星图 + 已审核可爱Q版站姿中心视觉锚点。
-3. 首页项目区：五个项目作为大幅 band 入口，保留 GitHub、未来域名和素材边界说明。
+2. 首页首屏：灰玉纯标题 + 可切换单项目内容舞台 + 五项目索引，支持鼠标与键盘操作。
+3. 首页项目区：五个项目使用社区轨道、工业场景、流程蓝图、节点网络和中文输入路径五种独立视觉。
 4. 项目详情页：每页围绕定位、当前状态、公开文档、关键能力、素材审核和项目矩阵关系组织，并提供 Hero 下方站内导览。
 5. Mascot 页：展示三种形态、主视觉、Gallery 整图预览、首批单张表情候选预览和使用边界，不提供下载入口。
 6. About 页：联系方式、微信公众号二维码、GitHub 仓库入口和域名边界。
 
-当前阶段已进入 React 官网首版实现后的发布准备、文档一致性维护和公开素材治理等待期。五个项目当前使用 RadishX 统一风格代码内临时项目标识，不声明为正式 Logo；未审核图片、外部参考图、活动图和可独立传播素材不进入正式页面实现。下一轮功能开发等待五个项目自身进展和正式材料补齐后再启动。
+首页灰玉桌面与移动实现已通过本地发布检查、9 路由 HTTP smoke 和应用内浏览器复核，当前等待视觉验收意见。五个项目当前使用 RadishX 统一风格代码内临时项目标识，不声明为正式 Logo；未审核图片、外部参考图、活动图和可独立传播素材不进入正式页面实现。下一轮功能开发等待明确的首页反馈、五个项目自身进展或正式材料补齐后再启动。

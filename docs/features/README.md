@@ -12,7 +12,7 @@
 
 ## 当前开发节奏
 
-官网首版功能已经收束，当前不再主动扩展新页面、素材入口、下载能力或 seasonal 活动。2026-07-31 新增的灰玉品牌视觉目标只推进 family-ui 通用规范与单页 Pencil 评审，不修改 React 页面。
+官网首版功能和 2026-08-03 灰玉首页升级已经收束，当前不再主动扩展新页面、素材入口、下载能力或 seasonal 活动。下一步先等待首页 React 实现验收意见。
 
 在恢复功能开发前，只推进发布复核、文档一致性、验证脚本维护和必要的小范围质量修正。任何新目标都应先更新对应 `docs/features/*.md`，再进入设计源、React 实现和验证。
 
@@ -20,7 +20,7 @@
 
 | 文档 | 目标 | 状态 |
 | --- | --- | --- |
-| [home-hero-visual.md](home-hero-visual.md) | 首页首屏、Radish Orbit 和主视觉替换 | 站姿中心视觉锚点已接入，OG 已评估暂不替换 |
+| [home-hero-visual.md](home-hero-visual.md) | 首页首屏、项目内容舞台和主视觉 | 灰玉项目舞台已实现并通过双端复核，OG 暂不替换 |
 | [project-detail-pages.md](project-detail-pages.md) | 五个项目详情页内容、视觉、公开文档入口和公开素材边界 | 首版、站内导览与 craft Phase 3 已完成 |
 | [project-visual-asset-readiness.md](project-visual-asset-readiness.md) | 五个项目正式 Logo、截图、视频和自有视觉准入准备 | 准入清单已建立，等待五项目开发成熟和新的正式候选素材 |
 | [mascot-page.md](mascot-page.md) | Mascot 虚拟形象页、三形态和 Gallery | Gallery / Usage、首批单张表情与 craft Phase 4 视觉收敛已完成 |
@@ -28,8 +28,8 @@
 | [asset-governance.md](asset-governance.md) | 素材审核、Web 优化和 `public/images` 准入 | Mascot 首批单张表情 Web 展示图已接入，下载、素材包和外部分发继续关闭 |
 | [visual-qa-and-release.md](visual-qa-and-release.md) | 本地 / 线上视觉 QA、构建和发布检查 | craft Phase 5 本地 54 组合终验、9 路由 HTTP smoke 与既有线上发布检查已完成 |
 | [design-source-refresh.md](design-source-refresh.md) | Pencil 设计源精确化与 craft 基线 | 已切换到 v1.2 craft 单基线，保留 10 张桌面 / 移动 / 暗色画板 |
-| [grayjade-brand-refresh.md](grayjade-brand-refresh.md) | 灰玉品牌视觉与 `radishx-site-v1.pen` 单页评审 | 二轮创意重构已完成，等待视觉复核；React 暂不修改 |
-| [react-design-alignment.md](react-design-alignment.md) | React 页面与 v1.1 设计源对照校准 | 已完成，首页项目 band、关键媒体加载和三页独立移动稿对照已完成 |
+| [grayjade-brand-refresh.md](grayjade-brand-refresh.md) | 灰玉品牌视觉与 `radishx-site-v1.pen` 首页落地 | 桌面与移动设计已确认，React 首页已实现并通过双端复核 |
+| [react-design-alignment.md](react-design-alignment.md) | React 页面与 v1.1 历史设计源对照校准 | 历史基线已完成；首页现由灰玉目标替代，其他页面继续保留 craft 基线 |
 | [craft-visual-refresh.md](craft-visual-refresh.md) | v1.2 craft 视觉基线落进 React | Phase 0–5 已全部完成并通过全站三态终验 |
 | [family-ui-spec.md](family-ui-spec.md) | Radish 家族统一 UI / 视觉参考规范 | v26.7.3：灰玉默认品牌参考、通用规范边界、参考 UI 同目录归档 |
 

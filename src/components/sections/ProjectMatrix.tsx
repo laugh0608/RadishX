@@ -1,19 +1,38 @@
 import { projects } from "../../data/projects";
-import { SectionHeader } from "../ui/SectionHeader";
-import { ProjectBand } from "./ProjectBand";
+import { RouteLink } from "../ui/RouteLink";
+import { HomeProjectVisual } from "./HomeProjectVisual";
+
+function projectNumber(index: number) {
+  return String(index + 1).padStart(2, "0");
+}
 
 export function ProjectMatrix() {
   return (
-    <section className="section section--surface" id="projects">
-      <div className="section__inner">
-        <SectionHeader
-          eyebrow="Projects"
-          title="五个方向，一组连续的 Radish 生态"
-          description="首页按大幅 band 展示项目关系，项目详情页再承接状态、入口和后续独立域名。"
-        />
-        <div className="project-matrix">
+    <section className="home-projects" id="projects" aria-labelledby="home-projects-title">
+      <div className="home-projects__inner">
+        <header className="home-section-title">
+          <p className="home-kicker">Projects</p>
+          <h2 id="home-projects-title">Radish 生态</h2>
+        </header>
+
+        <div className="home-project-grid">
           {projects.map((project, index) => (
-            <ProjectBand key={project.id} project={project} index={index} />
+            <article key={project.id} className={`home-project-card home-project-card--${project.tone}`}>
+              <RouteLink to={project.path} aria-label={`查看 ${project.name} 项目页`}>
+                <div className="home-project-card__meta">
+                  <span>{projectNumber(index)}</span>
+                  <span>{project.status}</span>
+                </div>
+                <HomeProjectVisual context="card" project={project} />
+                <div className="home-project-card__identity">
+                  <div>
+                    <h3>{project.name}</h3>
+                    <span>{project.futureDomain}</span>
+                  </div>
+                  <span className="home-project-card__arrow" aria-hidden="true">↗</span>
+                </div>
+              </RouteLink>
+            </article>
           ))}
         </div>
       </div>

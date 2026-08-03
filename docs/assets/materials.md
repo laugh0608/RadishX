@@ -25,7 +25,7 @@
 - `mature/`：虚拟形象完全体。
 - `seasonal/`：节日和运营素材。
 
-2026-07-31 新增 `assets/avatars/mature/radish-mature-standing-grayjade-v1-candidate-transparent.png`：以现有完全体站姿图和设定图作为身份、服装与配色参考，通过 imagegen 生成并完成透明底处理。该文件当前只用于 `radishx-site-v1.pen` 二轮视觉评审，不进入 `public/`、React 页面、下载区或对外素材包，也不替代已经确认的完全体设定图。
+2026-07-31 新增 `assets/avatars/mature/radish-mature-standing-grayjade-v1-candidate-transparent.png`：以现有完全体站姿图和设定图作为身份、服装与配色参考，通过 imagegen 生成并完成透明底处理。2026-08-03 随 `radishx-site-v1.pen` 桌面与移动方案确认，升级为首页 Mascot 品牌舞台已确认素材，Web 副本为 `public/images/mascot/radish-mature-standing-grayjade-v1-transparent.png`。它只用于官网展示，不进入下载区、素材包或外部分发，也不替代已经确认的完全体设定图。
 
 社交媒体素材：
 
@@ -77,10 +77,10 @@
 | --- | --- | --- | --- |
 | 首页 / Mascot 主视觉 | `assets/avatars/child/radish-child-safe-design-sheet-v1.png` | 已确认 | 可爱Q版安全设定图，适合用于 Mascot 页设定展示和可爱Q版审核口径说明。Web 版本：`public/images/mascot/radish-child-safe-design-sheet-v1-web.jpg`。 |
 | 首页 / Mascot 主视觉 | `assets/avatars/child/radish-child-standing-white-dress.png` | 已确认 | 可爱Q版站姿，适合轻量主视觉或形态卡片。Web 版本：`public/images/mascot/radish-child-standing-white-dress-web.jpg`。 |
-| 首页 / Mascot 主视觉 | `assets/avatars/child/radish-child-standing-white-dress-tall.png` | 已确认 | 可爱Q版站姿高分辨率版本，已用于首页首屏中心视觉锚点和首页 Mascot 入口。Web 版本：`public/images/mascot/radish-child-standing-white-dress-tall-web.jpg`。 |
+| Mascot 辅助视觉 / 历史首页 | `assets/avatars/child/radish-child-standing-white-dress-tall.png` | 已确认 | 可爱Q版站姿高分辨率版本，曾用于 v1.2 craft 首页中心视觉锚点；灰玉首页不再使用，Web 版本继续保留于 `public/images/mascot/radish-child-standing-white-dress-tall-web.jpg`。 |
 | 首页 / Mascot 主视觉 | `assets/avatars/mature/radish-mature-design-sheet.png` | 已确认 | 虚拟形象完全体设定图，适合品牌设定展示和 Open Graph 首版分享预览来源。Web 版本：`public/images/mascot/radish-mature-design-sheet-web.jpg`。 |
 | 首页 / Mascot 主视觉 | `assets/avatars/mature/radish-mature-standing-white-dress.png` | 已确认 | 虚拟形象完全体站姿，已用于 Mascot 页主视觉和完全体形态卡片。Web 版本：`public/images/mascot/radish-mature-standing-white-dress-web.jpg`。 |
-| v1 Pencil Mascot 舞台 | `assets/avatars/mature/radish-mature-standing-grayjade-v1-candidate-transparent.png` | 仅设计评审 | 基于已确认完全体设定重新生成的透明立绘候选，仅接入 `radishx-site-v1.pen`；身份特征保持白灰短发、萝卜叶发饰、白裙和灰玉装饰。未进入 `public/`，正式页面使用前仍需单独确认。 |
+| 首页 / v1 Mascot 舞台 | `assets/avatars/mature/radish-mature-standing-grayjade-v1-candidate-transparent.png` | 已确认 | 基于已确认完全体设定重新生成的透明立绘；身份特征保持白灰短发、萝卜叶发饰、白裙和灰玉装饰。已接入 `radishx-site-v1.pen`，Web 副本为 `public/images/mascot/radish-mature-standing-grayjade-v1-transparent.png`，只用于官网展示，不开放下载。 |
 | Mascot 原始形象 | `assets/avatars/origin/radish-origin-icon.jpg` | 已确认 | 适合用作原始形象图标、小印章或形态起点。Web 版本：`public/images/mascot/radish-origin-icon-web.jpg`。 |
 | Mascot Gallery | `assets/avatars/child/radish-child-outfit-variants.png` | 已确认 | 适合服装变体展示，不建议做首页首屏。Web 版本：`public/images/mascot/radish-child-outfit-variants-web.jpg`。 |
 | Mascot Gallery | `assets/avatars/child/radish-child-expression-sheet-grid.png` | 已确认 | 适合表情 Gallery，整图预览继续保留来源与审核边界。Web 版本：`public/images/mascot/radish-child-expression-sheet-grid-web.jpg`。 |
@@ -124,14 +124,14 @@
 
 当前缺口：
 
-- 首页首屏继续以 Radish Orbit 项目星图为主，已确认可爱Q版站姿高分辨率版本作为首页中心视觉锚点和 Mascot 辅助视觉；本轮不替换 Open Graph 分享预览图。
+- 首页首屏已改为单项目内容舞台与五项目索引，Radish 使用已确认项目角色视觉；Mascot 收束区使用已确认透明完全体立绘。本轮仍不替换 Open Graph 分享预览图。
 - Radish、RadishCatalyst、RadishFlow 详情页已接入审核后的代表性图片；这些图片不提供下载入口，也不声明可自由复用。
 - RadishMind 详情页已使用代码内 `Evaluation loop` 替代通用占位；仍等待项目自有 Logo、截图或代表性图片素材。
 - RadishLex 详情页已使用代码内 `Input pipeline`；仍等待项目自有 Logo、候选窗 / manager 截图或代表性图片素材。
 - 五个项目都未发现可直接公开的视频素材；后续如需接入视频，必须单独审核来源、字幕/水印、压缩方案和移动端加载策略。
 - 五个项目仍缺独立稳定 Logo；后续如果项目有独立 Logo，再按项目替换当前代码内临时项目标识。
 - 五项目视觉素材准入清单已建立；当前没有新的正式候选来源时，不主动迁入兄弟项目素材，不替换代码内临时项目标识，不继续扩展项目素材入口。
-- 当前首页项目 band、项目详情页 Hero、Public Surface 和矩阵回流卡片已使用代码内临时项目标识；这些标识只用于官网信息识别，不作为项目正式 Logo 或素材下载内容。
+- 当前首页不再使用项目 band 或临时项目标识；项目详情页 Hero、Public Surface 和矩阵回流卡片中的代码内标识仍只用于官网信息识别，不作为项目正式 Logo 或素材下载内容。
 - Mascot 页首批主图、站姿图和 Gallery 图片已生成 Web 版本并进入 `public/images/`；页面三形态区已展示当前用途、审核状态、使用边界和后续素材需求。后续新增素材仍需继续审核，且不要覆盖原始素材。
 - 可爱Q版表情格和 4 张贴纸横图已进入 Mascot Gallery 整图预览；首批 10 张可爱Q版单张表情已生成 Web 展示图并进入 `/mascot` 候选预览区；不提供下载入口、不声明可自由复用。
 - `seasonal/` 下 6 张节日图已完成评估；全部继续只作为活动 Banner、彩蛋或运营内容候选，不进入长期 Gallery、默认主视觉或当前实现；使用前需单独确认具体活动窗口、页面位置、文案和授权。

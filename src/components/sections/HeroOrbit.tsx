@@ -1,83 +1,119 @@
-import { homeVisualAssetSlots } from "../../data/homeVisuals";
-import { projects } from "../../data/projects";
+import { type KeyboardEvent, useRef, useState } from "react";
+
+import type { ProjectRouteId } from "../../app/routes";
+import { projectById, projects } from "../../data/projects";
 import { RouteLink } from "../ui/RouteLink";
-import { StatusChip } from "../ui/StatusChip";
+import { HomeProjectVisual } from "./HomeProjectVisual";
+
+function projectNumber(index: number) {
+  return String(index + 1).padStart(2, "0");
+}
 
 export function HeroOrbit() {
+  const [activeProjectId, setActiveProjectId] = useState<ProjectRouteId>("radish");
+  const tabsRef = useRef<HTMLDivElement>(null);
+  const activeProject = projectById[activeProjectId];
+  const activeIndex = projects.findIndex((project) => project.id === activeProjectId);
+
+  const activateProject = (index: number, moveFocus = false) => {
+    const normalizedIndex = (index + projects.length) % projects.length;
+    setActiveProjectId(projects[normalizedIndex].id);
+
+    if (moveFocus) {
+      window.requestAnimationFrame(() => {
+        const buttons = tabsRef.current?.querySelectorAll<HTMLButtonElement>("[role='tab']");
+        buttons?.[normalizedIndex]?.focus();
+      });
+    }
+  };
+
+  const handleTabKeyDown = (event: KeyboardEvent<HTMLButtonElement>, index: number) => {
+    if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+      event.preventDefault();
+      activateProject(index + 1, true);
+    } else if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+      event.preventDefault();
+      activateProject(index - 1, true);
+    } else if (event.key === "Home") {
+      event.preventDefault();
+      activateProject(0, true);
+    } else if (event.key === "End") {
+      event.preventDefault();
+      activateProject(projects.length - 1, true);
+    }
+  };
+
   return (
-    <section className="hero-section">
-      <div className="hero-section__content">
-        <div className="hero-section__copy">
-          <p className="eyebrow">radishx.com</p>
-          <h1>Radish 系列项目矩阵</h1>
-          <p>
-            一个温润、克制、带一点游戏感的统一入口，连接内容社区、异星工业游戏、流程模拟软件、智能工具实验与中文输入系统。
-          </p>
-          <div className="hero-section__actions">
+    <section className="home-hero" aria-labelledby="home-hero-title">
+      <div className="home-hero__inner">
+        <div className="home-hero__copy">
+          <p className="home-kicker">radishx.com</p>
+          <h1 id="home-hero-title">
+            Radish
+            <span>项目矩阵</span>
+          </h1>
+          <div className="home-hero__actions">
             <RouteLink className="button button--primary" to="/#projects">
-              查看项目
+              浏览项目
+              <span aria-hidden="true">↓</span>
             </RouteLink>
             <RouteLink className="button button--secondary" to="/mascot">
               认识萝小白
+              <span aria-hidden="true">↗</span>
             </RouteLink>
           </div>
-          <div className="hero-section__chips" aria-label="站点状态">
-            <StatusChip tone="brand">Source Available</StatusChip>
-            <StatusChip tone="ink">Vite + React + TypeScript</StatusChip>
-            <StatusChip tone="warning">Vercel Ready</StatusChip>
-          </div>
+          <p className="home-hero__meta">RADISHX / 05 PROJECTS / SOURCE AVAILABLE</p>
         </div>
-        <div className="orbit-visual" aria-label="RadishX 项目星图">
-          <div className="orbit-visual__map">
-            <figure className="orbit-visual__mascot-anchor">
-              <img
-                src="/images/mascot/radish-child-standing-white-dress-tall-web.jpg"
-                width="1254"
-                height="1254"
-                alt="萝小白可爱Q版站姿图"
-                loading="eager"
-                decoding="async"
-              />
-              <figcaption>
-                <span>RadishX Visual Anchor</span>
-                <strong>萝小白 · 可爱Q版站姿</strong>
-              </figcaption>
-            </figure>
-            {projects.map((project, index) => (
-              <RouteLink
-                key={project.id}
-                className={`orbit-visual__project orbit-visual__project--${project.tone} orbit-visual__project--${index}`}
-                to={project.path}
-                aria-label={`查看 ${project.name} 项目页`}
-              >
-                <strong>{project.name}</strong>
-                <span>{project.orbitLabel}</span>
-              </RouteLink>
-            ))}
+
+        <article className={`home-project-stage home-project-stage--${activeProject.tone}`}>
+          <header className="home-project-stage__header">
+            <div>
+              <span>{projectNumber(activeIndex)} / {String(projects.length).padStart(2, "0")}</span>
+              <p>{activeProject.status}</p>
+            </div>
+            <RouteLink to={activeProject.path} aria-label={`查看 ${activeProject.name} 项目页`}>
+              查看项目
+              <span aria-hidden="true">↗</span>
+            </RouteLink>
+          </header>
+
+          <div
+            key={activeProject.id}
+            className="home-project-stage__panel"
+            id="home-project-stage-panel"
+            role="tabpanel"
+            aria-labelledby={`home-project-tab-${activeProject.id}`}
+          >
+            <div className="home-project-stage__identity">
+              <p>{activeProject.orbitLabel}</p>
+              <h2>{activeProject.name}</h2>
+            </div>
+            <HomeProjectVisual context="stage" project={activeProject} />
           </div>
-          <div className="orbit-visual__asset-rail" aria-label="首页素材接入状态">
-            {homeVisualAssetSlots.map((slot) => (
-              <article key={slot.label} className="orbit-visual__asset-slot">
-                <div className="orbit-visual__asset-head">
-                  <span>{slot.label}</span>
-                  <StatusChip tone={slot.statusTone}>{slot.status}</StatusChip>
-                </div>
-                <div className="orbit-visual__asset-copy">
-                  <strong>{slot.title}</strong>
-                  <p>{slot.note}</p>
-                </div>
-                <dl className="orbit-visual__asset-checks" aria-label={`${slot.title} 状态检查项`}>
-                  {slot.checkpoints.map((checkpoint) => (
-                    <div key={checkpoint.label}>
-                      <dt>{checkpoint.label}</dt>
-                      <dd>{checkpoint.value}</dd>
-                    </div>
-                  ))}
-                </dl>
-              </article>
-            ))}
+
+          <div className="home-project-stage__tabs" ref={tabsRef} role="tablist" aria-label="切换首页项目舞台">
+            {projects.map((project, index) => {
+              const isActive = project.id === activeProject.id;
+
+              return (
+                <button
+                  key={project.id}
+                  id={`home-project-tab-${project.id}`}
+                  type="button"
+                  role="tab"
+                  aria-controls="home-project-stage-panel"
+                  aria-selected={isActive}
+                  tabIndex={isActive ? 0 : -1}
+                  onClick={() => activateProject(index)}
+                  onKeyDown={(event) => handleTabKeyDown(event, index)}
+                >
+                  <span>{projectNumber(index)}</span>
+                  <strong>{project.shortName}</strong>
+                </button>
+              );
+            })}
           </div>
-        </div>
+        </article>
       </div>
     </section>
   );
