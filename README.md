@@ -2,7 +2,7 @@
 
 RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 RadishX 官网根站点，通过 GitHub 托管代码，并使用 Vercel 免费额度部署；当前主域为 <https://radishx.com/>，`www.radishx.com` 作为兼容入口跳转到根域。
 
-当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、五个项目详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、公开图片和 family-ui 双层样式 token。React 仍维持 `radishx-site-v0.pen` 对应的 v1.2 craft 基线；新的 `radishx-site-v1.pen` 已完成首页桌面二轮创意重构，采用干净标题、不对称项目生态图谱和透明萝小白立绘舞台，等待视觉复核后再决定是否扩展和实现。官网功能开发仍处于等待期，不继续扩展新页面、素材入口、下载能力或 seasonal 活动。
+当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、五个项目详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、公开图片和 family-ui 双层样式 token。React 仍维持 `radishx-site-v0.pen` 对应的 v1.2 craft 基线；新的 `radishx-site-v1.pen` 已完成首页桌面四轮视觉校正与 390px 移动首版，采用干净标题、项目内容舞台、不对称生态图谱和透明萝小白立绘舞台，等待视觉复核后再决定是否实现。官网功能开发仍处于等待期，不继续扩展新页面、素材入口、下载能力或 seasonal 活动。
 
 ## 已确认方向
 

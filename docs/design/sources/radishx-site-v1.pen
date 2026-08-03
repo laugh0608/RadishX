@@ -1,5 +1,5 @@
 {
-  "version": "2.14",
+  "version": "2.15",
   "children": [
     {
       "type": "frame",
@@ -404,28 +404,11 @@
             {
               "type": "frame",
               "id": "afVPM",
-              "name": "Orbit Panel",
+              "name": "Project Stage · Radish",
+              "clip": true,
               "width": 740,
               "height": 560,
-              "fill": {
-                "type": "gradient",
-                "gradientType": "linear",
-                "enabled": true,
-                "rotation": 150,
-                "size": {
-                  "height": 1
-                },
-                "colors": [
-                  {
-                    "color": "$rx-bg-surface",
-                    "position": 0
-                  },
-                  {
-                    "color": "$rx-brand-soft",
-                    "position": 1
-                  }
-                ]
-              },
+              "fill": "$rx-brand-soft",
               "cornerRadius": 20,
               "effect": {
                 "type": "shadow",
@@ -441,395 +424,593 @@
               "layout": "none",
               "children": [
                 {
-                  "type": "ellipse",
-                  "id": "ISiSx",
-                  "x": 150,
-                  "y": 60,
-                  "name": "Ring Outer",
-                  "fill": "#ffffff00",
-                  "width": 440,
-                  "height": 440,
-                  "stroke": "$rx-pattern-line",
-                  "strokeWidth": 1
+                  "type": "text",
+                  "id": "ockX0",
+                  "x": 28,
+                  "y": 24,
+                  "name": "Stage Index",
+                  "fill": "$rx-brand-primary",
+                  "content": "PROJECT STAGE  /  01",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "650",
+                  "letterSpacing": 1.6
                 },
                 {
-                  "type": "ellipse",
-                  "id": "q5iNmj",
-                  "x": 230,
-                  "y": 140,
-                  "name": "Ring Inner",
-                  "fill": "#ffffff00",
-                  "width": 280,
-                  "height": 280,
-                  "stroke": "$rx-pattern-line",
-                  "strokeWidth": 1
+                  "type": "text",
+                  "id": "TnUxf",
+                  "x": 540,
+                  "y": 24,
+                  "name": "Stage Domain",
+                  "fill": "$rx-text-secondary",
+                  "content": "hub.radishx.com  ↗",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "550",
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "nwMBO",
+                  "x": 28,
+                  "y": 48,
+                  "name": "Active Project Title",
+                  "fill": "$rx-text-primary",
+                  "content": "Radish",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 42,
+                  "fontWeight": "650"
                 },
                 {
                   "type": "frame",
-                  "id": "TXq3X",
-                  "x": 276,
-                  "y": 150,
-                  "name": "Mascot Anchor",
-                  "width": 188,
-                  "height": 256,
-                  "fill": "$rx-bg-surface",
+                  "id": "IgNTQ",
+                  "x": 28,
+                  "y": 104,
+                  "name": "Radish Community Canvas",
+                  "clip": true,
+                  "width": 684,
+                  "height": 348,
+                  "fill": "#fffdf8",
                   "cornerRadius": 16,
                   "effect": {
                     "type": "shadow",
                     "shadowType": "outer",
-                    "color": "#5b422a26",
+                    "color": "#5b422a1a",
                     "offset": {
                       "x": 0,
-                      "y": 8
+                      "y": 10
                     },
-                    "blur": 22,
-                    "spread": -6
+                    "blur": 24,
+                    "spread": -8
                   },
-                  "layout": "vertical",
-                  "gap": 10,
-                  "padding": 12,
+                  "layout": "none",
                   "children": [
                     {
+                      "type": "text",
+                      "id": "Q5sqv",
+                      "x": 22,
+                      "y": 4,
+                      "name": "Community Back Type",
+                      "fill": "#5d6c570d",
+                      "content": "COMMUNITY",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 62,
+                      "fontWeight": "700",
+                      "letterSpacing": -2
+                    },
+                    {
                       "type": "rectangle",
-                      "cornerRadius": 10,
-                      "id": "BqOj9",
-                      "name": "Mascot Image",
+                      "id": "y6yAOH",
+                      "x": 444,
+                      "y": 26,
+                      "name": "Canvas Divider",
+                      "fill": "#5d6c5724",
+                      "width": 1,
+                      "height": 294
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "zFGgG",
+                      "x": 466,
+                      "y": 20,
+                      "name": "Radish Member Portrait",
                       "fill": {
                         "type": "image",
                         "enabled": true,
                         "url": "../../../public/images/mascot/radish-child-standing-white-dress-tall-web.jpg",
-                        "mode": "fit"
+                        "mode": "fill"
                       },
-                      "width": "fill_container",
-                      "height": 176
+                      "width": 192,
+                      "height": 286
                     },
                     {
                       "type": "text",
-                      "id": "MfUSq",
-                      "name": "Anchor Caption",
-                      "fill": "$rx-text-secondary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "萝小白 · 可爱Q版站姿",
-                      "textAlign": "center",
-                      "fontFamily": "$rx-font-body",
-                      "fontSize": 12,
-                      "fontWeight": "600"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "nrHOc",
-                  "x": 286,
-                  "y": 34,
-                  "name": "Orbit Radish",
-                  "width": 168,
-                  "fill": "$rx-bg-surface",
-                  "cornerRadius": 12,
-                  "effect": {
-                    "type": "shadow",
-                    "shadowType": "outer",
-                    "color": "#5b422a26",
-                    "offset": {
-                      "x": 0,
-                      "y": 8
+                      "id": "r3MzT",
+                      "x": 502,
+                      "y": 312,
+                      "name": "Member Caption",
+                      "fill": "$rx-text-muted",
+                      "content": "MEMBER  /  01",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.4
                     },
-                    "blur": 22,
-                    "spread": -6
-                  },
-                  "layout": "vertical",
-                  "gap": 7,
-                  "padding": 14,
-                  "children": [
                     {
                       "type": "frame",
-                      "id": "Qv2PZ",
-                      "name": "Head",
+                      "id": "m7USZ",
+                      "x": 26,
+                      "y": 66,
+                      "name": "Live Feed Label",
                       "gap": 8,
                       "alignItems": "center",
                       "children": [
                         {
                           "type": "ellipse",
-                          "id": "t9lsP6",
-                          "name": "Dot",
+                          "id": "qHFyv",
+                          "name": "Live Dot",
                           "fill": "$rx-accent-jade",
-                          "width": 8,
-                          "height": 8
+                          "width": 7,
+                          "height": 7
                         },
                         {
                           "type": "text",
-                          "id": "SKVOk",
-                          "name": "Name",
-                          "fill": "$rx-text-primary",
-                          "content": "Radish",
-                          "fontFamily": "$rx-font-heading",
-                          "fontSize": 15,
-                          "fontWeight": "760"
+                          "id": "wXp8d",
+                          "name": "Live Feed Text",
+                          "fill": "$rx-brand-primary",
+                          "content": "LIVE FEED",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "650",
+                          "letterSpacing": 1.4
                         }
                       ]
                     },
                     {
                       "type": "text",
-                      "id": "gEX60",
-                      "name": "Meta",
-                      "fill": "$rx-text-muted",
-                      "content": "社区与内容入口",
-                      "fontFamily": "$rx-font-body",
-                      "fontSize": 12,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "n03X1R",
-                  "x": 34,
-                  "y": 180,
-                  "name": "Orbit RadishCatalyst",
-                  "width": 168,
-                  "fill": "$rx-bg-surface",
-                  "cornerRadius": 12,
-                  "effect": {
-                    "type": "shadow",
-                    "shadowType": "outer",
-                    "color": "#5b422a26",
-                    "offset": {
-                      "x": 0,
-                      "y": 8
+                      "id": "F5sgj",
+                      "x": 26,
+                      "y": 88,
+                      "name": "Post Count",
+                      "fill": "$rx-text-primary",
+                      "content": "28",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 46,
+                      "fontWeight": "600"
                     },
-                    "blur": 22,
-                    "spread": -6
-                  },
-                  "layout": "vertical",
-                  "gap": 7,
-                  "padding": 14,
-                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qSMfI",
+                      "x": 92,
+                      "y": 101,
+                      "name": "Post Count Label",
+                      "fill": "$rx-text-muted",
+                      "content": "POSTS\nTODAY",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.2
+                    },
                     {
                       "type": "frame",
-                      "id": "dzhDV",
-                      "name": "Head",
-                      "gap": 8,
+                      "id": "qWkST",
+                      "x": 26,
+                      "y": 148,
+                      "name": "Activity Row 1",
+                      "width": 392,
+                      "height": 54,
+                      "gap": 12,
                       "alignItems": "center",
                       "children": [
                         {
-                          "type": "ellipse",
-                          "id": "fu0PL",
-                          "name": "Dot",
-                          "fill": "$rx-accent-earth",
-                          "width": 8,
-                          "height": 8
+                          "type": "frame",
+                          "id": "u7OvCJ",
+                          "name": "Activity Avatar 1",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "$rx-brand-primary",
+                          "cornerRadius": 999,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Ge4nk",
+                              "name": "Avatar Initial 1",
+                              "fill": "#fffdf8",
+                              "content": "萝",
+                              "fontFamily": "$rx-font-serif",
+                              "fontSize": 14,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "K9Fua",
+                          "name": "Activity Copy 1",
+                          "width": 278,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "cENKI",
+                              "name": "Activity Title 1",
+                              "fill": "$rx-text-primary",
+                              "content": "分享了一篇新创作",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "WGTPZ",
+                              "name": "Activity Meta 1",
+                              "fill": "$rx-text-muted",
+                              "content": "萝卜酱  ·  作品",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 9,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
+                            }
+                          ]
                         },
                         {
                           "type": "text",
-                          "id": "HsiaA",
-                          "name": "Name",
-                          "fill": "$rx-text-primary",
-                          "content": "RadishCatalyst",
-                          "fontFamily": "$rx-font-heading",
-                          "fontSize": 15,
-                          "fontWeight": "760"
+                          "id": "mpi5m",
+                          "name": "Activity Time 1",
+                          "fill": "$rx-text-muted",
+                          "content": "09:42",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 9,
+                          "fontWeight": "500"
                         }
                       ]
                     },
                     {
-                      "type": "text",
-                      "id": "TaYvx",
-                      "name": "Meta",
-                      "fill": "$rx-text-muted",
-                      "content": "游戏与世界观",
-                      "fontFamily": "$rx-font-body",
-                      "fontSize": 12,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "dIRZG",
-                  "x": 538,
-                  "y": 180,
-                  "name": "Orbit RadishFlow",
-                  "width": 168,
-                  "fill": "$rx-bg-surface",
-                  "cornerRadius": 12,
-                  "effect": {
-                    "type": "shadow",
-                    "shadowType": "outer",
-                    "color": "#5b422a26",
-                    "offset": {
-                      "x": 0,
-                      "y": 8
+                      "type": "rectangle",
+                      "id": "x1iGUj",
+                      "x": 26,
+                      "y": 205,
+                      "name": "Activity Divider 1",
+                      "fill": "#5d6c571a",
+                      "width": 392,
+                      "height": 1
                     },
-                    "blur": 22,
-                    "spread": -6
-                  },
-                  "layout": "vertical",
-                  "gap": 7,
-                  "padding": 14,
-                  "children": [
                     {
                       "type": "frame",
-                      "id": "l3x3SB",
-                      "name": "Head",
-                      "gap": 8,
+                      "id": "LtJjX",
+                      "x": 26,
+                      "y": 210,
+                      "name": "Activity Row 2",
+                      "width": 392,
+                      "height": 54,
+                      "gap": 12,
                       "alignItems": "center",
                       "children": [
                         {
-                          "type": "ellipse",
-                          "id": "cD85W",
-                          "name": "Dot",
+                          "type": "frame",
+                          "id": "vc8AO",
+                          "name": "Activity Avatar 2",
+                          "width": 36,
+                          "height": 36,
                           "fill": "$rx-accent-ink",
-                          "width": 8,
-                          "height": 8
+                          "cornerRadius": 999,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "e75UG",
+                              "name": "Avatar Initial 2",
+                              "fill": "#fffdf8",
+                              "content": "北",
+                              "fontFamily": "$rx-font-serif",
+                              "fontSize": 14,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ZCIuv",
+                          "name": "Activity Copy 2",
+                          "width": 278,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dBEEq",
+                              "name": "Activity Title 2",
+                              "fill": "$rx-text-primary",
+                              "content": "加入「角色与世界观」讨论",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "T2v8E",
+                              "name": "Activity Meta 2",
+                              "fill": "$rx-text-muted",
+                              "content": "北原  ·  讨论",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 9,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
+                            }
+                          ]
                         },
                         {
                           "type": "text",
-                          "id": "dVEdd",
-                          "name": "Name",
-                          "fill": "$rx-text-primary",
-                          "content": "RadishFlow",
-                          "fontFamily": "$rx-font-heading",
-                          "fontSize": 15,
-                          "fontWeight": "760"
+                          "id": "d5Alo",
+                          "name": "Activity Time 2",
+                          "fill": "$rx-text-muted",
+                          "content": "09:18",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 9,
+                          "fontWeight": "500"
                         }
                       ]
                     },
                     {
-                      "type": "text",
-                      "id": "tlBXK",
-                      "name": "Meta",
-                      "fill": "$rx-text-muted",
-                      "content": "工程与流程画布",
-                      "fontFamily": "$rx-font-body",
-                      "fontSize": 12,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "N4ExI1",
-                  "x": 34,
-                  "y": 360,
-                  "name": "Orbit RadishMind",
-                  "width": 168,
-                  "fill": "$rx-bg-surface",
-                  "cornerRadius": 12,
-                  "effect": {
-                    "type": "shadow",
-                    "shadowType": "outer",
-                    "color": "#5b422a26",
-                    "offset": {
-                      "x": 0,
-                      "y": 8
+                      "type": "rectangle",
+                      "id": "ssThx",
+                      "x": 26,
+                      "y": 267,
+                      "name": "Activity Divider 2",
+                      "fill": "#5d6c571a",
+                      "width": 392,
+                      "height": 1
                     },
-                    "blur": 22,
-                    "spread": -6
-                  },
-                  "layout": "vertical",
-                  "gap": 7,
-                  "padding": 14,
-                  "children": [
                     {
                       "type": "frame",
-                      "id": "SQoot",
-                      "name": "Head",
-                      "gap": 8,
+                      "id": "yG22S",
+                      "x": 26,
+                      "y": 272,
+                      "name": "Activity Row 3",
+                      "width": 392,
+                      "height": 54,
+                      "gap": 12,
                       "alignItems": "center",
                       "children": [
                         {
-                          "type": "ellipse",
-                          "id": "J5UJy",
-                          "name": "Dot",
+                          "type": "frame",
+                          "id": "LzKp4",
+                          "name": "Activity Avatar 3",
+                          "width": 36,
+                          "height": 36,
                           "fill": "$rx-accent-purple",
-                          "width": 8,
-                          "height": 8
+                          "cornerRadius": 999,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "mRTXq",
+                              "name": "Avatar Initial 3",
+                              "fill": "#fffdf8",
+                              "content": "森",
+                              "fontFamily": "$rx-font-serif",
+                              "fontSize": 14,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "fwIXG",
+                          "name": "Activity Copy 3",
+                          "width": 278,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "R617B",
+                              "name": "Activity Title 3",
+                              "fill": "$rx-text-primary",
+                              "content": "收藏了新的灵感条目",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "y04a0y",
+                              "name": "Activity Meta 3",
+                              "fill": "$rx-text-muted",
+                              "content": "Mori  ·  收藏",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 9,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.5
+                            }
+                          ]
                         },
                         {
                           "type": "text",
-                          "id": "Q9u3v",
-                          "name": "Name",
-                          "fill": "$rx-text-primary",
-                          "content": "RadishMind",
-                          "fontFamily": "$rx-font-heading",
-                          "fontSize": 15,
-                          "fontWeight": "760"
+                          "id": "Iagdi",
+                          "name": "Activity Time 3",
+                          "fill": "$rx-text-muted",
+                          "content": "08:57",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 9,
+                          "fontWeight": "500"
                         }
                       ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "EPvE6",
-                      "name": "Meta",
-                      "fill": "$rx-text-muted",
-                      "content": "智能与工具编排",
-                      "fontFamily": "$rx-font-body",
-                      "fontSize": 12,
-                      "fontWeight": "normal"
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "id": "V2XUAt",
-                  "x": 538,
-                  "y": 360,
-                  "name": "Orbit RadishLex",
-                  "width": 168,
-                  "fill": "$rx-bg-surface",
+                  "id": "z7CxhV",
+                  "x": 28,
+                  "y": 476,
+                  "name": "Project Rail",
+                  "width": 684,
+                  "height": 58,
+                  "fill": "#33423b",
                   "cornerRadius": 12,
-                  "effect": {
-                    "type": "shadow",
-                    "shadowType": "outer",
-                    "color": "#5b422a26",
-                    "offset": {
-                      "x": 0,
-                      "y": 8
-                    },
-                    "blur": 22,
-                    "spread": -6
-                  },
-                  "layout": "vertical",
-                  "gap": 7,
-                  "padding": 14,
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "h6RBW",
-                      "name": "Head",
+                      "id": "q7u1ra",
+                      "name": "Project Rail RADISH",
+                      "width": 116,
+                      "height": 34,
+                      "layout": "vertical",
                       "gap": 8,
-                      "alignItems": "center",
                       "children": [
                         {
-                          "type": "ellipse",
-                          "id": "o8wm4",
-                          "name": "Dot",
+                          "type": "rectangle",
+                          "id": "bS2rX",
+                          "name": "Project Rail Line RADISH",
                           "fill": "$rx-accent-grayjade",
-                          "width": 8,
-                          "height": 8
+                          "width": "fill_container",
+                          "height": 2
                         },
                         {
                           "type": "text",
-                          "id": "jRDhX",
-                          "name": "Name",
-                          "fill": "$rx-text-primary",
-                          "content": "RadishLex",
-                          "fontFamily": "$rx-font-heading",
-                          "fontSize": 15,
-                          "fontWeight": "760"
+                          "id": "P74Ix",
+                          "name": "Project Rail Label RADISH",
+                          "fill": "#fffdf8",
+                          "content": "01  RADISH",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "700",
+                          "letterSpacing": 0.7
                         }
                       ]
                     },
                     {
-                      "type": "text",
-                      "id": "Fnuu1",
-                      "name": "Meta",
-                      "fill": "$rx-text-muted",
-                      "content": "输入与个人词库",
-                      "fontFamily": "$rx-font-body",
-                      "fontSize": 12,
-                      "fontWeight": "normal"
+                      "type": "frame",
+                      "id": "dhCZW",
+                      "name": "Project Rail CATALYST",
+                      "width": 126,
+                      "height": 34,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "EqiFd",
+                          "name": "Project Rail Line CATALYST",
+                          "fill": "#ffffff18",
+                          "width": "fill_container",
+                          "height": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "mHvxG",
+                          "name": "Project Rail Label CATALYST",
+                          "fill": "#dfe7df99",
+                          "content": "02  CATALYST",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "520",
+                          "letterSpacing": 0.7
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "m8NBh",
+                      "name": "Project Rail FLOW",
+                      "width": 88,
+                      "height": 34,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "eh2Kt",
+                          "name": "Project Rail Line FLOW",
+                          "fill": "#ffffff18",
+                          "width": "fill_container",
+                          "height": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "y9Te4",
+                          "name": "Project Rail Label FLOW",
+                          "fill": "#dfe7df99",
+                          "content": "03  FLOW",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "520",
+                          "letterSpacing": 0.7
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "h1bnDy",
+                      "name": "Project Rail MIND",
+                      "width": 88,
+                      "height": 34,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "u9VXSi",
+                          "name": "Project Rail Line MIND",
+                          "fill": "#ffffff18",
+                          "width": "fill_container",
+                          "height": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "z9ITPr",
+                          "name": "Project Rail Label MIND",
+                          "fill": "#dfe7df99",
+                          "content": "04  MIND",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "520",
+                          "letterSpacing": 0.7
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "v8mVHs",
+                      "name": "Project Rail LEX",
+                      "width": 78,
+                      "height": 34,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "S8tzs",
+                          "name": "Project Rail Line LEX",
+                          "fill": "#ffffff18",
+                          "width": "fill_container",
+                          "height": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "i2Ka9p",
+                          "name": "Project Rail Label LEX",
+                          "fill": "#dfe7df99",
+                          "content": "05  LEX",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "520",
+                          "letterSpacing": 0.7
+                        }
+                      ]
                     }
                   ]
                 }
@@ -945,98 +1126,64 @@
                     {
                       "type": "ellipse",
                       "id": "zJ0pN",
-                      "x": 92,
-                      "y": 166,
+                      "x": 74,
+                      "y": 142,
                       "name": "Radish Orbit Outer",
                       "fill": "#ffffff00",
-                      "width": 280,
-                      "height": 280,
-                      "stroke": "#5d6c5742",
+                      "width": 316,
+                      "height": 316,
+                      "stroke": "#5d6c5738",
                       "strokeWidth": 1
                     },
                     {
                       "type": "ellipse",
                       "id": "rMeX2",
-                      "x": 142,
-                      "y": 216,
+                      "x": 128,
+                      "y": 196,
                       "name": "Radish Orbit Inner",
                       "fill": "#ffffff00",
-                      "width": 180,
-                      "height": 180,
-                      "stroke": "#5d6c5742",
+                      "width": 208,
+                      "height": 208,
+                      "stroke": "#5d6c5730",
                       "strokeWidth": 1
                     },
                     {
-                      "type": "path",
-                      "id": "y23o5",
-                      "x": 154,
-                      "y": 138,
-                      "name": "Radish Stem Line",
-                      "geometry": "M78 246c2-44-30-61-18-101 10-35 51-39 44-73-5-26-31-35-26-70",
-                      "viewBox": [
-                        0,
-                        0,
-                        158,
-                        248
-                      ],
-                      "fill": "#ffffff00",
-                      "width": 158,
-                      "height": 248,
-                      "stroke": "$rx-brand-primary",
-                      "strokeWidth": 2,
-                      "strokeLinecap": "round"
-                    },
-                    {
-                      "type": "ellipse",
-                      "id": "pExYw",
-                      "x": 184,
-                      "y": 236,
-                      "name": "Radish Root",
-                      "fill": "$rx-bg-surface",
-                      "width": 96,
-                      "height": 124,
-                      "stroke": "#5d6c5736",
-                      "strokeWidth": 1
-                    },
-                    {
-                      "type": "ellipse",
-                      "id": "o51XJ",
-                      "x": 178,
-                      "y": 196,
-                      "name": "Leaf Left",
-                      "rotation": -28,
-                      "fill": "$rx-brand-primary",
-                      "width": 58,
-                      "height": 86
-                    },
-                    {
-                      "type": "ellipse",
-                      "id": "e1S1hl",
-                      "x": 216,
+                      "type": "rectangle",
+                      "cornerRadius": 70,
+                      "id": "GjXev",
+                      "x": 162,
                       "y": 174,
-                      "name": "Leaf Center",
-                      "fill": "$rx-accent-grayjade",
-                      "width": 52,
-                      "height": 92
-                    },
-                    {
-                      "type": "ellipse",
-                      "id": "up6V4",
-                      "x": 250,
-                      "y": 198,
-                      "name": "Leaf Right",
-                      "rotation": 28,
-                      "fill": "$rx-accent-jade",
-                      "width": 58,
-                      "height": 86
+                      "name": "Community Character Portrait",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../../../public/images/mascot/radish-child-standing-white-dress-tall-web.jpg",
+                        "mode": "fill"
+                      },
+                      "width": 140,
+                      "height": 226,
+                      "stroke": "#fffdf8",
+                      "strokeWidth": 6,
+                      "strokeAlignment": "inner",
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#34403933",
+                        "offset": {
+                          "x": 0,
+                          "y": 10
+                        },
+                        "blur": 24,
+                        "spread": -8
+                      }
                     },
                     {
                       "type": "frame",
                       "id": "Xt1Tn",
-                      "x": 44,
-                      "y": 166,
+                      "x": 36,
+                      "y": 188,
                       "name": "Community Post A",
-                      "width": 122,
+                      "width": 124,
                       "height": 42,
                       "fill": "$rx-bg-surface",
                       "cornerRadius": 21,
@@ -1073,10 +1220,10 @@
                     {
                       "type": "frame",
                       "id": "J6daUk",
-                      "x": 296,
-                      "y": 324,
+                      "x": 304,
+                      "y": 336,
                       "name": "Community Post B",
-                      "width": 126,
+                      "width": 124,
                       "height": 42,
                       "fill": "$rx-bg-surface",
                       "cornerRadius": 21,
@@ -1132,6 +1279,43 @@
                       "library": "lucide",
                       "weight": 1.5,
                       "fill": "$rx-text-primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "O13IHf",
+                      "x": 162,
+                      "y": 414,
+                      "name": "Community Portrait Label",
+                      "fill": "$rx-text-muted",
+                      "content": "COMMUNITY / MEMBER 01",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 10,
+                      "fontWeight": "650",
+                      "letterSpacing": 1.2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "VqFKs",
+                      "x": 104,
+                      "y": 310,
+                      "name": "Community Node Idea",
+                      "fill": "$rx-brand-primary",
+                      "width": 14,
+                      "height": 14,
+                      "stroke": "$rx-brand-soft",
+                      "strokeWidth": 4
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "T2FAe1",
+                      "x": 349,
+                      "y": 241,
+                      "name": "Community Node Voice",
+                      "fill": "$rx-accent-jade",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$rx-brand-soft",
+                      "strokeWidth": 4
                     }
                   ]
                 },
@@ -2319,62 +2503,2120 @@
                   "fontSize": 10,
                   "fontWeight": "600",
                   "letterSpacing": 1.8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Z8IVU",
+      "x": 1600,
+      "y": 0,
+      "name": "Home Mobile v1 - Grayjade Study",
+      "clip": true,
+      "width": 390,
+      "height": 3864,
+      "fill": "$rx-bg-app",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "aILsk",
+          "name": "Mobile Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "$rx-bg-app",
+          "stroke": "#5d6c5718",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "RQZ7H",
+              "name": "Mobile Brand",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 9,
+                  "id": "bVRR5",
+                  "name": "Brand Icon",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../../public/favicon.ico",
+                    "mode": "fit"
+                  },
+                  "width": 30,
+                  "height": 30
+                },
+                {
+                  "type": "text",
+                  "id": "E0nq4",
+                  "name": "Brand Text",
+                  "fill": "$rx-brand-primary",
+                  "content": "RadishX",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 19,
+                  "fontWeight": "760"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Yhffs",
+              "name": "Mobile Menu Button",
+              "width": 36,
+              "height": 36,
+              "fill": "$rx-bg-surface",
+              "cornerRadius": 999,
+              "stroke": "$rx-border-soft",
+              "strokeWidth": 1,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "g3K59",
+                  "name": "Mobile Menu Icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "menu",
+                  "library": "lucide",
+                  "weight": 500,
+                  "fill": "$rx-text-primary"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "zpQDr",
+          "name": "Mobile Hero",
+          "width": "fill_container",
+          "height": 940,
+          "fill": "$rx-bg-app",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "d24uJJ",
+              "x": 24,
+              "y": 38,
+              "name": "Mobile Hero Eyebrow",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "NqMo9",
+                  "name": "Eyebrow Dot",
+                  "fill": "$rx-brand-primary",
+                  "width": 7,
+                  "height": 7
+                },
+                {
+                  "type": "text",
+                  "id": "nna49",
+                  "name": "Eyebrow Text",
+                  "fill": "$rx-text-muted",
+                  "content": "radishx.com",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "760"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "ASPOT",
+              "x": 24,
+              "y": 74,
+              "name": "Mobile Hero Title",
+              "fill": "$rx-text-primary",
+              "textGrowth": "fixed-width",
+              "width": 342,
+              "content": "Radish\n项目矩阵",
+              "lineHeight": 0.98,
+              "fontFamily": "$rx-font-heading",
+              "fontSize": 54,
+              "fontWeight": "760"
+            },
+            {
+              "type": "frame",
+              "id": "uX7ap",
+              "x": 24,
+              "y": 212,
+              "name": "Mobile Hero Actions",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "X8Ci8V",
+                  "name": "Mobile Primary CTA",
+                  "width": 132,
+                  "height": 48,
+                  "fill": "$rx-brand-primary",
+                  "cornerRadius": 999,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "f7GQQA",
+                      "name": "Mobile Primary CTA Label",
+                      "fill": "$rx-text-on-brand",
+                      "content": "查看项目",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "650"
+                    }
+                  ]
                 },
                 {
                   "type": "frame",
-                  "id": "iIfeP",
-                  "x": 548,
-                  "y": 548,
-                  "name": "Mascot Leaf Mark",
-                  "width": 120,
-                  "height": 120,
-                  "layout": "none",
+                  "id": "A2svBQ",
+                  "name": "Mobile Secondary CTA",
+                  "width": 156,
+                  "height": 48,
+                  "cornerRadius": 999,
+                  "stroke": "$rx-border-soft",
+                  "strokeWidth": 1,
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
                   "children": [
                     {
-                      "type": "ellipse",
-                      "id": "KHuBp",
-                      "x": 30,
-                      "y": 40,
-                      "name": "Leaf Mark Left",
-                      "rotation": -29.999999999999996,
-                      "fill": "#8fb3a5",
-                      "width": 34,
-                      "height": 52
+                      "type": "text",
+                      "id": "T9oM6S",
+                      "name": "Mobile Secondary CTA Label",
+                      "fill": "$rx-text-primary",
+                      "content": "认识萝小白",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600"
                     },
                     {
-                      "type": "ellipse",
-                      "id": "KZayq",
-                      "x": 48,
-                      "y": 14,
-                      "name": "Leaf Mark Center",
-                      "fill": "#dfe7df",
-                      "width": 34,
-                      "height": 58
-                    },
-                    {
-                      "type": "ellipse",
-                      "id": "KgFLL",
-                      "x": 60,
-                      "y": 38,
-                      "name": "Leaf Mark Right",
-                      "rotation": 29.999999999999996,
-                      "fill": "#78a496",
-                      "width": 34,
-                      "height": 52
-                    },
-                    {
-                      "type": "ellipse",
-                      "id": "F18rg",
-                      "x": 49,
-                      "y": 58,
-                      "name": "Leaf Mark Root",
-                      "fill": "#fffdf8",
-                      "width": 34,
-                      "height": 42
+                      "type": "icon",
+                      "id": "Xl1Wf",
+                      "name": "Mobile Secondary CTA Arrow",
+                      "width": 16,
+                      "height": 16,
+                      "icon": "arrow-up-right",
+                      "library": "lucide",
+                      "weight": 500,
+                      "fill": "$rx-text-primary"
                     }
                   ]
                 }
               ]
+            },
+            {
+              "type": "text",
+              "id": "pUpYK",
+              "x": 24,
+              "y": 286,
+              "name": "Mobile Hero Meta",
+              "fill": "$rx-text-muted",
+              "textGrowth": "fixed-width",
+              "width": 342,
+              "content": "SOURCE AVAILABLE  ·  VITE + REACT\nTYPESCRIPT  ·  VERCEL READY",
+              "lineHeight": 1.55,
+              "fontFamily": "$rx-font-mono",
+              "fontSize": 10,
+              "fontWeight": "520",
+              "letterSpacing": 0.3
+            },
+            {
+              "type": "frame",
+              "id": "kALvb",
+              "x": 24,
+              "y": 350,
+              "name": "Mobile Project Stage · Radish",
+              "clip": true,
+              "width": 342,
+              "height": 552,
+              "fill": "$rx-brand-soft",
+              "cornerRadius": 20,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#5b422a20",
+                "offset": {
+                  "x": 0,
+                  "y": 14
+                },
+                "blur": 32,
+                "spread": -8
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "CViQD",
+                  "x": 18,
+                  "y": 18,
+                  "name": "Mobile Stage Index",
+                  "fill": "$rx-brand-primary",
+                  "content": "PROJECT STAGE  /  01",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 9,
+                  "fontWeight": "650",
+                  "letterSpacing": 1.1
+                },
+                {
+                  "type": "text",
+                  "id": "acGcN",
+                  "x": 212,
+                  "y": 18,
+                  "name": "Mobile Stage Domain",
+                  "fill": "$rx-text-secondary",
+                  "content": "hub.radishx.com  ↗",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 8,
+                  "fontWeight": "550"
+                },
+                {
+                  "type": "text",
+                  "id": "I8NZL0",
+                  "x": 18,
+                  "y": 40,
+                  "name": "Mobile Active Project Title",
+                  "fill": "$rx-text-primary",
+                  "content": "Radish",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 36,
+                  "fontWeight": "650"
+                },
+                {
+                  "type": "frame",
+                  "id": "IzW6J",
+                  "x": 16,
+                  "y": 90,
+                  "name": "Mobile Radish Community Canvas",
+                  "clip": true,
+                  "width": 310,
+                  "height": 390,
+                  "fill": "#fffdf8",
+                  "cornerRadius": 14,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "m4qrps",
+                      "x": 14,
+                      "y": 0,
+                      "name": "Mobile Community Back Type",
+                      "fill": "#5d6c570d",
+                      "content": "COMMUNITY",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 39,
+                      "fontWeight": "700",
+                      "letterSpacing": -1.2
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "XXzI1",
+                      "x": 188,
+                      "y": 18,
+                      "name": "Mobile Radish Member Portrait",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "../../../public/images/mascot/radish-child-standing-white-dress-tall-web.jpg",
+                        "mode": "fill"
+                      },
+                      "width": 104,
+                      "height": 174
+                    },
+                    {
+                      "type": "text",
+                      "id": "y1HKB",
+                      "x": 214,
+                      "y": 178,
+                      "name": "Mobile Member Caption",
+                      "fill": "$rx-text-muted",
+                      "content": "MEMBER / 01",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 8,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.7
+                    },
+                    {
+                      "type": "frame",
+                      "id": "P0Vdr",
+                      "x": 18,
+                      "y": 58,
+                      "name": "Mobile Live Feed Label",
+                      "gap": 7,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "K62vl4",
+                          "name": "Mobile Live Dot",
+                          "fill": "$rx-accent-jade",
+                          "width": 6,
+                          "height": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZExfM",
+                          "name": "Mobile Live Feed Text",
+                          "fill": "$rx-brand-primary",
+                          "content": "LIVE FEED",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 9,
+                          "fontWeight": "650",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "uByq3",
+                      "x": 18,
+                      "y": 82,
+                      "name": "Mobile Post Count",
+                      "fill": "$rx-text-primary",
+                      "content": "28",
+                      "fontFamily": "$rx-font-heading",
+                      "fontSize": 40,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "k9fG5f",
+                      "x": 70,
+                      "y": 93,
+                      "name": "Mobile Post Count Label",
+                      "fill": "$rx-text-muted",
+                      "content": "POSTS\nTODAY",
+                      "lineHeight": 1.15,
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 8,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.8
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hmkwK",
+                      "x": 18,
+                      "y": 194,
+                      "name": "Mobile Activity Row 1",
+                      "width": 274,
+                      "height": 50,
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "gflTc",
+                          "name": "Mobile Activity Avatar 1",
+                          "width": 32,
+                          "height": 32,
+                          "fill": "$rx-brand-primary",
+                          "cornerRadius": 999,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "eqoBG",
+                              "name": "Mobile Avatar Initial 1",
+                              "fill": "#fffdf8",
+                              "content": "萝",
+                              "fontFamily": "$rx-font-serif",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "T5NbZH",
+                          "name": "Mobile Activity Copy 1",
+                          "width": 190,
+                          "layout": "vertical",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "r6Y8h",
+                              "name": "Mobile Activity Title 1",
+                              "fill": "$rx-text-primary",
+                              "content": "分享了一篇新创作",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "bjSBd",
+                              "name": "Mobile Activity Meta 1",
+                              "fill": "$rx-text-muted",
+                              "content": "萝卜酱 · 作品",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 8,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "z5f5J",
+                          "name": "Mobile Activity Time 1",
+                          "fill": "$rx-text-muted",
+                          "content": "09:42",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 8,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "hFKIF",
+                      "x": 18,
+                      "y": 248,
+                      "name": "Mobile Activity Divider 1",
+                      "fill": "#5d6c571a",
+                      "width": 274,
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "N5Rdy",
+                      "x": 18,
+                      "y": 252,
+                      "name": "Mobile Activity Row 2",
+                      "width": 274,
+                      "height": 50,
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "GasPI",
+                          "name": "Mobile Activity Avatar 2",
+                          "width": 32,
+                          "height": 32,
+                          "fill": "$rx-accent-ink",
+                          "cornerRadius": 999,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "NWDYp",
+                              "name": "Mobile Avatar Initial 2",
+                              "fill": "#fffdf8",
+                              "content": "北",
+                              "fontFamily": "$rx-font-serif",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "aYAX6",
+                          "name": "Mobile Activity Copy 2",
+                          "width": 190,
+                          "layout": "vertical",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "n3Hwf",
+                              "name": "Mobile Activity Title 2",
+                              "fill": "$rx-text-primary",
+                              "content": "加入「角色与世界观」讨论",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "LtOQf",
+                              "name": "Mobile Activity Meta 2",
+                              "fill": "$rx-text-muted",
+                              "content": "北原 · 讨论",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 8,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "s950t",
+                          "name": "Mobile Activity Time 2",
+                          "fill": "$rx-text-muted",
+                          "content": "09:18",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 8,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "n5x0e",
+                      "x": 18,
+                      "y": 306,
+                      "name": "Mobile Activity Divider 2",
+                      "fill": "#5d6c571a",
+                      "width": 274,
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wvkFK",
+                      "x": 18,
+                      "y": 310,
+                      "name": "Mobile Activity Row 3",
+                      "width": 274,
+                      "height": 50,
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "AsbKO",
+                          "name": "Mobile Activity Avatar 3",
+                          "width": 32,
+                          "height": 32,
+                          "fill": "$rx-accent-purple",
+                          "cornerRadius": 999,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "EbUvd",
+                              "name": "Mobile Avatar Initial 3",
+                              "fill": "#fffdf8",
+                              "content": "森",
+                              "fontFamily": "$rx-font-serif",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "vEUH8",
+                          "name": "Mobile Activity Copy 3",
+                          "width": 190,
+                          "layout": "vertical",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "fznxt",
+                              "name": "Mobile Activity Title 3",
+                              "fill": "$rx-text-primary",
+                              "content": "收藏了新的灵感条目",
+                              "fontFamily": "$rx-font-body",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "q5aXSs",
+                              "name": "Mobile Activity Meta 3",
+                              "fill": "$rx-text-muted",
+                              "content": "Mori · 收藏",
+                              "fontFamily": "$rx-font-mono",
+                              "fontSize": 8,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "ihQlW",
+                          "name": "Mobile Activity Time 3",
+                          "fill": "$rx-text-muted",
+                          "content": "08:57",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 8,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wXsUh",
+                  "x": 16,
+                  "y": 494,
+                  "name": "Mobile Project Rail",
+                  "clip": true,
+                  "width": 310,
+                  "height": 42,
+                  "fill": "#33423b",
+                  "cornerRadius": 10,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "E1QgT6",
+                      "x": 12,
+                      "y": 0,
+                      "name": "Mobile Project Rail Content",
+                      "height": 42,
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "SMxTZ",
+                          "name": "Mobile Rail RADISH",
+                          "fill": "#fffdf8",
+                          "content": "01 RADISH",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 8,
+                          "fontWeight": "700",
+                          "letterSpacing": 0.15
+                        },
+                        {
+                          "type": "text",
+                          "id": "h8YR5",
+                          "name": "Mobile Rail CATALYST",
+                          "fill": "#dfe7df99",
+                          "content": "02 CATALYST",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 8,
+                          "fontWeight": "520",
+                          "letterSpacing": 0.15
+                        },
+                        {
+                          "type": "text",
+                          "id": "OpqKf",
+                          "name": "Mobile Rail FLOW",
+                          "fill": "#dfe7df99",
+                          "content": "03 FLOW",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 8,
+                          "fontWeight": "520",
+                          "letterSpacing": 0.15
+                        },
+                        {
+                          "type": "text",
+                          "id": "KCf1F",
+                          "name": "Mobile Rail MIND",
+                          "fill": "#dfe7df99",
+                          "content": "04 MIND",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 8,
+                          "fontWeight": "520",
+                          "letterSpacing": 0.15
+                        },
+                        {
+                          "type": "text",
+                          "id": "j1yH3",
+                          "name": "Mobile Rail LEX",
+                          "fill": "#dfe7df99",
+                          "content": "05 LEX",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 8,
+                          "fontWeight": "520",
+                          "letterSpacing": 0.15
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CDE2v",
+          "name": "Mobile Projects · Ecosystem Atlas",
+          "width": "fill_container",
+          "height": 2140,
+          "fill": "$rx-bg-app",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "ZkM3d",
+              "x": 24,
+              "y": 54,
+              "name": "Mobile Projects Title",
+              "fill": "$rx-text-primary",
+              "content": "Radish 生态",
+              "fontFamily": "$rx-font-heading",
+              "fontSize": 42,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "AKMyC",
+              "x": 298,
+              "y": 80,
+              "name": "Mobile Projects Index",
+              "fill": "$rx-text-muted",
+              "content": "01 — 05",
+              "fontFamily": "$rx-font-mono",
+              "fontSize": 10,
+              "fontWeight": "600",
+              "letterSpacing": 0.7
+            },
+            {
+              "type": "frame",
+              "id": "SNi7D",
+              "x": 24,
+              "y": 142,
+              "name": "Mobile World 01 · Radish",
+              "clip": true,
+              "width": 342,
+              "height": 410,
+              "fill": "$rx-brand-soft",
+              "cornerRadius": 18,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "PUD5G",
+                  "x": 24,
+                  "y": 22,
+                  "name": "Mobile Radish Index",
+                  "fill": "$rx-brand-primary",
+                  "content": "01",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 10,
+                  "fontWeight": "650",
+                  "letterSpacing": 1.4
+                },
+                {
+                  "type": "text",
+                  "id": "DheG4",
+                  "x": 24,
+                  "y": 48,
+                  "name": "Mobile Radish Name",
+                  "fill": "$rx-text-primary",
+                  "content": "Radish",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 36,
+                  "fontWeight": "650"
+                },
+                {
+                  "type": "text",
+                  "id": "c03TY",
+                  "x": 14,
+                  "y": 278,
+                  "name": "Mobile Radish Back Type",
+                  "fill": "#5d6c5712",
+                  "content": "COMMUNITY",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 55,
+                  "fontWeight": "700",
+                  "letterSpacing": -2
+                },
+                {
+                  "type": "ellipse",
+                  "id": "xqjq9",
+                  "x": 70,
+                  "y": 100,
+                  "name": "Mobile Radish Orbit Outer",
+                  "fill": "#ffffff00",
+                  "width": 202,
+                  "height": 202,
+                  "stroke": "$rx-pattern-line",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "ellipse",
+                  "id": "n0yalk",
+                  "x": 112,
+                  "y": 142,
+                  "name": "Mobile Radish Orbit Inner",
+                  "fill": "#ffffff00",
+                  "width": 118,
+                  "height": 118,
+                  "stroke": "$rx-pattern-line",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 49,
+                  "id": "UCFPF",
+                  "x": 122,
+                  "y": 120,
+                  "name": "Mobile Community Character Portrait",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../../public/images/mascot/radish-child-standing-white-dress-tall-web.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 98,
+                  "height": 158,
+                  "stroke": "#fffdf8",
+                  "strokeWidth": 6,
+                  "strokeAlignment": "inner",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#34403933",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 24,
+                    "spread": -8
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "uBaAM",
+                  "x": 28,
+                  "y": 148,
+                  "name": "Mobile Community Post",
+                  "width": 94,
+                  "height": 38,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": 999,
+                  "padding": [
+                    0,
+                    12
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kV1zz",
+                      "name": "Mobile Post Label",
+                      "fill": "$rx-text-muted",
+                      "content": "POST",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 8,
+                      "fontWeight": "550",
+                      "letterSpacing": 0.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "h1aUaD",
+                      "name": "Mobile Post Count",
+                      "fill": "$rx-brand-primary",
+                      "content": "28",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 9,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oGtgy",
+                  "x": 222,
+                  "y": 236,
+                  "name": "Mobile Community Live",
+                  "width": 92,
+                  "height": 38,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": 999,
+                  "padding": [
+                    0,
+                    12
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IIrwj",
+                      "name": "Mobile Live Label",
+                      "fill": "$rx-text-muted",
+                      "content": "LIVE",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 8,
+                      "fontWeight": "550",
+                      "letterSpacing": 0.8
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "k311J",
+                      "name": "Mobile Live Status",
+                      "fill": "$rx-accent-jade",
+                      "width": 7,
+                      "height": 7
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "t17Ci",
+                  "x": 102,
+                  "y": 294,
+                  "name": "Mobile Community Portrait Label",
+                  "fill": "$rx-text-muted",
+                  "content": "COMMUNITY / MEMBER 01",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 8,
+                  "fontWeight": "600",
+                  "letterSpacing": 0.6
+                },
+                {
+                  "type": "text",
+                  "id": "QUrXo",
+                  "x": 24,
+                  "y": 372,
+                  "name": "Mobile Radish Domain",
+                  "fill": "$rx-text-secondary",
+                  "content": "hub.radishx.com",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 10,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "icon",
+                  "id": "XOHdh",
+                  "x": 294,
+                  "y": 364,
+                  "name": "Mobile Radish Arrow",
+                  "width": 22,
+                  "height": 22,
+                  "icon": "arrow-up-right",
+                  "library": "lucide",
+                  "weight": 500,
+                  "fill": "$rx-text-primary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Ru3YR",
+              "x": 24,
+              "y": 568,
+              "name": "Mobile World 02 · RadishCatalyst",
+              "clip": true,
+              "width": 342,
+              "height": 420,
+              "fill": "$rx-bg-ink",
+              "cornerRadius": 18,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 18,
+                  "id": "i0NFT",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Mobile Catalyst Scene",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../../../public/images/projects/catalyst/radishcatalyst-demo-first-screen-web.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 342,
+                  "height": 420
+                },
+                {
+                  "type": "rectangle",
+                  "id": "oAHqj",
+                  "x": 0,
+                  "y": 232,
+                  "name": "Mobile Catalyst Scrim",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 0,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#11100f00",
+                        "position": 0
+                      },
+                      {
+                        "color": "#11100fee",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "width": 342,
+                  "height": 188
+                },
+                {
+                  "type": "text",
+                  "id": "NzEF1",
+                  "x": 24,
+                  "y": 24,
+                  "name": "Mobile Catalyst Index",
+                  "fill": "#fffdf8",
+                  "content": "02 / FORGE",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 10,
+                  "fontWeight": "650",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "jKRIf",
+                  "x": 116,
+                  "y": 54,
+                  "name": "Mobile Catalyst Back Type",
+                  "fill": "#fffdf81f",
+                  "content": "CATALYST",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 42,
+                  "fontWeight": "700",
+                  "letterSpacing": -1.5
+                },
+                {
+                  "type": "text",
+                  "id": "G4YZ0o",
+                  "x": 24,
+                  "y": 316,
+                  "name": "Mobile Catalyst Name",
+                  "fill": "#fffdf8",
+                  "content": "RadishCatalyst",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 32,
+                  "fontWeight": "650"
+                },
+                {
+                  "type": "text",
+                  "id": "OSRF6",
+                  "x": 24,
+                  "y": 374,
+                  "name": "Mobile Catalyst Domain",
+                  "fill": "#dfe7df",
+                  "content": "forge.radishx.com",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 10,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "icon",
+                  "id": "mqJUg",
+                  "x": 294,
+                  "y": 366,
+                  "name": "Mobile Catalyst Arrow",
+                  "width": 22,
+                  "height": 22,
+                  "icon": "arrow-up-right",
+                  "library": "lucide",
+                  "weight": 500,
+                  "fill": "#fffdf8"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xkUyV",
+              "x": 24,
+              "y": 1004,
+              "name": "Mobile World 03 · RadishFlow",
+              "clip": true,
+              "width": 342,
+              "height": 350,
+              "fill": "#e8eee8",
+              "cornerRadius": 18,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rIIUm",
+                  "x": 24,
+                  "y": 22,
+                  "name": "Mobile Flow Index",
+                  "fill": "$rx-brand-primary",
+                  "content": "03 / BLUEPRINT",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 10,
+                  "fontWeight": "650",
+                  "letterSpacing": 0.8
+                },
+                {
+                  "type": "text",
+                  "id": "xT3Rl",
+                  "x": 24,
+                  "y": 48,
+                  "name": "Mobile Flow Name",
+                  "fill": "$rx-text-primary",
+                  "content": "RadishFlow",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 34,
+                  "fontWeight": "650"
+                },
+                {
+                  "type": "text",
+                  "id": "V5hd2o",
+                  "x": 190,
+                  "y": 18,
+                  "name": "Mobile Flow Back Type",
+                  "fill": "#5d6c5712",
+                  "content": "FLOW",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 54,
+                  "fontWeight": "700",
+                  "letterSpacing": -2
+                },
+                {
+                  "type": "path",
+                  "id": "FlEkP",
+                  "x": 28,
+                  "y": 112,
+                  "name": "Mobile Flow Main Pipe",
+                  "geometry": "M0 78h122c26 0 24-56 52-56h154c28 0 24 80 54 80h266",
+                  "viewBox": [
+                    0,
+                    0,
+                    648,
+                    126
+                  ],
+                  "fill": "#ffffff00",
+                  "width": 286,
+                  "height": 100,
+                  "stroke": "$rx-brand-primary",
+                  "strokeWidth": 2,
+                  "strokeLinejoin": "round",
+                  "strokeLinecap": "round"
+                },
+                {
+                  "type": "path",
+                  "id": "f8Lk4f",
+                  "x": 62,
+                  "y": 132,
+                  "name": "Mobile Flow Return Pipe",
+                  "geometry": "M490 8h-80c-30 0-28 102-60 102h-350",
+                  "viewBox": [
+                    0,
+                    0,
+                    490,
+                    112
+                  ],
+                  "fill": "#ffffff00",
+                  "width": 220,
+                  "height": 82,
+                  "stroke": "#78a49699",
+                  "strokeWidth": 1,
+                  "strokeLinejoin": "round",
+                  "strokeLinecap": "round"
+                },
+                {
+                  "type": "frame",
+                  "id": "Sc0B8",
+                  "x": 20,
+                  "y": 174,
+                  "name": "Mobile FEED Unit",
+                  "width": 86,
+                  "height": 58,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": 10,
+                  "layout": "vertical",
+                  "gap": 5,
+                  "padding": [
+                    0,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LasxX",
+                      "name": "Mobile FEED Label",
+                      "fill": "$rx-text-muted",
+                      "content": "FEED",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 8,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.6
+                    },
+                    {
+                      "type": "text",
+                      "id": "yxsQ4",
+                      "name": "Mobile FEED Value",
+                      "fill": "$rx-text-primary",
+                      "content": "300 K",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 10,
+                      "fontWeight": "650"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uX6oY",
+                  "x": 123,
+                  "y": 140,
+                  "name": "Mobile HEATER Unit",
+                  "width": 98,
+                  "height": 72,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": 10,
+                  "layout": "vertical",
+                  "gap": 5,
+                  "padding": [
+                    0,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yBhTe",
+                      "name": "Mobile HEATER Label",
+                      "fill": "$rx-text-muted",
+                      "content": "HEATER",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 8,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.6
+                    },
+                    {
+                      "type": "text",
+                      "id": "dYW0B",
+                      "name": "Mobile HEATER Value",
+                      "fill": "$rx-text-primary",
+                      "content": "5.43 MW",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 10,
+                      "fontWeight": "650"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ueU0f",
+                  "x": 238,
+                  "y": 174,
+                  "name": "Mobile SEPARATOR Unit",
+                  "width": 84,
+                  "height": 58,
+                  "fill": "$rx-bg-surface",
+                  "cornerRadius": 10,
+                  "layout": "vertical",
+                  "gap": 5,
+                  "padding": [
+                    0,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IEy8O",
+                      "name": "Mobile SEPARATOR Label",
+                      "fill": "$rx-text-muted",
+                      "content": "SEPARATOR",
+                      "fontFamily": "$rx-font-mono",
+                      "fontSize": 8,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.6
+                    },
+                    {
+                      "type": "text",
+                      "id": "YWWzF",
+                      "name": "Mobile SEPARATOR Value",
+                      "fill": "$rx-text-primary",
+                      "content": "61 bar",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 10,
+                      "fontWeight": "650"
+                    }
+                  ]
+                },
+                {
+                  "type": "ellipse",
+                  "id": "H5gNi",
+                  "x": 105,
+                  "y": 143,
+                  "name": "Mobile Flow Junction A",
+                  "fill": "$rx-accent-jade",
+                  "width": 10,
+                  "height": 10
+                },
+                {
+                  "type": "ellipse",
+                  "id": "zeJDf",
+                  "x": 226,
+                  "y": 195,
+                  "name": "Mobile Flow Junction B",
+                  "fill": "$rx-accent-jade",
+                  "width": 10,
+                  "height": 10
+                },
+                {
+                  "type": "text",
+                  "id": "i2FXL",
+                  "x": 24,
+                  "y": 312,
+                  "name": "Mobile Flow Domain",
+                  "fill": "$rx-text-secondary",
+                  "content": "flow.radishx.com",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 10,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "icon",
+                  "id": "MF8Lk",
+                  "x": 294,
+                  "y": 304,
+                  "name": "Mobile Flow Arrow",
+                  "width": 22,
+                  "height": 22,
+                  "icon": "arrow-up-right",
+                  "library": "lucide",
+                  "weight": 500,
+                  "fill": "$rx-text-primary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "cPEEA",
+              "x": 24,
+              "y": 1370,
+              "name": "Mobile World 04 · RadishMind",
+              "clip": true,
+              "width": 342,
+              "height": 350,
+              "fill": "$rx-bg-ink",
+              "cornerRadius": 18,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "olA3J",
+                  "x": 24,
+                  "y": 22,
+                  "name": "Mobile Mind Index",
+                  "fill": "$rx-accent-purple",
+                  "content": "04 / INTELLIGENCE",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 10,
+                  "fontWeight": "650",
+                  "letterSpacing": 0.7
+                },
+                {
+                  "type": "text",
+                  "id": "arZmH",
+                  "x": 24,
+                  "y": 48,
+                  "name": "Mobile Mind Name",
+                  "fill": "#fffdf8",
+                  "content": "RadishMind",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 34,
+                  "fontWeight": "650"
+                },
+                {
+                  "type": "path",
+                  "id": "wjl1h",
+                  "x": 60,
+                  "y": 102,
+                  "name": "Mobile Mind Lattice",
+                  "geometry": "M155 107l-131-79m131 79l131-87m-131 87l147 15m-147-15l91 99m-91-99l-87 95m87-95l-147 19m16-98l262-8 16 102-56 84-178-4-60-76z",
+                  "viewBox": [
+                    0,
+                    0,
+                    310,
+                    214
+                  ],
+                  "fill": "#ffffff00",
+                  "width": 222,
+                  "height": 160,
+                  "stroke": "#8fb3a54f",
+                  "strokeWidth": 1.2,
+                  "strokeLinejoin": "round",
+                  "strokeLinecap": "round"
+                },
+                {
+                  "type": "ellipse",
+                  "id": "Q7FnNF",
+                  "x": 135,
+                  "y": 146,
+                  "name": "Mobile Mind Core Halo",
+                  "fill": "#84699220",
+                  "width": 72,
+                  "height": 72
+                },
+                {
+                  "type": "ellipse",
+                  "id": "FeVUn",
+                  "x": 153,
+                  "y": 164,
+                  "name": "Mobile Mind Core",
+                  "fill": "$rx-accent-purple",
+                  "width": 36,
+                  "height": 36
+                },
+                {
+                  "type": "ellipse",
+                  "id": "s31ZU",
+                  "x": 72,
+                  "y": 118,
+                  "name": "Mobile Mind Node CTX",
+                  "fill": "#11100f",
+                  "width": 14,
+                  "height": 14,
+                  "stroke": "$rx-accent-purple",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "V8J9i5",
+                  "x": 68,
+                  "y": 137,
+                  "name": "Mobile Mind Label CTX",
+                  "fill": "#b9cbbf",
+                  "content": "CTX",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 8,
+                  "fontWeight": "550"
+                },
+                {
+                  "type": "ellipse",
+                  "id": "X0cHXQ",
+                  "x": 258,
+                  "y": 116,
+                  "name": "Mobile Mind Node TOOL",
+                  "fill": "#11100f",
+                  "width": 14,
+                  "height": 14,
+                  "stroke": "$rx-accent-purple",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "Ns4O0",
+                  "x": 254,
+                  "y": 135,
+                  "name": "Mobile Mind Label TOOL",
+                  "fill": "#b9cbbf",
+                  "content": "TOOL",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 8,
+                  "fontWeight": "550"
+                },
+                {
+                  "type": "ellipse",
+                  "id": "zLHLH",
+                  "x": 278,
+                  "y": 190,
+                  "name": "Mobile Mind Node EVAL",
+                  "fill": "#11100f",
+                  "width": 14,
+                  "height": 14,
+                  "stroke": "$rx-accent-purple",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "Js86H",
+                  "x": 274,
+                  "y": 209,
+                  "name": "Mobile Mind Label EVAL",
+                  "fill": "#b9cbbf",
+                  "content": "EVAL",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 8,
+                  "fontWeight": "550"
+                },
+                {
+                  "type": "ellipse",
+                  "id": "H2BsO",
+                  "x": 228,
+                  "y": 250,
+                  "name": "Mobile Mind Node TRACE",
+                  "fill": "#11100f",
+                  "width": 14,
+                  "height": 14,
+                  "stroke": "$rx-accent-purple",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "pFQqU",
+                  "x": 224,
+                  "y": 269,
+                  "name": "Mobile Mind Label TRACE",
+                  "fill": "#b9cbbf",
+                  "content": "TRACE",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 8,
+                  "fontWeight": "550"
+                },
+                {
+                  "type": "ellipse",
+                  "id": "AKn0x",
+                  "x": 92,
+                  "y": 246,
+                  "name": "Mobile Mind Node MEM",
+                  "fill": "#11100f",
+                  "width": 14,
+                  "height": 14,
+                  "stroke": "$rx-accent-purple",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "hOQie",
+                  "x": 88,
+                  "y": 265,
+                  "name": "Mobile Mind Label MEM",
+                  "fill": "#b9cbbf",
+                  "content": "MEM",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 8,
+                  "fontWeight": "550"
+                },
+                {
+                  "type": "ellipse",
+                  "id": "LQGob",
+                  "x": 50,
+                  "y": 190,
+                  "name": "Mobile Mind Node MODEL",
+                  "fill": "#11100f",
+                  "width": 14,
+                  "height": 14,
+                  "stroke": "$rx-accent-purple",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "id": "F0uXP",
+                  "x": 46,
+                  "y": 209,
+                  "name": "Mobile Mind Label MODEL",
+                  "fill": "#b9cbbf",
+                  "content": "MODEL",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 8,
+                  "fontWeight": "550"
+                },
+                {
+                  "type": "text",
+                  "id": "VsWOh",
+                  "x": 24,
+                  "y": 312,
+                  "name": "Mobile Mind Domain",
+                  "fill": "#b9cbbf",
+                  "content": "mind.radishx.com",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 10,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "icon",
+                  "id": "Rhalp",
+                  "x": 294,
+                  "y": 304,
+                  "name": "Mobile Mind Arrow",
+                  "width": 22,
+                  "height": 22,
+                  "icon": "arrow-up-right",
+                  "library": "lucide",
+                  "weight": 500,
+                  "fill": "#fffdf8"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Bg6el",
+              "x": 24,
+              "y": 1736,
+              "name": "Mobile World 05 · RadishLex",
+              "clip": true,
+              "width": 342,
+              "height": 330,
+              "fill": "$rx-bg-surface",
+              "cornerRadius": 18,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "Oepx4",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Mobile Lex Accent Rail",
+                  "fill": "$rx-accent-grayjade",
+                  "width": 8,
+                  "height": 330
+                },
+                {
+                  "type": "text",
+                  "id": "JNYPA",
+                  "x": 28,
+                  "y": 22,
+                  "name": "Mobile Lex Index",
+                  "fill": "$rx-brand-primary",
+                  "content": "05 / INPUT",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 10,
+                  "fontWeight": "650",
+                  "letterSpacing": 0.8
+                },
+                {
+                  "type": "text",
+                  "id": "or873",
+                  "x": 28,
+                  "y": 48,
+                  "name": "Mobile Lex Name",
+                  "fill": "$rx-text-primary",
+                  "content": "RadishLex",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 34,
+                  "fontWeight": "650"
+                },
+                {
+                  "type": "text",
+                  "id": "n9ZfA",
+                  "x": 220,
+                  "y": 14,
+                  "name": "Mobile Lex Back Type",
+                  "fill": "#5d6c5712",
+                  "content": "LEX",
+                  "fontFamily": "$rx-font-heading",
+                  "fontSize": 58,
+                  "fontWeight": "700",
+                  "letterSpacing": -2
+                },
+                {
+                  "type": "text",
+                  "id": "KuYA8",
+                  "x": 28,
+                  "y": 102,
+                  "name": "Mobile Lex Glyph Luo",
+                  "fill": "$rx-brand-primary",
+                  "content": "萝",
+                  "fontFamily": "$rx-font-serif",
+                  "fontSize": 64,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "sMfDj",
+                  "x": 96,
+                  "y": 102,
+                  "name": "Mobile Lex Glyph Bo",
+                  "fill": "$rx-accent-grayjade",
+                  "content": "卜",
+                  "fontFamily": "$rx-font-serif",
+                  "fontSize": 64,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "awKIa",
+                  "x": 28,
+                  "y": 186,
+                  "name": "Mobile Lex Key Sequence",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "yCDDN",
+                      "name": "Mobile Lex Key R",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "$rx-bg-muted",
+                      "cornerRadius": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "oqlqc",
+                          "name": "Mobile Lex Key Label R",
+                          "fill": "$rx-text-secondary",
+                          "content": "R",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "650"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nk9OS",
+                      "name": "Mobile Lex Key A",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "$rx-bg-muted",
+                      "cornerRadius": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "I55Oyk",
+                          "name": "Mobile Lex Key Label A",
+                          "fill": "$rx-text-secondary",
+                          "content": "A",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "650"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QIYVC",
+                      "name": "Mobile Lex Key D",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "$rx-bg-muted",
+                      "cornerRadius": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "KPJcu",
+                          "name": "Mobile Lex Key Label D",
+                          "fill": "$rx-text-secondary",
+                          "content": "D",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "650"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xoRc0",
+                      "name": "Mobile Lex Key I",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "$rx-bg-muted",
+                      "cornerRadius": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ztEiP",
+                          "name": "Mobile Lex Key Label I",
+                          "fill": "$rx-text-secondary",
+                          "content": "I",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "650"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "fvh4f",
+                      "name": "Mobile Lex Key S",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "$rx-bg-muted",
+                      "cornerRadius": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "plFei",
+                          "name": "Mobile Lex Key Label S",
+                          "fill": "$rx-text-secondary",
+                          "content": "S",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "650"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HKKb1",
+                      "name": "Mobile Lex Key H",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "$rx-bg-muted",
+                      "cornerRadius": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "hK3n8",
+                          "name": "Mobile Lex Key Label H",
+                          "fill": "$rx-text-secondary",
+                          "content": "H",
+                          "fontFamily": "$rx-font-mono",
+                          "fontSize": 10,
+                          "fontWeight": "650"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EWLNw",
+                  "x": 28,
+                  "y": 238,
+                  "name": "Mobile Lex Candidate Bar",
+                  "width": 274,
+                  "height": 42,
+                  "fill": "$rx-brand-soft",
+                  "cornerRadius": 10,
+                  "gap": 18,
+                  "padding": [
+                    0,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xicGZ",
+                      "name": "Mobile Lex Candidate 1",
+                      "fill": "$rx-text-primary",
+                      "content": "1 萝卜",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ag0tw",
+                      "name": "Mobile Lex Candidate 2",
+                      "fill": "$rx-text-secondary",
+                      "content": "2 radish",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "nt4Vw",
+                      "name": "Mobile Lex Candidate 3",
+                      "fill": "$rx-text-secondary",
+                      "content": "3 萝小白",
+                      "fontFamily": "$rx-font-body",
+                      "fontSize": 11,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "ISTDX",
+                  "x": 28,
+                  "y": 300,
+                  "name": "Mobile Lex Domain",
+                  "fill": "$rx-text-secondary",
+                  "content": "lex.radishx.com",
+                  "fontFamily": "$rx-font-mono",
+                  "fontSize": 10,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "icon",
+                  "id": "QQmxw",
+                  "x": 294,
+                  "y": 292,
+                  "name": "Mobile Lex Arrow",
+                  "width": 22,
+                  "height": 22,
+                  "icon": "arrow-up-right",
+                  "library": "lucide",
+                  "weight": 500,
+                  "fill": "$rx-text-primary"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xunGP",
+          "name": "Mobile Mascot · Cutout Stage",
+          "clip": true,
+          "width": "fill_container",
+          "height": 720,
+          "fill": "#33423b",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "M8myHc",
+              "x": 24,
+              "y": 28,
+              "name": "Mobile Mascot Index",
+              "fill": "#b9cbbf",
+              "content": "MASCOT  /  01",
+              "fontFamily": "$rx-font-mono",
+              "fontSize": 10,
+              "fontWeight": "650",
+              "letterSpacing": 1.5
+            },
+            {
+              "type": "text",
+              "id": "XBkZk",
+              "x": 24,
+              "y": 58,
+              "name": "Mobile Mascot Title",
+              "fill": "#fffdf8",
+              "content": "萝小白",
+              "fontFamily": "$rx-font-serif",
+              "fontSize": 50,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "ClcnS",
+              "x": 20,
+              "y": 142,
+              "name": "Mobile Mascot Back Type",
+              "fill": "#fffdf80a",
+              "content": "LUO\nXIAO\nBAI",
+              "lineHeight": 0.92,
+              "fontFamily": "$rx-font-heading",
+              "fontSize": 68,
+              "fontWeight": "650",
+              "letterSpacing": -2
+            },
+            {
+              "type": "ellipse",
+              "id": "uYXdo",
+              "x": 88,
+              "y": 132,
+              "name": "Mobile Mascot Orbit Outer",
+              "fill": "#ffffff00",
+              "width": 280,
+              "height": 280,
+              "stroke": "#b9cbbf2b",
+              "strokeWidth": 1
+            },
+            {
+              "type": "ellipse",
+              "id": "K4eew",
+              "x": 126,
+              "y": 170,
+              "name": "Mobile Mascot Orbit Inner",
+              "fill": "#ffffff00",
+              "width": 204,
+              "height": 204,
+              "stroke": "#b9cbbf24",
+              "strokeWidth": 1
+            },
+            {
+              "type": "path",
+              "id": "U5tA12",
+              "x": 28,
+              "y": 192,
+              "name": "Mobile Mascot Editorial Sweep",
+              "geometry": "M0 210c118-164 290-192 588-210m-526 272c116-144 282-182 526-186",
+              "viewBox": [
+                0,
+                0,
+                588,
+                272
+              ],
+              "fill": "#ffffff00",
+              "width": 254,
+              "height": 156,
+              "stroke": "#dfe7df38",
+              "strokeWidth": 1.2,
+              "strokeLinecap": "round"
+            },
+            {
+              "type": "ellipse",
+              "id": "sud71",
+              "x": 142,
+              "y": 600,
+              "name": "Mobile Mascot Ground Shadow",
+              "fill": "#11100f66",
+              "width": 190,
+              "height": 18
+            },
+            {
+              "type": "rectangle",
+              "id": "ZlD9J",
+              "x": 44,
+              "y": 116,
+              "name": "Mobile Luo Xiaobai Generated Cutout",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "../../../assets/avatars/mature/radish-mature-standing-grayjade-v1-candidate-transparent.png",
+                "mode": "fit"
+              },
+              "width": 340,
+              "height": 510
+            },
+            {
+              "type": "frame",
+              "id": "QiJAu",
+              "x": 24,
+              "y": 636,
+              "name": "Mobile Mascot CTA",
+              "width": 118,
+              "height": 48,
+              "fill": "#fffdf8",
+              "cornerRadius": 999,
+              "gap": 8,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tFQJk",
+                  "name": "Mobile Mascot CTA Label",
+                  "fill": "$rx-text-primary",
+                  "content": "认识她",
+                  "fontFamily": "$rx-font-body",
+                  "fontSize": 14,
+                  "fontWeight": "650"
+                },
+                {
+                  "type": "icon",
+                  "id": "SpKmH",
+                  "name": "Mobile Mascot CTA Arrow",
+                  "width": 16,
+                  "height": 16,
+                  "icon": "arrow-up-right",
+                  "library": "lucide",
+                  "weight": 500,
+                  "fill": "$rx-text-primary"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "W3WoV",
+              "x": 178,
+              "y": 682,
+              "name": "Mobile Mascot Mark",
+              "fill": "#b9cbbf",
+              "content": "RADISHX  ·  CHARACTER  ·  2026",
+              "fontFamily": "$rx-font-mono",
+              "fontSize": 8,
+              "fontWeight": "650",
+              "letterSpacing": 1.2
             }
           ]
         }
