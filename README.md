@@ -56,6 +56,7 @@ RadishX 官网首版已经完成当前阶段需要承载的内容：项目矩阵
 
 - [文档首页](docs/README.md)
 - [当前规划](docs/planning/current.md)
+- [Agent 协作与执行规则](docs/development/agent-collaboration.md)
 - [功能与目标文档](docs/features/README.md)
 - [开发规范](docs/development/standards.md)
 - [视觉规范](docs/design/visual-guidelines.md)
