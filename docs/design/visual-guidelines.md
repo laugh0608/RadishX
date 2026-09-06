@@ -8,6 +8,8 @@
 
 当前运行时已接入 family-ui v26.7.3 灰玉 token；首页与共享 Header 已按 `radishx-site-v1.pen` 落地，项目详情、Mascot 与 About 保留 craft 页面结构。`radishx-site-v0.pen` 是历史基线。阶段验收与下一步只见 [当前规划](../planning/current.md)，具体实现差异见 [UI 差异附录](ui-addendum.md)。
 
+2026-09-06 新增的 R2 首页 / Radish 双端评审稿与交互说明位于同一 v1 文件，详见 [官网整体设计与美化](../features/site-design-refinement.md)。R2.1 已获所有者确认，作为本批后续实现依据；运行时尚未更新，旧设计基线继续保留。本文后续历史五项目结构不限制已确认的 R2.1 产品目录与页面叙事。
+
 ## 参考来源
 
 RadishX 的视觉方向综合以下来源：

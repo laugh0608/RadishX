@@ -20,11 +20,12 @@
 
 | 文档 | 目标 | 状态 |
 | --- | --- | --- |
+| [site-design-refinement.md](site-design-refinement.md) | 官网整体设计美化：精选、目录与跨页统一 | R2.1 双端构图与项目展陈精修完成，所有者已确认，待 React 实现 |
 | [product-matrix-refresh.md](product-matrix-refresh.md) | 现有五项目事实同步与新增矩阵规划 | 十个本地兄弟仓库已核验；页面、路由与公开入口待实施 / 核验 |
 | [site-quality-and-public-content.md](site-quality-and-public-content.md) | 官网质量、公开文案、SEO 与验证收口 | 文档目标已建立，代码与部署尚未实施 |
 | [home-hero-visual.md](home-hero-visual.md) | 首页首屏、项目内容舞台和主视觉 | 灰玉项目舞台已实现并通过双端复核，OG 暂不替换 |
 | [project-detail-pages.md](project-detail-pages.md) | 五个项目详情页内容、视觉、公开文档入口和公开素材边界 | 首版、站内导览与 craft Phase 3 已完成 |
-| [project-visual-asset-readiness.md](project-visual-asset-readiness.md) | 五个项目正式 Logo、截图、视频和自有视觉准入准备 | 准入清单已建立，等待五项目开发成熟和新的正式候选素材 |
+| [project-visual-asset-readiness.md](project-visual-asset-readiness.md) | 五个项目正式 Logo、截图、视频和自有视觉准入准备 | 既有准入保留，新增候选类型已规划；具体文件仍待审核 |
 | [mascot-page.md](mascot-page.md) | Mascot 虚拟形象页、三形态和 Gallery | Gallery / Usage、首批单张表情与 craft Phase 4 视觉收敛已完成 |
 | [about-contact-surface.md](about-contact-surface.md) | About 联系区、仓库入口和域名边界 | 二轮扫读优化与 craft Phase 4 视觉收敛已完成 |
 | [asset-governance.md](asset-governance.md) | 素材审核、Web 优化和 `public/images` 准入 | Mascot 首批单张表情 Web 展示图已接入，下载、素材包和外部分发继续关闭 |
