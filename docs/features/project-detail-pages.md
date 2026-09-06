@@ -1,7 +1,11 @@
 # 五个项目详情页
 
 状态：首版、站内导览、素材准入清单与 craft Phase 3 均已完成
-最后更新：2026-07-13
+最后更新：2026-09-06
+
+## 后续目标与适用范围
+
+本文件保留首版与 craft Phase 3 的完成记录。2026-09-06 起的状态一致性、公开文案、焦点与入口质量建议统一见 [官网质量与对外表达收口](site-quality-and-public-content.md)，尚未实施。素材准入继续由本目标及素材专题约束。
 
 ## 目标
 
@@ -36,7 +40,7 @@
 - RadishFlow：已接入历史 UI baseline `radishflow-workbench-concept-web.jpg`，页面状态为 `Archived`。
 - RadishMind：未接入图片，使用代码内 `Evaluation loop` 表达上下文约束、工具边界、样本评测、证据链和可审计输出。
 - RadishLex：未接入图片，使用代码内 `Input pipeline` 表达拼音候选、候选重排、可解释学习和端到端加密同步；页面状态为 `Source Available`，未来域名 `lex.radishx.com`。
-- 五个项目已接入 RadishX 统一风格代码内临时标识，覆盖首页项目 band、项目详情页 Hero、Public Surface 和矩阵回流卡片；这些标识不是正式项目 Logo。
+- 五个项目已接入 RadishX 统一风格代码内临时标识，当前覆盖项目详情页 Hero、Public Surface 和矩阵回流卡片；历史 craft 首页 band 也曾使用；这些标识不是正式项目 Logo。
 - 每页主媒体区展示 `Asset source`、`Usage boundary` 和 `Next material need`。
 - 每页已补公开文档入口，只链接对应 GitHub 仓库 `dev` 分支中的 README / docs / wiki / status / contracts 等稳定入口，不复制文档正文。
 - 每页 Hero 下方已补轻量站内导览，链接到 `Public Surface`、`Documentation`、`Capabilities` 和 `Matrix` 四个 section。

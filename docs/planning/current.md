@@ -1,132 +1,75 @@
 # 当前规划
 
-最后更新：2026-08-22
+最后更新：2026-09-06
 
 ## 当前阶段
 
-RadishX 已完成灰玉首页实现与本地视觉验收。`radishx-site-v1.pen` 的桌面与 390px 移动方向已落地到 `/` 首页、共享 Header 和运行时灰玉 token；五个项目详情页、Mascot 详情页、About 与部署边界保持现状。当前回到首页验收意见等待期，不继续扩展暗色精确稿或其他页面视觉。
+RadishX 已完成首版官网与灰玉首页本地实现。当前进入“官网质量与对外表达收口”的文档准备阶段：优先处理已发现的质量问题、公开文案和文档一致性，保持现有技术栈、品牌方向与静态展示边界。
 
-当前站点已具备：
+本轮仅完善文档，未修改页面、运行时、素材或部署。后续实施清单、证据与完成标准统一见 [官网质量与对外表达收口](../features/site-quality-and-public-content.md)。
 
-- Vite + React + TypeScript 静态官网骨架。
-- `/`、五个项目详情页、`/mascot`、`/about` 和 404 页面。
-- `radishx.com` canonical 域名、`www.radishx.com` 兼容跳转、Vercel History API fallback。
-- 基础 metadata、Open Graph / Twitter Card、`sitemap.xml` 和 `robots.txt`。
-- 首批已审核 Mascot / About 素材、项目详情页代表视觉、首页五项目内容舞台和透明完全体 Mascot 舞台。
-- Mascot Gallery 整图预览、首批 10 张单张表情 Web 展示图和 `/mascot` 候选预览区。
-- 五个项目详情页公开文档入口、Hero 下方站内导览和代码内临时项目标识。
-- `radishx-site-v0.pen` 保留已落地的 v1.2 craft 历史基线；`radishx-site-v1.pen` 用于灰玉新方向，当前包含首页桌面与 390px 移动评审页。
-- 本地构建、静态输出检查、HTTP smoke、桌面 / 移动端视觉 smoke、线上 HTTP smoke 和线上截图级 smoke 的阶段性记录。
+## 实现、验收与发布状态
 
-当前没有新的正式项目 Logo、真实截图、公开视频素材、seasonal 活动目标、下载授权或发布要求。因此本阶段不继续扩展素材入口，不开放下载或素材包，不启动 seasonal 页面实现。下一轮 RadishX 官网功能开发应等待五个项目任一形成适合公开展示的新阶段成果，并补齐对应正式材料后再启动。
-
-## 执行口径
-
-- `docs/planning/current.md` 只记录当前阶段、活跃目标、执行顺序和跨目标风险。
-- 具体页面、功能或素材治理工作写入 `docs/features/*.md`。
-- `docs/devlogs/` 记录已经完成的结果、关键决策、验证和遗留风险，不承载展开式任务清单。
-- 开始开发一个新目标前，先阅读或补齐对应 `docs/features/*.md`，再进入设计稿、代码或素材实现。
-- 如果目标涉及重大页面结构、视觉方向、素材版权、域名或部署边界，更新对应专题真相源；只有面向读者的稳定项目概览变化时才同步 `README.md`，只有启动级长期约束变化时才同步 `AGENTS.md` 与 `CLAUDE.md`。
-
-## 目标文档索引
-
-| 目标 | 文档 | 当前状态 |
+| 对象 | 已知状态 | 尚未确认 |
 | --- | --- | --- |
-| 首页首屏与主视觉 | [home-hero-visual.md](../features/home-hero-visual.md) | 灰玉项目舞台已实现并通过桌面 / 移动复核，OG 暂不替换 |
-| 五个项目详情页 | [project-detail-pages.md](../features/project-detail-pages.md) | 首版已实现，已补站内导览 |
-| 项目视觉素材准入准备 | [project-visual-asset-readiness.md](../features/project-visual-asset-readiness.md) | 五项目正式 Logo、截图、视频和自有视觉准入清单已建立 |
-| Mascot 虚拟形象页 | [mascot-page.md](../features/mascot-page.md) | Gallery / Usage、单张表情与 craft Phase 4 视觉收敛已完成 |
-| About 联系区 | [about-contact-surface.md](../features/about-contact-surface.md) | 二轮扫读优化与 craft Phase 4 视觉收敛已完成 |
-| 素材治理 | [asset-governance.md](../features/asset-governance.md) | Mascot 首批单张表情已生成 Web 展示图，下载、素材包和外部分发继续关闭 |
-| 视觉 QA 与发布检查 | [visual-qa-and-release.md](../features/visual-qa-and-release.md) | craft Phase 5 本地 54 组合终验、9 路由 HTTP smoke 与既有线上检查已完成 |
-| 设计源精确化 | [design-source-refresh.md](../features/design-source-refresh.md) | 已切换到 v1.2「craft」单基线（10 张：去框 / 留白 / 柔投影 / 段控主题）；v1 / v1.1 / v1.1 暗色旧画板已从画布删除，留存 git 历史 |
-| 灰玉品牌视觉 | [grayjade-brand-refresh.md](../features/grayjade-brand-refresh.md) | 桌面与移动设计已确认，React 首页已实现并通过双端浏览器复核 |
-| React 与设计源对照校准 | [react-design-alignment.md](../features/react-design-alignment.md) | 历史基线已完成；首页现由灰玉目标替代，其他页面继续保留 craft 基线 |
-| craft 视觉基线落地 | [craft-visual-refresh.md](../features/craft-visual-refresh.md) | Phase 0–5 已全部落地并通过全站三态终验 |
-| 家族统一 UI 规范 | [family-ui-spec.md](../features/family-ui-spec.md) | v26.7.3：默认品牌参考切换为灰玉，移除项目配色 / 接入 / 进度治理，参考 UI 归入规范目录 |
+| 本地代码 | 2026-09-06 审阅基线为 `c52548c`；生产构建、本地发布检查和协作入口检查通过 | 审阅发现的质量问题尚未修复 |
+| 灰玉首页 | 2026-08-03 已完成桌面与 390px 移动设计确认、React 实现和本地双端复核；包括共享 Header 与 family-ui v26.7.3 token | 本次未重跑真实浏览器；既有首页最终验收意见仍待所有者明确 |
+| 其他页面 | 五项目详情、Mascot、About 保留 craft 页面结构与既有素材；共享 token / Header 已随灰玉更新 | 不将历史全站终验当作灰玉更新后全部组合的新验证 |
+| 线上版本 | 存在历史 HTTP 与截图级 smoke 记录 | 本次未核验线上提交、当前部署和域名跳转；不能认定线上已包含灰玉首页 |
+
+设计源分工：`radishx-site-v1.pen` 是灰玉首页桌面与移动基准；`radishx-site-v0.pen` 保留 craft 历史设计，其他页面沿用其既有结构。详见 [视觉规范](../design/visual-guidelines.md) 与 [UI 差异附录](../design/ui-addendum.md)。
 
 ## 当前活跃目标
 
-当前没有新的下载、seasonal 或部署目标。灰玉品牌方向已完成首页桌面四轮视觉校正、390px 移动稿和 React 双端实现：标题去除解释型副标题，Hero 使用可切换单项目内容舞台与五轨索引，正文使用不对称生态图谱，Mascot 使用透明立绘舞台，没有品牌依据的临时几何符号已经移除。`1440x900` 与 `390x844` 应用内浏览器复核、9 路由 HTTP smoke 和本地发布检查均通过；当前等待首页实现验收意见，暗色精确化和其他页面视觉升级暂不展开。
+[官网质量与对外表达收口](../features/site-quality-and-public-content.md)是下一轮质量工作的统一入口，具体问题不在本页重复维护。
 
-family-ui 同步收敛为通用规范与参考资料，详见 [family-ui-spec.md](../features/family-ui-spec.md)。它不再分配具体项目配色、不规定其他项目接入方式，也不记录其他项目进度。
+执行顺序：
 
-craft 视觉基线落地已完成，详见 [craft-visual-refresh.md](../features/craft-visual-refresh.md)。设计源与 React 实现现已统一到 v1.2 craft 表现层；后续只在页面、素材或发布状态变化时复跑对应检查。
+1. 质量与一致性修正：项目状态、主题色、焦点、检查遗漏、小字可读性和联系动作。
+2. 公开文案整理：让访客理解用途、现状与下一步，减少内部审批和实现说明。
+3. SEO 与验证方案评估：考虑构建期页面 HTML 输出、路由事实共享和可重复浏览器检查；方案确认后再实施。
+4. 维护性整理：核实无用实现与样式职责，随实际内容更新补齐状态核验依据。
+5. 项目出现正式公开成果后，再评估素材接入、功能扩展和后续页面视觉。
 
-本阶段优先级：
+文档准备完成不等于上述代码批次完成。首页如有具体验收意见，登记到对应目标并处理；没有具体意见时不自行追加视觉轮次。所有者确认首页收口后，结束等待项并进入维护期，无需新增画板来证明阶段结束。
 
-1. 等待首页 React 实现验收意见，重点关注 Hero 项目舞台、移动单列节奏和 Mascot 品牌舞台。
-2. 用户确认前不扩展暗色精确稿、其他页面视觉或新的公开素材。
-3. 如只调整首页视觉细节，复用 `1440x900` 与 `390x844` 应用内浏览器复核，不重复触发线上发布流程。
+## 内容维护与功能扩展
+
+内容维护不依赖新增功能条件：发现定位、维护状态、文档地址、可用入口或公开说明可能过期时，可以进入核验与文案整理。核验需记录来源和日期，不从旧官网状态推断兄弟项目今天仍处于同一阶段。
+
+新增页面、素材入口或功能扩展至少需要以下依据之一：
+
+- 某项目有新的正式公开成果，需要官网同步介绍或入口。
+- 正式 Logo、真实截图、公开视频、Demo、文档站或下载页已具备明确来源与授权。
+- 域名、发布计划或素材授权发生变化，需要官网同步。
+- 明确的品牌表达或信息架构需求，已确认目标和影响范围。
+
+进入实现前维护对应 `docs/features/*.md`；素材按准入清单审核，较大视觉调整按 Pencil 流程推进。公开状态核验方式见 [收口目标](../features/site-quality-and-public-content.md)。
 
 ## 当前不推进
 
-- 不迁入兄弟项目代码或未审核素材。
-- 不把代码内临时项目标识声明为正式 Logo。
-- 不替换五个项目详情页为真实截图或视频，除非先出现明确候选来源和授权记录。
-- 不把 Mascot 首批单张表情升级为下载素材、素材包、社交贴纸包或外部分发资源。
-- 不生成 Mascot 单张缩略图，除非页面性能或文件包边界出现真实需要并另行确认。
-- 不启动 seasonal 页面、活动 Banner 或节日彩蛋实现。
-- 不修改 `hub.radishx.com`、`forge.radishx.com`、`flow.radishx.com`、`mind.radishx.com`、`lex.radishx.com` 的本官网路由 / rewrite 边界。
-- 不为了保持开发节奏而新增页面、入口、视觉效果或素材分类；新增功能必须有明确项目进展、正式材料或发布需求支撑。
+- 不重做整个品牌，不一次性扩展暗色精确稿、其他页面视觉或新的公开素材。
+- 不将静态 HTML 输出评估当作新框架、服务端业务或部署改动的执行授权。
+- 不迁入兄弟项目代码或未审核素材，不把临时项目标识声明为正式 Logo。
+- 不开放 Mascot 下载、素材包、社交贴纸包或外部分发；不无依据生成缩略图。
+- 不启动 seasonal 页面、活动 Banner 或节日彩蛋。
+- 不引入后台、数据库、登录、CMS 或统计服务。
+- 不修改五个未来项目子域为本官网路由 / rewrite，不自行推送或部署。
 
-## 产品边界
+## 跨目标风险与待决事项
 
-当前官网只负责展示 RadishX 和五个项目矩阵。
+- 灰玉首页最终验收与当前线上版本分别待确认；本地构建通过不能代替发布证据。
+- 项目状态、外部文档入口和兄弟项目成果本次未实时核验；内容更新前先确认公开事实。
+- SEO 静态输出、未知路径响应和验证入口仍处于方案准备，不预设工具或依赖。
+- 首页负字距、流式字号与现有规范存在偏离，记录于 UI 差异附录；后续明确是修实现还是调整规范，不静默扩大例外。
+- 新 Logo、截图、视频、下载授权与 seasonal 目标仍待正式材料；没有材料时继续保留现有展示范围。
 
-本官网包含：
+## 专题入口
 
-- `radishx.com` 官网首页；`www.radishx.com` 作为兼容入口跳转到根域。
-- Radish、RadishCatalyst、RadishFlow、RadishMind、RadishLex 的站内介绍页。
-- Mascot 虚拟形象页。
-- About 联系方式和社交媒体页面。
+- [功能与目标索引](../features/README.md)：页面目标、已完成基线和素材准备。
+- [开发规范](../development/standards.md)：工程结构、内容维护和验证能力边界。
+- [素材治理](../assets/materials.md)：来源、公开展示、授权与撤回。
+- [Vercel 与域名](../deployment/vercel.md)：canonical、兼容入口、五项目子域及部署记录要求。
+- [开发日志](../devlogs/README.md)：已完成工作、日期化验证和剩余限制。
 
-本官网不包含：
-
-- 五个项目的实际业务功能。
-- 五个项目未来独立站点的部署。
-- 登录、后台、数据库、服务端 API。
-
-## 域名决策
-
-- `radishx.com`：当前官网 canonical 主域名，部署在 Vercel。
-- `www.radishx.com`：兼容访问入口，跳转到 `radishx.com` 并保留路径。
-- `hub.radishx.com`：Radish 未来独立访问域名。
-- `forge.radishx.com`：RadishCatalyst 未来独立访问域名。
-- `flow.radishx.com`：RadishFlow 未来独立访问域名。
-- `mind.radishx.com`：RadishMind 未来独立访问域名。
-- `lex.radishx.com`：RadishLex 未来独立访问域名。
-- `x.radishx.com`：保留给 RadishX Labs、实验入口、短链或统一跳转页。
-
-五个项目域名不是当前 Vercel 官网项目的路由或重写规则。
-
-## 待确认
-
-- 五个项目后续是否补独立稳定 Logo，用于替换当前代码内临时标识。
-- 五个项目详情页后续是否需要真实截图或视频素材。
-- RadishMind 后续是否补项目自有 Logo、Console 截图或真实图片素材，用于替换当前代码内评测回路图。
-- “萝小白”首批单张表情已生成 Web 展示图并进入 `/mascot` 候选预览区；后续如果开放下载、素材包、社交贴纸包或外部分发，仍需另行确认授权和文件包边界。
-- 具体 seasonal 活动实现仍待确认活动目标、上线 / 下线时间、页面位置、文案边界、授权来源和撤下策略。
-
-## 恢复开发条件
-
-下一轮 RadishX 官网功能开发应至少满足以下条件之一：
-
-1. 五个项目任一有新的公开阶段成果，需要在官网更新定位、状态、入口或页面结构。
-2. 五个项目补齐正式 Logo、真实截图、公开视频、稳定 Demo、文档站、下载页或项目自有可视化素材。
-3. 项目域名、部署策略、下载授权、素材授权或公开发布计划发生变化，需要官网同步。
-4. Mascot 素材确认新的授权范围，例如下载、素材包、社交贴纸包、seasonal 活动或外部分发。
-5. 首页主视觉、Open Graph、信息架构或品牌表达需要随项目实质进展更新。
-
-恢复开发时，先更新对应 `docs/features/*.md` 和素材清单，再决定是否同步 Pencil 设计源、React 实现和发布验证。
-
-## 后续顺序
-
-1. 保持当前首版官网可发布状态，必要时复核文档、验证脚本和发布检查记录。
-2. 等待五个项目进入更适合公开展示的阶段，并补齐正式 Logo、真实截图、视频、Demo、下载页、文档站或 RadishMind 自有视觉等材料。
-3. 五个项目出现新的正式候选来源后，先按项目视觉素材准入清单补齐字段，再进入素材审核和 Web 优化。
-4. 如 React 页面继续调整或新增正式素材，先同步对应目标文档，再通过 Pencil 工具维护 `radishx-site-v1.pen` 的桌面与移动灰玉画板。
-5. 如进入新的部署阶段或页面 / 资源发生变化，线上 HTTP smoke 可复用当前脚本复跑确认；截图级发布检查使用 Playwright + 本机 Chrome 覆盖桌面与移动端。
-6. 如需使用 seasonal 图，先选择具体活动目标并确认上线 / 下线时间、页面位置、文案、授权和撤下策略，再生成 Web 版本。
-7. 后续只有首页视觉再次明显变化或社交预览目标变化时，再评估 Open Graph 分享预览图。
-8. 如需继续推进 Mascot 单张表情后续形态，只能在当前官网内部展示候选基础上评估更多格位、缩略图或下载文件包；下载、素材包和外部分发需要另行确认授权范围、文件包边界和撤回策略。
+官网继续只承担 Radish 系列项目展示与公共入口。`radishx.com` 为 canonical，`www.radishx.com` 为兼容入口；五项目未来独立部署，`x.radishx.com` 继续保留给 Labs、实验入口或统一跳转用途，本轮不启用。

@@ -7,7 +7,7 @@
 - [当前规划](planning/current.md)：项目阶段、已确认决策、下一步。
 - [Agent 协作与执行规则](development/agent-collaboration.md)：根入口、专题规则、当前规划与记录的职责边界。
 - [功能与目标文档](features/README.md)：页面、功能、素材治理和发布检查的设计与开发文档。
-- [开发规范](development/standards.md)：仓库、前端、响应式、验证和提交规则。
+- [开发规范](development/standards.md)：仓库、前端、公开内容维护、响应式、验证和提交规则。
 - [视觉规范](design/visual-guidelines.md)：官网气质、页面节奏、Radish 视觉参考和素材使用原则。
 - [Vercel 与域名](deployment/vercel.md)：官网部署边界、根域和未来项目域名策略。
 - [素材治理](assets/materials.md)：虚拟形象、社交媒体素材和审核规则。

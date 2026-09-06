@@ -10,7 +10,7 @@ Agent 的任务推进、授权边界、文档分层和根入口维护规则见 [
 - React
 - TypeScript
 - 普通 CSS 或 CSS Modules，第一版优先普通 CSS + 语义 token
-- 静态站点，部署到 Vercel
+- 静态资源部署到 Vercel；当前为单一 HTML 入口和客户端 History API 路由，尚未为各页面输出独立 HTML 正文
 
 默认使用 `npm`。除非后续明确切换，不引入 `pnpm`、`yarn` 或额外 monorepo 工具。
 
@@ -53,9 +53,9 @@ npm run dev
 - `.pen` 设计文件放在 `docs/design/sources/`，只能通过 Pencil 读写。
 - 不把兄弟项目代码整包迁入当前仓库。
 
-## 预期项目结构
+## 项目结构
 
-项目初始化后建议结构：
+现有工程按以下职责划分；文件示例不是完整清单：
 
 ```text
 src/
@@ -101,6 +101,14 @@ public/
 - 外链统一通过数据层维护，避免多个页面手写不同 URL。
 - 对 `mailto:`、GitHub、个人主页和未来项目域名做明确外链处理。
 
+## 公开内容与维护
+
+- 公开页面优先说明用途、当前状态、可用动作和必要限制；模板实现、审批过程和部署细节保留在专题文档。
+- 能力描述区分已实现与规划，源码可见不等于产品可用；概念图与历史 UI 不代表实机或当前版本。
+- 同一项目在首页、详情和 About 的状态保持一致；域名展示不能暗示未开放服务已经可访问。
+- 更新项目状态与外部入口时记录实际核验日期和来源，不用官网文档更新时间代替兄弟项目事实。
+- 内容核验不必等待新素材；具体核验字段与本轮页面编辑目标见 [官网质量与对外表达收口](../features/site-quality-and-public-content.md)。
+
 ## 路由规则
 
 目标路径：
@@ -125,14 +133,15 @@ public/
 
 ## 样式规则
 
-- 全局 token 放在 `src/styles/tokens.css`。
+- family-ui 参考 token 位于 `src/styles/family-ui-tokens.css`，站点映射与特有 token 放在 `src/styles/tokens.css`。
+- 共享 Header / Footer 样式归共享布局职责，页面专属样式归对应页面；整理时先确认选择器的实际复用，不按文件行数机械拆分。
 - 颜色、文本、背景、边框、阴影、圆角和间距优先使用 `--rx-*` 变量。
 - 不在 JSX `style` 中扩散硬编码颜色、阴影和复杂布局值。
 - Section 使用全宽分区或无框布局承载；卡片只用于项目入口、图库项目或明确的信息单元。
 - 不做卡片套卡片。
 - 不使用大面积单一色系堆叠，避免页面只剩绿色、米色、棕色、紫蓝或深色。
 - 字体大小使用明确层级，不用 `vw` 直接缩放。
-- 文字 `letter-spacing` 默认为 `0`，只在明确的品牌小标题中轻微增加。
+- 文字 `letter-spacing` 默认为 `0`，只在明确的品牌小标题中轻微增加。灰玉首页已有排版偏离见 [UI 差异附录](../design/ui-addendum.md)，不静默扩大为新默认规则。
 - 图标优先使用文本、CSS 或后续确认的图标库；不为了少量图标提前引入大型图标包。
 
 ## 响应式规则
@@ -150,7 +159,7 @@ PC 和移动端都是一等目标。
 
 - 首页、项目页、Mascot 页和 About 页都必须在移动端可完整浏览。
 - 导航在窄屏下需要折叠或重排，不能挤压正文。
-- 首页项目矩阵在桌面端可做横向强视觉 band，移动端必须改为单列。
+- 首页项目矩阵桌面端使用已确认的不对称生态图谱，移动端必须改为单列。
 - 大图必须设置稳定比例或尺寸约束，避免加载后布局跳动。
 - 标题、按钮、chip、卡片和二维码说明文字不能溢出容器。
 - 移动端减少背景纹理、弱化复杂装饰，优先保证内容连续浏览。
@@ -176,11 +185,11 @@ PC 和移动端都是一等目标。
 - 保留 skip link 和 `main#main-content` 主内容焦点目标；站内换页后应把焦点转回正文。
 - 重复出现的链接或按钮文案，例如“查看详情”“GitHub”，必须通过可访问名称带上项目或上下文，避免读屏器只读到一组泛化链接。
 - `prefers-reduced-motion` 下应关闭或减弱非必要动画。
-- 页面标题、描述和 Open Graph 信息在项目初始化后补齐。
+- 页面标题、描述和 Open Graph 信息应与当前路由一致；验证时区分原始 HTML 与 JavaScript 更新后的 DOM。当前输出限制与待评估方案见 [官网质量收口](../features/site-quality-and-public-content.md)。
 
 ## 验证规则
 
-项目初始化后，默认至少执行：
+涉及代码改动时，基础检查为：
 
 ```bash
 npm run build
@@ -192,7 +201,7 @@ npm run build
 npm run check:local-release
 ```
 
-该命令会先运行生产构建，再检查 `dist/` 中的入口文件、SEO 文件、Vite 产物和公开图片资源是否完整输出。
+该命令会先运行生产构建，再检查 `dist/` 中的入口文件、部分 SEO 内容、Vite 产物和公开图片文件。它不验证图片解码、所有源码资源引用、浏览器渲染或交互；已知覆盖遗漏见 [官网质量收口](../features/site-quality-and-public-content.md)。
 
 需要检查一个正在运行的 HTTP 目标时，可执行：
 
@@ -200,24 +209,20 @@ npm run check:local-release
 npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 ```
 
-该命令会检查指定站点的关键路由 HTML、`robots.txt`、`sitemap.xml` 和公开图片资源；进入发布阶段后可追加 `--www-url` 检查 `www` 到 canonical 根域的路径保留跳转。它不替代桌面 / 移动端 Browser 视觉 smoke。
+该命令检查指定站点的 HTTP 响应、HTML 外壳、`robots.txt`、`sitemap.xml` 和公开图片的响应状态 / 类型；进入发布阶段后可追加 `--www-url` 检查 `www` 到 canonical 根域的路径保留跳转。它不执行页面 JavaScript，不能证明路由正文、图片解码、交互或控制台正常，也不替代桌面 / 移动端 Browser 视觉 smoke。
 
 线上截图级发布检查优先使用 Playwright + 本机 Google Chrome，覆盖 `1440 x 900` 桌面和 `390 x 844` 移动端关键路由。对 lazy 图片较多的页面，需要逐图滚入视口并等待图片完成解码后再截 full-page 图。截图和临时汇总文件放在 `output/playwright/`，作为本地 QA artifact，不提交到仓库。
 
-建议脚本：
+独立类型检查可执行 `npm run type-check`，协作入口检查可执行 `npm run check:agent-guides`。命令以 `package.json` 为准；当前未提供 `lint`、`format` 或统一浏览器测试 script，不将其列为已经可运行的检查。
 
-```bash
-npm run type-check
-npm run lint
-npm run format
-```
+可复用验证脚本应纳入版本管理，截图与运行汇总留在 `output/`。后续补充浏览器入口时明确环境要求与服务生命周期；没有实际运行的检查只记录为待验证。
 
 涉及 UI、布局或素材改动时，应使用真实浏览器检查桌面和移动端视图。完成前至少确认：
 
 - 首页无明显错位。
 - 导航可用。
 - 五个项目页入口可访问。
-- 项目详情页的 GitHub 链接和 Coming Soon 状态清楚。
+- 项目详情页的 GitHub / 文档入口与未开放、暂停维护等真实状态清楚。
 - Mascot 页图片不变形、不遮挡正文。
 - About 页二维码和联系方式可读。
 - 移动端无横向滚动、文字溢出或按钮挤压。

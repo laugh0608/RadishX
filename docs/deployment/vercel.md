@@ -7,7 +7,7 @@
 当前只有 RadishX 官网部署到 Vercel。五个项目未来域名不属于本官网项目的路由或重写规则。
 
 - GitHub 仓库：`https://github.com/laugh0608/RadishX`
-- Vercel 项目：已创建，项目名以 Vercel 控制台为准
+- Vercel 项目：历史记录为已创建，实际项目名与当前部署提交以获准核验后的 Vercel 记录为准
 - Canonical 主域名：`radishx.com`
 - 兼容访问入口：`https://www.radishx.com/`，跳转到 `https://radishx.com/`
 - 站点内容：首页、五个项目介绍页、Mascot、About
@@ -22,7 +22,7 @@
 - `mind.radishx.com`：RadishMind
 - `lex.radishx.com`：RadishLex
 
-官网中可以把这些域名作为“访问项目”的外部链接。对应项目未上线前，按钮应禁用、隐藏或标注 Coming Soon。
+官网中可以展示这些域名，但实际外链只在入口稳定可用后开放。未上线与暂停维护分别表达，不对 Archived 项目统一标注 Coming Soon。
 
 ## 第一版部署配置
 
@@ -34,7 +34,7 @@
 4. `www.radishx.com` 作为兼容访问入口跳转到根域，并保留路径。
 5. 五个未来项目域名不配置成本官网 rewrite。
 
-预期 Vite 配置：
+当前构建配置：
 
 - Build command：`npm run build`
 - Output directory：`dist`
@@ -64,27 +64,23 @@
 
 五个未来项目子域名不写入当前官网 sitemap，等对应项目独立部署后由各自站点维护。
 
-## 2026-06-13 线上 smoke 记录
+## 输出与 SEO 能力边界
 
-- Chrome 插件已确认 `https://www.radishx.com/` 能在真实 Chrome 中打开，页面标题为 `RadishX - Radish 系列项目矩阵`。
-- Chrome 插件在 DOM / 截图采集阶段出现超时，疑似与当时两个会话同时控制 Chrome 有关；后续需要在 Chrome 会话稳定时补一次完整桌面和移动端视觉 smoke。
-- 直接 HTTP 检查确认 `https://www.radishx.com/` 返回 `HTTP/2 200`，响应来自 Vercel / Cloudflare，`x-vercel-cache: HIT`。
-- 站内路径 `/radish`、`/catalyst`、`/flow`、`/mind`、`/mascot`、`/about` 均返回 `HTTP/2 200`，并落到 `index.html`。
-- 未知路径 `/abc-test` 返回 `HTTP/2 200` 并落到 `index.html`，确认当前 Vercel fallback 可覆盖 History API 路由。
-- 本机 shell 环境存在失效的 `127.0.0.1:10808` 代理配置；后续直接 HTTP 检查需要先确认代理状态，或在命令中显式清理代理变量。
+当前所有页面路径共用 `index.html`，title、description、canonical 与 OG / Twitter 在浏览器执行 JavaScript 后更新。初始 HTML 为首页信息，不具备逐路由静态正文；未知路径同样进入 fallback，客户端再显示 404 并设置 `noindex`。
 
-## 2026-06-14 线上 smoke 记录
+后续静态 HTML 输出与未知路径响应只处于 [质量收口目标](../features/site-quality-and-public-content.md) 的方案评估，尚未选定工具或修改 rewrite。已有 sitemap、客户端 metadata 和历史 HTTP smoke 不等于逐页面抓取 / 分享结果已验证。
 
-- 直接 HTTP 复查确认 `https://www.radishx.com/` 返回 `HTTP/2 200`，响应来自 Vercel / Cloudflare，`x-vercel-cache: HIT`。
-- HTTP 检查确认 `/`、`/radish`、`/catalyst`、`/flow`、`/mind`、`/mascot`、`/about` 和 `/abc-test` 均返回 `200`。
-- 本地同版本已完成 `1440x900` 与 `390x844` 全路由响应式 smoke，未发现横向溢出、文本溢出、小点击目标或页面 error console。
-- 当前 Browser webview 与 Playwright CLI 截图链路仍不稳定，线上截图级视觉 smoke 后续需要在浏览器会话稳定后补跑。
+## 发布与核验记录
 
-## 2026-06-14 域名规范化记录
+一次发布应分别记录：本地提交及工作区状态、目标站点、实际部署提交或可识别部署版本、核验日期、执行的 HTTP / 浏览器检查及结果。未获取实际线上版本时，明确记为未核验，不根据本地构建或旧截图推断部署一致。
 
-- 已确认 `https://radishx.com/` 为官网 canonical 主域，返回 `HTTP/2 200`。
-- 已确认 `https://www.radishx.com/` 返回 `HTTP/2 307` 并跳转到 `https://radishx.com/`。
-- 已确认 `https://www.radishx.com/about` 返回 `HTTP/2 307` 并跳转到 `https://radishx.com/about`，路径可保留。
+`www` 跳转来自托管侧配置，当前 `vercel.json` 本身没有定义这一跳转。配置变化或新的发布检查时应重新验证路径保留；本地仓库检查不能证明控制台配置有效。
+
+## 历史记录索引
+
+- 2026-06-13 / 14 的 HTTP、浏览器链路和域名规范化原始记录已归入 [2026-W24 开发日志](../devlogs/2026-W24.md)。其中早期 `www` 返回 200 和后续变为 307 是不同时间的事实，不是当前相互冲突的要求。
+- 后续线上检查记录见 [视觉 QA 与发布检查](../features/visual-qa-and-release.md)；只对各自日期和目标有效。
+- 当前版本核验状态见 [当前规划](../planning/current.md)。
 
 ## 不在当前阶段做
 
