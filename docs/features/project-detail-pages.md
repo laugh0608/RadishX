@@ -33,6 +33,10 @@
 - 不把概念图描述成实机截图。
 - 不把 RadishFlow 历史 UI baseline 包装成继续公开维护或产品化承诺。
 
+## 待同步的产品事实
+
+现有页面数据已落后于兄弟产品规划。Radish 的 Web / Flutter 分工、Catalyst 的生产经营方向、Mind 内部开发者预览与 Lex 的 macOS / Linux 验收范围，统一按 [产品矩阵同步与扩展](product-matrix-refresh.md)准备更新；Flow 保持历史项目。以下仍记录尚未更新的官网实现，不作为兄弟项目当前状态。
+
 ## 当前实现
 
 - Radish：已接入 README 使用过的代表图 `radish-acg-web.jpg`。

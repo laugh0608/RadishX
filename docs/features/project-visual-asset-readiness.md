@@ -1,7 +1,7 @@
 # 项目视觉素材准入准备
 
-状态：已建立准入清单，等待五项目开发成熟和新的正式候选素材
-最后更新：2026-07-13
+状态：已有页面素材准入保留；新增产品候选类型已进入矩阵规划，具体文件仍待审核
+最后更新：2026-09-06
 
 ## 目标
 
@@ -13,7 +13,9 @@
 
 当前官网使用 RadishX 统一风格代码内临时项目标识。这些标识只用于站内信息识别，不进入 `public/images/`，也不声明为项目正式 Logo。
 
-当前阶段口径：RadishX 官网功能开发暂时收住，项目页和首页项目区的下一轮功能开发等待五个项目任一形成更适合公开展示的新阶段成果，并补齐正式 Logo、真实截图、公开视频、稳定 Demo、文档站、下载页或项目自有可视化素材后再启动。
+2026-09-06 已核对兄弟产品的新阶段，见 [产品矩阵同步与扩展](product-matrix-refresh.md)。此前“未发现正式素材”的结论只描述历史审核范围，本轮没有重新清点或授权具体图片。Radish、Lex、Mind 等已有更成熟的产品界面或受控验收记录，可以评估新的截图候选；不能将运行记录直接升级为公开素材。
+
+现有五项目的文字与状态更新不受新素材条件阻塞。新增 Axiom、Link、Memory、Nexus 与 Checker 配套展示先确定矩阵范围；选定具体素材后复用本页准入字段，不自动增加目录或迁入文件。
 
 ## 范围
 
@@ -21,7 +23,7 @@
 - Radish、RadishCatalyst、RadishMind 和 RadishLex 后续真实截图或项目自有可视化图的审核条件。
 - RadishCatalyst trailer / gameplay 视频的审核条件。
 - RadishFlow archived 状态下的历史 UI 使用边界。
-- 首页项目 band、项目详情页 Hero、Public Surface 和矩阵回流卡片的替换范围。
+- 首页项目舞台 / 矩阵、项目详情页 Hero、Public Surface 和矩阵回流卡片的替换范围。
 - `docs/assets/materials.md` 与 `docs/features/project-detail-pages.md` 中的素材口径。
 
 ## 不做
@@ -45,7 +47,7 @@
 | `source_owner` | 素材所属项目或创建来源。 |
 | `public_status` | `approved`、`candidate`、`internal_only`、`rejected`。 |
 | `usage_boundary` | 官网可展示范围、不能表达的含义和是否允许二次裁切。 |
-| `replacement_scope` | 替换首页项目 band、项目页 Hero、Public Surface、矩阵回流卡片或 Open Graph 的具体范围。 |
+| `replacement_scope` | 替换首页项目舞台 / 矩阵、项目页 Hero、Public Surface、矩阵回流卡片或 Open Graph 的具体范围。 |
 | `web_output` | 通过审核后生成的 `public/images/projects/...` Web 文件路径；未审核时留空。 |
 | `fallback` | 移动端、加载失败、视频不可播放或素材下线时的降级策略。 |
 | `license_note` | 授权、版权、字体、外部素材或生成来源备注。 |
@@ -64,7 +66,7 @@
 
 1. 发现候选素材后，先在 `docs/assets/materials.md` 追加审核记录，不直接放入 `public/images/`。
 2. 判断素材类型和公开状态，确认是否可用于官网正式页面。
-3. 明确替换范围：只替换单页主媒体，还是同步首页项目 band、Hero、Public Surface 和矩阵回流卡片。
+3. 明确替换范围：只替换单页主媒体，还是同步首页项目舞台 / 矩阵、Hero、Public Surface 和矩阵回流卡片。
 4. 需要 Web 版本时，再从原图生成 `public/images/projects/<project>/...`，保留原始素材路径不覆盖。
 5. 更新 `src/data/projects.ts` 中 `visual`、`assetReview` 或 `mark` 相关字段，并同步目标文档。
 6. 涉及视觉或响应式变化时，执行构建、空白检查、桌面和 390px 移动端检查；视频还需检查降级图和移动端加载策略。
@@ -80,7 +82,7 @@
 - RadishMind 有自有 Console、协议 / 评测可视化图或其他可公开智能层素材。
 - RadishLex 有自有候选窗、manager 截图、输入链路视觉或其他可公开输入系统素材。
 
-恢复开发时不能直接改页面。先补齐本页准入字段和 `docs/assets/materials.md` 素材记录，再确定替换范围、设计源同步范围和验证范围。
+涉及素材接入时，先补齐本页准入字段和 `docs/assets/materials.md` 记录，再确定替换与验证范围；纯文案和状态同步按矩阵目标推进，不要求先获得新图片。
 
 ## 视频准入
 
@@ -92,7 +94,7 @@
 - 压缩格式、时长、自动播放策略、静音策略和用户流量成本。
 - 不支持视频播放时的静态替代视觉。
 
-当前五个项目没有可接入官网正式页面的视频素材。
+当前 RadishX 准入清单没有新增已批准的视频；本轮没有全面扫描兄弟项目视频目录，不据此断言来源仓库没有视频。
 
 ## 验证
 
