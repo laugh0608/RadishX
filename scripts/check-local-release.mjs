@@ -88,6 +88,11 @@ for (const url of [
   "https://radishx.com/catalyst",
   "https://radishx.com/flow",
   "https://radishx.com/mind",
+  "https://radishx.com/lex",
+  "https://radishx.com/axiom",
+  "https://radishx.com/link",
+  "https://radishx.com/memory",
+  "https://radishx.com/nexus",
   "https://radishx.com/mascot",
   "https://radishx.com/about",
 ]) {

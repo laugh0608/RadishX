@@ -27,7 +27,7 @@ export function ProjectMatrix() {
                 <div className="home-project-card__identity">
                   <div>
                     <h3>{project.name}</h3>
-                    <span>{project.futureDomain}</span>
+                    <span>{project.tagline}</span>
                   </div>
                   <span className="home-project-card__arrow" aria-hidden="true">↗</span>
                 </div>

@@ -260,7 +260,10 @@
   position: relative;
   z-index: 4;
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(104px, 1fr);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
   border-top: 1px solid color-mix(in srgb, var(--home-stage-tone) 18%, var(--rx-border-soft));
   background: color-mix(in srgb, var(--rx-bg-surface) 82%, transparent);
 }
@@ -1583,4 +1586,60 @@
 [data-rd-theme="dark"] .home-project-card__arrow:hover,
 [data-rd-theme="dark"] .home-project-card > a:hover .home-project-card__arrow {
   color: var(--rx-bg-ink);
+}
+
+/* 新增产品沿用灰玉文字展示，保留既有五项视觉。 */
+.home-project-card--axiom,
+.home-project-card--link,
+.home-project-card--memory,
+.home-project-card--nexus {
+  grid-column: span 6;
+  min-height: 360px;
+}
+
+.home-product-overview {
+  display: grid;
+  align-content: center;
+  gap: 16px;
+  height: 100%;
+  padding: 24px;
+  color: var(--rx-text-primary);
+}
+
+.home-product-overview > span {
+  color: var(--rx-accent-grayjade);
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.home-product-overview > strong {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.home-product-overview > p {
+  color: var(--rx-text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.home-project-visual--stage .home-product-overview {
+  padding: 120px 32px 24px;
+}
+
+@media (max-width: 760px) {
+  .home-project-card--axiom,
+  .home-project-card--link,
+  .home-project-card--memory,
+  .home-project-card--nexus {
+    grid-column: 1 / -1;
+  }
+
+  .home-project-visual--stage .home-product-overview {
+    padding: 110px 24px 20px;
+  }
+
+  .home-project-visual--stage .home-product-overview > span {
+    font-size: 40px;
+  }
 }

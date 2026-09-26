@@ -22,7 +22,8 @@ export function HeroOrbit() {
     if (moveFocus) {
       window.requestAnimationFrame(() => {
         const buttons = tabsRef.current?.querySelectorAll<HTMLButtonElement>("[role='tab']");
-        buttons?.[normalizedIndex]?.focus();
+        buttons?.[normalizedIndex]?.focus({ preventScroll: true });
+        buttons?.[normalizedIndex]?.scrollIntoView({ block: "nearest", inline: "nearest" });
       });
     }
   };
@@ -62,7 +63,7 @@ export function HeroOrbit() {
               <span aria-hidden="true">↗</span>
             </RouteLink>
           </div>
-          <p className="home-hero__meta">RADISHX / 05 PROJECTS / SOURCE AVAILABLE</p>
+          <p className="home-hero__meta">RADISHX / {String(projects.length).padStart(2, "0")} PROJECTS / SOURCE AVAILABLE</p>
         </div>
 
         <article className={`home-project-stage home-project-stage--${activeProject.tone}`}>

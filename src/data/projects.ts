@@ -1,6 +1,6 @@
 import type { ProjectRouteId } from "../app/routes";
 
-export type ProjectTone = "radish" | "catalyst" | "flow" | "mind" | "lex";
+export type ProjectTone = ProjectRouteId;
 
 export type ProjectLink = {
   label: string;
@@ -67,7 +67,7 @@ export type Project = {
   name: string;
   shortName: string;
   path: string;
-  futureDomain: string;
+  futureDomain?: string;
   githubUrl: string;
   mark: ProjectMark;
   tagline: string;
@@ -101,16 +101,15 @@ export const projects: Project[] = [
       label: "Temporary mark",
       note: "RadishX 统一风格代码内标识，不是 Radish 正式 Logo。",
     },
-    tagline: "内容社区与 WebOS 风格工作台",
-    summary:
-      "Radish 是系列项目的内容核心，承载社区、内容发布、个人工作台和后续生态聚合能力。",
+    tagline: "面向兴趣与创作者群体的现代社区",
+    summary: "Radish 以帖子、评论和问答承载创作与讨论，以聊天、关注和通知连接兴趣群体，并通过 Docs 沉淀知识。",
     orbitLabel: "社区与内容入口",
-    role: "Radish 体系的内容与用户入口",
-    stage: "规划与工程迭代中",
-    status: "Source Available",
-    chips: ["Community", "WebOS", "Content Hub"],
-    capabilities: ["现代化内容社区", "WebOS 风格工作台", "用户与项目聚合入口"],
-    signals: ["面向公开内容与社区运营", "未来独立域名为 hub.radishx.com", "首版官网展示 GitHub 入口"],
+    role: "Radish 家族的内容社区",
+    stage: "Web 已发布，Flutter Native 按平台建设",
+    status: "Web Released",
+    chips: ["Community", "Web-first", "Flutter Native"],
+    capabilities: ["帖子、评论与问答", "聊天、关注与通知", "可长期阅读的社区文档"],
+    signals: ["正式 Web 已发布并持续维护", "原生端按平台分别验收", "官网暂保留仓库入口，访问地址待核验"],
     visual: {
       src: "/images/projects/radish/radish-acg-web.jpg",
       alt: "Radish README 中使用的萝卜娘角色视觉",
@@ -169,16 +168,15 @@ export const projects: Project[] = [
       label: "Temporary mark",
       note: "RadishX 统一风格代码内标识，不是 RadishCatalyst 正式 Logo。",
     },
-    tagline: "异星工业科幻 ARPG",
-    summary:
-      "RadishCatalyst 面向游戏表达，探索异星化工基地、角色成长、战斗和协作联机的长期方向。",
+    tagline: "异星化工生产经营游戏",
+    summary: "RadishCatalyst 以异星化工生产经营为核心，让探索中的发现逐步转化为可复现、可扩展的工业生产能力。",
     orbitLabel: "游戏与世界观",
-    role: "RadishX 的叙事、角色和游戏化表达",
-    stage: "概念与原型筹备",
-    status: "Coming Soon",
-    chips: ["ARPG", "Industrial Sci-fi", "Worldbuilding"],
-    capabilities: ["异星基地探索", "人物成长与战斗", "后续协作联机方向"],
-    signals: ["第一版官网展示项目定位", "未来独立域名为 forge.radishx.com", "真实游戏画面后续替换"],
+    role: "探索与生产相互推动的工业科幻游戏",
+    stage: "三维基础工厂已完成开发机交付，持续迭代",
+    status: "In Development",
+    chips: ["Factory", "Industrial Sci-fi", "Exploration"],
+    capabilities: ["三维基础工厂建造与生产", "探索发现与配方试制", "电力网络与生产统计建设"],
+    signals: ["基础工厂已完成开发机验收", "完整发现循环与统计界面继续完善", "Windows / 目标硬件验收与公开分发待完成"],
     visual: {
       src: "/images/projects/catalyst/radishcatalyst-demo-first-screen-web.jpg",
       alt: "RadishCatalyst 异星工业基地 demo 首屏概念图，含资源 HUD、基地建筑群、物品栏和小地图",
@@ -237,37 +235,36 @@ export const projects: Project[] = [
       label: "Temporary mark",
       note: "RadishX 统一风格代码内标识，不是 RadishFlow 正式 Logo。",
     },
-    tagline: "稳态流程模拟软件",
-    summary:
-      "RadishFlow 以 Rust 为核心，Rust UI 作为主界面，并通过 .NET 适配 CAPE-OPEN / COM。",
+    tagline: "可扩展的流程模拟平台",
+    summary: "RadishFlow 以 Rust 计算核心和桌面 UI 从稳态流程起步，通过 .NET 适配 CAPE-OPEN / COM，逐步扩展工程建模与求解能力。",
     orbitLabel: "工程与流程画布",
-    role: "RadishX 中最强调工程可信感的桌面工具",
-    stage: "公开维护已暂停",
-    status: "Archived",
+    role: "Radish 家族的流程模拟与工程建模工具",
+    stage: "已恢复开发，完善基础建模与使用闭环",
+    status: "In Development",
     chips: ["Rust", "Process Simulation", "CAPE-OPEN"],
     capabilities: ["稳态流程模拟", "Rust UI 主界面", ".NET / COM 适配边界"],
-    signals: ["展示历史 UI 视觉基线", "未来独立域名为 flow.radishx.com", "官网详情页保留合规和维护边界"],
+    signals: ["2026-09-12 起恢复正常开发", "已有稳态 MVP 与小流程建模基线", "当前模型采用简化假设，尚未正式发布"],
     visual: {
       src: "/images/projects/flow/radishflow-workbench-concept-web.jpg",
       alt: "RadishFlow Studio 工作台视觉基线图",
       label: "UI baseline",
       title: "Studio 工作台视觉基线",
-      note: "来自 RadishFlow 自身 baseline 目录，仅作为历史 UI 方向展示，不代表继续公开维护或产品化承诺。",
+      note: "来自 RadishFlow 自身 baseline 目录，仅作为历史 UI 方向展示，不代表当前版本截图或已发布产品。",
       width: 1600,
       height: 900,
       ratio: "wide",
     },
     assetReview: {
       source: "RadishFlow Studio UI baseline",
-      boundary: "只展示历史 UI 方向；项目公开维护已暂停，不表达下载、演示或继续交付。",
-      nextNeed: "如未来恢复公开维护，再重新审核当前截图、版本状态和发布口径。",
+      boundary: "只展示历史 UI 方向，不作为当前 Studio 截图或发布证明。",
+      nextNeed: "后续补当前 Studio 截图，并核对版本状态和发布口径。",
     },
     documentation: [
       {
         label: "Docs index",
         href: "https://github.com/laugh0608/RadishFlow/tree/dev/docs",
-        description: "历史文档入口，覆盖 Studio guide、reference、architecture、status 和 MVP 文档。",
-        boundary: "项目已停止公开维护；该入口只作为历史代码与个人学习记录索引。",
+        description: "项目文档入口，覆盖 Studio、架构、当前状态与 MVP 范围。",
+        boundary: "项目已恢复开发；文档中的目标能力不等于现有产品已实现。",
       },
       {
         label: "Current status",
@@ -287,7 +284,7 @@ export const projects: Project[] = [
         href: "https://flow.radishx.com",
         isExternal: true,
         isDisabled: true,
-        note: "Paused",
+        note: "尚未发布",
       },
     ],
   },
@@ -305,16 +302,15 @@ export const projects: Project[] = [
       label: "Temporary mark",
       note: "RadishX 统一风格代码内标识，不是 RadishMind 正式 Logo。",
     },
-    tagline: "外部智能层与模型实验",
-    summary:
-      "RadishMind 负责协议、评测、工具编排和模型实验，是 Radish 体系的智能能力外接层。",
+    tagline: "AI 应用、工作流与模型集成平台",
+    summary: "RadishMind 面向内部开发者提供可复用 AI 应用、工作流与模型集成，围绕受控运行、结果审查和回归验证组织工作。",
     orbitLabel: "智能与工具编排",
-    role: "RadishX 的智能协议、评测和实验入口",
-    stage: "方向确认与接口规划",
-    status: "Planning",
+    role: "Radish 家族的 AI 工具与应用集成平台",
+    stage: "内部开发者预览，持续完善产品流程",
+    status: "Developer Preview",
     chips: ["AI Protocol", "Evaluation", "Tooling"],
-    capabilities: ["模型实验记录", "工具编排", "审计与评测口径"],
-    signals: ["强调可审计与可复用", "未来独立域名为 mind.radishx.com", "首版官网只展示稳定公开信息"],
+    capabilities: ["AI 应用与工作流编排", "受控运行与结果审查", "应用回归验证与模型接入规划"],
+    signals: ["应用与邀请链已有开发测试态闭环", "中英双语产品界面分阶段建设", "真实模型试用暂缓，生产交付尚未完成"],
     diagram: {
       label: "Evaluation loop",
       title: "协议评测回路",
@@ -407,11 +403,11 @@ export const projects: Project[] = [
       "RadishLex（萝卜词核）以 Rust 输入核心、Go 自部署同步后端和 Flutter 管理端，构建本地优先、可解释、可删除的中文输入法，把输入习惯留在用户自己手里。",
     orbitLabel: "输入与个人词库",
     role: "RadishX 体系的本地输入与个人化入口",
-    stage: "M1 macOS 离线输入推进中",
-    status: "Source Available",
+    stage: "macOS 已有单版本验收，Linux 输入与安装维护推进中",
+    status: "In Development",
     chips: ["Rust Core", "Local-first", "Chinese IME"],
-    capabilities: ["本地优先的离线输入", "可解释、可删除的个人化学习", "端到端加密的自部署同步"],
-    signals: ["源码可见、隐私优先与删除优先", "未来独立域名为 lex.radishx.com", "第一平台为 macOS InputMethodKit"],
+    capabilities: ["本地优先的离线输入", "可解释、可删除的个人化学习", "自部署加密同步规划"],
+    signals: ["macOS 已完成限定版本产品验收", "Linux Fcitx5 输入与安装维护持续建设", "macOS / Linux 均未公开发布，真实用户同步关闭"],
     diagram: {
       label: "Input pipeline",
       title: "本地输入链路",
@@ -422,12 +418,12 @@ export const projects: Project[] = [
         { label: "Compose", value: "拼音切分与候选生成" },
         { label: "Rank", value: "候选重排与个人偏好" },
         { label: "Learn", value: "可解释可删除学习" },
-        { label: "Sync", value: "端到端加密同步" },
+        { label: "Sync", value: "加密同步规划" },
       ],
       lanes: [
         { label: "Local", value: "离线输入热路径" },
         { label: "UserDB", value: "本地词库与学习" },
-        { label: "Encrypted", value: "密文对象同步" },
+        { label: "Encrypted", value: "密文同步目标" },
       ],
     },
     assetReview: {
@@ -463,6 +459,261 @@ export const projects: Project[] = [
         note: "Coming Soon",
       },
     ],
+  },
+  {
+    id: "axiom",
+    tone: "axiom",
+    name: "RadishAxiom",
+    shortName: "Axiom",
+    path: "/axiom",
+    githubUrl: "https://github.com/laugh0608/RadishAxiom",
+    mark: {
+      monogram: "A",
+      wordmark: "Axiom",
+      label: "Temporary mark",
+      note: "RadishX 代码内临时标识，不是 RadishAxiom 正式 Logo。"
+    },
+    tagline: "面向 AI Agent 的验证优先语言与可信语义层",
+    summary: "RadishAxiom 将约束、类型、效果和验证义务放在语言核心，输出可独立复核的证据；RadishAxiomChecker 是同一产品的配套检查器。",
+    orbitLabel: "语言与证据验证",
+    role: "面向 AI Agent 的验证优先语言与可信语义层",
+    stage: "设计到受控实现，完整编译运行入口尚未开放",
+    status: "In Development",
+    chips: [
+      "Constraints",
+      "Semantics",
+      "Evidence"
+    ],
+    capabilities: [
+      "显式约束与类型语义",
+      "IR 与可复核 Evidence",
+      "配套独立 Go Checker"
+    ],
+    signals: [
+      "已有受限语义与证据复核组件",
+      "Checker 与主仓分仓维护，作为同一产品展示",
+      "完整编译管线与产品运行隔离尚未验收"
+    ],
+    assetReview: {
+      source: "项目文字定位与代码内临时标识",
+      boundary: "不代表产品截图、正式 Logo 或已发布能力。",
+      nextNeed: "后续审核项目自有 Logo 与真实产品素材。"
+    },
+    documentation: [
+      {
+        label: "Docs index",
+        href: "https://github.com/laugh0608/RadishAxiom/tree/dev/docs",
+        description: "项目定位、设计与开发文档。",
+        boundary: "文档目标与当前已实现能力分别说明。"
+      },
+      {
+        label: "Current status",
+        href: "https://github.com/laugh0608/RadishAxiom/blob/dev/docs/status/current.md",
+        description: "当前阶段、能力与后续计划。",
+        boundary: "以项目限定范围为准，不等于已公开发布。"
+      },
+      {
+        label: "Axiom Checker",
+        href: "https://github.com/laugh0608/RadishAxiomChecker/blob/dev/docs/status/current.md",
+        description: "配套独立语义与证据检查器。",
+        boundary: "接受 Evidence 不等于程序被证明正确；Checker 不单列为产品。"
+      }
+    ],
+    links: [
+      {
+        label: "GitHub",
+        href: "https://github.com/laugh0608/RadishAxiom",
+        isExternal: true
+      },
+      {
+        label: "Axiom Checker 仓库",
+        href: "https://github.com/laugh0608/RadishAxiomChecker",
+        isExternal: true
+      }
+    ]
+  },
+  {
+    id: "link",
+    tone: "link",
+    name: "RadishLink",
+    shortName: "Link",
+    path: "/link",
+    githubUrl: "https://github.com/laugh0608/RadishLink",
+    mark: {
+      monogram: "L",
+      wordmark: "Link",
+      label: "Temporary mark",
+      note: "RadishX 代码内临时标识，不是 RadishLink 正式 Logo。"
+    },
+    tagline: "离线自组网通信设备与协议",
+    summary: "RadishLink 面向无互联网或蜂窝网络不可用的场景，探索可独立使用、可按策略中继的随身通信设备，让熟人小队保持联系。",
+    orbitLabel: "离线通信与自组网",
+    role: "离线自组网通信设备与协议",
+    stage: "产品定义与三节点原型准备",
+    status: "Research",
+    chips: [
+      "Offline",
+      "Mesh",
+      "Communication"
+    ],
+    capabilities: [
+      "独立通信终端与中继方向",
+      "文字与按键通话首期目标",
+      "近距手机接入与长距链路探索"
+    ],
+    signals: [
+      "已有离线合成验证工具",
+      "实体台架与产品加密闭环尚未验证",
+      "不承诺通信距离、续航或上市时间"
+    ],
+    assetReview: {
+      source: "项目文字定位与代码内临时标识",
+      boundary: "不代表产品截图、正式 Logo 或已发布能力。",
+      nextNeed: "后续审核项目自有 Logo 与真实产品素材。"
+    },
+    documentation: [
+      {
+        label: "Docs index",
+        href: "https://github.com/laugh0608/RadishLink/tree/dev/docs",
+        description: "项目定位、设计与开发文档。",
+        boundary: "文档目标与当前已实现能力分别说明。"
+      },
+      {
+        label: "Current status",
+        href: "https://github.com/laugh0608/RadishLink/blob/dev/docs/status/current.md",
+        description: "当前阶段、能力与后续计划。",
+        boundary: "以项目限定范围为准，不等于已公开发布。"
+      }
+    ],
+    links: [
+      {
+        label: "GitHub",
+        href: "https://github.com/laugh0608/RadishLink",
+        isExternal: true
+      }
+    ]
+  },
+  {
+    id: "memory",
+    tone: "memory",
+    name: "RadishMemory",
+    shortName: "Memory",
+    path: "/memory",
+    githubUrl: "https://github.com/laugh0608/RadishMemory",
+    mark: {
+      monogram: "M",
+      wordmark: "Memory",
+      label: "Temporary mark",
+      note: "RadishX 代码内临时标识，不是 RadishMemory 正式 Logo。"
+    },
+    tagline: "用户拥有的个人长期记忆与上下文系统",
+    summary: "RadishMemory 以本地优先、模型无关的方式管理个人资料，将持续变化的来源整理为任务所需的可靠、可追溯上下文。",
+    orbitLabel: "个人记忆与上下文",
+    role: "用户拥有的个人长期记忆与上下文系统",
+    stage: "本地文本资料库原型，加密存储接入中",
+    status: "Prototype",
+    chips: [
+      "Local-first",
+      "Memory",
+      "Context"
+    ],
+    capabilities: [
+      "文本与 Markdown 导入和检索原型",
+      "来源版本与本地删除记录",
+      "可追溯上下文与记忆治理方向"
+    ],
+    signals: [
+      "已有合成本地宿主验收",
+      "产品数据流尚未接入加密存储",
+      "完整模型问答、多端同步与日常资料库仍待建设"
+    ],
+    assetReview: {
+      source: "项目文字定位与代码内临时标识",
+      boundary: "不代表产品截图、正式 Logo 或已发布能力。",
+      nextNeed: "后续审核项目自有 Logo 与真实产品素材。"
+    },
+    documentation: [
+      {
+        label: "Docs index",
+        href: "https://github.com/laugh0608/RadishMemory/tree/dev/docs",
+        description: "项目定位、设计与开发文档。",
+        boundary: "文档目标与当前已实现能力分别说明。"
+      },
+      {
+        label: "Current status",
+        href: "https://github.com/laugh0608/RadishMemory/blob/dev/docs/status/current.md",
+        description: "当前阶段、能力与后续计划。",
+        boundary: "以项目限定范围为准，不等于已公开发布。"
+      }
+    ],
+    links: [
+      {
+        label: "GitHub",
+        href: "https://github.com/laugh0608/RadishMemory",
+        isExternal: true
+      }
+    ]
+  },
+  {
+    id: "nexus",
+    tone: "nexus",
+    name: "RadishNexus",
+    shortName: "Nexus",
+    path: "/nexus",
+    githubUrl: "https://github.com/laugh0608/RadishNexus",
+    mark: {
+      monogram: "N",
+      wordmark: "Nexus",
+      label: "Temporary mark",
+      note: "RadishX 代码内临时标识，不是 RadishNexus 正式 Logo。"
+    },
+    tagline: "研发团队的沟通、协作与交付枢纽",
+    summary: "RadishNexus 面向研发团队，将讨论、决策、工单、文档和交付上下文放进同一工作空间，以自部署为优先方向。",
+    orbitLabel: "团队协作与交付",
+    role: "研发团队的沟通、协作与交付枢纽",
+    stage: "Web 纵向原型，完善团队使用闭环",
+    status: "Prototype",
+    chips: [
+      "Teams",
+      "Decisions",
+      "Delivery"
+    ],
+    capabilities: [
+      "团队项目与频道浏览",
+      "讨论到决策和工单的局部闭环",
+      "基础 Markdown 文档与版本恢复"
+    ],
+    signals: [
+      "Go 服务与 React Web 已接通首批业务切片",
+      "基础 Markdown 文档已接通，完整成员治理待补齐",
+      "真实交付集成与团队持续使用尚未验收"
+    ],
+    assetReview: {
+      source: "项目文字定位与代码内临时标识",
+      boundary: "不代表产品截图、正式 Logo 或已发布能力。",
+      nextNeed: "后续审核项目自有 Logo 与真实产品素材。"
+    },
+    documentation: [
+      {
+        label: "Docs index",
+        href: "https://github.com/laugh0608/RadishNexus/tree/dev/docs",
+        description: "项目定位、设计与开发文档。",
+        boundary: "文档目标与当前已实现能力分别说明。"
+      },
+      {
+        label: "Current status",
+        href: "https://github.com/laugh0608/RadishNexus/blob/dev/docs/status/current.md",
+        description: "当前阶段、能力与后续计划。",
+        boundary: "以项目限定范围为准，不等于已公开发布。"
+      }
+    ],
+    links: [
+      {
+        label: "GitHub",
+        href: "https://github.com/laugh0608/RadishNexus",
+        isExternal: true
+      }
+    ]
   },
 ];
 

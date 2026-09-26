@@ -13,7 +13,7 @@ export function AboutPage() {
           </p>
           <div className="about-hero__signals" aria-label="About 页面公开信息摘要">
             <span>radishx.com</span>
-            <span>6 GitHub repositories</span>
+            <span>{repositories.length} GitHub repositories</span>
             <span>WeChat QR reviewed</span>
             <span>No login / API surface</span>
           </div>
@@ -133,7 +133,7 @@ export function AboutPage() {
           <SectionHeader
             eyebrow="Deployment"
             title="域名和部署边界"
-            description="当前只有 radishx.com 是本官网项目；五个项目域名是未来独立部署后的访问入口。"
+            description="radishx.com 承载官网；下列既有规划子域属于独立产品，新增产品尚未在官网登记域名。"
           />
           <div className="domain-grid">
             {domainSurfaces.map((surface) => (

@@ -63,9 +63,19 @@ export const repositories = [
     status: project.status,
     description: project.tagline,
     role: project.role,
-    surface: project.futureDomain,
+    surface: project.futureDomain ?? project.path,
     action: `打开 ${project.name} 仓库`,
   })),
+  {
+    name: "RadishAxiomChecker",
+    ownerRepo: "laugh0608/RadishAxiomChecker",
+    href: "https://github.com/laugh0608/RadishAxiomChecker",
+    status: "Axiom Companion",
+    description: "RadishAxiom 配套的独立语义与证据检查器。",
+    role: "与 Axiom 计为同一产品，独立仓库维护。",
+    surface: "/axiom",
+    action: "打开 Axiom Checker 仓库",
+  },
 ];
 
 export const domainSurfaces = [
@@ -73,7 +83,7 @@ export const domainSurfaces = [
     label: "Canonical",
     domain: "radishx.com",
     status: "Current Vercel site",
-    description: "当前官网主域，承载首页、五个项目介绍页、Mascot 和 About。",
+    description: "当前官网主域，承载首页、九个产品介绍页、Mascot 和 About。",
   },
   {
     label: "Compatibility",
@@ -81,7 +91,7 @@ export const domainSurfaces = [
     status: "Redirect to root domain",
     description: "兼容访问入口，保留路径跳转到 radishx.com，不作为独立站点。",
   },
-  ...projects.map((project) => ({
+  ...projects.filter((project) => project.futureDomain).map((project) => ({
     label: project.name,
     domain: project.futureDomain,
     status: "Future project domain",

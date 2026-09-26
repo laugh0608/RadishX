@@ -3414,3 +3414,21 @@ p {
 [data-rd-theme="dark"] .button--primary {
   background: var(--rx-brand-primary);
 }
+
+.media-frame__product-copy {
+  display: grid;
+  align-content: center;
+  gap: 16px;
+  padding: 32px;
+}
+
+.media-frame__product-copy > span {
+  color: var(--rx-accent-grayjade);
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.media-frame__product-copy p {
+  color: var(--rx-text-secondary);
+  line-height: 1.8;
+}

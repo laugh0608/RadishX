@@ -43,7 +43,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
     },
     {
       label: "Future Domain",
-      value: project.futureDomain,
+      value: project.futureDomain ?? "尚未登记",
     },
     {
       label: "Repository",
@@ -58,8 +58,8 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
     },
     {
       label: "Future Domain",
-      value: project.futureDomain,
-      note: "Coming Soon",
+      value: project.futureDomain ?? "尚未登记",
+      note: project.futureDomain ? "规划入口，尚未在官网开放" : "未配置项目域名",
     },
     {
       label: "GitHub",
@@ -79,7 +79,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
     },
     {
       label: "Visual",
-      value: project.visual?.label ?? project.diagram?.label ?? "图形化候选媒体框",
+      value: project.visual?.label ?? project.diagram?.label ?? "Product overview",
       note: project.visual ? "Reviewed asset" : project.diagram ? "Code-native visual" : "No screenshots",
     },
   ];
@@ -91,7 +91,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
           <div className="project-hero__copy">
             <div className="project-hero__identity">
               <ProjectMark project={project} size="hero" showNote />
-              <p className="eyebrow">{project.futureDomain}</p>
+              <p className="eyebrow">{project.futureDomain ?? project.orbitLabel}</p>
             </div>
             <h1>{project.name}</h1>
             <p>{project.tagline}</p>
@@ -229,7 +229,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
             {siblings.map((sibling) => (
               <RouteLink key={sibling.id} className={`related-project related-project--${sibling.tone}`} to={sibling.path}>
                 <ProjectMark project={sibling} size="compact" />
-                <span className="related-project__meta">{sibling.futureDomain}</span>
+                <span className="related-project__meta">{sibling.futureDomain ?? sibling.orbitLabel}</span>
                 <strong>{sibling.name}</strong>
                 <span>{sibling.tagline}</span>
               </RouteLink>

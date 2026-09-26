@@ -16,7 +16,7 @@ function RadishVisual({ context, project }: HomeProjectVisualProps) {
       <div className="home-radish-visual__feed">
         <span>NEW POST · 028</span>
         <strong>新的内容正在生长</strong>
-        <small>社区 · 创作 · 工作台</small>
+        <small>社区 · 创作 · 讨论</small>
       </div>
       <figure className="home-radish-visual__portrait">
         <img
@@ -149,6 +149,13 @@ export function HomeProjectVisual({ context, project }: HomeProjectVisualProps) 
       {project.id === "flow" ? <FlowVisual /> : null}
       {project.id === "mind" ? <MindVisual /> : null}
       {project.id === "lex" ? <LexVisual /> : null}
+      {!project.visual && !project.diagram ? (
+        <div className="home-product-overview">
+          <span aria-hidden="true">{project.mark.monogram}</span>
+          <strong>{project.tagline}</strong>
+          <p>{project.stage}</p>
+        </div>
+      ) : null}
     </div>
   );
 }

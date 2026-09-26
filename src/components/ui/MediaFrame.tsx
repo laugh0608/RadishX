@@ -20,8 +20,8 @@ export function MediaFrame({ project, compact = false, showVisual = false }: Med
       } ${diagram ? "media-frame--visual media-frame--diagram" : ""}`}
     >
       <div className="media-frame__topline">
-        <span>{project.futureDomain}</span>
-        <StatusChip tone={visual || diagram ? "brand" : "warning"}>{visual ? visual.label : diagram ? diagram.label : "Coming Soon"}</StatusChip>
+        <span>{project.futureDomain ?? project.orbitLabel}</span>
+        <StatusChip tone={visual || diagram ? "brand" : "warning"}>{visual ? visual.label : diagram ? diagram.label : project.status}</StatusChip>
       </div>
       {visual ? (
         <figure className={`media-frame__visual media-frame__visual--${visual.ratio}`}>
@@ -65,15 +65,10 @@ export function MediaFrame({ project, compact = false, showVisual = false }: Med
           <figcaption>{diagram.title}</figcaption>
         </figure>
       ) : (
-        <div className="media-frame__orbit" aria-hidden="true">
-          <span className="media-frame__ring media-frame__ring--outer" />
-          <span className="media-frame__ring media-frame__ring--inner" />
-          <span className="media-frame__node media-frame__node--a" />
-          <span className="media-frame__node media-frame__node--b" />
-          <span className="media-frame__node media-frame__node--c" />
-          <span className="media-frame__logo">
-            <img src="/favicon.ico" width="48" height="48" alt="" />
-          </span>
+        <div className="media-frame__product-copy">
+          <span aria-hidden="true">{project.mark.monogram}</span>
+          <h2>{project.tagline}</h2>
+          <p>{project.summary}</p>
         </div>
       )}
       <div className="media-frame__body">
@@ -84,8 +79,8 @@ export function MediaFrame({ project, compact = false, showVisual = false }: Med
         <span>{project.orbitLabel}</span>
       </div>
       <div className="media-frame__note">
-        <span>{visual ? "Reviewed asset" : diagram ? "Code-native visual" : "Visual placeholder"}</span>
-        <strong>{visual ? visual.note : diagram ? diagram.note : "第一版暂不展示真实截图或视频"}</strong>
+        <span>{visual ? "Reviewed asset" : diagram ? "Code-native visual" : "Product overview"}</span>
+        <strong>{visual ? visual.note : diagram ? diagram.note : project.signals[project.signals.length - 1]}</strong>
       </div>
       {showVisual && !compact ? (
         <dl className="media-frame__review" aria-label={`${project.name} 素材审核说明`}>
