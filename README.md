@@ -2,46 +2,38 @@
 
 RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 RadishX 官网根站点，通过 GitHub 托管代码，并使用 Vercel 免费额度部署；当前主域为 <https://radishx.com/>，`www.radishx.com` 作为兼容入口跳转到根域。
 
-当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、五个项目详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、公开图片和 family-ui 双层样式 token。`radishx-site-v1.pen` 的首页桌面与 390px 移动灰玉方案已落地 React：使用干净标题、可切换项目内容舞台、不对称生态图谱和透明萝小白立绘舞台；其余页面继续保留 v1.2 craft 信息架构。官网当前等待首页实现验收意见，不继续扩展新页面、素材入口、下载能力或 seasonal 活动。
+当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、九个产品详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、公开图片和 family-ui 双层样式 token。`radishx-site-v1.pen` 的首页桌面与 390px 移动灰玉方案已落地 React：使用干净标题、可切换项目内容舞台、不对称生态图谱和透明萝小白立绘舞台；其余页面继续保留 v1.2 craft 信息架构。产品列表已按本地兄弟仓库更新为九项；Axiom Checker 作为 Axiom 配套仓库。当前阶段和验证状态见 [当前规划](docs/planning/current.md)。
 
 ## 已确认方向
 
 - 技术栈：`Vite + React + TypeScript`
 - 部署目标：GitHub 仓库 + Vercel 免费部署，当前主域为 `https://radishx.com/`
-- 页面结构：首页 + 五个项目详情页 + About 页面 + 虚拟形象页面
+- 页面结构：首页 + 九个产品详情页 + About 页面 + 虚拟形象页面
 - 官网气质：偏创意品牌、游戏感和视觉冲击，参考 Apple 官网的克制文案、大幅视觉、清晰节奏和强产品呈现，同时继承 Radish 的淡雅新中式、纸感、印色感和低饱和轻纹样
 - 家族 UI 规范：`docs/design/family-ui/` 提供 family-ui v26.7.3 通用视觉原则、参考 token、组件形态与 UI 参考，不分配具体项目配色，也不跟踪其他项目的采用进度
 - 设计流程：保留 `docs/design/sources/radishx-site-v0.pen` 作为历史基线；首页新方向在 `docs/design/sources/radishx-site-v1.pen` 评审确认后已进入 React 实现
-- 前端实现：已建立 `src/` 推荐目录结构，使用轻量路由表实现 `/`、五个项目页、`/mascot` 和 `/about`
+- 前端实现：已建立 `src/` 推荐目录结构，使用轻量路由表实现 `/`、九个产品页、`/mascot` 和 `/about`
 - 素材使用：首批 Mascot / About 图片、项目代表图、表情 / 贴纸整图预览已审核并生成 Web 版本；后续截图、Logo、角色图、单张贴纸或活动图正式用于页面前仍需先审核具体选图
 - GitHub 仓库：公开仓库
 - 许可证：source-available，详见 [LICENSE](LICENSE)
 
 ## 当前开发节奏
 
-RadishX 官网首版已经完成当前阶段需要承载的内容：项目矩阵、五个项目介绍页、Mascot 页、About 页、基础 SEO、发布检查和设计源同步。后续不为了保持开发动作而继续新增功能。
-
-2026-08-03 已完成首页灰玉视觉升级、共享移动菜单和双端本地浏览器复核；当前先等待首页验收意见，再决定是否推进暗色精确设计或其他页面视觉升级。
-
-下一轮官网开发应等待 Radish、RadishCatalyst、RadishFlow、RadishMind 和 RadishLex 各自开发到更适合公开展示的阶段，并补齐正式材料后再启动。可触发恢复开发的材料包括：
-
-- 独立稳定 Logo。
-- 真实产品截图、项目自有可视化图或公开视频。
-- 稳定 Demo、文档站、下载页或在线入口。
-- 项目域名、部署策略、发布计划或下载授权变化。
-- Mascot 下载、素材包、社交贴纸包、seasonal 活动或外部分发授权。
-
-恢复开发前先更新对应 `docs/features/*.md`、素材清单和当前规划，再进入设计源、React 实现和验证。
+内容维护按兄弟仓库的最新定位与状态同步；页面、视觉、素材和发布扩展先明确对应目标与边界。阶段、优先级和停止线统一见 [当前规划](docs/planning/current.md)，九产品范围与来源见 [产品矩阵同步](docs/features/product-matrix-refresh.md)。
 
 ## 参考项目
 
-本官网会围绕上一级目录中的五个项目组织内容：
+本官网按九个独立产品组织内容：
 
-- `Radish`：现代化内容社区与 WebOS 风格工作台，后端基于 ASP.NET Core，前端基于 React / Vite / TypeScript。
-- `RadishCatalyst`：以异星化工基地、人物探索战斗、角色成长和后续协作联机为方向的 2D / 2.5D 工业科幻 ARPG。
-- `RadishFlow`：以 Rust 为核心、Rust UI 为主界面、`.NET` 负责 CAPE-OPEN / COM 适配的稳态流程模拟软件。
-- `RadishMind`：Radish 体系下的外部智能层，负责协议、评测、工具编排与模型实验。
-- `RadishLex`：本地优先的中文输入系统，聚焦离线输入、可解释学习、可删除数据和端到端加密同步。
+- `Radish`：面向兴趣与创作者群体的现代社区，Web 已发布，Flutter Native 按平台建设。
+- `RadishCatalyst`：异星化工生产经营游戏，三维基础工厂持续迭代。
+- `RadishFlow`：以 Rust 为核心的可扩展流程模拟平台，已恢复正常开发。
+- `RadishMind`：AI 应用、工作流与模型集成平台，处于内部开发者预览。
+- `RadishLex`：本地优先的中文输入系统，建设离线输入、个人化与自部署加密同步。
+- `RadishAxiom`：面向 AI Agent 的验证优先语言与可信语义层；`RadishAxiomChecker` 是其配套检查器，合计一个产品。
+- `RadishLink`：离线自组网通信设备与协议探索。
+- `RadishMemory`：用户拥有、模型无关的个人长期记忆与上下文系统。
+- `RadishNexus`：研发团队自部署优先的沟通、协作与交付枢纽。
 
 ## GitHub 仓库
 
@@ -51,6 +43,11 @@ RadishX 官网首版已经完成当前阶段需要承载的内容：项目矩阵
 - `RadishFlow`：<https://github.com/laugh0608/RadishFlow>
 - `RadishMind`：<https://github.com/laugh0608/RadishMind>
 - `RadishLex`：<https://github.com/laugh0608/RadishLex>
+- `RadishAxiom`：<https://github.com/laugh0608/RadishAxiom>
+- `RadishAxiomChecker`：<https://github.com/laugh0608/RadishAxiomChecker>
+- `RadishLink`：<https://github.com/laugh0608/RadishLink>
+- `RadishMemory`：<https://github.com/laugh0608/RadishMemory>
+- `RadishNexus`：<https://github.com/laugh0608/RadishNexus>
 
 ## 文档入口
 
@@ -97,7 +94,7 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 - `radishx.com`：RadishX 官网 canonical 主域，展示整个 Radish 项目矩阵。
 - `www.radishx.com`：兼容访问入口，当前由 Vercel 跳转到 `radishx.com` 并保留路径。
 
-建议的五个项目子域名：
+既有五个项目规划子域名：
 
 - `hub.radishx.com`：Radish
 - `forge.radishx.com`：RadishCatalyst
@@ -105,7 +102,7 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 - `mind.radishx.com`：RadishMind
 - `lex.radishx.com`：RadishLex
 
-这些子域名不是当前官网 Vercel 项目的路由，也不需要在 Vercel 中为本官网做重写。它们是未来五个项目各自开发完毕、单独部署后的独立访问域名。
+这些子域名不是当前官网 Vercel 项目的路由，也不需要在 Vercel 中为本官网做重写。它们是对应项目各自开发完毕、单独部署后的独立访问域名。
 
 ## 链接策略
 
@@ -123,8 +120,8 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 
 - 当前官网 Vercel 项目承载 RadishX 官网，`https://radishx.com/` 是 canonical 主域。
 - `www.radishx.com` 已配置为跳转到 `radishx.com`，用于兼容访问和旧入口。
-- 首页、五个项目介绍页、虚拟形象页和 About 页面都属于本官网项目。
-- `hub.radishx.com`、`forge.radishx.com`、`flow.radishx.com`、`mind.radishx.com`、`lex.radishx.com` 是未来五个项目各自上线后的独立域名。
+- 首页、九个产品介绍页、虚拟形象页和 About 页面都属于本官网项目。
+- `hub.radishx.com`、`forge.radishx.com`、`flow.radishx.com`、`mind.radishx.com`、`lex.radishx.com` 是未来九个产品各自上线后的独立域名。
 - 官网中的项目详情页可以展示这些域名作为“访问项目”按钮；对应项目还没上线前，可以先禁用按钮或标注 Coming Soon。
 - `sitemap.xml` 和 `robots.txt` 只覆盖当前官网站内页面，不包含五个未来项目子域。
 
@@ -134,7 +131,7 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 
 官网不需要复杂系统，优先做成轻量、稳定、易维护的静态站点：
 
-- 说明 RadishX 是什么，以及五个项目之间的关系。
+- 说明 RadishX 是什么，以及九个产品之间的关系。
 - 给每个项目一个清晰入口，方便后续接 GitHub、文档、演示站或下载页。
 - 使用适合 Vercel 免费部署的技术方案，避免不必要的后端依赖。
 - 保持后续可扩展：可以从单页官网逐步演进为多页面项目门户。
@@ -149,6 +146,10 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 - `/flow`：RadishFlow 项目详情页。
 - `/mind`：RadishMind 项目详情页。
 - `/lex`：RadishLex 项目详情页。
+- `/axiom`：RadishAxiom 产品介绍页。
+- `/link`：RadishLink 产品介绍页。
+- `/memory`：RadishMemory 产品介绍页。
+- `/nexus`：RadishNexus 产品介绍页。
 - `/mascot`：虚拟形象页面，展示“萝小白”的原始形象、可爱Q版和虚拟形象完全体。
 - `/about`：组织说明、联系方式、社交媒体和项目入口。
 
@@ -203,10 +204,10 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 
 后续需要继续确认以下内容：
 
-- 五个项目后续是否补独立稳定 Logo，用于替换当前代码内临时项目标识。
-- 五个项目后续是否提供真实截图或可公开视频素材。
+- 九个产品后续是否补独立稳定 Logo，用于替换当前代码内临时项目标识。
+- 九个产品后续是否提供真实截图或可公开视频素材。
 - RadishMind 后续是否补项目自有 Logo、Console 截图或协议 / 评测可视化图。
-- 五个项目是否已有稳定 Demo、文档站、下载页、在线入口、项目域名或发布计划需要官网同步。
+- 九个产品是否已有稳定 Demo、文档站、下载页、在线入口、项目域名或发布计划需要官网同步。
 - “萝小白”首批单张表情已生成 Web 展示图并接入 `/mascot` 候选预览区；后续如需开放下载、素材包、社交贴纸包或外部分发，仍需另行确认授权和文件包边界。具体 seasonal 活动实现仍待确认。
 - 线上 HTTP、根域跳转、路径保留以及桌面 / 移动端截图级 smoke 已完成；后续如果页面、资源或部署变化，再复跑对应检查。
 
@@ -215,10 +216,10 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 第一版已按静态多页面官网实现：
 
 1. 顶部导航：RadishX、Projects、Mascot、About、GitHub。
-2. 首页首屏：灰玉纯标题 + 可切换单项目内容舞台 + 五项目索引，支持鼠标与键盘操作。
-3. 首页项目区：五个项目使用社区轨道、工业场景、流程蓝图、节点网络和中文输入路径五种独立视觉。
+2. 首页首屏：灰玉纯标题 + 可切换单项目内容舞台 + 九产品索引，支持鼠标与键盘操作。
+3. 首页项目区：九个产品；原五项保留既有视觉，新增四项使用文字定位与临时标识。
 4. 项目详情页：每页围绕定位、当前状态、公开文档、关键能力、素材审核和项目矩阵关系组织，并提供 Hero 下方站内导览。
 5. Mascot 页：展示三种形态、主视觉、Gallery 整图预览、首批单张表情候选预览和使用边界，不提供下载入口。
 6. About 页：联系方式、微信公众号二维码、GitHub 仓库入口和域名边界。
 
-首页灰玉桌面与移动实现已通过本地发布检查、9 路由 HTTP smoke 和应用内浏览器复核，当前等待视觉验收意见。五个项目当前使用 RadishX 统一风格代码内临时项目标识，不声明为正式 Logo；未审核图片、外部参考图、活动图和可独立传播素材不进入正式页面实现。下一轮功能开发等待明确的首页反馈、五个项目自身进展或正式材料补齐后再启动。
+首页灰玉原五项目基线保留历史验证记录；九产品更新的验证证据见当前规划与开发日志。代码内临时标识不声明为正式 Logo，新增产品未引入未经审核的截图或素材。

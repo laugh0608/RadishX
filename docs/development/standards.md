@@ -119,6 +119,10 @@ public/
 - `/flow`
 - `/mind`
 - `/lex`
+- `/axiom`
+- `/link`
+- `/memory`
+- `/nexus`
 - `/mascot`
 - `/about`
 
@@ -129,7 +133,7 @@ public/
 禁止：
 
 - 不把 `hub.radishx.com`、`forge.radishx.com`、`flow.radishx.com`、`mind.radishx.com`、`lex.radishx.com` 配成本官网 Vercel 路由。
-- 不在官网里实现五个项目的实际业务功能。
+- 不在官网里实现家族产品的实际业务功能。
 
 ## 样式规则
 
@@ -221,7 +225,7 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 
 - 首页无明显错位。
 - 导航可用。
-- 五个项目页入口可访问。
+- 九个产品页入口可访问。
 - 项目详情页的 GitHub / 文档入口与未开放、暂停维护等真实状态清楚。
 - Mascot 页图片不变形、不遮挡正文。
 - About 页二维码和联系方式可读。

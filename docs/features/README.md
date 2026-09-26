@@ -21,7 +21,7 @@
 | 文档 | 目标 | 状态 |
 | --- | --- | --- |
 | [site-design-refinement.md](site-design-refinement.md) | 官网整体设计美化：精选、目录与跨页统一 | R2.1 双端构图与项目展陈精修完成，所有者已确认，待 React 实现 |
-| [product-matrix-refresh.md](product-matrix-refresh.md) | 现有五项目事实同步与新增矩阵规划 | 十个本地兄弟仓库已核验；页面、路由与公开入口待实施 / 核验 |
+| [product-matrix-refresh.md](product-matrix-refresh.md) | 九产品列表、介绍入口与事实同步 | 已更新本地实现；Checker 归入 Axiom，验证见专题 |
 | [site-quality-and-public-content.md](site-quality-and-public-content.md) | 官网质量、公开文案、SEO 与验证收口 | 文档目标已建立，代码与部署尚未实施 |
 | [home-hero-visual.md](home-hero-visual.md) | 首页首屏、项目内容舞台和主视觉 | 灰玉项目舞台已实现并通过双端复核，OG 暂不替换 |
 | [project-detail-pages.md](project-detail-pages.md) | 五个项目详情页内容、视觉、公开文档入口和公开素材边界 | 首版、站内导览与 craft Phase 3 已完成 |
