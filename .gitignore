@@ -49,6 +49,8 @@ Desktop.ini
 .claude
 
 # Temporary / merge leftovers
+__pycache__/
+*.py[cod]
 *.tmp
 *.temp
 *.orig

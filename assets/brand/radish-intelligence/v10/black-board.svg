@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title"><title id="title">Radish Intelligence V10：黑白斜锋，三叶双须</title><desc>基于萝卜轮廓的单色探索。两侧空心叶、中间实心叶，斜向切口、尖根和两条空心电路须。</desc><defs><mask id="mark" maskUnits="userSpaceOnUse" x="0" y="0" width="1000" height="1000"><rect width="1000" height="1000" fill="black"/><g transform="translate(25 0)">
+<path d="M 305.3276 807.3608 A 295 295 0 1 0 139.4817 591.2262 C 149.0324 645.3906 189 688 169 747 C 161 770.6 146 799 142 818 C 141 822.75 143.8 825.75 149 824 C 204 805.4904 250.9491 782.0037 305.3276 807.3608 Z" fill="none" stroke="white" stroke-width="56" stroke-linejoin="round"/>
+<!-- Open only the body shoulder; leaf shapes remain intact above this cut. -->
+<path d="M 430 540 L 601 70 L 900 369 Z" fill="black"/>
+<path d="M 571 299 C 524 249 535 183 592 146 C 629 208 618 253 571 299 Z" fill="none" stroke="white" stroke-width="22" stroke-linejoin="round"/>
+<path d="M 614 335 C 652 245 728 178 817 129 C 755 231 699 304 644 363 Z" fill="white"/>
+<path d="M 674 394 C 730 335 790 320 843 342 C 807 397 751 425 687 427 Z" fill="none" stroke="white" stroke-width="22" stroke-linejoin="round"/>
+<path d="M 137 520 H 259.02943725152284 A 12 12 0 0 1 267.5147186257614 523.5147186257615 L 338 594" fill="none" stroke="white" stroke-width="18"/><circle cx="338" cy="594" r="25" fill="black" stroke="white" stroke-width="18"/>
+<path d="M 137 608 H 211.02943725152286 A 12 12 0 0 1 219.51471862576142 611.5147186257615 L 270 662" fill="none" stroke="white" stroke-width="18"/><circle cx="270" cy="662" r="25" fill="black" stroke="white" stroke-width="18"/>
+</g></mask></defs><rect width="1000" height="1000" fill="#080808"/><rect width="1000" height="1000" fill="#ffffff" mask="url(#mark)"/></svg>

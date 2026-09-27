@@ -20,6 +20,7 @@
 
 | 文档 | 目标 | 状态 |
 | --- | --- | --- |
+| [company-brand-identity.md](company-brand-identity.md) | 公司中英文命名、Logo 版本与本地对比页 | 名称已确认；V9 暂定基准；公司全名组合素材完成，十二版留档，双端检查通过 |
 | [site-design-refinement.md](site-design-refinement.md) | 官网整体设计美化：精选、目录与跨页统一 | R2.1 双端构图与项目展陈精修完成，所有者已确认，待 React 实现 |
 | [product-matrix-refresh.md](product-matrix-refresh.md) | 九产品列表、介绍入口与事实同步 | 已更新本地实现；Checker 归入 Axiom，验证见专题 |
 | [site-quality-and-public-content.md](site-quality-and-public-content.md) | 官网质量、公开文案、SEO 与验证收口 | 文档目标已建立，代码与部署尚未实施 |

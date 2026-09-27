@@ -1,0 +1,102 @@
+{
+  "canvas": 1000,
+  "translation": [
+    25,
+    10
+  ],
+  "body": {
+    "center": [
+      430,
+      540
+    ],
+    "radius": 295,
+    "arcDegrees": 305
+  },
+  "outline": 32,
+  "trace": 16,
+  "leaves": [
+    {
+      "name": "outer-upper",
+      "x": 578,
+      "y": 315,
+      "angle": 8,
+      "r": 61,
+      "stem": 110,
+      "color": "#91bd5e"
+    },
+    {
+      "name": "middle",
+      "x": 632,
+      "y": 370,
+      "angle": 43,
+      "r": 66,
+      "stem": 122,
+      "color": "#436e60"
+    },
+    {
+      "name": "outer-right",
+      "x": 658,
+      "y": 430,
+      "angle": 78,
+      "r": 55,
+      "stem": 105,
+      "color": "#91bd5e"
+    }
+  ],
+  "bendRadius": 12,
+  "circuits": [
+    {
+      "startY": 520,
+      "bendX": 264,
+      "center": [
+        338,
+        594
+      ]
+    },
+    {
+      "startY": 608,
+      "bendX": 216,
+      "center": [
+        270,
+        662
+      ]
+    }
+  ],
+  "terminal": {
+    "upper": {
+      "type": "hexagonal-ring",
+      "circumradius": 36,
+      "stroke": 14
+    },
+    "lower": {
+      "type": "circular-node",
+      "outerDiameter": 64,
+      "innerDiameter": 32
+    },
+    "axisDegrees": -45,
+    "centerDistance": 96.16652224137047
+  },
+  "bodyTailContinuity": "G1; not claimed G2",
+  "joints": [
+    {
+      "name": "circle-to-tail",
+      "errorDegrees": 0
+    },
+    {
+      "name": "tail-1",
+      "errorDegrees": 0
+    },
+    {
+      "name": "tail-2",
+      "errorDegrees": 0
+    },
+    {
+      "name": "tail-3",
+      "errorDegrees": 0
+    },
+    {
+      "name": "tail-to-circle",
+      "errorDegrees": 8.537736462515939e-7
+    }
+  ]
+}

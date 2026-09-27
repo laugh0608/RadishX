@@ -1,0 +1,21 @@
+# 第四稿生成记录
+
+日期：2026-09-26。工具：内置 imagegen。品牌名称继续为 Radish Intelligence / 萝卜智能 / RI。
+
+## 设计依据
+
+用户明确要求“简约、有设计感、含萝卜外形、含科技元素”，并否定 V3 的黑色实心处理。两张新增参考图分别提供植物 + 网络和蓝绿开放流线方向，只参考形式，不采用其中 RadishAI 或其他英文命名。
+
+第四稿采用深蓝与青绿双曲线围成中空萝卜，内部信号线与单一节点表达技术。`white-background.png` 为本轮主造型评审图，`symbol-transparent.png` 为生成式透明衍生图；转换仍有边缘杂色、比例和色彩微差，未达到最终矢量交付质量。对比页固定使用白底评审图，透明文件另提供查看 / 下载。
+
+## 白底方案原提示词
+
+Use case: logo-brand. Create a sophisticated FOURTH-DRAFT original brand symbol for Radish Intelligence. User requires SIMPLE + DESIGNED + CLEAR RADISH SHAPE + TECHNOLOGY. Previous draft was rejected as a heavy black blob. The two attached images are references, not designs to duplicate. From image 1 take only the idea of botanical form plus connected intelligence; discard the dense network of dots. From image 2 take only elegant open space and navy/teal restraint; do NOT trace its twisted ribbon, exact silhouette or typography. Create a NEW minimalist emblem on an opaque pure white square background. Subject: an upright compact radish root with broad rounded shoulders tapering to one crisp downward root point, crowned by TWO small elegant teal leaves. Body should be HOLLOW and airy: at least 60 percent of its interior remains white. Build the body using exactly TWO optically balanced flowing bands, dark navy #163B56 on the left and teal #16B89A on the right, tapering to join at the root tip. The navy band describes the left shoulder and curls modestly inward near the upper center; the teal band describes the right shoulder and ends INSIDE the central white opening as ONE short clean 45-degree signal path with a SINGLE small circular terminal, integrated into the body geometry. This is the only explicit circuit element: the open path + terminal expresses data flowing into the living radish shape. The large white opening and navy/teal forms should have clever interlocking negative space, not a simple outlined vegetable, not a location pin, not a heart, not a shield, and not an infinity loop. Two compact tapered leaves above, much smaller than the root, cleanly separated by narrow white gaps, no veins. Think of an expertly drawn contemporary technology wordmark symbol, distinctive silhouette, strong visual balance, no literal vegetable drawing, no childish cartoon, no stock AI icon. Flat clean fills; uniform colors without material effects. Avoid thick black outline, filled blob, neural-network mesh, many dots, decorative sparkles, gradients, shadows, bevels, texture, 3D, mockups, watermarks and ALL typography. Show only the single finished symbol centered, about 65 percent of canvas height, generous pristine white space around it. It must remain readable at 32px and communicate radish first, integrated technology second. This is a visually refined primary corporate logo, not an avatar illustration.
+
+## 透明转换
+
+Precise background extraction of the immediately preceding Radish Intelligence navy-and-teal hollow radish logo. Preserve EXACTLY the same silhouette, two leaves, navy left band, teal right band, one interior diagonal signal stem and circular terminal, colors, proportions, positions and crisp edges. Remove ONLY the white background to genuine transparency, including every white interior opening and narrow gap. Every navy/teal shape must remain fully opaque; do not darken, recolor, shade, add texture, change geometry or erase the small node. No text. No redesign. No shadow or glow. Deliver the same single complete logo at the same scale on a real transparent canvas, not a checkerboard simulation.
+
+## 透明边缘修订尝试
+
+Polish the attached transparent navy and teal radish emblem without changing its design. Remove the stray bright cyan residue between the two leaves and all turquoise edge fringes and stray pixels. The narrow gap between the leaves must be fully transparent. Both the exterior and the hollow central aperture remain fully transparent. All leaf and band contours must be clean smooth antialiased vector-like edges. Make the navy band a single opaque solid fill #163B56 and both leaves, the right band and its signal node a single opaque solid fill #16B89A. Do not change their shapes, proportions, direction, placement or relative sizes. No gradients, texture, lighting or partially transparent interiors. No text. This is cleanup of a flat two-color logo, not a redesign.

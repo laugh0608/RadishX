@@ -13,6 +13,7 @@
 
 - `assets/avatars/`：虚拟形象候选素材。
 - `assets/social/`：社交媒体素材。
+- `assets/brand/radish-intelligence/`：公司品牌候选、V1–V12 原样备份、V9 暂定基准及 Logo / 公司全名组合 SVG 和 PNG、用户参考图与本地 HTML 对比页。命名已确认，Logo 暂定 V9；用户提供的科技参考图仅作本地参考，不进入 `public/`。来源、使用范围与 SHA-256 见该目录 [README](../../assets/brand/radish-intelligence/README.md) 和 [manifest](../../assets/brand/radish-intelligence/manifest.json)。
 - `docs/design/family-ui/reference-ui/`：family-ui 的外部 UI 风格参考截图。
 
 ### UI 视觉参考图

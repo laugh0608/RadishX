@@ -1,0 +1,32 @@
+{
+  "canvas": 1000,
+  "bodySource": "../v9/symbol.svg",
+  "outline": 56,
+  "leafOutline": 22,
+  "trace": 18,
+  "contact": {
+    "outerDiameter": 68,
+    "innerDiameter": 32
+  },
+  "circuits": [
+    {
+      "y": 520,
+      "x": 264,
+      "cx": 338,
+      "cy": 594
+    },
+    {
+      "y": 608,
+      "x": 216,
+      "cx": 270,
+      "cy": 662
+    }
+  ],
+  "leafPaths": [
+    "M 571 299 C 524 249 535 183 592 146 C 629 208 618 253 571 299 Z",
+    "M 614 335 C 652 245 728 178 817 129 C 755 231 699 304 644 363 Z",
+    "M 674 394 C 730 335 790 320 843 342 C 807 397 751 425 687 427 Z"
+  ],
+  "monochromeLeafSequence": "hollow / solid / hollow",
+  "shoulderCut": "sector from approximately -70 to -20 degrees"
+}

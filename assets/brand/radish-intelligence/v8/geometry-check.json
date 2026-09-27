@@ -1,0 +1,16 @@
+{
+  "canvas": {
+    "width": 1000,
+    "height": 1000
+  },
+  "coloredBounds": {
+    "left": 144,
+    "top": 139,
+    "right": 856,
+    "bottom": 860
+  },
+  "symbolWidth": 713,
+  "symbolHeight": 722,
+  "symbolWidthHeightRatio": 0.9875,
+  "method": "只读 PNG 像素测量；alpha >= 128，RGB 色差 > 15，最小通道 < 180；不含白底边缘抗锯齿。"
+}
