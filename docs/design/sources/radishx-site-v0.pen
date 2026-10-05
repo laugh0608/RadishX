@@ -1,5 +1,5 @@
 {
-  "version": "2.14",
+  "version": "2.19",
   "children": [
     {
       "type": "frame",
@@ -305,7 +305,8 @@
                   "content": "一个温润、克制、带一点游戏感的统一入口，连接内容社区、异星工业游戏、流程模拟软件、智能工具实验与中文输入系统。",
                   "lineHeight": 1.62,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 19
+                  "fontSize": 19,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "frame",
@@ -424,8 +425,7 @@
                   "x": 0,
                   "y": 16
                 },
-                "blur": 40,
-                "spread": -6
+                "blur": 40
               },
               "layout": "none",
               "children": [
@@ -471,8 +471,7 @@
                       "x": 0,
                       "y": 8
                     },
-                    "blur": 22,
-                    "spread": -6
+                    "blur": 22
                   },
                   "layout": "vertical",
                   "gap": 10,
@@ -524,8 +523,7 @@
                       "x": 0,
                       "y": 8
                     },
-                    "blur": 22,
-                    "spread": -6
+                    "blur": 22
                   },
                   "layout": "vertical",
                   "gap": 7,
@@ -565,7 +563,8 @@
                       "fill": "$rx-text-muted",
                       "content": "社区与内容入口",
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -586,8 +585,7 @@
                       "x": 0,
                       "y": 8
                     },
-                    "blur": 22,
-                    "spread": -6
+                    "blur": 22
                   },
                   "layout": "vertical",
                   "gap": 7,
@@ -627,7 +625,8 @@
                       "fill": "$rx-text-muted",
                       "content": "游戏与世界观",
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -648,8 +647,7 @@
                       "x": 0,
                       "y": 8
                     },
-                    "blur": 22,
-                    "spread": -6
+                    "blur": 22
                   },
                   "layout": "vertical",
                   "gap": 7,
@@ -689,7 +687,8 @@
                       "fill": "$rx-text-muted",
                       "content": "工程与流程画布",
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -710,8 +709,7 @@
                       "x": 0,
                       "y": 8
                     },
-                    "blur": 22,
-                    "spread": -6
+                    "blur": 22
                   },
                   "layout": "vertical",
                   "gap": 7,
@@ -751,7 +749,8 @@
                       "fill": "$rx-text-muted",
                       "content": "智能与工具编排",
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -772,8 +771,7 @@
                       "x": 0,
                       "y": 8
                     },
-                    "blur": 22,
-                    "spread": -6
+                    "blur": 22
                   },
                   "layout": "vertical",
                   "gap": 7,
@@ -813,7 +811,8 @@
                       "fill": "$rx-text-muted",
                       "content": "输入与个人词库",
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -891,7 +890,8 @@
                   "content": "首页以大幅横向 band 展示项目关系，项目详情页承接状态、入口与后续独立域名。",
                   "lineHeight": 1.55,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 17
+                  "fontSize": 17,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -910,8 +910,7 @@
                   "x": 0,
                   "y": 16
                 },
-                "blur": 40,
-                "spread": -6
+                "blur": 40
               },
               "gap": 48,
               "padding": [
@@ -976,7 +975,8 @@
                       "content": "内容社区与 WebOS 风格工作台",
                       "lineHeight": 1.5,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 16
+                      "fontSize": 16,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -1052,8 +1052,7 @@
                           "x": 0,
                           "y": 12
                         },
-                        "blur": 30,
-                        "spread": -8
+                        "blur": 30
                       }
                     }
                   ]
@@ -1075,8 +1074,7 @@
                   "x": 0,
                   "y": 16
                 },
-                "blur": 40,
-                "spread": -6
+                "blur": 40
               },
               "gap": 48,
               "padding": [
@@ -1112,8 +1110,7 @@
                           "x": 0,
                           "y": 12
                         },
-                        "blur": 30,
-                        "spread": -8
+                        "blur": 30
                       }
                     }
                   ]
@@ -1174,7 +1171,8 @@
                       "content": "异星工业科幻 ARPG",
                       "lineHeight": 1.5,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 16
+                      "fontSize": 16,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -1240,8 +1238,7 @@
                   "x": 0,
                   "y": 16
                 },
-                "blur": 40,
-                "spread": -6
+                "blur": 40
               },
               "gap": 48,
               "padding": [
@@ -1306,7 +1303,8 @@
                       "content": "稳态流程模拟软件",
                       "lineHeight": 1.5,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 16
+                      "fontSize": 16,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -1382,8 +1380,7 @@
                           "x": 0,
                           "y": 12
                         },
-                        "blur": 30,
-                        "spread": -8
+                        "blur": 30
                       }
                     }
                   ]
@@ -1405,8 +1402,7 @@
                   "x": 0,
                   "y": 16
                 },
-                "blur": 40,
-                "spread": -6
+                "blur": 40
               },
               "gap": 48,
               "padding": [
@@ -1465,8 +1461,7 @@
                                   "x": 0,
                                   "y": 4
                                 },
-                                "blur": 12,
-                                "spread": -4
+                                "blur": 12
                               },
                               "padding": [
                                 9,
@@ -1509,8 +1504,7 @@
                                   "x": 0,
                                   "y": 4
                                 },
-                                "blur": 12,
-                                "spread": -4
+                                "blur": 12
                               },
                               "padding": [
                                 9,
@@ -1553,8 +1547,7 @@
                                   "x": 0,
                                   "y": 4
                                 },
-                                "blur": 12,
-                                "spread": -4
+                                "blur": 12
                               },
                               "padding": [
                                 9,
@@ -1597,8 +1590,7 @@
                                   "x": 0,
                                   "y": 4
                                 },
-                                "blur": 12,
-                                "spread": -4
+                                "blur": 12
                               },
                               "padding": [
                                 9,
@@ -1679,7 +1671,8 @@
                       "content": "外部智能层与模型实验",
                       "lineHeight": 1.5,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 16
+                      "fontSize": 16,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -1745,8 +1738,7 @@
                   "x": 0,
                   "y": 16
                 },
-                "blur": 40,
-                "spread": -6
+                "blur": 40
               },
               "gap": 48,
               "padding": [
@@ -1811,7 +1803,8 @@
                       "content": "本地优先的源代码可见中文输入系统",
                       "lineHeight": 1.5,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 16
+                      "fontSize": 16,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -1910,8 +1903,7 @@
                                   "x": 0,
                                   "y": 4
                                 },
-                                "blur": 12,
-                                "spread": -4
+                                "blur": 12
                               },
                               "padding": [
                                 9,
@@ -1954,8 +1946,7 @@
                                   "x": 0,
                                   "y": 4
                                 },
-                                "blur": 12,
-                                "spread": -4
+                                "blur": 12
                               },
                               "padding": [
                                 9,
@@ -1998,8 +1989,7 @@
                                   "x": 0,
                                   "y": 4
                                 },
-                                "blur": 12,
-                                "spread": -4
+                                "blur": 12
                               },
                               "padding": [
                                 9,
@@ -2042,8 +2032,7 @@
                                   "x": 0,
                                   "y": 4
                                 },
-                                "blur": 12,
-                                "spread": -4
+                                "blur": 12
                               },
                               "padding": [
                                 9,
@@ -2118,8 +2107,7 @@
                   "x": 0,
                   "y": 16
                 },
-                "blur": 40,
-                "spread": -6
+                "blur": 40
               },
               "gap": 56,
               "padding": [
@@ -2184,7 +2172,8 @@
                       "content": "品牌记忆点萝小白横跨原始形象、可爱Q版与完全体三种形态，是 RadishX 温润气质的具象锚点。",
                       "lineHeight": 1.55,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 16
+                      "fontSize": 16,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -2232,8 +2221,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   }
                 }
               ]
@@ -2570,7 +2558,8 @@
                   "fill": "$rx-text-secondary",
                   "content": "稳态流程模拟软件",
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 20
+                  "fontSize": 20,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -2582,7 +2571,8 @@
                   "content": "以 Rust 为核心、Rust UI 作为主界面，并通过 .NET 适配 CAPE-OPEN / COM，是 RadishX 中最强调工程可信感的桌面工具。",
                   "lineHeight": 1.6,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 16
+                  "fontSize": 16,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -2703,8 +2693,7 @@
                   "x": 0,
                   "y": 12
                 },
-                "blur": 30,
-                "spread": -8
+                "blur": 30
               }
             }
           ]
@@ -2791,8 +2780,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -2820,7 +2808,8 @@
                       "content": "覆盖单元操作、物料流与收敛求解的稳态计算内核。",
                       "lineHeight": 1.5,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -2839,8 +2828,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -2868,7 +2856,8 @@
                       "content": "以 Rust UI 承载画布、属性与交互主界面，强调工程可信感。",
                       "lineHeight": 1.5,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -2887,8 +2876,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -2916,7 +2904,8 @@
                       "content": ".NET 适配 CAPE-OPEN / COM，保留跨生态互操作边界。",
                       "lineHeight": 1.5,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -2999,8 +2988,7 @@
                   "x": 0,
                   "y": 12
                 },
-                "blur": 30,
-                "spread": -8
+                "blur": 30
               },
               "gap": 20,
               "padding": [
@@ -3037,7 +3025,8 @@
                       "content": "历史文档入口，覆盖 Studio guide、reference、architecture、status 与 MVP。",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -3068,8 +3057,7 @@
                   "x": 0,
                   "y": 12
                 },
-                "blur": 30,
-                "spread": -8
+                "blur": 30
               },
               "gap": 20,
               "padding": [
@@ -3106,7 +3094,8 @@
                       "content": "当前阶段、维护边界和验证基线说明，不构成继续交付承诺。",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -3208,8 +3197,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 10,
@@ -3262,7 +3250,8 @@
                       "content": "内容社区与 WebOS 风格工作台",
                       "lineHeight": 1.4,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -3281,8 +3270,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 10,
@@ -3335,7 +3323,8 @@
                       "content": "异星工业科幻 ARPG",
                       "lineHeight": 1.4,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -3354,8 +3343,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 10,
@@ -3408,7 +3396,8 @@
                       "content": "外部智能层与模型实验",
                       "lineHeight": 1.4,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -3427,8 +3416,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 10,
@@ -3481,7 +3469,8 @@
                       "content": "本地优先的中文输入系统",
                       "lineHeight": 1.4,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -3870,7 +3859,8 @@
                   "content": "RadishX 的品牌记忆点，横跨原始形象、可爱Q版与完全体三种形态。",
                   "lineHeight": 1.6,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 19
+                  "fontSize": 19,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -3882,7 +3872,8 @@
                   "content": "官网内部展示已审核素材；不提供下载、素材包或外部分发。",
                   "lineHeight": 1.5,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 14
+                  "fontSize": 14,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "frame",
@@ -3942,8 +3933,7 @@
                   "x": 0,
                   "y": 12
                 },
-                "blur": 30,
-                "spread": -8
+                "blur": 30
               }
             }
           ]
@@ -4030,8 +4020,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 14,
@@ -4085,7 +4074,8 @@
                           "content": "形态起点与 favicon 语义来源。",
                           "lineHeight": 1.5,
                           "fontFamily": "$rx-font-body",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -4106,8 +4096,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 14,
@@ -4161,7 +4150,8 @@
                           "content": "首页视觉锚点，可爱Q版安全设定口径。",
                           "lineHeight": 1.5,
                           "fontFamily": "$rx-font-body",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -4182,8 +4172,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 14,
@@ -4237,7 +4226,8 @@
                           "content": "Mascot 页主视觉与完整体设定。",
                           "lineHeight": 1.5,
                           "fontFamily": "$rx-font-body",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -4343,8 +4333,7 @@
                           "x": 0,
                           "y": 12
                         },
-                        "blur": 30,
-                        "spread": -8
+                        "blur": 30
                       }
                     },
                     {
@@ -4400,8 +4389,7 @@
                           "x": 0,
                           "y": 12
                         },
-                        "blur": 30,
-                        "spread": -8
+                        "blur": 30
                       }
                     },
                     {
@@ -4457,8 +4445,7 @@
                           "x": 0,
                           "y": 12
                         },
-                        "blur": 30,
-                        "spread": -8
+                        "blur": 30
                       }
                     },
                     {
@@ -4573,8 +4560,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 8,
@@ -4600,7 +4586,8 @@
                       "content": "仅官网内部展示已审核候选。",
                       "lineHeight": 1.5,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -4619,8 +4606,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 8,
@@ -4646,7 +4632,8 @@
                       "content": "可爱Q版只使用安全设定图。",
                       "lineHeight": 1.5,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -4665,8 +4652,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 8,
@@ -4692,7 +4678,8 @@
                       "content": "不提供下载 / 素材包 / 外部分发。",
                       "lineHeight": 1.5,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -4711,8 +4698,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 8,
@@ -4738,7 +4724,8 @@
                       "content": "暂不接入节日活动素材。",
                       "lineHeight": 1.5,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -5119,7 +5106,8 @@
               "content": "RadishX 是 Radish 系列项目的官网与统一入口，通过 GitHub 托管、Vercel 部署，连接内容社区、异星工业游戏、流程工具、智能层与中文输入五个方向。",
               "lineHeight": 1.6,
               "fontFamily": "$rx-font-body",
-              "fontSize": 19
+              "fontSize": 19,
+              "fontWeight": "normal"
             }
           ]
         },
@@ -5220,8 +5208,7 @@
                               "x": 0,
                               "y": 12
                             },
-                            "blur": 30,
-                            "spread": -8
+                            "blur": 30
                           },
                           "layout": "vertical",
                           "gap": 8,
@@ -5264,8 +5251,7 @@
                               "x": 0,
                               "y": 12
                             },
-                            "blur": 30,
-                            "spread": -8
+                            "blur": 30
                           },
                           "layout": "vertical",
                           "gap": 8,
@@ -5286,7 +5272,7 @@
                               "id": "hkG5m",
                               "name": "C Value",
                               "fill": "$rx-text-primary",
-                              "content": "luobo0608@foxmail.com",
+                              "content": "luobo@radishx.com",
                               "fontFamily": "$rx-font-heading",
                               "fontSize": 20,
                               "fontWeight": "760"
@@ -5317,8 +5303,7 @@
                               "x": 0,
                               "y": 12
                             },
-                            "blur": 30,
-                            "spread": -8
+                            "blur": 30
                           },
                           "layout": "vertical",
                           "gap": 8,
@@ -5361,8 +5346,7 @@
                               "x": 0,
                               "y": 12
                             },
-                            "blur": 30,
-                            "spread": -8
+                            "blur": 30
                           },
                           "layout": "vertical",
                           "gap": 8,
@@ -5409,8 +5393,7 @@
                       "x": 0,
                       "y": 16
                     },
-                    "blur": 40,
-                    "spread": -6
+                    "blur": 40
                   },
                   "layout": "vertical",
                   "gap": 14,
@@ -5452,7 +5435,8 @@
                       "lineHeight": 1.45,
                       "textAlign": "center",
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -5542,8 +5526,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -5579,7 +5562,8 @@
                       "content": "Radish 系列项目官网与统一入口。",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -5627,8 +5611,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -5664,7 +5647,8 @@
                       "content": "内容社区与 WebOS 风格工作台。",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -5712,8 +5696,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -5749,7 +5732,8 @@
                       "content": "异星工业科幻 ARPG。",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -5806,8 +5790,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -5843,7 +5826,8 @@
                       "content": "稳态流程模拟软件。",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -5891,8 +5875,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -5928,7 +5911,8 @@
                       "content": "外部智能层与模型实验。",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -5976,8 +5960,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -6013,7 +5996,8 @@
                       "content": "本地优先的源代码可见中文输入系统。",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -6134,8 +6118,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 8,
@@ -6190,8 +6173,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 8,
@@ -6246,8 +6228,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 8,
@@ -6302,8 +6283,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 8,
@@ -6367,8 +6347,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 8,
@@ -6423,8 +6402,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 8,
@@ -6479,8 +6457,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   },
                   "layout": "vertical",
                   "gap": 8,
@@ -6815,7 +6792,8 @@
               "content": "一个温润、克制、带一点游戏感的统一入口，连接内容社区、异星工业游戏、流程模拟软件、智能工具实验与中文输入系统。",
               "lineHeight": 1.6,
               "fontFamily": "$rx-font-body",
-              "fontSize": 15
+              "fontSize": 15,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -6922,8 +6900,7 @@
                   "x": 0,
                   "y": 12
                 },
-                "blur": 30,
-                "spread": -6
+                "blur": 30
               },
               "layout": "vertical",
               "gap": 10,
@@ -7035,8 +7012,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "layout": "vertical",
               "gap": 12,
@@ -7063,8 +7039,7 @@
                       "x": 0,
                       "y": 8
                     },
-                    "blur": 20,
-                    "spread": -6
+                    "blur": 20
                   }
                 },
                 {
@@ -7128,7 +7103,8 @@
                       "content": "内容社区与 WebOS 风格工作台",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -7159,8 +7135,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "layout": "vertical",
               "gap": 12,
@@ -7187,8 +7162,7 @@
                       "x": 0,
                       "y": 8
                     },
-                    "blur": 20,
-                    "spread": -6
+                    "blur": 20
                   }
                 },
                 {
@@ -7252,7 +7226,8 @@
                       "content": "异星工业科幻 ARPG",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -7283,8 +7258,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "layout": "vertical",
               "gap": 12,
@@ -7311,8 +7285,7 @@
                       "x": 0,
                       "y": 8
                     },
-                    "blur": 20,
-                    "spread": -6
+                    "blur": 20
                   }
                 },
                 {
@@ -7376,7 +7349,8 @@
                       "content": "稳态流程模拟软件",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -7407,8 +7381,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "layout": "vertical",
               "gap": 12,
@@ -7601,7 +7574,8 @@
                       "content": "外部智能层与模型实验",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -7632,8 +7606,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "layout": "vertical",
               "gap": 12,
@@ -7826,7 +7799,8 @@
                       "content": "本地优先的中文输入系统",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -7890,8 +7864,7 @@
                   "x": 0,
                   "y": 12
                 },
-                "blur": 30,
-                "spread": -6
+                "blur": 30
               },
               "layout": "vertical",
               "gap": 14,
@@ -7932,7 +7905,8 @@
                   "lineHeight": 1.5,
                   "textAlign": "center",
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 14
+                  "fontSize": 14,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "frame",
@@ -8234,7 +8208,8 @@
               "fill": "$rx-text-secondary",
               "content": "稳态流程模拟软件",
               "fontFamily": "$rx-font-body",
-              "fontSize": 16
+              "fontSize": 16,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
@@ -8246,7 +8221,8 @@
               "content": "以 Rust 为核心、Rust UI 作为主界面，通过 .NET 适配 CAPE-OPEN / COM，是 RadishX 中最强调工程可信感的桌面工具。",
               "lineHeight": 1.55,
               "fontFamily": "$rx-font-body",
-              "fontSize": 14
+              "fontSize": 14,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
@@ -8365,8 +8341,7 @@
                   "x": 0,
                   "y": 8
                 },
-                "blur": 20,
-                "spread": -6
+                "blur": 20
               }
             }
           ]
@@ -8425,8 +8400,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "layout": "vertical",
               "gap": 8,
@@ -8454,7 +8428,8 @@
                   "content": "覆盖单元操作、物料流与收敛求解的稳态计算内核。",
                   "lineHeight": 1.5,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -8473,8 +8448,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "layout": "vertical",
               "gap": 8,
@@ -8502,7 +8476,8 @@
                   "content": "以 Rust UI 承载画布、属性与交互主界面。",
                   "lineHeight": 1.5,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -8521,8 +8496,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "layout": "vertical",
               "gap": 8,
@@ -8550,7 +8524,8 @@
                   "content": ".NET 适配 CAPE-OPEN / COM，保留跨生态互操作边界。",
                   "lineHeight": 1.5,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             }
@@ -8612,8 +8587,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "layout": "vertical",
               "gap": 7,
@@ -8663,7 +8637,8 @@
                   "fill": "$rx-text-secondary",
                   "content": "内容社区与 WebOS 工作台",
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -8682,8 +8657,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "layout": "vertical",
               "gap": 7,
@@ -8733,7 +8707,8 @@
                   "fill": "$rx-text-secondary",
                   "content": "异星工业科幻 ARPG",
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -8752,8 +8727,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "layout": "vertical",
               "gap": 7,
@@ -8803,7 +8777,8 @@
                   "fill": "$rx-text-secondary",
                   "content": "外部智能层与模型实验",
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -8822,8 +8797,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "layout": "vertical",
               "gap": 7,
@@ -8873,7 +8847,8 @@
                   "fill": "$rx-text-secondary",
                   "content": "本地优先的中文输入系统",
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             }
@@ -9126,7 +9101,8 @@
               "content": "RadishX 的品牌记忆点，横跨原始形象、可爱Q版与完全体三种形态。",
               "lineHeight": 1.6,
               "fontFamily": "$rx-font-body",
-              "fontSize": 15
+              "fontSize": 15,
+              "fontWeight": "normal"
             },
             {
               "type": "rectangle",
@@ -9149,8 +9125,7 @@
                   "x": 0,
                   "y": 8
                 },
-                "blur": 20,
-                "spread": -6
+                "blur": 20
               }
             }
           ]
@@ -9209,8 +9184,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "gap": 14,
               "padding": 14,
@@ -9258,7 +9232,8 @@
                       "content": "形态起点与 favicon 语义来源。",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -9279,8 +9254,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "gap": 14,
               "padding": 14,
@@ -9328,7 +9302,8 @@
                       "content": "首页视觉锚点，安全设定口径。",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -9349,8 +9324,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "gap": 14,
               "padding": 14,
@@ -9398,7 +9372,8 @@
                       "content": "Mascot 页主视觉与完整体设定。",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -9466,8 +9441,7 @@
                   "x": 0,
                   "y": 8
                 },
-                "blur": 20,
-                "spread": -6
+                "blur": 20
               }
             },
             {
@@ -9491,8 +9465,7 @@
                   "x": 0,
                   "y": 8
                 },
-                "blur": 20,
-                "spread": -6
+                "blur": 20
               }
             },
             {
@@ -9516,8 +9489,7 @@
                   "x": 0,
                   "y": 8
                 },
-                "blur": 20,
-                "spread": -6
+                "blur": 20
               }
             }
           ]
@@ -9585,8 +9557,7 @@
                       "x": 0,
                       "y": 10
                     },
-                    "blur": 24,
-                    "spread": -8
+                    "blur": 24
                   },
                   "layout": "vertical",
                   "gap": 6,
@@ -9612,7 +9583,8 @@
                       "content": "仅官网内部展示已审核候选。",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -9631,8 +9603,7 @@
                       "x": 0,
                       "y": 10
                     },
-                    "blur": 24,
-                    "spread": -8
+                    "blur": 24
                   },
                   "layout": "vertical",
                   "gap": 6,
@@ -9658,7 +9629,8 @@
                       "content": "可爱Q版只用安全设定图。",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -9686,8 +9658,7 @@
                       "x": 0,
                       "y": 10
                     },
-                    "blur": 24,
-                    "spread": -8
+                    "blur": 24
                   },
                   "layout": "vertical",
                   "gap": 6,
@@ -9713,7 +9684,8 @@
                       "content": "不提供下载与外部分发。",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -9732,8 +9704,7 @@
                       "x": 0,
                       "y": 10
                     },
-                    "blur": 24,
-                    "spread": -8
+                    "blur": 24
                   },
                   "layout": "vertical",
                   "gap": 6,
@@ -9759,7 +9730,8 @@
                       "content": "暂不接入节日活动素材。",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -10111,7 +10083,8 @@
                   "content": "一个温润、克制、带一点游戏感的统一入口，连接内容社区、异星工业游戏、流程模拟软件、智能工具实验与中文输入系统。",
                   "lineHeight": 1.62,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 19
+                  "fontSize": 19,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "frame",
@@ -10230,8 +10203,7 @@
                   "x": 0,
                   "y": 16
                 },
-                "blur": 40,
-                "spread": -6
+                "blur": 40
               },
               "layout": "none",
               "children": [
@@ -10277,8 +10249,7 @@
                       "x": 0,
                       "y": 8
                     },
-                    "blur": 22,
-                    "spread": -6
+                    "blur": 22
                   },
                   "layout": "vertical",
                   "gap": 10,
@@ -10330,8 +10301,7 @@
                       "x": 0,
                       "y": 8
                     },
-                    "blur": 22,
-                    "spread": -6
+                    "blur": 22
                   },
                   "layout": "vertical",
                   "gap": 7,
@@ -10371,7 +10341,8 @@
                       "fill": "$rx-text-muted",
                       "content": "社区与内容入口",
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -10392,8 +10363,7 @@
                       "x": 0,
                       "y": 8
                     },
-                    "blur": 22,
-                    "spread": -6
+                    "blur": 22
                   },
                   "layout": "vertical",
                   "gap": 7,
@@ -10433,7 +10403,8 @@
                       "fill": "$rx-text-muted",
                       "content": "游戏与世界观",
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -10454,8 +10425,7 @@
                       "x": 0,
                       "y": 8
                     },
-                    "blur": 22,
-                    "spread": -6
+                    "blur": 22
                   },
                   "layout": "vertical",
                   "gap": 7,
@@ -10495,7 +10465,8 @@
                       "fill": "$rx-text-muted",
                       "content": "工程与流程画布",
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -10516,8 +10487,7 @@
                       "x": 0,
                       "y": 8
                     },
-                    "blur": 22,
-                    "spread": -6
+                    "blur": 22
                   },
                   "layout": "vertical",
                   "gap": 7,
@@ -10557,7 +10527,8 @@
                       "fill": "$rx-text-muted",
                       "content": "智能与工具编排",
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -10578,8 +10549,7 @@
                       "x": 0,
                       "y": 8
                     },
-                    "blur": 22,
-                    "spread": -6
+                    "blur": 22
                   },
                   "layout": "vertical",
                   "gap": 7,
@@ -10619,7 +10589,8 @@
                       "fill": "$rx-text-muted",
                       "content": "输入与个人词库",
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -10697,7 +10668,8 @@
                   "content": "首页以大幅横向 band 展示项目关系，项目详情页承接状态、入口与后续独立域名。",
                   "lineHeight": 1.55,
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 17
+                  "fontSize": 17,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -10716,8 +10688,7 @@
                   "x": 0,
                   "y": 16
                 },
-                "blur": 40,
-                "spread": -6
+                "blur": 40
               },
               "gap": 48,
               "padding": [
@@ -10782,7 +10753,8 @@
                       "content": "内容社区与 WebOS 风格工作台",
                       "lineHeight": 1.5,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 16
+                      "fontSize": 16,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -10858,8 +10830,7 @@
                           "x": 0,
                           "y": 12
                         },
-                        "blur": 30,
-                        "spread": -8
+                        "blur": 30
                       }
                     }
                   ]
@@ -10881,8 +10852,7 @@
                   "x": 0,
                   "y": 16
                 },
-                "blur": 40,
-                "spread": -6
+                "blur": 40
               },
               "gap": 48,
               "padding": [
@@ -10918,8 +10888,7 @@
                           "x": 0,
                           "y": 12
                         },
-                        "blur": 30,
-                        "spread": -8
+                        "blur": 30
                       }
                     }
                   ]
@@ -10980,7 +10949,8 @@
                       "content": "异星工业科幻 ARPG",
                       "lineHeight": 1.5,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 16
+                      "fontSize": 16,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -11046,8 +11016,7 @@
                   "x": 0,
                   "y": 16
                 },
-                "blur": 40,
-                "spread": -6
+                "blur": 40
               },
               "gap": 48,
               "padding": [
@@ -11112,7 +11081,8 @@
                       "content": "稳态流程模拟软件",
                       "lineHeight": 1.5,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 16
+                      "fontSize": 16,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -11188,8 +11158,7 @@
                           "x": 0,
                           "y": 12
                         },
-                        "blur": 30,
-                        "spread": -8
+                        "blur": 30
                       }
                     }
                   ]
@@ -11211,8 +11180,7 @@
                   "x": 0,
                   "y": 16
                 },
-                "blur": 40,
-                "spread": -6
+                "blur": 40
               },
               "gap": 48,
               "padding": [
@@ -11271,8 +11239,7 @@
                                   "x": 0,
                                   "y": 4
                                 },
-                                "blur": 12,
-                                "spread": -4
+                                "blur": 12
                               },
                               "padding": [
                                 9,
@@ -11315,8 +11282,7 @@
                                   "x": 0,
                                   "y": 4
                                 },
-                                "blur": 12,
-                                "spread": -4
+                                "blur": 12
                               },
                               "padding": [
                                 9,
@@ -11359,8 +11325,7 @@
                                   "x": 0,
                                   "y": 4
                                 },
-                                "blur": 12,
-                                "spread": -4
+                                "blur": 12
                               },
                               "padding": [
                                 9,
@@ -11403,8 +11368,7 @@
                                   "x": 0,
                                   "y": 4
                                 },
-                                "blur": 12,
-                                "spread": -4
+                                "blur": 12
                               },
                               "padding": [
                                 9,
@@ -11485,7 +11449,8 @@
                       "content": "外部智能层与模型实验",
                       "lineHeight": 1.5,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 16
+                      "fontSize": 16,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -11551,8 +11516,7 @@
                   "x": 0,
                   "y": 16
                 },
-                "blur": 40,
-                "spread": -6
+                "blur": 40
               },
               "gap": 48,
               "padding": [
@@ -11617,7 +11581,8 @@
                       "content": "本地优先的源代码可见中文输入系统",
                       "lineHeight": 1.5,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 16
+                      "fontSize": 16,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -11716,8 +11681,7 @@
                                   "x": 0,
                                   "y": 4
                                 },
-                                "blur": 12,
-                                "spread": -4
+                                "blur": 12
                               },
                               "padding": [
                                 9,
@@ -11760,8 +11724,7 @@
                                   "x": 0,
                                   "y": 4
                                 },
-                                "blur": 12,
-                                "spread": -4
+                                "blur": 12
                               },
                               "padding": [
                                 9,
@@ -11804,8 +11767,7 @@
                                   "x": 0,
                                   "y": 4
                                 },
-                                "blur": 12,
-                                "spread": -4
+                                "blur": 12
                               },
                               "padding": [
                                 9,
@@ -11848,8 +11810,7 @@
                                   "x": 0,
                                   "y": 4
                                 },
-                                "blur": 12,
-                                "spread": -4
+                                "blur": 12
                               },
                               "padding": [
                                 9,
@@ -11924,8 +11885,7 @@
                   "x": 0,
                   "y": 16
                 },
-                "blur": 40,
-                "spread": -6
+                "blur": 40
               },
               "gap": 56,
               "padding": [
@@ -11990,7 +11950,8 @@
                       "content": "品牌记忆点萝小白横跨原始形象、可爱Q版与完全体三种形态，是 RadishX 温润气质的具象锚点。",
                       "lineHeight": 1.55,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 16
+                      "fontSize": 16,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -12038,8 +11999,7 @@
                       "x": 0,
                       "y": 12
                     },
-                    "blur": 30,
-                    "spread": -8
+                    "blur": 30
                   }
                 }
               ]
@@ -12263,7 +12223,8 @@
               "content": "一个温润、克制、带一点游戏感的统一入口，连接内容社区、异星工业游戏、流程模拟软件、智能工具实验与中文输入系统。",
               "lineHeight": 1.6,
               "fontFamily": "$rx-font-body",
-              "fontSize": 15
+              "fontSize": 15,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -12370,8 +12331,7 @@
                   "x": 0,
                   "y": 12
                 },
-                "blur": 30,
-                "spread": -6
+                "blur": 30
               },
               "layout": "vertical",
               "gap": 10,
@@ -12483,8 +12443,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "layout": "vertical",
               "gap": 12,
@@ -12511,8 +12470,7 @@
                       "x": 0,
                       "y": 8
                     },
-                    "blur": 20,
-                    "spread": -6
+                    "blur": 20
                   }
                 },
                 {
@@ -12576,7 +12534,8 @@
                       "content": "内容社区与 WebOS 风格工作台",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -12607,8 +12566,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "layout": "vertical",
               "gap": 12,
@@ -12635,8 +12593,7 @@
                       "x": 0,
                       "y": 8
                     },
-                    "blur": 20,
-                    "spread": -6
+                    "blur": 20
                   }
                 },
                 {
@@ -12700,7 +12657,8 @@
                       "content": "异星工业科幻 ARPG",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -12731,8 +12689,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "layout": "vertical",
               "gap": 12,
@@ -12759,8 +12716,7 @@
                       "x": 0,
                       "y": 8
                     },
-                    "blur": 20,
-                    "spread": -6
+                    "blur": 20
                   }
                 },
                 {
@@ -12824,7 +12780,8 @@
                       "content": "稳态流程模拟软件",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -12855,8 +12812,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "layout": "vertical",
               "gap": 12,
@@ -13049,7 +13005,8 @@
                       "content": "外部智能层与模型实验",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -13080,8 +13037,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "layout": "vertical",
               "gap": 12,
@@ -13274,7 +13230,8 @@
                       "content": "本地优先的中文输入系统",
                       "lineHeight": 1.45,
                       "fontFamily": "$rx-font-body",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -13338,8 +13295,7 @@
                   "x": 0,
                   "y": 12
                 },
-                "blur": 30,
-                "spread": -6
+                "blur": 30
               },
               "layout": "vertical",
               "gap": 14,
@@ -13380,7 +13336,8 @@
                   "lineHeight": 1.5,
                   "textAlign": "center",
                   "fontFamily": "$rx-font-body",
-                  "fontSize": 14
+                  "fontSize": 14,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "frame",
@@ -13656,7 +13613,8 @@
               "content": "Radish 系列项目的官网与统一入口，通过 GitHub 托管、Vercel 部署，连接五个方向。",
               "lineHeight": 1.6,
               "fontFamily": "$rx-font-body",
-              "fontSize": 15
+              "fontSize": 15,
+              "fontWeight": "normal"
             }
           ]
         },
@@ -13721,8 +13679,7 @@
                       "x": 0,
                       "y": 10
                     },
-                    "blur": 24,
-                    "spread": -8
+                    "blur": 24
                   },
                   "layout": "vertical",
                   "gap": 6,
@@ -13767,8 +13724,7 @@
                       "x": 0,
                       "y": 10
                     },
-                    "blur": 24,
-                    "spread": -8
+                    "blur": 24
                   },
                   "layout": "vertical",
                   "gap": 6,
@@ -13791,7 +13747,7 @@
                       "fill": "$rx-text-primary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "luobo0608@foxmail.com",
+                      "content": "luobo@radishx.com",
                       "fontFamily": "$rx-font-heading",
                       "fontSize": 14,
                       "fontWeight": "760"
@@ -13822,8 +13778,7 @@
                       "x": 0,
                       "y": 10
                     },
-                    "blur": 24,
-                    "spread": -8
+                    "blur": 24
                   },
                   "layout": "vertical",
                   "gap": 6,
@@ -13868,8 +13823,7 @@
                       "x": 0,
                       "y": 10
                     },
-                    "blur": 24,
-                    "spread": -8
+                    "blur": 24
                   },
                   "layout": "vertical",
                   "gap": 6,
@@ -13916,8 +13870,7 @@
                   "x": 0,
                   "y": 12
                 },
-                "blur": 30,
-                "spread": -6
+                "blur": 30
               },
               "layout": "vertical",
               "gap": 12,
@@ -14006,8 +13959,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "gap": 12,
               "padding": 18,
@@ -14070,8 +14022,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "gap": 12,
               "padding": 18,
@@ -14134,8 +14085,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "gap": 12,
               "padding": 18,
@@ -14198,8 +14148,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "gap": 12,
               "padding": 18,
@@ -14262,8 +14211,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "gap": 12,
               "padding": 18,
@@ -14326,8 +14274,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "gap": 12,
               "padding": 18,
@@ -14433,8 +14380,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "gap": 12,
               "padding": 16,
@@ -14487,8 +14433,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "gap": 12,
               "padding": 16,
@@ -14541,8 +14486,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "gap": 12,
               "padding": 16,
@@ -14595,8 +14539,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "gap": 12,
               "padding": 16,
@@ -14649,8 +14592,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "gap": 12,
               "padding": 16,
@@ -14703,8 +14645,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "gap": 12,
               "padding": 16,
@@ -14757,8 +14698,7 @@
                   "x": 0,
                   "y": 10
                 },
-                "blur": 24,
-                "spread": -8
+                "blur": 24
               },
               "gap": 12,
               "padding": 16,

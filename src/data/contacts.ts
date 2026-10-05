@@ -11,8 +11,8 @@ export const contacts = [
   },
   {
     label: "Email",
-    value: "luobo0608@foxmail.com",
-    href: "mailto:luobo0608@foxmail.com",
+    value: "luobo@radishx.com",
+    href: "mailto:luobo@radishx.com",
     action: "发送邮件",
     intent: "正式说明",
     note: "适合项目合作、素材授权和较长说明。",

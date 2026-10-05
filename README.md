@@ -156,7 +156,7 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 ## About 信息
 
 - QQ：`2101827166`
-- Email：<luobo0608@foxmail.com>
+- Email：<luobo@radishx.com>
 - GitHub 主页：<https://github.com/laugh0608>
 - 个人主页：<https://www.imbhj.com>
 - 微信公众号：`大白萝卜的坑`
