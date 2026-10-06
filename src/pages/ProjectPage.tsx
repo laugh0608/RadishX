@@ -42,8 +42,8 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
       value: project.path,
     },
     {
-      label: "Future Domain",
-      value: project.futureDomain ?? "尚未登记",
+      label: project.domain?.status === "deployed" ? "已部署入口" : "暂定域名",
+      value: project.domain?.name ?? "尚未登记",
     },
     {
       label: "Repository",
@@ -57,9 +57,10 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
       note: "RadishX 官网站内介绍页",
     },
     {
-      label: "Future Domain",
-      value: project.futureDomain ?? "尚未登记",
-      note: project.futureDomain ? "规划入口，尚未在官网开放" : "未配置项目域名",
+      label: project.domain?.status === "deployed" ? "已部署入口" : "暂定域名",
+      value: project.domain?.name ?? "尚未登记",
+      href: project.domain?.status === "deployed" ? `https://${project.domain.name}` : undefined,
+      note: project.domain?.status === "deployed" ? "已部署，可访问" : project.domain ? "暂定域名，尚未部署" : "未部署，域名尚未登记",
     },
     {
       label: "GitHub",
@@ -91,7 +92,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
           <div className="project-hero__copy">
             <div className="project-hero__identity">
               <ProjectMark project={project} size="hero" showNote />
-              <p className="eyebrow">{project.futureDomain ?? project.orbitLabel}</p>
+              <p className="eyebrow">{project.domain?.name ?? project.orbitLabel}</p>
             </div>
             <h1>{project.name}</h1>
             <p>{project.tagline}</p>
@@ -171,8 +172,8 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
         <div className="section__inner project-status-band">
           <SectionHeader
             eyebrow="Public Surface"
-            title="当前只开放稳定信息"
-            description="项目页展示站内路径、GitHub 仓库、未来独立域名和上线状态；未稳定的演示站或下载页不会伪装成可访问入口。"
+            title="项目状态与访问入口"
+            description="项目页展示站内路径、GitHub 仓库、项目独立域名和上线状态；未稳定的演示站或下载页不会伪装成可访问入口。"
           />
           <InfoRail items={projectInfo} tone="dark" />
         </div>
@@ -200,7 +201,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
           <SectionHeader
             eyebrow="Capabilities"
             title="当前展示重点"
-            description="详情页模板优先让定位、状态、GitHub、未来域名和项目关系保持可扫读。"
+            description="详情页模板优先让定位、状态、GitHub、域名状态和项目关系保持可扫读。"
           />
           <div className="split-list">
             <div>
@@ -229,7 +230,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
             {siblings.map((sibling) => (
               <RouteLink key={sibling.id} className={`related-project related-project--${sibling.tone}`} to={sibling.path}>
                 <ProjectMark project={sibling} size="compact" />
-                <span className="related-project__meta">{sibling.futureDomain ?? sibling.orbitLabel}</span>
+                <span className="related-project__meta">{sibling.domain?.name ?? sibling.orbitLabel}</span>
                 <strong>{sibling.name}</strong>
                 <span>{sibling.tagline}</span>
               </RouteLink>

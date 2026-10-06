@@ -1592,7 +1592,8 @@
 .home-project-card--axiom,
 .home-project-card--link,
 .home-project-card--memory,
-.home-project-card--nexus {
+.home-project-card--nexus,
+.home-project-card--ink {
   grid-column: span 6;
   min-height: 360px;
 }
@@ -1631,7 +1632,8 @@
   .home-project-card--axiom,
   .home-project-card--link,
   .home-project-card--memory,
-  .home-project-card--nexus {
+  .home-project-card--nexus,
+  .home-project-card--ink {
     grid-column: 1 / -1;
   }
 

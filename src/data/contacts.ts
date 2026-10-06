@@ -63,7 +63,7 @@ export const repositories = [
     status: project.status,
     description: project.tagline,
     role: project.role,
-    surface: project.futureDomain ?? project.path,
+    surface: project.domain?.name ?? project.path,
     action: `打开 ${project.name} 仓库`,
   })),
   {
@@ -83,7 +83,7 @@ export const domainSurfaces = [
     label: "Canonical",
     domain: "radishx.com",
     status: "Current Vercel site",
-    description: "当前官网主域，承载首页、九个产品介绍页、Mascot 和 About。",
+    description: "当前官网主域，承载首页、十个产品介绍页、Mascot 和 About。",
   },
   {
     label: "Compatibility",
@@ -91,10 +91,12 @@ export const domainSurfaces = [
     status: "Redirect to root domain",
     description: "兼容访问入口，保留路径跳转到 radishx.com，不作为独立站点。",
   },
-  ...projects.filter((project) => project.futureDomain).map((project) => ({
+  ...projects.filter((project) => project.domain?.name).map((project) => ({
     label: project.name,
-    domain: project.futureDomain,
-    status: "Future project domain",
-    description: "未来独立部署入口，当前不是本官网 Vercel rewrite。",
+    domain: project.domain?.name,
+    status: project.domain?.status === "deployed" ? "已部署" : "暂定 · 未部署",
+    description: project.domain?.status === "deployed"
+      ? "项目独立 Web 服务，可通过项目详情页访问。"
+      : "域名暂定，尚未部署；当前不开放访问入口。",
   })),
 ];

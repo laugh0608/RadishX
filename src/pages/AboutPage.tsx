@@ -94,7 +94,7 @@ export function AboutPage() {
           <SectionHeader
             eyebrow="Repositories"
             title="GitHub 仓库入口"
-            description="第一版官网优先展示稳定 GitHub 链接，演示站、下载页和项目独立站等上线后再补。"
+            description="查看各项目源码与文档；Radish 和 RadishInk 已提供独立 Web 入口。"
           />
           <div className="repo-grid">
             {repositories.map((repo) => (
@@ -133,7 +133,7 @@ export function AboutPage() {
           <SectionHeader
             eyebrow="Deployment"
             title="域名和部署边界"
-            description="radishx.com 承载官网；下列既有规划子域属于独立产品，新增产品尚未在官网登记域名。"
+            description="radishx.com 承载官网；Radish 与 RadishInk 已独立部署，其他项目域名暂定且尚未部署。"
           />
           <div className="domain-grid">
             {domainSurfaces.map((surface) => (

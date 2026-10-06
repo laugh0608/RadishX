@@ -67,7 +67,10 @@ export type Project = {
   name: string;
   shortName: string;
   path: string;
-  futureDomain?: string;
+  domain?: {
+    name: string;
+    status: "deployed" | "planned";
+  };
   githubUrl: string;
   mark: ProjectMark;
   tagline: string;
@@ -93,7 +96,7 @@ export const projects: Project[] = [
     name: "Radish",
     shortName: "Hub",
     path: "/radish",
-    futureDomain: "hub.radishx.com",
+    domain: { name: "hub.radishx.com", status: "deployed" },
     githubUrl: "https://github.com/laugh0608/Radish",
     mark: {
       monogram: "R",
@@ -109,7 +112,7 @@ export const projects: Project[] = [
     status: "Web Released",
     chips: ["Community", "Web-first", "Flutter Native"],
     capabilities: ["帖子、评论与问答", "聊天、关注与通知", "可长期阅读的社区文档"],
-    signals: ["正式 Web 已发布并持续维护", "原生端按平台分别验收", "官网暂保留仓库入口，访问地址待核验"],
+    signals: ["正式 Web 已发布并持续维护", "原生端按平台分别验收", "通过 hub.radishx.com 访问社区"],
     visual: {
       src: "/images/projects/radish/radish-acg-web.jpg",
       alt: "Radish README 中使用的萝卜娘角色视觉",
@@ -149,8 +152,6 @@ export const projects: Project[] = [
         label: "访问项目",
         href: "https://hub.radishx.com",
         isExternal: true,
-        isDisabled: true,
-        note: "Coming Soon",
       },
     ],
   },
@@ -160,7 +161,7 @@ export const projects: Project[] = [
     name: "RadishCatalyst",
     shortName: "Catalyst",
     path: "/catalyst",
-    futureDomain: "forge.radishx.com",
+    domain: { name: "forge.radishx.com", status: "planned" },
     githubUrl: "https://github.com/laugh0608/RadishCatalyst",
     mark: {
       monogram: "C",
@@ -217,7 +218,7 @@ export const projects: Project[] = [
         href: "https://forge.radishx.com",
         isExternal: true,
         isDisabled: true,
-        note: "Coming Soon",
+        note: "暂定域名 · 未部署",
       },
     ],
   },
@@ -227,7 +228,7 @@ export const projects: Project[] = [
     name: "RadishFlow",
     shortName: "Flow",
     path: "/flow",
-    futureDomain: "flow.radishx.com",
+    domain: { name: "flow.radishx.com", status: "planned" },
     githubUrl: "https://github.com/laugh0608/RadishFlow",
     mark: {
       monogram: "F",
@@ -284,7 +285,7 @@ export const projects: Project[] = [
         href: "https://flow.radishx.com",
         isExternal: true,
         isDisabled: true,
-        note: "尚未发布",
+        note: "暂定域名 · 未部署",
       },
     ],
   },
@@ -294,7 +295,7 @@ export const projects: Project[] = [
     name: "RadishMind",
     shortName: "Mind",
     path: "/mind",
-    futureDomain: "mind.radishx.com",
+    domain: { name: "mind.radishx.com", status: "planned" },
     githubUrl: "https://github.com/laugh0608/RadishMind",
     mark: {
       monogram: "M",
@@ -380,7 +381,7 @@ export const projects: Project[] = [
         href: "https://mind.radishx.com",
         isExternal: true,
         isDisabled: true,
-        note: "Coming Soon",
+        note: "暂定域名 · 未部署",
       },
     ],
   },
@@ -390,7 +391,7 @@ export const projects: Project[] = [
     name: "RadishLex",
     shortName: "Lex",
     path: "/lex",
-    futureDomain: "lex.radishx.com",
+    domain: { name: "lex.radishx.com", status: "planned" },
     githubUrl: "https://github.com/laugh0608/RadishLex",
     mark: {
       monogram: "L",
@@ -456,7 +457,7 @@ export const projects: Project[] = [
         href: "https://lex.radishx.com",
         isExternal: true,
         isDisabled: true,
-        note: "Coming Soon",
+        note: "暂定域名 · 未部署",
       },
     ],
   },
@@ -714,6 +715,61 @@ export const projects: Project[] = [
         isExternal: true
       }
     ]
+  },
+  {
+    id: "ink",
+    tone: "ink",
+    name: "RadishInk",
+    shortName: "Ink",
+    path: "/ink",
+    domain: { name: "ink.radishx.com", status: "deployed" },
+    githubUrl: "https://github.com/laugh0608/RadishInk",
+    mark: {
+      monogram: "I",
+      wordmark: "Ink",
+      label: "Temporary mark",
+      note: "RadishX 代码内临时标识，不是 RadishInk 正式 Logo。",
+    },
+    tagline: "专注写作，轻松排版",
+    summary: "RadishInk（萝卜墨笺）是基于 WeMD 二次开发的 Markdown 写作与微信公众号排版工具，以 Web 方式提供编辑、主题预览和富文本复制，让写作与排版在浏览器中完成。",
+    orbitLabel: "写作与公众号排版",
+    role: "Radish 家族的 Web 写作与排版工具",
+    stage: "Web 已部署，持续完善公众号排版体验",
+    status: "Web Available",
+    chips: ["Markdown", "Web-first", "WeChat Publishing"],
+    capabilities: ["Markdown 编辑与主题预览", "浏览器本地草稿与目录工作区", "微信公众号富文本复制"],
+    signals: ["通过 ink.radishx.com 在线使用", "草稿保存在当前浏览器，不提供账号或跨设备同步", "公众号粘贴与保存效果持续验证"],
+    assetReview: {
+      source: "项目文字定位与代码内临时标识",
+      boundary: "不代表产品截图或正式 Logo。",
+      nextNeed: "后续审核项目自有 Logo 与真实编辑器截图。",
+    },
+    documentation: [
+      {
+        label: "Docs index",
+        href: "https://github.com/laugh0608/RadishInk/tree/dev/docs",
+        description: "项目文档入口，覆盖产品范围、开发指南和当前进度。",
+        boundary: "文档中的本地开发进度不代表线上版本已包含全部能力。",
+      },
+      {
+        label: "Project overview",
+        href: "https://github.com/laugh0608/RadishInk/blob/dev/README.md",
+        description: "使用说明、WeMD 来源与分范围许可说明。",
+        boundary: "源码可见，各部分许可与授权范围见项目说明。",
+      },
+    ],
+    links: [
+      {
+        label: "开始写作",
+        href: "https://ink.radishx.com",
+        isExternal: true,
+      },
+      {
+        label: "GitHub",
+        href: "https://github.com/laugh0608/RadishInk",
+        isExternal: true,
+      },
+    ],
   },
 ];
 

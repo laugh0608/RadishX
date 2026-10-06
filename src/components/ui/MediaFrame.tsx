@@ -20,7 +20,7 @@ export function MediaFrame({ project, compact = false, showVisual = false }: Med
       } ${diagram ? "media-frame--visual media-frame--diagram" : ""}`}
     >
       <div className="media-frame__topline">
-        <span>{project.futureDomain ?? project.orbitLabel}</span>
+        <span>{project.domain?.name ?? project.orbitLabel}</span>
         <StatusChip tone={visual || diagram ? "brand" : "warning"}>{visual ? visual.label : diagram ? diagram.label : project.status}</StatusChip>
       </div>
       {visual ? (
