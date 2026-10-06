@@ -1,7 +1,17 @@
 # Radish 产品矩阵同步与扩展规划
 
-状态：九产品列表本地实现完成；构建与静态检查通过，浏览器双端验证待授权
-最后更新：2026-09-26
+状态：十产品与已部署入口本地实现完成；构建、静态、HTTP 与双端浏览器检查通过
+最后更新：2026-10-06
+
+## 2026-10-06 RadishInk 与部署入口同步
+
+所有者要求新增 RadishInk，并明确 Radish 使用 `hub.radishx.com`、RadishInk 使用 `ink.radishx.com`，两者已部署；其他项目域名均为暂定且未部署。本次沿用现有模板，将 RadishInk 作为第十个产品接入首页切换、矩阵、`/ink` 详情、导航、页脚、About、metadata、sitemap 和验证清单。域名数据显式区分已部署与暂定，启用两个已确认访问入口；未登记域名不推导、不新增。
+
+RadishInk（萝卜墨笺）定位为以 Web 为主的 Markdown 写作与微信公众号排版工具，基于 WeMD 二次开发。介绍浏览器编辑、主题预览、本地草稿、目录工作区与公众号富文本复制；不把正在本地实施的单文件导入导出写成线上能力，不承诺账号云同步、桌面或容器发行。仅使用文字与现有代码内临时标识，不引入外部素材，不实施 R2 重设计，不改 DNS、Vercel 配置或部署。
+
+来源：2026-10-06 所有者确认的域名与部署状态；只读检查 `/Users/luobo/Code/RadishInk` 的 `README.md`、`docs/status/current.md`、`docs/deployment/vercel.md` 和 Git remote。本地 HEAD 为 `6c45f8e`，工作区存在单文件导入导出等未提交改动；文档证据不等于本轮产品或线上验收。
+
+验证：`npm run check:local-release`（含类型检查和构建）、`npm run check:agent-guides`、本地 HTTP smoke（14 个路径、29 项公开图片）、文档链接与差异检查通过。经授权临时启动 127.0.0.1:4500；Chrome 在 1440×900 和 390×844 下检查首页、Ink、Radish、Catalyst、Flow、Mind、Lex、About，十项切换、Home / End 键、Ink 站内跳转及 metadata、两个启用入口、四个禁用入口和 About 域名状态均通过，无横向溢出或浏览器错误。截图在 `output/playwright/radishink/`；验证阶段未执行线上产品验收、推送或部署。所有者随后授权提交工作区并推送 `master`；推送不等于线上部署验收通过。
 
 ## 2026-09-26 实施范围
 

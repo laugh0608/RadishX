@@ -99,7 +99,7 @@ public/
 - 只有真实减少复杂度时才引入第三方依赖。
 - 页面内容优先来自结构化数据，而不是在 JSX 中散落重复文案。
 - 外链统一通过数据层维护，避免多个页面手写不同 URL。
-- 对 `mailto:`、GitHub、个人主页和未来项目域名做明确外链处理。
+- 对 `mailto:`、GitHub、个人主页和项目独立域名做明确外链处理。
 
 ## 公开内容与维护
 
@@ -123,16 +123,17 @@ public/
 - `/link`
 - `/memory`
 - `/nexus`
+- `/ink`
 - `/mascot`
 - `/about`
 
 第一版可以使用轻量路由表实现静态页面切换；若引入 `react-router-dom`，必须同步确认依赖和 Vercel fallback 配置。
 
-如果使用浏览器历史路由，Vercel 需要把站内路径回退到 `index.html`，但不能把未来项目域名配置为本官网 rewrite。
+如果使用浏览器历史路由，Vercel 需要把站内路径回退到 `index.html`，但不能把项目独立域名配置为本官网 rewrite。
 
 禁止：
 
-- 不把 `hub.radishx.com`、`forge.radishx.com`、`flow.radishx.com`、`mind.radishx.com`、`lex.radishx.com` 配成本官网 Vercel 路由。
+- 不把 `hub.radishx.com`、`ink.radishx.com`、`forge.radishx.com`、`flow.radishx.com`、`mind.radishx.com`、`lex.radishx.com` 配成本官网 Vercel 路由。
 - 不在官网里实现家族产品的实际业务功能。
 
 ## 样式规则
@@ -225,7 +226,7 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 
 - 首页无明显错位。
 - 导航可用。
-- 九个产品页入口可访问。
+- 十个产品页入口可访问。
 - 项目详情页的 GitHub / 文档入口与未开放、暂停维护等真实状态清楚。
 - Mascot 页图片不变形、不遮挡正文。
 - About 页二维码和联系方式可读。

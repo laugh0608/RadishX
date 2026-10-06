@@ -4,25 +4,29 @@
 
 ## 当前官网部署
 
-当前只有 RadishX 官网部署到 Vercel。五个项目未来域名不属于本官网项目的路由或重写规则。
+本 Vercel 项目仅承载 RadishX 官网。2026-10-06 所有者确认 Radish 与 RadishInk 已独立部署；项目子域不属于本官网的路由或重写规则。
 
 - GitHub 仓库：`https://github.com/laugh0608/RadishX`
 - Vercel 项目：历史记录为已创建，实际项目名与当前部署提交以获准核验后的 Vercel 记录为准
 - Canonical 主域名：`radishx.com`
 - 兼容访问入口：`https://www.radishx.com/`，跳转到 `https://radishx.com/`
-- 站点内容：首页、五个项目介绍页、Mascot、About
+- 站点内容：首页、十个产品介绍页、Mascot、About
 
-## 未来项目域名
+## 项目独立域名
 
-以下域名是五个项目未来独立部署后的访问入口，不是当前官网 Vercel 项目的路由或重写规则。
+已部署的 Web 入口（2026-10-06 所有者确认）：
 
 - `hub.radishx.com`：Radish
+- `ink.radishx.com`：RadishInk，主要以 Web 方式提供服务
+
+暂定域名，尚未部署：
+
 - `forge.radishx.com`：RadishCatalyst
 - `flow.radishx.com`：RadishFlow
 - `mind.radishx.com`：RadishMind
 - `lex.radishx.com`：RadishLex
 
-官网中可以展示这些域名，但实际外链只在入口稳定可用后开放。未上线与暂停维护分别表达，不对 Archived 项目统一标注 Coming Soon。
+官网开放 Radish 和 RadishInk 的访问按钮；其余已登记域名展示“暂定 · 未部署”并禁用访问按钮。未登记项目不推导域名。部署状态依据所有者确认及 RadishInk 本地部署文档，本次不代表重新执行了线上可用性验收。
 
 ## 第一版部署配置
 
@@ -32,7 +36,7 @@
 2. Vercel 只构建和部署本官网静态站点。
 3. `radishx.com` 是官网 canonical 主域。
 4. `www.radishx.com` 作为兼容访问入口跳转到根域，并保留路径。
-5. 五个未来项目域名不配置成本官网 rewrite。
+5. 项目独立域名不配置成本官网 rewrite。
 
 当前构建配置：
 
@@ -52,17 +56,17 @@
 }
 ```
 
-该配置只处理官网自身的静态页面路径，不包含五个未来项目域名。`favicon.ico`、`robots.txt`、`sitemap.xml`、`assets/` 和 `images/` 明确排除在 History API fallback 之外。
+该配置只处理官网自身的静态页面路径，不包含项目独立域名。`favicon.ico`、`robots.txt`、`sitemap.xml`、`assets/` 和 `images/` 明确排除在 History API fallback 之外。
 
 ## SEO 辅助文件
 
 当前公开静态文件：
 
 - `public/robots.txt`：允许抓取当前官网，并声明 `https://radishx.com/sitemap.xml`。
-- `public/sitemap.xml`：只列出当前官网站内页面：`/`、五个项目介绍页、`/mascot` 和 `/about`。
+- `public/sitemap.xml`：只列出当前官网站内页面：`/`、十个产品介绍页、`/mascot` 和 `/about`。
 - `public/images/social/radishx-og-image.png`：1200x630 Open Graph / Twitter 分享预览图，metadata 中使用 `https://radishx.com/images/social/radishx-og-image.png`。
 
-五个未来项目子域名不写入当前官网 sitemap，等对应项目独立部署后由各自站点维护。
+项目独立子域名不写入当前官网 sitemap，等对应项目独立部署后由各自站点维护。
 
 ## 输出与 SEO 能力边界
 
@@ -84,7 +88,7 @@
 
 ## 不在当前阶段做
 
-- 不为五个未来项目域名配置 Vercel 重写。
-- 不把五个项目部署到当前官网 Vercel 项目中。
+- 不为项目独立域名配置 Vercel 重写。
+- 不把家族产品部署到当前官网 Vercel 项目中。
 - 不为官网引入后端服务。
 - 不在未上线项目前暴露不可用的跳转按钮。
