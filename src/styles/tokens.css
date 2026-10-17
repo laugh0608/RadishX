@@ -45,9 +45,9 @@
   --rx-font-serif: "Noto Serif SC", "Songti SC", STSong, serif;
   --rx-font-mono: "Geist Mono", "SFMono-Regular", Consolas, monospace;
   --rx-space-page-x: clamp(20px, 5vw, 72px);
-  --rx-content-max: 1180px;
+  --rx-content-max: 1312px;
 
-  /* —— 过渡：补齐此前被 .repo-card 引用但从未定义的 token，取自 family-ui motion —— */
+  /* —— 过渡：R2.2 页面与共享控件共用的基础动效 —— */
   --rx-transition-base: var(--rd-motion-base) var(--rd-ease-standard);
 
   /* —— 站点特有：阴影暖棕分量（供 rgba() 叠加）与状态 chip 深字 —— */

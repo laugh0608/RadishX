@@ -33,7 +33,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  min-height: 40px;
+  min-height: 44px;
   margin-bottom: 8px;
   color: var(--rx-text-secondary);
   font-family: var(--rx-font-mono);
@@ -521,7 +521,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  min-height: 40px;
+  min-height: 44px;
   color: var(--rx-text-secondary);
   font-family: var(--rx-font-mono);
   font-size: 10px;

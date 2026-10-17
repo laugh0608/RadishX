@@ -5,10 +5,10 @@ import { App } from "./app/App";
 import "./styles/family-ui-tokens.css";
 import "./styles/tokens.css";
 import "./styles/global.css";
-import "./styles/utilities.css";
-import "./styles/home-v1.css";
 import "./styles/home-v2.css";
 import "./styles/project-v2.css";
+import "./styles/about-v2.css";
+import "./styles/mascot-v2.css";
 
 createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>

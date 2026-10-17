@@ -1,62 +1,87 @@
-import { SectionHeader } from "../components/ui/SectionHeader";
 import { contacts, domainSurfaces, officialAccount, repositories } from "../data/contacts";
+import { radishXRepositoryUrl } from "../data/navigation";
+import { projects } from "../data/projects";
+
+function indexNumber(value: number) {
+  return String(value).padStart(2, "0");
+}
 
 export function AboutPage() {
+  const emailContact = contacts.find((contact) => contact.label === "Email");
+  const webEntryCount = projects.filter((project) => project.domain).length;
+
   return (
-    <>
-      <section className="about-hero">
-        <div className="about-hero__inner">
-          <p className="eyebrow">About</p>
-          <h1>RadishX 是 Radish 系列项目的官网与统一入口</h1>
-          <p>
-            当前官网只负责展示项目矩阵、公开链接、虚拟形象和联系方式，不承载登录、后台、数据库或服务端 API。
-          </p>
-          <div className="about-hero__signals" aria-label="About 页面公开信息摘要">
-            <span>radishx.com</span>
-            <span>{repositories.length} GitHub repositories</span>
-            <span>WeChat QR reviewed</span>
-            <span>No login / API surface</span>
+    <div className="about2-page">
+      <section className="about2-hero">
+        <div className="about2-hero__inner">
+          <div className="about2-hero__copy">
+            <p className="eyebrow">About / RadishX</p>
+            <h1>关于 RadishX</h1>
+            <p className="about2-hero__statement">把好奇心，做成作品。</p>
+            <p className="about2-hero__intro">
+              RadishX 是 Radish 系列项目的官网与统一入口。这里介绍这些项目正在做什么，也收束萝小白、联系方式与公开入口。
+            </p>
+            <div className="about2-hero__actions">
+              <a
+                className="button button--primary"
+                href={radishXRepositoryUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="打开 RadishX GitHub 仓库"
+              >
+                访问 GitHub
+                <span aria-hidden="true">↗</span>
+              </a>
+              {emailContact ? (
+                <a className="button button--secondary" href={emailContact.href}>
+                  写信联系
+                  <span aria-hidden="true">↗</span>
+                </a>
+              ) : null}
+            </div>
           </div>
+
+          <aside className="about2-index" aria-label="RadishX 公开信息索引">
+            <div className="about2-index__head">
+              <span>RadishX / Index</span>
+              <span>2026</span>
+            </div>
+            <span className="about2-index__glyph" aria-hidden="true">
+              X
+            </span>
+            <dl className="about2-index__facts">
+              <div>
+                <dt>项目</dt>
+                <dd>{indexNumber(projects.length)}</dd>
+              </div>
+              <div>
+                <dt>仓库</dt>
+                <dd>{indexNumber(repositories.length)}</dd>
+              </div>
+              <div>
+                <dt>Web 入口</dt>
+                <dd>{indexNumber(webEntryCount)}</dd>
+              </div>
+              <div>
+                <dt>公众号</dt>
+                <dd>01</dd>
+              </div>
+            </dl>
+            <p className="about2-index__foot">radishx.com / SOURCE AVAILABLE</p>
+          </aside>
         </div>
       </section>
-      <section className="section section--surface">
-        <div className="section__inner about-grid">
-          <article className="contact-panel">
-            <SectionHeader
-              eyebrow="Contact"
-              title="联系方式"
-              description="保留稳定入口，优先让访问者判断该用哪一种方式联系或追踪项目。"
-            />
-            <div className="contact-list">
-              {contacts.map((contact) => (
-                <a
-                  key={contact.label}
-                  className="contact-list__item"
-                  href={contact.href}
-                  target={contact.href.startsWith("http") ? "_blank" : undefined}
-                  rel={contact.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  aria-label={`${contact.action}：${contact.value}`}
-                >
-                  <span className="contact-list__label">
-                    <span>{contact.label}</span>
-                    <small>{contact.intent}</small>
-                  </span>
-                  <span className="contact-list__content">
-                    <strong>{contact.value}</strong>
-                    <span>{contact.note}</span>
-                  </span>
-                  <span className="contact-list__action">{contact.action}</span>
-                </a>
-              ))}
-            </div>
-          </article>
-          <article className="qr-panel">
-            <p className="eyebrow">WeChat</p>
-            <h2>微信公众号</h2>
-            <figure className="qr-panel__body">
-              <div className="qr-panel__frame">
+
+      <section className="about2-section about2-contact" id="contact">
+        <div className="about2-section__inner about2-contact__inner">
+          <div className="about2-intro">
+            <p className="eyebrow">Contact</p>
+            <h2>保持联系</h2>
+            <p>项目合作、素材授权或只是想聊聊，都可以从这里开始。</p>
+            <figure className="about2-qr">
+              <div className="about2-qr__frame">
                 <img
-                  className="qr-image"
+                  className="about2-qr__image"
                   src={officialAccount.asset}
                   width="512"
                   height="509"
@@ -66,87 +91,114 @@ export function AboutPage() {
                   fetchPriority="high"
                 />
               </div>
-              <figcaption className="qr-panel__copy">
-                <strong>{officialAccount.name}</strong>
-                <p>扫码关注微信公众号，{officialAccount.summary}</p>
-                <ul className="qr-panel__signals" aria-label="微信公众号展示状态">
-                  {officialAccount.highlights.map((highlight) => (
-                    <li key={highlight}>{highlight}</li>
-                  ))}
-                </ul>
-                <dl className="qr-panel__facts">
-                  <div>
-                    <dt>状态</dt>
-                    <dd>{officialAccount.status}</dd>
-                  </div>
-                  <div>
-                    <dt>边界</dt>
-                    <dd>{officialAccount.boundary}</dd>
-                  </div>
-                </dl>
+              <figcaption className="about2-qr__copy">
+                <p className="eyebrow">WeChat</p>
+                <h3>{officialAccount.name}</h3>
+                <p>扫码关注公众号，{officialAccount.summary}</p>
               </figcaption>
             </figure>
-          </article>
-        </div>
-      </section>
-      <section className="section">
-        <div className="section__inner">
-          <SectionHeader
-            eyebrow="Repositories"
-            title="GitHub 仓库入口"
-            description="查看各项目源码与文档；Radish 和 RadishInk 已提供独立 Web 入口。"
-          />
-          <div className="repo-grid">
-            {repositories.map((repo) => (
+          </div>
+
+          <div className="about2-contact-list">
+            {contacts.map((contact, index) => (
               <a
-                key={repo.name}
-                className="repo-card"
-                href={repo.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`${repo.action}：${repo.ownerRepo}`}
+                key={contact.label}
+                className="about2-contact-item"
+                href={contact.href}
+                target={contact.href.startsWith("http") ? "_blank" : undefined}
+                rel={contact.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                aria-label={`${contact.action}：${contact.value}`}
               >
-                <span className="repo-card__head">
-                  <span className="repo-card__meta">{repo.ownerRepo}</span>
-                  <span className="repo-card__status">{repo.status}</span>
+                <span className="about2-contact-item__index">{indexNumber(index + 1)}</span>
+                <span className="about2-contact-item__body">
+                  <span className="about2-contact-item__label">
+                    {contact.label} · {contact.intent}
+                  </span>
+                  <strong>{contact.value}</strong>
+                  <span className="about2-contact-item__note">{contact.note}</span>
                 </span>
-                <strong>{repo.name}</strong>
-                <p>{repo.description}</p>
-                <dl className="repo-card__facts">
-                  <div>
-                    <dt>Role</dt>
-                    <dd>{repo.role}</dd>
-                  </div>
-                  <div>
-                    <dt>Surface</dt>
-                    <dd>{repo.surface}</dd>
-                  </div>
-                </dl>
-                <span className="repo-card__action">{repo.action}</span>
+                <span className="about2-contact-item__action">
+                  {contact.action}
+                  <span aria-hidden="true">↗</span>
+                </span>
               </a>
             ))}
           </div>
         </div>
       </section>
-      <section className="section section--muted" id="deployment">
-        <div className="section__inner">
-          <SectionHeader
-            eyebrow="Deployment"
-            title="域名和部署边界"
-            description="radishx.com 承载官网；当前只展示 Radish 与 RadishInk 两个已部署的项目 Web 入口，其他项目暂不提供外部访问链接。"
-          />
-          <div className="domain-grid">
+
+      <section className="about2-section about2-repos" id="repositories">
+        <div className="about2-section__inner">
+          <header className="about2-section__head">
+            <div>
+              <p className="eyebrow">Repositories</p>
+              <h2>源码与文档</h2>
+            </div>
+            <div className="about2-section__meta">
+              <span>{repositories.length} 个公开仓库</span>
+              <span>GitHub / laugh0608</span>
+            </div>
+          </header>
+          <p className="about2-section__lead">
+            从官网到十二个项目，源码与文档都放在 GitHub；Radish 和 RadishInk 另有独立 Web 入口。
+          </p>
+          <div className="about2-repo-grid">
+            {repositories.map((repo, index) => (
+              <a
+                key={repo.name}
+                className="about2-repo"
+                href={repo.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`打开 ${repo.name} GitHub 仓库：${repo.ownerRepo}`}
+              >
+                <span className="about2-repo__index">{indexNumber(index + 1)}</span>
+                <span className="about2-repo__body">
+                  <span className="about2-repo__head">
+                    <strong>{repo.name}</strong>
+                    <span className="about2-repo__status">{repo.status}</span>
+                  </span>
+                  <span className="about2-repo__meta">{repo.ownerRepo}</span>
+                  <span className="about2-repo__desc">{repo.description}</span>
+                </span>
+                <span className="about2-repo__arrow" aria-hidden="true">
+                  ↗
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="about2-section about2-domains" id="domains">
+        <div className="about2-section__inner">
+          <header className="about2-section__head">
+            <div>
+              <p className="eyebrow">Domains</p>
+              <h2>域名边界</h2>
+            </div>
+            <div className="about2-section__meta">
+              <span>{domainSurfaces.length} 个入口</span>
+              <span>radishx.com</span>
+            </div>
+          </header>
+          <p className="about2-section__lead">
+            {"radishx.com 是官网主域；www.radishx.com 保留兼容访问；Radish 与 RadishInk 各有独立 "}
+            <span className="nowrap">Web 入口</span>
+            {"，其他项目只提供源码与文档入口。"}
+          </p>
+          <div className="about2-domain-grid">
             {domainSurfaces.map((surface) => (
-              <article key={surface.domain} className="domain-card">
-                <span>{surface.label}</span>
+              <article key={surface.domain} className="about2-domain-card">
+                <span className="about2-domain-card__label">{surface.label}</span>
                 <strong>{surface.domain}</strong>
-                <small>{surface.status}</small>
+                <span className="about2-domain-card__status">{surface.status}</span>
                 <p>{surface.description}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

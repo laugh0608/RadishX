@@ -295,7 +295,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  min-height: 40px;
+  min-height: 44px;
   margin-top: 4px;
   padding: 8px 15px;
   border: 1px solid color-mix(in srgb, var(--home2-feature-tone) 24%, var(--rx-border-soft));
@@ -1174,23 +1174,6 @@
   letter-spacing: 0.08em;
 }
 
-/* —— 紧凑页脚 —— */
-
-.site-footer--compact {
-  align-items: center;
-  padding-top: 28px;
-  padding-bottom: 28px;
-}
-
-.site-footer--compact p {
-  margin-top: 4px;
-  font-size: 12px;
-}
-
-.site-footer--compact .site-footer__links {
-  gap: 8px 20px;
-}
-
 /* —— 响应式 —— */
 
 @media (max-width: 1180px) {
@@ -1427,16 +1410,6 @@
 
   .home2-mascot__coordinates {
     display: none;
-  }
-
-  .site-footer--compact {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .site-footer--compact .site-footer__links {
-    justify-content: flex-start;
   }
 }
 

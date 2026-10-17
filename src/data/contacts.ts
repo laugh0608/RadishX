@@ -38,11 +38,7 @@ export const contacts = [
 export const officialAccount = {
   name: "大白萝卜的坑",
   asset: "/images/social/wechat-official-account-qr-web.png",
-  assetLabel: "wechat-official-account-qr-web.png",
   summary: "用于 Radish 系列项目动态、开发记录和公开说明。",
-  status: "二维码已审核并接入 About 页。",
-  boundary: "仅作为联系和社交媒体入口，不提供订阅表单或后端服务。",
-  highlights: ["已审核二维码", "仅 About 页展示", "无后端订阅"],
 };
 
 export const repositories = [
@@ -50,11 +46,8 @@ export const repositories = [
     name: "RadishX",
     ownerRepo: "laugh0608/RadishX",
     href: "https://github.com/laugh0608/RadishX",
-    status: "Current Site",
+    status: "官网",
     description: "Radish 系列项目官网与统一入口。",
-    role: "官网、文档和公开素材说明源。",
-    surface: "radishx.com",
-    action: "打开官网仓库",
   },
   ...projects.map((project) => ({
     name: project.name,
@@ -62,19 +55,13 @@ export const repositories = [
     href: project.githubUrl,
     status: project.status,
     description: project.tagline,
-    role: project.role,
-    surface: project.domain?.name ?? project.path,
-    action: `打开 ${project.name} 仓库`,
   })),
   {
     name: "RadishAxiomChecker",
     ownerRepo: "laugh0608/RadishAxiomChecker",
     href: "https://github.com/laugh0608/RadishAxiomChecker",
-    status: "Axiom Companion",
+    status: "配套工具",
     description: "RadishAxiom 配套的独立语义与证据检查器。",
-    role: "与 Axiom 计为同一产品，独立仓库维护。",
-    surface: "/axiom",
-    action: "打开 Axiom Checker 仓库",
   },
 ];
 
@@ -82,14 +69,14 @@ export const domainSurfaces = [
   {
     label: "Canonical",
     domain: "radishx.com",
-    status: "Current Vercel site",
-    description: "当前官网主域，承载首页、十二个产品介绍页、Mascot 和 About。",
+    status: "官网主域",
+    description: "承载首页、十二个项目介绍页、萝小白和 About。",
   },
   {
     label: "Compatibility",
     domain: "www.radishx.com",
-    status: "Redirect to root domain",
-    description: "兼容访问入口，保留路径跳转到 radishx.com，不作为独立站点。",
+    status: "兼容入口",
+    description: "访问 www.radishx.com 会跳转到主域，路径保持不变。",
   },
   ...projects.flatMap((project) =>
     project.domain
@@ -97,8 +84,8 @@ export const domainSurfaces = [
           {
             label: project.name,
             domain: project.domain.name,
-            status: "已部署",
-            description: "项目独立 Web 服务，可通过项目详情页访问。",
+            status: "Web 入口",
+            description: `${project.name} 的独立 Web 服务，可通过项目详情页访问。`,
           },
         ]
       : [],

@@ -47,13 +47,13 @@ export const appRoutes: AppRoute[] = [
     kind: "mascot",
     path: "/mascot",
     title: "萝小白 - RadishX",
-    description: "萝小白是 RadishX 的虚拟形象，当前页面展示原始形象、可爱Q版和虚拟形象完全体三种形态与素材口径。",
+    description: "萝小白是 RadishX 的虚拟形象，页面展示原始形象、可爱Q版和虚拟形象完全体三种形态、表情与服装 Gallery，以及公开使用边界。",
   },
   {
     kind: "about",
     path: "/about",
     title: "About - RadishX",
-    description: "了解 RadishX 的组织说明、联系方式、GitHub 仓库入口、微信公众号二维码和 radishx.com 部署边界。",
+    description: "了解 RadishX、联系方式、GitHub 仓库入口、微信公众号二维码和 radishx.com 域名边界。",
   },
 ];
 
