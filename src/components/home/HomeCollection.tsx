@@ -1,7 +1,7 @@
 import { getHomeCategory, homeCollection } from "../../data/homeShowcase";
 import { projectById } from "../../data/projects";
 import { RouteLink } from "../ui/RouteLink";
-import { CollectionArt } from "./HomeArt";
+import { CollectionArt } from "../shared/ProjectArtwork";
 
 export function HomeCollection() {
   return (

@@ -4,7 +4,7 @@ import type { ProjectRouteId } from "../../app/routes";
 import { featuredProjects, homeCategories } from "../../data/homeShowcase";
 import { projectById, projects } from "../../data/projects";
 import { RouteLink } from "../ui/RouteLink";
-import { FeaturedArt } from "./HomeArt";
+import { FeaturedArt } from "../shared/ProjectArtwork";
 
 function projectNumber(index: number) {
   return String(index + 1).padStart(2, "0");

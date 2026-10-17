@@ -76,3 +76,7 @@ export const homeCollection: HomeCollectionItem[] = [
 export function getHomeCategory(id: HomeCategoryId) {
   return homeCategories.find((category) => category.id === id) ?? homeCategories[0];
 }
+
+export function getHomeCollectionItem(id: ProjectRouteId) {
+  return homeCollection.find((item) => item.id === id);
+}

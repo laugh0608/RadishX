@@ -591,10 +591,9 @@ p {
 
 #collection,
 #projects,
+#focus,
 #status,
-#documentation,
-#capabilities,
-#matrix {
+#explore {
   scroll-margin-top: 96px;
 }
 
