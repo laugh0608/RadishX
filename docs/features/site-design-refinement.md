@@ -1,9 +1,39 @@
 # 官网整体设计与美化
 
-状态：R2.1 第二轮视觉强化已完成静态复核，所有者已确认，待 React 实现
-最后更新：2026-09-06
+状态：R2.2 首页 React 重构完成，双端复核通过；详情页模板下一批
+最后更新：2026-10-17
+
+## 2026-10-17 R2.2 首页重构（React-first）
+
+所有者确认按“精选展示、完整目录、跨页统一”继续推进，但不再等待新的 Pencil 探索；本轮以已确认的 R2.1 为视觉参考，直接在 React 中完成首页重构，Pencil 设计源后补。当前环境没有 Pencil 读写工具，因此本轮不修改 `.pen`，也不把 R2.1 的旧内容当作当前事实。
+
+本轮范围仅首页。精选项目由所有者确认为 Radish、RadishInk、RadishFlow、RadishLex 四项；精选只表示编辑选择，不表示四项都已发布。其余八个项目仍进入完整目录，Axiom Checker 继续归入 Axiom，不单列。
+
+首页信息架构：
+
+- 首屏：RadishX 品牌字形、“把好奇心，做成作品。”、四项精选切换与“浏览全部项目”入口。
+- 精选舞台：当前项目的编号、状态、定位、入口与领域视觉；不使用 12 项横向滚动索引。
+- 项目目录：按 Community & Creation、Tools & Workflow、Games & Worlds、Explorations & Systems 分组，使用 2 个大型展面、2 个强视觉展面、4 个中型展面和 4 个紧凑条目，完整保留十二项。
+- 收束：萝小白深灰玉舞台与本页紧凑页脚；About、Mascot 页面本轮不重构。
+
+视觉与内容边界：
+
+- 沿用纸色、灰玉、深墨与现有字体栈；不新增外部图片、字体或依赖。
+- Radish 使用既有角色图，Catalyst 使用既有概念图；其余项目使用代码内排版 / 示意图，不冒充真实截图或正式 Logo。
+- 公开页面移除 `Temporary mark`、`Reviewed asset`、`Asset source`、`Usage boundary` 等内部评审语言；项目页的治理字段留待详情页批次处理。
+- Flow 当前为开发中，不再使用 R2.1 的“历史项目”表述。
+- 不改变十二项的项目事实、部署入口或路由；只重构首页展陈。
+- 不做自动轮播；精选切换保留键盘操作与 reduced-motion 支持。
+
+验收：桌面 1440×900 与移动 390×844 下检查首页；十二项全部可见；四项精选切换、完整目录、Mascot 与紧凑页脚正常；无横向溢出、无浏览器错误；已部署入口仍只保留 Radish 与 RadishInk。
+
+实现：新增 `HomeHero`、`HomeCollection`、`HomeMascot`、`HomeArt` 与 `homeShowcase` 展陈配置，样式写入 `home-v2.css`；删除不再使用的 `HeroOrbit`、`ProjectMatrix`、`HomeProjectVisual`、`ProjectBand` 与 `homeVisuals`。首页锚点改为 `#collection`，同时保留 `#projects` 兼容锚点；Header 的 Projects 入口在首页和项目页保持 active。精选切换使用原生 tab 语义，支持方向键、Home / End 与 reduced-motion。旧的 `home-v1.css` 仍承担共享 Header 样式与历史选择器，待后续批次整理。
+
+验证：`npm run build` 通过；Chrome 在 1440×900 与 390×844 下检查首页，十二项目录、四项精选切换、Mascot、紧凑页脚和深色模式均正常；精选点击与方向键 / Home / End 切换正常，`#collection` 与兼容 `#projects` 均能滚动到项目目录且 Projects 保持 active；无横向溢出、无浏览器错误；页面高度约 3,984px / 6,640px，较旧首页的 5,641px / 8,764px 明显收敛。首页不再出现 `Temporary mark`、`Reviewed asset`、`Asset source` 等内部评审语言。Pencil 设计源尚未回填，R2.1 旧画板仍记录旧项目范围。
 
 ## 目标与授权
+
+以下 R2.1 内容保留为历史设计与静态评审记录；项目数量、Flow 状态与 Pencil 画板不再直接代表当前 R2.2 首页。
 
 项目所有者已确认沿用纸色、灰玉与萝小白的品牌基础，按“精选展示、完整目录、跨页统一”的建议推进。第一批完成首页与 Radish 代表详情页的桌面 / 移动设计，供整体效果评审；设计确认后再进入 React 实现和其他页面扩展。
 

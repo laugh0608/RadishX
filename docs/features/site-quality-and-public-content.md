@@ -40,11 +40,11 @@
 | Q02 | Flow 数据为 `Archived / Paused`，`ProjectPage.tsx` 的 Future Domain 信息条却固定为 `Coming Soon` | 从真实项目状态生成一致文案；首页、详情、About 均不暗示暂停项目即将上线 |
 | Q03 | `App.tsx` 在找到 hash 目标后提前返回，跳过后续换页焦点逻辑；属源码发现，尚未浏览器复现 | 验证跨页锚点、同页锚点、前进后退与 skip link；滚动到目标时焦点位置也应合理 |
 | Q04 | `check-local-release.mjs` 的 sitemap 必检列表遗漏 `/lex`；当前 sitemap 本身包含此路径 | 补齐覆盖，并验证缺失任一正式路由会失败；后续收敛路由、sitemap 与检查清单的数据来源 |
-| Q05 | 首页状态和域名使用 10–11px muted 文字；`#8d7b6c` 对常用浅底的计算对比度不足普通小字 4.5:1 | 先复核实际背景和信息用途，调整站点文字 token 或具体映射；覆盖明暗主题，不自动扩大为整个 family-ui 改色 |
+| Q05 | 首页状态/微标签仍存在 10–11px muted 文字；`#8d7b6c` 对常用浅底的计算对比度不足普通小字 4.5:1。R2.2 首页已将主要微标签改用次文字 token | 继续复核实际背景和信息用途，调整站点文字 token 或具体映射；覆盖明暗主题，不自动扩大为整个 family-ui 改色 |
 | Q06 | QQ 联系入口为无号码参数的 `https://qm.qq.com/`，链接本身不能指定该联系号 | 核实有效联系入口，或采用复制号码动作；动作名称与实际结果一致 |
 | Q07 | HTML 初始 canonical、title、OG 均为首页，项目 metadata 依赖 JavaScript 改写 | 按下文评估构建期页面输出；原始 HTML 与浏览器最终 metadata 应一致 |
 | Q08 | HTTP smoke 只检查 root / module 等 HTML 外壳，不能证明页面内容和交互正确 | 保留传输层检查，增加路由身份、404、资源有效性及关键浏览器行为验证 |
-| Q09 | `home-v1.css` 同时覆盖共享 Header；`ProjectBand.tsx`、`homeVisuals.ts` 未发现其他源码引用，旧首页选择器仍有残留 | 先核实动态引用和共享选择器，再移除无用实现、按职责整理样式；不以行数作为拆分唯一依据 |
+| Q09 | `home-v1.css` 同时覆盖共享 Header；R2.2 已删除旧首页组件 `ProjectBand` / `homeVisuals` 等，但 `home-v1.css` 旧首页选择器仍有残留 | 拆分共享 Header 样式并清理旧首页 CSS；不以行数作为拆分唯一依据 |
 
 ## 公开内容整理
 
