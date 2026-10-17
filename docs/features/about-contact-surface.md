@@ -1,15 +1,34 @@
 # About 联系区
 
-状态：二轮扫读优化与 craft Phase 4 视觉收敛已完成
-最后更新：2026-09-06
+状态：R2.2 编辑式 About 与公开文案收口完成
+最后更新：2026-10-17
 
 ## 后续目标与适用范围
 
-本文件保留二轮编辑与 craft Phase 4 的历史结果；旧文案中强调审核和部署边界是当时实现事实。公开介绍、联系动作与信息精简的后续目标见 [官网质量与对外表达收口](site-quality-and-public-content.md)，本次没有修改 About 页面。
+本文件保留二轮编辑与 craft Phase 4 的历史结果；旧文案中强调审核和部署边界是当时实现事实。2026-10-17 已完成 R2.2 编辑式重构，About 现在只保留公开联系方式、公众号二维码、14 个仓库入口和 4 项域名边界。更早的公开介绍与质量目标见 [官网质量与对外表达收口](site-quality-and-public-content.md)。
+
+## 2026-10-17 R2.2 编辑式重构
+
+所有者确认在 R2.2 首页与详情页之后统一 About。页面从 craft 卡片结构改为四段编辑式结构：
+
+- Hero：`关于 RadishX`、品牌主张、公开介绍、GitHub / Email 动作与深灰玉信息索引；索引显示 12 个项目、14 个仓库、2 个 Web 入口和 1 个公众号。
+- Contact：左侧联系说明与微信公众号二维码，右侧 4 个联系入口；保留 QQ、Email、GitHub 与个人主页的用途、值和动作。
+- Repositories：14 个公开仓库的编号索引，包含官网、十二个项目与 RadishAxiomChecker；每项显示仓库名、状态、`owner/repo` 与短描述。
+- Domains：4 项域名边界；`radishx.com`、`www.radishx.com`、`hub.radishx.com` 与 `ink.radishx.com`。其他项目不展示计划域名或访问入口。
+
+公开文案删除 `No login / API surface`、`WeChat QR reviewed`、`Current Vercel site`、`Redirect to root domain`、`已部署`、`域名和部署边界`、二维码审核状态与仓库 `Role / Surface` 等内部实现语言。页面只保留访客需要的联系路径、仓库入口和域名事实。
+
+实现：重写 `src/pages/AboutPage.tsx`，新增 `src/styles/about-v2.css`；精简 `src/data/contacts.ts` 的公开字段，域名只保留 4 项，仓库只保留名称、地址、状态与短描述。页面使用默认页脚，与首页 / 详情页的紧凑页脚区分。
+
+验证：`npm run check:local-release` 与 `npm run check:http-smoke -- --base-url http://127.0.0.1:4500` 通过；Chrome 在 1440×900 与 390×844 下覆盖亮 / 暗主题：4 个联系入口、二维码、14 个仓库入口与 4 个域名卡片完整；二维码图片解码正常；页面无横向溢出、broken image、console error 或小于 44px 的链接触控目标；公开文本不含内部评审 / 部署语言。桌面约 3,355px，移动约 5,357px。截图在 `output/playwright/site-r2-2026-10-17/`，不纳入提交。Pencil 设计源未回填。
+
+## 历史目标与实现边界（2026-06 / 07）
+
+以下保留 2026-06 / 07 的目标、设计与实现记录；当前范围和边界（4 项域名、14 个仓库、无内部语言）仍适用于 R2.2。
 
 ## 目标
 
-把 `/about` 打磨成 RadishX 的稳定联系、社交媒体、仓库入口和域名边界页面，让访问者能快速找到联系方式、公众号二维码、GitHub 仓库和未来项目入口状态。
+把 `/about` 打磨成 RadishX 的稳定联系、社交媒体、仓库入口和域名边界页面，让访问者能快速找到联系方式、公众号二维码、GitHub 仓库和已确认的公开入口。
 
 ## 背景
 
@@ -22,8 +41,8 @@ About 页已完成首版实现，并接入微信公众号二维码 Web 图。首
 - `/about` 页面整体信息层级。
 - 联系方式：QQ、Email、GitHub 主页、个人主页。
 - 微信公众号二维码和说明。
-- 六个 GitHub 仓库入口（含 RadishX 官网仓库与五个项目仓库）。
-- `radishx.com`、`www.radishx.com` 和五个未来项目域名边界。
+- 14 个公开 GitHub 仓库入口（官网、十二个项目与 Axiom Checker）。
+- `radishx.com`、`www.radishx.com`、`hub.radishx.com` 与 `ink.radishx.com` 四项域名边界。
 - About 页相关结构化数据和样式。
 
 ## 不做
@@ -33,6 +52,7 @@ About 页已完成首版实现，并接入微信公众号二维码 Web 图。首
 - 不修改域名策略或 Vercel 配置。
 - 不新增表单、后端 API、订阅系统或数据库。
 - 不引入未审核图片。
+- 不为未部署项目展示计划域名、禁用访问按钮或“即将上线”暗示。
 
 ## 设计要求
 
@@ -56,7 +76,9 @@ About 页已完成首版实现，并接入微信公众号二维码 Web 图。首
 10. 二轮已补充 About 首屏的 `No login / API surface` 边界信号，并收紧未来项目域名说明。
 11. 二轮已调整联系列表、二维码状态标签和仓库卡片样式，保持桌面与 `390px` 移动端都不横向溢出。
 
-## 本轮实现记录
+## 历史实现记录（2026-06 / 07）
+
+以下为旧 craft 结构的实现记录；2026-10-17 R2.2 实现见上方专节。
 
 - `src/data/contacts.ts`：扩展联系方式用途标签、微信公众号状态标签、GitHub 仓库动作文案和域名 surface 数据。
 - `src/pages/AboutPage.tsx`：重排 About 联系区结构，增加联系动作、二维码状态标签、仓库角色说明、具体仓库访问文案和 7 个域名边界卡片。
@@ -66,6 +88,8 @@ About 页已完成首版实现，并接入微信公众号二维码 Web 图。首
 
 ## 验证
 
+- 2026-10-17 `npm run check:local-release`、`npm run check:http-smoke -- --base-url http://127.0.0.1:4500` 与 `npm run check:agent-guides` 通过；HTTP smoke 覆盖 16 个路径与 29 个公开图片资源。
+- 2026-10-17 Chrome 覆盖 `1440x900`、`390x844` 与亮 / 暗主题：4 个联系入口、二维码、14 个仓库入口和 4 个域名卡片完整；二维码解码正常；无横向溢出、broken image、console error 或小于 `44px` 的链接触控目标；公开文本不含 `No login / API surface`、`WeChat QR reviewed`、部署 / Vercel、审核状态等内部语言。截图在 `output/playwright/site-r2-2026-10-17/`。
 - `npm run build` 通过。
 - Browser 检查 `/about` 桌面视口 `1440x900` 通过：4 个联系入口、二维码、5 个仓库入口、6 个域名卡片均渲染。
 - Browser 检查 `/about` 移动视口 `390x844` 通过：页面 `scrollWidth` 为 390，无目标元素横向溢出。
@@ -85,6 +109,8 @@ About 页已完成首版实现，并接入微信公众号二维码 Web 图。首
 - `/about` 在桌面和 390px 移动端信息层级清楚。
 - 联系方式、二维码、仓库入口和域名边界都能在一页中自然扫读。
 - 长文本和按钮不溢出、不重叠。
+- 公开页面不出现登录 / API、二维码审核、部署 / Vercel 或计划域名等内部实现语言。
+- 只有 Radish 与 RadishInk 展示独立 Web 入口，其他项目只提供仓库与文档入口。
 - 文档和开发日志同步记录结果。
 
 ## 后续事项
@@ -92,4 +118,4 @@ About 页已完成首版实现，并接入微信公众号二维码 Web 图。首
 - 后续页面质量按收口目标推进；Mascot 已有首批 10 张单张表情展示，不继续拆分新素材、不开放下载或接入 seasonal。
 - 如果未来新增公开社交账号，先确认账号稳定性和展示优先级。
 - 如果需要联系表单，单独建立目标文档并确认后端和隐私边界。
-- 如果其他项目独立站上线并经所有者确认，再回到域名区更新访问状态。
+- 如果其他项目独立站上线并经所有者确认，再回到域名区更新访问状态；在此之前不展示计划域名。

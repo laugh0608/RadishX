@@ -78,7 +78,10 @@ src/
   styles/
     tokens.css
     global.css
-    utilities.css
+    home-v2.css
+    project-v2.css
+    about-v2.css
+    mascot-v2.css
 public/
   images/
 ```
@@ -141,7 +144,7 @@ public/
 ## 样式规则
 
 - family-ui 参考 token 位于 `src/styles/family-ui-tokens.css`，站点映射与特有 token 放在 `src/styles/tokens.css`。
-- 共享 Header / Footer 样式归共享布局职责，页面专属样式归对应页面；整理时先确认选择器的实际复用，不按文件行数机械拆分。
+- 共享 Header / Footer、按钮与标题层级归 `global.css`；页面专属样式归 `home-v2.css`、`project-v2.css`、`about-v2.css`、`mascot-v2.css`，整理时先确认选择器的实际复用，不按文件行数机械拆分。
 - 颜色、文本、背景、边框、阴影、圆角和间距优先使用 `--rx-*` 变量。
 - 不在 JSX `style` 中扩散硬编码颜色、阴影和复杂布局值。
 - Section 使用全宽分区或无框布局承载；卡片只用于项目入口、图库项目或明确的信息单元。
@@ -166,7 +169,7 @@ PC 和移动端都是一等目标。
 
 - 首页、项目页、Mascot 页和 About 页都必须在移动端可完整浏览。
 - 导航在窄屏下需要折叠或重排，不能挤压正文。
-- 首页项目矩阵桌面端使用已确认的不对称生态图谱，移动端必须改为单列。
+- 首页项目目录桌面端使用 R2.2 分层展陈，移动端必须改为单列并保留十二项完整可见。
 - 大图必须设置稳定比例或尺寸约束，避免加载后布局跳动。
 - 标题、按钮、chip、卡片和二维码说明文字不能溢出容器。
 - 移动端减少背景纹理、弱化复杂装饰，优先保证内容连续浏览。

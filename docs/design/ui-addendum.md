@@ -1,7 +1,8 @@
 # RadishX 官网 UI 差异附录
 
 - 运行时 token：family-ui `v26.7.3` 灰玉参考。
-- 首页：R2.2 React-first 编辑式展陈；Pencil 设计源待回填。共享 Header 与其余页面继续使用既有灰玉 / craft 结构。
+- 首页、项目详情、About 与 Mascot：R2.2 React-first 编辑式页面；Pencil 设计源待回填。
+- 共享 Header / Footer / 按钮 / 标题层级：`global.css` 承载，页面样式按页面拆分。
 - Profile：Brand 展示面。
 - 页面范围、验收与下一步以 [当前规划](../planning/current.md) 为准。
 
@@ -11,8 +12,9 @@
 
 - `src/styles/family-ui-tokens.css` 是 `docs/design/family-ui/tokens/tokens.css` 的运行时副本，提供 `--rd-*`。
 - `src/styles/tokens.css` 将通用语义映射为 `--rx-*`，同时定义站点特有值；不是所有 `--rx-*` 都是上游别名。
-- 当前引入顺序为 `family-ui-tokens.css → tokens.css → global.css → utilities.css → home-v1.css → home-v2.css → project-v2.css`，见 `src/main.tsx`。
-- 组件样式优先消费 `--rx-*`；`home-v1.css` 仍覆盖共享 Header 并保留旧首页 / 详情选择器，`home-v2.css` 与 `project-v2.css` 只服务 R2.2 首页与详情页，文件职责待后续批次整理。
+- 当前引入顺序为 `family-ui-tokens.css → tokens.css → global.css → home-v2.css → project-v2.css → about-v2.css → mascot-v2.css`，见 `src/main.tsx`。
+- 组件样式优先消费 `--rx-*`；`global.css` 负责基础层、共享 Header / Footer、按钮、标题层级与通用控件，`home-v2.css`、`project-v2.css`、`about-v2.css`、`mascot-v2.css` 只服务对应页面。旧 `home-v1.css` 与 `utilities.css` 已删除。
+- `--rx-content-max` 已与 R2.2 页面宽度对齐为 `1312px`；首页 / 详情页仍保留各自的局部最大宽度变量。
 - 更新副本时比较上游版本和实际差异，不只修改版本号；通用参考变更与本站采用分别决定。
 
 ## 站点特有 token
@@ -23,7 +25,7 @@
 | `--rx-space-page-x` / `--rx-content-max` | 页面边距与内容宽度 |
 | `--rx-shadow-color` | 暖棕阴影分量；暗色为黑色 |
 | `--rx-state-success-strong` / `--rx-state-warning-strong` | 状态文字的站点变体 |
-| `--rx-brand-stage` / `--rx-brand-stage-muted` | 首页深灰玉 Mascot 舞台 |
+| `--rx-brand-stage` / `--rx-brand-stage-muted` | 首页与 Mascot 页的深灰玉舞台 |
 | `--rx-transition-base` | 对 family-ui motion 时长和曲线的组合 |
 
 ## 主题与暗色
@@ -32,7 +34,7 @@
 - `index.html` 在 React 执行前设置主题属性，减少首屏主题闪烁。
 - `ThemeToggle.tsx` 提供三个可直接选择的段控按钮；桌面位于 Header，移动位于展开菜单中，不是单按钮循环切换。
 - 暗色通过 `[data-rd-theme="dark"]` 覆盖上游与少量本站 token。
-- 灰玉首页 / 详情页主按钮用 `--rx-text-on-brand`，深色舞台用 `--rx-text-on-ink`；不同背景的前景语义不能统一替换。
+- R2.2 页面主按钮用 `--rx-text-on-brand`，深色舞台用 `--rx-text-on-ink`；不同背景的前景语义不能统一替换。
 - 当前 metadata 会覆盖 `theme-color`，需随质量修正处理；页面 CSS 主题与浏览器主题色应分别验证。
 
 ## 页面与组件
@@ -44,9 +46,11 @@
 | 首页 Mascot | `HomeMascot.tsx`、`home-v2.css` | 深灰玉舞台、透明立绘与角色入口 |
 | 详情 Hero / 展面 | `ProjectPage.tsx`、`ProjectHeroArt.tsx`、`ProjectArtwork.tsx`、`project-v2.css` | 项目身份、动作、状态摘要与有图 / 无图领域展面 |
 | 详情信息段 | `ProjectPage.tsx`、`project-v2.css` | Focus / Current state / Explore / Continue 四段内容 |
-| Mascot 详情 | `MascotPage.tsx` | 三形态与 Gallery，沿用既有素材准入 |
-| 共享 Header | `SiteHeader.tsx`、`home-v1.css`、`global.css` | 桌面导航、主题段控与移动菜单 |
-| 共享 Footer | `SiteFooter.tsx`、`global.css`、`home-v2.css` | 默认全站页脚与首页 / 详情页紧凑页脚 |
+| About | `AboutPage.tsx`、`about-v2.css` | 联系方式、公众号二维码、仓库索引与 4 项域名边界 |
+| Mascot 详情 | `MascotPage.tsx`、`mascot-v2.css` | 三形态、7 张 Gallery、10 张表情候选与四组使用边界 |
+| 共享 Header | `SiteHeader.tsx`、`global.css` | 桌面导航、主题段控与移动菜单 |
+| 共享 Footer | `SiteFooter.tsx`、`global.css` | 默认全站页脚与首页 / 详情页紧凑页脚 |
+| 共享按钮 / 标题 | `global.css` | `.button`、`.eyebrow`、`.status-chip` 与全局标题层级 |
 
 ## 已知差异与处置
 
@@ -54,9 +58,10 @@
 | --- | --- | --- |
 | 字体来源 | 站点使用带 Inter / Geist 的系统 fallback 栈 | 描述为字体栈偏好，不宣称已引入 Web 字体；新字体仍需授权 |
 | 焦点环 | 使用灰玉品牌色混合透明度，上游参考为墨蓝 focus-ring | 保留本站表达，结合真实背景复核可见性，不沿用“品牌红”旧说明 |
-| 字距与字号 | R2.2 首页与详情页展示字距收敛到 `-0.02em`，仍使用含 `vw` 的 `clamp()`；`home-v1.css` 旧选择器中的更强负字距仍待清理 | 后续按桌面、移动及文字缩放证据确认；不继续扩大负字距，不把旧选择器重新引入 R2.2 页面 |
-| muted 小字 | R2.2 首页与详情页主要微标签改用次文字 token；全站 muted 小字仍有低对比度风险 | 继续复核实际背景并达到普通文字 4.5:1；优先明确本站修改范围，不自动改全家族规范 |
-| 暗色精确设计 | R2.2 首页与详情页已做暗色可用性检查，尚未建立独立暗色精确稿 | 保持可读性；暗色设计扩展另行确定，不把可用性检查当作精确稿验收 |
+| 字距与字号 | R2.2 全站共享标题层级使用 `-0.02em`，页面仍使用含 `vw` 的 `clamp()`；旧 `home-v1.css` 中的更强负字距已删除 | 后续按桌面、移动及文字缩放证据确认；不继续扩大负字距 |
+| muted 小字 | R2.2 页面主要微标签改用次文字 token；全站 muted 小字仍有低对比度风险 | 继续复核实际背景并达到普通文字 4.5:1；优先明确本站修改范围，不自动改全家族规范 |
+| 暗色精确设计 | R2.2 首页、详情页、About 与 Mascot 已做暗色可用性检查，尚未建立独立暗色精确稿 | 保持可读性；暗色设计扩展另行确定，不把可用性检查当作精确稿验收 |
+| 旧样式残留 | 共享 Header 已迁入 `global.css`；`home-v1.css`、`utilities.css` 与旧首页 / 详情选择器已删除 | 后续新增页面按页面拆分样式，不恢复旧选择器 |
 
 具体问题、证据等级和验收项见 [官网质量与对外表达收口](../features/site-quality-and-public-content.md)。这里记录偏离事实，不把未修复项描述成已达标。
 

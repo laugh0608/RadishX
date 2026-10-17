@@ -2,7 +2,7 @@
 
 RadishX 是 Radish 系列项目的官网与统一入口。这个仓库作为 RadishX 官网根站点，通过 GitHub 托管代码，并使用 Vercel 免费额度部署；当前主域为 <https://radishx.com/>，`www.radishx.com` 作为兼容入口跳转到根域。
 
-当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、十二个产品详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、公开图片和 family-ui 双层样式 token。首页与项目详情页已按 R2.2 编辑式方向完成 React-first 重构：首页为品牌字形 + 四项精选 + 十二项分层目录，详情页为 Hero / Focus / Current state / Explore / Continue；About、Mascot 仍保留 craft 信息架构。Pencil 设计源待回填。产品列表已按本地兄弟仓库更新为十二项；Axiom Checker 作为 Axiom 配套仓库。当前阶段和验证状态见 [当前规划](docs/planning/current.md)。
+当前仓库状态：Vite + React + TypeScript 静态官网已完成首版实现，包含首页、十二个产品详情页、`/mascot`、`/about` 和 404 页面；已接入路由、数据层、favicon、metadata、Open Graph / Twitter Card、`sitemap.xml`、`robots.txt`、Vercel History API fallback、公开图片和 family-ui 双层样式 token。首页、项目详情页、About 与 Mascot 已按 R2.2 编辑式方向完成 React-first 重构：首页为品牌字形 + 四项精选 + 十二项分层目录，详情页为 Hero / Focus / Current state / Explore / Continue，About 为联系 / 仓库 / 域名四段，Mascot 为三形态 / Gallery / 表情候选 / 使用边界；共享 Header、Footer、按钮与标题层级已收口。Pencil 设计源待回填。产品列表已按本地兄弟仓库更新为十二项；Axiom Checker 作为 Axiom 配套仓库。当前阶段和验证状态见 [当前规划](docs/planning/current.md)。
 
 ## 已确认方向
 
@@ -215,7 +215,7 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 - 十二个产品后续是否提供真实截图或可公开视频素材。
 - RadishMind 后续是否补项目自有 Logo、Console 截图或协议 / 评测可视化图。
 - 十二个产品是否已有稳定 Demo、文档站、下载页、在线入口、项目域名或发布计划需要官网同步。
-- R2.2 首页与详情页是否通过所有者复核；About / Mascot 统一、旧 CSS 清理与 R2.2 Pencil 设计源回填仍待后续批次。
+- R2.2 首页、详情页、About 与 Mascot 是否通过所有者复核；R2.2 Pencil 设计源回填与首批单张表情裁切复核仍待后续批次。
 - “萝小白”首批单张表情已生成 Web 展示图并接入 `/mascot` 候选预览区；后续如需开放下载、素材包、社交贴纸包或外部分发，仍需另行确认授权和文件包边界。具体 seasonal 活动实现仍待确认。
 - 线上 HTTP、根域跳转、路径保留以及桌面 / 移动端截图级 smoke 已完成；后续如果页面、资源或部署变化，再复跑对应检查。
 
@@ -227,7 +227,7 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 2. 首页首屏：RadishX 品牌字形 + “把好奇心，做成作品。” + 四项精选舞台与“浏览全部项目”入口。
 3. 首页项目区：十二项编辑式目录；2 个大型展面、2 个强视觉展面、4 个中型展面和 4 个紧凑条目，不再使用单字母占位卡。
 4. 项目详情页：Hero / Focus / Current state / Explore / Continue 五段结构；展示定位、状态、能力、文档与入口，移除 Route、Page flow、素材审核和计划域名等内部字段。
-5. Mascot 页：展示三种形态、主视觉、Gallery 整图预览、首批单张表情候选预览和使用边界，不提供下载入口。
-6. About 页：联系方式、微信公众号二维码、GitHub 仓库入口和域名边界。
+5. Mascot 页：三种形态、Gallery 整图预览、首批单张表情候选和使用边界，不提供下载入口；不展示来源格位或审核过程。
+6. About 页：联系方式、微信公众号二维码、14 个仓库入口和 4 项域名边界；不展示登录 / API、部署 / Vercel 或计划域名说明。
 
-首页与详情页已从旧灰玉 / craft 模板迁移到 R2.2 编辑式展陈；旧组件、单字母占位、Page flow 与素材审核字段已删除，内部评审语言不再出现在首页和详情页。代码内临时标识不声明为正式 Logo，新增产品未引入未经审核的截图或素材。
+首页、详情页、About 与 Mascot 已从旧灰玉 / craft 模板迁移到 R2.2 编辑式展陈；旧组件、单字母占位、Page flow、素材审核字段与旧 `home-v1.css` / `utilities.css` 选择器已删除，内部评审语言不再出现在公开页面。代码内临时标识不声明为正式 Logo，新增产品未引入未确认的截图或素材。

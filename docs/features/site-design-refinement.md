@@ -1,6 +1,6 @@
 # 官网整体设计与美化
 
-状态：R2.2 首页与项目详情页模板完成，双端复核通过；About / Mascot 下一批
+状态：R2.2 首页、详情页、About、Mascot 与共享层完成，双端复核通过；Pencil 回填下一步
 最后更新：2026-10-17
 
 ## 2026-10-17 R2.2 首页重构（React-first）
@@ -27,7 +27,7 @@
 
 验收：桌面 1440×900 与移动 390×844 下检查首页；十二项全部可见；四项精选切换、完整目录、Mascot 与紧凑页脚正常；无横向溢出、无浏览器错误；已部署入口仍只保留 Radish 与 RadishInk。
 
-实现：新增 `HomeHero`、`HomeCollection`、`HomeMascot`、`HomeArt` 与 `homeShowcase` 展陈配置，样式写入 `home-v2.css`；删除不再使用的 `HeroOrbit`、`ProjectMatrix`、`HomeProjectVisual`、`ProjectBand` 与 `homeVisuals`。首页锚点改为 `#collection`，同时保留 `#projects` 兼容锚点；Header 的 Projects 入口在首页和项目页保持 active。精选切换使用原生 tab 语义，支持方向键、Home / End 与 reduced-motion。旧的 `home-v1.css` 仍承担共享 Header 样式与历史选择器，待后续批次整理。
+实现：新增 `HomeHero`、`HomeCollection`、`HomeMascot`、`HomeArt` 与 `homeShowcase` 展陈配置，样式写入 `home-v2.css`；删除不再使用的 `HeroOrbit`、`ProjectMatrix`、`HomeProjectVisual`、`ProjectBand` 与 `homeVisuals`。首页锚点改为 `#collection`，同时保留 `#projects` 兼容锚点；Header 的 Projects 入口在首页和项目页保持 active。精选切换使用原生 tab 语义，支持方向键、Home / End 与 reduced-motion。旧的 `home-v1.css` 在本轮暂留共享 Header 与历史选择器；已在同日 About / Mascot 批次迁出 Header 并删除。
 
 验证：`npm run build` 通过；Chrome 在 1440×900 与 390×844 下检查首页，十二项目录、四项精选切换、Mascot、紧凑页脚和深色模式均正常；精选点击与方向键 / Home / End 切换正常，`#collection` 与兼容 `#projects` 均能滚动到项目目录且 Projects 保持 active；无横向溢出、无浏览器错误；页面高度约 3,984px / 6,640px，较旧首页的 5,641px / 8,764px 明显收敛。首页不再出现 `Temporary mark`、`Reviewed asset`、`Asset source` 等内部评审语言。Pencil 设计源尚未回填，R2.1 旧画板仍记录旧项目范围。
 
@@ -53,6 +53,22 @@
 - 不改变项目事实、文档链接、路由、域名或部署配置；Axiom Checker 继续作为 Axiom 的配套仓库。
 
 验证：`npm run type-check` 与 `npm run build` 通过；Chrome 在 1440×900 与 390×844 下覆盖全部十二个详情路由，另检查 Radish / Ink / Ledger / Root 的桌面、移动与深色截图。各页均有 3 项能力、3 条状态信号、3–5 个文档 / 仓库链接与 4 个后续项目；无旧详情块、无内部评审语言、无横向溢出、无浏览器错误。桌面详情页高度约 2,460–2,731px，移动约 3,812–3,994px，较旧模板明显收敛。截图在 `output/playwright/project-r2-2026-10-17/`。Pencil 源仍未回填。
+
+## 2026-10-17 R2.2 About / Mascot 与共享层收口
+
+所有者确认详情页之后继续处理 About、Mascot 与全站共享层。本轮把两页从 craft 卡片与审核字段改为与首页 / 详情页一致的编辑式结构，并清理旧样式职责。
+
+About 结构：Hero（介绍、GitHub / Email 动作、12 项目 / 14 仓库 / 2 Web 入口 / 1 公众号索引）、Contact（4 个联系入口与公众号二维码）、Repositories（14 个公开仓库编号索引）、Domains（4 项域名边界）。公开文案删除 `No login / API surface`、`WeChat QR reviewed`、二维码审核状态、仓库 `Role / Surface`、`Current Vercel site`、`Redirect to root domain`、`已部署` 与“域名和部署边界”等内部实现语言。
+
+Mascot 结构：深灰玉 Hero（三形态标签、透明完全体立绘、无下载说明）、三种形态、7 张 Gallery 与说明单元、10 张表情候选、四组使用边界。公开文案删除 `Asset status`、`Audit status`、`Usage boundary`、`Next material need`、来源格位、`public/images` / `assets/` 路径与 `Reviewed preview` / `Sheet preview only` 等评审字段；素材准入与撤回信息继续保留在治理文档。
+
+共享层：Header 规则从 `home-v1.css` 迁入 `global.css`；删除 `home-v1.css`、`utilities.css`、`SectionHeader` 与全局旧首页 / 详情选择器；Footer 默认与紧凑变体、按钮、`eyebrow`、`status-chip` 与 h1–h3 层级统一收口。首页 / 详情页继续使用紧凑页脚，About / Mascot 使用默认页脚。
+
+视觉与内容边界：不新增依赖、外部图片、字体或第三方服务；不修改十二个产品事实、路由、部署链接、DNS 或 Vercel；不修改 `.pen`。About / Mascot 使用既有已公开图片与代码内排版，不冒充新截图或正式 Logo。
+
+验证：`npm run check:local-release`、`npm run check:http-smoke -- --base-url http://127.0.0.1:4500` 与 `npm run check:agent-guides` 通过；Chrome 1440×900 与 390×844 覆盖 `/`、`/about`、`/mascot`、`/radish` 的亮 / 暗主题：无横向溢出、broken image、console error 或小于 44px 的链接触控目标；About 为 4 个联系入口、14 个仓库、4 个域名；Mascot 为 3 形态、7 Gallery、10 表情、4 组边界；公开文本不含内部评审与部署语言。页面高度：首页约 3,987 / 6,647px，详情 Radish 约 2,534 / 3,818px，About 约 3,355 / 5,357px，Mascot 约 4,940 / 10,020px。截图在 `output/playwright/site-r2-2026-10-17/`。
+
+遗留：R2.2 Pencil 设计源仍未回填；首批 10 张单张表情 Web 图存在既有裁切偏移，本轮未改素材，需单独授权后重新生成。线上版本未核验。
 
 ## 目标与授权
 
@@ -122,6 +138,7 @@
 
 ## 后续批次
 
-1. 首页与 Radish 双端方案已获所有者确认，以 R2.1 导航、项目顺序、首屏与目录层次作为本批实现依据。
-2. 按选定方案实现首页 / 代表详情，修正状态和基础可访问性问题，完成双端浏览器验证。
-3. 扩展其余项目及 Mascot / About，分别补齐内容、素材准入与页面目标。
+1. R2.2 首页、详情页、About、Mascot 与共享层已完成 React-first 实现和双端验证；等待所有者查看截图并确认下一批范围。
+2. 评估 R2.2 Pencil 设计源回填；`.pen` 只能通过 Pencil 读写，当前环境未执行。
+3. 单张表情 Web 图裁切偏移需单独确认素材授权与重新生成范围。
+4. 继续核实公开访问地址、修正既有质量问题，再评估 SEO 静态输出与验证入口。

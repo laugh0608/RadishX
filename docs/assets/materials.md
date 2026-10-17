@@ -165,6 +165,8 @@
 
 2026-06-18 在项目所有者允许后，使用上述整格框生成首批 10 张 `256x256` JPEG Web 展示图，路径为 `public/images/mascot/expressions/radish-child-expression-*-web.jpg`，并接入 `/mascot` 单张候选预览区。当前状态为 `internal-preview`：只代表官网内部展示候选，不提供下载、素材包、社交贴纸包、商用复用或外部分发授权。
 
+2026-10-17 页面重构复核发现：现有首批 10 张 Web 图并未完全对应上述整格框。`happy` 的图像比例与其余候选不一致，多张候选顶部带有相邻行标签；`angry` 与 `surprised` 相对完整。本轮未修改或重新裁切任何公开文件，也没有据此改写授权范围；需要单独确认裁切框、目标格位和重新生成范围后才能替换。
+
 | id | 来源格位 | 标签 | emotion | slug | 当前状态 | Web 路径 | 使用场景 | 审核备注 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `rx-expression-001` | `R1C1` | 开心 | `happy` | `happy` | `internal-preview` | `public/images/mascot/expressions/radish-child-expression-happy-web.jpg` | Mascot 页面基础情绪候选。 | 保留双手、表情符号和中文标签。 |

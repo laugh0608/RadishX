@@ -14,26 +14,26 @@
 
 当前顺位、停止线和执行范围只见 [当前规划](../planning/current.md)。质量修正、公开文案与 SEO 评估统一进入 [官网质量与对外表达收口](site-quality-and-public-content.md)，内容核验无需等待新素材。
 
-已完成 feature 保留当时的设计和验证事实；首页已由灰玉目标替代 craft 首页，其他页面保留 craft 结构。历史全文中的“当前”“本轮”按该目标日期理解，不作为新的开发指令。新一轮实施应更新当前目标，避免继续追加到旧目标的完成记录中。
+已完成 feature 保留当时的设计和验证事实；首页、项目详情、About 与 Mascot 已由 R2.2 编辑式目标替代 craft 结构。历史全文中的“当前”“本轮”按该目标日期理解，不作为新的开发指令。新一轮实施应更新当前目标，避免继续追加到旧目标的完成记录中。
 
 ## 当前目标索引
 
 | 文档 | 目标 | 状态 |
 | --- | --- | --- |
 | [company-brand-identity.md](company-brand-identity.md) | 公司中英文命名、Logo 版本与本地对比页 | 名称已确认；V9 暂定基准；公司全名组合素材完成，十二版留档，双端检查通过 |
-| [site-design-refinement.md](site-design-refinement.md) | 官网整体设计美化：精选、目录与跨页统一 | R2.2 首页 React 重构完成并通过双端复核；详情页模板、About / Mascot 与 Pencil 回填后续 |
+| [site-design-refinement.md](site-design-refinement.md) | 官网整体设计美化：精选、目录与跨页统一 | R2.2 首页、详情页、About、Mascot 与共享层完成并通过双端复核；Pencil 回填后续 |
 | [product-matrix-refresh.md](product-matrix-refresh.md) | 十二产品列表、介绍入口、公开链接与事实同步 | 新增 RadishLedger / RadishRoot；移除未部署项目的暂定域名与访问按钮，仅保留 Radish / Ink 已部署入口，验证见专题 |
 | [site-quality-and-public-content.md](site-quality-and-public-content.md) | 官网质量、公开文案、SEO 与验证收口 | 文档目标已建立，代码与部署尚未实施 |
 | [home-hero-visual.md](home-hero-visual.md) | 首页首屏、项目内容舞台和主视觉 | 灰玉项目舞台已实现并通过双端复核，OG 暂不替换 |
 | [project-detail-pages.md](project-detail-pages.md) | 十二个项目详情页内容、视觉、公开文档入口和公开素材边界 | R2.2 编辑式详情模板完成，十二页双端复核通过；Pencil 源待回填 |
 | [project-visual-asset-readiness.md](project-visual-asset-readiness.md) | 五个项目正式 Logo、截图、视频和自有视觉准入准备 | 既有准入保留，新增候选类型已规划；具体文件仍待审核 |
-| [mascot-page.md](mascot-page.md) | Mascot 虚拟形象页、三形态和 Gallery | Gallery / Usage、首批单张表情与 craft Phase 4 视觉收敛已完成 |
-| [about-contact-surface.md](about-contact-surface.md) | About 联系区、仓库入口和域名边界 | 二轮扫读优化与 craft Phase 4 视觉收敛已完成 |
+| [mascot-page.md](mascot-page.md) | Mascot 虚拟形象页、三形态和 Gallery | R2.2 编辑式重构完成；三形态、7 张 Gallery、10 张表情候选与 4 组使用边界；单张表情裁切待单独复核 |
+| [about-contact-surface.md](about-contact-surface.md) | About 联系区、仓库入口和域名边界 | R2.2 编辑式重构完成；4 个联系入口、二维码、14 个仓库与 4 项域名边界 |
 | [asset-governance.md](asset-governance.md) | 素材审核、Web 优化和 `public/images` 准入 | Mascot 首批单张表情 Web 展示图已接入，下载、素材包和外部分发继续关闭 |
 | [visual-qa-and-release.md](visual-qa-and-release.md) | 本地 / 线上视觉 QA、构建和发布检查 | craft Phase 5 本地 54 组合终验、9 路由 HTTP smoke 与既有线上发布检查已完成 |
 | [design-source-refresh.md](design-source-refresh.md) | Pencil 设计源精确化与 craft 基线 | v0 历史 craft 基线保留 10 张画板；首页当前采用 v1 灰玉设计 |
 | [grayjade-brand-refresh.md](grayjade-brand-refresh.md) | 灰玉品牌视觉与 `radishx-site-v1.pen` 首页落地 | 桌面与移动设计已确认，React 首页已实现并通过双端复核 |
-| [react-design-alignment.md](react-design-alignment.md) | React 页面与 v1.1 历史设计源对照校准 | 历史基线已完成；首页现由灰玉目标替代，其他页面继续保留 craft 基线 |
+| [react-design-alignment.md](react-design-alignment.md) | React 页面与 v1.1 历史设计源对照校准 | 历史基线已完成；当前首页、详情页、About 与 Mascot 已由 R2.2 编辑式实现替代 |
 | [craft-visual-refresh.md](craft-visual-refresh.md) | v1.2 craft 视觉基线落进 React | 历史 Phase 0–5 已完成；首页与共享 Header / token 后由灰玉目标更新 |
 | [family-ui-spec.md](family-ui-spec.md) | Radish 家族统一 UI / 视觉参考规范 | v26.7.3：灰玉默认品牌参考、通用规范边界、参考 UI 同目录归档 |
 
