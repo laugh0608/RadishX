@@ -11,8 +11,8 @@
 
 - `src/styles/family-ui-tokens.css` 是 `docs/design/family-ui/tokens/tokens.css` 的运行时副本，提供 `--rd-*`。
 - `src/styles/tokens.css` 将通用语义映射为 `--rx-*`，同时定义站点特有值；不是所有 `--rx-*` 都是上游别名。
-- 当前引入顺序为 `family-ui-tokens.css → tokens.css → global.css → utilities.css → home-v1.css → home-v2.css`，见 `src/main.tsx`。
-- 组件样式优先消费 `--rx-*`；`home-v1.css` 仍覆盖共享 Header 并保留旧首页选择器，`home-v2.css` 只服务 R2.2 首页，文件职责待后续批次整理。
+- 当前引入顺序为 `family-ui-tokens.css → tokens.css → global.css → utilities.css → home-v1.css → home-v2.css → project-v2.css`，见 `src/main.tsx`。
+- 组件样式优先消费 `--rx-*`；`home-v1.css` 仍覆盖共享 Header 并保留旧首页 / 详情选择器，`home-v2.css` 与 `project-v2.css` 只服务 R2.2 首页与详情页，文件职责待后续批次整理。
 - 更新副本时比较上游版本和实际差异，不只修改版本号；通用参考变更与本站采用分别决定。
 
 ## 站点特有 token
@@ -32,20 +32,21 @@
 - `index.html` 在 React 执行前设置主题属性，减少首屏主题闪烁。
 - `ThemeToggle.tsx` 提供三个可直接选择的段控按钮；桌面位于 Header，移动位于展开菜单中，不是单按钮循环切换。
 - 暗色通过 `[data-rd-theme="dark"]` 覆盖上游与少量本站 token。
-- 灰玉首页主按钮用 `--rx-text-on-brand`，深色舞台用 `--rx-text-on-ink`；不同背景的前景语义不能统一替换。
+- 灰玉首页 / 详情页主按钮用 `--rx-text-on-brand`，深色舞台用 `--rx-text-on-ink`；不同背景的前景语义不能统一替换。
 - 当前 metadata 会覆盖 `theme-color`，需随质量修正处理；页面 CSS 主题与浏览器主题色应分别验证。
 
 ## 页面与组件
 
 | 组件 | 实现位置 | 当前职责 |
 | --- | --- | --- |
-| 首页 Hero / 精选 | `HomeHero.tsx`、`HomeArt.tsx`、`home-v2.css` | 品牌字形、品牌主张、四项精选切换与领域视觉 |
-| 首页项目目录 | `HomeCollection.tsx`、`HomeArt.tsx`、`homeShowcase.ts` | 十二项分层展陈、分类标签与完整项目索引 |
+| 首页 Hero / 精选 | `HomeHero.tsx`、`ProjectArtwork.tsx`、`home-v2.css` | 品牌字形、品牌主张、四项精选切换与领域视觉 |
+| 首页项目目录 | `HomeCollection.tsx`、`ProjectArtwork.tsx`、`homeShowcase.ts` | 十二项分层展陈、分类标签与完整项目索引 |
 | 首页 Mascot | `HomeMascot.tsx`、`home-v2.css` | 深灰玉舞台、透明立绘与角色入口 |
-| 项目主媒体 | `MediaFrame.tsx`、`global.css` | 已审核代表图或 Mind / Lex 代码内示意，不冒充真实产品截图 |
+| 详情 Hero / 展面 | `ProjectPage.tsx`、`ProjectHeroArt.tsx`、`ProjectArtwork.tsx`、`project-v2.css` | 项目身份、动作、状态摘要与有图 / 无图领域展面 |
+| 详情信息段 | `ProjectPage.tsx`、`project-v2.css` | Focus / Current state / Explore / Continue 四段内容 |
 | Mascot 详情 | `MascotPage.tsx` | 三形态与 Gallery，沿用既有素材准入 |
 | 共享 Header | `SiteHeader.tsx`、`home-v1.css`、`global.css` | 桌面导航、主题段控与移动菜单 |
-| 共享 Footer | `SiteFooter.tsx`、`global.css`、`home-v2.css` | 默认全站页脚与首页紧凑页脚 |
+| 共享 Footer | `SiteFooter.tsx`、`global.css`、`home-v2.css` | 默认全站页脚与首页 / 详情页紧凑页脚 |
 
 ## 已知差异与处置
 
@@ -53,9 +54,9 @@
 | --- | --- | --- |
 | 字体来源 | 站点使用带 Inter / Geist 的系统 fallback 栈 | 描述为字体栈偏好，不宣称已引入 Web 字体；新字体仍需授权 |
 | 焦点环 | 使用灰玉品牌色混合透明度，上游参考为墨蓝 focus-ring | 保留本站表达，结合真实背景复核可见性，不沿用“品牌红”旧说明 |
-| 字距与字号 | R2.2 首页展示字距收敛到 `-0.02em`，仍使用含 `vw` 的 `clamp()`；`home-v1.css` 旧选择器中的更强负字距仍待清理 | 后续按桌面、移动及文字缩放证据确认；不继续扩大负字距，不把旧选择器重新引入首页 |
-| muted 小字 | R2.2 首页主要微标签改用次文字 token；全站 muted 小字仍有低对比度风险 | 继续复核实际背景并达到普通文字 4.5:1；优先明确本站修改范围，不自动改全家族规范 |
-| 暗色精确设计 | R2.2 首页已做暗色可用性检查，尚未建立独立暗色精确稿 | 保持可读性；暗色设计扩展另行确定，不把可用性检查当作精确稿验收 |
+| 字距与字号 | R2.2 首页与详情页展示字距收敛到 `-0.02em`，仍使用含 `vw` 的 `clamp()`；`home-v1.css` 旧选择器中的更强负字距仍待清理 | 后续按桌面、移动及文字缩放证据确认；不继续扩大负字距，不把旧选择器重新引入 R2.2 页面 |
+| muted 小字 | R2.2 首页与详情页主要微标签改用次文字 token；全站 muted 小字仍有低对比度风险 | 继续复核实际背景并达到普通文字 4.5:1；优先明确本站修改范围，不自动改全家族规范 |
+| 暗色精确设计 | R2.2 首页与详情页已做暗色可用性检查，尚未建立独立暗色精确稿 | 保持可读性；暗色设计扩展另行确定，不把可用性检查当作精确稿验收 |
 
 具体问题、证据等级和验收项见 [官网质量与对外表达收口](../features/site-quality-and-public-content.md)。这里记录偏离事实，不把未修复项描述成已达标。
 

@@ -1,6 +1,6 @@
 # 官网整体设计与美化
 
-状态：R2.2 首页 React 重构完成，双端复核通过；详情页模板下一批
+状态：R2.2 首页与项目详情页模板完成，双端复核通过；About / Mascot 下一批
 最后更新：2026-10-17
 
 ## 2026-10-17 R2.2 首页重构（React-first）
@@ -20,7 +20,7 @@
 
 - 沿用纸色、灰玉、深墨与现有字体栈；不新增外部图片、字体或依赖。
 - Radish 使用既有角色图，Catalyst 使用既有概念图；其余项目使用代码内排版 / 示意图，不冒充真实截图或正式 Logo。
-- 公开页面移除 `Temporary mark`、`Reviewed asset`、`Asset source`、`Usage boundary` 等内部评审语言；项目页的治理字段留待详情页批次处理。
+- 公开页面移除 `Temporary mark`、`Reviewed asset`、`Asset source`、`Usage boundary` 等内部评审语言；项目页的治理字段已在同日详情页批次处理。
 - Flow 当前为开发中，不再使用 R2.1 的“历史项目”表述。
 - 不改变十二项的项目事实、部署入口或路由；只重构首页展陈。
 - 不做自动轮播；精选切换保留键盘操作与 reduced-motion 支持。
@@ -30,6 +30,29 @@
 实现：新增 `HomeHero`、`HomeCollection`、`HomeMascot`、`HomeArt` 与 `homeShowcase` 展陈配置，样式写入 `home-v2.css`；删除不再使用的 `HeroOrbit`、`ProjectMatrix`、`HomeProjectVisual`、`ProjectBand` 与 `homeVisuals`。首页锚点改为 `#collection`，同时保留 `#projects` 兼容锚点；Header 的 Projects 入口在首页和项目页保持 active。精选切换使用原生 tab 语义，支持方向键、Home / End 与 reduced-motion。旧的 `home-v1.css` 仍承担共享 Header 样式与历史选择器，待后续批次整理。
 
 验证：`npm run build` 通过；Chrome 在 1440×900 与 390×844 下检查首页，十二项目录、四项精选切换、Mascot、紧凑页脚和深色模式均正常；精选点击与方向键 / Home / End 切换正常，`#collection` 与兼容 `#projects` 均能滚动到项目目录且 Projects 保持 active；无横向溢出、无浏览器错误；页面高度约 3,984px / 6,640px，较旧首页的 5,641px / 8,764px 明显收敛。首页不再出现 `Temporary mark`、`Reviewed asset`、`Asset source` 等内部评审语言。Pencil 设计源尚未回填，R2.1 旧画板仍记录旧项目范围。
+
+## 2026-10-17 R2.2 项目详情页模板（React-first）
+
+所有者确认首页方向后进入详情页批次。本轮把旧 craft 详情模板替换为与首页一致的编辑式结构，覆盖全部十二个 `/项目` 路由；不修改 About、Mascot 与服务端边界。
+
+详情页结构：
+
+- Hero：返回“全部项目”、`orbitLabel`、项目名、短定位、摘要、能力标签、2–3 个主要动作与状态 / 阶段 / Web 入口摘要；右侧为项目领域展面。
+- Focus：左侧定位标题，右侧 01–03 关键能力。
+- Current state：当前阶段、状态与三条状态信号。
+- Explore：项目文档、GitHub、已部署 Web 入口和配套仓库的文本链接列表。
+- Continue：四个后续项目的紧凑入口与“全部十二个项目”返回入口。
+- 页脚：与首页一致的紧凑页脚。
+
+视觉与内容边界：
+
+- Radish 使用既有角色图与深灰玉展面，Catalyst 使用既有概念图；其余项目复用首页代码内领域展面，不新增截图或 Logo。
+- 删除 `MediaFrame`、`InfoRail`、`ProjectMark` 和旧 Page flow / Public Surface 结构；详情页不再展示 `Temporary mark`、`Reviewed asset`、`Asset source`、`Usage boundary` 等内部评审字段。
+- 未部署项目只显示“暂无公开站点”，不展示计划域名或禁用访问按钮；已部署项目才出现 Web 入口动作与链接行。
+- 长项目名使用 `<wbr>` 在 `Radish` 前缀后提供自然换行机会，避免 `RadishLedger` 被拆成无意义片段。
+- 不改变项目事实、文档链接、路由、域名或部署配置；Axiom Checker 继续作为 Axiom 的配套仓库。
+
+验证：`npm run type-check` 与 `npm run build` 通过；Chrome 在 1440×900 与 390×844 下覆盖全部十二个详情路由，另检查 Radish / Ink / Ledger / Root 的桌面、移动与深色截图。各页均有 3 项能力、3 条状态信号、3–5 个文档 / 仓库链接与 4 个后续项目；无旧详情块、无内部评审语言、无横向溢出、无浏览器错误。桌面详情页高度约 2,460–2,731px，移动约 3,812–3,994px，较旧模板明显收敛。截图在 `output/playwright/project-r2-2026-10-17/`。Pencil 源仍未回填。
 
 ## 目标与授权
 

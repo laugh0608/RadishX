@@ -25,7 +25,7 @@
 | [product-matrix-refresh.md](product-matrix-refresh.md) | 十二产品列表、介绍入口、公开链接与事实同步 | 新增 RadishLedger / RadishRoot；移除未部署项目的暂定域名与访问按钮，仅保留 Radish / Ink 已部署入口，验证见专题 |
 | [site-quality-and-public-content.md](site-quality-and-public-content.md) | 官网质量、公开文案、SEO 与验证收口 | 文档目标已建立，代码与部署尚未实施 |
 | [home-hero-visual.md](home-hero-visual.md) | 首页首屏、项目内容舞台和主视觉 | 灰玉项目舞台已实现并通过双端复核，OG 暂不替换 |
-| [project-detail-pages.md](project-detail-pages.md) | 五个项目详情页内容、视觉、公开文档入口和公开素材边界 | 首版、站内导览与 craft Phase 3 已完成 |
+| [project-detail-pages.md](project-detail-pages.md) | 十二个项目详情页内容、视觉、公开文档入口和公开素材边界 | R2.2 编辑式详情模板完成，十二页双端复核通过；Pencil 源待回填 |
 | [project-visual-asset-readiness.md](project-visual-asset-readiness.md) | 五个项目正式 Logo、截图、视频和自有视觉准入准备 | 既有准入保留，新增候选类型已规划；具体文件仍待审核 |
 | [mascot-page.md](mascot-page.md) | Mascot 虚拟形象页、三形态和 Gallery | Gallery / Usage、首批单张表情与 craft Phase 4 视觉收敛已完成 |
 | [about-contact-surface.md](about-contact-surface.md) | About 联系区、仓库入口和域名边界 | 二轮扫读优化与 craft Phase 4 视觉收敛已完成 |

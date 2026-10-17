@@ -44,7 +44,7 @@
 | Q06 | QQ 联系入口为无号码参数的 `https://qm.qq.com/`，链接本身不能指定该联系号 | 核实有效联系入口，或采用复制号码动作；动作名称与实际结果一致 |
 | Q07 | HTML 初始 canonical、title、OG 均为首页，项目 metadata 依赖 JavaScript 改写 | 按下文评估构建期页面输出；原始 HTML 与浏览器最终 metadata 应一致 |
 | Q08 | HTTP smoke 只检查 root / module 等 HTML 外壳，不能证明页面内容和交互正确 | 保留传输层检查，增加路由身份、404、资源有效性及关键浏览器行为验证 |
-| Q09 | `home-v1.css` 同时覆盖共享 Header；R2.2 已删除旧首页组件 `ProjectBand` / `homeVisuals` 等，但 `home-v1.css` 旧首页选择器仍有残留 | 拆分共享 Header 样式并清理旧首页 CSS；不以行数作为拆分唯一依据 |
+| Q09 | `home-v1.css` 同时覆盖共享 Header；R2.2 已删除旧首页 / 详情组件 `ProjectBand`、`MediaFrame`、`InfoRail`、`ProjectMark` 等，但 `home-v1.css` 与 `global.css` 中的旧首页 / 详情选择器仍有残留 | 拆分共享 Header 样式并清理旧页面 CSS；不以行数作为拆分唯一依据 |
 
 ## 公开内容整理
 

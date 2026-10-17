@@ -1,101 +1,77 @@
-# 五个项目详情页
+# 项目详情页
 
-状态：首版、站内导览、素材准入清单与 craft Phase 3 均已完成
-最后更新：2026-09-06
-
-## 后续目标与适用范围
-
-本文件保留首版与 craft Phase 3 的完成记录。2026-09-06 起的状态一致性、公开文案、焦点与入口质量建议统一见 [官网质量与对外表达收口](site-quality-and-public-content.md)，尚未实施。素材准入继续由本目标及素材专题约束。
+状态：R2.2 编辑式详情模板完成，十二个详情页双端复核通过
+最后更新：2026-10-17
 
 ## 目标
 
-让 Radish、RadishCatalyst、RadishFlow、RadishMind、RadishLex 五个项目详情页稳定说明项目定位、公开状态、GitHub 入口、未来域名和素材边界。
+让十二个项目详情页与 R2.2 首页使用同一套编辑式语言：先说明项目定位、当前状态与可用入口，再展示关键能力、阶段信号、文档 / 仓库链接和后续项目；不再让内部素材审核字段、Route 或部署说明占据公开页面。
 
 ## 背景
 
-五个项目详情页已完成独立素材只读审核，并在不修改兄弟项目的前提下接入低风险 Web 图或代码内视觉；RadishLex 与 RadishMind 一样暂无外部公开素材，使用代码内视觉。页面需要持续避免把概念图、历史 UI baseline 或外部参考截图误表达为正式产品状态。
+旧详情页沿用 craft 模板，包含 Hero 元信息、Page flow、Public Surface、素材审核和十一项矩阵回流。项目扩到十二项后，这些内部字段让页面像评审文档，且桌面 / 移动页面都很长。R2.2 首页完成后，详情页按“精选展示、完整目录、跨页统一”的同一方向重做。
 
 ## 范围
 
-- `/radish`
-- `/catalyst`
-- `/flow`
-- `/mind`
-- `/lex`
-- 项目数据层中的定位、状态、链接、未来域名、Public Surface 和主媒体元数据。
-- `public/images/projects/` 中已审核 Web 图。
+- `/radish`、`/catalyst`、`/flow`、`/mind`、`/lex`、`/axiom`、`/link`、`/memory`、`/nexus`、`/ink`、`/ledger`、`/root` 十二个详情页。
+- 项目定位、当前状态、能力、文档、GitHub / Web 入口与相关项目。
+- 桌面 1440×900 与移动 390×844 的详情页布局。
+- 详情页紧凑页脚与返回全部项目入口。
+
+## 当前实现
+
+- Hero：返回“全部项目”、`orbitLabel`、项目名、短定位、摘要、能力标签、2–3 个动作，以及状态 / 阶段 / Web 入口摘要；右侧为项目领域展面。
+- 动作优先级：已部署项目先放 Web 入口，再放“阅读文档”和 GitHub；未部署项目只放 GitHub 与文档，不生成计划域名或禁用按钮。
+- Focus：左侧项目定位标题，右侧 01–03 关键能力。
+- Current state：当前阶段、状态与三条状态信号。
+- Explore：项目文档、GitHub、已部署 Web 入口和配套仓库的文本链接列表；不复制文档正文，不展示素材审核边界。
+- Continue：四个后续项目与“全部十二个项目”返回入口。
+- Radish 使用既有角色图与深灰玉展面；Catalyst 使用既有概念图；其余项目复用首页的代码内领域展面。
+- 长项目名在 `Radish` 前缀后使用 `<wbr>` 提供自然换行机会，避免 `RadishLedger` 被拆成无意义片段。
+- 删除 `MediaFrame`、`InfoRail`、`ProjectMark`、Page flow / Public Surface 和旧素材审核字段；详情页不再出现 `Temporary mark`、`Reviewed asset`、`Asset source`、`Usage boundary`、`Next material need`。
+- 所有详情页使用与首页一致的紧凑页脚；About / Mascot 仍用默认页脚。
 
 ## 不做
 
 - 不把兄弟项目代码或整包资源迁入 RadishX。
-- 不读取或修改兄弟项目 `.pen` 文件。
-- 不把外部产品参考截图用于官网正式页面。
-- 不把概念图描述成实机截图。
-- 不把 RadishFlow 历史 UI baseline 包装成继续公开维护或产品化承诺。
-
-## 待同步的产品事实
-
-现有页面数据已落后于兄弟产品规划。Radish 的 Web / Flutter 分工、Catalyst 的生产经营方向、Mind 内部开发者预览与 Lex 的 macOS / Linux 验收范围，统一按 [产品矩阵同步与扩展](product-matrix-refresh.md)准备更新；Flow 保持历史项目。以下仍记录尚未更新的官网实现，不作为兄弟项目当前状态。
-
-## 当前实现
-
-- Radish：已接入 README 使用过的代表图 `radish-acg-web.jpg`。
-- RadishCatalyst：已接入 demo 首屏概念视觉 `radishcatalyst-demo-first-screen-web.jpg`。
-- RadishFlow：已接入历史 UI baseline `radishflow-workbench-concept-web.jpg`，页面状态为 `Archived`。
-- RadishMind：未接入图片，使用代码内 `Evaluation loop` 表达上下文约束、工具边界、样本评测、证据链和可审计输出。
-- RadishLex：未接入图片，使用代码内 `Input pipeline` 表达拼音候选、候选重排、可解释学习和端到端加密同步；页面状态为 `Source Available`，未来域名 `lex.radishx.com`。
-- 五个项目已接入 RadishX 统一风格代码内临时标识，当前覆盖项目详情页 Hero、Public Surface 和矩阵回流卡片；历史 craft 首页 band 也曾使用；这些标识不是正式项目 Logo。
-- 每页主媒体区展示 `Asset source`、`Usage boundary` 和 `Next material need`。
-- 每页已补公开文档入口，只链接对应 GitHub 仓库 `dev` 分支中的 README / docs / wiki / status / contracts 等稳定入口，不复制文档正文。
-- 每页 Hero 下方已补轻量站内导览，链接到 `Public Surface`、`Documentation`、`Capabilities` 和 `Matrix` 四个 section。
-- 五项目正式 Logo、真实截图、视频和项目自有视觉的准入清单已拆分到 [project-visual-asset-readiness.md](project-visual-asset-readiness.md)；新候选素材出现前不替换当前临时标识或主媒体口径。
+- 不引入未审核 Logo、截图或视频。
+- 不把代码内领域展面描述为真实产品截图。
+- 不改变项目事实、路由、域名或部署配置。
+- 不重构 About、Mascot 或发布流程。
 
 ## 设计要求
 
-- 项目页比首页更克制，优先定位、状态、GitHub 和未来域名可读。
-- 主媒体区应稳定占位，图片加载前后不造成布局跳动。
-- 390px 移动端下 chip、按钮、长域名和说明文字必须换行，不允许横向滚动。
-- 站内导览在 390px 移动端必须可换行，触控目标保持可用，不遮挡 Hero 或下方正文。
-- 图像说明和素材治理文档口径保持一致。
-- 临时项目标识必须以文字 / CSS 生成，不引入未审核 Logo 图片，不替代后续正式项目 Logo。
-
-## 开发任务
-
-- 后续项目拥有稳定 Logo、真实截图或视频时，按项目单独审核并更新本文件。
-- 新候选素材先按 [项目视觉素材准入准备](project-visual-asset-readiness.md) 记录字段、来源、公开状态、替换范围和验证要求，再进入页面实现。
-- 临时项目标识已接入，后续如有正式 Logo，需先确认来源、授权、Web 版本和替换范围。
-- 如果接入视频，先确认来源、压缩策略、字幕 / 水印、移动端加载和降级图。
-- RadishMind 当前先补强代码内自有视觉；后续再评估项目自有 Logo、Console 截图或真实可视化图。
-- 已确认并接入公开文档入口：Radish 链接 `Docs/` 与快速开始，RadishCatalyst 链接 `docs/` 与 `wiki/`，RadishFlow 链接 `docs/` 与当前状态且保留 archived 口径，RadishMind 链接 `docs/` 与跨项目集成契约。
-- 已接入项目页站内导览，复用现有 hash navigation，不引入新依赖，不改变素材或发布边界。
-- 已完成 craft Phase 3：Hero 元信息、主媒体、Page flow 和临时项目标识改为去框、留白、柔投影与克制项目色点，不改页面结构、文案、路由或素材边界。
+- 项目页比首页更克制，优先定位、状态和可用入口。
+- 主展面稳定占位，图片加载前后不造成布局跳动；移动端主体不被裁切。
+- 390px 下按钮、长项目名、长仓库地址和链接说明必须换行，不允许横向滚动。
+- 相关项目保持 4 个，避免旧版十一项矩阵回流把页面拉长。
+- 内部评审语言不进入公开页面；素材治理信息保留在 `docs/`。
 
 ## 验证
 
-- `npm run build`
-- 桌面视口检查 `/radish`、`/catalyst`、`/flow`、`/mind`、`/lex`。
-- 390px 移动端检查五个项目页。
-- 检查图片实际加载、`alt` 合理、主媒体说明完整。
-- 检查 GitHub 链接、公开文档入口、未来域名状态、禁用访问入口和矩阵回流入口。
-- 检查临时项目标识不挤压标题、chip、未来域名、按钮和主媒体说明。
-- 检查站内导览点击后能滚动到对应 section，桌面与 390px 移动端均无横向溢出。
-- 本轮 Browser 检查 `/radish`、`/catalyst`、`/flow`、`/mind` 在 `1440x900` 与 `390x844` 下的 Documentation 卡片，确认每页 2 个文档入口、Public Surface 中 Docs 行、外链 `rel`、触控目标和横向溢出均符合预期。
-- 本轮 Browser 检查首页项目 band、五个项目页 Hero / Public Surface / 矩阵回流卡片在桌面默认视口与 `390x844` 下的临时项目标识，确认标识可读、无横向溢出，console 无 error。
-- 2026-07-13 Playwright 在 `1440x900` 与 `390x844` 下覆盖五条详情路由，确认每页 3 项 Hero facts、4 个 Page flow 入口、无横向溢出、无 broken image、console 无 error；另抽查跟随系统、浅色和深色三态截图。
+- `npm run type-check`、`npm run build` 通过。
+- Chrome 1440×900 与 390×844 覆盖全部十二个详情路由；另检查 Radish / Ink / Ledger / Root 的桌面、移动和深色截图。
+- 每页 3 项能力、3 条状态信号、3–5 个文档 / 仓库链接、4 个相关项目。
+- 无旧 `MediaFrame` / `InfoRail` / Page flow 块，无内部评审语言，无横向溢出，无浏览器错误。
+- 未部署项目外部项目链接为 0；Radish 与 Ink 只出现各自已部署 Web 入口。
+- 桌面详情页高度约 2,460–2,731px，移动约 3,812–3,994px。
+- 截图保存在 `output/playwright/project-r2-2026-10-17/`，不纳入提交。
+
+2026-10-17 验证结果：上述检查通过；详情页模板与首页共同完成 R2.2 本地实现，Pencil 设计源尚未回填。
 
 ## 完成标准
 
-- 五个项目页在桌面和移动端无横向溢出。
-- 每个项目的素材来源、使用边界和下一步需求清楚。
-- 每个项目的公开文档入口与项目维护状态边界清楚。
-- 每个项目详情页可通过站内导览快速跳转到状态、文档、能力和矩阵关系。
-- 临时项目标识在首页项目 band、详情页 Hero 和矩阵回流卡片中可读，且不被描述为正式 Logo。
-- 新接入素材已记录到 `docs/assets/materials.md`，并生成 Web 优化版本。
-- 没有未经审核图片进入正式页面。
+- 十二个详情页在桌面与移动端稳定展示定位、状态、能力、文档与入口。
+- 公开页面不出现计划域名、禁用访问按钮或内部素材审核字段。
+- 已部署项目与未部署项目的动作差异清楚。
+- 目标文档、当前规划和开发日志已同步。
 
 ## 后续事项
 
-- 五个项目独立稳定 Logo，确认后替换当前代码内临时标识。
-- Radish / RadishCatalyst / RadishMind 的真实产品截图或项目自有可视化图。
-- RadishCatalyst trailer 或 gameplay 视频素材审核。
-- RadishFlow archived 页面长期口径复查。
+- 下一批处理 About / Mascot 与旧首页 CSS 清理。
+- R2.2 首页 / 详情页的 Pencil 设计源在方向锁定后回填。
+- 项目自有 Logo、真实截图或视频具备来源与授权后，再替换代码内领域展面。
+
+## 历史说明
+
+本文件此前的五项目详情页、Page flow、Public Surface、素材审核字段和临时项目标识属于 R2.1 及更早实现；相关组件已在 R2.2 中删除，历史事实保留在开发日志。
