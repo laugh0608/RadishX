@@ -94,6 +94,8 @@ for (const url of [
   "https://radishx.com/memory",
   "https://radishx.com/nexus",
   "https://radishx.com/ink",
+  "https://radishx.com/ledger",
+  "https://radishx.com/root",
   "https://radishx.com/mascot",
   "https://radishx.com/about",
 ]) {

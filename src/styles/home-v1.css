@@ -1593,9 +1593,15 @@
 .home-project-card--link,
 .home-project-card--memory,
 .home-project-card--nexus,
-.home-project-card--ink {
+.home-project-card--ink,
+.home-project-card--ledger {
   grid-column: span 6;
   min-height: 360px;
+}
+
+.home-project-card--root {
+  grid-column: span 12;
+  min-height: 300px;
 }
 
 .home-product-overview {
@@ -1633,7 +1639,9 @@
   .home-project-card--link,
   .home-project-card--memory,
   .home-project-card--nexus,
-  .home-project-card--ink {
+  .home-project-card--ink,
+  .home-project-card--ledger,
+  .home-project-card--root {
     grid-column: 1 / -1;
   }
 

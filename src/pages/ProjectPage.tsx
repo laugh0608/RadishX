@@ -42,8 +42,8 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
       value: project.path,
     },
     {
-      label: project.domain?.status === "deployed" ? "已部署入口" : "暂定域名",
-      value: project.domain?.name ?? "尚未登记",
+      label: "Web 入口",
+      value: project.domain?.name ?? "暂无公开站点",
     },
     {
       label: "Repository",
@@ -57,10 +57,10 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
       note: "RadishX 官网站内介绍页",
     },
     {
-      label: project.domain?.status === "deployed" ? "已部署入口" : "暂定域名",
-      value: project.domain?.name ?? "尚未登记",
-      href: project.domain?.status === "deployed" ? `https://${project.domain.name}` : undefined,
-      note: project.domain?.status === "deployed" ? "已部署，可访问" : project.domain ? "暂定域名，尚未部署" : "未部署，域名尚未登记",
+      label: "Web 入口",
+      value: project.domain?.name ?? "暂无公开站点",
+      href: project.domain ? `https://${project.domain.name}` : undefined,
+      note: project.domain ? "已部署，可访问" : "尚未部署，暂不提供访问入口",
     },
     {
       label: "GitHub",
@@ -111,29 +111,18 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
               ))}
             </dl>
             <div className="project-hero__actions">
-              {project.links.map((link) =>
-                link.isDisabled ? (
-                  <span
-                    key={link.label}
-                    className="button button--disabled"
-                    aria-disabled="true"
-                    aria-label={`${project.name} ${link.label}：${link.note}`}
-                  >
-                    {link.label} · {link.note}
-                  </span>
-                ) : (
-                  <a
-                    key={link.label}
-                    className="button button--primary"
-                    href={link.href}
-                    target={link.isExternal ? "_blank" : undefined}
-                    rel={link.isExternal ? "noopener noreferrer" : undefined}
-                    aria-label={`${project.name} ${link.label}`}
-                  >
-                    {link.label}
-                  </a>
-                ),
-              )}
+              {project.links.map((link) => (
+                <a
+                  key={link.label}
+                  className="button button--primary"
+                  href={link.href}
+                  target={link.isExternal ? "_blank" : undefined}
+                  rel={link.isExternal ? "noopener noreferrer" : undefined}
+                  aria-label={`${project.name} ${link.label}`}
+                >
+                  {link.label}
+                </a>
+              ))}
             </div>
           </div>
           <MediaFrame project={project} showVisual />
@@ -173,7 +162,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
           <SectionHeader
             eyebrow="Public Surface"
             title="项目状态与访问入口"
-            description="项目页展示站内路径、GitHub 仓库、项目独立域名和上线状态；未稳定的演示站或下载页不会伪装成可访问入口。"
+            description="项目页展示站内路径、GitHub 仓库、已部署的项目 Web 入口和当前状态；未部署的项目不展示外部访问链接。"
           />
           <InfoRail items={projectInfo} tone="dark" />
         </div>
@@ -201,7 +190,7 @@ export function ProjectPage({ projectId }: ProjectPageProps) {
           <SectionHeader
             eyebrow="Capabilities"
             title="当前展示重点"
-            description="详情页模板优先让定位、状态、GitHub、域名状态和项目关系保持可扫读。"
+            description="详情页模板优先让定位、状态、GitHub、Web 入口和项目关系保持可扫读。"
           />
           <div className="split-list">
             <div>

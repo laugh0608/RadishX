@@ -133,7 +133,7 @@ export function AboutPage() {
           <SectionHeader
             eyebrow="Deployment"
             title="域名和部署边界"
-            description="radishx.com 承载官网；Radish 与 RadishInk 已独立部署，其他项目域名暂定且尚未部署。"
+            description="radishx.com 承载官网；当前只展示 Radish 与 RadishInk 两个已部署的项目 Web 入口，其他项目暂不提供外部访问链接。"
           />
           <div className="domain-grid">
             {domainSurfaces.map((surface) => (

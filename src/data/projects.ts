@@ -6,8 +6,6 @@ export type ProjectLink = {
   label: string;
   href: string;
   isExternal?: boolean;
-  isDisabled?: boolean;
-  note?: string;
 };
 
 export type ProjectMark = {
@@ -69,7 +67,6 @@ export type Project = {
   path: string;
   domain?: {
     name: string;
-    status: "deployed" | "planned";
   };
   githubUrl: string;
   mark: ProjectMark;
@@ -96,7 +93,7 @@ export const projects: Project[] = [
     name: "Radish",
     shortName: "Hub",
     path: "/radish",
-    domain: { name: "hub.radishx.com", status: "deployed" },
+    domain: { name: "hub.radishx.com" },
     githubUrl: "https://github.com/laugh0608/Radish",
     mark: {
       monogram: "R",
@@ -161,7 +158,6 @@ export const projects: Project[] = [
     name: "RadishCatalyst",
     shortName: "Catalyst",
     path: "/catalyst",
-    domain: { name: "forge.radishx.com", status: "planned" },
     githubUrl: "https://github.com/laugh0608/RadishCatalyst",
     mark: {
       monogram: "C",
@@ -213,13 +209,6 @@ export const projects: Project[] = [
         href: "https://github.com/laugh0608/RadishCatalyst",
         isExternal: true,
       },
-      {
-        label: "访问项目",
-        href: "https://forge.radishx.com",
-        isExternal: true,
-        isDisabled: true,
-        note: "暂定域名 · 未部署",
-      },
     ],
   },
   {
@@ -228,7 +217,6 @@ export const projects: Project[] = [
     name: "RadishFlow",
     shortName: "Flow",
     path: "/flow",
-    domain: { name: "flow.radishx.com", status: "planned" },
     githubUrl: "https://github.com/laugh0608/RadishFlow",
     mark: {
       monogram: "F",
@@ -280,13 +268,6 @@ export const projects: Project[] = [
         href: "https://github.com/laugh0608/RadishFlow",
         isExternal: true,
       },
-      {
-        label: "访问项目",
-        href: "https://flow.radishx.com",
-        isExternal: true,
-        isDisabled: true,
-        note: "暂定域名 · 未部署",
-      },
     ],
   },
   {
@@ -295,7 +276,6 @@ export const projects: Project[] = [
     name: "RadishMind",
     shortName: "Mind",
     path: "/mind",
-    domain: { name: "mind.radishx.com", status: "planned" },
     githubUrl: "https://github.com/laugh0608/RadishMind",
     mark: {
       monogram: "M",
@@ -376,13 +356,6 @@ export const projects: Project[] = [
         href: "https://github.com/laugh0608/RadishMind",
         isExternal: true,
       },
-      {
-        label: "访问项目",
-        href: "https://mind.radishx.com",
-        isExternal: true,
-        isDisabled: true,
-        note: "暂定域名 · 未部署",
-      },
     ],
   },
   {
@@ -391,7 +364,6 @@ export const projects: Project[] = [
     name: "RadishLex",
     shortName: "Lex",
     path: "/lex",
-    domain: { name: "lex.radishx.com", status: "planned" },
     githubUrl: "https://github.com/laugh0608/RadishLex",
     mark: {
       monogram: "L",
@@ -451,13 +423,6 @@ export const projects: Project[] = [
         label: "GitHub",
         href: "https://github.com/laugh0608/RadishLex",
         isExternal: true,
-      },
-      {
-        label: "访问项目",
-        href: "https://lex.radishx.com",
-        isExternal: true,
-        isDisabled: true,
-        note: "暂定域名 · 未部署",
       },
     ],
   },
@@ -722,7 +687,7 @@ export const projects: Project[] = [
     name: "RadishInk",
     shortName: "Ink",
     path: "/ink",
-    domain: { name: "ink.radishx.com", status: "deployed" },
+    domain: { name: "ink.radishx.com" },
     githubUrl: "https://github.com/laugh0608/RadishInk",
     mark: {
       monogram: "I",
@@ -767,6 +732,116 @@ export const projects: Project[] = [
       {
         label: "GitHub",
         href: "https://github.com/laugh0608/RadishInk",
+        isExternal: true,
+      },
+    ],
+  },
+  {
+    id: "ledger",
+    tone: "ledger",
+    name: "RadishLedger",
+    shortName: "Ledger",
+    path: "/ledger",
+    githubUrl: "https://github.com/laugh0608/RadishLedger",
+    mark: {
+      monogram: "L",
+      wordmark: "Ledger",
+      label: "Temporary mark",
+      note: "RadishX 代码内临时标识，不是 RadishLedger 正式 Logo。",
+    },
+    tagline: "本地优先、端到端加密的私人账簿",
+    summary: "RadishLedger（萝卜账簿）面向个人日常记账，以 Android 与 iOS 客户端连接本机账簿、官方服务或自部署后端；账务规则、加密本地库和同步由 Rust 核心承担，同步内容端到端加密。",
+    orbitLabel: "个人账务与加密同步",
+    role: "Radish 家族的本地优先私人记账应用",
+    stage: "M0 移动核心与加密恢复验证",
+    status: "In Development",
+    chips: ["Local-first", "E2EE Sync", "Self-hosting"],
+    capabilities: ["本地优先的日常记账", "端到端加密同步与归档恢复规划", "官方服务与自部署后端切换方案"],
+    signals: ["Rust 账务核心与两端模拟器已取得合成验证证据", "Android / iOS 正式客户端与同步服务尚未发布", "尚未提供可使用的公开账簿、服务端点或下载入口"],
+    assetReview: {
+      source: "项目 README 与当前状态文字定位；未使用项目截图或 Logo。",
+      boundary: "不代表产品截图、正式 Logo 或已发布能力。",
+      nextNeed: "后续审核项目自有 Logo 与真实客户端截图。",
+    },
+    documentation: [
+      {
+        label: "Docs index",
+        href: "https://github.com/laugh0608/RadishLedger/tree/dev/docs",
+        description: "产品范围、架构、账务模型、同步、隐私与自部署文档入口。",
+        boundary: "文档描述目标与验证范围，不代表移动客户端、同步服务或公开 MVP 已交付。",
+      },
+      {
+        label: "MVP roadmap",
+        href: "https://github.com/laugh0608/RadishLedger/blob/dev/docs/mvp-roadmap.md",
+        description: "M0–M5 里程碑、验收编号与第一版 MVP 边界。",
+        boundary: "规划中的里程碑不等于已经取得对应阶段的运行或发布结论。",
+      },
+      {
+        label: "Current status",
+        href: "https://github.com/laugh0608/RadishLedger/blob/dev/docs/status/current.md",
+        description: "M0 移动核心、加密恢复验证、已完成证据与当前停止线。",
+        boundary: "合成实验与模拟器证据不等同于真机验收、正式发布或可用账簿。",
+      },
+    ],
+    links: [
+      {
+        label: "GitHub",
+        href: "https://github.com/laugh0608/RadishLedger",
+        isExternal: true,
+      },
+    ],
+  },
+  {
+    id: "root",
+    tone: "root",
+    name: "RadishRoot",
+    shortName: "Root",
+    path: "/root",
+    githubUrl: "https://github.com/laugh0608/RadishRoot",
+    mark: {
+      monogram: "R",
+      wordmark: "Root",
+      label: "Temporary mark",
+      note: "RadishX 代码内临时标识，不是 RadishRoot 正式 Logo。",
+    },
+    tagline: "可解释操作与结构化交互的 Rust 实验操作系统",
+    summary: "RadishRoot（萝卜根系）从固定 QEMU x86_64 虚拟机起步，以可解释操作和结构化交互为核心，规划共享真实文件服务的文件管理器、结构化终端与操作详情，让资源状态、执行阶段和错误原因都能被查看。",
+    orbitLabel: "系统与可解释操作",
+    role: "Rust 实验操作系统与可解释工作台",
+    stage: "T01 环境准备，尚未建立可编译工作区",
+    status: "Research",
+    chips: ["Rust", "Operating System", "QEMU"],
+    capabilities: ["固定 QEMU x86_64 启动目标", "文件管理器与结构化终端规划", "可解释操作记录与错误说明方向"],
+    signals: ["产品规划与仓库治理基线已建立", "T01 环境准备进行中，尚无 Cargo 工程或内核", "当前不能启动系统，也没有产品镜像或运行入口"],
+    assetReview: {
+      source: "项目 README 与当前状态文字定位；未使用项目截图或 Logo。",
+      boundary: "不代表产品截图、正式 Logo 或已发布能力。",
+      nextNeed: "后续审核项目自有 Logo 与真实工作台截图。",
+    },
+    documentation: [
+      {
+        label: "Docs index",
+        href: "https://github.com/laugh0608/RadishRoot/tree/dev/docs",
+        description: "产品规划、MVP、开发规范、治理与环境文档入口。",
+        boundary: "文档中的 M0–M5 目标不代表已经实现或通过对应验收。",
+      },
+      {
+        label: "Product plan",
+        href: "https://github.com/laugh0608/RadishRoot/blob/dev/docs/product-plan.md",
+        description: "产品定位、长期演进、家族关系与成功标准。",
+        boundary: "规划边界不等于已有内核、产品镜像或可运行系统。",
+      },
+      {
+        label: "Current status",
+        href: "https://github.com/laugh0608/RadishRoot/blob/dev/docs/status/current.md",
+        description: "T01 环境准备、验证证据与当前停止线。",
+        boundary: "工具与治理证据不等同于系统启动、业务验收或可安装产品。",
+      },
+    ],
+    links: [
+      {
+        label: "GitHub",
+        href: "https://github.com/laugh0608/RadishRoot",
         isExternal: true,
       },
     ],
