@@ -1,7 +1,19 @@
 # Radish 产品矩阵同步与扩展规划
 
-状态：十产品与已部署入口本地实现完成；构建、静态、HTTP 与双端浏览器检查通过
-最后更新：2026-10-06
+状态：十二产品与已部署入口本地实现完成；构建、静态、HTTP 与双端浏览器检查通过
+最后更新：2026-10-17
+
+## 2026-10-17 RadishLedger、RadishRoot 与公开链接收敛
+
+所有者要求查看 `/Users/luobo/Code` 下 Radish 家族项目，补充最近新增的两个项目，并删除未部署项目的网页链接，只保留已部署的 `hub.radishx.com` 与 `ink.radishx.com`，避免把暂定入口误解为已上线。
+
+本次将 RadishLedger（萝卜账簿）与 RadishRoot（萝卜根系）作为第十一、十二个产品接入首页切换、矩阵、`/ledger` 与 `/root` 详情、导航、页脚、About 仓库列表、metadata、sitemap 和验证清单。RadishLedger 定位为本地优先、端到端加密的私人记账应用，当前处于 M0 移动核心与加密恢复验证；RadishRoot 定位为可解释操作与结构化交互的 Rust 实验操作系统，当前处于 T01 环境准备。两者只使用项目文字定位与代码内临时标识，不引入截图、Logo 或外部素材。
+
+公开链接同步收敛：删除 Catalyst / Flow / Mind / Lex 的暂定域名与禁用访问按钮，项目数据只保留 Radish 与 RadishInk 两个已确认部署的域名；详情页、About 域名区和 README 不再列出未部署域名，未部署项目仅提供 GitHub 与文档入口。未修改项目独立子域、Vercel 配置或 DNS。
+
+来源：只读检查 `/Users/luobo/Code/RadishLedger` 与 `/Users/luobo/Code/RadishRoot` 的 `README.md`、`docs/status/current.md`，并核对 Ledger 的 `docs/mvp-roadmap.md` 与 Root 的 `docs/product-plan.md`。两个仓库 `dev` 分支工作区在读取时干净，本地 HEAD 分别为 `c2fe548` 与 `ee6bcff`；文档证据不等于本轮产品或线上验收。
+
+验证：`npm run check:local-release`（含类型检查和构建）、`npm run check:agent-guides`、本地 HTTP smoke（16 个路径、29 项公开图片）、文档链接与差异检查通过。经授权临时启动本地预览服务后，Chrome 在 1440×900 和 390×844 下检查首页、`/ledger`、`/root`、`/radish`、`/ink`、About 及全部未部署产品页：十二张卡片、十二项切换、末项 Root 选中与返回首项均正常；首页无横向溢出或浏览器错误；`/radish` 与 `/ink` 分别只出现 `hub.radishx.com` 和 `ink.radishx.com` 两个 Web 入口，其余产品页没有外部项目链接、禁用按钮或“暂定域名”文案；About 域名区只有 4 项（canonical、www、Radish、Ink）。截图在 `output/playwright/radish-family-2026-10-17/`；验证阶段未执行线上产品验收、推送或部署。
 
 ## 2026-10-06 RadishInk 与部署入口同步
 

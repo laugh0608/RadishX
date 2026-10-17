@@ -4,13 +4,13 @@
 
 ## 当前官网部署
 
-本 Vercel 项目仅承载 RadishX 官网。2026-10-06 所有者确认 Radish 与 RadishInk 已独立部署；项目子域不属于本官网的路由或重写规则。
+本 Vercel 项目仅承载 RadishX 官网。2026-10-06 所有者确认 Radish 与 RadishInk 已独立部署；2026-10-17 所有者要求官网移除未部署项目的网页链接，仅保留这两个已部署入口。项目子域不属于本官网的路由或重写规则。
 
 - GitHub 仓库：`https://github.com/laugh0608/RadishX`
 - Vercel 项目：历史记录为已创建，实际项目名与当前部署提交以获准核验后的 Vercel 记录为准
 - Canonical 主域名：`radishx.com`
 - 兼容访问入口：`https://www.radishx.com/`，跳转到 `https://radishx.com/`
-- 站点内容：首页、十个产品介绍页、Mascot、About
+- 站点内容：首页、十二个产品介绍页、Mascot、About
 
 ## 项目独立域名
 
@@ -19,14 +19,7 @@
 - `hub.radishx.com`：Radish
 - `ink.radishx.com`：RadishInk，主要以 Web 方式提供服务
 
-暂定域名，尚未部署：
-
-- `forge.radishx.com`：RadishCatalyst
-- `flow.radishx.com`：RadishFlow
-- `mind.radishx.com`：RadishMind
-- `lex.radishx.com`：RadishLex
-
-官网开放 Radish 和 RadishInk 的访问按钮；其余已登记域名展示“暂定 · 未部署”并禁用访问按钮。未登记项目不推导域名。部署状态依据所有者确认及 RadishInk 本地部署文档，本次不代表重新执行了线上可用性验收。
+官网只登记和展示上述两个已部署入口，开放对应项目的访问按钮。其他项目暂不登记、不推导、不展示暂定域名、禁用按钮或“即将上线”暗示；只保留 GitHub 与项目文档入口。部署状态依据所有者确认及 RadishInk 本地部署文档，本次不代表重新执行了线上可用性验收。
 
 ## 第一版部署配置
 
@@ -63,7 +56,7 @@
 当前公开静态文件：
 
 - `public/robots.txt`：允许抓取当前官网，并声明 `https://radishx.com/sitemap.xml`。
-- `public/sitemap.xml`：只列出当前官网站内页面：`/`、十个产品介绍页、`/mascot` 和 `/about`。
+- `public/sitemap.xml`：只列出当前官网站内页面：`/`、十二个产品介绍页、`/mascot` 和 `/about`。
 - `public/images/social/radishx-og-image.png`：1200x630 Open Graph / Twitter 分享预览图，metadata 中使用 `https://radishx.com/images/social/radishx-og-image.png`。
 
 项目独立子域名不写入当前官网 sitemap，等对应项目独立部署后由各自站点维护。

@@ -124,6 +124,8 @@ public/
 - `/memory`
 - `/nexus`
 - `/ink`
+- `/ledger`
+- `/root`
 - `/mascot`
 - `/about`
 
@@ -133,7 +135,7 @@ public/
 
 禁止：
 
-- 不把 `hub.radishx.com`、`ink.radishx.com`、`forge.radishx.com`、`flow.radishx.com`、`mind.radishx.com`、`lex.radishx.com` 配成本官网 Vercel 路由。
+- 不把 `hub.radishx.com`、`ink.radishx.com` 或其他项目独立子域配成本官网 Vercel 路由。
 - 不在官网里实现家族产品的实际业务功能。
 
 ## 样式规则
@@ -226,8 +228,8 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 
 - 首页无明显错位。
 - 导航可用。
-- 十个产品页入口可访问。
-- 项目详情页的 GitHub / 文档入口与未开放、暂停维护等真实状态清楚。
+- 十二个产品页入口可访问。
+- 项目详情页的 GitHub / 文档入口、已部署 Web 入口与未部署状态清楚。
 - Mascot 页图片不变形、不遮挡正文。
 - About 页二维码和联系方式可读。
 - 移动端无横向滚动、文字溢出或按钮挤压。

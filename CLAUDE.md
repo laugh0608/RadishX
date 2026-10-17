@@ -55,7 +55,7 @@
 
 - RadishX 是 Radish 系列项目的官网与统一入口，使用 Vite、React、TypeScript 构建静态多页面站点，并通过 GitHub 与 Vercel 交付。
 - `radishx.com` 是 canonical 主域，`www.radishx.com` 是兼容跳转入口；未来项目子域不属于本官网路由或 rewrite。
-- 官网负责项目矩阵、项目介绍、Mascot 与 About 等展示内容，不承载五个项目的实际业务、登录、后台、数据库或服务端 API。
+- 官网负责项目矩阵、项目介绍、Mascot 与 About 等展示内容，不承载各 Radish 项目的实际业务、登录、后台、数据库或服务端 API。
 - PC 与移动端都是一等目标；涉及页面、布局或视觉的首版实现必须同时考虑响应式与可访问性。
 - 官网视觉继承 `docs/design/family-ui/` 的 Brand 展示面规则，具体风格、token 和素材边界按视觉与素材专题执行。
 
