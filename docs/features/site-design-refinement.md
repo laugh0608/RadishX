@@ -1,6 +1,6 @@
 # 官网整体设计与美化
 
-状态：R2.2 首页、详情页、About、Mascot 与共享层完成，所有者已确认四页双端截图；表情裁切与 Pencil 回填下一步
+状态：R2.2 首页、详情页、About、Mascot 与共享层完成，所有者已确认四页双端截图；单张表情已重裁复核，Pencil 回填下一步
 最后更新：2026-10-17
 
 ## 2026-10-17 R2.2 首页重构（React-first）
@@ -68,7 +68,15 @@ Mascot 结构：深灰玉 Hero（三形态标签、透明完全体立绘、无�
 
 验证：`npm run check:local-release`、`npm run check:http-smoke -- --base-url http://127.0.0.1:4500` 与 `npm run check:agent-guides` 通过；Chrome 1440×900 与 390×844 覆盖 `/`、`/about`、`/mascot`、`/radish` 的亮 / 暗主题：无横向溢出、broken image、console error 或小于 44px 的链接触控目标；About 为 4 个联系入口、14 个仓库、4 个域名；Mascot 为 3 形态、7 Gallery、10 表情、4 组边界；公开文本不含内部评审与部署语言。页面高度：首页约 3,987 / 6,647px，详情 Radish 约 2,534 / 3,818px，About 约 3,355 / 5,357px，Mascot 约 4,940 / 10,020px。截图在 `output/playwright/site-r2-2026-10-17/`。
 
-遗留：R2.2 Pencil 设计源仍未回填；首批 10 张单张表情 Web 图存在既有裁切偏移，本轮未改素材，需单独授权后重新生成。线上版本未核验。
+遗留：R2.2 Pencil 设计源仍未回填；首批单张表情重裁已完成。线上版本未核验。
+
+## 2026-10-17 Mascot 单张表情重裁
+
+所有者确认四页截图后，单独授权重裁首批 10 张单张表情 Web 图。本轮只替换 `public/images/mascot/expressions/` 下的公开 Web 图，未改 `assets/` 原图，也未开放下载或改变授权范围。
+
+实现：比对源表情格 `radish-child-expression-sheet-grid.png` 的实际卡片边界，发现原生成图使用整格 `256x256` 框但网格存在轻微不规则，导致部分候选带入相邻行标签、`happy` 比例异常。改为逐张检测卡片边框，按实际卡片框裁切并留 4px 边距，缩放到 238px 内后居中放入 `256x256` 白底画布。
+
+验证：10 张候选逐张复核，格位、比例、中文标签与主体完整，无相邻行标签；`/mascot` 在 1440×900 与 390×844、亮 / 暗主题下 22 张图片全部解码，页面高度、无溢出、无 broken image、无 console error 与重裁前一致。旧公开图备份在 `output/expression-crop-2026-10-17/backup/`，新图在 `output/expression-crop-2026-10-17/candidates-v2/` 留档。
 
 ## 目标与授权
 
@@ -138,7 +146,7 @@ Mascot 结构：深灰玉 Hero（三形态标签、透明完全体立绘、无�
 
 ## 后续批次
 
-1. R2.2 首页、详情页、About、Mascot 与共享层已完成 React-first 实现和双端验证；等待所有者查看截图并确认下一批范围。
+1. R2.2 首页、详情页、About、Mascot 与共享层已完成 React-first 实现和双端验证；所有者已确认四页截图，单张表情重裁已完成。
 2. 评估 R2.2 Pencil 设计源回填；`.pen` 只能通过 Pencil 读写，当前环境未执行。
-3. 单张表情 Web 图裁切偏移需单独确认素材授权与重新生成范围。
+3. 如所有者希望发布，单独授权推送、部署并核验线上页面与 `www` 跳转。
 4. 继续核实公开访问地址、修正既有质量问题，再评估 SEO 静态输出与验证入口。

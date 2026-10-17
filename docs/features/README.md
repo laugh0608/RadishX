@@ -27,7 +27,7 @@
 | [home-hero-visual.md](home-hero-visual.md) | 首页首屏、项目内容舞台和主视觉 | 灰玉项目舞台已实现并通过双端复核，OG 暂不替换 |
 | [project-detail-pages.md](project-detail-pages.md) | 十二个项目详情页内容、视觉、公开文档入口和公开素材边界 | R2.2 编辑式详情模板完成，十二页双端复核通过；Pencil 源待回填 |
 | [project-visual-asset-readiness.md](project-visual-asset-readiness.md) | 五个项目正式 Logo、截图、视频和自有视觉准入准备 | 既有准入保留，新增候选类型已规划；具体文件仍待审核 |
-| [mascot-page.md](mascot-page.md) | Mascot 虚拟形象页、三形态和 Gallery | R2.2 编辑式重构完成；三形态、7 张 Gallery、10 张表情候选与 4 组使用边界；单张表情裁切待单独复核 |
+| [mascot-page.md](mascot-page.md) | Mascot 虚拟形象页、三形态和 Gallery | R2.2 编辑式重构完成；三形态、7 张 Gallery、10 张表情候选与 4 组使用边界；单张表情已重裁复核 |
 | [about-contact-surface.md](about-contact-surface.md) | About 联系区、仓库入口和域名边界 | R2.2 编辑式重构完成；4 个联系入口、二维码、14 个仓库与 4 项域名边界 |
 | [asset-governance.md](asset-governance.md) | 素材审核、Web 优化和 `public/images` 准入 | Mascot 首批单张表情 Web 展示图已接入，下载、素材包和外部分发继续关闭 |
 | [visual-qa-and-release.md](visual-qa-and-release.md) | 本地 / 线上视觉 QA、构建和发布检查 | craft Phase 5 本地 54 组合终验、9 路由 HTTP smoke 与既有线上发布检查已完成 |

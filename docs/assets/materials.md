@@ -92,7 +92,7 @@
 | Mascot 原始形象 | `assets/avatars/origin/radish-origin-icon.jpg` | 已确认 | 适合用作原始形象图标、小印章或形态起点。Web 版本：`public/images/mascot/radish-origin-icon-web.jpg`。 |
 | Mascot Gallery | `assets/avatars/child/radish-child-outfit-variants.png` | 已确认 | 适合服装变体展示，不建议做首页首屏。Web 版本：`public/images/mascot/radish-child-outfit-variants-web.jpg`。 |
 | Mascot Gallery | `assets/avatars/child/radish-child-expression-sheet-grid.png` | 已确认 | 适合表情 Gallery，整图预览继续保留来源与审核边界。Web 版本：`public/images/mascot/radish-child-expression-sheet-grid-web.jpg`。 |
-| Mascot 单张表情候选 | `assets/avatars/child/radish-child-expression-sheet-grid.png` | 已确认 | 首批 10 张基础表情已按原图整格 `256x256` 生成 Web 展示图，只用于 `/mascot` 官网内部候选预览，不提供下载入口。Web 版本：`public/images/mascot/expressions/radish-child-expression-*-web.jpg`。 |
+| Mascot 单张表情候选 | `assets/avatars/child/radish-child-expression-sheet-grid.png` | 已确认 | 2026-10-17 按源表情格实际卡片边界重裁首批 10 张 `256x256` Web 展示图，只用于 `/mascot` 站内候选预览，不提供下载入口。Web 版本：`public/images/mascot/expressions/radish-child-expression-*-web.jpg`。 |
 | Mascot Gallery | `assets/avatars/child/radish-child-sticker-sheet-wide-01.png` 至 `04.png` | 已确认 | 适合表情包横图 Gallery，当前只作为整图预览接入，不拆分单张，不提供下载入口。Web 版本：`public/images/mascot/radish-child-sticker-sheet-wide-01-web.jpg` 至 `04-web.jpg`。 |
 | Mascot Gallery | `assets/avatars/mature/radish-mature-sticker-sheet-wide.png` | 已确认 | 适合虚拟形象完全体表情 Gallery。Web 版本：`public/images/mascot/radish-mature-sticker-sheet-wide-web.jpg`。 |
 | 参考素材 | `assets/avatars/mature/radish-mature-cosplay-board.png` | 暂不建议正式使用 | 三次元风格参考图，和当前官网长期视觉口径不完全一致。 |
@@ -165,7 +165,7 @@
 
 2026-06-18 在项目所有者允许后，使用上述整格框生成首批 10 张 `256x256` JPEG Web 展示图，路径为 `public/images/mascot/expressions/radish-child-expression-*-web.jpg`，并接入 `/mascot` 单张候选预览区。当前状态为 `internal-preview`：只代表官网内部展示候选，不提供下载、素材包、社交贴纸包、商用复用或外部分发授权。
 
-2026-10-17 页面重构复核发现：现有首批 10 张 Web 图并未完全对应上述整格框。`happy` 的图像比例与其余候选不一致，多张候选顶部带有相邻行标签；`angry` 与 `surprised` 相对完整。本轮未修改或重新裁切任何公开文件，也没有据此改写授权范围；需要单独确认裁切框、目标格位和重新生成范围后才能替换。
+2026-10-17 页面重构复核发现现有首批 10 张 Web 图并未完全对应上述整格框：`happy` 的图像比例与其余候选不一致，多张候选顶部带有相邻行标签；`angry` 与 `surprised` 相对完整。同日经所有者授权，改为按源表情格的实际卡片边界逐张裁切，缩放到 238px 内并居中放入 `256x256` 白底画布；10 张候选逐张复核后替换公开 Web 图。原图与 `assets/` 未改，旧公开图备份在 `output/expression-crop-2026-10-17/backup/`，授权范围仍为站内展示候选，不提供下载、素材包或外部分发。
 
 | id | 来源格位 | 标签 | emotion | slug | 当前状态 | Web 路径 | 使用场景 | 审核备注 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
