@@ -4,7 +4,7 @@ export const githubOrganizationUrl = "https://github.com/laugh0608";
 export const radishXRepositoryUrl = "https://github.com/laugh0608/RadishX";
 
 export const mainNavigation = [
-  { label: "Projects", href: "/#projects" },
+  { label: "Projects", href: "/#collection" },
   { label: "Mascot", href: "/mascot" },
   { label: "About", href: "/about" },
   { label: "GitHub", href: radishXRepositoryUrl, isExternal: true },

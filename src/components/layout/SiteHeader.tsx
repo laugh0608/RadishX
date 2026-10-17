@@ -16,8 +16,8 @@ type SiteHeaderProps = {
 function isActive(currentPath: string, currentHash: string, href: string) {
   const path = href.split("#")[0];
 
-  if (href === "/#projects") {
-    return currentHash === "#projects" || projects.some((project) => project.path === currentPath);
+  if (href === "/#collection") {
+    return currentPath === "/" || currentHash === "#collection" || projects.some((project) => project.path === currentPath);
   }
 
   return path === currentPath;

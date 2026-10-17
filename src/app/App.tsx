@@ -108,7 +108,7 @@ export function App() {
       <main id="main-content" ref={mainRef} tabIndex={-1}>
         {page}
       </main>
-      <SiteFooter />
+      <SiteFooter compact={route.kind === "home"} />
     </div>
   );
 }

@@ -589,8 +589,8 @@ p {
   padding: 96px var(--rx-space-page-x);
 }
 
+#collection,
 #projects,
-#mascot-entry,
 #status,
 #documentation,
 #capabilities,
