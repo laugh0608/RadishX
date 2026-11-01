@@ -7,7 +7,7 @@
 本 Vercel 项目仅承载 RadishX 官网。2026-10-06 所有者确认 Radish 与 RadishInk 已独立部署；2026-10-17 所有者要求官网移除未部署项目的网页链接，仅保留这两个已部署入口。项目子域不属于本官网的路由或重写规则。
 
 - GitHub 仓库：`https://github.com/laugh0608/RadishX`
-- Vercel 项目：历史记录为已创建，实际项目名与当前部署提交以获准核验后的 Vercel 记录为准
+- Vercel 项目：`laugh0608's projects`（Hobby）下的 `radishx`；2026-11-01 控制台显示 `9a0fbee` 为 Ready 的生产部署，域名端到端访问尚未通过本轮核验
 - Canonical 主域名：`radishx.com`
 - 兼容访问入口：`https://www.radishx.com/`，跳转到 `https://radishx.com/`
 - 站点内容：首页、十三个产品介绍页、Mascot、About
@@ -81,7 +81,9 @@
 
 ## 2026-11-01 迁入组织评估（未执行）
 
-建议目标为 `RadishIntelligence/RadishX`，继续使用 RadishX 官网名、`radishx.com` 主域与现有 Vercel 项目。GitHub 仓库所有者、仓库名、Vercel 项目归属和域名是分别管理的对象；移动 GitHub 仓库不要求同时重命名或另建 Vercel 项目。展示品牌统一为「萝卜智能 · Radish Intelligence」，不把暂定公司全名当作已成立公司。
+**最终决定：2026-11-01 所有者确认不迁移。** GitHub 保留 `laugh0608/RadishX`，Vercel 保留 `laugh0608's projects` 下的 `radishx`，现有 Git 连接、域名和 DNS 继续沿用。迁移事项关闭，不再作为待办；下方保留当时的评估与核查事实，仅供历史参考，不代表执行计划或授权。
+
+评估时的候选目标为 `RadishIntelligence/RadishX`，继续使用 RadishX 官网名、`radishx.com` 主域与现有 Vercel 项目。GitHub 仓库所有者、仓库名、Vercel 项目归属和域名是分别管理的对象；移动 GitHub 仓库不要求同时重命名或另建 Vercel 项目。展示品牌统一为「萝卜智能 · Radish Intelligence」，不把暂定公司全名当作已成立公司。
 
 命名选择：
 
@@ -92,9 +94,43 @@
 | `RadishIntelligence/radishintelligence.github.io` | 只有确实采用组织 GitHub Pages 用户站点时才有命名意义；目前使用 Vercel，无需这样命名 |
 | 组织展示仓库 `.github` | 保持 `.github` 和 `profile/README.md`；本地目录名不影响展示 |
 
-GitHub API 只读核验：`laugh0608/RadishX` 当前公开、默认分支为 `master`；组织展示仓库为公开的 `RadishIntelligence/.github`。本地没有 `.vercel/project.json`，本轮未读取 Vercel 控制台，当前套餐、项目 ID / 归属、Git App 权限和生产分支仍待核验，不能承诺迁移后自动部署无需调整。
+GitHub API 只读核验：`laugh0608/RadishX` 当前公开、默认分支为 `master`，未启用 GitHub Pages；当前用户拥有仓库 admin 权限及目标组织 admin 身份，目标组织没有同名仓库。组织展示仓库为公开的 `RadishIntelligence/.github`。组织 installations 接口返回 0，尚未安装 Vercel GitHub App；迁移前需完成目标组织的 App 授权及目标仓库访问配置。本地没有 `.vercel/project.json`。
+
+### 控制台核查快照
+
+2026-11-01 按所有者要求只读检查实际 Vercel 控制台：
+
+| 项目 | 核查结果 |
+| --- | --- |
+| 归属 / 套餐 | `laugh0608's projects` / Hobby |
+| 项目名 / ID | `radishx` / `prj_RpGTaPN1vt9kKQ5R1yE3fpDHwvN7` |
+| Git 连接 / 生产分支 | `laugh0608/RadishX` / `master`；自动分配生产域名开启 |
+| 当前生产部署 | 控制台显示提交 `9a0fbee`、Ready；不等于域名端到端验收通过 |
+| 构建 | Framework 为 Vite；Build / Output / Install 未启用 override，Output 默认 `dist`；Root Directory 为空；Node.js `24.x` |
+| 环境变量 / Hook | Production 的 Project 变量列表为空；Shared 与其他环境未完整核验；没有 Deploy Hooks |
+| 生产域名 | `radishx.com`、`radishx.vercel.app` |
+| 兼容跳转 | `www.radishx.com`、`radish.icu`、`www.radish.icu` 均显示 307 → `radishx.com` |
+| 域名提示 | 四个自定义域名显示 Proxy Detected；`radishx.vercel.app` 为 Valid Configuration |
+
+从本机对主域、`/forge` 和带路径 / 查询参数的 `www` 地址执行 HEAD 探测均返回 Cloudflare 403；本轮无法验证实际路径保留、页面访问或代理源站链路，不能据此断言所有访客都无法访问。迁移验收前应取得可用的现网基线，避免将已有访问问题误归因于迁移。
+
+### 套餐与归属选择
 
 Vercel 官方说明存在口径差异：[Git 部署说明](https://vercel.com/docs/git#using-hobby-teams)明确禁止 Hobby 部署组织私有仓库，并提出公开仓库或 Pro 的选择；[Limits](https://vercel.com/docs/limits#connecting-a-project-to-a-git-repository)仍笼统写 Hobby 不支持组织仓库。因而对本仓库的公开组织连接资格，应以实际账户控制台或 Vercel 支持确认为准，不能直接保证 Hobby 可用。[Hobby 说明](https://vercel.com/docs/plans/hobby)限定个人非商业用途；若官网用于公司业务或需要多人管理部署，优先评估 Pro。此处没有购买、升级套餐或改变部署方式。
+
+- 单人维护、个人非商业展示：优先评估只迁 GitHub 仓库、保留现有 Vercel 项目及归属。必须先解决公开组织仓库的连接资格，不能先断开现有 Git 再试。
+- 商业用途或团队管理：采用 Pro。若不要求个人与组织资源隔离，可升级现有 scope；若要求组织独立计费、权限和资产管理，建立组织 Vercel 团队并转移现有项目。GitHub 组织与 Vercel 团队是两个独立对象。
+- [Pro 当前价格](https://vercel.com/docs/plans/pro-plan)：平台费 $20/月，含一个部署席位及 $20 使用额度；额外部署席位 $20/人/月，用量和附加服务可能另计。新团队、付费与套餐变更均未执行。
+
+### 如需跨 Vercel 团队转移
+
+使用原项目的 Transfer 流程，保留项目名，避免重新建站及人工搬域名。官方说明转移可在不中断访问的情况下完成，通常为 10 秒至 10 分钟；转移期间不能创建部署或修改项目设置。需具备来源团队 owner 与目标团队 member 权限，并预先确认目标套餐和支付条件。部署、项目配置、Git 连接及域名会随转移处理；集成、部分日志和监控数据不随迁移，不能假设全部资产原样保留。以实际转移预览清单为准，见 [项目转移说明](https://vercel.com/docs/projects/transferring-projects)。
+
+域名核对必须覆盖上述主域、三个兼容跳转和默认域名；Vercel 中的域名归属转移不等于域名注册商或 Cloudflare 账户迁移。主域与子域的委派规则不同，迁移前检查 `hub.radishx.com`、`ink.radishx.com` 等独立服务是否存在关联，保持其 DNS 和服务配置。当前没有核验 Cloudflare 账户、DNS 记录、Shared 变量、其他集成和目标 Vercel 团队，因此本轮尚不构成完整的转移执行清单。
+
+若决定同时迁 GitHub 和 Vercel，建议先准备目标团队、套餐和 App 权限，记录部署与域名基线；先转移原 Vercel 项目并验证，再转 GitHub 仓库并核对 Git 连接。两个阶段分别验收。若仅迁 GitHub，沿用下面步骤。失败时优先保留现有生产部署并恢复自动部署连接；生产版本回退不能替代仓库归属、团队权限或域名问题的修复。
+
+### GitHub 迁移执行顺序
 
 建议迁移步骤（须另行授权后执行）：
 
