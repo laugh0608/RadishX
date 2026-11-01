@@ -4,7 +4,7 @@ export type HomeCategoryId = "community" | "tools" | "games" | "explorations";
 
 export type HomeCollectionTier = "large" | "strong" | "medium" | "compact";
 
-export type HomeCollectionSpan = 3 | 5 | 7;
+export type HomeCollectionSpan = 3 | 4 | 5 | 7;
 
 export type HomePanelTone = "jade" | "cream" | "image" | "ink" | "blue" | "sand" | "mint" | "paper";
 
@@ -67,10 +67,11 @@ export const homeCollection: HomeCollectionItem[] = [
   { id: "axiom", category: "tools", tier: "medium", span: 7, tone: "blue" },
   { id: "memory", category: "tools", tier: "medium", span: 5, tone: "sand" },
   { id: "nexus", category: "tools", tier: "medium", span: 7, tone: "paper" },
-  { id: "flow", category: "explorations", tier: "compact", span: 3, tone: "blue" },
-  { id: "link", category: "explorations", tier: "compact", span: 3, tone: "sand" },
-  { id: "ledger", category: "explorations", tier: "compact", span: 3, tone: "jade" },
-  { id: "root", category: "explorations", tier: "compact", span: 3, tone: "ink" },
+  { id: "flow", category: "explorations", tier: "medium", span: 5, tone: "blue" },
+  { id: "forge", category: "tools", tier: "medium", span: 7, tone: "paper" },
+  { id: "link", category: "explorations", tier: "compact", span: 4, tone: "sand" },
+  { id: "ledger", category: "explorations", tier: "compact", span: 4, tone: "jade" },
+  { id: "root", category: "explorations", tier: "compact", span: 4, tone: "ink" },
 ];
 
 export function getHomeCategory(id: HomeCategoryId) {

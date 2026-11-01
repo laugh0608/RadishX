@@ -1,6 +1,6 @@
 import { projects } from "./projects";
 
-export const githubOrganizationUrl = "https://github.com/laugh0608";
+export const githubOrganizationUrl = "https://github.com/RadishIntelligence";
 export const radishXRepositoryUrl = "https://github.com/laugh0608/RadishX";
 
 export const mainNavigation = [

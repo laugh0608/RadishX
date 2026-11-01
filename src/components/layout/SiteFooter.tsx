@@ -14,7 +14,7 @@ export function SiteFooter({ compact = false }: SiteFooterProps) {
           RadishX
         </RouteLink>
         <p>
-          {compact ? "RadishX / 项目、创作与探索。" : "Radish 系列项目官网与统一入口。"}
+          {compact ? "萝卜智能 · Radish Intelligence" : "萝卜智能 · Radish Intelligence 的官网与项目入口。"}
         </p>
       </div>
       <nav className="site-footer__links" aria-label="页脚链接">

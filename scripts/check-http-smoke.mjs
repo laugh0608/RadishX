@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const publicImagesDir = path.join(rootDir, "public", "images");
-const routePaths = ["/", "/radish", "/catalyst", "/flow", "/mind", "/lex", "/axiom", "/link", "/memory", "/nexus", "/ink", "/ledger", "/root", "/mascot", "/about", "/abc-test"];
+const routePaths = ["/", "/radish", "/catalyst", "/flow", "/mind", "/lex", "/axiom", "/link", "/memory", "/nexus", "/ink", "/ledger", "/root", "/forge", "/mascot", "/about", "/abc-test"];
 const canonicalUrls = [
   "https://radishx.com/",
   "https://radishx.com/radish",
@@ -19,6 +19,7 @@ const canonicalUrls = [
   "https://radishx.com/ink",
   "https://radishx.com/ledger",
   "https://radishx.com/root",
+  "https://radishx.com/forge",
   "https://radishx.com/mascot",
   "https://radishx.com/about",
 ];

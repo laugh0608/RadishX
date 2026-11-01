@@ -19,11 +19,11 @@ export const contacts = [
   },
   {
     label: "GitHub",
-    value: "laugh0608",
-    href: "https://github.com/laugh0608",
+    value: "RadishIntelligence",
+    href: "https://github.com/RadishIntelligence",
     action: "访问主页",
-    intent: "源码入口",
-    note: "查看公开仓库、提交记录和项目入口。",
+    intent: "组织入口",
+    note: "萝卜智能 · Radish Intelligence 的组织主页与项目入口。",
   },
   {
     label: "个人主页",
@@ -70,7 +70,7 @@ export const domainSurfaces = [
     label: "Canonical",
     domain: "radishx.com",
     status: "官网主域",
-    description: "承载首页、十二个项目介绍页、萝小白和 About。",
+    description: "承载首页、十三个项目介绍页、萝小白和 About。",
   },
   {
     label: "Compatibility",

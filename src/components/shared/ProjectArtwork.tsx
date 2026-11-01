@@ -287,6 +287,16 @@ export function CollectionArt({ projectId, tier, tone }: CollectionArtProps) {
     );
   }
 
+  if (projectId === "forge") {
+    return (
+      <div className={collectionArtClass(projectId, tone)} aria-hidden="true">
+        <strong>CODE → BUILD<br />→ RELEASE</strong>
+        <p>从代码，到可交付版本。</p>
+        <small>SELF-HOSTED / DELIVERY</small>
+      </div>
+    );
+  }
+
   if (projectId === "root") {
     return (
       <div className={collectionArtClass(projectId, tone, `home2-collection-art--${tier}`)} aria-hidden="true">

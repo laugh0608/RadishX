@@ -686,6 +686,10 @@
   grid-column: span 3;
 }
 
+.home2-collection-item--span-4 {
+  grid-column: span 4;
+}
+
 .home2-collection-item--span-5 {
   grid-column: span 5;
 }
@@ -888,6 +892,15 @@
   font-weight: 500;
   letter-spacing: 0.01em;
   line-height: 1.4;
+}
+
+.home2-collection-art--forge strong {
+  color: var(--rx-text-primary);
+  font-family: var(--rx-font-heading);
+  font-size: clamp(28px, 3vw, 44px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
 }
 
 .home2-collection-art--link strong {
@@ -1203,6 +1216,7 @@
 
   .home2-collection-item--span-7,
   .home2-collection-item--span-5,
+  .home2-collection-item--span-4,
   .home2-collection-item--span-3 {
     grid-column: span 6;
   }
@@ -1353,6 +1367,7 @@
 
   .home2-collection-item--span-7,
   .home2-collection-item--span-5,
+  .home2-collection-item--span-4,
   .home2-collection-item--span-3 {
     grid-column: span 12;
   }

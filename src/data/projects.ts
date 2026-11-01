@@ -169,11 +169,11 @@ export const projects: Project[] = [
     summary: "RadishCatalyst 以异星化工生产经营为核心，让探索中的发现逐步转化为可复现、可扩展的工业生产能力。",
     orbitLabel: "游戏与世界观",
     role: "探索与生产相互推动的工业科幻游戏",
-    stage: "三维基础工厂已完成开发机交付，持续迭代",
+    stage: "三维工厂已有开发机基线，推进统一 Demo 设计",
     status: "In Development",
     chips: ["Factory", "Industrial Sci-fi", "Exploration"],
     capabilities: ["三维基础工厂建造与生产", "探索发现与配方试制", "电力网络与生产统计建设"],
-    signals: ["基础工厂已完成开发机验收", "完整发现循环与统计界面继续完善", "Windows / 目标硬件验收与公开分发待完成"],
+    signals: ["基础工厂已完成开发机验收", "核心、材料、能源与研究成长路线正在整合", "Windows / 目标硬件验收与公开分发待完成"],
     visual: {
       src: "/images/projects/catalyst/radishcatalyst-demo-first-screen-web.jpg",
       alt: "RadishCatalyst 异星工业基地 demo 首屏概念图，含资源 HUD、基地建筑群、物品栏和小地图",
@@ -287,11 +287,11 @@ export const projects: Project[] = [
     summary: "RadishMind 面向内部开发者提供可复用 AI 应用、工作流与模型集成，围绕受控运行、结果审查和回归验证组织工作。",
     orbitLabel: "智能与工具编排",
     role: "Radish 家族的 AI 工具与应用集成平台",
-    stage: "内部开发者预览，持续完善产品流程",
+    stage: "内部开发者预览，验证受控软件开发工作流",
     status: "Developer Preview",
     chips: ["AI Protocol", "Evaluation", "Tooling"],
     capabilities: ["AI 应用与工作流编排", "受控运行与结果审查", "应用回归验证与模型接入规划"],
-    signals: ["应用与邀请链已有开发测试态闭环", "中英双语产品界面分阶段建设", "真实模型试用暂缓，生产交付尚未完成"],
+    signals: ["本机持久工作台已有技术验证证据", "受控软件开发工作流仍在可行性验证阶段", "真实模型试用暂缓，生产交付尚未完成"],
     diagram: {
       label: "Evaluation loop",
       title: "协议评测回路",
@@ -380,7 +380,7 @@ export const projects: Project[] = [
     status: "In Development",
     chips: ["Rust Core", "Local-first", "Chinese IME"],
     capabilities: ["本地优先的离线输入", "可解释、可删除的个人化学习", "自部署加密同步规划"],
-    signals: ["macOS 已完成限定版本产品验收", "Linux Fcitx5 输入与安装维护持续建设", "macOS / Linux 均未公开发布，真实用户同步关闭"],
+    signals: ["macOS 已完成限定版本产品验收", "Linux Fcitx5 已有输入与受控维护基线，安装事务仍待收口", "macOS / Linux 均未公开发布，真实用户同步关闭"],
     diagram: {
       label: "Input pipeline",
       title: "本地输入链路",
@@ -589,8 +589,8 @@ export const projects: Project[] = [
       "可追溯上下文与记忆治理方向"
     ],
     signals: [
-      "已有合成本地宿主验收",
-      "产品数据流尚未接入加密存储",
+      "macOS 最小加密桌面链路已有本机验收",
+      "显式加密入口已接入桌面；默认旧入口仍保存明文正文",
       "完整模型问答、多端同步与日常资料库仍待建设"
     ],
     assetReview: {
@@ -651,7 +651,7 @@ export const projects: Project[] = [
     ],
     signals: [
       "Go 服务与 React Web 已接通首批业务切片",
-      "基础 Markdown 文档已接通，完整成员治理待补齐",
+      "基础文档、成员管理与工单已有指定环境证据",
       "真实交付集成与团队持续使用尚未验收"
     ],
     assetReview: {
@@ -699,11 +699,11 @@ export const projects: Project[] = [
     summary: "RadishInk（萝卜墨笺）是基于 WeMD 二次开发的 Markdown 写作与微信公众号排版工具，以 Web 方式提供编辑、主题预览和富文本复制，让写作与排版在浏览器中完成。",
     orbitLabel: "写作与公众号排版",
     role: "Radish 家族的 Web 写作与排版工具",
-    stage: "Web 已部署，持续完善公众号排版体验",
+    stage: "Web 已部署，文章资源与自托管能力持续建设",
     status: "Web Available",
     chips: ["Markdown", "Web-first", "WeChat Publishing"],
     capabilities: ["Markdown 编辑与主题预览", "浏览器本地草稿与目录工作区", "微信公众号富文本复制"],
-    signals: ["通过 ink.radishx.com 在线使用", "草稿保存在当前浏览器，不提供账号或跨设备同步", "公众号粘贴与保存效果持续验证"],
+    signals: ["通过 ink.radishx.com 在线使用", "浏览器与目录工作区可用；服务器工作区已有源码集成，真实 OIDC 待联调", "手机与公众号实测仍有待验项，自托管分发尚未完成"],
     assetReview: {
       source: "项目文字定位与代码内临时标识",
       boundary: "不代表产品截图或正式 Logo。",
@@ -808,11 +808,11 @@ export const projects: Project[] = [
     summary: "RadishRoot（萝卜根系）从固定 QEMU x86_64 虚拟机起步，以可解释操作和结构化交互为核心，规划共享真实文件服务的文件管理器、结构化终端与操作详情，让资源状态、执行阶段和错误原因都能被查看。",
     orbitLabel: "系统与可解释操作",
     role: "Rust 实验操作系统与可解释工作台",
-    stage: "T01 环境准备，尚未建立可编译工作区",
-    status: "Research",
+    stage: "固定 QEMU 下文件服务与最小终端已验证",
+    status: "Prototype",
     chips: ["Rust", "Operating System", "QEMU"],
-    capabilities: ["固定 QEMU x86_64 启动目标", "文件管理器与结构化终端规划", "可解释操作记录与错误说明方向"],
-    signals: ["产品规划与仓库治理基线已建立", "T01 环境准备进行中，尚无 Cargo 工程或内核", "当前不能启动系统，也没有产品镜像或运行入口"],
+    capabilities: ["固定 QEMU x86_64 系统原型", "共享文件服务与最小串口终端", "结构化操作记录与错误说明"],
+    signals: ["文件服务与最小终端已通过固定 QEMU 本地验证", "图形终端与双面板文件管理器尚未完成", "尚无真机验收、可安装发行版或公开运行入口"],
     assetReview: {
       source: "项目 README 与当前状态文字定位；未使用项目截图或 Logo。",
       boundary: "不代表产品截图、正式 Logo 或已发布能力。",
@@ -829,12 +829,12 @@ export const projects: Project[] = [
         label: "Product plan",
         href: "https://github.com/laugh0608/RadishRoot/blob/dev/docs/product-plan.md",
         description: "产品定位、长期演进、家族关系与成功标准。",
-        boundary: "规划边界不等于已有内核、产品镜像或可运行系统。",
+        boundary: "长期目标不等于完整桌面系统或可安装发行版。",
       },
       {
         label: "Current status",
         href: "https://github.com/laugh0608/RadishRoot/blob/dev/docs/status/current.md",
-        description: "T01 环境准备、验证证据与当前停止线。",
+        description: "系统原型、终端验证与下一步工作。",
         boundary: "工具与治理证据不等同于系统启动、业务验收或可安装产品。",
       },
     ],
@@ -845,6 +845,30 @@ export const projects: Project[] = [
         isExternal: true,
       },
     ],
+  },
+  {
+    id: "forge",
+    tone: "forge",
+    name: "RadishForge",
+    shortName: "Forge",
+    path: "/forge",
+    githubUrl: "https://github.com/laugh0608/RadishForge",
+    mark: { monogram: "F", wordmark: "Forge", label: "Temporary mark", note: "RadishX 代码内临时标识，不是 RadishForge 正式 Logo。" },
+    tagline: "从代码到可交付版本的自托管研发工作台",
+    summary: "RadishForge（萝卜锻坊）计划以 Gitea 为底座，连接代码、Issue、PR、构建、镜像、Release 与环境部署，让研发交付在自己的工作台中完成。",
+    orbitLabel: "代码与研发交付",
+    role: "Radish 家族的自托管研发工作台",
+    stage: "上游协议可行性验证，尚无可运行产品",
+    status: "Research",
+    chips: ["Self-hosted", "Gitea", "Delivery"],
+    capabilities: ["代码、Issue 与 PR 工作台规划", "构建、镜像与 Release 交付方向", "通过公开协议扩展 Gitea 的自托管方案"],
+    signals: ["已取得部分身份、权限与 Issue API 的本机验证证据", "Actions 与完整交付链仍待验证", "尚无自有业务应用、公开服务或发行包"],
+    assetReview: { source: "项目 README 与当前状态文字定位；未使用截图或 Logo。", boundary: "代码内概念示意，不代表真实产品界面或已交付能力。", nextNeed: "后续审核项目自有 Logo 与真实工作台截图。" },
+    documentation: [
+      { label: "Product plan", href: "https://github.com/laugh0608/RadishForge/blob/dev/docs/product-plan.md", description: "产品定位、首版范围与家族分工。", boundary: "规划功能不等于已经交付。" },
+      { label: "Current status", href: "https://github.com/laugh0608/RadishForge/blob/dev/docs/status/current.md", description: "上游可行性验证、实际证据与后续工作。", boundary: "协议探针不等于可运行的 RadishForge 产品。" },
+    ],
+    links: [{ label: "GitHub", href: "https://github.com/laugh0608/RadishForge", isExternal: true }],
   },
 ];
 

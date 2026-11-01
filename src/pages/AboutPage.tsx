@@ -19,7 +19,7 @@ export function AboutPage() {
             <h1>关于 RadishX</h1>
             <p className="about2-hero__statement">把好奇心，做成作品。</p>
             <p className="about2-hero__intro">
-              RadishX 是 Radish 系列项目的官网与统一入口。这里介绍这些项目正在做什么，也收束萝小白、联系方式与公开入口。
+              RadishX 是萝卜智能 · Radish Intelligence 的官网与统一入口。这个由个人发起和维护的项目系列，探索社区、创作、工程工具与基础技术；这里汇集项目、萝小白与公开联系方式。
             </p>
             <div className="about2-hero__actions">
               <a
@@ -140,7 +140,7 @@ export function AboutPage() {
             </div>
           </header>
           <p className="about2-section__lead">
-            从官网到十二个项目，源码与文档都放在 GitHub；Radish 和 RadishInk 另有独立 Web 入口。
+            从官网到{projects.length} 个项目，源码与文档都放在 GitHub；Radish 和 RadishInk 另有独立 Web 入口。
           </p>
           <div className="about2-repo-grid">
             {repositories.map((repo, index) => (
