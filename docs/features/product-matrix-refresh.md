@@ -1,7 +1,19 @@
 # Radish 产品矩阵同步与扩展规划
 
-状态：十二产品与已部署入口本地实现完成；构建、静态、HTTP 与双端浏览器检查通过
-最后更新：2026-10-17
+状态：十三产品与组织品牌本地同步完成；构建、HTTP 与双端浏览器检查通过
+最后更新：2026-11-01
+
+## 2026-11-01 组织品牌与十三产品同步
+
+所有者明确要求同步四个展示仓库。组织展示名统一为「萝卜智能 · Radish Intelligence」，GitHub 组织标识保持 `RadishIntelligence`；`RadishX` 保留官网名称。只更改本地内容，仓库迁移、远端组织设置和部署另行评估，不提前替换尚未迁移的产品仓库链接。
+
+新增 RadishForge（萝卜锻坊）为第十三个产品，沿用首页目录与详情模板，接入 `/forge`、导航、About、metadata、sitemap 和检查清单。Forge 定位为从代码到可交付版本的自托管研发工作台，处于上游协议可行性验证，尚无可运行产品。Checker 继续归属 Axiom，官网不计为独立产品。首页保留四项精选；目录为 2 个大型、2 个强视觉、6 个中型、3 个紧凑条目，Flow 与 Forge 共用一排，末排 Link / Ledger / Root 三列，移动端继续单列。
+
+纠正 Root 尚无内核、Memory 未接入加密、Ink 未有账号方向等过期描述；区分现有 Web 入口、本地开发成果与未完成的产品交付。只使用文字与代码内图形，不引入新素材、依赖或暂定子域。
+
+来源：2026-11-01 只读检查十三产品的 README 与当前状态（Radish 的 `Docs/planning/current.md`、Mind 的 `docs/radishmind-current-focus.md`、Catalyst 的 `docs/planning/current.md`，其余 `docs/status/current.md`）。核验以本地文档为准，不代表本轮重做产品运行或线上验收。来源提交与验证结果见 [W44 日志](../devlogs/2026-W44.md)。
+
+验证：`check:local-release`、`check:agent-guides`、HTTP smoke（17 路径、29 图片）通过；1440×900 与 390×900 复核首页、Forge、Root、Memory、Ink、About，13 张目录卡、15 个源码仓库入口、canonical 和 Forge 站内跳转正确，无横向溢出、损坏图片或页面运行错误。移动菜单、深浅主题及截图已复核。截图与日志位于 `output/playwright/surfaces-2026-11-01/`。内容验证完成后，所有者已另行授权四仓分别提交并推送；RadishX 迁移暂缓，线上部署结果未核验。
 
 ## 2026-10-17 RadishLedger、RadishRoot 与公开链接收敛
 

@@ -42,7 +42,7 @@
 | 组件 | 实现位置 | 当前职责 |
 | --- | --- | --- |
 | 首页 Hero / 精选 | `HomeHero.tsx`、`ProjectArtwork.tsx`、`home-v2.css` | 品牌字形、品牌主张、四项精选切换与领域视觉 |
-| 首页项目目录 | `HomeCollection.tsx`、`ProjectArtwork.tsx`、`homeShowcase.ts` | 十二项分层展陈、分类标签与完整项目索引 |
+| 首页项目目录 | `HomeCollection.tsx`、`ProjectArtwork.tsx`、`homeShowcase.ts` | 十三项分层展陈、分类标签与完整项目索引；2026-11-01 扩展见产品矩阵专题 |
 | 首页 Mascot | `HomeMascot.tsx`、`home-v2.css` | 深灰玉舞台、透明立绘与角色入口 |
 | 详情 Hero / 展面 | `ProjectPage.tsx`、`ProjectHeroArt.tsx`、`ProjectArtwork.tsx`、`project-v2.css` | 项目身份、动作、状态摘要与有图 / 无图领域展面 |
 | 详情信息段 | `ProjectPage.tsx`、`project-v2.css` | Focus / Current state / Explore / Continue 四段内容 |
