@@ -4,9 +4,10 @@
 
 ## 当前入口
 
+- [官网整体规划](planning/overview.md)：长期目标、能力地图与阶段出口。
 - [当前规划](planning/current.md)：项目阶段、已确认决策、下一步。
 - [Agent 协作与执行规则](development/agent-collaboration.md)：根入口、专题规则、当前规划与记录的职责边界。
-- [功能与目标文档](features/README.md)：页面、功能、素材治理和发布检查的设计与开发文档。
+- [功能与目标文档](features/README.md)：四个大专题、现有子专题的归属、任务状态与验收导航。
 - [开发规范](development/standards.md)：仓库、前端、公开内容维护、响应式、验证和提交规则。
 - [视觉规范](design/visual-guidelines.md)：官网气质、页面节奏、Radish 视觉参考和素材使用原则。
 - [Vercel 与域名](deployment/vercel.md)：官网部署边界、根域、已部署项目入口与公开链接边界。
@@ -21,6 +22,7 @@
 
 - `docs/` 是本仓库正式文档源。
 - `AGENTS.md` 与 `CLAUDE.md` 只保留启动级长期约束和任务路由，详细协作规则写入 `docs/development/agent-collaboration.md`。
+- `docs/planning/overview.md` 维护长期目标与阶段出口；`docs/features/README.md` 是唯一专题地图，具体 feature 维护任务与验收。
 - `docs/planning/current.md` 只保留当前阶段、活跃目标和执行顺序。
 - 页面、功能、素材替换和发布检查的展开设计写入 `docs/features/`。
 - 入口文档保持简短，历史过程写入开发日志。

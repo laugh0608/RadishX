@@ -3,6 +3,15 @@
 状态：R2.2 首页、详情页、About、Mascot 与共享层完成，所有者已确认四页双端截图；单张表情已重裁复核，Pencil 回填下一步
 最后更新：2026-10-17
 
+## 规划归属与整合责任
+
+主要归属为[页面与交互](README.md#pages)，协同内容、品牌视觉与素材、质量与发布。本目标是 R2 跨页面整合切片，不新增一层专题；阶段顺位由[当前规划](../planning/current.md)维护。
+
+- [首页](home-hero-visual.md)、[项目详情](project-detail-pages.md)、[About](about-contact-surface.md)、[Mascot](mascot-page.md)分别维护页面范围、任务与验收。
+- 本文维护跨页协调、共享层、设计源回填与整体验收；引用各页完成范围，不复制其待办。
+- 产品事实由[产品矩阵](product-matrix-refresh.md)提供，素材授权由[素材治理目标](asset-governance.md)承接，Q 问题与 SEO 在[质量目标](site-quality-and-public-content.md)维护。
+- 以下日期批次保留实际结果，后文 R2.1 设计范围按当时项目数量理解；R2.2 实现、Pencil 回填和线上核验是三个独立完成判断。
+
 ## 2026-10-17 R2.2 首页重构（React-first）
 
 所有者确认按“精选展示、完整目录、跨页统一”继续推进，但不再等待新的 Pencil 探索；本轮以已确认的 R2.1 为视觉参考，直接在 React 中完成首页重构，Pencil 设计源后补。当前环境没有 Pencil 读写工具，因此本轮不修改 `.pen`，也不把 R2.1 的旧内容当作当前事实。

@@ -1,42 +1,24 @@
 # 当前规划
 
-最后更新：2026-10-17
+最后更新：2026-11-01（本次仅整理规划导航；产品事实与运行证据沿用下述核验日期）
 
 ## 当前阶段
 
-RadishX 已完成首版官网。2026-10-17 按所有者确认完成 R2.2 全站第一批 React 重构：首页采用“精选 4 项 + 完整 12 项目录”，详情页采用 Hero / Focus / Current state / Explore / Continue，About 与 Mascot 改为同一编辑式语言；共享 Header / Footer / 按钮 / 字体层级同步收口。保持现有技术栈、灰玉品牌方向与静态展示边界。
-
-同日完成 About / Mascot 与共享层收口：About 保留联系方式、公众号二维码、14 个仓库入口和 4 项域名边界；Mascot 保留三种形态、7 张 Gallery、10 张表情候选与四组素材边界，均不开放下载。公开页面删除 `No login / API surface`、`WeChat QR reviewed`、`Usage boundary`、`Next material need`、部署 / Vercel 等内部实现与评审语言。共享 Header 规则从 `home-v1.css` 迁入 `global.css`，删除 `home-v1.css`、`utilities.css` 与旧首页 / 详情选择器；About / Mascot 使用默认页脚，首页 / 详情页保持紧凑页脚。所有者随后确认首页、详情页、About 与 Mascot 的 1440×900 / 390×844 亮暗截图，四页视觉收口进入已确认状态。同日按所有者授权重裁并复核 Mascot 首批 10 张单张表情 Web 图，原有裁切偏移已修复。
-
-2026-09-26 按所有者明确要求，将官网列表与介绍入口扩展为九个产品，Checker 归入 Axiom；沿用现有模板，未实施 R2 重设计或部署。[产品矩阵同步与扩展](../features/product-matrix-refresh.md)承载最新产品事实与矩阵建议，[官网质量与对外表达收口](../features/site-quality-and-public-content.md)承载质量修正和验证要求。
-
-2026-10-06 按所有者要求新增 RadishInk（萝卜墨笺）作为第十个产品，沿用现有模板；同步 Radish 与 RadishInk 已部署入口，其他已登记域名为暂定且未部署。具体来源、范围和验证见 [产品矩阵同步](../features/product-matrix-refresh.md)。
-
-2026-10-17 按所有者要求新增 RadishLedger（萝卜账簿）与 RadishRoot（萝卜根系）作为第十一、十二个产品；同时移除所有未部署项目的暂定域名和访问按钮，只保留 `hub.radishx.com` 与 `ink.radishx.com` 两个已确认入口，避免访客误以为其他项目已上线。两个新项目均使用文字定位与代码内临时标识，不引入外部素材。
-
-同日按所有者确认完成 R2.2 首页重构：精选固定为 Radish、RadishInk、RadishFlow、RadishLex；正文改为 2 大 + 2 强视觉 + 4 中 + 4 紧凑的十二项编辑式目录；删除旧首页组件与六字母占位展陈，首页公开文案移除内部评审语言。
-
-所有者随后确认进入详情页批次。2026-10-17 完成 R2.2 详情页模板：全部十二个详情路由改为 Hero / Focus / Current state / Explore / Continue；删除 `MediaFrame`、`InfoRail`、`ProjectMark` 和 Page flow / Public Surface；未部署项目只显示“暂无公开站点”，详情页不再出现内部素材审核字段。
+2026-10-17 的 R2.2 首页、十二项目详情、About、Mascot 与共享层已完成 React-first 实现和双端复核，所有者确认四页截图；Mascot 首批 10 张表情重裁已复核。页面和共享层详细结果见[整合目标](../features/site-design-refinement.md)，原阶段摘要与测量快照保留在[本周日志](../devlogs/2026-W44.md)。
 
 ## 实现、验收与发布状态
 
-| 对象 | 已知状态 | 尚未确认 |
-| --- | --- | --- |
-| 本地代码 | 2026-10-17 十二产品、公开链接收敛、R2.2 首页 / 详情页 / About / Mascot 与共享层；构建、静态、HTTP 与双端浏览器检查通过 | 其余历史质量问题按专题推进；线上部署结果尚未核验 |
-| R2.2 首页 | 2026-10-17 完成 React 重构：四项精选、十二项分层目录、紧凑页脚与暗色可用性检查通过；页面高度约 3,990 / 6,650px；所有者已确认双端截图 | Pencil 设计源未回填 |
-| R2.2 详情页 | 2026-10-17 十二个详情页完成编辑式模板；有图 / 无图项目均通过双端与深色检查；桌面约 2,460–2,731px，移动约 3,810–3,990px；所有者已确认双端截图 | Pencil 设计源未回填 |
-| R2.2 About | 2026-10-17 完成编辑式重构：4 个联系入口、公众号二维码、14 个仓库入口与 4 个域名入口；桌面 3,355px / 移动 5,357px；亮暗双端无溢出；所有者已确认双端截图 | Pencil 设计源未回填 |
-| R2.2 Mascot | 2026-10-17 完成编辑式重构：3 种形态、7 张 Gallery、10 张表情候选与 4 组使用边界；桌面 4,940px / 移动 10,020px；亮暗双端无溢出、无下载入口；所有者已确认双端截图；10 张单张表情已重裁复核 | Pencil 设计源未回填 |
-| 共享层 | Header 规则已迁入 `global.css`；Footer、按钮、标题层级与 R2.2 对齐；`home-v1.css`、`utilities.css` 与旧首页 / 详情选择器已删除 | 完整暗色精确稿未建立；Pencil 设计源待回填 |
-| 线上版本 | 存在历史 HTTP 与截图级 smoke 记录 | 本次未核验线上提交、当前部署和域名跳转；不能认定线上已包含 R2.2 页面 |
-
-设计源分工：`radishx-site-v1.pen` 保留灰玉首页两张基准与 R2.1 首页 / Radish 双端评审稿；R2.1 画板仍按旧项目范围。R2.2 首页、详情页、About 与 Mascot 均为 React-first 实现，Pencil 源待回填。`radishx-site-v0.pen` 保留 craft 历史设计，不再代表当前页面结构。详见 [视觉规范](../design/visual-guidelines.md) 与 [UI 差异附录](../design/ui-addendum.md)。
+- React 与本地验证：指定 R2.2 页面批次已通过；不代表所有历史质量问题均已处理，细项见[质量目标](../features/site-quality-and-public-content.md#待处理问题)。
+- Pencil：R2.2 设计源仍待回填，v1 保留灰玉基准与 R2.1 评审稿，v0 是 craft 历史基线；分工见[视觉规范](../design/visual-guidelines.md)与[UI 差异附录](../design/ui-addendum.md)。
+- 线上：本批未核验当前部署、远端版本或域名跳转，不能认定已包含 R2.2；历史 smoke 只证明对应候选。
 
 ## 当前活跃目标
 
 第一顺位仍为 [官网整体设计与美化](../features/site-design-refinement.md)。R2.2 首页、详情页、About、Mascot 与共享层已完成 React-first 实现、双端复核，并由所有者于 2026-10-17 确认四页截图；单张表情裁切已修复。下一步处理 R2.2 Pencil 设计源回填与公开访问核验。四张 R2.1 主画板与一张交互说明保留为历史评审稿，不再直接代表当前 12 项目页面。
 
-十二产品数据、首页精选与目录、详情页、站内介绍路由、导航 / 页脚、About、Mascot、metadata 和 sitemap 已同步。Flow 保持开发中；Axiom Checker 仍为配套仓库入口。RadishInk 以 Web 写作与公众号排版为主；RadishLedger 与 RadishRoot 分别处于 M0 移动核心验证和 T01 环境准备。只有 Radish 和 Ink 开放所有者确认的独立 Web 入口，其他项目仅展示 GitHub 与文档入口。
+按 2026-10-17 的官网内容快照，十二产品数据、首页精选与目录、详情页、站内介绍路由、导航 / 页脚、About、Mascot、metadata 和 sitemap 已同步。Flow 保持开发中；Axiom Checker 仍为配套仓库入口。RadishInk 以 Web 写作与公众号排版为主；当时 RadishLedger 与 RadishRoot 分别处于 M0 移动核心验证和 T01 环境准备。只有 Radish 和 Ink 开放所有者确认的独立 Web 入口，其他项目仅展示 GitHub 与文档入口。
+
+当前阅读链：[整体规划](overview.md) → [页面与交互主线](../features/README.md#pages) → [整合目标的后续批次](../features/site-design-refinement.md#后续批次)；公开内容与质量问题另从[质量主线](../features/README.md#quality)进入。
 
 后续顺序：
 
@@ -73,7 +55,7 @@ RadishX 已完成首版官网。2026-10-17 按所有者确认完成 R2.2 全站�
 ## 跨目标风险与待决事项
 
 - R2.2 四个页面线均为 React-first；Pencil 设计源尚未回填，当前线上版本未核验。本地构建通过不能代替发布证据。
-- 十二个兄弟仓库中，RadishLedger 与 RadishRoot 已于 2026-10-17 只读复核；其余项目沿用 2026-09-26 的核验记录。外部 URL、远端提交和生产可用性尚未核验。Catalyst 已进入三维基础工厂迭代，Flow 已恢复开发，Ledger 与 Root 仍处于早期验证。
+- 十二个兄弟仓库中，RadishLedger 与 RadishRoot 已于 2026-10-17 只读复核；其余项目沿用 2026-09-26 的核验记录。外部 URL、远端提交和生产可用性尚未核验。这些快照曾记录 Catalyst 三维基础工厂、Flow 恢复开发及 Ledger / Root 早期验证，不推断为它们今天的状态。
 - 首批 10 张单张表情 Web 图的裁切偏移已于 2026-10-17 修复：按源表情格实际卡片边界重裁为 256×256，逐张复核无相邻行标签；原图未改，旧公开图备份在 `output/expression-crop-2026-10-17/backup/`。
 - SEO 静态输出、未知路径响应和验证入口仍处于方案准备，不预设工具或依赖。
 - R2.2 全站标题保留 `-0.02em` 展示字距与含 `vw` 的 `clamp()`；后续按桌面、移动及文字缩放证据处理，不继续扩大负字距。
@@ -81,6 +63,7 @@ RadishX 已完成首版官网。2026-10-17 按所有者确认完成 R2.2 全站�
 
 ## 专题入口
 
+- [官网整体规划](overview.md)：长期目标、四条能力主线与阶段出口。
 - [功能与目标索引](../features/README.md)：页面目标、已完成基线和素材准备。
 - [开发规范](../development/standards.md)：工程结构、内容维护和验证能力边界。
 - [素材治理](../assets/materials.md)：来源、公开展示、授权与撤回。
