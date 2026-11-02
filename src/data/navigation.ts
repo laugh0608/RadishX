@@ -2,6 +2,8 @@ import { projects } from "./projects";
 
 export const githubOrganizationUrl = "https://github.com/RadishIntelligence";
 export const radishXRepositoryUrl = "https://github.com/laugh0608/RadishX";
+export const radishUISiteUrl = "https://ui.radishx.com/";
+export const radishUIRepositoryUrl = "https://github.com/RadishIntelligence/RadishUI";
 
 export const mainNavigation = [
   { label: "Projects", href: "/#collection" },

@@ -530,6 +530,10 @@
   background: var(--rx-bg-surface);
 }
 
+.about2-domain-grid + .button {
+  margin-top: 24px;
+}
+
 .about2-domain-card:first-child {
   background: color-mix(in srgb, var(--rx-brand-primary) 7%, var(--rx-bg-surface));
 }

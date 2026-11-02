@@ -1,7 +1,17 @@
 # Radish 产品矩阵同步与扩展规划
 
-状态：十三产品与组织品牌本地同步完成；构建、HTTP 与双端浏览器检查通过
-最后更新：2026-11-01
+状态：十三产品保持；本轮同步 RadishUI 共享基础设施与公开入口
+最后更新：2026-11-02
+
+## 2026-11-02 RadishUI 共享基础设施入口
+
+所有者确认 RadishUI 使用 `https://ui.radishx.com/`，要求同步 RadishX、RadishUI，并评估个人主页与组织 Profile。RadishUI 是家族共享设计系统，不增加第十四个独立产品，不新增官网详情路由或将独立子域写入官网 sitemap。
+
+本批在 About 增加 `RadishIntelligence/RadishUI` 仓库与设计系统域名，仓库合计 16 项、域名 5 项、独立 Web 入口 3 项；在域名区和共享页脚提供展示站链接。项目矩阵保持十三项，现有产品入口不变。About 的仓库归属提示覆盖个人与组织仓库。
+
+来源：RadishUI 本地工程与当前文档、所有者域名确认，以及 2026-11-02 Vercel 控制台。控制台显示现有 Hobby scope 已改为 `dabailuobo`，官网项目为 `radish-x`，设计系统项目为 `radish-ui`；本轮不修改托管配置或 DNS。
+
+新域名在真实 Chrome 中已渲染 RadishUI 页面；本机命令行 HTTP 请求由 Cloudflare 返回 403，默认 Vercel 地址仍为 200。两类证据分别记录，不把自动请求限制推定为所有访客不可访问。当前批次本地验证与展示仓库范围见 [W45 日志](../devlogs/2026-W45.md)。
 
 ## 2026-11-01 组织品牌与十三产品同步
 

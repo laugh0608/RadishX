@@ -108,7 +108,7 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 - `hub.radishx.com`：Radish
 - `ink.radishx.com`：RadishInk，主要以 Web 方式提供服务
 
-官网只登记和展示上述两个已确认部署的项目入口。其他项目暂不登记、不推导、不展示暂定域名或访问按钮；待项目正式部署并经所有者确认后再补充。
+上述两个为独立产品入口。家族共享设计系统 [RadishUI](https://github.com/RadishIntelligence/RadishUI) 另有独立工程预览站 [ui.radishx.com](https://ui.radishx.com/)，通过 About 与页脚访问，不计入十三个产品。其他未部署项目不展示暂定域名或访问按钮。
 
 这些子域名不是当前官网 Vercel 项目的路由，也不需要在 Vercel 中为本官网做重写。它们由对应项目独立维护。
 
@@ -118,7 +118,7 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 
 - GitHub 仓库链接：全部展示。
 - 文档链接：当前已展示各仓库 `dev` 分支中的 README / docs / status / contracts 等稳定入口。
-- Web 访问入口：只展示已确认部署的 `hub.radishx.com` 与 `ink.radishx.com`。
+- Web 访问入口：产品页展示 `hub.radishx.com` 与 `ink.radishx.com`；About 与页脚另提供共享设计系统 `ui.radishx.com`。
 - 演示站、下载页、在线应用与暂定域名：没有稳定公开入口前不展示，避免用户误以为项目已上线。
 
 ## 部署与跳转策略
@@ -128,7 +128,7 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 - 当前官网 Vercel 项目承载 RadishX 官网，`https://radishx.com/` 是 canonical 主域。
 - `www.radishx.com` 已配置为跳转到 `radishx.com`，用于兼容访问和旧入口。
 - 首页、十三个产品介绍页、虚拟形象页和 About 页面都属于本官网项目。
-- Radish 与 RadishInk 已独立部署；其他项目暂不提供公开 Web 入口，具体清单见 [域名说明](docs/deployment/vercel.md)。
+- Radish 与 RadishInk 已独立部署；RadishUI 独立承载共享设计系统预览。其他产品暂不提供公开 Web 入口，具体清单见 [域名说明](docs/deployment/vercel.md)。
 - 未部署项目只在官网提供 GitHub 与文档入口，不展示暂定域名、禁用访问按钮或“即将上线”暗示。
 - `sitemap.xml` 和 `robots.txt` 只覆盖当前官网站内页面，不包含项目独立子域。
 
@@ -232,6 +232,6 @@ npm run check:http-smoke -- --base-url http://127.0.0.1:4500
 3. 首页项目区：十三项编辑式目录；2 个大型展面、2 个强视觉展面、6 个中型展面和 3 个紧凑条目，不再使用单字母占位卡。
 4. 项目详情页：Hero / Focus / Current state / Explore / Continue 五段结构；展示定位、状态、能力、文档与入口，移除 Route、Page flow、素材审核和计划域名等内部字段。
 5. Mascot 页：三种形态、Gallery 整图预览、首批单张表情候选和使用边界，不提供下载入口；不展示来源格位或审核过程。
-6. About 页：联系方式、微信公众号二维码、14 个仓库入口和 4 项域名边界；不展示登录 / API、部署 / Vercel 或计划域名说明。
+6. About 页：联系方式、微信公众号二维码、16 个仓库入口和 5 项域名边界；不展示登录 / API、部署 / Vercel 或计划域名说明。
 
 首页、详情页、About 与 Mascot 已从旧灰玉 / craft 模板迁移到 R2.2 编辑式展陈；旧组件、单字母占位、Page flow、素材审核字段与旧 `home-v1.css` / `utilities.css` 选择器已删除，内部评审语言不再出现在公开页面。代码内临时标识不声明为正式 Logo，新增产品未引入未确认的截图或素材。

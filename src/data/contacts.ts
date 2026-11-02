@@ -1,4 +1,5 @@
 import { projects } from "./projects";
+import { radishUIRepositoryUrl } from "./navigation";
 
 export const contacts = [
   {
@@ -49,6 +50,13 @@ export const repositories = [
     status: "官网",
     description: "Radish 系列项目官网与统一入口。",
   },
+  {
+    name: "RadishUI",
+    ownerRepo: "RadishIntelligence/RadishUI",
+    href: radishUIRepositoryUrl,
+    status: "共享基础设施",
+    description: "家族共享设计系统，提供视觉基础、通用组件与界面范例；当前为工程预览。",
+  },
   ...projects.map((project) => ({
     name: project.name,
     ownerRepo: `laugh0608/${project.name}`,
@@ -68,21 +76,31 @@ export const repositories = [
 export const domainSurfaces = [
   {
     label: "Canonical",
+    isIndependentEntry: false,
     domain: "radishx.com",
     status: "官网主域",
     description: "承载首页、十三个项目介绍页、萝小白和 About。",
   },
   {
     label: "Compatibility",
+    isIndependentEntry: false,
     domain: "www.radishx.com",
     status: "兼容入口",
     description: "访问 www.radishx.com 会跳转到主域，路径保持不变。",
+  },
+  {
+    label: "RadishUI",
+    isIndependentEntry: true,
+    domain: "ui.radishx.com",
+    status: "设计系统预览",
+    description: "家族共享设计系统的独立展示站，提供视觉基础与组件示例。",
   },
   ...projects.flatMap((project) =>
     project.domain
       ? [
           {
             label: project.name,
+            isIndependentEntry: true,
             domain: project.domain.name,
             status: "Web 入口",
             description: `${project.name} 的独立 Web 服务，可通过项目详情页访问。`,

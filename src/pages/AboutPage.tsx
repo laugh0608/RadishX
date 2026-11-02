@@ -1,5 +1,5 @@
 import { contacts, domainSurfaces, officialAccount, repositories } from "../data/contacts";
-import { radishXRepositoryUrl } from "../data/navigation";
+import { radishUISiteUrl, radishXRepositoryUrl } from "../data/navigation";
 import { projects } from "../data/projects";
 
 function indexNumber(value: number) {
@@ -8,7 +8,7 @@ function indexNumber(value: number) {
 
 export function AboutPage() {
   const emailContact = contacts.find((contact) => contact.label === "Email");
-  const webEntryCount = projects.filter((project) => project.domain).length;
+  const webEntryCount = domainSurfaces.filter((surface) => surface.isIndependentEntry).length;
 
   return (
     <div className="about2-page">
@@ -136,11 +136,11 @@ export function AboutPage() {
             </div>
             <div className="about2-section__meta">
               <span>{repositories.length} 个公开仓库</span>
-              <span>GitHub / laugh0608</span>
+              <span>GitHub</span>
             </div>
           </header>
           <p className="about2-section__lead">
-            从官网到{projects.length} 个项目，源码与文档都放在 GitHub；Radish 和 RadishInk 另有独立 Web 入口。
+            官网、{projects.length} 个项目与 RadishUI 共享设计系统的源码和文档都放在 GitHub；Radish、RadishInk 和 RadishUI 各有独立 Web 入口。
           </p>
           <div className="about2-repo-grid">
             {repositories.map((repo, index) => (
@@ -185,7 +185,7 @@ export function AboutPage() {
           <p className="about2-section__lead">
             {"radishx.com 是官网主域；www.radishx.com 保留兼容访问；Radish 与 RadishInk 各有独立 "}
             <span className="nowrap">Web 入口</span>
-            {"，其他项目只提供源码与文档入口。"}
+            {"；RadishUI 提供独立设计系统预览，其他项目只提供源码与文档入口。"}
           </p>
           <div className="about2-domain-grid">
             {domainSurfaces.map((surface) => (
@@ -197,6 +197,10 @@ export function AboutPage() {
               </article>
             ))}
           </div>
+          <a className="button button--secondary" href={radishUISiteUrl} target="_blank" rel="noopener noreferrer">
+            访问 RadishUI
+            <span aria-hidden="true">↗</span>
+          </a>
         </div>
       </section>
     </div>

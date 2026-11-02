@@ -1,4 +1,4 @@
-import { radishXRepositoryUrl } from "../../data/navigation";
+import { radishUISiteUrl, radishXRepositoryUrl } from "../../data/navigation";
 import { projects } from "../../data/projects";
 import { RouteLink } from "../ui/RouteLink";
 
@@ -41,6 +41,9 @@ export function SiteFooter({ compact = false }: SiteFooterProps) {
             </a>
           </>
         )}
+        <a href={radishUISiteUrl} target="_blank" rel="noopener noreferrer" aria-label="访问 RadishUI 家族设计系统">
+          RadishUI
+        </a>
       </nav>
     </footer>
   );

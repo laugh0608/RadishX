@@ -1,6 +1,6 @@
 # 当前规划
 
-最后更新：2026-11-01（组织展示与十三产品同步；本轮本地验证见产品矩阵专题）
+最后更新：2026-11-02（RadishUI 自定义域名与共享基础设施入口同步）
 
 ## 当前阶段
 
@@ -17,6 +17,8 @@
 第一顺位仍为 [官网整体设计与美化](../features/site-design-refinement.md)。R2.2 首页、详情页、About、Mascot 与共享层已完成 React-first 实现、双端复核，并由所有者于 2026-10-17 确认四页截图；单张表情裁切已修复。下一步处理 R2.2 Pencil 设计源回填与公开访问核验。四张 R2.1 主画板与一张交互说明保留为历史评审稿，不再直接代表当前十三项目页面。
 
 2026-11-01 按所有者要求同步为十三产品，新增 RadishForge；组织展示统一为「萝卜智能 · Radish Intelligence」，官网名保持 RadishX，组织入口指向 `RadishIntelligence`。Root、Memory、Ink 等状态按本地文档纠正；Checker 仍为配套仓库。只有 Radish 与 Ink 保留已确认的独立 Web 入口。范围、来源与本轮验证见[产品矩阵同步](../features/product-matrix-refresh.md#2026-11-01-组织品牌与十三产品同步)。组织迁移完成[评估](../deployment/vercel.md#2026-11-01-迁入组织评估未执行)后，所有者明确决定不迁移：保留 `laugh0608/RadishX` 及现有 Vercel 归属，迁移不再作为待办。四个展示仓库已按授权分别提交推送；未修改 Vercel 配置或 DNS。控制台显示 `9a0fbee` 为 Ready 生产部署，域名端到端访问仍未验收。
+
+2026-11-02 按所有者确认同步 RadishUI：公开入口为 `https://ui.radishx.com/`，作为共享基础设施进入 About 与页脚，不增加独立产品数量或官网路由。About 更新为 16 个仓库、5 项域名、3 个独立 Web 入口；组织 Profile 补充设计系统入口，个人主页与个人 GitHub Profile 本轮不改。范围、来源与验证见[最新批次](../features/product-matrix-refresh.md#2026-11-02-radishui-共享基础设施入口)和 [W45 日志](../devlogs/2026-W45.md)。
 
 当前阅读链：[整体规划](overview.md) → [页面与交互主线](../features/README.md#pages) → [整合目标的后续批次](../features/site-design-refinement.md#后续批次)；公开内容与质量问题另从[质量主线](../features/README.md#quality)进入。
 
@@ -70,4 +72,4 @@
 - [Vercel 与域名](../deployment/vercel.md)：canonical、兼容入口、项目独立子域及部署记录要求。
 - [开发日志](../devlogs/README.md)：已完成工作、日期化验证和剩余限制。
 
-官网继续只承担 Radish 系列项目展示与公共入口。`radishx.com` 为 canonical，`www.radishx.com` 为兼容入口；只有 Radish 与 RadishInk 已确认部署独立 Web 入口，其他项目不登记或展示暂定子域，`x.radishx.com` 继续保留给 Labs、实验入口或统一跳转用途，本轮不启用。
+官网继续只承担 Radish 系列项目展示与公共入口。`radishx.com` 为 canonical，`www.radishx.com` 为兼容入口；Radish 与 RadishInk 提供独立产品 Web 入口，RadishUI 另有 `ui.radishx.com` 设计系统工程预览，其他项目不登记或展示暂定子域，`x.radishx.com` 继续保留给 Labs、实验入口或统一跳转用途，本轮不启用。

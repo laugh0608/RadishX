@@ -4,10 +4,10 @@
 
 ## 当前官网部署
 
-本 Vercel 项目仅承载 RadishX 官网。2026-10-06 所有者确认 Radish 与 RadishInk 已独立部署；2026-10-17 所有者要求官网移除未部署项目的网页链接，仅保留这两个已部署入口。项目子域不属于本官网的路由或重写规则。
+本 Vercel 项目仅承载 RadishX 官网。Radish 与 RadishInk 是已确认的独立产品 Web 入口；2026-11-02 所有者新增确认 RadishUI 设计系统展示站。独立子域不属于本官网的路由或重写规则，未部署产品继续不登记暂定域名。
 
 - GitHub 仓库：`https://github.com/laugh0608/RadishX`
-- Vercel 项目：`laugh0608's projects`（Hobby）下的 `radishx`；2026-11-01 控制台显示 `9a0fbee` 为 Ready 的生产部署，域名端到端访问尚未通过本轮核验
+- Vercel 项目：2026-11-02 控制台显示 [DaBaiLuoBo / radish-x](https://vercel.com/dabailuobo/radish-x)，Hobby；此前 scope 为 `laugh0608's projects`、项目为 `radishx`，历史核查保留原名称。官网主域的端到端访问仍未在本批重新验收
 - Canonical 主域名：`radishx.com`
 - 兼容访问入口：`https://www.radishx.com/`，跳转到 `https://radishx.com/`
 - 站点内容：首页、十三个产品介绍页、Mascot、About
@@ -19,7 +19,13 @@
 - `hub.radishx.com`：Radish
 - `ink.radishx.com`：RadishInk，主要以 Web 方式提供服务
 
-官网只登记和展示上述两个已部署入口，开放对应项目的访问按钮。其他项目暂不登记、不推导、不展示暂定域名、禁用按钮或“即将上线”暗示；只保留 GitHub 与项目文档入口。部署状态依据所有者确认及 RadishInk 本地部署文档，本次不代表重新执行了线上可用性验收。
+独立共享基础设施入口（2026-11-02 所有者确认）：
+
+- `ui.radishx.com`：RadishUI，共享设计系统的工程预览；源码为 `RadishIntelligence/RadishUI`，Vercel 项目为 [DaBaiLuoBo / radish-ui](https://vercel.com/dabailuobo/radish-ui)。
+
+官网登记上述两个产品入口和 RadishUI 展示站。RadishUI 作为共享基础设施进入 About 与页脚，不计为独立产品，不增加官网路由或 rewrite。其他未部署项目只保留 GitHub 与文档入口。
+
+2026-11-02 真实 Chrome 访问 `ui.radishx.com` 已显示 RadishUI 页面；本机命令行请求返回 Cloudflare 403，默认 `radishui.vercel.app` 请求为 200。此处区分浏览器结果与自动请求限制，不宣称已完成所有网络环境验收。
 
 ## 第一版部署配置
 
