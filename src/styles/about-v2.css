@@ -530,8 +530,71 @@
   background: var(--rx-bg-surface);
 }
 
-.about2-domain-grid + .button {
+.about2-radishui-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
   margin-top: 24px;
+  padding: 18px 20px;
+  border: 1px solid var(--rx-border-soft);
+  border-radius: 18px;
+  background: var(--rx-bg-surface);
+}
+
+.about2-radishui-entry__copy {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.about2-radishui-entry__copy strong {
+  color: var(--rx-text-primary);
+  font-family: var(--rx-font-mono);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about2-radishui-entry__copy p {
+  margin: 0;
+  color: var(--rx-text-secondary);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.about2-radishui-entry__lead,
+.about2-radishui-entry__note {
+  margin: 0 0 12px;
+  color: var(--rx-text-secondary);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.about2-radishui-entry__note {
+  color: var(--rx-text-muted);
+  font-size: 12px;
+}
+
+.about2-radishui-entry__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--rx-brand-primary);
+  font-size: 14px;
+  font-weight: 600;
+  text-underline-offset: 3px;
+}
+
+.about2-radishui-entry__link:hover {
+  color: var(--rx-brand-hover);
+}
+
+@media (max-width: 640px) {
+  .about2-radishui-entry {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 .about2-domain-card:first-child {
