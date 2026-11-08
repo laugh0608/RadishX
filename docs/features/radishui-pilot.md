@@ -1,6 +1,6 @@
 # RadishUI 消费试点
 
-状态：待验收（本地实现与限定浏览器检查完成，2026-11-08）
+状态：已完成（本地试点，2026-11-08 所有者确认视觉；未合并 / 部署）
 最后更新：2026-11-08
 主要归属：品牌视觉与素材（家族 UI 参考规范）
 协同：页面与交互（About 联系区）、质量与发布（构建与浏览器检查）
@@ -88,7 +88,7 @@
 - 安装后 `npm audit` 有 4 个 high，均为安装前已存在的 `vite@8.0.16`、`postcss@8.5.15`、`nanoid@3.3.12`、`source-map-js@1.2.1`；未执行 `npm audit fix`，不归因于 RadishUI 试点。
 - `npm run build`、`npm run type-check`、`npm run check:agent-guides`、`git diff --check` 通过。
 - 浏览器 28/28 通过：`/about` 入口卡、共享 Button 打开 Dialog、标题 / 说明 / 外链、初始焦点在 Dialog 内、Tab 不离开 Dialog、Escape 关闭并回焦、390 / 1440 无横向溢出、明暗 token；`/`、`/mascot`、`/mind` 无横向溢出且旧暖色 token 值保留（`--rd-bg-app: #f4efe6`、`--rd-text-primary: #2f2a25`）；新增结构 token `--rd-control-height: 40px`；Dialog overlay z-index 70 覆盖 header z-index 20，打开时 `body` 滚动锁定。
-- 视觉：入口卡延续 domains 区白卡；共享 Button 高 40px，比站点 `.button` 的 46px 略小，边框使用新 `--rd-border-control`、色调略冷；作为试点差异保留，待所有者确认是否接受或需要局部桥接。
+- 视觉：入口卡延续 domains 区白卡；共享 Button 高 40px，比站点 `.button` 的 46px 略小，边框使用新 `--rd-border-control`、色调略冷；作为试点差异保留，所有者已确认接受。
 - 截图在忽略目录 `output/playwright/radishui-pilot/`。
 - 未覆盖：推送 / 部署 / 合并 `master`、Safari / Firefox、屏幕阅读器、全站暗色矩阵、真实用户验收；回滚步骤已记录，未实际执行（避免重建依赖树）。
 
@@ -97,7 +97,7 @@
 - About 入口卡在真实构建中可用，共享 Button + Dialog 交互与键盘 / 焦点通过。
 - 站点现有暖色 token 与页面视觉未被全量替换；只新增共享组件所需结构变量。
 - 采用版本、tarball sha256、RadishUI 源提交、依赖例外与回滚方式记录完整。
-- 所有者确认视觉与范围；未推送、未部署、未合并 `master`。
+- 所有者已确认视觉与范围；未推送、未部署、未合并 `master`。
 
 ## 回滚
 
