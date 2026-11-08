@@ -48,6 +48,7 @@
 | --- | --- | --- | --- |
 | 公司品牌探索 | 命名与 Logo 探索批次；协同公开内容 | [公司品牌目标](company-brand-identity.md) | [验证与后续](company-brand-identity.md#验证与后续) |
 | 家族 UI 参考规范 | 规范版本演进；协同页面 | [本轮任务](family-ui-spec.md#本轮任务)与同文状态 | [完成标准](family-ui-spec.md#完成标准) |
+| RadishUI 组件消费试点 | P2 首个试点；协同 About 页面与 family-ui | [试点范围与验证](radishui-pilot.md) | [完成标准](radishui-pilot.md#完成标准) |
 | 素材治理目标 | 按素材批次持续执行；协同 Mascot / 页面 | [准入与开发任务](asset-governance.md) | [完成标准](asset-governance.md#完成标准) |
 | 项目视觉素材准入准备 | 按具体候选启动；协同矩阵 / 详情页 | [项目清单与接入顺序](project-visual-asset-readiness.md) | [完成标准](project-visual-asset-readiness.md#完成标准) |
 | 设计源精确化 | v0 craft 历史基线；协同页面 | [历史任务与记录](design-source-refresh.md) | [完成标准](design-source-refresh.md#完成标准) |

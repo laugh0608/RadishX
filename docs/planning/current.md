@@ -20,6 +20,8 @@
 
 2026-11-02 按所有者确认同步 RadishUI：公开入口为 `https://ui.radishx.com/`，作为共享基础设施进入 About 与页脚，不增加独立产品数量或官网路由。About 更新为 16 个仓库、5 项域名、3 个独立 Web 入口；组织 Profile 补充设计系统入口，个人主页与个人 GitHub Profile 本轮不改。范围、来源与验证见[最新批次](../features/product-matrix-refresh.md#2026-11-02-radishui-共享基础设施入口)和 [W45 日志](../devlogs/2026-W45.md)。
 
+2026-11-08 按所有者确认开展 RadishUI P2 试点：在 About 页用共享 `Button` + `Dialog` 做入口卡，验证 tarball 消费与旧 family-ui token 层的桥接；本地实现与限定浏览器检查已完成，待所有者视觉确认。范围、依赖、例外、结果与回滚见[RadishUI 消费试点](../features/radishui-pilot.md)。本批不推送、不部署、不合并 `master`；站点其余页面与 `family-ui-tokens.css` 存量值保持原值。
+
 当前阅读链：[整体规划](overview.md) → [页面与交互主线](../features/README.md#pages) → [整合目标的后续批次](../features/site-design-refinement.md#后续批次)；公开内容与质量问题另从[质量主线](../features/README.md#quality)进入。
 
 后续顺序：
@@ -27,6 +29,7 @@
 1. 评估 R2.2 Pencil 设计源回填；`.pen` 只能通过 Pencil 读写，当前环境未执行。
 2. 后续按实际发布范围核验线上页面与 `www` 跳转；所有者已决定不迁移 GitHub 仓库及 Vercel 归属，迁移不再列为待办。
 3. 继续核实公开访问地址、修正既有质量问题，再评估 SEO 静态输出与验证入口。
+4. RadishUI P2 试点（About 入口卡）完成并通过视觉确认后，再评估是否扩大到其他页面或其他项目。
 
 本轮已完成 R2.2 四条页面线与共享层的 React 实现，且四页双端截图已获所有者确认；这不等同于 Pencil 设计源已更新，也不代表线上版本已核验。后续如果调整精选、分类、展陈层级、信息密度或页面素材，仍以所有者确认为准。
 
