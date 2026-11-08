@@ -20,7 +20,7 @@
 
 2026-11-02 按所有者确认同步 RadishUI：公开入口为 `https://ui.radishx.com/`，作为共享基础设施进入 About 与页脚，不增加独立产品数量或官网路由。About 更新为 16 个仓库、5 项域名、3 个独立 Web 入口；组织 Profile 补充设计系统入口，个人主页与个人 GitHub Profile 本轮不改。范围、来源与验证见[最新批次](../features/product-matrix-refresh.md#2026-11-02-radishui-共享基础设施入口)和 [W45 日志](../devlogs/2026-W45.md)。
 
-2026-11-08 按所有者确认开展 RadishUI P2 试点：在 About 页用共享 `Button` + `Dialog` 做入口卡，验证 tarball 消费与旧 family-ui token 层的桥接；本地实现与限定浏览器检查已完成，所有者已确认视觉；分支保留，未推送、未部署、未合并 `master`。范围、依赖、例外、结果与回滚见[RadishUI 消费试点](../features/radishui-pilot.md)。本批不推送、不部署、不合并 `master`；站点其余页面与 `family-ui-tokens.css` 存量值保持原值。
+2026-11-08 按所有者确认开展 RadishUI P2 试点：在 About 页用共享 `Button` + `Dialog` 做入口卡，验证 tarball 消费与旧 family-ui token 层的桥接；本地实现与限定浏览器检查已完成，所有者已确认视觉；依赖版本已同步 RadishUI 26.11.1，分支保留，未推送、未部署、未合并 `master`。范围、依赖、例外、结果与回滚见[RadishUI 消费试点](../features/radishui-pilot.md)。本批不推送、不部署、不合并 `master`；站点其余页面与 `family-ui-tokens.css` 存量值保持原值。
 
 当前阅读链：[整体规划](overview.md) → [页面与交互主线](../features/README.md#pages) → [整合目标的后续批次](../features/site-design-refinement.md#后续批次)；公开内容与质量问题另从[质量主线](../features/README.md#quality)进入。
 

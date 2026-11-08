@@ -36,10 +36,10 @@
 
 | 包 | 来源 | 版本 | sha256 |
 | --- | --- | --- | --- |
-| `@radish-ui/react` | `vendor/radish-ui/radish-ui-react-0.1.0.tgz` | 0.1.0 | `db73fdb8c6ad23f4d390b5adaee6fb8872ac6ce25bde06d898b86ddbfd87be44` |
-| `@radish-ui/tokens` | `vendor/radish-ui/radish-ui-tokens-0.1.0.tgz` | 0.1.0 | `b929890d1349acc05254805a8cd7cc299bc8606213735e275e496074cbc10276` |
+| `@radish-ui/react` | `vendor/radish-ui/radish-ui-react-26.11.1.tgz` | 26.11.1 | `e75c0f30da0cde6bb07a5511a79382008fc2527dcb00d09d10ba890628f62f3f` |
+| `@radish-ui/tokens` | `vendor/radish-ui/radish-ui-tokens-26.11.1.tgz` | 26.11.1 | `9be3e7635670872c12c2838b125d7ca56bc24229d4cef364a664a85c621dc14f` |
 
-- RadishUI 源提交：`dev` @ `a13b68d`（tokens 打包修复）。
+- RadishUI 源提交：`dev` @ `984b471`（家族日历版本 26.11.1 对齐；包含 tokens 打包修复）。
 - tarball 以 `file:` 依赖固定；不使用浮动 latest，不直接指向兄弟仓库目录。
 - 共享包依赖 `radix-ui@1.8.1`（55 个 `@radix-ui/*` 子包）与 `lucide-react@1.68.0`；试点的安装面较大，是否长期接受待后续评估。
 - 例外：`@radish-ui/react` 仍是 TS 源码直发，没有 `dist` / `.d.ts`；依赖 RadishX 的 Vite + TS `Bundler` 转译。
@@ -84,7 +84,7 @@
 
 ## 本轮结果（2026-11-08）
 
-- 分支：`feature/radishui-about-entry`；依赖通过两个 vendored tarball 固定，`package-lock.json` 新增 76 个包（`radix-ui@1.8.1`、`lucide-react@1.68.0` 及 Radix 子包）。
+- 分支：`feature/radishui-about-entry`；依赖通过两个 vendored tarball（26.11.1）固定，`package-lock.json` 新增 76 个包（`radix-ui@1.8.1`、`lucide-react@1.68.0` 及 Radix 子包）。
 - 安装后 `npm audit` 有 4 个 high，均为安装前已存在的 `vite@8.0.16`、`postcss@8.5.15`、`nanoid@3.3.12`、`source-map-js@1.2.1`；未执行 `npm audit fix`，不归因于 RadishUI 试点。
 - `npm run build`、`npm run type-check`、`npm run check:agent-guides`、`git diff --check` 通过。
 - 浏览器 28/28 通过：`/about` 入口卡、共享 Button 打开 Dialog、标题 / 说明 / 外链、初始焦点在 Dialog 内、Tab 不离开 Dialog、Escape 关闭并回焦、390 / 1440 无横向溢出、明暗 token；`/`、`/mascot`、`/mind` 无横向溢出且旧暖色 token 值保留（`--rd-bg-app: #f4efe6`、`--rd-text-primary: #2f2a25`）；新增结构 token `--rd-control-height: 40px`；Dialog overlay z-index 70 覆盖 header z-index 20，打开时 `body` 滚动锁定。
