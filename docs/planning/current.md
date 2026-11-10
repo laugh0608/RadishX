@@ -1,6 +1,6 @@
 # 当前规划
 
-最后更新：2026-11-02（RadishUI 自定义域名与共享基础设施入口同步）
+最后更新：2026-11-10（官网有限收口与 RadishUI 试点职责分离）
 
 ## 当前阶段
 
@@ -14,7 +14,7 @@
 
 ## 当前活跃目标
 
-第一顺位仍为 [官网整体设计与美化](../features/site-design-refinement.md)。R2.2 首页、详情页、About、Mascot 与共享层已完成 React-first 实现、双端复核，并由所有者于 2026-10-17 确认四页截图；单张表情裁切已修复。下一步处理 R2.2 Pencil 设计源回填与公开访问核验。四张 R2.1 主画板与一张交互说明保留为历史评审稿，不再直接代表当前十三项目页面。
+第一顺位调整为[官网质量与对外表达收口](../features/site-quality-and-public-content.md)：先校准内容与问题现状，再修复本批必要问题，最后在候选与授权明确后核验线上。R2.2 首页、详情页、About、Mascot 与共享层已完成 React-first 实现、双端复核，并由所有者于 2026-10-17 确认四页截图；单张表情裁切已修复。[整体设计与美化](../features/site-design-refinement.md)继续负责历史基线与设计源回填；Pencil 回填不再作为本批质量修正或发布核验的前置条件。四张 R2.1 主画板与一张交互说明保留为历史评审稿，不再直接代表当前十三项目页面。
 
 2026-11-01 按所有者要求同步为十三产品，新增 RadishForge；组织展示统一为「萝卜智能 · Radish Intelligence」，官网名保持 RadishX，组织入口指向 `RadishIntelligence`。Root、Memory、Ink 等状态按本地文档纠正；Checker 仍为配套仓库。只有 Radish 与 Ink 保留已确认的独立 Web 入口。范围、来源与本轮验证见[产品矩阵同步](../features/product-matrix-refresh.md#2026-11-01-组织品牌与十三产品同步)。组织迁移完成[评估](../deployment/vercel.md#2026-11-01-迁入组织评估未执行)后，所有者明确决定不迁移：保留 `laugh0608/RadishX` 及现有 Vercel 归属，迁移不再作为待办。四个展示仓库已按授权分别提交推送；未修改 Vercel 配置或 DNS。控制台显示 `9a0fbee` 为 Ready 生产部署，域名端到端访问仍未验收。
 
@@ -22,14 +22,17 @@
 
 2026-11-08 按所有者确认开展 RadishUI 临时消费测试（不计入正式产品试点）：在 About 页用共享 `Button` + `Dialog` 做入口卡，验证 tarball 消费与旧 family-ui token 层的桥接；本地实现与限定浏览器检查已完成，所有者已确认视觉；依赖版本已同步 RadishUI 26.11.1，分支仅在本机，未推送、未部署、未合并 `master`。该测试不进入正式发布，也不计入 RadishUI F-02.6 产品采用。范围、依赖、例外、结果与回滚见[RadishUI 临时消费测试](../features/radishui-pilot.md)。
 
-当前阅读链：[整体规划](overview.md) → [页面与交互主线](../features/README.md#pages) → [整合目标的后续批次](../features/site-design-refinement.md#后续批次)；公开内容与质量问题另从[质量主线](../features/README.md#quality)进入。
+2026-11-10 所有者确认两库规划收口。本轮只修改文档；正式试点实施、安装、服务与远端操作尚未开始。RadishUI 自身已获确认的运行基线、RadishX 11 月 8 日临时消费、11 月 9 日临时副本延迟加载原型分别记录；后两者不计正式采用。产品侧范围和验收见[有限试点计划](../features/radishui-pilot.md#formal-pilot-closeout)。
+
+当前阅读链：[整体规划](overview.md) → [质量主线](../features/README.md#quality) → [有限收口批次](../features/site-quality-and-public-content.md#finite-closeout)；页面与设计源工作继续由[整合目标](../features/site-design-refinement.md#后续批次)维护。
 
 后续顺序：
 
-1. 评估 R2.2 Pencil 设计源回填；`.pen` 只能通过 Pencil 读写，当前环境未执行。
-2. 后续按实际发布范围核验线上页面与 `www` 跳转；所有者已决定不迁移 GitHub 仓库及 Vercel 归属，迁移不再列为待办。
-3. 继续核实公开访问地址、修正既有质量问题，再评估 SEO 静态输出与验证入口。
-4. RadishUI P2 试点（About 入口卡）完成并通过视觉确认后，再评估是否扩大到其他页面或其他项目。
+1. 校准内容与 Q01–Q09 现状，明确本批仍存在的问题、被替代项和后置项；本轮源码核对已更新清单，浏览器与公开入口核验仍待执行。
+2. 按质量专题完成必要修正及定向双端验证；不因旧清单重复修复已不存在的实现，也不将局部源码核对写成全站通过。
+3. 确定发布候选与范围，获对应授权后核验线上版本、正式路由、资源和 `www` 跳转；保留 GitHub / Vercel 现有归属，不重启组织迁移。
+4. About 有限试点可独立推进：产品分支实施与验收完成后，分别判断技术消费、视觉确认和采用收益；试点未完成不阻塞不含它的官网候选。
+5. Pencil 回填与 SEO 静态输出各自限定范围后推进；不自动扩为全站重设计、token 迁移或框架迁移。
 
 本轮已完成 R2.2 四条页面线与共享层的 React 实现，且四页双端截图已获所有者确认；这不等同于 Pencil 设计源已更新，也不代表线上版本已核验。后续如果调整精选、分类、展陈层级、信息密度或页面素材，仍以所有者确认为准。
 
