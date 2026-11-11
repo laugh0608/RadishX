@@ -1,9 +1,44 @@
-import { useState } from "react";
-import { Button, Dialog } from "@radish-ui/react";
+import { lazy, Suspense, useCallback, useRef, useState } from "react";
 
 import { contacts, domainSurfaces, officialAccount, repositories } from "../data/contacts";
 import { radishUISiteUrl, radishXRepositoryUrl } from "../data/navigation";
 import { projects } from "../data/projects";
+
+const RadishUIEntry = lazy(() => import("./RadishUIEntry").catch(error => {
+  console.error("Could not load the RadishUI entry", error);
+  return { default: () => <></> };
+}));
+
+function RadishUIEntryCard() {
+  const fallback = useRef<HTMLAnchorElement>(null);
+  const [ready, setReady] = useState(false);
+  const handleReady = useCallback((button: HTMLButtonElement) => {
+    if (fallback.current === document.activeElement) {
+      button.focus({ preventScroll: true });
+    }
+    setReady(true);
+  }, []);
+
+  return (
+    <div className="about2-radishui-entry">
+      <div className="about2-radishui-entry__copy">
+        <strong>RadishUI</strong>
+        <p>家族共享设计系统，提供语义 token、React 组件与展示范例。</p>
+      </div>
+      <div className="about2-radishui-entry__action">
+        {!ready && (
+          <a ref={fallback} className="button button--secondary" href={radishUISiteUrl} target="_blank" rel="noopener noreferrer">
+            访问 RadishUI
+            <span aria-hidden="true">↗</span>
+          </a>
+        )}
+        <Suspense fallback={null}>
+          <RadishUIEntry onReady={handleReady} />
+        </Suspense>
+      </div>
+    </div>
+  );
+}
 
 function indexNumber(value: number) {
   return String(value).padStart(2, "0");
@@ -12,7 +47,6 @@ function indexNumber(value: number) {
 export function AboutPage() {
   const emailContact = contacts.find((contact) => contact.label === "Email");
   const webEntryCount = domainSurfaces.filter((surface) => surface.isIndependentEntry).length;
-  const [radishUIDialogOpen, setRadishUIDialogOpen] = useState(false);
 
   return (
     <div className="about2-page">
@@ -201,42 +235,7 @@ export function AboutPage() {
               </article>
             ))}
           </div>
-          <div className="about2-radishui-entry">
-            <div className="about2-radishui-entry__copy">
-              <strong>RadishUI</strong>
-              <p>家族共享设计系统，提供语义 token、React 组件与展示范例。</p>
-            </div>
-            <Button variant="secondary" onClick={() => setRadishUIDialogOpen(true)}>
-              查看 RadishUI
-            </Button>
-          </div>
-          <Dialog
-            open={radishUIDialogOpen}
-            onOpenChange={setRadishUIDialogOpen}
-            title="RadishUI"
-            description="Radish 家族共享设计系统"
-            footer={
-              <Button variant="ghost" onClick={() => setRadishUIDialogOpen(false)}>
-                关闭
-              </Button>
-            }
-          >
-            <p className="about2-radishui-entry__lead">
-              RadishUI 提供跨平台的语义 token、React 组件和展示范例；独立站点为 ui.radishx.com。
-            </p>
-            <p className="about2-radishui-entry__note">
-              本次试点只接入 Button 与 Dialog；站点其余样式与 family-ui token 副本保持原值。
-            </p>
-            <a
-              className="about2-radishui-entry__link"
-              href={radishUISiteUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              打开 ui.radishx.com
-              <span aria-hidden="true">↗</span>
-            </a>
-          </Dialog>
+          <RadishUIEntryCard />
         </div>
       </section>
     </div>

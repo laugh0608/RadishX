@@ -542,6 +542,26 @@
   background: var(--rx-bg-surface);
 }
 
+.about2-radishui-entry__action {
+  display: grid;
+  justify-items: start;
+  flex: 0 0 auto;
+}
+
+.about2-radishui-entry__action > :is(.button, .about2-radishui-entry__button) {
+  grid-area: 1 / 1;
+  min-height: 46px;
+}
+
+.about2-radishui-entry__button,
+.about2-radishui-entry__dialog {
+  --rd-bg-selected: var(--rx-bg-muted);
+}
+
+.about2-radishui-entry__button {
+  --rd-border-control: var(--rx-border-strong);
+}
+
 .about2-radishui-entry__copy {
   display: grid;
   gap: 4px;

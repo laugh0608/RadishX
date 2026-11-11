@@ -10,7 +10,6 @@ import "./styles/home-v2.css";
 import "./styles/project-v2.css";
 import "./styles/about-v2.css";
 import "./styles/mascot-v2.css";
-import "@radish-ui/react/styles.css";
 
 createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
