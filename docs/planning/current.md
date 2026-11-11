@@ -1,6 +1,6 @@
 # 当前规划
 
-最后更新：2026-11-10（官网有限收口与 RadishUI 试点职责分离）
+最后更新：2026-11-11（About 密度修订与 RadishUI 试点验收记录）
 
 ## 当前阶段
 
@@ -12,6 +12,7 @@
 - Pencil：R2.2 设计源仍待回填，v1 保留灰玉基准与 R2.1 评审稿，v0 是 craft 历史基线；分工见[视觉规范](../design/visual-guidelines.md)与[UI 差异附录](../design/ui-addendum.md)。
 - 线上：本批未核验当前部署、远端版本或域名跳转，不能认定已包含 R2.2；历史 smoke 只证明对应候选。
 - RadishUI 有限试点：2026-11-11 在 `feature/radishui-about-entry` 本地完成实施与技术验收（Chrome 231 / Safari 9 / Firefox 9，干净安装与实际回滚），技术消费成立；视觉与采用决定待所有者，分支未推送、未部署。范围与未覆盖面见[有限试点](../features/radishui-pilot.md#2026-11-11-正式试点实施与验收)。
+- About 密度：2026-11-11 所有者确认后完成页面尺度修订（主标题上限 96→80、区块 64→48、区块留白 96→64、索引卡 460→380、仓库行 96→76）；Chrome 1440 / 390 明暗、Safari 1440、Firefox 1440 / 390 抽查通过。当前只在本地试点分支，未推送、未合并。详见 [About 专题](../features/about-contact-surface.md#2026-11-11-密度修订)。
 
 ## 当前活跃目标
 
