@@ -1,6 +1,6 @@
 # 当前规划
 
-最后更新：2026-11-02（RadishUI 自定义域名与共享基础设施入口同步）
+最后更新：2026-11-12（About 有限采用登记与密度修订）
 
 ## 当前阶段
 
@@ -11,22 +11,30 @@
 - React 与本地验证：指定 R2.2 页面批次已通过；不代表所有历史质量问题均已处理，细项见[质量目标](../features/site-quality-and-public-content.md#待处理问题)。
 - Pencil：R2.2 设计源仍待回填，v1 保留灰玉基准与 R2.1 评审稿，v0 是 craft 历史基线；分工见[视觉规范](../design/visual-guidelines.md)与[UI 差异附录](../design/ui-addendum.md)。
 - 线上：本批未核验当前部署、远端版本或域名跳转，不能认定已包含 R2.2；历史 smoke 只证明对应候选。
+- RadishUI 有限试点：2026-11-11 在 `feature/radishui-about-entry` 本地完成实施与技术验收（Chrome 231 / Safari 9 / Firefox 9，干净安装与实际回滚）；2026-11-12 所有者确认有限采用。分支已推送并开 PR #1，待审阅合并；未部署。范围与边界见[有限试点](../features/radishui-pilot.md#2026-11-12-采用登记与发布状态)。
+- About 密度：2026-11-11 所有者确认后完成页面尺度修订（主标题上限 96→80、区块 64→48、区块留白 96→64、索引卡 460→380、仓库行 96→76）；Chrome 1440 / 390 明暗、Safari 1440、Firefox 1440 / 390 抽查通过。当前只在本地试点分支，未推送、未合并。详见 [About 专题](../features/about-contact-surface.md#2026-11-11-密度修订)。
 
 ## 当前活跃目标
 
-第一顺位仍为 [官网整体设计与美化](../features/site-design-refinement.md)。R2.2 首页、详情页、About、Mascot 与共享层已完成 React-first 实现、双端复核，并由所有者于 2026-10-17 确认四页截图；单张表情裁切已修复。下一步处理 R2.2 Pencil 设计源回填与公开访问核验。四张 R2.1 主画板与一张交互说明保留为历史评审稿，不再直接代表当前十三项目页面。
+第一顺位调整为[官网质量与对外表达收口](../features/site-quality-and-public-content.md)：先校准内容与问题现状，再修复本批必要问题，最后在候选与授权明确后核验线上。R2.2 首页、详情页、About、Mascot 与共享层已完成 React-first 实现、双端复核，并由所有者于 2026-10-17 确认四页截图；单张表情裁切已修复。[整体设计与美化](../features/site-design-refinement.md)继续负责历史基线与设计源回填；Pencil 回填不再作为本批质量修正或发布核验的前置条件。四张 R2.1 主画板与一张交互说明保留为历史评审稿，不再直接代表当前十三项目页面。
 
 2026-11-01 按所有者要求同步为十三产品，新增 RadishForge；组织展示统一为「萝卜智能 · Radish Intelligence」，官网名保持 RadishX，组织入口指向 `RadishIntelligence`。Root、Memory、Ink 等状态按本地文档纠正；Checker 仍为配套仓库。只有 Radish 与 Ink 保留已确认的独立 Web 入口。范围、来源与本轮验证见[产品矩阵同步](../features/product-matrix-refresh.md#2026-11-01-组织品牌与十三产品同步)。组织迁移完成[评估](../deployment/vercel.md#2026-11-01-迁入组织评估未执行)后，所有者明确决定不迁移：保留 `laugh0608/RadishX` 及现有 Vercel 归属，迁移不再作为待办。四个展示仓库已按授权分别提交推送；未修改 Vercel 配置或 DNS。控制台显示 `9a0fbee` 为 Ready 生产部署，域名端到端访问仍未验收。
 
 2026-11-02 按所有者确认同步 RadishUI：公开入口为 `https://ui.radishx.com/`，作为共享基础设施进入 About 与页脚，不增加独立产品数量或官网路由。About 更新为 16 个仓库、5 项域名、3 个独立 Web 入口；组织 Profile 补充设计系统入口，个人主页与个人 GitHub Profile 本轮不改。范围、来源与验证见[最新批次](../features/product-matrix-refresh.md#2026-11-02-radishui-共享基础设施入口)和 [W45 日志](../devlogs/2026-W45.md)。
 
-当前阅读链：[整体规划](overview.md) → [页面与交互主线](../features/README.md#pages) → [整合目标的后续批次](../features/site-design-refinement.md#后续批次)；公开内容与质量问题另从[质量主线](../features/README.md#quality)进入。
+2026-11-08 按所有者确认开展 RadishUI 临时消费测试（不计入正式产品试点）：在 About 页用共享 `Button` + `Dialog` 做入口卡，验证 tarball 消费与旧 family-ui token 层的桥接；本地实现与限定浏览器检查已完成，所有者已确认视觉；依赖版本已同步 RadishUI 26.11.1，分支仅在本机，未推送、未部署、未合并 `master`。该测试不进入正式发布，也不计入 RadishUI F-02.6 产品采用。范围、依赖、例外、结果与回滚见[RadishUI 临时消费测试](../features/radishui-pilot.md)。
+
+2026-11-10 所有者确认两库规划收口。本轮只修改文档；正式试点实施、安装、服务与远端操作尚未开始。RadishUI 自身已获确认的运行基线、RadishX 11 月 8 日临时消费、11 月 9 日临时副本延迟加载原型分别记录；后两者不计正式采用。产品侧范围和验收见[有限试点计划](../features/radishui-pilot.md#formal-pilot-closeout)。
+
+当前阅读链：[整体规划](overview.md) → [质量主线](../features/README.md#quality) → [有限收口批次](../features/site-quality-and-public-content.md#finite-closeout)；页面与设计源工作继续由[整合目标](../features/site-design-refinement.md#后续批次)维护。
 
 后续顺序：
 
-1. 评估 R2.2 Pencil 设计源回填；`.pen` 只能通过 Pencil 读写，当前环境未执行。
-2. 后续按实际发布范围核验线上页面与 `www` 跳转；所有者已决定不迁移 GitHub 仓库及 Vercel 归属，迁移不再列为待办。
-3. 继续核实公开访问地址、修正既有质量问题，再评估 SEO 静态输出与验证入口。
+1. 校准内容与 Q01–Q09 现状，明确本批仍存在的问题、被替代项和后置项；本轮源码核对已更新清单，浏览器与公开入口核验仍待执行。
+2. 按质量专题完成必要修正及定向双端验证；不因旧清单重复修复已不存在的实现，也不将局部源码核对写成全站通过。
+3. 确定发布候选与范围，获对应授权后核验线上版本、正式路由、资源和 `www` 跳转；保留 GitHub / Vercel 现有归属，不重启组织迁移。
+4. About 有限采用已登记；PR #1 待审阅合并，合并会触发部署。未上线前不宣称生产采用；上线后再选择一个有真实交互需求的产品场景。
+5. Pencil 回填与 SEO 静态输出各自限定范围后推进；不自动扩为全站重设计、token 迁移或框架迁移。
 
 本轮已完成 R2.2 四条页面线与共享层的 React 实现，且四页双端截图已获所有者确认；这不等同于 Pencil 设计源已更新，也不代表线上版本已核验。后续如果调整精选、分类、展陈层级、信息密度或页面素材，仍以所有者确认为准。
 

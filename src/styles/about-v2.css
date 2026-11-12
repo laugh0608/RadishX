@@ -17,7 +17,7 @@
 
 .about2-hero {
   position: relative;
-  padding: 64px var(--rx-space-page-x) 96px;
+  padding: 48px var(--rx-space-page-x) 64px;
   overflow: hidden;
 }
 
@@ -48,12 +48,12 @@
   display: grid;
   align-content: center;
   justify-items: start;
-  gap: 18px;
+  gap: 14px;
   min-width: 0;
 }
 
 .about2-hero__copy h1 {
-  font-size: clamp(56px, 7vw, 96px);
+  font-size: clamp(56px, 5.5vw, 80px);
   line-height: 0.98;
 }
 
@@ -61,7 +61,7 @@
   max-width: 560px;
   color: var(--rx-text-primary);
   font-family: var(--rx-font-serif);
-  font-size: clamp(26px, 2.8vw, 38px);
+  font-size: clamp(22px, 2.2vw, 30px);
   font-weight: 500;
   letter-spacing: 0.01em;
   line-height: 1.35;
@@ -70,8 +70,8 @@
 .about2-hero__intro {
   max-width: 560px;
   color: var(--rx-text-secondary);
-  font-size: 16px;
-  line-height: 1.8;
+  font-size: 15px;
+  line-height: 1.7;
 }
 
 .about2-hero__actions {
@@ -88,8 +88,8 @@
   display: grid;
   align-content: space-between;
   gap: 28px;
-  min-height: 460px;
-  padding: 28px;
+  min-height: 380px;
+  padding: 24px;
   border-radius: 30px;
   background: var(--rx-brand-stage);
   color: var(--rx-text-on-ink);
@@ -194,7 +194,7 @@
 /* —— 分区与标题 —— */
 
 .about2-section {
-  padding: 96px var(--rx-space-page-x);
+  padding: 64px var(--rx-space-page-x);
   border-top: 1px solid var(--rx-border-soft);
 }
 
@@ -213,7 +213,7 @@
 .about2-section__head h2 {
   margin-top: 14px;
   font-family: var(--rx-font-serif);
-  font-size: clamp(42px, 4.4vw, 64px);
+  font-size: clamp(42px, 3.3vw, 48px);
   font-weight: 500;
   letter-spacing: 0.01em;
   line-height: 1.16;
@@ -238,7 +238,7 @@
 
 .about2-section__lead {
   max-width: 700px;
-  margin-top: 26px;
+  margin-top: 20px;
   color: var(--rx-text-secondary);
   font-size: 15px;
   line-height: 1.8;
@@ -331,7 +331,7 @@
   grid-template-columns: 40px minmax(0, 1fr) auto;
   align-items: start;
   gap: 18px;
-  min-height: 92px;
+  min-height: 84px;
   padding: 20px 0;
   border-top: 1px solid var(--rx-border-soft);
 }
@@ -418,8 +418,8 @@
   grid-template-columns: 34px minmax(0, 1fr) 34px;
   align-items: center;
   gap: 14px;
-  min-height: 96px;
-  padding: 16px 0;
+  min-height: 76px;
+  padding: 12px 0;
   border-top: 1px solid var(--rx-border-soft);
 }
 
@@ -525,13 +525,96 @@
   display: grid;
   align-content: start;
   gap: 8px;
-  min-height: 190px;
-  padding: 26px;
+  min-height: 160px;
+  padding: 22px;
   background: var(--rx-bg-surface);
 }
 
-.about2-domain-grid + .button {
+.about2-radishui-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
   margin-top: 24px;
+  padding: 18px 20px;
+  border: 1px solid var(--rx-border-soft);
+  border-radius: 18px;
+  background: var(--rx-bg-surface);
+}
+
+.about2-radishui-entry__action {
+  display: grid;
+  justify-items: start;
+  flex: 0 0 auto;
+}
+
+.about2-radishui-entry__action > :is(.button, .about2-radishui-entry__button) {
+  grid-area: 1 / 1;
+  min-height: 46px;
+}
+
+.about2-radishui-entry__button,
+.about2-radishui-entry__dialog {
+  --rd-bg-selected: var(--rx-bg-muted);
+}
+
+.about2-radishui-entry__button {
+  --rd-border-control: var(--rx-border-strong);
+}
+
+.about2-radishui-entry__copy {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.about2-radishui-entry__copy strong {
+  color: var(--rx-text-primary);
+  font-family: var(--rx-font-mono);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about2-radishui-entry__copy p {
+  margin: 0;
+  color: var(--rx-text-secondary);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.about2-radishui-entry__lead,
+.about2-radishui-entry__note {
+  margin: 0 0 12px;
+  color: var(--rx-text-secondary);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.about2-radishui-entry__note {
+  color: var(--rx-text-muted);
+  font-size: 12px;
+}
+
+.about2-radishui-entry__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--rx-brand-primary);
+  font-size: 14px;
+  font-weight: 600;
+  text-underline-offset: 3px;
+}
+
+.about2-radishui-entry__link:hover {
+  color: var(--rx-brand-hover);
+}
+
+@media (max-width: 640px) {
+  .about2-radishui-entry {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 .about2-domain-card:first-child {
@@ -618,12 +701,12 @@
 
 @media (max-width: 720px) {
   .about2-hero {
-    padding-top: 40px;
-    padding-bottom: 64px;
+    padding-top: 32px;
+    padding-bottom: 48px;
   }
 
   .about2-hero__copy h1 {
-    font-size: clamp(48px, 14vw, 68px);
+    font-size: 48px;
   }
 
   .about2-hero__copy {
@@ -631,8 +714,8 @@
   }
 
   .about2-index {
-    min-height: 360px;
-    padding: 22px;
+    min-height: 320px;
+    padding: 20px;
     border-radius: 24px;
   }
 
@@ -641,8 +724,8 @@
   }
 
   .about2-section {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 52px;
+    padding-bottom: 52px;
   }
 
   .about2-section__head {
@@ -653,7 +736,7 @@
 
   .about2-section__head h2,
   .about2-intro h2 {
-    font-size: clamp(38px, 10vw, 52px);
+    font-size: clamp(34px, 9vw, 40px);
   }
 
   .about2-section__meta {
@@ -663,12 +746,13 @@
   }
 
   .about2-section__lead {
-    margin-top: 18px;
+    margin-top: 20px;
   }
 
   .about2-contact-item {
     grid-template-columns: 28px minmax(0, 1fr);
     gap: 12px;
+    min-height: 0;
   }
 
   .about2-contact-item__action {
@@ -680,7 +764,7 @@
   .about2-repo {
     grid-template-columns: 26px minmax(0, 1fr) 32px;
     gap: 12px;
-    min-height: 88px;
+    min-height: 72px;
   }
 
   .about2-repo__head {
@@ -695,7 +779,7 @@
 
   .about2-domain-card {
     min-height: 0;
-    padding: 22px;
+    padding: 20px;
   }
 }
 

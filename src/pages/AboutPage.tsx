@@ -1,6 +1,44 @@
+import { lazy, Suspense, useCallback, useRef, useState } from "react";
+
 import { contacts, domainSurfaces, officialAccount, repositories } from "../data/contacts";
 import { radishUISiteUrl, radishXRepositoryUrl } from "../data/navigation";
 import { projects } from "../data/projects";
+
+const RadishUIEntry = lazy(() => import("./RadishUIEntry").catch(error => {
+  console.error("Could not load the RadishUI entry", error);
+  return { default: () => <></> };
+}));
+
+function RadishUIEntryCard() {
+  const fallback = useRef<HTMLAnchorElement>(null);
+  const [ready, setReady] = useState(false);
+  const handleReady = useCallback((button: HTMLButtonElement) => {
+    if (fallback.current === document.activeElement) {
+      button.focus({ preventScroll: true });
+    }
+    setReady(true);
+  }, []);
+
+  return (
+    <div className="about2-radishui-entry">
+      <div className="about2-radishui-entry__copy">
+        <strong>RadishUI</strong>
+        <p>家族共享设计系统，提供语义 token、React 组件与展示范例。</p>
+      </div>
+      <div className="about2-radishui-entry__action">
+        {!ready && (
+          <a ref={fallback} className="button button--secondary" href={radishUISiteUrl} target="_blank" rel="noopener noreferrer">
+            访问 RadishUI
+            <span aria-hidden="true">↗</span>
+          </a>
+        )}
+        <Suspense fallback={null}>
+          <RadishUIEntry onReady={handleReady} />
+        </Suspense>
+      </div>
+    </div>
+  );
+}
 
 function indexNumber(value: number) {
   return String(value).padStart(2, "0");
@@ -197,10 +235,7 @@ export function AboutPage() {
               </article>
             ))}
           </div>
-          <a className="button button--secondary" href={radishUISiteUrl} target="_blank" rel="noopener noreferrer">
-            访问 RadishUI
-            <span aria-hidden="true">↗</span>
-          </a>
+          <RadishUIEntryCard />
         </div>
       </section>
     </div>

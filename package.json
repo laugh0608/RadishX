@@ -13,6 +13,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@radish-ui/react": "file:vendor/radish-ui/radish-ui-react-26.11.1.tgz",
+    "@radish-ui/tokens": "file:vendor/radish-ui/radish-ui-tokens-26.11.1.tgz",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },
