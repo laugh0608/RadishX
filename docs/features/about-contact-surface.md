@@ -21,7 +21,7 @@
 - ≤720px：hero 32 / 48px，主标题 48px，索引卡 320px / 20px，区块 52px，区块标题 34–40px，仓库行 72px，域名卡自动高 / 内边距 20px，联系行不设最小高。中间断点保留视觉规范中页面标题 56–116px、区块标题 42–64px 的下限，只压缩 1440 与移动端确认过的值。
 - 实测：1440 全页 3831→3320px（-13.3%），首屏联系内容从 0 行变为 2 行；390 全页 6123→5800px（-5.3%），首屏联系区仍不完整，仓库列表仍为主要长度来源。密度修订后 HTML 直引 JS / CSS 的 gzip 为 96,230 字节（修订前 96,194，+36 B），延迟入口 chunk 不变。
 - 验证：Chrome 157.0.8103.40 在 1440 / 390 × 明暗通过，无横向溢出、无 pageerror；1440 明色连续 10 个 Tab 落点可见且有 `:focus-visible`。Safari 27.0.1 在窗口内容宽 1456px 下抽查通过；Firefox 159.0.1（headless）1440 / 390 × 明暗抽查通过。Safari 390 未重跑，完整 F-02.4 矩阵不适用于本产品页。
-- `npm run build`（含 `tsc --noEmit`）通过；证据在 RadishUI 忽略目录 `output/design-density/2026-11-11/`（RadishUI 维护）。本修订只改 About 排版；首页、详情、Mascot、页脚、Pencil 与全站 token 未动；不把页面压缩扩展成全站尺度调整。本修订当前只在本地 `feature/radishui-about-entry` 分支，未推送、未合并 `master`；它与 RadishUI 试点采用决定独立，若试点不采用，仍应把本 CSS 修订带到官网基线。
+- `npm run build`（含 `tsc --noEmit`）通过；证据在 RadishUI 忽略目录 `output/design-density/2026-11-11/`（RadishUI 维护）。本修订只改 About 排版；首页、详情、Mascot、页脚、Pencil 与全站 token 未动；不把页面压缩扩展成全站尺度调整。本修订已随 PR #1 合并为 `72bdcfd` 并部署到生产；2026-11-12 生产 `/about` 核验通过（1440 / 390、明暗、Dialog 与焦点），试点同时登记采用。
 
 ## 2026-10-17 R2.2 编辑式重构
 

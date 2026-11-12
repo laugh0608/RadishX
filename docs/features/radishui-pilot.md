@@ -1,6 +1,6 @@
 # RadishUI 组件消费与有限试点
 
-状态：11 月 8 日临时消费已完成；11 月 11 日产品实施与技术验收完成（本地分支）；11 月 12 日所有者确认有限采用；分支已推送并开 PR #1，待审阅合并，未部署
+状态：11 月 8 日临时消费已完成；11 月 11 日产品实施与技术验收完成（本地分支）；11 月 12 日所有者确认有限采用；PR #1 已合并（`72bdcfd`）并完成生产部署，生产核验通过
 最后更新：2026-11-12
 主要归属：品牌视觉与素材（家族 UI 参考规范）
 协同：页面与交互（About 联系区）、质量与发布（构建与浏览器检查）
@@ -77,8 +77,10 @@
 所有者于 2026-11-12 确认采用本次有限范围；RadishUI 侧已在 F-02.6 登记。本仓记录产品状态与发布边界。
 
 - **采用范围**：`/about` 入口卡、共享 `Button` + `Dialog`、延迟加载外壳与直达链接回退；产品实现提交 `0ad9190`，同一分支包含已确认的 About 密度修订 `c92692e`。共享包固定为 RadishUI `83e4f0f` 的两份 `26.11.1` tarball。
-- **发布状态**：`feature/radishui-about-entry` 已推送到 `origin`，[PR #1](https://github.com/laugh0608/RadishX/pull/1) 已开，未合并、未部署。采用决定不等于发布授权；合并、部署与线上核验需分别确认，发布前不宣称生产已采用。
-- **发布路径**：已沿用现有分支并创建 PR #1；待所有者审阅合并 `master`，合并会触发既有 Vercel 部署。上线后核验 `/about`、首包、入口 chunk 与回滚，并把线上提交、URL 与检查结果补到本文件。
+- **发布状态**：`feature/radishui-about-entry` 已推送到 `origin`，[PR #1](https://github.com/laugh0608/RadishX/pull/1) 已由所有者合并为 `72bdcfd`（2026-11-12 20:23 +0800），Vercel 生产部署完成。采用决定与发布分开记录；生产核验见下。
+- **发布路径**：已沿用现有分支并创建 PR #1；所有者已合并 `master`，既有 Vercel 生产部署完成。生产核验、首包与入口 chunk 结果见下。
+- **生产核验**（2026-11-12，Chrome 157.0.8103.40）：`https://radishx.com/about` 加载生产构建 `index-DYT_pQvr.js` / `index-C3V6e-Z3.css` 与入口 `RadishUIEntry-BEXoJAYP.js` / `uvlsmmbV.css`。1440 明暗主标题 79.2px、全页 3320px、入口卡 85px、按钮 46px；390 明色主标题 48px、全页 5800px、入口卡 170px；Dialog 标题 / 外链、初始焦点、Escape 回焦正常，无横向溢出、无 pageerror。`/` 与 `/mascot` 不请求入口 chunk。首包同口径 gzip 96,230 字节（`master` 基线 94,380，+1,850），入口 15,476 JS + 4,125 CSS gzip；线上由 Vercel / Cloudflare 提供。
+- **生产未覆盖**：真实输入法、屏幕阅读器 / 辅助技术、实体设备、Windows / NVDA、浏览器整页缩放；生产仅 Chrome 核验，Safari / Firefox 为本地构建证据；未触发线上回滚。
 - **回滚**：恢复直达入口、移除 vendored tarball 与桥接，已验证的回滚基线为 `master` / `c0f57ae`；线上回滚以 revert 合并提交为准，不删除共享历史。
 - **范围边界**：只覆盖 About 入口卡与必要依赖；不扩展到其他页面、全站 token、family-ui 资料、React 18、Flutter 或正式发行。密度修订是产品视觉修订，不是 RadishUI 组件采用。
 
