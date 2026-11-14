@@ -18,7 +18,9 @@
 
 第一顺位调整为[官网质量与对外表达收口](../features/site-quality-and-public-content.md)：先校准内容与问题现状，再修复本批必要问题，最后在候选与授权明确后核验线上。R2.2 首页、详情页、About、Mascot 与共享层已完成 React-first 实现、双端复核，并由所有者于 2026-10-17 确认四页截图；单张表情裁切已修复。[整体设计与美化](../features/site-design-refinement.md)继续负责历史基线与设计源回填；Pencil 回填不再作为本批质量修正或发布核验的前置条件。四张 R2.1 主画板与一张交互说明保留为历史评审稿，不再直接代表当前十三项目页面。
 
-2026-11-01 按所有者要求同步为十三产品，新增 RadishForge；组织展示统一为「萝卜智能 · Radish Intelligence」，官网名保持 RadishX，组织入口指向 `RadishIntelligence`。Root、Memory、Ink 等状态按本地文档纠正；Checker 仍为配套仓库。只有 Radish 与 Ink 保留已确认的独立 Web 入口。范围、来源与本轮验证见[产品矩阵同步](../features/product-matrix-refresh.md#2026-11-01-组织品牌与十三产品同步)。组织迁移完成[评估](../deployment/vercel.md#2026-11-01-迁入组织评估未执行)后，所有者明确决定不迁移：保留 `laugh0608/RadishX` 及现有 Vercel 归属，迁移不再作为待办。四个展示仓库已按授权分别提交推送；未修改 Vercel 配置或 DNS。控制台显示 `9a0fbee` 为 Ready 生产部署，域名端到端访问仍未验收。
+2026-11-01 按所有者要求同步为十三产品，新增 RadishForge；组织展示统一为「萝卜智能 · Radish Intelligence」，官网名保持 RadishX，组织入口指向 `RadishIntelligence`。Root、Memory、Ink 等状态按本地文档纠正；Checker 仍为配套仓库。只有 Radish 与 Ink 保留已确认的独立 Web 入口。范围、来源与本轮验证见[产品矩阵同步](../features/product-matrix-refresh.md#2026-11-01-组织品牌与十三产品同步)。当时的仓库归属决定见[历史评估](../deployment/vercel.md#2026-11-01-迁入组织评估未执行)。
+
+2026-11-14 官网仓库迁入 `RadishIntelligence/RadishX`，Vercel 继续由原项目 `DaBaiLuoBo/radish-x` 承载，主域为 `radishx.com`。[迁移记录](../deployment/vercel.md#2026-11-14-迁入-radishintelligence)
 
 2026-11-02 按所有者确认同步 RadishUI：公开入口为 `https://ui.radishx.com/`，作为共享基础设施进入 About 与页脚，不增加独立产品数量或官网路由。About 更新为 16 个仓库、5 项域名、3 个独立 Web 入口；组织 Profile 补充设计系统入口，个人主页与个人 GitHub Profile 本轮不改。范围、来源与验证见[最新批次](../features/product-matrix-refresh.md#2026-11-02-radishui-共享基础设施入口)和 [W45 日志](../devlogs/2026-W45.md)。
 
@@ -32,7 +34,7 @@
 
 1. 校准内容与 Q01–Q09 现状，明确本批仍存在的问题、被替代项和后置项；本轮源码核对已更新清单，浏览器与公开入口核验仍待执行。
 2. 按质量专题完成必要修正及定向双端验证；不因旧清单重复修复已不存在的实现，也不将局部源码核对写成全站通过。
-3. 确定发布候选与范围，获对应授权后核验线上版本、正式路由、资源和 `www` 跳转；保留 GitHub / Vercel 现有归属，不重启组织迁移。
+3. 确定发布候选与范围，获对应授权后核验线上版本、正式路由、资源和 `www` 跳转。
 4. About 有限采用已上线并完成生产核验；下一步选择一个有真实交互需求的产品场景，另行确认范围；不把本试点带入无关候选。
 5. Pencil 回填与 SEO 静态输出各自限定范围后推进；不自动扩为全站重设计、token 迁移或框架迁移。
 

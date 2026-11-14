@@ -6,8 +6,8 @@
 
 本 Vercel 项目仅承载 RadishX 官网。Radish 与 RadishInk 是已确认的独立产品 Web 入口；2026-11-02 所有者新增确认 RadishUI 设计系统展示站。独立子域不属于本官网的路由或重写规则，未部署产品继续不登记暂定域名。
 
-- GitHub 仓库：`https://github.com/laugh0608/RadishX`
-- Vercel 项目：2026-11-02 控制台显示 [DaBaiLuoBo / radish-x](https://vercel.com/dabailuobo/radish-x)，Hobby；此前 scope 为 `laugh0608's projects`、项目为 `radishx`，历史核查保留原名称。官网主域的端到端访问仍未在本批重新验收
+- GitHub 仓库：`https://github.com/RadishIntelligence/RadishX`，公开，默认分支为 `master`
+- Vercel 项目：[DaBaiLuoBo / radish-x](https://vercel.com/dabailuobo/radish-x)，Hobby。Git 连接指向组织仓库，生产分支为 `master`
 - Canonical 主域名：`radishx.com`
 - 兼容访问入口：`https://www.radishx.com/`，跳转到 `https://radishx.com/`
 - 站点内容：首页、十三个产品介绍页、Mascot、About
@@ -31,7 +31,7 @@
 
 第一版部署边界：
 
-1. 公开 GitHub 仓库使用 `laugh0608/RadishX`。
+1. 公开 GitHub 仓库使用 `RadishIntelligence/RadishX`。
 2. Vercel 只构建和部署本官网静态站点。
 3. `radishx.com` 是官网 canonical 主域。
 4. `www.radishx.com` 作为兼容访问入口跳转到根域，并保留路径。
@@ -85,9 +85,13 @@
 - 后续线上检查记录见 [视觉 QA 与发布检查](../features/visual-qa-and-release.md)；只对各自日期和目标有效。
 - 当前版本核验状态见 [当前规划](../planning/current.md)。
 
+## 2026-11-14 迁入 RadishIntelligence
+
+GitHub 原地转移至 `RadishIntelligence/RadishX`。仓库 ID `1266258201`、公开可见性和默认分支 `master` 已核对，旧地址重定向至新地址。Vercel 项目 `prj_RpGTaPN1vt9kKQ5R1yE3fpDHwvN7` 自动识别了新归属，继续承载 `radishx.com`、`www.radishx.com` 和 `radishx.vercel.app`。详见[本周开发日志](../devlogs/2026-W46.md#2026-11-14-组织仓库迁移)。
+
 ## 2026-11-01 迁入组织评估（未执行）
 
-**最终决定：2026-11-01 所有者确认不迁移。** GitHub 保留 `laugh0608/RadishX`，Vercel 保留 `laugh0608's projects` 下的 `radishx`，现有 Git 连接、域名和 DNS 继续沿用。迁移事项关闭，不再作为待办；下方保留当时的评估与核查事实，仅供历史参考，不代表执行计划或授权。
+**当时决定：2026-11-01 所有者确认暂缓迁移。** GitHub 保留 `laugh0608/RadishX`，Vercel 保留 `laugh0608's projects` 下的 `radishx`，现有 Git 连接、域名和 DNS 继续沿用。迁移事项关闭，不再作为待办；下方保留当时的评估与核查事实，仅供历史参考，不代表执行计划或授权。
 
 评估时的候选目标为 `RadishIntelligence/RadishX`，继续使用 RadishX 官网名、`radishx.com` 主域与现有 Vercel 项目。GitHub 仓库所有者、仓库名、Vercel 项目归属和域名是分别管理的对象；移动 GitHub 仓库不要求同时重命名或另建 Vercel 项目。展示品牌统一为「萝卜智能 · Radish Intelligence」，不把暂定公司全名当作已成立公司。
 

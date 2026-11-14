@@ -45,8 +45,8 @@ export const officialAccount = {
 export const repositories = [
   {
     name: "RadishX",
-    ownerRepo: "laugh0608/RadishX",
-    href: "https://github.com/laugh0608/RadishX",
+    ownerRepo: "RadishIntelligence/RadishX",
+    href: "https://github.com/RadishIntelligence/RadishX",
     status: "官网",
     description: "Radish 系列项目官网与统一入口。",
   },

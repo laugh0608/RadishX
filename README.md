@@ -41,7 +41,7 @@ RadishX 是萝卜智能 · Radish Intelligence 的官网与统一入口。这个
 
 ## GitHub 仓库
 
-- `RadishX`：<https://github.com/laugh0608/RadishX>
+- `RadishX`：<https://github.com/RadishIntelligence/RadishX>
 - `Radish`：<https://github.com/laugh0608/Radish>
 - `RadishInk`：<https://github.com/laugh0608/RadishInk>
 - `RadishCatalyst`：<https://github.com/laugh0608/RadishCatalyst>
